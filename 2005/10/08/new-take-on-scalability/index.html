@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  New Take On Scalability</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/10/03/yes-but-what-about-the-legacy/">Yes, But What About The Legacy?</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/10/11/little-help/">Little Help?</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-98"><a href="http://lesscode.org/2005/10/08/new-take-on-scalability/" rel="bookmark" title="Permanent Link: New Take On Scalability">New Take On Scalability</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://www.jooto.com/blog">Alex Bunardzic</a>
+      under <a href="http://lesscode.org/category/theory/" title="View all posts in Theory" rel="category tag">Theory</a> 
+      on 08. October 2005</small>
+
+			<div class="entrytext">
+				<p>Apologies for dragging this corpse into the discussion again, but some latest development prompted me to try and share this with others.</p>
+
+<p>Whenever I give presentations on Ruby and Rails, the number one question invariably pops up from the audience: will it scale?</p>
+
+<p>At first, I was allowing myself to fall prey and to drop down into the detailed and quite meaningless discussion. But then I&#8217;ve changed the tactics, and began countering the question with: &#8220;Scale to what?&#8221;</p>
+
+<p>Amazingly, most people don&#8217;t know the answer to that question. They just throw in abstract answers, like to thousands simultaneous requests, etc. But pretty much no one can supply a real life example that is more concrete than the yahoo or amazon or google. In other words, it seems that not too many people are working on the super busy web applications.</p>
+
+<p>If that&#8217;s the case, the scalability question is, in most situations, quite moot.</p>
+
+<p>But the real change in the scalability landscape is now dawning with the advent of the rich internet applications. Here is how it goes:</p>
+
+<p>Originally, when we&#8217;ve made the transition from fat clients in the client/server world to dumb terminals (i.e. HTML documents rendered in the browser) living in the web 1.0 world, we&#8217;ve effectivelly sucked all life out of the clients. The clients got demoted to stupid braindead appliances for rendering HTML.</p>
+
+<p>But someone had to continue doing their work. That someone was the app servers. The central role of the app servers (such as WebLogic, WebSphere, etc.) was impersonating numerous clients out there. The app servers had to do incredible amount of work impersonating the clients who were only known via their requests peppered with some cookies.</p>
+
+<p>This situation resulted in incredible strain placed on the app servers. The whole multi-million (or is it billion?) dollars industry sprang around those beasts, and new careers were forged around WebLogic, WebSphere, JBoss etc. servers.</p>
+
+<p>Seeing how huge the burden of impersonating numerous clients on the app server is, the question of scalability became one of the central issues.</p>
+
+<p>However, now that the clients are finally reclaiming their state, and that the app servers do not have to continue impersonating each and every client, the whole scalability issue becomes meaningless. Let the clients do all the processing that governs their behavior. Suddenly, app servers are left with very little to do. And as the clients are happily humming and taking care of their own state, all that the back-end resources need to worry about is the centralized business logic. And in that arena, there is very little scalability issues.</p>
+
+<p>So, now this whole topic is even more of a moot point. It&#8217;s time we gave it a decent burial, and moved on to the greener pastures.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/10/08/new-take-on-scalability/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">29 Responses to &#8220;New Take On Scalability&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-566">
+			<p class="who"><cite><a href='http://markos.gaivo.net/blog/' rel='external ' title='193.77.35.237'>Marko Samastur</a></cite>:</p>
+			<p>My question would still be does it scale to at least hundreds of simultaneous connections?</p>
+<p>I don&#8217;t work for the big boys, but I did work for an ISP with 100k users and every morning our webmail just had to survive couple of hundred simultaneous connections. I&#8217;m working on an application that will have to meet at least similar load if not bigger.</p>
+<p>I started to use what is now called AJAX, because I expected to lower the load on servers. I did, but not by as much as I expected, simply because users click more when cost of a click is much lower (cost measured by loading time).</p>
+<p>I agree scalability is not a major issue for most people, but it&#8217;s not going away either. At least not for all of us.</p>
+      <p>
+			<small>comment at <a href="#comment-566" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-567">
+			<p class="who"><cite><a href='http://scott.exotopic.com' rel='external ' title='66.114.68.70'>Scott Moody</a></cite>:</p>
+			<p>Two quick responses:</p>
+<p>1) I think the question most people mean to ask is &#8220;How expensive is it to scale?&#8221;  The last web service I created was getting 15 million page views per day (and it wasn&#8217;t a search engine). I would hazard to <em>guess</em> that no one has created a site with Rails that serves-up that many pages in a day &#8212; mostly concentrated in a 12 hour period. Can Rails handle that? With enough boxes, of course! What will it cost (and there is more to the cost of hardware-based scaling besides the cost of the hardware) ? Unless someone has crossed that threshold, then the answer is unknown.  With other platforms, the cost of serving up that many pages per day can be found out with enough research.  And, I would argue that as other language/framework combinations catch-up to Rails from a programmer productivity perspective (the real Rails advantage), it will be an even more important question to be able to answer. </p>
+<p>2) I think I disagree with the last few paragraphs.  I think that, as will happen more and more, rich DHTML clients will put a <em>greater</em> load on the server.  One example is the various implementations of Google-suggest-like functionality.  Suddenly, you&#8217;re hitting the server with numerous times where, in the days of old, you weren&#8217;t hitting it at all.  Dynamic-updating views, such as those on Digg Spy are another example.  I think you&#8217;ll see it more and more.  If you buy into that, then the resources required for the back-end will be increasing as clients get more dynamic.</p>
+<p>So, although I think that the answer to the question &#8220;Can Rails scale?&#8221; is &#8220;Yes,&#8221; it is far from a moot point and it should not be buried. Finally, I <em>am</em> a Rails fan and believe that it can scale effectively.</p>
+<ul>
+<li>Scott</li>
+</ul>
+      <p>
+			<small>comment at <a href="#comment-567" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-569">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>This seems like the kind of thinking that Joel Spolsky keeps scoffing about.</p>
+<p>Scalability matters now as much as has mattered in the past, and it will continue to matter just as much in the future.</p>
+<p>The notion that scalability doesn&#8217;t matter anymore is even more of a crock than the Java mindset that scalability is a checklist item to be built into the framework which then automagically becomes a property of any application that is built on top of it.</p>
+<ul>
+<li>Scalability happens at the application level.</li>
+<li>Scalability will always matter.</li>
+</ul>
+<p>Asking whether Rails will scale is meaningless&#8212;but not because scalability is meaningless. It&#8217;s like if you were asking if Rails is secure. These questions are meaningless, because beyond due diligence, the framework can do nothing to ensure the answer as regards your <em>application</em> is &#8220;yes.&#8221; That responsibility falls squarely with the application programmer.</p>
+<p>So let me rephrase above statements.</p>
+<ul>
+<li>Good tools cannot replace a craftman&#8217;s skill.</li>
+<li>Craftsmanship will always be required.</li>
+</ul>
+      <p>
+			<small>comment at <a href="#comment-569" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-570">
+			<p class="who"><cite>Brook</cite>:</p>
+			<p>&#8220;So, now this whole topic is even more of a moot point. It’s time we gave it a decent burial, and moved on to the greener pastures.&#8221;</p>
+<p>No&#8211;in fact, after some of these &#8220;Scalability doesn&#8217;t matter&#8221; posts, I&#8217;m even more worried about it since no one is really addressing it head on.  It becomes a real issue when all of a sudden your site grows and people are unable to use your application.  I&#8217;d like to see some tests of Rails scalability.  If it doesn&#8217;t work well, improvements can be made.  If it does work, then you can put the issue to bed.</p>
+<p>This &#8220;scalability doesn&#8217;t matter&#8221; stuff comes off as disingenuous.</p>
+      <p>
+			<small>comment at <a href="#comment-570" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-571">
+			<p class="who"><cite><a href='http://www.koziarski.net/' rel='external ' title='202.0.52.37'>Michael Koziarski</a></cite>:</p>
+			<p>The thing which annoys me the most is that &#8220;Scalability&#8221; is a <em>completely</em> meaningless term without a qualifying statement &#8220;with respect to #{X}&#8221;.   It&#8217;s like pointing at some function of 15 variables and demanding to see its &#8220;derivative&#8221;.</p>
+<p>Does rails scale to larger teams?<br />
+Does rails scale to dumber teams?<br />
+Does rails scale to millions of page views?<br />
+Does rails scale to thousands of heavy operations?<br />
+Does rails scale to ridiculously baroque requirements?</p>
+<p>These questions all make sense, and can be answered.  But asking whether something &#8217;scales&#8217;?   It reveals more about the questioner than any answer would about the framework.</p>
+      <p>
+			<small>comment at <a href="#comment-571" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-572">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>I&#8217;ve just double-checked, and yes, we are indeed reading and writing this while living in the 21st century.</p>
+<p>For a while there, I was a bit confused; some people were foaming at their mouths that, even though year 2000 had arrived, that portentuous event didn&#8217;t really mean that the 21st century had actually arrived with it.</p>
+<p>But by now (year 2005) I figure we&#8217;re firmly entrenched in the 21st century. No?</p>
+<p>So what&#8217;s new in the 21st century? Well, to begin with, the business model had somewhat changed, inasmuch as the &#8220;innovation in assembly&#8221; (think Dell, for instance), seems to be the preferred approach.</p>
+<p>Also, the age of &#8216;applications for a lifetime&#8217; appears to be behind us.</p>
+<p>What does it all mean, then? If someone was to grab the unexpected and unanticipated handful of disparate services, and assemble them on the fly, offering a new and irresistible service (the notorious mashup), how can that &#8216;assembler&#8217; engineer his new-fangled solution for scalability?</p>
+<p>Furthermore, if anyone approaches me to build them a Rails app that will have a projected shelf life of 10 to 15 years and would be expected to serve hundreds of millions of users, I&#8217;d politely have to bow out. Rails is not meant to be that kind of workhorse, so there.</p>
+<p>I&#8217;m mostly focused on delivering simple, small scale short-lived solutions that are focused on communal needs. A disposable, throwaway software apps. I&#8217;m having troubles imagining under which conditions and circumstances would such solutions ever reach the mythical scalability issues.</p>
+      <p>
+			<small>comment at <a href="#comment-572" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-573">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>&#8220;But asking whether something ’scales’? It reveals more about the questioner than any answer would about the framework.&#8221;</p>
+<p>That&#8217;s cute, but answers.com/scalable says this:  &#8220;A &#8220;highly scalable&#8221; device or application implies that it can handle a large increase in users, workload or transactions without undue strain.&#8221;  I&#8217;d expect that&#8217;s pretty much what most people think of when someone asks if something is scalable.</p>
+<p>If someone asks you if you like steak, do you tell them that they are ignorant because there are so many different kinds of &#8220;steak&#8221; and different ways to cook it?</p>
+      <p>
+			<small>comment at <a href="#comment-573" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-574">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="#comment-572">Alex</a>: some figures from eToys, in Christmas of 2000:</p>
+<ul>
+<li>200,000+ sessions/hour</li>
+<li>2.5 million+ page views/hour</li>
+<li>20,000+ orders/hour</li>
+</ul>
+<p>The site was built with Perl.</p>
+<p>Can Ruby do that?</p>
+<p>(Answer: d&#8217;uh.)</p>
+      <p>
+			<small>comment at <a href="#comment-574" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-575">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>Aristotle Pagaltzis wrote:</p>
+<blockquote><p>Alex: some figures from eToys, in Christmas of 2000:</p>
+<p>    * 200,000+ sessions/hour<br />
+    * 2.5 million+ page views/hour<br />
+    * 20,000+ orders/hour</p>
+<p>The site was built with Perl.</p>
+<p>Can Ruby do that?</p>
+<p>(Answer: d’uh.)</p></blockquote>
+<p>This is like asking a typical restaurateur who&#8217;s running a local corner restaurant: McDonalds serves billions and billions; can your business do the same?</p>
+<p>Yes, we all know that McDonalds is scalable. But why are we all assuming that every other restaurant or chain must be designed from the ground up to fend the hypothetical onslaught of billions and billions of customers? Who&#8217;s to say that the billions of customers will ever materialize?</p>
+<p>Why is everyone so obsessed with the scale? Obviously, (and one need not go farther than look at McDonalds), scale usually implies crappy products/services. Yeah, McDonalds can scale like crazy, but at the undeniable expense of quality. Their products, as is well known and documented, are plumbing the ever new depths when it comes to unhealthy eating choices.</p>
+<p>And I&#8217;m not even going to go into examining in any detail the quality of their service. Suffice it to say here that it&#8217;s atrocious.</p>
+<p>Us Rails developers are embracing a new philosophy &#8212; we want to be the exquisite chefs, not the onion rings and french fries machine operators. Instead of flipping burgers, we want to perfect the ancient art of dry aging those steaks and matching them up with the finest wines.</p>
+<p>That&#8217;s why we don&#8217;t lose our sleep over scalability. We know that there are sufficient resources that will take care of that for us. Why sweat the details?</p>
+      <p>
+			<small>comment at <a href="#comment-575" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-576">
+			<p class="who"><cite>Masklinn</cite>:</p>
+			<p>Aristotle Pagaltzis:<br />
+This comment is stupid and meaningless: you don&#8217;t give any information whatsoever on the physical part of the website.</p>
+<p>Saying that an app can handle &#8220;200,000+ sessions/hour, 2.5 million+ page, views/hour, 20,000+ orders/hour&#8221; has a net value of 0 because one has no idea of the database used, the DB&#8217;s server, the web servers, the distribution of the load, &#8230;</p>
+<p>This is why asking &#8220;can language/framework XXX scale?&#8221; is meaningless unless you add WHERE it&#8217;s supposed to scale (team size, db requests, page view, specific operation) and which physical limitations are to be taken in account (database, servers, database hosting, network links between the db and application servers) and are essential in answering such a question.</p>
+      <p>
+			<small>comment at <a href="#comment-576" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-577">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>Okay, you had me there for a while, then you threw this doozy:</p>
+<blockquote>
+<p>Us Rails developers are embracing a new philosophy — we want to be the exquisite chefs, not the onion rings and french fries machine operators.</p>
+</blockquote>
+<p>That seems to imply that the eToys &#8220;service&#8221; was in some sense &#8220;crappy.&#8221; First, your &#8220;crappy service&#8221; is <em>even more</em> vague than the &#8220;scalable&#8221; scarecrow! Second, how did you manage to judge the &#8220;quality&#8221; of the &#8220;service&#8221; just by looking at the scale figures? Is &#8220;it scaled massively, so it must be crappy&#8221; (for some vague-at-best definition of crappy) what you&#8217;re saying?</p>
+<p>I think the point you&#8217;re trying to make somewhere in there with your arguments (ie most people don&#8217;t need to concern themselves with scalability) is actually a good one, but in attempting to do so you throw in a bunch of strawmen that muddle your message.</p>
+      <p>
+			<small>comment at <a href="#comment-577" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-578">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="#comment-576">Masklinn</a>: hence the &#8220;d&#8217;uh&#8221; at the end of that comment, and hence my earlier comment that scalability happens at the application level, not the framework level.</p>
+<p>Read <a href="http://perl.apache.org/docs/tutorials/apps/scale_etoys/etoys.html" title="Building a Large-Scale E-commerce site with Apache and mod_perl">the whole thing</a> if you want to know more.</p>
+      <p>
+			<small>comment at <a href="#comment-578" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-579">
+			<p class="who"><cite><a href='http://paul-m-jones.com' rel='external ' title='66.21.196.122'>Paul M. Jones</a></cite>:</p>
+			<p>Alex asked, &#8220;Why is everyone so obsessed with the scale?&#8221;</p>
+<p>That&#8217;s an easy one:  everyone wants to believe they are going to be &#8220;big.&#8221;  They want to use tools that let them indulge in that belief, however statistically unlikely their eventual bigness may be.  Alternatively, they believe they are in fact already &#8220;big,&#8221; not understanding how massively unbelievably big* they would have to be for scalability to really matter.</p>
+<p>To hear &#8220;you&#8217;re not big enough for scalability to be important&#8221; is a jarring and unwelcome intrusion of reality onto imagination.  If they accept reality, the next thought is usually not &#8220;Ok, we&#8217;ll use less-scalable stuff&#8221;; instead, it is &#8220;Crap!  Now we have to figure how to become big, which means we still need a scalable solution that will handle our eventual bigness.&#8221;</p>
+<p>In short, it often has more to do with what they think of themselves and their dreams for the future and less so with a realistic appraisal of requirements.</p>
+<p>(* With apologies to Douglas Adams.)</p>
+      <p>
+			<small>comment at <a href="#comment-579" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-580">
+			<p class="who"><cite><a href='http://fucoder.com/' rel='external ' title='220.233.28.239'>Scott Yang</a></cite>:</p>
+			<p>Re: Paul,</p>
+<p>No. It is not true. Thinking scalability is not just an intellectual exercise, thinking something unrealistic, dreaming to be big, etc. The need to be scalable is real in the business world, and it will hit you when you are not prepared.</p>
+<p>It is quite possible to claim that your existing application handles this number of concurrent users, performing that number of transactions per second. The next morning there might be some other prospect showing up at the door, asking whether the app is scalable if they have 5 times the users. In fact I am the one stuck in this situation, having designed a Python app server at work that has a clear bottleneck that might not be able to easily scale &#8212; and a big prospect is now questioning about the performance!</p>
+<p>And the idea of scalability is more than just handling thousands of simultaneous users, but will the number served proportional to the amount of hardware you throw at it?</p>
+<p>If the answer is a simple yes, then from a business perspective, I can say the system is scalable. Need to serve more users? Just dump in more hardware. Buy a bigger box. Buy more boxes. Buy faster interconnects.</p>
+<p>However, the answer is usually not that simple. There usually exists bottleneck in the system, that you just can&#8217;t throw more hardware to solve it. You can usually load balance web servers, but you can&#8217;t always load balance app servers or cluster databases beyond a certain limit.</p>
+<p>Ajax only plays a small part of this game. And I agree with Scott Moody. When you are making more calls from browser to web server to achieve &#8220;responsiveness&#8221; that a &#8220;Web2.0&#8243; application is giving you, it is actually putting more load on the system.</p>
+      <p>
+			<small>comment at <a href="#comment-580" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-581">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>Aristotle Pagaltzis wrote:</p>
+<blockquote><p>That seems to imply that the eToys “service” was in some sense “crappy.” First, your “crappy service” is even more vague than the “scalable” scarecrow! Second, how did you manage to judge the “quality” of the “service” just by looking at the scale figures? Is “it scaled massively, so it must be crappy” (for some vague-at-best definition of crappy) what you’re saying?</p></blockquote>
+<p>You&#8217;re assuming that &#8216;crappy&#8217; is more vague than &#8217;scalable&#8217; simply because crappy is not quantifiable. The flaw in such way of thinking is twofold:</p>
+<ol>
+<li>Assuming that &#8217;scalable&#8217; is an objectivelly quantifiable concept</li>
+<li>Assuming that subjective criteria are forever sealed off from any possibility for being objectivelly communicated</li>
+</ol>
+<p>My thesis is based on the observable fact that quality tends to diminish as the quantity increases. Take, for example, cooking. I can predict, with reasonable accuracy, that I can prepare a decent meal for my family of four. If, however, someone asked me to prepare that exact same meal for a party of 400 people, or 4,000 (or 4 million people), I can guarantee you that the quality of the food I&#8217;d prepare would get progressively crappier the more people I try to make it for.</p>
+<p>Exact same criteria apply to the art of software development. If I focus on developing a software app for a clearly defined group of friends/colleagues,  the app I&#8217;ll deliver will be of a much higher quality, simply because I&#8217;ll be able to determine what is it that this small group really needs in order to perform their job. If, on the other hand, I build an app that potentially millions of users are going to use, the quality must, by definition, automatically go down the toilet.</p>
+<p>In an unlikely case you&#8217;re having any doubts about this, just look at Microsoft&#8217;s products. If you&#8217;re not able to see the level of utmost crappiness built into these products, you&#8217;re probably heavily biased towards Microsoft.</p>
+<p>The fact is, if we have to build an app to serve millions and millions, we would be forced to pay extremely close attention to the robustness, failover, etc. This means that our energies would be totally spent on such issues, leaving nothing left to focus on real issues, such as the quality of the end-user experience.</p>
+      <p>
+			<small>comment at <a href="#comment-581" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-582">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>&#8220;Assuming that ’scalable’ is an objectivelly quantifiable concept&#8221;</p>
+<p>It is.  A dictionary definition was provided above.  People can try to take the semantics defense if they want, but everyone else understands what the argument is about.</p>
+<p>&#8220;My thesis is based on the observable fact that quality tends to diminish as the quantity increases. Take, for example, cooking. I can predict, with reasonable accuracy, that I can prepare a decent meal for my family of four.  . If, however, someone asked me to prepare that exact same meal for a party of 400 people&#8230;&#8221;</p>
+<p>Over and over again, you trot out these odd strawmen to try to enforce your arguments.  What does cooking a meal for a small family have to do with writing digital web applications to be consumed by potential millions?  Terrible analogy.  There are several mass-produced products that can be considered of a very high quality, besides.</p>
+<p>&#8220;If, on the other hand, I build an app that potentially millions of users are going to use, the quality must, by definition, automatically go down the toilet.&#8221;</p>
+<p>It doesn&#8217;t need to be if the tools you use are designed for it.  See Joel Reymont&#8217;s blog for some inspiration:  http://wagerlabs.com/idealab/.  He&#8217;s been using Erlang to knock out high-performance, scalable applications and arguing about how easier it is than using Java.</p>
+<p>So, first it was &#8220;Who cares about scalability&#8221;, and now it is &#8220;We&#8217;re creating non-scalable applications on purpose&#8221;.</p>
+      <p>
+			<small>comment at <a href="#comment-582" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-583">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>Someone wrote:</p>
+<blockquote><p>Over and over again, you trot out these odd strawmen to try to enforce your arguments. What does cooking a meal for a small family have to do with writing digital web applications to be consumed by potential millions? Terrible analogy.</p></blockquote>
+<p>I wholeheartedly agree. If you don&#8217;t understand the analogy, then it&#8217;s a terrible analogy. However, that&#8217;s your problem, not mine. You can lead a horse to the water, but you can&#8217;t make it drink. Er, wait, was it a &#8217;straw horse&#8217;?</p>
+<p>Whatever the case may be, I cannot make you understand something you simply can&#8217;t understand. Let&#8217;s agree to disagree.</p>
+<p>Besides, I never spoke about writing digital web applications to be consumed by potential millions. I will never ever try to do something like that, simply because I know better:-)</p>
+<blockquote><p>There are several mass-produced products that can be considered of a very high quality, besides.</p></blockquote>
+<p>If I only had a dime for each time I&#8217;ve heard such claims. Still, no one was ever able to show me such a mythical beast. A Sasquatch of the software industry, maybe?</p>
+      <p>
+			<small>comment at <a href="#comment-583" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-585">
+			<p class="who"><cite>Jude</cite>:</p>
+			<blockquote>
+<p>I wholeheartedly agree. If you don’t understand the analogy, then it’s a   terrible analogy. However, that’s your problem, not mine. You can lead a horse to the water, but you can’t make it drink. Er, wait, was it a ’straw horse’?</p>
+</blockquote>
+<p>The problem is is that you are creating a poor analogy and using that as your argument (see <a href="http://en.wikipedia.org/wiki/Straw_man">Straw Man</a>). Software construction and cooking differ so much that the analogy is bad:</p>
+<ul>
+<li>cooking for a small family requires physical ingredients</li>
+<li>you cannot serve your meal to remote locations, nor cook remotely</li>
+<li>code does not disappear on usage, nor does it change when left for awhile</li>
+<li>you cannot make a backup of your entire meal and use it later</li>
+<li>you can&#8217;t autocomplete a recipe</li>
+<li>code doesn&#8217;t smell good</li>
+</ul>
+<p>Put away the fallacies and stick to the little boxes with the clicky things that run applications:  it&#8217;s what we&#8217;re here for.</p>
+      <p>
+			<small>comment at <a href="#comment-585" title="">09. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-586">
+			<p class="who"><cite><a href='http://jamesaimonetti.com/?p=69' rel='external ' title='204.157.10.124'>Chewing The Cud &raquo; Blog Archive &raquo; Scalabi&#8230;what?</a></cite>:</p>
+			<p>[&#8230;] Alex Bunardzic makes some interesting arguments regarding the scalability issue that seems to blunt the point of attack for LAMP critics: Whenever I give presentations on Ruby and Rails, the number one question invariably pops up from the audience: will it scale? [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-586" title="">10. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-587">
+			<p class="who"><cite><a href='http://softwareindustrialization.com' rel='external ' title='216.86.98.252'>Mitch Barnett</a></cite>:</p>
+			<p>How about lesscode and more design?</p>
+<p>I like Alex B’s restaurant scalability analogy, but more on that in a moment.</p>
+<p>I think the issue of scalability is all about the design and has less to do with any particular programming language, application server, framework, or infrastructure.  If the design (via the requirements) calls for the application to scale to x, y or z, with meaningful metrics, then it is up to the Architect to “design” an application, system, or whatever, to ensure the design meets the requirements.  And btw, we are in the software world, we can make anything scale – nothing that time and money can’t solve in our virtual world.</p>
+<p>When I first came to lesscode.org, I thought it was going to be about more design and lesscode.  However, it seems that the site is about people that really care about handcrafting excellent code.  I can respect that, just different to what I though it was going to be about.</p>
+<p>Back to Alex’s restaurant example.  In fact, Alex B. has described an analogy that MSFT uses for its software factory vision.  Check this out:</p>
+<p>“A software factory is a product line that configures extensible development tools like Microsoft Visual Studio Team System (VSTS) with packaged content and guidance, carefully designed for building specific kinds of applications. A software factory contains three key ideas: a software factory schema, a software factory template and an extensible development environment:</p>
+<p>•Think of the software factory schema as a recipe. It lists ingredients, like projects, source code directories, SQL files and configuration files, and explains how they should be combined to create the product. It specifies which DSLs should be used and describes how models based on these DSLs can be transformed into code and other artifacts, or into other models. It describes the product line architecture, and key relationships between components and frameworks of which it is comprised.</p>
+<p>•The software factory template is like a bag of groceries containing the ingredients listed in the recipe. It provides the patterns, guidance, templates, frameworks, samples, custom tools such as DSL visual editing tools, scripts, XSDs, style sheets, and other ingredients used to build the product.</p>
+<p>•An extensible development environment such as VSTS is like the kitchen where the meal is cooked. When configured with the software factory template, VSTS becomes a software factory for the product family. </p>
+<p>To press this analogy further, the products are like meals served by a restaurant. Software factory stakeholders are like customers who order meals from the menu. A product specification is like a specific meal order. The product developers are like cooks who prepare the meals described by the orders, and who may modify meal definitions, or prepare meals outside the menu. The product line developers are like chefs who decide what will appear on the menu, and what ingredients, processes, and kitchen equipment will be used to prepare them.”</p>
+<p>How about that?  In fact, if you look at any “industrialized process” it has been designed to scale.  The key word being “designed”.  So if the restaurant needs to scale to millions, then design it to scale!  While I respect my fellow codecrafters, I am waiting for the industrialization of software to take place so I don’t have to keep writing the same base code over and over again for each job that comes my way.  After serving a million (of the same) burgers, you would think the codecrafter’s would get tired of this too?</p>
+      <p>
+			<small>comment at <a href="#comment-587" title="">10. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-591">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>I was happy when Mitch decided to join our forum, because I knew he would bring a much needed fresh perspective on software development. It&#8217;s a nice remix of code crafting/code industrialization.</p>
+<p>And yes, some issues do boil down to lesscode &#8211;&gt; more design. But that&#8217;s not the whole story. I&#8217;m planning to write more about the other side very soon.</p>
+      <p>
+			<small>comment at <a href="#comment-591" title="">11. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-592">
+			<p class="who"><cite>Dan</cite>:</p>
+			<p>From Paul Grahams latest http://www.paulgraham.com/sfp.html:</p>
+<p>&#8220;That&#8217;s why we advise groups to ignore issues like scalability, internationalization, and heavy-duty security at first. [1] I can imagine an advocate of &#8220;best practices&#8221; saying these ought to be considered from the start. And he&#8217;d be right, except that they interfere with the primary function of software in a startup: to be a vehicle for experimenting with its own design. Having to retrofit internationalization or scalability is a pain, certainly. The only bigger pain is not needing to, because your initial version was too big and rigid to evolve into something users wanted.</p>
+<p>I suspect this is another reason startups beat big companies. Startups can be irresponsible and release version 1s that are light enough to evolve. In big companies, all the pressure is in the direction of over-engineering.&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-592" title="">11. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-595">
+			<p class="who"><cite><a href='http://www.phppatterns.com' rel='external ' title='84.72.33.201'>Harry Fuecks</a></cite>:</p>
+			<p>Asking &#8220;does it scale?&#8221; is often used as an angle to shoot down a technology. PHP has been on the receiving end of this for a long time from the Java crowd - it might be worth tracking down some of the online rants on this, at least to get a feel for the common points of ignorance (e.g. performance == scalability). Often the questioner isn&#8217;t willing or able to listen to technical detail. That a 10 line Perl script using fork may scale better, depending on the problem, than an app server that cost $$$ is beside the point.</p>
+<p>That said, you may get people who genuinely want to know and have the experience to understand. I guess they want to know where using Rails can be problematic for scaling (e.g. ActiveRecord generating significant DB overhead) and how to work round it (e.g. knowing when to insert some hand-crafted queries). And otherwise hearing other peoples experiences, tips on how to profile, monitor Rails applications etc.</p>
+<p>You may also get people who lack the understanding but have experienced the impact of a platform that didn&#8217;t scale. They&#8217;re also asking a valid question but how to answer?</p>
+<p>Anyway - best rant on scalability I&#8217;ve ever read:  (http://www.schlossnagle.org/~george/blog/index.php?/archives/29-Why-PHP-Scales-A-Cranky,-Snarky-Answer.html)</p>
+      <p>
+			<small>comment at <a href="#comment-595" title="">12. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-606">
+			<p class="who"><cite><a href='http://stucharlton.com/blog' rel='external ' title='24.42.2.8'>Stu Charlton</a></cite>:</p>
+			<p><I>My thesis is based on the observable fact that quality tends to diminish as the quantity increases. </I></p>
+<p>This is not a fact.   Mass producing items with statistically negligible defects happens every day with many extraordinarily complex products:  cars (particularly japanese cars), household appliances, consumer electronics, etc.  When was the last time you purchased a hand-crafted refrigerator because would have higher quality?</p>
+<p><I>If, however, someone asked me to prepare that exact same meal for a party of 400 people, or 4,000 (or 4 million people), I can guarantee you that the quality of the food I’d prepare would get progressively crappier the more people I try to make it for.</I></p>
+<p>That would be a case of you not being &#8220;scalable&#8221;.   High-end restaurants regularly serve stunning meals to hundreds of people an evening; they&#8217;ve worked out a process for doing so where the food doesn&#8217;t get crappier.</p>
+<p><I>If you’re not able to see the level of utmost crappiness built into these products, you’re probably heavily biased towards Microsoft.</I></p>
+<p>And you&#8217;re heavily biased against them.   </p>
+<p>I&#8217;ve posted here because I find your attitude does not support your arguments.  You make very bald faced claims, use very vague analogies to back things up, arrogantly suggest that if a reader &#8220;doesn&#8217;t get it&#8221; that&#8217;s their problem, and then make obnoxious blanket statements like this one.   You seriously damage your credibility by taking such stances.</p>
+      <p>
+			<small>comment at <a href="#comment-606" title="">15. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1185">
+			<p class="who"><cite><a href='http://lesscode.org/2006/03/12/someone-tell-gosling/' rel='external ' title='65.23.156.253'>Gosling Didn&#8217;t Get The Memo [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] New Take On Scalability [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1185" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1205">
+			<p class="who"><cite><a href='http://duckdown.blogspot.com/2006/03/large-enterprises-and-why-they-dont.html' rel='external ' title='72.9.234.70'>Thought Leadership</a></cite>:</p>
+			<p><strong>Why Ruby Doesn&#8217;t Matter&#8230;</strong></p>
+<p>You may have noticed that pretty much everyone in the Ruby camp are insultants with many of them being book authors attempting to capitalize on hype. I of course, will remain open minded that Ruby may be better than say Java at some tasks but for the&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-1205" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1294">
+			<p class="who"><cite>G Roper</cite>:</p>
+			<p>An operational definition of scalability was provided by Michael D. Kersey on an old newsgroup thread:<br />
+http://groups.google.com/group/microsoft.public.inetserver.asp.components/msg/d9846b908f678f15?hl=en&amp;<br />
+To quote from that newsgroup post:</p>
+<p>&#8220;IMO a reasonable definition of scalability for a given platform P and application A is<br />
+S(A,P) = R(A,P) / C(A,P)<br />
+where<br />
+R = Maximum number of requests processed per second by application A on platform P,<br />
+C = Cost of hardware and software to develop and support application A on platform P.</p>
+<p>I&#8217;ve assumed 100% availability for the purposes of this discussion. Availability could be added as an input to the definition if desired. This term displays the expected behavior shown by common usage of the term &#8220;scalability&#8221;:<br />
+1. As throughput R increases, scalability increases,<br />
+2. As cost C increases, scalability decreases,<br />
+3. Different platforms and different software may be compared using this definition,<br />
+4. You can use this definition to estimate costs of a proposed system, given an anticipated user load.<br />
+5. Both R and C can be estimated using known techniques.</p>
+<p>So using this definition, scalability&#8217;s dimensions would be &#8220;requests processed per second per dollar&#8221;. Given the following known values for a single application Z:</p>
+<p>running on platform X:<br />
+R(Z) = 1000 requests/second,<br />
+C(Z) = $40,000<br />
+S(Z) = 1000 requests/second / $40,000 = 0.025</p>
+<p>running on not-so-fast but less expensive platform Y:<br />
+R(Z) = 500 requests/second,<br />
+C(Z) = $10,000<br />
+S(Z) = 500 requests/second / $10,000 = 0.05</p>
+<p>While platform Y&#8217;s throughput (performance) is much less than that of platform Y, Y is much more scalable than (in fact is twice as scalable as) platform X when running application Z.</p>
+<p>This definition can also be used to estimate the utility of using various software methodologies. For example, heavy use of components or object technology may or may not change each factor in the definition: the degree to which each is changed determines whether the resultant system is more or less scalable.&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-1294" title="">19. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-3638">
+			<p class="who"><cite><a href='http://andrewpeters.wordpress.com/2006/06/08/on-jd-on-rails/' rel='external ' title='72.232.101.9'>/\ndrew&#8217;s Blog &raquo; Blog Archive &raquo; On JD on Rails</a></cite>:</p>
+			<p>[&#8230;] Come on dude. This argument is really pretty tired now and I&#8217;m surprised you would partake in such FUD mongering without actually doing some research. A simple Google yields numerous discussions - Of which New Take on Scalability is a decent one. To paraphrase: [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-3638" title="">08. June 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-15560">
+			<p class="who"><cite><a href='http://dibya.wordpress.com/2006/10/16/ruby-on-rails-scalibility/' rel='external ' title='72.232.131.2'>Ruby on Rails Scalibility &laquo; Open Source Initiative</a></cite>:</p>
+			<p>[&#8230;] http://lesscode.org/2005/10/08/new-take-on-scalability/ [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-15560" title="">16. October 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.487 seconds -->
+<!-- Cached page served by WP-Cache -->

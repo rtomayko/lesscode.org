@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  An Emacs kid-mode</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/06/30/why-clean-html-and-css-are-important/">Why clean HTML and CSS are important</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/01/enhanced-glob-wanted/">Wanted: eglob.py</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-8"><a href="http://lesscode.org/2005/07/01/kid-mode/" rel="bookmark" title="Permanent Link: An Emacs kid-mode">An Emacs kid-mode</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a> 
+      on 01. July 2005</small>
+
+			<div class="entrytext">
+				<p>I&#8217;ve been meaning to take a look at using
+<a href="http://mmm-mode.sourceforge.net/">mmm-mode</a> to get support for <code>&lt; ?python?&gt;</code>
+blocks in <a href="http://kid.lesscode.org/">kid</a> templates.</p>
+
+<p>After playing around with wordpress for a few hours, I grabbed
+<a href="http://ontosys.com/src/php-mode.el">php-mode</a> and saw just how easy it
+is to do sub-modes in emacs. Here&#8217;s a simple variation on <code>php-mode</code>&#8217;s
+suggested emacs setup that enables python block support in templates
+(note that you&#8217;ll also need <a href="http://sourceforge.net/projects/python-mode/">python-mode.el</a>):</p>
+
+<pre><code>;; kid-html-mode
+(mmm-add-mode-ext-class nil "\\.kid?\\'" 'html-kid)
+(mmm-add-classes
+ '((html-kid
+    :submode python-mode
+    :front "&lt; \\?\\(python\\)?"
+    :back "\\?&gt;")))
+(add-to-list 'auto-mode-alist '("\\.kid?\\'" . html-mode))
+</code></pre>
+
+<p>Add that to your <code>.emacs</code> file and then load up a kid template.</p>
+
+<p>Not only do you get syntax coloring but all the other great
+<code>python-mode</code>.</p>
+
+<p>What sucks about this is that I can&#8217;t seem to get it to work reliably
+with James Clark&#8217;s excellent
+<a href="http://www.thaiopensource.com/nxml-mode/">nxml-mode</a>, which I prefer
+when working with kid templates. I&#8217;m trying something like this but it 
+seems flaky:</p>
+
+<pre><code>;; kid-nxml-mode
+(mmm-add-mode-ext-class nil "\\.kid?\\'" 'nxml-kid)
+(mmm-add-classes
+ '((nxml-kid
+    :submode python-mode
+    :front "&lt; \\?\\(python\\)?"
+    :back "\\?&gt;")))
+(add-to-list 'auto-mode-alist '("\\.kid?\\'" . nxml-mode))
+</code></pre>
+
+<p>My suspicion is that this has something to do with the way <code>nxml-mode</code>
+is loaded, which is kind of weird because I believe it sniffs for a
+<code>DOCTYPE</code> and/or <code>&lt; ?xml?&gt;</code> declaration.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/01/kid-mode/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">3 Responses to &#8220;An Emacs kid-mode&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-630">
+			<p class="who"><cite>Bryan</cite>:</p>
+			<p>Is it possible to get nxml-mode to declare a kid template &#8220;valid,&#8221; and if so, how did you do it?</p>
+      <p>
+			<small>comment at <a href="#comment-630" title="">21. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-748">
+			<p class="who"><cite>Graham Fawcett</cite>:</p>
+			<p>Thanks, Ryan!</p>
+<p>I didn&#8217;t get much flakiness on Emacs/win32. I did simplify the regexp for the [?python?] PIs, though. Here&#8217;s a snippet from my .emacs file (also includes a rule for [style type=&#8221;text/css&#8221;] using css-mode).</p>
+<p>The Markdown implementation here seems to over-escape double quotes, so I put my .emacs snippet at: <a href="http://paste.lisp.org/display/13581">http://paste.lisp.org/display/13581</a>.</p>
+      <p>
+			<small>comment at <a href="#comment-748" title="">14. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1130">
+			<p class="who"><cite>Jorge Godoy</cite>:</p>
+			<p>This last piece of code works like a charm for me ;-)  Thanks!  I&#8217;ve been looking for it for a while. :-)</p>
+<p>Now it is just a matter of making Kid tags valid to have nxml fully working.</p>
+      <p>
+			<small>comment at <a href="#comment-1130" title="">28. February 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.299 seconds -->
+<!-- Cached page served by WP-Cache -->

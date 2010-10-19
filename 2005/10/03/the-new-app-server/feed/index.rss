@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: The New &#8220;Application Server&#8221;</title>
+	<link>http://lesscode.org/2005/10/03/the-new-app-server/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:26 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: AJAX and the new application server &#171; Curt&#8217;s Comments</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-14750</link>
+		<pubDate>Mon, 09 Oct 2006 02:17:45 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-14750</guid>
+					<description>&lt;p&gt;[...] ZDNet has kicked off a blog debate over the fate of the application server with Phil Wainewright’s article How AJAX kills the application server. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] ZDNet has kicked off a blog debate over the fate of the application server with Phil Wainewright’s article How AJAX kills the application server. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Richard Wallis</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-562</link>
+		<pubDate>Fri, 07 Oct 2005 07:06:54 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-562</guid>
+					<description>&lt;p&gt;Whoops, I didn't mean to be anonymous with my comment above.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in the the application of these principles there is a Silkworm &lt;a href=&quot;http://silkworm.talis.com/_downloads/white_papers/silkworm_paper_13_06_2005.pdf&quot; rel=&quot;nofollow&quot;&gt;White Paper&lt;/a&gt; thats worth a look.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Whoops, I didn&#8217;t mean to be anonymous with my comment above.</p>
+<p>If you are interested in the the application of these principles there is a Silkworm <a href="http://silkworm.talis.com/_downloads/white_papers/silkworm_paper_13_06_2005.pdf">White Paper</a> thats worth a look.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Anonymous</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-561</link>
+		<pubDate>Fri, 07 Oct 2005 07:02:14 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-561</guid>
+					<description>&lt;p&gt;Are all the Google Maps Mashups BS?  Where are their Application Servers?&lt;/p&gt;
+
+&lt;p&gt;Take an example application such as &lt;a href=&quot;http://research.talis.com/2005/google-maps/libmapuk2.html&quot; rel=&quot;nofollow&quot;&gt;Libmap&lt;/a&gt;.  This research example mixes a &lt;a href=&quot;http://silkworm.talis.com&quot; rel=&quot;nofollow&quot;&gt;Silkworm&lt;/a&gt; Directory Web Service (delivering description, location, and access information about libraries) with the Google Maps Web Service.  Obviously the constituent Web Services are powered by their Application Servers, but the actual application has no application server of its own, apart from a boring read only web server to hold the page, CSS, and javascript files, the application it's self only exists in the browser.&lt;/p&gt;
+
+&lt;p&gt;In the Web 2.0 architected world, the delivers of Web Services (from traditional application servers - perhaps we need to rename them Service Servers) will not know, or even care too much, what actual AJAX - in browser applications they are supporting.&lt;/p&gt;
+
+&lt;p&gt;Of course the application server is not dead, but it not necessarily the best place to build the application the user interacts with.  It's power, structure, and control is most beneficial when applied to core business logic and process delivered as a Web Service to be consumed by potentially many 'applications'.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Are all the Google Maps Mashups BS?  Where are their Application Servers?</p>
+<p>Take an example application such as <a href="http://research.talis.com/2005/google-maps/libmapuk2.html">Libmap</a>.  This research example mixes a <a href="http://silkworm.talis.com">Silkworm</a> Directory Web Service (delivering description, location, and access information about libraries) with the Google Maps Web Service.  Obviously the constituent Web Services are powered by their Application Servers, but the actual application has no application server of its own, apart from a boring read only web server to hold the page, CSS, and javascript files, the application it&#8217;s self only exists in the browser.</p>
+<p>In the Web 2.0 architected world, the delivers of Web Services (from traditional application servers - perhaps we need to rename them Service Servers) will not know, or even care too much, what actual AJAX - in browser applications they are supporting.</p>
+<p>Of course the application server is not dead, but it not necessarily the best place to build the application the user interacts with.  It&#8217;s power, structure, and control is most beneficial when applied to core business logic and process delivered as a Web Service to be consumed by potentially many &#8216;applications&#8217;.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Anonymous</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-549</link>
+		<pubDate>Thu, 06 Oct 2005 01:51:59 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-549</guid>
+					<description>&lt;p&gt;This is a crock, and here's your proof - You guys can't even agree on what he said. I believe with Ajax that an application in the browser, for each target platform, is even MORE EXPENSIVE and error prone than using the native APIs provided by each target OS. This is simply ridiculous.
+Use HTTP for what it is? Yes, please, by all means. And HTML as well. But please please please stop bolting crap onto it. You want a stateful transaction link? Fine. Write the gorram protocol. But for the love of Pete, please do not tack it on to HTTP with some brain-dead inanity such as sending a &quot;cookie&quot;, lord help me, for which, evidently, no one can agree on a correct implementation. That is sheer stupidity. And it was only a hint of the insanity we have now. PLEASE STOP THIS IDIOCY. Please stop cramming &quot;just one more thing&quot; into HTML. JUST STOP.
+And people said that ASN was too complex and SGML would be too hard to implement. Sheesh!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>This is a crock, and here&#8217;s your proof - You guys can&#8217;t even agree on what he said. I believe with Ajax that an application in the browser, for each target platform, is even MORE EXPENSIVE and error prone than using the native APIs provided by each target OS. This is simply ridiculous.<br />
+Use HTTP for what it is? Yes, please, by all means. And HTML as well. But please please please stop bolting crap onto it. You want a stateful transaction link? Fine. Write the gorram protocol. But for the love of Pete, please do not tack it on to HTTP with some brain-dead inanity such as sending a &#8220;cookie&#8221;, lord help me, for which, evidently, no one can agree on a correct implementation. That is sheer stupidity. And it was only a hint of the insanity we have now. PLEASE STOP THIS IDIOCY. Please stop cramming &#8220;just one more thing&#8221; into HTML. JUST STOP.<br />
+And people said that ASN was too complex and SGML would be too hard to implement. Sheesh!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-533</link>
+		<pubDate>Tue, 04 Oct 2005 18:14:30 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-533</guid>
+					<description>&lt;p&gt;Ryan wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;This is such a massively different way of thinking about distributed systems in business IT that I’m surprised no ones head has exploded yet.&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;b&gt;BRAOUMMMM!&lt;/b&gt; (the sound of Alex's head exploding)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Ryan wrote:</p>
+<blockquote><p>This is such a massively different way of thinking about distributed systems in business IT that I’m surprised no ones head has exploded yet.</p></blockquote>
+<p><b>BRAOUMMMM!</b> (the sound of Alex&#8217;s head exploding)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-532</link>
+		<pubDate>Tue, 04 Oct 2005 18:09:29 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-532</guid>
+					<description>&lt;p&gt;Simon said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I got a very strong whiff of BS from that article. You still need plenty of server-side logic for an Ajax application - aside from anything else, the security implications of letting the client query the database directly are horrifying. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Like I said, I don't think he was suggesting that you let the browser straight through to the database. That's insane. There's just no way he was suggesting that.&lt;/p&gt;
+
+&lt;p&gt;And there's a huge difference between what you call &quot;server-side logic&quot; and what Enterprise IT heads call &quot;server-side logic&quot;. We're talking about massive three tier systems, distributed objects (DCOM/CORBA), messy session replication, EJB entity beans, etc. I think its this level of bloat Phil is refering to here. He's saying exactly what we've been saying: you don't need it. Shared nothing, simple languages, etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;More to the point, if you are using Ajax techniques responsibly stuff should still be more-or-less usable without the Ajax bells and whistles. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of course. But your seeing the &quot;web page&quot; communicate with the web server in a way that is very new. It requires you to think about the web server as a middle tier - an integration server, not just a dumb box for serving pages. It's fronting your business logic and exposing your resources. This is such a massively different way of thinking about distributed systems in business IT that I'm surprised no ones head has exploded yet.&lt;/p&gt;
+
+&lt;p&gt;I think we're all way to close the web to understand the significance of what he's saying here and the audience he's saying it to. This kind of thinking (that web servers are very powerful components for composing systems) has never been accepted in business IT. Simon, you've accepted it for, what, seven years now? I think your underestimating how far ahead of the curve you are.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is Phil Wainewright actually a developer? From his bio it looks like he’s just a pundit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Phil's credentialed as far as I'm concerned. I just caught &lt;a href=&quot;http://patricklogan.blogspot.com/2005/10/software-education.html&quot; rel=&quot;nofollow&quot;&gt;this quote from him&lt;/a&gt; on Patrick Logan's blog:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I've determined that I'm no longer convinced that software 
+  engineering, at least as it's commonly discussed and taught, 
+  is what I want to prepare students to do. I try to focus them 
+  on being innovative, entrepreneurial, and working with dynamic 
+  languages on networked applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I don't know his background but he's one of the few writers on mainstream IT sites who I see consistently &lt;em&gt;trying&lt;/em&gt; to steer business IT toward the web. He's not a Web 2.0 luminary or anything but a large portion of the people who read him haven't even heard of Web 2.0.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Simon said:</p>
+<blockquote>
+<p>I got a very strong whiff of BS from that article. You still need plenty of server-side logic for an Ajax application - aside from anything else, the security implications of letting the client query the database directly are horrifying. </p>
+</blockquote>
+<p>Like I said, I don&#8217;t think he was suggesting that you let the browser straight through to the database. That&#8217;s insane. There&#8217;s just no way he was suggesting that.</p>
+<p>And there&#8217;s a huge difference between what you call &#8220;server-side logic&#8221; and what Enterprise IT heads call &#8220;server-side logic&#8221;. We&#8217;re talking about massive three tier systems, distributed objects (DCOM/CORBA), messy session replication, EJB entity beans, etc. I think its this level of bloat Phil is refering to here. He&#8217;s saying exactly what we&#8217;ve been saying: you don&#8217;t need it. Shared nothing, simple languages, etc.</p>
+<blockquote>
+<p>More to the point, if you are using Ajax techniques responsibly stuff should still be more-or-less usable without the Ajax bells and whistles. </p>
+</blockquote>
+<p>Of course. But your seeing the &#8220;web page&#8221; communicate with the web server in a way that is very new. It requires you to think about the web server as a middle tier - an integration server, not just a dumb box for serving pages. It&#8217;s fronting your business logic and exposing your resources. This is such a massively different way of thinking about distributed systems in business IT that I&#8217;m surprised no ones head has exploded yet.</p>
+<p>I think we&#8217;re all way to close the web to understand the significance of what he&#8217;s saying here and the audience he&#8217;s saying it to. This kind of thinking (that web servers are very powerful components for composing systems) has never been accepted in business IT. Simon, you&#8217;ve accepted it for, what, seven years now? I think your underestimating how far ahead of the curve you are.</p>
+<blockquote>
+<p>Is Phil Wainewright actually a developer? From his bio it looks like he’s just a pundit.</p>
+</blockquote>
+<p>Phil&#8217;s credentialed as far as I&#8217;m concerned. I just caught <a href="http://patricklogan.blogspot.com/2005/10/software-education.html">this quote from him</a> on Patrick Logan&#8217;s blog:</p>
+<blockquote>
+<p>I&#8217;ve determined that I&#8217;m no longer convinced that software<br />
+  engineering, at least as it&#8217;s commonly discussed and taught,<br />
+  is what I want to prepare students to do. I try to focus them<br />
+  on being innovative, entrepreneurial, and working with dynamic<br />
+  languages on networked applications.</p>
+</blockquote>
+<p>I don&#8217;t know his background but he&#8217;s one of the few writers on mainstream IT sites who I see consistently <em>trying</em> to steer business IT toward the web. He&#8217;s not a Web 2.0 luminary or anything but a large portion of the people who read him haven&#8217;t even heard of Web 2.0.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-531</link>
+		<pubDate>Tue, 04 Oct 2005 15:46:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-531</guid>
+					<description>&lt;p&gt;Sorry, I didn't take nearly enough time to explain my position. What I wanted to point out was that AJAX on the client is causing people to think about their normal web server as an integration point, which is what I've been advocating since this site went up. Thinking about your web server as an integration point isn't specific to AJAX, but AJAX is showing the value in that way of thinking.&lt;/p&gt;
+
+&lt;p&gt;I'm not suggesting that we let the browser through to the database, I'm just saying that the same techniques we've been using to serve pages in a simple manner (MVC, templates on top of a database, with some business logic organized in some basic and simple way) provides a large portion of the functionality people have been pursuing in the big enterprise application server area.&lt;/p&gt;
+
+&lt;p&gt;The feeling I got from Phil's article isn't that he was suggesting that there's nothing between the client and the database, I thought he was suggesting that there's no middle &quot;application tier&quot;. It's a web server with an embedded dynamic language and a database. One very typical scenario for enterprise applications is the three tier architecture: a web server, a middle-tier (application server) exposing remote objects, and a database. What I thought Phil was realizing in this article is that the middle tier is going away. Portions of it are shifting up to the client and other portions have become overkill with the rise of the shared nothing architecture / dynamic languages.&lt;/p&gt;
+
+&lt;p&gt;My apologies for a really vague post. I didn't go into enough depth in my initial post. I knew I hadn't when I posted it. My bad.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Sorry, I didn&#8217;t take nearly enough time to explain my position. What I wanted to point out was that AJAX on the client is causing people to think about their normal web server as an integration point, which is what I&#8217;ve been advocating since this site went up. Thinking about your web server as an integration point isn&#8217;t specific to AJAX, but AJAX is showing the value in that way of thinking.</p>
+<p>I&#8217;m not suggesting that we let the browser through to the database, I&#8217;m just saying that the same techniques we&#8217;ve been using to serve pages in a simple manner (MVC, templates on top of a database, with some business logic organized in some basic and simple way) provides a large portion of the functionality people have been pursuing in the big enterprise application server area.</p>
+<p>The feeling I got from Phil&#8217;s article isn&#8217;t that he was suggesting that there&#8217;s nothing between the client and the database, I thought he was suggesting that there&#8217;s no middle &#8220;application tier&#8221;. It&#8217;s a web server with an embedded dynamic language and a database. One very typical scenario for enterprise applications is the three tier architecture: a web server, a middle-tier (application server) exposing remote objects, and a database. What I thought Phil was realizing in this article is that the middle tier is going away. Portions of it are shifting up to the client and other portions have become overkill with the rise of the shared nothing architecture / dynamic languages.</p>
+<p>My apologies for a really vague post. I didn&#8217;t go into enough depth in my initial post. I knew I hadn&#8217;t when I posted it. My bad.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: curthibbs</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-530</link>
+		<pubDate>Tue, 04 Oct 2005 13:20:13 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-530</guid>
+					<description>&lt;p&gt;It all depends on your definition of &quot;application server&quot;. In the end, I think that spliiting hairs over this definition is pointless. &lt;/p&gt;
+
+&lt;p&gt;There is a continuum between these two extremes: dumb-client and all the application logic residing on the server and smart-client with little or no logic on server (database only?). Desktop applications fit at one end and web 1.0 sites fir at the other. What AJAX does is shift the focus point on the line between these two extremes closer to somewhere in the middle.&lt;/p&gt;
+
+&lt;p&gt;The point is that there are things that the server does well and things that the client does well. Finding that ideal balance is what AJAX enables.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>It all depends on your definition of &#8220;application server&#8221;. In the end, I think that spliiting hairs over this definition is pointless. </p>
+<p>There is a continuum between these two extremes: dumb-client and all the application logic residing on the server and smart-client with little or no logic on server (database only?). Desktop applications fit at one end and web 1.0 sites fir at the other. What AJAX does is shift the focus point on the line between these two extremes closer to somewhere in the middle.</p>
+<p>The point is that there are things that the server does well and things that the client does well. Finding that ideal balance is what AJAX enables.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: as days pass by &#187; Not a bunch of pages</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-529</link>
+		<pubDate>Tue, 04 Oct 2005 08:24:33 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-529</guid>
+					<description>&lt;p&gt;[...] Ryan over at lesscode.org often speaks the truth, but never more so than in The New Application Server: What’s more is that all that is needed to transform the basic setup into an integration platform is to stop thinking about the web as a bunch of “pages” and start using HTTP for what it’s worth. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Ryan over at lesscode.org often speaks the truth, but never more so than in The New Application Server: What’s more is that all that is needed to transform the basic setup into an integration platform is to stop thinking about the web as a bunch of “pages” and start using HTTP for what it’s worth. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/10/03/the-new-app-server/#comment-528</link>
+		<pubDate>Tue, 04 Oct 2005 04:51:07 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/03/the-new-app-server/#comment-528</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;#comment-527&quot; rel=&quot;nofollow&quot;&gt;Alister&lt;/a&gt;: you're making calls to the server, but it need not be an application server per se. It &lt;em&gt;could&lt;/em&gt; be nothing but a relatively thin layer over a database that just exposes the data in web-friendly fashion; and it wouldn't even be completely stupid or crazy, assuming this layer were coupled to the database via, say, stored procedures rather than allowing direct manipulation (cf. &lt;a href=&quot;#comment-526&quot; rel=&quot;nofollow&quot;&gt;Mike's comment&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Which is an idea I like, at least in theory---in this world, the server's just the model, and the view &lt;em&gt;and the controller&lt;/em&gt; have migrated to the client. (As opposed to the web of today, where the server is all three, and the client is merely a pretty dumb extension of the view.)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="#comment-527">Alister</a>: you&#8217;re making calls to the server, but it need not be an application server per se. It <em>could</em> be nothing but a relatively thin layer over a database that just exposes the data in web-friendly fashion; and it wouldn&#8217;t even be completely stupid or crazy, assuming this layer were coupled to the database via, say, stored procedures rather than allowing direct manipulation (cf. <a href="#comment-526">Mike&#8217;s comment</a>).</p>
+<p>Which is an idea I like, at least in theory&#8212;in this world, the server&#8217;s just the model, and the view <em>and the controller</em> have migrated to the client. (As opposed to the web of today, where the server is all three, and the client is merely a pretty dumb extension of the view.)</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.371 seconds -->
+<!-- Cached page served by WP-Cache -->

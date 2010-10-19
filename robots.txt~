@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /projects/kid/browser/
+Disallow: /projects/kid/changeset/
+Disallow: /projects/pudge/browser/
+Disallow: /projects/pudge/changeset/
+Disallow: /projects/buildutils/browser/
+Disallow: /projects/buildutils/changeset/

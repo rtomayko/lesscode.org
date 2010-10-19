@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Web Services Infrastructure: Kid Templating</title>
+	<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:44 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: rch</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-744</link>
+		<pubDate>Mon, 14 Nov 2005 01:18:32 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-744</guid>
+					<description>&lt;p&gt;I'm replacing JET+CodeGen with a Kid friendly implementation.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;m replacing JET+CodeGen with a Kid friendly implementation.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: The New &#8220;Application Server&#8221; [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-520</link>
+		<pubDate>Mon, 03 Oct 2005 16:36:58 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-520</guid>
+					<description>&lt;p&gt;[...] The new &amp;#8220;Application Server&amp;#8221; is a web server, a dynamic language, and templating. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] The new &#8220;Application Server&#8221; is a web server, a dynamic language, and templating. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Parand Tony Darugar</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-451</link>
+		<pubDate>Wed, 28 Sep 2005 00:42:14 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-451</guid>
+					<description>&lt;p&gt;Huh. I had no idea kid started life as a templating solution for web services. I've been looking for something like that and never thought to look at kid. I guess I'll have to give it a whirl.&lt;/p&gt;
+
+&lt;p&gt;What I'd really like is a simple way to generate a sample SOAP message, grab the raw XML of the message, put it into template form, and allow very easy and hopefully very high performance filling in of the template values. Then you get a very light and fast WS stack.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Huh. I had no idea kid started life as a templating solution for web services. I&#8217;ve been looking for something like that and never thought to look at kid. I guess I&#8217;ll have to give it a whirl.</p>
+<p>What I&#8217;d really like is a simple way to generate a sample SOAP message, grab the raw XML of the message, put it into template form, and allow very easy and hopefully very high performance filling in of the template values. Then you get a very light and fast WS stack.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Zopeジャンキー日記</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-447</link>
+		<pubDate>Mon, 26 Sep 2005 11:35:43 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-447</guid>
+					<description>&lt;p&gt;&lt;strong&gt;ポステルの法則&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&quot;Be conservative in what you do; be liberal in what you accept from others.&quot;
+（大意 : 自分がすることには保守的であれ。他人から受けとるものには寛容であれ。）&lt;/p&gt;
+
+&lt;p&gt;これはジョン・ポステルという人が言...&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><strong>ポステルの法則</strong></p>
+<p>&#8220;Be conservative in what you do; be liberal in what you accept from others.&#8221;<br />
+（大意 : 自分がすることには保守的であれ。他人から受けとるものには寛容であれ。）</p>
+<p>これはジョン・ポステルという人が言&#8230;</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Templates: Good or Evil? &#187; Archive &#187; Blog &#187; 0xDECAFBAD</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-443</link>
+		<pubDate>Mon, 26 Sep 2005 01:16:59 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-443</guid>
+					<description>&lt;p&gt;[...] This cry and whine that draconian handling will break your page and make your users suffer for you if you have a single error is just another legacy of HTML we’ve gotten used to: our toolchains tend to be of the “glue strings together” (aka templates) variety. &amp;#8230; There should never be any part of your publishing toolchain just gluing strings together. Ever.Source: Aristotle Pagaltzis in a comment on &amp;#8220;The Future: HTML or XHTML&amp;#8221;There’s no rule that says templates must only be used to generate HTML. Indeed, many of the RSS and Atom feeds in the wild are generated from some form of template. They are never automatically-generated-behind-the-scenes using language bindings and are very rarely generated using some kind of DOM/SAX API.Source: Web Services Infrastructure: Kid Templating [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] This cry and whine that draconian handling will break your page and make your users suffer for you if you have a single error is just another legacy of HTML we’ve gotten used to: our toolchains tend to be of the “glue strings together” (aka templates) variety. &#8230; There should never be any part of your publishing toolchain just gluing strings together. Ever.Source: Aristotle Pagaltzis in a comment on &#8220;The Future: HTML or XHTML&#8221;There’s no rule that says templates must only be used to generate HTML. Indeed, many of the RSS and Atom feeds in the wild are generated from some form of template. They are never automatically-generated-behind-the-scenes using language bindings and are very rarely generated using some kind of DOM/SAX API.Source: Web Services Infrastructure: Kid Templating [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Laurent Szyster</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-442</link>
+		<pubDate>Mon, 26 Sep 2005 00:44:51 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-442</guid>
+					<description>&lt;p&gt;If WS so difficult to explain, there is indeed one good reason:&lt;/p&gt;
+
+&lt;p&gt;&quot;It’s the concept that’s opaque.&quot;&lt;/p&gt;
+
+&lt;p&gt;I would rather say &quot;superstitious&quot; than &quot;opaque&quot;.&lt;/p&gt;
+
+&lt;p&gt;Web Services, as understood and implemented by the software industry, is a re-run of EDI standard directories, segment definitions and code list tables for ... what you call SOA (yet another buzz around the good-old hyperlinked application made of a web of stateless functions).&lt;/p&gt;
+
+&lt;p&gt;Web Services standards like RDF or SOAP are all about inter-operability in a network of peer applications, precisely like a Service Oriented Application The promise of seamless interconnection in a web of application components, something like &quot;instant universal web API&quot;.&lt;/p&gt;
+
+&lt;p&gt;If the experience of X12, UNEDIFACT, EDI/XML or SOAP are to be considered, the Web Services standards promoted face a grim future of diverging proprietary extensions, standard fragmentation and obsolete implementations. Actually, schemas, RDF or SOAP 1.3 make inter-operability and development of web SOA neither simpler nor faster. &lt;/p&gt;
+
+&lt;p&gt;People do stick to a proven LAMP stack:&lt;/p&gt;
+
+&lt;p&gt;URI as simple interfaces, XML as REST response
+  for PHP/MySQL, Perl/Postgres, Python/BSDDB or any other similar pair
+  XSLT, CSS and/or JavaScript for display&lt;/p&gt;
+
+&lt;p&gt;eventually an XML/RPC API emerges once the application is stable, and grows as more services are added.&lt;/p&gt;
+
+&lt;p&gt;It works for front applications, there is no reason to use another stack at the back to connect with peer applications, trading partners, syndicate directories, etc.&lt;/p&gt;
+
+&lt;p&gt;So, maybe the pair&lt;/p&gt;
+
+&lt;p&gt;Kid/Python&lt;/p&gt;
+
+&lt;p&gt;which fits very in the stack well between &lt;/p&gt;
+
+&lt;p&gt;.../JavaScript/XSLT/HTML/CSS/XML&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;Apache/SQL/...&lt;/p&gt;
+
+&lt;p&gt;can provide a better development environment for LAMP based back-offices integration than a J2EE or .NET monster.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>If WS so difficult to explain, there is indeed one good reason:</p>
+<p>&#8220;It’s the concept that’s opaque.&#8221;</p>
+<p>I would rather say &#8220;superstitious&#8221; than &#8220;opaque&#8221;.</p>
+<p>Web Services, as understood and implemented by the software industry, is a re-run of EDI standard directories, segment definitions and code list tables for &#8230; what you call SOA (yet another buzz around the good-old hyperlinked application made of a web of stateless functions).</p>
+<p>Web Services standards like RDF or SOAP are all about inter-operability in a network of peer applications, precisely like a Service Oriented Application The promise of seamless interconnection in a web of application components, something like &#8220;instant universal web API&#8221;.</p>
+<p>If the experience of X12, UNEDIFACT, EDI/XML or SOAP are to be considered, the Web Services standards promoted face a grim future of diverging proprietary extensions, standard fragmentation and obsolete implementations. Actually, schemas, RDF or SOAP 1.3 make inter-operability and development of web SOA neither simpler nor faster. </p>
+<p>People do stick to a proven LAMP stack:</p>
+<p>URI as simple interfaces, XML as REST response<br />
+  for PHP/MySQL, Perl/Postgres, Python/BSDDB or any other similar pair<br />
+  XSLT, CSS and/or JavaScript for display</p>
+<p>eventually an XML/RPC API emerges once the application is stable, and grows as more services are added.</p>
+<p>It works for front applications, there is no reason to use another stack at the back to connect with peer applications, trading partners, syndicate directories, etc.</p>
+<p>So, maybe the pair</p>
+<p>Kid/Python</p>
+<p>which fits very in the stack well between </p>
+<p>&#8230;/JavaScript/XSLT/HTML/CSS/XML</p>
+<p>and</p>
+<p>Apache/SQL/&#8230;</p>
+<p>can provide a better development environment for LAMP based back-offices integration than a J2EE or .NET monster.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-436</link>
+		<pubDate>Sun, 25 Sep 2005 00:01:37 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comment-436</guid>
+					<description>&lt;p&gt;It's not a big secret that Web Services is a paradigm that's ... what's the word I'm looking for?.... problematic!&lt;/p&gt;
+
+&lt;p&gt;Even if we were to stop looking for a new platform, a new infrastructure, and adopt your approach (which, by the way, makes absolutely perfect sense), Web Services would still remain problematic. Basically, the very idea that you could set up your business on the premises of deductive reasoning is faulty to the core. Regardless of the underlying enabling technology.&lt;/p&gt;
+
+&lt;p&gt;It's the concept that's opaque.&lt;/p&gt;
+
+&lt;p&gt;SOA, on the other hand, is much clearer, and for it your proposal makes a very nice fit. I'm absolutely buying it!&lt;/p&gt;
+
+&lt;p&gt;SOA players are the first class citizens in the information exchange matrix. They communicate with each other via complex messages -- a perfect scenario for what you're describing above. I see no problem with that at all (and frankly I see lots of potential problems with those bus architectures; but hey, them enterprise consultants need to make a living too!)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>It&#8217;s not a big secret that Web Services is a paradigm that&#8217;s &#8230; what&#8217;s the word I&#8217;m looking for?&#8230;. problematic!</p>
+<p>Even if we were to stop looking for a new platform, a new infrastructure, and adopt your approach (which, by the way, makes absolutely perfect sense), Web Services would still remain problematic. Basically, the very idea that you could set up your business on the premises of deductive reasoning is faulty to the core. Regardless of the underlying enabling technology.</p>
+<p>It&#8217;s the concept that&#8217;s opaque.</p>
+<p>SOA, on the other hand, is much clearer, and for it your proposal makes a very nice fit. I&#8217;m absolutely buying it!</p>
+<p>SOA players are the first class citizens in the information exchange matrix. They communicate with each other via complex messages &#8212; a perfect scenario for what you&#8217;re describing above. I see no problem with that at all (and frankly I see lots of potential problems with those bus architectures; but hey, them enterprise consultants need to make a living too!)</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.321 seconds -->
+<!-- Cached page served by WP-Cache -->

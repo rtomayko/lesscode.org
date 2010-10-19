@@ -1,0 +1,1909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Gosling Didn&#8217;t Get The Memo</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2006/01/16/i%e2%80%99ll-be-speaking-at-canada-on-rails-conference/">I’ll Be Speaking At Canada On Rails Conference</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/">Time To Stop Obsessing About The Infrastructure?</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-126"><a href="http://lesscode.org/2006/03/12/someone-tell-gosling/" rel="bookmark" title="Permanent Link: Gosling Didn&#8217;t Get The Memo">Gosling Didn&#8217;t Get The Memo</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-fight-you/" title="View all posts in Then they fight you..." rel="category tag">Then they fight you...</a> 
+      on 12. March 2006</small>
+
+			<div class="entrytext">
+				<p>I&#8217;ve been blissfully neglecting this site for months with the
+assumption that a large part of our goal was completed. After watching good
+people like <a href="http://www.google.com/search?hl=en&amp;lr=&amp;safe=off&amp;q=+site%3Anews.com.com+%22Martin+LaMonica%22+%28LAMP+OR+ruby+OR+python+OR+php%29&amp;btnG=Search" title="Martin's Recent Articles">Martin LaMonica</a> and <a href="http://www.google.com/search?hl=en&amp;lr=&amp;safe=off&amp;q=site%3Ainfoworld.com+udell+%28php+OR+python+OR+ruby+OR+java%29&amp;btnG=Search" title="Jon Udell's Recent Articles">Jon Udell</a> balance out the 
+mainstream tech press with coverage of lessish tools and languages, <em>and</em> having seen
+forward looking companies like <a href="http://redmonk.com/">RedMonk</a> inject
+themselves into the traditional analyst racket with smart, honest, and
+unignorable critique, <em>and</em> having seen herds of Java luminaries migrate 
+to simpler, more agile tools and languages, <em>and</em> after hearing Bill Gates 
+say that <a href="http://lesscode.org/2005/09/20/bill-gates/">less code was the only metric</a>,
+<em>and</em> having watched
+<a href="http://loudthinking.com/">David</a>, <a href="http://www.dehora.net/journal/">Bill</a>, 
+<a href="http://blog.ianbicking.org/">Ian</a>, <a href="http://www.holovaty.com/">Adrian</a>, 
+<a href="http://dirtsimple.org/">Phillip</a>, <a href="http://plasmasturm.org/">Aristotle</a>, 
+<a href="http://www.sitepoint.com/blogs/2006/02/21/a-pro-php-rant/">Harry</a>,
+<a href="http://www.markbaker.ca/2002/09/Blog/">Mark</a>, <a href="http://www.mnot.net/">Mark</a>, 
+<a href="http://www.chadfowler.com/index.cgi/Computing/Programming/Ruby/GoslingThinksRubyJustGeneratesWebPages.rdoc,v">Chad</a>,
+<a href="http://blog.curthibbs.us/">Curt</a>, 
+<a href="http://www.cincomsmalltalk.com/blog/blogView">James</a> and <em>many</em> other 
+extremely talented programmers dismantle all the common hollow arguments 
+for superfluous complexity and replace them with simple methodologies 
+and <em>working code</em>, after all that I just figured there wasn&#8217;t much
+to do around here.</p>
+
+<p>But I completely forgot about <a href="http://java.sys-con.com/read/193146.htm">James Gosling</a>:</p>
+
+<blockquote>
+  <p>&#8220;There have been a number of language[s] coming up lately,&#8221; noted 
+  James Gosling today at Sun&#8217;s World Wide Education &amp; Research Conference 
+  in New York City when asked if Java was in any kind of danger from the 
+  newcomers. &#8220;PHP and Ruby are perfectly fine systems,&#8221; he continued, 
+  &#8220;but they are scripting languages and get their power through 
+  specialization: they just generate web pages. But none of them attempt 
+  any serious breadth in the application domain and they both have really 
+  serious scaling and performance problems.&#8221;</p>
+</blockquote>
+
+<p>We&#8217;ll get back to that in a second.</p>
+
+<p>I believe that a majority of people in IT now consider dynamic languages
+like Perl, Ruby, Python, and PHP to be very much capable of sitting at
+the table with Java and .NET for a wide range of common technical
+problems.  Similarly, straight-forward systems like REST, Microformats,
+and Atom are generally considered legitimate alternatives to the
+vendor/analyst/press peddled technologies like WS-* for a wide range of
+integration issues. In other words, I could walk into most shops during
+a technology evaluation and put these technologies on the table as
+legitimate considerations without being too worried about being laughed
+out of the room. This is not to claim superiority for a given task, just
+that the competitive playing field is beginning to level off.</p>
+
+<p>This was not the case last year at this time, so what happened?
+Something must have changed. None of these technologies underwent huge feature or stability increases in the past year. I&#8217;m unaware of any
+breakthrough in scaling these systems past what they&#8217;re already capable
+of. There have been some improvements in running dynamic languages on
+the mainstream VMs, which many predicted would lead to quick acceptance,
+but that&#8217;s not it either. So what changed?</p>
+
+<p>Minds changed. Respectful debate, honesty, passion, and working systems
+created an environment that not even the most die-hard enterprise
+architect could ignore, no matter how buried in Java design
+patterns. Those who placed technical excellence and pragmaticism above
+religious attachment and vendor cronyism were easily convinced of the
+benefits that broadening their definition of acceptable technologies
+could bring.</p>
+
+<p>The people who are still unconvinced are those that just don&#8217;t care or
+are too lazy to spend a small amount of time researching and validating
+the arguments, which brings us back nicely to James Gosling&#8217;s recent
+statements.</p>
+
+<h3>On The Current Quantity of Language</h3>
+
+<blockquote>
+  <p>&#8220;There have been a number of language[s]</p>
+</blockquote>
+
+<p>This part is notable because it&#8217;s actually true. There have, in fact,
+been <em>some</em> number of languages. While I stand steadfastly by James&#8217;
+analysis of the current quantity of language, we will quickly diverge in
+opinion from here.</p>
+
+<p>A quick note to aspiring Java pundits: play close attention to the next
+few statements. While none of them have any basis in reality, they have
+proven sufficient in creating fear and uncertainty in the minds of those
+who are evaluating these technologies.</p>
+
+<h3>On &#8220;Scripting Languages&#8221;</h3>
+
+<blockquote>
+  <p>&#8220;PHP and Ruby are perfectly fine systems,&#8221; he continued, &#8220;but they are
+  scripting languages</p>
+</blockquote>
+
+<p>James pulled this directly out of &#8220;Effective Java Advocacy Beans&#8221;, section 6.8.3 
+&#8220;Dealing with questions on dynamic languages&#8221;:</p>
+
+<p><cite>First, call anything not statically compiled a &#8220;scripting
+language&#8221;. Attempt to insinuate that all languages without an explicit
+compilation step are not to be taken seriously and that they are all
+equivalently shitty. Best results are achieved when you provide no
+further explanation of the pros and cons of static and dynamic
+compilation and/or typing and instead allow the reader to simply assume
+that there are a wealth of benefits and very few, if any, disadvantages
+to static compilation. While the benefits of dynamic languages&#8211;first
+realized millions of years ago in LISP and Smalltalk&#8211;are well
+understood in academia, IT managers and Sun certified developers are
+perfectly accepting of our static = professional / dynamic = amateurish
+labeling scheme.</cite></p>
+
+<p><cite>This technique is also known to result in dynamic language advocates
+going absolute bat-shit crazy and making complete fools of themselves.
+There have been no fewer than three head explosions recorded as a result
+of this technique.</cite></p>
+
+<p><cite>Also, avoid the term &#8220;dynamic language&#8221; at all cost. It&#8217;s important that
+the reader not be exposed to the concepts separating <strong>scripting languages</strong>
+like bash, MS-DOS batch, and perl-in-the-eighties from
+general purpose <strong>dynamic languages</strong> like Ruby, Python, Smalltalk, and
+Perl present day.</cite></p>
+
+<p>We&#8217;ve tried our best to clear up any ambiguity related to the term
+&#8220;scripting language&#8221; in the past:</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Scripting_language#General-purpose_dynamic_languages">Wikipedia: Scripting Language</a>
+describes the difference between specialized scripting languages and general
+purpose dynamic languages.</li>
+<li><a href="http://www.devsource.com/print_article2/0,2533,a=148207,00.asp">The State of the Scripting Universe</a>
+Van Rossum, Thomas, Hobbs, Conway, Pall weigh in on this misconception and
+others.</li>
+<li><a href="http://naeblis.cx/rtomayko/2005/02/18/web-dominated-by-j2ee">Web Dominated by J2EE?</a>
+is a rant on an article spreading the same misinformation.</li>
+<li><a href="http://www.loudthinking.com/arc/000260.html">Arrogance, ignorance, and a blinding Sun</a>
+is David Heinemeier Hanson correcting the same misinformation somewhere else.</li>
+<li><a href="http://blogs.sun.com/roller/page/jag?entry=radlab_scripting_and_scale#comments">RADlab, scripting and scale</a>,
+a blog entry by Gosling saying the exact same stuff and a comment thread
+full of people correcting Gosling&#8217;s dated evaluation of dynamic languages.</li>
+</ul>
+
+<h3>On &#8220;They Just Generate Web Pages&#8221;</h3>
+
+<blockquote>
+  <p>and get their power through specialization: they just generate web
+  pages. </p>
+</blockquote>
+
+<p>Gosling shows his ignorance regarding the current feature set provided by 
+dynamic languages and what people are using them for. A cursory glance over
+<a href="http://rubyforge.org/softwaremap/trove_list.php">rubyforge.org&#8217;s project tree</a>
+reveals that the number of projects that &#8220;just generate web pages&#8221; are really
+quite small: 151 of 1,342 total projects are registered under 
+<a href="http://rubyforge.org/softwaremap/trove_list.php?form_cat=96">Internet::WWW/HTTP::Dynamic Content</a>
+and many of those projects are related to using the web (HTTP/URIs) as a 
+platform for integration more than they are for &#8220;generating web pages&#8221;. I 
+expect Perl and Python break down even wider.  </p>
+
+<p><em>Update</em>: Seo Sanghyeon provides <a href="http://lesscode.org/2006/03/12/someone-tell-gosling/#comment-1171">a list of popular Python related applications</a> that have nothing to do with generating web content.</p>
+
+<p>I&#8217;d also like to note that exposing resource representations via
+HTTP/URLs has been moving into areas other than &#8220;generating web pages&#8221;.
+This was the plan when HTTP was originally designed but has only
+recently begun to really catch on. Specialization and enhanced
+capabilities related to generating and serving hyper-media over HTTP are
+and will continue to increase in value. The web server is becoming a key
+piece of integration infrastructure. What James refers to as &#8220;generating
+web pages&#8221; is now a general purpose technique for exposing resources to
+anything outside of the application process.</p>
+
+<h3>On &#8220;breadth of application domain&#8221;</h3>
+
+<blockquote>
+  <p>But none of them attempt any serious breadth in the application
+  domain </p>
+</blockquote>
+
+<p>It&#8217;s hard to determine what kind of breadth is missing when you
+consider the capabilities provided by modern dynamic language
+environments, the platforms they run on, and the extensions and bridges
+that allow them to use damn near any other program or library
+available. James uses the example of &#8220;interplanetary navigation&#8221;, which is
+a really good example except that it isn&#8217;t; most of us aren&#8217;t working at
+NASA and those of us who are working at NASA are doing things like
+trying to get the payroll and accounting systems working together or
+building simple productivity applications. Gosling seems bent on meeting
+the needs of the 20% while leaving the 80% with a platform that&#8217;s
+<a href="http://www.jroller.com/page/obie?entry=productivity_arbitrage">losing bids to dynamic/agile shops</a>.</p>
+
+<p><a href="http://www.loudthinking.com/arc/000571.html">&#8220;That&#8217;s the kind of power I do not envy&#8221;</a>.</p>
+
+<p>Lastly, <a href="http://peteryared.blogspot.com/">Peter Yared</a> (former Sun hacker)
+and the rest of the folks over at <a href="http://www.activegrid.com/">ActiveGrid</a> 
+should also be interested to learn that no one is attempting to widen the
+viability of dynamic languages in the &#8220;application domain&#8221;.</p>
+
+<h3>On Scaling and Performance</h3>
+
+<blockquote>
+  <p>and they both have really serious scaling and performance problems.</p>
+</blockquote>
+
+<p>It is simply not possible for me to add anything to the massive set of
+material addressing this topic.</p>
+
+<p>Scalability:</p>
+
+<ul>
+<li><a href="http://www.sitepoint.com/blogs/2004/07/02/why-php-scales/">Why PHP Scales</a></li>
+<li><a href="http://talks.php.net/show/lt2004-lamp/">Large Scale PHP</a></li>
+<li><a href="http://www.onjava.com/pub/a/onjava/2003/10/15/php_scalability.html">The PHP Scalability Myth</a></li>
+<li><a href="http://www.sitepoint.com/blogs/2004/07/01/the-j2ee-guy-still-doesnt-get-php/">The J2EE guy still doesn&#8217;t get PHP</a></li>
+<li><a href="http://naeblis.cx/rtomayko/2005/05/28/ibm-poop-heads">IBM poop heads say LAMP users need to &#8220;grow up&#8221;</a></li>
+<li><a href="http://www.loudthinking.com/arc/000479.html">It&#8217;s boring to scale with Ruby on Rails</a></li>
+<li><a href="http://tech.rufy.com/articles/2005/07/29/does-ruby-on-rails-scale-a-clear-and-definitive-answer">Does Ruby on Rails scale? A clear and definitive answer</a></li>
+<li><a href="http://lesscode.org/2005/10/08/new-take-on-scalability/">New Take On Scalability</a></li>
+<li><a href="http://raibledesigns.com/page/rd?anchor=scaling_with_rails">Scaling with Rails</a></li>
+<li><a href="http://discuss.joelonsoftware.com/default.asp?joel.3.159134">What&#8217;s all the fuss about Ruby on Rails</a></li>
+</ul>
+
+<p>Performance:</p>
+
+<ul>
+<li><a href="http://talks.php.net/show/hpp">High performance PHP</a></li>
+<li><a href="http://twistedmatrix.com/~glyph/rant/python-vs-java.html">A subjective analysis of two high-level, object-oriented languages</a></li>
+<li><a href="http://public.yahoo.com/~radwin/talks/yahoo-phpcon2002.htm">Making the Case for PHP at Yahoo!</a></li>
+<li><a href="http://blogs.pragprog.com/cgi-bin/pragdave.cgi/Tech/Ruby/LanguageChoice.rdoc">Is Ruby Better Than &#8230;?</a></li>
+<li><a href="http://railsexpress.de/blog/">RailsExpress.blog</a></li>
+</ul>
+
+<h3>Why people are upset</h3>
+
+<p>There have been multiple responses to Gosling&#8217;s statements ranging in
+sentiment from outrage to amusement:</p>
+
+<ul>
+<li>Curt Hibbs: <a href="http://blog.curthibbs.us/articles/2006/03/10/its-sad-james-gosling-is-clueless">It&#8217;s sad, James Gosling is clueless</a></li>
+<li>Chad Fowler: <a href="http://www.chadfowler.com/index.cgi/Computing/Programming/Ruby/GoslingThinksRubyJustGeneratesWebPages.rdoc,v">Gosling Thinks Ruby Just Generates Web Pages</a></li>
+<li>David Heinemeier Hansson: <a href="http://www.loudthinking.com/arc/000569.html">Pay no attention to the heathens</a> and 
+<a href="http://www.loudthinking.com/arc/000571.html">Distinguishing power from versatility</a></li>
+<li>Assaf: <a href="http://blog.labnotes.org/2006/03/11/james-gosling-explains-whats-wrong-with-java/">James Gosling Explains what&#8217;s wrong with Java</a></li>
+<li>James Robertson: <a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;entry=3319562412">The Static Empire gets Nervous</a></li>
+<li>Frank Wiles: <a href="http://www.revsys.com/blog/archive/29">Seriously funny</a></li>
+</ul>
+
+<p>All we&#8217;re asking is that you stop spreading misinformation about the
+current state of dynamic languages to the press, analysts, and your
+customers. This does not require you to champion or otherwise support
+these technologies – just stop lying about them. One year ago, this type
+of behavior could be attributed to a lack of documentation and
+discussion on these issues, today it&#8217;s impossible to attribute to
+anything but malice.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2006/03/12/someone-tell-gosling/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">107 Responses to &#8220;Gosling Didn&#8217;t Get The Memo&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-1171">
+			<p class="who"><cite>Seo Sanghyeon</cite>:</p>
+			<p>On &#8220;They Just Generate Web Pages&#8221;, Python has&#8230;</p>
+<ul>
+<li><a href="http://bazaar-vcs.org/">Revision control system</a></li>
+<li><a href="http://scons.org/">Build tool</a></li>
+<li><a href="http://list.org/">Mailing list manager</a></li>
+<li><a href="http://spambayes.sourceforge.net/">Spam filter with Outlook plugin</a></li>
+<li><a href="http://gramps-project.org/">Speciailized GUI program for genealogy</a></li>
+<li><a href="http://matplotlib.sourceforge.net/">Sophiscated plotting library</a></li>
+<li><a href="http://icculus.org/pyddr/">Dancing game</a></li>
+<li><a href="http://pymol.sourceforge.net/">Molecular visualization system</a></li>
+</ul>
+<p>etc ad nauseum. What do they have to do with generating webpages?</p>
+      <p>
+			<small>comment at <a href="#comment-1171" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1172">
+			<p class="who"><cite>Danno</cite>:</p>
+			<p>Here, here!</p>
+<p>lesscode can&#8217;t go away until morecode has been staked through the heart, buried in a Cemetary surrounded by moving water, with it&#8217;s head severed, placed in a silk bag, it&#8217;s mouth stuffed with garlic and rose petals, and consecrated by an Eastern Orthodox Priest.</p>
+      <p>
+			<small>comment at <a href="#comment-1172" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1173">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>I would add <a href="http://www.lua.org/">Lua</a> to the list of Dynamic Languages.<br />
+While it is not a ready-to-go package with lots of std libraries, it is quite fast, small, customizable and has a strong and very smart community.</p>
+<p>Regarding the rest of your article, I&#8217;m with you 100%.</p>
+      <p>
+			<small>comment at <a href="#comment-1173" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1174">
+			<p class="who"><cite><a href='http://www.jooto.com/blog' rel='external ' title='154.20.24.189'>Alex Bunardzic</a></cite>:</p>
+			<p>I wouldn&#8217;t downplay the &#8217;scripting&#8217; aspect, Ryan. Scripting is exactly what scares the shit out of Gosling and other application evangelists.</p>
+<p>A script is <em>not</em> an application. And that&#8217;s exactly where it&#8217;s strength lies.</p>
+<p>This is similar to how spreadsheets used to scare the shit out of people who based their careers on building financial applications. Eventually, they were forced to accept the fact that non-application specialists are going to take over and do their own financial shit using spreadsheets. They had to learn to move on.</p>
+<p>Gosling is keeping his head in the sand. Even the hypothetical future interplanetary staff, which he dragged in as his crown argument, will be writing scripts instead on relying on statically typed Java applications to guide them while they hurl through the space.</p>
+      <p>
+			<small>comment at <a href="#comment-1174" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1175">
+			<p class="who"><cite>Fredrik</cite>:</p>
+			<p>Goslings comments was the funniest thing i&#8217;ve read this year. I have a feeling that &#8220;interplanetary navigation&#8221; will become some kind of standing joke/meme. We are now free to dismiss <em>any</em> technology that lacks &#8220;interplanetary navigation&#8221; features.</p>
+<p>I think <a href="http://www3.ec-lille.fr/~u3p/Glenans/Glenans4.2/run00.html">this applet</a> is the closest anyone have gotten to actually do &#8220;interplanetary navigation&#8221; in java.</p>
+<p>Seriously though. James Gosling is a troll. No reason to waste time on him, other than for the amusement value. Besides, he doesn&#8217;t do &#8220;interplanetary navigation&#8221; so nobody in their right mind would take him seriously.</p>
+      <p>
+			<small>comment at <a href="#comment-1175" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1176">
+			<p class="who"><cite><a href='http://blog.labnotes.org' rel='external ' title='66.245.38.53'>assaf</a></cite>:</p>
+			<p>I don&#8217;t mind if Gosling uses &#8220;scripting languages&#8221;. Beyond the buzz and fud, scripting and dynamic are just features of the language. Features themselves are not that important.</p>
+<p>What&#8217;s important? Can do vs. get it done. Java can do. PHP, Ruby, Python, get it done.</p>
+<p>Interplanetary navigation is still a dream of a far off future. Serving Web pages is the meat of Internet applications, enterprise applications, software as a service. It&#8217;s where most of the development is taking place.</p>
+<p>If you only remember one thing, that Java is about interplanetary navigation, not serving Web pages, that&#8217;s enough to summarize everything that&#8217;s wrong with Java.</p>
+      <p>
+			<small>comment at <a href="#comment-1176" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1177">
+			<p class="who"><cite>erikh</cite>:</p>
+			<p>I still think that all of this language war stuff is malarky. Many languages fill very well-defined (or in some cases, better performing) domains and should be used there. Really, what programmer is worth his salt that only knows and writes in one language? Nitpicking over (relatively) vague terms like &#8220;enterprise&#8221; and &#8220;applications&#8221; seems like something that belongs in a marketing conference or board room than in any technical discussion whatsoever.</p>
+<p>What I guess amazes me more is that someone like Gosling, with his education and apparent experience, is so worried about having his Ivory Tower renovated, has resorted to the technical equivalent of ad hominem attacks.</p>
+      <p>
+			<small>comment at <a href="#comment-1177" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1180">
+			<p class="who"><cite>Steve Reno</cite>:</p>
+			<p><strike>What a maroon.</strike><br />
+One word: Jython.<br />
+(All the power, none of the crap.)</p>
+      <p>
+			<small>comment at <a href="#comment-1180" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1183">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='24.166.51.26'>Ryan Tomayko</a></cite>:</p>
+			<p>Alex said:</p>
+<blockquote>
+<p>I wouldn&#8217;t downplay the &#8217;scripting&#8217; aspect, Ryan. Scripting is exactly what scares the shit out of Gosling and other application evangelists.</p>
+<p>A script is not an application. And that&#8217;s exactly where it&#8217;s strength lies.</p>
+</blockquote>
+<p>Yes, but there&#8217;s an important distinction that&#8217;s not being made here. There are languages specialized for a certain task that are incapable of being used for anything else. I think <code>bash</code> is a good example of a specialized &#8220;scripting language&#8221;. <code>bash</code> is for chaining commands together. That doesn&#8217;t make it bad, it just makes it limited to that specific problem domain. Which, again, is perfectly fine and correct and the best possible way of performing that task. I wouldn&#8217;t want it any other way.</p>
+<p>But Ruby, Python, Perl, Smalltalk, etc. are not specialized scripting languages. They are general purpose programming languages. I believe one of the reasons the term &#8220;scripting language&#8221; has stuck with them is partially because it&#8217;s become so common to create mini-languages (i.e. DSLs) in dynamic languages that are specialized for certain tasks. So it&#8217;s sometimes hard to separate the specialized pieces from the general purpose pieces. Contrast that with static languages, where you are forced to create a completely separate &#8220;scripting language&#8221; when you need to provide a constrained/specialized language (this is why XML is used so heavily in Java for things like O/R mapping, dependency injection, configuration, build processes, etc. &#8212; XML is Java&#8217;s scripting language). In dynamic languages, you are generally not required to leave the core language to get that specialization: you use techniques like meta-programming and DSLs or just include/require/use some designated file at a designated point and let it do it&#8217;s thing with the API.</p>
+<p>Using a general purpose language but extending it in places that would traditionally require &#8220;scripting&#8221; is the fundamental design principal behind Rails, Django, TG, Seaside, etc.</p>
+<p>When someone unfamiliar with modern dynamic languages and experienced in Java hears someone say, &#8220;they&#8217;re scripting languages, and get their power through specialization,&#8221; they are being misled into thinking that these languages are like <code>bash</code> and can be used only for a single specialized scenarios, which is obvious not the case: they can be contrained and specialized as much or as little as required and become useful in <em>multiple</em> specialized scenarios. That&#8217;s really important.</p>
+<p>Now, what I&#8217;m not entirely sure about is where PHP fits in all this. PHP was originally very much specialized for generating web content and that&#8217;s its forte to this day. Like bash, this seems to be working extremely well. Is PHP more suitable as a &#8220;scripting language&#8221; like <code>bash</code> (albeit for generating web content) or a general purpose language like Ruby?</p>
+      <p>
+			<small>comment at <a href="#comment-1183" title="">12. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1187">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='87.78.45.193'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>Ryan: it’s hard to put PHP in any category. It’s geared heavily toward generating web content, though it can also be used outside the context of a web server, and such code doesn’t end nearly up as grotesque as, say, writing servers in <tt>bash</tt> using <tt>netcat</tt>. But PHP has such weak metaprogramming facilities that I wouldn’t use it for anything other than its main domain, and even that is just because of its ubiquity.</p>
+      <p>
+			<small>comment at <a href="#comment-1187" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1188">
+			<p class="who"><cite><a href='http://lazutkin.com/blog/' rel='external ' title='24.1.30.243'>Eugene Lazutkin</a></cite>:</p>
+			<p>You forgot to mention one vastly popular dynamic language: JavaScript. It looks like lowly JavaScript with its Ajax creates the next generation of client-side applications, while Java applets went nowhere in this direction. Need more proof? ;-)</p>
+      <p>
+			<small>comment at <a href="#comment-1188" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1190">
+			<p class="who"><cite>Keith Wright</cite>:</p>
+			<p>I think it might be nice to mention that while a lot of concerns about performance are overblown and FUD, there is a point at which performance becomes a real issue, which many have a habit of handwaving and say that you can always optimize that part to C.</p>
+<p>I am an application programmer, and while huge chunks of the program have very little cause to be concerned about performance (Dialogs and DB I/O and such), real world applications find themselves having to deal with larger and larger datasets, and more and more computations.  In these portions of the program performance cannot be ignored.  The difference between being able to handle 1,000,000 and 10,000,000 data points is the difference between a sale and no sale.</p>
+<p>So when I see how a language like Ruby does in performance tests, often 100 times slower than the leader, I have to ask myself whether it has any place in application programming.  Dynamic language designers shouldn&#8217;t forget that computers are still very much valued in their ability to do computations (hence the name!) and they should&#8217;t cede the whole program space to the venerable compiled warhorses.</p>
+      <p>
+			<small>comment at <a href="#comment-1190" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1191">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>When I was, like, 10 years younger (and too young to care about dynamic languages or beautiful code), I visited the home of <a href="http://www.kipr.org/">KIPR</a> fellow <a href="http://ranier.oact.hq.nasa.gov/staff/lavery.shtm">Dave Lavery</a>, who happens to work for NASA. He was showing off to me some code he had helped write that &#8212; guess what &#8212; <strong>actually did interplanetary navigation</strong>. And guess what &#8212; <em>it was in LISP</em>.</p>
+<p>Now, 10 years ago, I was 12, so don&#8217;t bet your life that my facts are straight. It may have been a prototype of the real thing, but I don&#8217;t think that it was. From what I recall, it was real-time image analysis logic that helped one satellite automatically maneuver itself into connecting with another, via video camera.</p>
+      <p>
+			<small>comment at <a href="#comment-1191" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1192">
+			<p class="who"><cite>alan</cite>:</p>
+			<p>I&#8217;m no expert, but dissing dynamic languages because they don&#8217;t do &#8220;interplanetary navigation&#8221; is just contrarian unhistorical blather.  When NASA wanted a space ship to navigate under its own autonomous control for the first time (Deep Space I, in a planetary shadow), it had the ship&#8217;s computer run dynamic LISP code.  Why?  So solutions could be dynamically provided, if needed, and so that the basic code would be smart.  But hey, I&#8217;m no expert.  Ask Norvig. Lisp has its dynamic nature, even when most of what it&#8217;s running at the moment may be fully-compiled.  Python can do many of the same tricks&#8230;and choice is good.</p>
+      <p>
+			<small>comment at <a href="#comment-1192" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1193">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='24.166.51.26'>Ryan Tomayko</a></cite>:</p>
+			<blockquote>
+<p>Besides, he [Gosling] doesn’t do &#8220;interplanetary navigation&#8221;</p>
+</blockquote>
+<p>Actually, <a href="http://www.sun.com/aboutsun/media/features/mars.html">he does</a>:</p>
+<blockquote>
+<p>For the command and control system, big parts of it are this rather large Java application. There are a lot of parts involved in this. The Rover itself has a computer onboard. There&#8217;s no Java in that computer now. But on the ground-side, there are a number of parts of the whole command and control chain that goes out to the Rover that&#8217;s done in Java. It&#8217;s not like every last piece of every subsystem is based on the Java code. Great big pieces of it are. In particular, all the data visualization, user interface front-end stuff and I believe a whole lot of the database stuff is.</p>
+</blockquote>
+      <p>
+			<small>comment at <a href="#comment-1193" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1194">
+			<p class="who"><cite><a href='http://anjanb.wordpress.com' rel='external ' title='12.18.141.172'>Anjan Bacchu</a></cite>:</p>
+			<p>hi there,</p>
+<p><a href="http://en.wikipedia.org/wiki/James_Gosling">James Gosling</a> did a lot of work on LISP to build <a href="http://en.wikipedia.org/wiki/Gosling_Emacs">Emacs</a>.</p>
+<p>I guess there&#8217;s a perspective of someone who&#8217;s done a whole breadth of applications using Java. We all know that ruby/python can be used for 80% of the applications that java can be used. But we know(from the 80/20 rule) that the only 20% of the journey is done when you say that 80% work is done. The last 20% takes 80% of the effort. If you&#8217;re happy with the 80% work, fine.</p>
+<p>When he specifically says that breadth is NOT there in the other languages, you should NOT jump to conclusions about his motives. If you ask Bjarne Stroustrup about C++, he is known to defend C++&#8217;s successes in a wide area of applications(which is wider than java&#8217;s). Gosling has higher motivation that Bjarne ever did to keep their created languages going but at the same time we should not put ignorance and ill-motives.</p>
+<p>Even though one tends to accept/recognize when the trade press like to sensationalize such things, I feel terrible when a PhD/M.S talks like a Slashdotter/high schooler/&#8221;Digg&#8221;er. You expect more from people who have an M.S &#8212; after all they don&#8217;t go to such schools just to learn Compilers.</p>
+<p>BR,<br />
+~A</p>
+      <p>
+			<small>comment at <a href="#comment-1194" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1195">
+			<p class="who"><cite>andi</cite>:</p>
+			<p>Good old Albert knew it: It&#8217;s all relative. Dynamic, static, assemblique. Who the f* cares. Use what&#8217;s good for the job in order. Noone would use a dynamic language in a team of 30 developers in a company with a beaurocratic mindset. Neither would the open source guy who cares about solutions, clarity and beauty use a monster language like Java. The right tool for the right people for the right job. Peace and all be happy&#8230;</p>
+<p>Just to add another use of dynamic languages in big corps: Python for example is used by SAP for internal IT automation. This is stuff used by thousands and thousands of people on a daily basis internally (and the SAP IT is something that actually works.. producs are another thing;)). But they use Python  in their products too. For example TREX (a search engine), it even includes a Python TCL GUI. And just another note here: They just closed the  Java consulting depeartment in germany - a &#8220;strategic decision.&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-1195" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1196">
+			<p class="who"><cite><a href='http://www.phppatterns.com' rel='external ' title='195.129.34.43'>Harry Fuecks</a></cite>:</p>
+			<p>Perhaps it&#8217;s time to nail down the term scripting language - my vote goes for &#8220;Anything with a virtual machine is scripting language&#8221; - then James might not feel so left out.</p>
+<p>&#8220;Just to add another use of dynamic languages in big corps: Python for example is used by SAP for internal IT automation.&#8221;</p>
+<p>Just random note along the same lines Oracle (10g for Windows) and IBM/Rational (used by both ClearQuest and ClearCase) both install Perl 5.6 in their default Windows installs.</p>
+      <p>
+			<small>comment at <a href="#comment-1196" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1197">
+			<p class="who"><cite><a href='http://steveh.wordpress.com/2006/03/13/gosling-didne28099t-get-the-memo/' rel='external ' title='207.7.108.237'>Or Something &raquo; Gosling Didn’t Get The Memo</a></cite>:</p>
+			<p>[&#8230;] read more&nbsp;|&nbsp;digg story [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1197" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1198">
+			<p class="who"><cite><a href='http://idunno.org' rel='external ' title='212.135.194.83'>BarryD</a></cite>:</p>
+			<p>I do find it somewhat telling that you&#8217;re happy to bang the drum for scripting in the form of Perl, Ruby et al, and hammer on about scalability but you fail to mention VBScript.</p>
+<p>No wait, I&#8217;m serious. It fufils all the criteria you&#8217;ve mentioned above. ASP is scalable, if you&#8217;re sensible in your coding. Want a different problem domain? Excel automation, I&#8217;ve seen trading houses and banks where prediction and reporting models are built in Excel using VB for Applications. Want to automatic your OS, write shell script equivilants? Windows Scripting Host and, again, VBScript files.</p>
+<p>So whilst it may not be trendy, it may not be open source, it may not have some word of mouth marketing scheme behind it the lack of VBScript&#8217;s inclusion in your mind&#8217;s list of scripting languags may show more snobbery than Gosling.</p>
+      <p>
+			<small>comment at <a href="#comment-1198" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1200">
+			<p class="who"><cite>RichB</cite>:</p>
+			<p>BarryD wrote:</p>
+<blockquote>
+<p>hammer on about scalability but you fail to mention VBScript.</p>
+</blockquote>
+<p>Indeed, ask.com was for many years getting along fine with a VBScript-based website. I worked for another company who found they had to use 45 web servers to run their EJB site rather than the 30 which it took to run their VBScript site.</p>
+<p>Now, both of these websites had backend systems which weren&#8217;t script-based. The former was Teoma and the latter was Oracle. Perhaps the lesson here is that front-end websites simply don&#8217;t need ultra-fast micro-benchmarked platforms.</p>
+      <p>
+			<small>comment at <a href="#comment-1200" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1201">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<blockquote><p>Minds changed. Respectful debate, honesty, passion, and working systems created an environment &#8230; The people who are still unconvinced are those that just don’t care or are too lazy to spend a small amount of time researching and validating the arguments,</p>
+</blockquote>
+<p>So this is what respectful debate looks like? Sorry, I thought it had something to do with honestly entertaining the possibility that other opinions might actually be valid.</p>
+<p>I am currently engaged in writing an enterprise application. The parts in Java can scale to dozens or more computers simply by using the facade pattern with stateless session beans calling POJO&#8217;s. Now, how am I supposed to do that with the part written in Python? Zope? I don&#8217;t think so.</p>
+      <p>
+			<small>comment at <a href="#comment-1201" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1202">
+			<p class="who"><cite><a href='http://duckdown.blogspot.com/2006/03/large-enterprises-and-why-they-dont.html' rel='external ' title='72.9.234.70'>Thought Leadership</a></cite>:</p>
+			<p><strong>Why Ruby Doesn&#8217;t Matter&#8230;</strong></p>
+<p>You may have noticed that pretty much everyone in the Ruby camp are insultants with many of them being book authors attempting to capitalize on hype. I of course, will remain open minded that Ruby may be better than say Java at some tasks but for the&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-1202" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1203">
+			<p class="who"><cite>emilian</cite>:</p>
+			<p>Oh what a great post, really proved Gosling wrong. Come on! What would you like for the man ?? Come upfront and say : we are all doomed! let&#8217;s lay onto the ground and wait to die ?</p>
+<p>Java kicks ass because of the JVM. And there are already tons of other languages built on top of that JVM (jython, jruby anyone ?)</p>
+<p>In the Java 6.0 , we&#8217;re going to have Javascript (aka Rhino from Mozilla) included so perhaps &#8220;scripting languages&#8221; will get better and better on the JVM.</p>
+<p>Java itself is evolving probably better than other languages and it has the best API you need. Because in the end no language is that special but a good API saves you from a lot of trouble.</p>
+<p>Why isn&#8217;t there any free Lisp (for commercial usage) with an API the size of Java (or at least threading + platform independent GUI + networking stuff) ?? I like Lisp and Python and I&#8217;ve used Jython quite a lot at some point, but for for corporate work you really can&#8217;t choose on the desktop side something else except Java or .NET (so we choose Java).</p>
+      <p>
+			<small>comment at <a href="#comment-1203" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1206">
+			<p class="who"><cite><a href='http://www.cdegroot.com/blog/2006/03/13/lesscode-dissects-goslings-fud/' rel='external ' title='85.10.192.171'>Cees&#8217; Blog &raquo; Blog Archive &raquo; Lesscode dissects Gosling&#8217;s FUD</a></cite>:</p>
+			<p>[&#8230;] In Gosling Didn’t Get The Memo a statement by James Gosling that is too dumb to be true (but alas, it is) is dissected. Along the way, the article churns out a very long list of links to sites and blog posts containing ammo for fighting the Java crowd (and their associates over at C# central, etcetera  ). Because of that, it&#8217;s an article worth bookmarking. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1206" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1207">
+			<p class="who"><cite><a href='http://pooteeweet.org' rel='external ' title='87.123.85.183'>Lukas</a></cite>:</p>
+			<p><a href="http://www.googlefight.com/index.php?lang=en_GB&amp;word1=java+nasa&amp;word2=php+nasa">http://www.googlefight.com/index.php?lang=en_GB&amp;word1=java+nasa&amp;word2=php+nasa</a></p>
+      <p>
+			<small>comment at <a href="#comment-1207" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1208">
+			<p class="who"><cite>George</cite>:</p>
+			<p><b>You seem to have a big problem with the term &#8220;scripting language&#8221; as Gosling used it.</b> Well lets dig in a little bit further on that.</p>
+<p>What is a scripting language? I mean, whats the bare bone of it, technically spoken? It is a language executed as script. That means it is called (from somewhere), then loaded, executed and ends, thats all, and what concerns me, I&#8217;m perfectly fine with that. Its the same for me if it is interpreted, pre-compiled into P-code (or similiar) or executable, CGI or Fast-CGI, module or stand-alone, as long as it behaves like intended I&#8217;ll befine.</p>
+<p>So why all the fuss about it? Why does Gosling mention it anyway, why are so many users/programmers upset with the term &#8220;only scripting&#8221;?</p>
+<p>I think the main reason is that there are different programming philosophies behind the kind PHP (Ruby, Perl etc.) on the one side is used in programming and Java is on the other side. Thats all, simple like that. Whereas a &#8220;scripting&#8221; language is executed and dies afterwards (which has its advantages like rapid development, ease of deployment etc. as mentioned above and in other linked pages), a &#8220;compiled&#8221; language does not (need to have, so it may use caching/pooling/memory objects much more efficient and has not to rely on backend systems and their performance that much).</p>
+<p>In my opinion that was what Gosling meant saying that scripting languages <b>&#8220;[..] have really serious scaling and performance problems.&#8221;</b>. Okay, distilling all these into such a little sentence like Gosling did has a taste of FUD, but nevertheless Gosling may have relied on the fact that people who read his interview are a little bit technically educated (and even I did not point out anything <i>that</i> new until now either).</p>
+<p>So shame on Gosling, he could have made his point more clear on that. But on the other hand I do not have to read <b>&#8220;Effective Java Advocacy Beans&#8221;, section 6.8.3</b> to see another kind of FUD raising on.</p>
+<p>And of course I could do application programming using scripting languages.</p>
+<p>I can do something very similiar to scripting in compiled languages too, using JSP or ASP or whatever&#8230; I do not see the point.</p>
+<p>Just my $0,02</p>
+      <p>
+			<small>comment at <a href="#comment-1208" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1209">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>Anon:</p>
+<blockquote><p>I am currently engaged in writing an enterprise application. The parts in Java can scale to dozens or more computers simply by using the facade pattern with stateless session beans calling POJO’s. Now, how am I supposed to do that with the part written in Python? Zope? I don’t think so.</p></blockquote>
+<p>Well, maybe if you spent &#8220;a small amount of time researching and validating&#8221; your arguments, you&#8217;d know how. I do.</p>
+<p>George:</p>
+<blockquote><p>What is a scripting language? I mean, whats the bare bone of it, technically spoken? It is a language executed as script. That means it is called (from somewhere), then loaded, executed and ends, thats all, and what concerns me, I’m perfectly fine with that.</p></blockquote>
+<p>Wow. You just described every program lacking an infinite loop.</p>
+<blockquote><p>Its the same for me if it is interpreted, pre-compiled into P-code (or similiar) or executable, CGI or Fast-CGI, module or stand-alone, as long as it behaves like intended I’ll befine.</p></blockquote>
+<p>Would you &#8220;befine&#8221; if I changed the term &#8220;P-code&#8221; to &#8220;JVM bytecode&#8221; in your above sentence?</p>
+<blockquote><p>I can do something very similiar to scripting in compiled languages too, using JSP or ASP or whatever… I do not see the point.</p></blockquote>
+<p>That&#8217;s because the JSP expression language <em>is</em> a dynamic language, albeit not a general purpose one.</p>
+<p>Sorry, all, if I just fed the trolls. The troll patrol may take me away, now.</p>
+      <p>
+			<small>comment at <a href="#comment-1209" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1210">
+			<p class="who"><cite><a href='http://diary.leoboiko.8x.com.br/?p=289' rel='external ' title='200.155.13.13'>Diário de Leonardo Boiko &raquo; Blog Archive &raquo; Gosling acha que Ruby só gera páginas web</a></cite>:</p>
+			<p>[&#8230;] Agora é oficial: o autor de Java não entende de linguagens de programação. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1210" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1211">
+			<p class="who"><cite>Baptiste</cite>:</p>
+			<p>Makes me think of a part of the old MS Windows EULA, which states:<br />
+&#8220;Because this product contains Sun&#8217;s Java, it is not safe for air transport and nuclear powerplants&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-1211" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1212">
+			<p class="who"><cite>George</cite>:</p>
+			<p>twifkak:</p>
+<blockquote><p>Wow. You just described every program lacking an infinite loop.</p>
+</blockquote>
+<p>Did I? Well I just wanted to nail down what a script does. And scripting languages normally do lack an instance with an infinite loop that may serve as container for pooling etc. - thats the punchline.</p>
+<blockquote>
+<blockquote><p>Its the same for me if it is interpreted, pre-compiled into P-code (or similiar) or executable, CGI or Fast-CGI, module or stand-alone, as long as it behaves like intended I’ll befine.</p>
+</blockquote>
+<p>Would you “befine” if I changed the term “P-code” to “JVM bytecode” in your above sentence?</p>
+</blockquote>
+<p>Why should I not “befine” with that? All I wanted to point out is that it is the same for me how the script is executed. And although speaking of scripting languages at that point you could i.e. use java like normal CGI (but I think no one would rather like to do that).</p>
+<blockquote>
+<blockquote><p>I can do something very similiar to scripting in compiled languages too, using JSP or ASP or whatever… I do not see the point.</p>
+</blockquote>
+<p>That’s because the JSP expression language is a dynamic language, albeit not a general purpose one.</p>
+</blockquote>
+<p>Sorry but JSPs are not dynamic as such, even if the expression language suggests otherwise. They are compiled and loaded into the virtual machine where they reside for the applications lifecycle and can interact with the complete JVM. By changing the JSP file, the container (like Tomcat) recognizes the changes, re-compiles and re-loads it only once for further use. They do have the look’n’feel of dynamic languages but, honestly, they are not.</p>
+<p>And if someone thinks I’m trolling along, please feel free not not to read my posts.</p>
+<p>Cheers, George</p>
+      <p>
+			<small>comment at <a href="#comment-1212" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1213">
+			<p class="who"><cite><a href='http://blog.amber.org/' rel='external ' title='209.31.146.82'>petrilli</a></cite>:</p>
+			<p>The reality is that large chunks of mission control @ NASA as well as the Space Telescope Sciences Institute (the people who run the Hubble) use Python to manage their missions to interplanetary destinations. This was true a few years ago, anyway.  The idea that Java is somehow capable of a larger breadth of problems is absurd.  It may have a better fit to some problems &#8212; though I&#8217;ve yet to figure out what those are, other than increasing my use of mediocre developers &#8212; the Turing completeness proves this false.</p>
+<p>As for scalability. It might affect you, it probably doesn&#8217;t. Worry about it if it does. The number of customers I run into who think they have &#8220;scalability&#8221; issues is mindboggling huge. The number who actually have it? Almost zero. I&#8217;ve had <em>1</em> customer in 10 years who had a real challenge. The rest are just fooling themselves into buying into a more complex solution because it makes them feel good.</p>
+      <p>
+			<small>comment at <a href="#comment-1213" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1214">
+			<p class="who"><cite><a href='http://www.denyerec.co.uk' rel='external ' title='82.3.32.72'>Denyerec</a></cite>:</p>
+			<p>I believe chunks of the game <a href="http://www.eve-online.com">EVE Online</a> are coded in Python and that, clearly, involves interplanetray navigation.</p>
+<p>Doh ;)</p>
+      <p>
+			<small>comment at <a href="#comment-1214" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1215">
+			<p class="who"><cite>mmcclellan</cite>:</p>
+			<blockquote>
+<p>And you&#8217;re right: we were not out to win over the Lisp programmers;<br />
+  we were after the C++ programmers.  We managed to drag a lot of them<br />
+  about halfway to Lisp.  Aren&#8217;t you happy?</p>
+<p>&#8211;Guy Steele</p>
+</blockquote>
+<p>Java&#8217;s evolutionary step towards Lisp has been important and in some ways helped pave the way for Python and Ruby. See I think it&#8217;s wrong to suggest that Python and Ruby are targeting the 80% of Java projects. I think the target is 80% of Lisp and Smalltalk. Now that Java and by extension C# have dragged programming half the way to Lisp, the next step seems smaller and practically inevitable. In some strange way Helsberg seems to have a better grasp of this than Gosling (strange in a Turbo Pascal v. Emacs way), as evidenced by C#&#8217;s Haskell inspired LINQ stuff.</p>
+<p>I&#8217;ll quit before this becomes a Paul Graham post, but suffice it to say, Gosling would do well to familiarize himself with what Ruby gets right.</p>
+      <p>
+			<small>comment at <a href="#comment-1215" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1216">
+			<p class="who"><cite><a href='http://neeraj.name/2006/03/13/james-gosling-didne28099t-get-the-memo/' rel='external ' title='70.84.193.50'>A Random Pixel &raquo; James Gosling Didn’t Get The Memo</a></cite>:</p>
+			<p>[&#8230;] The best rebuttal on this topic I found was by Ryan Tomayko. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1216" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1218">
+			<p class="who"><cite>Sam</cite>:</p>
+			<p>More and more of my projects are ending up in Scheme (Gambit-C to be precise). Dynamic language during development, compiled when it is time to deploy.</p>
+      <p>
+			<small>comment at <a href="#comment-1218" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1220">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p><em>&#8220;This was not the case last year at this time, so what happened? Something must have changed.&#8221;</em><br />
+Nothing mysterious - Ruby on Rails marketing &amp; hype.</p>
+      <p>
+			<small>comment at <a href="#comment-1220" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1222">
+			<p class="who"><cite><a href='http://coderseye.com/2006/xml-is-javas-scripting-language.html' rel='external ' title='205.196.222.14'>XML Is Java&#8217;s Scripting Language - Coder&#8217;s Eye</a></cite>:</p>
+			<p>[&#8230;] Great article at Lesscode.org, responding to Gosling&#8217;s dismissal of scripting languages. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1222" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1223">
+			<p class="who"><cite>Sebs</cite>:</p>
+			<p>Dear Mr. Gosling:</p>
+<p>You got Beans, we got Balls (and Free Time left)</p>
+      <p>
+			<small>comment at <a href="#comment-1223" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1225">
+			<p class="who"><cite><a href='http://steveh.wordpress.com/2006/03/13/gosling-didnt-get-the-memo/' rel='external ' title='207.7.108.235'>Or Something &raquo; Gosling Didn’t Get The Memo</a></cite>:</p>
+			<p>[&#8230;] read more | digg story [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1225" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1227">
+			<p class="who"><cite><a href='http://jw.fi/2006/03/13/effective-java-advocacy-beans/' rel='external ' title='207.7.108.125'>Just Words &raquo; Effective Java Advocacy Beans</a></cite>:</p>
+			<p>[&#8230;] Read Gosling Didn&#8217;t Get The Memo [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1227" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1228">
+			<p class="who"><cite>grammada</cite>:</p>
+			<p>4th paragraph. Should be either:</p>
+<p>&#8220;None of these technologies underwent huge feature or stability increases in the past year.&#8221; (Removes &#8216;have&#8217;)</p>
+<p>or</p>
+<p>&#8220;None of these technologies have undergone huge feature or stability increases in the past year.&#8221; (Changes &#8216;underwent&#8217; to &#8216;undergone&#8217;)</p>
+<p>but not</p>
+<p>&#8220;None of these technologies have underwent huge feature or stability increases in the past year.&#8221;</p>
+<p>No thanks necessary.</p>
+<p><em>Thanks anyway &#8212; Ed.</em></p>
+      <p>
+			<small>comment at <a href="#comment-1228" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1233">
+			<p class="who"><cite><a href='http://jooto.com/blog/' rel='external ' title='204.244.254.198'>Alex Bunardzic</a></cite>:</p>
+			<p>Ryan said:</p>
+<blockquote><p>Yes, but there’s an important distinction that’s not being made here. There are languages specialized for a certain task that are incapable of being used for anything else. I think bash is a good example of a specialized “scripting language”. bash is for chaining commands together. That doesn’t make it bad, it just makes it limited to that specific problem domain. Which, again, is perfectly fine and correct and the best possible way of performing that task. I wouldn’t want it any other way.</p>
+</blockquote>
+<p>The situation you describe parallels closely the situation in real (non-virtual) world. In everyday situations we also see a number of specialized languages (non-programming languages), that are constrained and therefore limited in one way or another. For instance, some people occasionally use smoke signals to communicate messages. Others use semaphores, the blinking lamps, etc.</p>
+<p>These languages are severely limited (which is exactly why the Monthy Python skit presenting Emily Bronte’s “Wuthering Heights” with actors using flags for semaphores to engage each other in a dialog is so hilarious).</p>
+<p>Still, such languages are a subset of the ‘general purpose’ natural languages (and their dialects thereof). So, English is a general-purpose natural language. Its subset, Roger-Over-Out, is a rigid language used for most of the wireless human-to-human communications occurring today (there is also the less famous ‘Able, Baker, Charlie’ language, known and used by all radiophone operators in the services).</p>
+<blockquote><p>Contrast that with static languages, where you are forced to create a completely separate “scripting language” when you need to provide a constrained/specialized language (this is why XML is used so heavily in Java for things like O/R mapping, dependency injection, configuration, build processes, etc. — XML is Java’s scripting language).</p>
+</blockquote>
+<p>This is an excellent point. It reveals why static languages are not real languages – they need other languages to constrain them. Something’s wrong with this picture. A real language shouldn’t need an extra language to constrain it.</p>
+<blockquote><p>In dynamic languages, you are generally not required to leave the core language to get that specialization: you use techniques like meta-programming and DSLs or just include/require/use some designated file at a designated point and let it do it’s thing with the API.</p>
+</blockquote>
+<p>Another bang on point: real languages are context sensitive. Change the context, and the interpretation of the language constructs changes.</p>
+<p>If I may borrow an example from the natural languages – if someone in everyday situation suddenly starts waving a flag above his head, that could get easily misinterpreted as being an act of patriotism, of flag desecration, and many other things. But if the context for the formal semaphore-based communication is first proposed, than the flag waving attains much more clarity. This is what we may refer to as ‘metaprogramming’.</p>
+<blockquote><p>Using a general purpose language but extending it in places that would traditionally require “scripting” is the fundamental design principal behind Rails, Django, TG, Seaside, etc.</p>
+</blockquote>
+<p>In other words, such languages are context-sensitive. Can static languages be made context-sensitive?</p>
+<blockquote><p>When someone unfamiliar with modern dynamic languages and experienced in Java hears someone say, “they’re scripting languages, and get their power through specialization,” they are being misled into thinking that these languages are like bash and can be used only for a single specialized scenarios, which is obvious not the case: they can be constrained and specialized as much or as little as required and become useful in multiple specialized scenarios. That’s really important.</p>
+</blockquote>
+<p>In other words, they require more intelligent handling. No wonder bureaucrats despise such languages – they assume some brain power behind the powers that use them. Not a desirable scenario in the bureaucrats’ worldview.</p>
+<blockquote><p>Now, what I’m not entirely sure about is where PHP fits in all this. PHP was originally very much specialized for generating web content and that’s its forte to this day. Like bash, this seems to be working extremely well. Is PHP more suitable as a “scripting language” like bash (albeit for generating web content) or a general purpose language like Ruby?</p>
+</blockquote>
+<p>It depends. On several factors, one of which is the nature of the team using the technology.</p>
+      <p>
+			<small>comment at <a href="#comment-1233" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1234">
+			<p class="who"><cite><a href='http://www.nekomancer.net' rel='external ' title='85.216.224.114'>Gábor Farkas</a></cite>:</p>
+			<p>Anonymous:</p>
+<blockquote>
+<p>I am currently engaged in writing an enterprise application. The parts in Java can scale to dozens or more computers simply by using the facade pattern with stateless session beans calling POJOs. Now, how am I supposed to do that with the part written in Python? Zope? I dont think so.</p>
+</blockquote>
+<p>you do it the same way in python. using stateless objects. by not keeping the state on the server (but in the database), you can have as many servers to handle the requests as you want. and it scales. in python, in ruby, in php. in a C++ cgi. wherever you want.</p>
+<p>please understand, that the advocates of the dynamici languages do not say that java can&#8217;t scale. they are only saying that dynamic-lanugages can scale as well.</p>
+<p>and please note, that the java answer was not always POJO. there is a reason why POJO has a name (plain old java objects, iirc). some time ago, the standard answer you got to any java+web question was : use j2ee. later some people found out that maybe they don&#8217;t need that whole j2ee monster, maybe simple java objects are enough&#8230;</p>
+      <p>
+			<small>comment at <a href="#comment-1234" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1239">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='213.196.245.244'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><cite><a href="http://lesscode.org/2006/03/12/someone-tell-gosling/#comment-1233">Alex</a></cite>:</p>
+<blockquote>
+<p>This is an excellent point. It reveals why static languages are not real languages – they need other languages to constrain them. Something’s wrong with this picture. A real language shouldn’t need an extra language to constrain it.</p>
+</blockquote>
+<p>Whoa, slow down there, easy on the big claims.</p>
+<blockquote>
+<p>Can static languages be made context-sensitive?</p>
+</blockquote>
+<p>Why not? What has typing got to do with any of it? Do yourself a favour and learn a type-inferenced, statically typed language (which in practice means one of a set of pure functional languages) – Haskell, OCaml, Clean, whatever.</p>
+<p>It’s metaprogramming that matters, not typing.</p>
+      <p>
+			<small>comment at <a href="#comment-1239" title="">13. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1240">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>George said:</p>
+<blockquote><p>And if someone thinks I’m trolling along, please feel free not not to read my posts.</p></blockquote>
+<p>Okay, sorry. I overreacting. Thanks for not returning the favor.</p>
+<p>Said George:</p>
+<blockquote><p>
+twifkak:</p>
+<blockquote><p>Wow. You just described every program lacking an infinite loop.</p></blockquote>
+<p>Did I? Well I just wanted to nail down what a script does. And scripting languages normally do lack an instance with an infinite loop that may serve as container for pooling etc. - thats the punchline.</p></blockquote>
+<p>The FastCGI method was chosen specifically because it <em>does</em> have an infinite loop. Unlike C, VM-based languages such as Ruby, Python, and Java have associated initial load times just to get the VM into memory. This makes them bad candidates for the typical &#8220;script-based&#8221; (by your definition) CGI. So, in all but the most idiotic setups, webapps written in Ruby and Python are not being run like scripts. Rails, for instance, allots one database connection per thread, and that connection is persisted for the life of the server.</p>
+<p>Furthermore, many, many, many, many, many, many, many, many, many Java programs are run as a &#8220;script.&#8221; Ant, to name but one.</p>
+<blockquote><p>Sorry but JSPs are not dynamic as such, even if the expression language suggests otherwise. They are compiled and loaded into the virtual machine where they reside for the applications lifecycle and can interact with the complete JVM. By changing the JSP file, the container (like Tomcat) recognizes the changes, re-compiles and re-loads it only once for further use. They do have the look’n’feel of dynamic languages but, honestly, they are not.</p></blockquote>
+<p>By &#8220;dynamic&#8221; (which is, I grant you, a loaded word) I was referring to the typing. While, when coding Java, your IDE blinks angrily at you when you try to call <code>new Integer(5).trim()</code>, you&#8217;ll get no flak from JSP EL, because there, types are not evaluated until runtime. You could say <code>&lt;c:out value="${foo.stuff}" /&gt;</code> in the view, and from the controller, pass objects of two <em>entirely</em> different classes that implement the getStuff() method. That&#8217;s duck-typing, my friend, and that&#8217;s dynamic.</p>
+<p>The technical details of how it manages this dynamicity are of no importance to me (and, in fact, it was touched on above that Lisp is a fully dynamic language that can be interpreted <em>or</em> compiled). Now&#8217;s my time to step off my high horse &#8212; why are the technical details of the fact that JSPs are compiled-then-run vs interpreted important to you?</p>
+<p>Also Sprach Alex:</p>
+<blockquote><p>This is an excellent point. It reveals why static languages are not real languages – they need other languages to constrain them. Something’s wrong with this picture. A real language shouldn’t need an extra language to constrain it.</p></blockquote>
+<p>That&#8217;s stretching it. They don&#8217;t <em>need</em> the XML languages. For many of the config files I can think of &#8212; log4j, Hibernate, Ant (if you&#8217;re some sort of nutty nut girl who&#8217;s nuts) &#8212; you can programmatically configure them in Java code. People don&#8217;t, however, because the Java code ends up looking even uglier than the XML files.</p>
+      <p>
+			<small>comment at <a href="#comment-1240" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1242">
+			<p class="who"><cite>Martin J Steer</cite>:</p>
+			<p>Wow&#8230; isn&#8217;t is wasteful to spend all the time you save by using ruby/python et. al., instead of java, writing vitriol-filled comments here? </p>
+<p>I can&#8217;t for the life of me understand why someone is upset that the father of Java still prefers Java, I&#8217;d be more surprised if he&#8217;d prefer something else. Do I get to be really pissed of if Guido doesn&#8217;t prefer Java over Python? Do I get to raise hell if Matz prefers Ruby over Lisp? Pretty please?</p>
+<p>Gosling is a Java adovate, what the hell is he supposed to say?</p>
+<p>regards,<br />
+    martin</p>
+      <p>
+			<small>comment at <a href="#comment-1242" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1243">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='66.93.15.162'>Ryan Tomayko</a></cite>:</p>
+			<blockquote>
+<p>Gosling is a Java adovate, what the hell is he supposed to say?</p>
+</blockquote>
+<p>RTFA! No one is suggesting he champion, support, or advocate anything, just that he stop spreading information that&#8217;s provably incorrect. It&#8217;s stated precisely in the article. </p>
+<p>Do you lie about anything that&#8217;s not your preference? Does being a Java advocate give Gosling a license to say whatever he wants without any kind of basic fact checking or respect for basic, fundamental scientific process?</p>
+      <p>
+			<small>comment at <a href="#comment-1243" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1244">
+			<p class="who"><cite><a href='http://www.developers.org.ua/archives/max/2006/03/14/gosling-takes-on-scripting-languages/' rel='external ' title='69.50.221.209'>developers.org.ua &raquo; Blog Archive &raquo; языковые войны: Джеймс Гослинг о неполноценности скриптовых языков</a></cite>:</p>
+			<p>[&#8230;] Неудивительно, что такого рода комментарии вызвали широкую ответную реакцию. В качестве одного из достойных ответов рекомендую пост с lesscode.org: Gosling Didn’t Get The Memo. Аргументы апологетов &#8220;скриптовых языков&#8221; сводятся к следующему: [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1244" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1245">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>martin something said:</p>
+<blockquote><p>Wow… isn’t is wasteful to spend all the time you save by using ruby/python et. al., instead of java, writing vitriol-filled comments here?</p></blockquote>
+<p>Yes. Yes, it is. :P</p>
+      <p>
+			<small>comment at <a href="#comment-1245" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1247">
+			<p class="who"><cite>Ahsan</cite>:</p>
+			<p><a href="http://www.iunknown.com/articles/2005/10/31/do-databases-rot-the-mind">Do Databases Rot the Mind?</a></p>
+      <p>
+			<small>comment at <a href="#comment-1247" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1248">
+			<p class="who"><cite><a href='http://www.neshertech.net/adler/?p=11' rel='external ' title='67.19.121.250'>Adler &raquo; Blog Archive &raquo; Entrevista de James Gosling</a></cite>:</p>
+			<p>[&#8230;] Na minha opinião, um comentário inútil, porque estas linguagens estão dentre as que mais crescem. Principalmente o PHP. Segue abaixo os links para a entrevistas e para as respostas a esta entrevista feitas pelo Ryan Tomayko . A entrevista por ser encontrada aqui E os comentários do Ryan aqui PS: A Entrevista e os comentários estão em inglês. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1248" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1250">
+			<p class="who"><cite>Anand</cite>:</p>
+			<p>Not only Gosling , the whole Internet world depend on Java !, Since due to development in many opensource projects such FOP , XML , Apache , Eclipse and opensympony will lead Java to be the King of Internet Kingdom !! </p>
+<p>Javageek !</p>
+      <p>
+			<small>comment at <a href="#comment-1250" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1253">
+			<p class="who"><cite>Remi Broemeling</cite>:</p>
+			<p>As Denyerec has implied, EVE Online would be a good example of enterprise, non-web-page usage of Python.  See the <a href="http://www.eve-online.com/faq/faq_07.asp">technical FAQ</a>, section 7.4.</p>
+<p>I guess no-one told CCP that they weren&#8217;t allowed to use Python to create non-webpages?</p>
+      <p>
+			<small>comment at <a href="#comment-1253" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1254">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p><strong>GIGO</strong><br />
+Do you have a sufficiently accurate source text for this kind of phrase-by-phrase analysis? Do you know the full context in which the remarks were made? </p>
+<p>Parsing every phrase of the prepared keynote address might have thrown up something interesting, but is it really worth doing for a second-hand version of an extemporary answer to a question from the audience? </p>
+<p>The <a href="http://java.sys-con.com/read/193008.htm">last item in this blogger&#8217;s transcript</a> gives different source text for the same Question &amp; Answer - parse away.</p>
+<blockquote><p>I believe that a majority of people in IT now consider dynamic languages like &#8230; to be very much capable of sitting at the table &#8230;</p>
+</blockquote>
+<p>If that is the case why do you feel the need to respond so strongly against something that verges on gossip?</p>
+      <p>
+			<small>comment at <a href="#comment-1254" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1255">
+			<p class="who"><cite><a href='http://aldoblog.com/' rel='external ' title='146.246.233.9'>Alderete</a></cite>:</p>
+			<p>I don&#8217;t understand what all the fuss is. Who cares what James Gosling thinks? He&#8217;s an obviously interested party, with a party line to spew. There are <em>lots</em> of industry luminaries, all spewing their corporate lines.</p>
+<p>The thing is, as you point out in your article, the knowledge that this is spew is well-documented. Either now or in months or in years, everyone who <em>can</em> have their mind opened <em>will</em> have their mind opened, just by the current motion and inertia that platforms like Rails and PHP possess today.</p>
+<p>By arguing with Gosling, it&#8217;s making his words <em>more</em> legitimate. Like there&#8217;s a debate here. There&#8217;s no need for debate. We don&#8217;t need to prove him wrong with articles and blog posts. We just need to keep successfully building real, working systems using the tools that we feel are appropriate. </p>
+<p>As the current Nike commercial (running during college basketball) says, &#8220;Let your game do the talking.&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-1255" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1257">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>Good post, Alderete.</p>
+      <p>
+			<small>comment at <a href="#comment-1257" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1258">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><cite><a href="http://lesscode.org/2006/03/12/someone-tell-gosling/#comment-1240">twifkak</a></cite>:</p>
+<blockquote>
+<blockquote>
+<p>A real language shouldn’t need an extra language to constrain it.</p>
+</blockquote>
+<p>That’s stretching it. They don’t <em>need</em> the XML languages, [though] the Java code ends up looking even uglier than the XML files.</p>
+</blockquote>
+<p>Haven’t you really just validated the point, though? You are effectively saying that Java does not have the facilities necessary to create DSLs which can express configuration more tersely than XML. Now if we agree on the premise that less code is better, wouldn’t that mean Java actually <em>needs</em> XML?</p>
+      <p>
+			<small>comment at <a href="#comment-1258" title="">14. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1259">
+			<p class="who"><cite>twifkak</cite>:</p>
+			<p>Woah&#8230; logic.</p>
+      <p>
+			<small>comment at <a href="#comment-1259" title="">15. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1262">
+			<p class="who"><cite><a href='http://straw-dogs.co.uk/blog/03/15/suns-gosling-on-ruby-and-php/' rel='external ' title='207.210.84.66'>Straw Dogs Code Blog &raquo; Blog Archive &raquo; Sun&#8217;s Gosling on Ruby and PHP</a></cite>:</p>
+			<p>[&#8230;] Scripting Languages? That comment jars a little as its a far out dated term normally reserved for cheap pot-shots. I&#8217;ve had numerous discussions with Java advocates in which Ruby, Python and any other dynamically typed language has been dismissed as a meer scripting language. It doesn&#8217;t look like I&#8217;m the only one either as Ryan Tomayko at Lesscode.org seems to have paid comment to Goslings post in quite some depth and I recommend a read! [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1262" title="">15. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1264">
+			<p class="who"><cite><a href='http://midtoad.org' rel='external ' title='192.208.10.131'>midtoad</a></cite>:</p>
+			<p>James Gosling says &#8220;PHP and Ruby are perfectly fine systems&#8230; [snip] &#8230; they just generate web pages&#8221;. </p>
+<p>You know, he&#8217;s <em>almost</em> right.<br />
+Not: they JUST generate web pages.<br />
+But: JUST they (and Perl and Python) generate web pages.</p>
+<p>Java doesn&#8217;t generate web pages.  That is, virtually no one is using it for that.  Just look at the projects on sourceforge - I went looking for a CMS recently.  I found dozens of such tools written in PHP, and very few in Java. Using Java for web development must not be very easy, popular or productive.</p>
+      <p>
+			<small>comment at <a href="#comment-1264" title="">15. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1265">
+			<p class="who"><cite><a href='http://www.notes.xythian.net/2006/03/15/dynamic-languages-and-choosing-a-technology-for-a-project/' rel='external ' title='205.196.208.14'>notes &raquo; Blog Archive &raquo; Dynamic languages and choosing a technology for a project</a></cite>:</p>
+			<p>[&#8230;] An extended post responding to James Gosling&#8217;s Java is Under No Serious Threat From PHP, Ruby, or C# (that site, java.sys-con.com, is the worst I&#8217;ve enountered for quite a while with regard to ad content &#8212; annyoing pop-up DHTML ads not caught by Firefox&#8217;s pop-up blocker, a million flashing, blinking, and whirling ads. awful):  I believe that a majority of people in IT now consider dynamic languages like Perl, Ruby, Python, and PHP to be very much capable of sitting at the table with Java and .NET for a wide range of common technical problems. [&#8230;] The people who are still unconvinced are those that just don’t care or are too lazy to spend a small amount of time researching and validating the arguments, which brings us back nicely to James Gosling’s recent statements. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1265" title="">16. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1266">
+			<p class="who"><cite><a href='http://www.stepanoff.org/wordpress/?p=1037' rel='external ' title='217.27.52.117'>Michael Stepanov Blog &raquo; Blog Archive &raquo; About Java</a></cite>:</p>
+			<p>[&#8230;] Personally I don&#8217;t like Java because it seems like a just product of high-quality PR. I don&#8217;t want to minimize the Java importance. it&#8217;s an excellent solution for certain goals but it isn&#8217;t unique, it isn&#8217;t absolutely universal! Hovewer, Java adherents think differently. From their point of view there are not anything noteworthy except perfect, brilliant, ideal Java! James Gosling - father of Java confirmed this thesis in his interview: &#8220;Java Is Under No Serious Threat From PHP, Ruby or C#&#8221;. One of many discussions can be found there. Dear Java-programmers, please, be more modest. Other programming languages are not so weak and useless as you can think [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1266" title="">16. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1268">
+			<p class="who"><cite><a href='http://jooto.com/blog/' rel='external ' title='204.244.254.198'>Alex Bunardzic</a></cite>:</p>
+			<p>Aristotle Pagaltzis wrote:</p>
+<blockquote><p>    Can static languages be made context-sensitive?</p>
+<p>Why not? What has typing got to do with any of it? Do yourself a favour and learn a type-inferenced, statically typed language (which in practice means one of a set of pure functional languages) – Haskell, OCaml, Clean, whatever.</p>
+<p>It’s metaprogramming that matters, not typing.</p></blockquote>
+<p>If I define a certain player as being a type, and I&#8217;ve made a decision to cast that player as a type while I was being governed by the contextual circumstances, when the context changes, that type will have a hell of a problem getting out of the cast.</p>
+<p>In James Bond movies, Doctor Evil is cast as an archetypal villain. Let&#8217;s say the overal context, or bias, of the James Bond movies changes for some reason, and now Doctor Evil needs to be portrayed as a mankind&#8217;s benefactor. How easy will it be to pull such a stunt?</p>
+<p>Some serious metaprogramming will be required. How believable will the pulling the wool over someone&#8217;s eyes be? Will that stunt be conducive to the discipline of less code?</p>
+      <p>
+			<small>comment at <a href="#comment-1268" title="">16. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1269">
+			<p class="who"><cite><a href='http://lesscode.org/2006/03/17/a-bigger-soapbox/' rel='external ' title='65.23.156.253'>A Bigger Soapbox [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] SYS-CON Media publisher/editor Jeremy Geelan, a fine chap who interviewed The Father of Java just the other day, contacted me about re-publishing Gosling Didn&#8217;t Get The Memo on sys-con.com. This is the same site that published Gosling&#8217;s original remarks. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1269" title="">17. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1272">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>Please just learn a language with type inferencing before you make any further statements or simply don’t say anything at all. More trademark nonsensical metaphors will not make you look any smarter; really.</p>
+      <p>
+			<small>comment at <a href="#comment-1272" title="">17. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1274">
+			<p class="who"><cite>John Smith</cite>:</p>
+			<p>Uh, has anyone actually asked James what he <i>really</i> said?</p>
+      <p>
+			<small>comment at <a href="#comment-1274" title="">17. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1276">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>John Smith:</p>
+<blockquote><p>has anyone actually asked James what he <em>really</em> said?</p></blockquote>
+<p>See <a href="http://www.artima.com/forums/flat.jsp?forum=270&amp;thread=151886&amp;start=15&amp;msRange=15">the Artima comments</a></p>
+      <p>
+			<small>comment at <a href="#comment-1276" title="">17. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1277">
+			<p class="who"><cite><a href='http://reinventnow.com/wordpress/index.php/2006/03/17/gosling-didnt-get-the-memo/' rel='external ' title='64.5.53.57'>Gosling and The Memo at reinventnow</a></cite>:</p>
+			<p>[&#8230;] Gosling Didn’t Get The Memo [@lesscode.org] One year ago, this type of behavior could be attributed to a lack of documentation and discussion on these issues, today it’s impossible to attribute to anything but malice. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1277" title="">17. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1283">
+			<p class="who"><cite><a href='http://duckdown.blogspot.com/2006/03/more-thoughts-on-ruby-and-why-it-isnt.html' rel='external ' title='72.9.234.70'>Thought Leadership</a></cite>:</p>
+			<p><strong>More Thoughts on Ruby and Why it isn&#8217;t enterprise</strong></p>
+<p>I previously blogged on Large Enterprises and why they don&#8217;t care about Ruby and was rightfully accused of bashing folks in the Ruby community but not providing the answer to my original statement. Figured I would set things right&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-1283" title="">18. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1292">
+			<p class="who"><cite><a href='http://www.iona.com/blogs/vinoski/archives/000274.html' rel='external ' title='63.65.132.104'>Middleware Matters</a></cite>:</p>
+			<p><strong>Proof of &#8220;The Language Divide&#8221;</strong></p>
+<p>As I mentioned in my previous post, my latest IC &#8220;Toward Integration&#8221; column, entitled &#8220;The Language Divide,&#8221; attempts to explain why there&#8217;s a dearth of scripting/dynamic language use in the traditional standards-based middleware space. If you wo&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-1292" title="">19. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1302">
+			<p class="who"><cite><a href='http://www.scriptorium.me.uk/wordpress/?p=88' rel='external ' title='213.171.218.193'>Wordpress &raquo; Blog Archive &raquo; Distinguishing power from versatility</a></cite>:</p>
+			<p>[&#8230;] UPDATE: Ryan Tomayko has a great post called Gosling Didn&rsquo;t Get The Memo that explains and link to the sea change we&#8217;ve seen over the last year or more. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1302" title="">19. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1332">
+			<p class="who"><cite>Dennis</cite>:</p>
+			<p>Wow. Deja vu all over again. I just read through this entire blog and was transported back to 1972 (or so) when I first encountered programming. My aging brain recalls very simular emotional arguements from LISP vs. Fortran advocates. Maybe future shock won&#8217;t get us after all. Things haven&#8217;t changed as much as I had thought ;-)</p>
+      <p>
+			<small>comment at <a href="#comment-1332" title="">21. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1333">
+			<p class="who"><cite><a href='http://phaedrusdeinus.org/' rel='external ' title='207.168.161.10'>John</a></cite>:</p>
+			<blockquote>
+<p>you couldn&#8217;t write a library that does, say, interplanetary navigation.</p>
+</blockquote>
+<p>Actually, and i realize James was pointing primarily at the newcomers to the dynamic language crowd, NASA has used Lisp extensively in the past.</p>
+<p>In Peter Siebel&#8217;s book, <a href="http://www.gigamonkeys.com/book/">Practical Common Lisp</a>, he relays an <a href="http://www.flownet.com/gat/jpl-lisp.html">anecdote</a> from Eran Gatt regarding the use of Lisp in the Deep Space 1 mission in 1998, specifically pointing out the usefulness of having a read-eval-print loop available on a remote piece of hardware. And Lisp was, in fact, doing the navigation.</p>
+<p>More relevantly, perhaps, is that the bug which needed to be addressed concerned a race condition due to the concurrent nature of the software, not any of the type-safety or other shallow bugs that might be addressed by adopting Java instead.</p>
+<p>Just thought it worth a mention.</p>
+      <p>
+			<small>comment at <a href="#comment-1333" title="">21. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1336">
+			<p class="who"><cite>Richard</cite>:</p>
+			<p>Java is ugly. It was ugly when it was born (Smalltalk-like VM + C syntax). And now Java is an even uglier 10 year old. Java&#8217;s older sister, Self, is now a fine 19 year old, though only available on Mac OS X (fine by me). Someone needs to tell Gosling his baby was ugly then, and even uglier now.  Java is the new legacy, the new COBOL. Just as COBOL development continued after its natural life, so will Java. REST and WSDL will let us still use Java on life support until we replace it!</p>
+<p>Dynamic languages are making a resurgence, not a comeback since they never really went away, and for many it will be a good, productive and profitable time. Leave Java to the masses as they wallow in suffering…just code around them in the fast lane.</p>
+      <p>
+			<small>comment at <a href="#comment-1336" title="">21. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1343">
+			<p class="who"><cite><a href='http://blog.secosoft.net/2006/03/22/james-mcgovernthought-leadershit/' rel='external ' title='64.111.110.10'>thoughts.on.code &raquo; James McGovern::thought leadershit</a></cite>:</p>
+			<p>[&#8230;] Yes&#8230;  Several bloggers have jumped on James Gosling indicating he didn&#8217;t get the memo. This post asks for the following: All we’re asking is that you stop spreading misinformation about the current state of dynamic languages to the press, analysts, and your customers. This does not require you to champion or otherwise support these technologies - just stop lying about them. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1343" title="">22. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1345">
+			<p class="who"><cite>Bertus</cite>:</p>
+			<p>Alex Bunardzic wrote:</p>
+<blockquote>
+<p>If I define a certain player as being a type, and Ive made a decision to cast that player as a type while I was being governed by the contextual circumstances, when the context changes, that type will have a hell of a problem getting out of the cast.</p>
+</blockquote>
+<p>It&#8217;s called parametric polymorphism (fragments of System-F) in conjunction with type inference (Hindley-Milner type unification), and it&#8217;s been understood now for decades.  Maybe you&#8217;d like to learn about it&#8230;</p>
+<p>Untyped so-called &#8220;dynamic&#8221; languages are nice for many things, but eschewing statically typed languages simply due to ignorance about how type systems actually work, and what the state-of-the-art is capable of, is really just foolish.  Sadly, it seems to be the norm in these times.</p>
+      <p>
+			<small>comment at <a href="#comment-1345" title="">22. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1347">
+			<p class="who"><cite>Achilleas Margaritis</cite>:</p>
+			<p>The way a program is translated to machine code has no relation to what the program can do. A compiled language may offer very little capabilities, and a scripting language may offer much more capabilities, and vice versa. The real reason dynamic compilation exists is that it makes changing code more flexible than when precompiled. </p>
+<p>Mr Gosling&#8217;s reaction is a good indicator for what I have been suspecting all these years: Java encourages bloatware. And this has nothing to do with the fact that Java is precompiled or dynamically compiled (from source code to machine code, that is, not bytecode); it has to do with the language itself.</p>
+      <p>
+			<small>comment at <a href="#comment-1347" title="">22. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1362">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>As we&#8217;re still talking about <em>Mr Gosling&#8217;s reaction</em>, the <a href="http://www.artima.com/forums/flat.jsp?forum=276&amp;thread=153221">new transcript on Artima</a> is similar to what&#8217;s spoken on the conference <a href="http://sys-con.tv/read/196169.htm">flash video, 33:25 through 37:25</a></p>
+      <p>
+			<small>comment at <a href="#comment-1362" title="">22. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1374">
+			<p class="who"><cite><a href='http://www.andreas.org/blog/?p=179' rel='external ' title='217.13.206.145'>Sex, Drugs &#38; Compiler Construction &raquo; Gosling didn&#8217;t get the memo</a></cite>:</p>
+			<p>[&#8230;] Statisch getypte Sprachen sind ja sowas von out. Also im Grunde genommen waren sie schon immer lästig und im Weg, aber so langsam scheint sich die Erkenntnis auf breiter Front durchzusetzen. Nur James Gosling scheint es noch nicht begriffen zu haben. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1374" title="">24. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1385">
+			<p class="who"><cite><a href='http://www.raksoft.ch/weblog/?p=170' rel='external ' title='194.246.118.8'>It&#8217;s a free world, baby&#8230; &raquo; Java vs. PHP</a></cite>:</p>
+			<p>[&#8230;] In besagtem Interview, von welchem ich bisher nur kleine Ausschnitte lesen konnte, soll Gosling vor allem durch Ignoranz gegebenüber &#8220;Scripting&#8221;-Sprachen wie PHP, Ruby und ähnlichen &#8220;geglänzt&#8221; haben. Die Debatte unter  &#8220;Gosling: Java vs PHP a Moot Debate&#8221; enthält unter anderem einen relativ kurzen Beitrag von Bruce Eckel, in welchem er auf eine etwas längere Antwort von Ryan Tomayko hinweist:  &#8220;Gosling Didn’t Get The Memo&#8221;. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1385" title="">26. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1395">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>Ryan, you were quick to make a personal attack on James Gosling accusing him of spreading misinformation and malicious lies, as-soon-as the tabloid headline version of his comments was reported.</p>
+<p>It&#8217;s been 5 days since the his real comments became available on Artima (video and transcript).<br />
+It&#8217;s been 4 days since Curt Hibbs wrote &#8220;Reading the actual transcript shows a much more reasonable point of view&#8221; and retracted his criticism.</p>
+<p>Perhaps you too should <strong>reconsider</strong> your comments.</p>
+<p>You accuse James Gosling of using the term scripting language to denigrate PHP and Ruby by associating them with more limited language implementations like bash.<br />
+<em>And then you do what you accuse him of</em> - you use the term dynamic language to hype PHP and Ruby by associating them with more powerful language implementations like Lisp and Smalltalk.<br />
+In &#8220;Why PHP Scales - A Cranky, Snarky Answer&#8221;, George Schlossnagle writes &#8220;PHP (and <strong>scripting languages</strong> in general)&#8230;&#8221;.<br />
+In &#8220;Java is the SUV of programming tools&#8221;, Philip Greenspun writes &#8220;a <strong>scripting language</strong> such as PHP or Perl&#8221;.<br />
+In &#8220;Confounding: Sun vs. Scripting Languages&#8221;, Peter Yared writes &#8220;&#8230;<strong>scripting languages</strong> like PHP and Ruby&#8230;&#8221;.<br />
+You may prefer a different phrase, but that doesn&#8217;t mean George Schlossnagle or Philip Greenspun or Peter Yared or even James Gosling are spreading misinformation.</p>
+<p>You say James Gosling is ignorant of the many different things that PHP and Ruby are used for (he mentions PHP 7 times, Ruby 1, Python 1, Perl 0) because he characterizes them as languages that just generate web pages.<br />
+<em>And then you use PHP / Ruby on Rails &#8216;generate web page&#8217; examples</em> for 13 of 15 links on Scalability and Performance.<br />
+When you present that many &#8216;generate web page&#8217; examples it becomes understandable that an outsider like James Gosling has the impression that PHP and Ruby are just used to generate web pages.</p>
+<p>You accuse James Gosling of spreading misinformation about the current state of dynamic languages, presumably including the current state of PHP and Ruby performance.<br />
+<em>And you do what you accuse him of</em> - as one of only 5 performance references you link to a 6 year old comparison of miniscule Python programs to Blackdown JDK 1.1.7, rather than a comparison of standalone PHP or Ruby with Java HotSpot 1.5.<br />
+In &#8220;Why PHP Scales - A Cranky, Snarky Answer&#8221;, George Schlossnagle writes &#8220;&#8230;PHP being naturally slower than Java (something I believe to be true)&#8230;&#8221;<br />
+JRuby implementor Charles Nutter blogs &#8220;&#8230;Ruby&#8217;s troubles with performance are fairly well-documented&#8230; Again, Ruby&#8217;s struggles with performance are widely known.&#8221;<br />
+<strong>Not misinformation, not malicious lies: widely known.</strong></p>
+      <p>
+			<small>comment at <a href="#comment-1395" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1396">
+			<p class="who"><cite><a href='http://www.6thsenseanalytics.com/?p=13' rel='external ' title='216.69.166.122'>6th Sense Analytics &raquo; Blog Archive &raquo; Java v Ruby: flame on</a></cite>:</p>
+			<p>[&#8230;] That said, the “debate” around James’ comments became rather polemical. Responses from Ruby followers in particular indicated the language does have the scalability and power to build more than web “just” applications. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1396" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1403">
+			<p class="who"><cite><a href='http://www.telegraphics.com.au/' rel='external ' title='64.231.201.186'>Toby</a></cite>:</p>
+			<p>Baptiste wrote:</p>
+<blockquote>
+<p>Makes me think of a part of the old MS Windows EULA, which states:<br />
+  “Because this product contains Sun’s Java, it is not safe for air transport and nuclear powerplants”</p>
+</blockquote>
+<p>I was so shocked, shocked! at the idea MS would slip this into a EULA, that I had to verify it. Sure enough, in Backoffice 2000 Server&#8217;s license (for example), I found:</p>
+<blockquote>
+<p>NOTE ON JAVA SUPPORT. THE PRODUCT MAY CONTAIN SUPPORT FOR PROGRAMS WRITTEN IN JAVA. JAVA TECHNOLOGY IS NOT FAULT TOLERANT AND IS NOT DESIGNED, MANUFACTURED, OR INTENDED FOR USE OR RESALE AS ONLINE CONTROL EQUIPMENT IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS IN THE OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH THE FAILURE OF JAVA TECHNOLOGY COULD LEAD DIRECTLY TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE. Sun Microsystems, Inc. has contractually obligated Microsoft to make this disclaimer.</p>
+</blockquote>
+<p><a href="http://proprietary.clendons.co.nz/licenses/eula/backoffice2000server-eula.htm">http://proprietary.clendons.co.nz/licenses/eula/backoffice2000server-eula.htm</a></p>
+<p>Interesting, but I guess nobody reads licenses anyway.</p>
+      <p>
+			<small>comment at <a href="#comment-1403" title="">29. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1404">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>Toby, it&#8217;s in <a href="http://java.com/en/download/license.jsp" rel="">SUN MICROSYSTEMS, INC. BINARY CODE LICENSE AGREEMENT</a><br />
+&#8220;3. RESTRICTIONS &#8230; You acknowledge that Licensed Software is not designed or intended for use in the design, construction, operation or maintenance of any nuclear facility&#8230;&#8221;</p>
+      <p>
+			<small>comment at <a href="#comment-1404" title="">29. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1407">
+			<p class="who"><cite><a href='http://ox.cx/wordpress/?p=86' rel='external ' title='81.28.232.69'>Hynek&#8217;s scribbles &raquo; Blog Archive &raquo; Static vs. Dynamic</a></cite>:</p>
+			<p>[&#8230;] There is an ongoing discussion because of some claims made by James Gosling about dynamic languages. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1407" title="">30. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1412">
+			<p class="who"><cite>Carl</cite>:</p>
+			<p>Why are Ruby and PHP scripting languages? Simply because they are only useful as &#8216;glue&#8217; between programs which do the real work. If I use for example PHP, I have a web-server written in C, which uses a Module written in C to execute a language which uses Libraries written in C to access a database-server written in C. Can you write all this stuff in PHP? If not, PHP is only usable for scripting or with other words for glueing componentes together.</p>
+<p>Thats not that bad, such kinds of languages are usefull and neccessary. If you look at alle those examples of successful usage of those languages you see, thats they are always uses as glue. In games for example you need a glue language for game-logic, a DSL which allows the game-designer to specify logic without recompiling the whole engine. So the engine is written in C/C++ and the game-logic in some DSL. And why not use a existing language as DSL, maybe Python or Ruby.</p>
+<p>In Java I use a web-server written in Java, huge libs, written in Java to access a db-server written in C (I also could use a db which is written in Java, there are some). You can do this in Java and not in PHP so PHP is &#8216;only&#8217; for glue - hence a scriping language. Same goes for Ruby (even if ruby is a much better language then PHP, but also so slow that its nit possible to write even the runtime-libs of ruby in ruby without having an unbearable slow program).</p>
+<p>About Lisp: Everybody who writes about how Lisp is used in performance relevant appilcations should take a look at the code of these applications. In Lisp you can type your program statically to improve performance (look at &#8216;declaim&#8217;, &#8216;declare&#8217; and &#8216;proclaim&#8217; functions) and if you really want a Lisp program to compete performancewise with Java, you end up writing a statically typed program in Lisp using lots of declares which fix the types of nearly everything. But of course no one here knows that, because its not about truth, its only about hype.</p>
+<p>Maybe those scriping language will replace languages like Java sometimes. Computer are getting faster and at some point in time you can even affort a 100 times slower language to gain some comfort. The same happend with C and Java: Javas is in average about 50% slower then C because of the gc and certain design decisions but it don&#8217;t matter much because of the gain of productivity. But can the gain of productitivy justify a 10-100 times performance loss if you compare Java to ruby? At least not now I suppose.</p>
+      <p>
+			<small>comment at <a href="#comment-1412" title="">31. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1414">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><cite>Carl</cite>:</p>
+<blockquote>
+<p>If I use for example PHP, I have a web-server written in C, which uses a Module written in C to execute a language which uses Libraries written in C to access a database-server written in C. Can you write all this stuff in PHP? If not, PHP is only usable for scripting or with other words for glueing componentes together.</p>
+</blockquote>
+<p>By that token, Java must be a scripting language, since running a Java VM written in Java inside a Java VM would be very slow.</p>
+<p>Anyway, even PHP has the socket functions and the other stuff that you&#8217;d need to write a webserver. The argument holds water only because the the PHP interpreter is tied to a webserver, which makes it practically impossible to write d&#230;mons.</p>
+<p>For all the other popular dynamic languages, the argument does not hold. It is perfectly possible to write a webserver in pure Perl, Python or Ruby, and in fact Rails and Catalyst ship with such included for development purposes (although neither is not particularly optimised or feature-complete, so is not recommended for actual deployment). The same is probably true of Django, though I don&#8217;t know about that.</p>
+<p>But that is not a given. Two or three years ago we have someone at the local LUG who gave a talk about how they wrote a pure-Perl webserver which got them much better performance than they could achieve using Apache + mod_perl.</p>
+<p>Speed is not a particularly big problem for dynamic languages. Memory consumption is a <strong>much</strong> greater sticking point. F.ex. I generally use the libxml2 bindings for Perl rather than pure-Perl XML parsers to do XML processing; the extra speed is a nice bonus, but the real reason is that building a DOM for even a moderately large XML document using Perl data structures consumes mindboggling amounts of memory.</p>
+<blockquote>
+<p>if you really want a Lisp program to compete performancewise with Java, you end up writing a statically typed program in Lisp using lots of declares which fix the types of nearly everything. But of course no one here knows that, because its not about truth, its only about hype.</p>
+</blockquote>
+<p>However,</p>
+<ol>
+<li>
+<p>You can pin the types down retrospectively <em>as needed</em>, instead of burdening yourself with a static type system during development. It turns out that <a href="http://www.cabochon.com/~stevey/blog-rants/strong-weak-typing.html" title="Steve Yegge: Is Weak Typing Strong Enough?" rel="">selectively strictening a loose type system is more productive than selecting weakening a static type but just as performant</a>. Static typing is an optimisation; we all know what they say about premature optimisation, right?</p>
+</li>
+<li>
+<p>Smalltalk is pretty damn fast these days – without type declarations. How do they do that?</p>
+</li>
+<li>
+<p>Take a look at OCaml. This is a strongly typed, type inferencing, purely functional language. Any piece of OCaml code can operate on different types much like code in dynamic languages, but the compiler checks that the types it is invoked with are compatible with regard to the operations performed. You  avoid most (but not all) of the drawbacks of static typing while getting all the benefits of static typing despite only rarely specifying an explicit type – yet the compiled code is <em>faster than C++</em>.</p>
+</li>
+</ol>
+<p>Languages have a long way to go yet, no doubt, but one thing is already clear: ALGOL-derived static typing is detrimental and will be left behind sooner or later.</p>
+<p>Even for interplanetary navigation…</p>
+      <p>
+			<small>comment at <a href="#comment-1414" title="">31. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1416">
+			<p class="who"><cite>Carl</cite>:</p>
+			<p>You can write the Java VM in Java too, the problem is the bootstrapping, because no OS can execute Java by itself, so you need at least some loader in assembler. Its implemented this way in the JNode-OS, a pure Java OS with drivers, VM etc totally written in Java. Can you do something like this in PHP or  Ruby?</p>
+<p>Sure, there are Webservers written in Ruby and Python - but without big parts of the libs written in C those would be unbearable slow. And even so, they can&#8217;t stand against Apache speed-wise. In comparission: I&#8217;ve benchmarked Tomcat against Apache on my system and to my own surprise Tomcat came out noticeable faster - even if I tested only the delivery of static content.</p>
+<p>Look at the actual shootout-pages for benchmarks. Sure those are microbenches - but microbenches are mostly a problem for java because of the dynamic recompilation in the vm which makes programs run more slowly in the beginning. But Ruby or PHP are hideous slow compered to Java in most benches. Only exceptions are benchmarks where most time is spend in libs like regular-expression-matching or simmilar. Only there, because of the highly optimized C version in the runtime-lib PHP and Ruby can perform similar to the java-implemented re-lib in the java-standard-libs performance wise.</p>
+<p>Thats not bad for a scriping language, because performance isn&#8217;t relevant for scripting purposes as long as it don&#8217;t takes an eternity. But for application development performance does count, many people are still bashing Java because of its alleged poor performance.</p>
+<p>Yes, you can have dynamic languages which are faster - but even Smalltalk and Lisp can&#8217;t compete to Java normally. Same for Perl which is also faster then Ruby and PHP. Only Lisp can if you use lot of type constraining declares. So to get comperable performance in Lisp you also have to program in a way comparable to Java. </p>
+<p>And you are right, memory consumption is a problem too. Java is a well known memory hog, but if you substract the usage of the vm and the loaded standard-libs (which takes more space then the optimized libs for Ruby for example which are written in C) you see that Java uses noticable less space then Ruby for most oo-based applications. I think the reason is that in Ruby each object is implemented as a hash-table, while in Java objects are implementes like C structs. It&#8217;s obvious why this costs much more memory - but it&#8217;s not obvious how Ruby can made more optimal without totally redefining its runtime semantics.</p>
+<p>All things have a certain price: In Ruby the price of the comprehensive runtime meta programming is a increased memory consumption and a reduced performance. In Java the price for the better performance is the static types you have to use as a programmer (and I for myself don&#8217;t even consider static typing as a burden, but thats different topic).</p>
+<blockquote>
+<p>You can pin the types down retrospectively as needed, instead of burdening yourself with a static type system during development. It turns out that selectively strictening a loose type system is more productive than selecting weakening a static type but just as performant. Static typing is an optimisation; we all know what they say about premature optimisation, right?</p>
+</blockquote>
+<p>Static typing is an optimisation, but also compiler verifiable documentation and specification. I know, there are people refuse to see those both last points and see static typing only as a burden, not as a means to help you even in the design process.</p>
+<blockquote>
+<p>Smalltalk is pretty damn fast these days – without type declarations. How do they do that?</p>
+</blockquote>
+<p>Because of its runtime model which is very different from the runtime model of Ruby. And even Smalltalk (which is the oo-language with the most effort in efficient execution ever - even most concepts in the Java-VM are derived from experiences with Smalltalk) isn&#8217;t comperable to java performancewise. It&#8217;s fast enough for a wider range of applications compared to Ruby - and it&#8217;s <em>not</em> a scripting language. No one ever called Smalltalk &#8217;scripting language&#8217;. And guess why&#8230;</p>
+<blockquote>
+<p>Take a look at OCaml. This is a strongly typed, type inferencing, purely functional language.</p>
+</blockquote>
+<p>I know OCaml very well. And yes, it&#8217;s fast (but not always as fast as C++, only in certain areas). But guess what: It&#8217;s totally static. Not a bit of dynamism. Compared to ocaml I even Java is a dynamic language. So I don&#8217;t see your point here. And of course no one ever called ocaml a scripting language too. Guess why&#8230;.</p>
+<blockquote>
+<p>Languages have a long way to go yet, no doubt, but one thing is already clear: ALGOL-derived static typing is detrimental and will be left behind sooner or later.</p>
+</blockquote>
+<p>I agree with you in this point. But dynamic typed languages like ruby won&#8217;t be the future too. Look, dynamic typing is as old as programming languages. Even assembler is dynamically typed. And Lisp as one of the oldes higher-level lprogramming language is also dynamically typed. So all people who thik that dynamic typing is some kind of new trend, are way off the mark. The reason why dynamic typing has some kind of &#8216;revial&#8217; in the moment is the hype created by RoR and the increasing computing power of todays computers. So you can affort a slower language to a certain degree now - but only in specific areas. Remember that Smalltalk is around for more then 30 years now - and it never make a breakthru. So why should Ruby change that now? </p>
+<p>I think the future lies more in statically typed languages with very sophisticated type-systems which give you much more expressive power then the type system of languages like Java has. But dynamic typing is and was only a kludge to have a certain level of expressiveness without going thru the difficult task to create a good type system. Everybody can create dynamically typed languages - it&#8217;s in fact totally simple. But not everybody is able to crate a powerfull and expressive type system like for example a language like Haskell has. Thats the reason why there are so many dynamic typed languages, not because dynamic typing is something sophisticated.</p>
+      <p>
+			<small>comment at <a href="#comment-1416" title="">31. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1417">
+			<p class="who"><cite>Carl</cite>:</p>
+			<p>Oh, I forgot: You can find the benchmarks here: </p>
+<p><a href="http://shootout.alioth.debian.org/">http://shootout.alioth.debian.org/</a></p>
+<p>For example: Simple recursive function evaluation (ack, fib and tak).<br />
+Java: 4.23s, Ruby: 1393.77s, PHP: Timeout, Python: Timeout</p>
+<p>Binary-Trees:<br />
+Java: 8.23s, Ruby: Timeout, PHP: 519.68s, Python: 82.77s.</p>
+<p>As long the language really has to do the work on itself, PHP and Ruby and to a lesser degree Python are very slow.</p>
+      <p>
+			<small>comment at <a href="#comment-1417" title="">31. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1419">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>Carl, also see the <a href="http://shootout.alioth.debian.org/gp4/miscfile.php?file=benchmarking&amp;title=Flawed%20Benchmarks" rel="">flawed benchmarks</a> page - yes, the point of scripting languages is to script stuff written in other languages.</p>
+<p>Aristotle, &#8220;Smalltalk is pretty damn fast&#8221; doing what? compared to what? (Smalltalk is included on one of <a href="http://shootout.alioth.debian.org/gp4/" rel="">The Computer Language Shootouts</a>)</p>
+<p>And remember The Computer Language Shootout compares programs - maybe <a href="http://shootout.alioth.debian.org/gp4/faq.php#contributeprogram" rel="">the programs aren&#8217;t as good as they could be&#8230;</a></p>
+      <p>
+			<small>comment at <a href="#comment-1419" title="">01. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1423">
+			<p class="who"><cite><a href='http://patricklogan.blogspot.com' rel='external ' title='68.185.25.74'>Patrick Logan</a></cite>:</p>
+			<blockquote><p>if you really want a Lisp program to compete performancewise with Java, you end up writing a statically typed program in Lisp using lots of declares which fix the types of nearly everything. But of course no one here knows that, because its not about truth, its only about hype.</p>
+</blockquote>
+<p>I don&#8217;t have any numbers at hand for current Java or Lisp compilers. This is certainly not true for the Stalin compiler for Scheme, for example. Stalin generates much better code for Scheme than any Java compiler I am aware of.</p>
+<p>Of course the Stalin approach to Java would pay off about as well as for Scheme. But then you&#8217;d have to wonder why the language was so less expressive. You may as well use Scheme. So this comparison of Java and Lisp is more the result of where compiler developers put their effort than on anything inherent in the languages per se.</p>
+      <p>
+			<small>comment at <a href="#comment-1423" title="">01. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1426">
+			<p class="who"><cite> Isaac Gouy</cite>:</p>
+			<blockquote><p>Stalin generates much better code</p>
+</blockquote>
+<p><a href="http://shootout.alioth.debian.org/gp4sandbox/benchmark.php?test=all&amp;lang=stalin&amp;lang2=java" rel="">Stalin is installed</a> on The Computer Language Shootout but no one has <a href="http://shootout.alioth.debian.org/gp4sandbox/faq.php#contributeprogram" rel="">contributed programs</a>.</p>
+      <p>
+			<small>comment at <a href="#comment-1426" title="">01. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1427">
+			<p class="who"><cite>Carl</cite>:</p>
+			<p>The problem is that Stalin only works with relativly static and also only with &#8220;closed-world&#8221; programs. </p>
+<p>If you want to do Ruby-like metaprogramming or dynamic class loading and creation like in Java, its approach won&#8217;t work. It works best if you do numerical programming because Stalin detects some common usage patterns and creates optimized code for those patterns. But for other usage patterns which are very common in your average Ruby or PHP program, Stalin won&#8217;t give you much benefit (or won&#8217;t even work because it don&#8217;t support the whole Scheme standard).</p>
+<p>There where many attempts do full-program type propagation/inference etc. with dynamic programming languages but none really worked for a wide range of real programs. The reason is that if you have a dynamic programming language, progammers are really using this dynamism and then it&#8217;s impossible for any type-inferencer to succeed. And if a programmer really takes care to program in a way a type-inferencer can type a dynamic program to a static one, then he also can write those types down from the beginning.</p>
+      <p>
+			<small>comment at <a href="#comment-1427" title="">01. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1434">
+			<p class="who"><cite><a href='http://patricklogan.blogspot.com' rel='external ' title='134.134.136.4'>Patrick Logan</a></cite>:</p>
+			<blockquote>
+<p>The problem is that Stalin only works with relativly static and also only with “closed-world” programs.</p>
+<p>If you want to do Ruby-like metaprogramming or dynamic class loading and creation like in Java, its approach won’t work.</p>
+</blockquote>
+<p>Stalin is also a decade old. The combination of applying Stalin-like compilation to partially-closed-world modules, with Anamorphic-like hot spot code generation, etc. could combine to get overall great results.</p>
+<p>Stalin is an approach you&#8217;d apply to larger chunks of code you expect to be in production for some longer period of time, e.g. weeks or months. Partial-compilation to &#8220;unroll&#8221; some of the dynamism might make more of the code available to a Stalin compiler.</p>
+<p>I think my general point is that if you only think of a compiler as something like what Kernighan and Ritchie developed thirty years ago then, no, C or Java will almost always out perform Ruby for sufficiently CPU-bound examples.</p>
+      <p>
+			<small>comment at <a href="#comment-1434" title="">03. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1440">
+			<p class="who"><cite><a href='http://workblog.jonrowett.com/index.php/2006/04/05/ruby-java-c-mullah-omar-timothy-dalton/' rel='external ' title='70.84.225.162'>Jon Rowett&#8217;s Workblog &raquo; Ruby, Java, C#, Mullah Omar, Timothy Dalton&#8230;</a></cite>:</p>
+			<p>[&#8230;] Thanks partly to some ill-advised comments from James Gosling (and other &quot;thought leaders&quot; (snigger)) on the Ruby language, it looks as if there&#8217;s some real bad blood between the Ruby and Java camps at the moment. This seems strange, because one of the three main reasons* I chose to learn Ruby is because of the amount of interest it&#8217;s generated in the .Net world recently - I just haven&#8217;t seen any hostility from the .Net people towards Ruby, but I&#8217;ve seen stacks of it from rank-and-file Java developers. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1440" title="">05. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1453">
+			<p class="who"><cite><a href='http://www.somewherein.net/blog/?p=314' rel='external ' title='194.63.248.43'>somewhere in&#8230; colourful moments &raquo; Digg PHP&#8217;s Scalability and Performance</a></cite>:</p>
+			<p>[&#8230;] Several weeks ago there was a notable bit of controversy over some comments made by James Gosling, father of the Java programming language. He has since addressed the flame war that erupted, but the whole ordeal got me thinking seriously about PHP and its scalability and performance abilities compared to Java. I knew that several hugely popular Web 2.0 applications were written in scripting languages like PHP, so I contacted Owen Byrne - Senior Software Engineer at digg.com to learn how he addressed any problems they encountered during their meteoric growth. This article addresses the all-to-common false assumptions about the cost of scalability and performance in PHP applications. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1453" title="">10. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1529">
+			<p class="who"><cite><a href='http://www.koontzfamily.org/david/blog/?p=294' rel='external ' title='66.118.191.15'>Does not compute &raquo; Blog Archive &raquo; When Jini&#8217;s roamed the earth</a></cite>:</p>
+			<p>[&#8230;] In preparation for working on the specs for HLVM (High Level Virtual Machine) I have been brainstorming on what the future of languages and language features might be. Something that is high on my list is a better conceptual model for dealing with multiple processors. While describing the sort of system that I was envisioning a coworker mentioned that what I was saying sounded like Jini, that Java related technology that never really seemed to get going. So today I decided to do some research on what Jini was all about and how those ideas could benefit my current line of thinking. In this article(page 4 specifically) from 1999, Bill Venners who went on to found Artima speaks to Bill Joy and then James Gosling. James, who as you may know has had some problems recently with the dynamic language community had some interesting things to say about the way programmers use the language HE designed. Bill Venners: So given that it was more perceived along the lines of embedded devices, or that&#8217;s how you thought of it, would you say there are deficiencies in Java for the enterprise environment, or areas in which you could do better at the language level? [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1529" title="">19. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1555">
+			<p class="who"><cite><a href='http://www.jsbn.net/blog/?p=38' rel='external ' title='220.181.29.66'>JavaStation Builder NetWork 2006 &raquo; Digg PHP&#8217;s Scalability and Performance</a></cite>:</p>
+			<p>[&#8230;] Several weeks ago there was a notable bit of controversy over some comments made by James Gosling, father of the Java programming language. He has since addressed the flame war that erupted, but the whole ordeal got me thinking seriously about PHP and its scalability and performance abilities compared to Java. I knew that several hugely popular Web 2.0 applications were written in scripting languages like PHP, so I contacted Owen Byrne - Senior Software Engineer at digg.com to learn how he addressed any problems they encountered during their meteoric growth. This article addresses the all-to-common false assumptions about the cost of scalability and performance in PHP applications. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1555" title="">19. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1676">
+			<p class="who"><cite>Paul</cite>:</p>
+			<p>If these &#8220;scripting languages&#8221; are supposed to replace Java, then why aren&#8217;t they used like Java/C++ for building middleware layers? Seems like developers would use them for this purpose if they fit.</p>
+      <p>
+			<small>comment at <a href="#comment-1676" title="">21. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1678">
+			<p class="who"><cite><a href='http://patricklogan.blogspot.com' rel='external ' title='134.134.136.4'>Patrick Logan</a></cite>:</p>
+			<p>Every use of LAMP is essentially using these &#8220;scripting&#8221; languages for middleware.</p>
+<p>To see something that might be cast in a more familiar &#8220;middleware&#8221; light, check out <a href="http://www.activegrid.com/">ActiveGrid</a>.</p>
+<p>Their motto is &#8220;Tap the power of LAMP for service-oriented applications&#8221;.</p>
+      <p>
+			<small>comment at <a href="#comment-1678" title="">21. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1679">
+			<p class="who"><cite>Paul</cite>:</p>
+			<p>I guess you could classify apache as middleware, but the scripts like PHP aren&#8217;t really doing the middle job, apache is. </p>
+<p>Now if you wrote a webserver or an ORB entirely with PHP, then it would be middleware. And that&#8217;s my point no one is doing such things with PHP because it&#8217;s not meant for that sort of thing.</p>
+      <p>
+			<small>comment at <a href="#comment-1679" title="">21. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1801">
+			<p class="who"><cite>Isaac Gouy</cite>:</p>
+			<p>Patrick Logan wrote: <q>Every use of LAMP is essentially using these “scripting” languages for middleware.</q></p>
+<p>I&#8217;ll echo and amplify Paul&#8217;s reply: Every use of LAMP is essentially using these &#8220;scripting&#8221; languages for <strong>glue</strong> – they &#8220;assume the existence of a set of powerful components and are intended primarily for connecting components together&#8221; (John K. Ousterhout).</p>
+      <p>
+			<small>comment at <a href="#comment-1801" title="">25. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1929">
+			<p class="who"><cite><a href='http://borber.com/blog/?p=523' rel='external ' title='87.236.196.211'>&raquo; Ruby je větší konkurent než Java, říká Don Box</a></cite>:</p>
+			<p>[&#8230;] Don Box v&nbsp;zápisku Gosling on Ruby po delší době upozornil na určité ignorantství Jamese Goslinga, duchovního i &bdquo;biologického&ldquo; otce Javy, který rozhovorem Java Is Under No Serious Threat From PHP, Ruby or C# zahrál mnoha příznivcům dynamických jazyků na jak na city, tak na vášně :) Asi nejlepší reakcí, jakou jsem viděl, je Gosling Didn’t Get The Memo. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1929" title="">27. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-3288">
+			<p class="who"><cite><a href='http://xoops.org.cn/modules/wordpress/?p=307' rel='external ' title='220.194.62.202'>XOOPS CHINA - WordPress &raquo; Digg PHP&#8217;s Scalability and Performance</a></cite>:</p>
+			<p>[&#8230;] Several weeks ago there was a notable bit of controversy over some comments made by James Gosling, father of the Java programming language. He has since addressed the flame war that erupted, but the whole ordeal got me thinking seriously about PHP and its scalability and performance abilities compared to Java. I knew that several hugely popular Web 2.0 applications were written in scripting languages like PHP, so I contacted Owen Byrne - Senior Software Engineer at digg.com to learn how he addressed any problems they encountered during their meteoric growth. This article addresses the all-to-common false assumptions about the cost of scalability and performance in PHP applications. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-3288" title="">26. May 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4972">
+			<p class="who"><cite>Morves</cite>:</p>
+			<p>Well, as for the “interplanetary navigation” issue, maybe we should hear from a NASA employee (Sean Kelly) what he thinks about Java and dynamic languages:</p>
+<p><a href="http://oodt.jpl.nasa.gov/better-web-app.mov">http://oodt.jpl.nasa.gov/better-web-app.mov</a></p>
+<p>They have been using TCL/TK (dynamic language) to build GUIs for years, replacing C++. He says Java is &#8220;not fun&#8221; and far less productive than PHP, Python or Ruby for web development.</p>
+      <p>
+			<small>comment at <a href="#comment-4972" title="">06. July 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8496">
+			<p class="who"><cite>cnemelka</cite>:</p>
+			<p>I&#8217;ve seen a 70 year old carpenter put up a wall faster with a hammer than a 20 year old carpenter using a nail gun.</p>
+<p>I have been programming for 26+ years and try to learn a new language every year. My favorite still being C, but I rarely ever consider using it.</p>
+<p>I&#8217;ve seen great systems written in languages most of you have never heard of (EDL anyone?).</p>
+<p>I&#8217;ve seen crappy systems written in Java/C/C++/VB/Lisp/Algol/Forth,etc,etc, etc.  Compiled, interpreted or compiled to bytecode then interpreted, whatever.</p>
+<p>I&#8217;ve seen great systems written in those same languages.</p>
+<p>I&#8217;ve seen excellent programmers who have no idea why their software turns a high-end ORACLE RDBMS Server into an expensive brick.</p>
+<p>I&#8217;ve seen excellent DB admins who think that PL-SQL is the only language you should ever write in.</p>
+<p>I&#8217;ve seen countless projects fail because of issues at layer 8 of the OSI model (politics=Layer 8, for those of you who think there are only 7 layers)</p>
+<p>I&#8217;ve seen excellent programmers who think that all their code performance problems are because the network is slow.</p>
+<p>I&#8217;ve seen a lot of things in 26+ years.</p>
+<p>And I only wish to make two comments (neither original):</p>
+<p>1) People are more important than technology.<br />
+2) It&#8217;s a poor musician that blames his instrument.</p>
+<p>And leave two pieces of advice:</p>
+<p>1) Implement technology based on a deep understanding of the problem/business/project/requirements,etc.<br />
+2) Learn what you do not know.</p>
+<p>&#8211;cnemelka</p>
+      <p>
+			<small>comment at <a href="#comment-8496" title="">20. August 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 1.065 seconds -->
+<!-- Cached page served by WP-Cache -->

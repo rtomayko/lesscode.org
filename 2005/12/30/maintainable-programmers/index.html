@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Maintainable Programmers</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/12/28/verbosity/">Verbosity</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2006/01/07/hows-that-for-less-code/">How’s that for less code?</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-122"><a href="http://lesscode.org/2005/12/30/maintainable-programmers/" rel="bookmark" title="Permanent Link: Maintainable Programmers">Maintainable Programmers</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://plasmasturm.org/">Aristotle Pagaltzis</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-laugh-at-you/" title="View all posts in Then they laugh at you..." rel="category tag">Then they laugh at you...</a> 
+      on 30. December 2005</small>
+
+			<div class="entrytext">
+				<p>I thought it unfortunate that the controversy kicked up by a few (now retracted) passages in Brian Fioca’s <a href="http://lesscode.org/2005/10/23/wasp/" title="WASP - Easing the Switch from Java to PHP">article about <abbr title="Web Application Structure for PHP5">WASP</abbr></a> detracted from a proper discussion of the article’s real flaw. I addressed the controversial, less interesting sentiments in comment over there, but wanted to take a few moments for a longer commentary. It took a while, but here we go.</p>
+
+<p>The true failing in that article is a terminal case of corporate-management world view. Let me quote a little out of order to highlight this:</p>
+
+<blockquote>
+  <p>Sure, you can write spagetti code in <abbr title="PHP: Hypertext Processor">PHP</abbr> 5, but if you have a well designed framework that keeps <abbr title="PHP: Hypertext Processor">PHP</abbr> code outside of your <abbr title="Hypertext Markup Language">HTML</abbr> and in tightly structured classes, you’re more likely to end up with code that looks and works and feels like Java.</p>
+</blockquote>
+
+<p>The implication appears to be that anyone in the real world, if only they’re using Java, writes well structured and maintainable code.</p>
+
+<p>I think the real world has a few surprises in store for people who think that way. As the saying goes, real programmers can write Fortran in any language.</p>
+
+<blockquote>
+  <p>Deemed “hacker” languages, scripting languages can be quick to write, but since they do not have many of the advanced features of compiled languages like C++ and Java, they have been prone to lax design practices, leading to code that isn’t efficient, stable, or maintainable enough for large solutions. With the correct mindset and help from structured frameworks like <abbr>WASP</abbr>, this no longer has to be the case.</p>
+</blockquote>
+
+<p>This claim is a crock. <abbr title="PHP: Hypertext Processor">PHP</abbr> has a very low barrier to entry; consequently, a lot of eye-wateringly bad programmers are writing code in it; hence, a lot of code written in <abbr title="PHP: Hypertext Processor">PHP</abbr> is awful. This is arguably <em>a good thing</em>: a lot of people who have small needs are empowered to meet them on their own despite having little skill, which would never happen if Java were the only option available.</p>
+
+<p>To conclude that if these programmers did learn Java, they would suddenly turn out maintainable code, or that if a good programmer changed camps from Java to <abbr title="PHP: Hypertext Processor">PHP</abbr>, the quality of his code would suddenly degrade, is fallacious.</p>
+
+<p>Again, you can write pretzel logic in any language.</p>
+
+<blockquote>
+  <p>Until recently, platforms like Java were more likely to provide a stable, proven foundation to design and build well designed code, however by their nature they introduce a level of complexity that takes extra time to overcome.</p>
+</blockquote>
+
+<p>The entire “more likely” clause is a myth, perpetuated by a middle management population that has absolutely no clue whatsoever what makes code good.</p>
+
+<blockquote>
+  <p>Using scripting languages like <abbr title="PHP: Hypertext Processor">PHP</abbr> tended to produce code in a faster time frame, but it was often impossible to maintain the architectural integrity necessary for building maintainable, extendable applications.</p>
+</blockquote>
+
+<p>This is true – in an extremely local sense.</p>
+
+<p>The overall design of large Java systems will tend to be <em>more</em> convoluted than that of almost any system written in a dynamic language, simply because the contortions forced by Java require larger overall designs.</p>
+
+<p>Java buries the intention of code under a thick layer of implementation details and typing bureaucracy. Programmers are drilled to execute the requisite gruntwork in repeatable, predictable ways. Moreover, doing so conditions them to design their own system to cater to these reflexes. A maintainance programmer who comes in later will therefore easily be able to make changes to the mortar of an application. Unfortunately, that does not ensure good high-level designs nor does it translate to easy refactoring of convoluted <em>architecture</em>.</p>
+
+<p>Dynamic languages abstract away huge swathes of gruntwork and require less structure. This means small systems have small implementations, which directly translates to better maintainability. The price is a loss of exemplary structure and of conditioning, which requires better innate architectural skills and stronger discipline when building larger designs; neither are strong points of the average programmer. However, designs in such languages aren’t frequently large, because the language does not <em>require</em> large architecture for modestly sized systems – which the majority are.</p>
+
+<p>I have seen as many examples of truly terrible designs in Java as I have seen examples of completely unreadable code in Perl. Maintenance problems may manifest in apparently different ways, but their cost does not degrade appreciably when they afflict a system written in a “more maintainable” language. The only objectively measurable difference is in the amount of required code.</p>
+
+<blockquote>
+  <blockquote>
+    <p>Why would you want to stick with <abbr title="PHP: Hypertext Processor">PHP</abbr> even in situations when you can use Python, Ruby, or anything else?</p>
+  </blockquote>
+  
+  <p>Simple. Because it’s cheaper to hire programmers that can write code in <abbr title="PHP: Hypertext Processor">PHP</abbr>. And if you have a good technical lead and a well implemented framework, your cheap programmers are going to pick it up and run and write good (and maybe even less) code.</p>
+</blockquote>
+
+<p>(Brian writes this in a response in the comments, not in the article.)</p>
+
+<p>This is a fear-based middle-management hiring strategy. Good developers know that “cheap programmers” will never <a href="http://www.joelonsoftware.com/articles/HighNotes.html" title="Joel Spolsky: Hitting the High Notes">hit the high notes</a>. You can hire 100,000 code monkeys and they will never produce the same quality as 5 stellar programmers.</p>
+
+<p>All these quotations are pervaded by a disregard for the fact that programmers are craftsmen; for the fact that that the language, framework, and whatever else they use in the course of their work is a tool. Good tools matter, but the stated opinions read as if the programming language is the principal factor in the quality of the result, when the truth is that it’s the programmers who ultimately matter.</p>
+
+<p>If you hire good programmers, maintainability won’t intrinsically be affected by whether your in-house software development has standardised on Java, <abbr title="PHP: Hypertext Processor">PHP</abbr>, Perl, Ruby, Lisp, Smalltalk, Haskell, or Self. Good programmers can appreciate and can create good design regardless of language, and they can absorb a new language easily enough. Or as <a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html" title="Joel Spolsky: The Perils of JavaSchools">Joel Spolsky says</a>:</p>
+
+<blockquote>
+  <p>I have never met anyone who can do Scheme, Haskell, and C pointers who can&#8217;t pick up Java in two days, and create better Java code than people with five years of experience in Java, but try explaining that to the average <abbr title="Human Resources">HR</abbr> drone.</p>
+</blockquote>
+
+<p>But whether your system is written in Java or an exotic programming language, every single programmer you hire will have to get acquainted with its architecture – which is hence the major factor in its maintainability. Comparatively, the chosen language is barely more than a neglibility, assuming it has a good impendance match with the type of application being written.</p>
+
+<p>In thinking about this issue, I am in fact tempted to recommend that you hire programmers who are <em>unfamiliar</em> with the language your system is written in – because if they still struggle with the basics of a new language after a month, you might want to reconsider their future with your company. But that may be too bold a claim. Even if, in lesser form, <a href="http://www.paulgraham.com/pypar.html" title="Paul Graham: The Python paradox">it has been made</a> before.</p>
+
+<p>The bottom line is that you need people capable of producing a clean, flexible and only-as-complex-as-necessary architecture for the problem they were tasked with solving. And you won’t get that from an army of code monkeys, even if you hire 1,000,000 of them.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/12/30/maintainable-programmers/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													<a href="http://lesscode.org/2005/12/30/maintainable-programmers/trackback/">Trackback <acronym title="Uniform Resource Identifier">URI</acronym></a>
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">25 Responses to &#8220;Maintainable Programmers&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-888">
+			<p class="who"><cite>Kevin Smith</cite>:</p>
+			<p>Well said. </p>
+<p>My only small disagreement/clarification (and it regards the quote from Joel) would be that developers who have never done OO before often have a difficult time adjusting to the OO paradigm. I suppose these days, it&#8217;s rare to find someone who hasn&#8217;t at least been exposed to OO, but a decade ago, it was very common. </p>
+<p>For any OO project, I would want some evidence that the candidate was comfortable with OO. Likewise, if the project used a functional language, I would want functional experience.</p>
+      <p>
+			<small>comment at <a href="#comment-888" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-890">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='216.67.21.19'>Brian Fioca</a></cite>:</p>
+			<p>Your points are actually good ones, and your conclusion is in agreement with what I personally believe to be true.</p>
+<p>I&#8217;d like to say that I realize this isn&#8217;t a personal attack, and I appreciate the criticism.  However, the article was originally written for an audience stuck in fear of scripting languages such as PHP for no actual reason other than they heard it was bad.  This is the reason it has a &#8220;corporate-management world view.&#8221;  </p>
+<p>I would argue that the typical audience of lesscode.org understands most of the  things you point out above, but if you were to try to explain them on their own to someone who is for some reason stubbornly avoiding any real analysis of dynamic language use for their applications, you wouldn&#8217;t get very far.  Hence, the intermediate step.</p>
+<p>I really wrote the article for someone like me.  I had a similar mindframe 2 years ago, but have since seen the error of my ways.  My context (and in my experience, many others&#8217;) was the world of Java, and my fallacy was that, while it is certainly possible to write bad code in Java, it is most probable that one would write bad code in PHP, including myself.  This turned out to be untrue.  It was a surprise to me.  I wanted to convince people in my previous situation what I learned.  I wrote the article.</p>
+<p>So, even though you seem to have taken apart my article, I want to thank you for furthering my original goals.</p>
+      <p>
+			<small>comment at <a href="#comment-890" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-892">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='69.178.0.23'>Brian Fioca</a></cite>:</p>
+			<p>Well, I was going to leave this to someone else to say, but nobody has yet and it&#8217;s bothering me.</p>
+<p>What is intrinsically wrong with the corporate management world view?  Those people pay my salary.  In the real world, it&#8217;s those people you have to convince.</p>
+<p>Certainly the best programmers are much better than the monkeys.  The main problems are there&#8217;s no easy way to judge them, and you can&#8217;t hit deadlines with artists.  So in the real world the monkeys work.  So the best option might be to give them a good tool to work with.</p>
+      <p>
+			<small>comment at <a href="#comment-892" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-893">
+			<p class="who"><cite><a href='http://www.tonywright.com' rel='external ' title='66.58.153.47'>Tony Wright</a></cite>:</p>
+			<p>I&#8217;d also throw in a response to the assault on Brian&#8217;s original point:</p>
+<p>&#8220;Why would you want to stick with PHP even in situations when you can use Python, Ruby, or anything else?</p>
+<p>Simple. Because it’s cheaper to hire programmers that can write code in PHP. And if you have a good technical lead and a well implemented framework, your cheap programmers are going to pick it up and run and write good (and maybe even less) code.&#8221;</p>
+<p>Aristotle gives a response that effectively says &#8220;Well, sure, but you get what you pay for&#8221;.  I think that&#8217;s totally missing the point.  Cheaper, in this case, means less expensive and more plentiful (and thus cheaper to FIND from an HR standpoint)&#8211; not lower quality.  In the supply/demand world, the supply of PHP programmers is very high (the demand is pretty high too, but you can find a PHP guy on every street corner).  A badass senior PHP coder can be less expensive to find and hire than a similarly badass Python programmer.</p>
+<p>Comparing 5 great coders to 1,000,000 “codemonkeys” is silly.  Instead, compare the 5 great coders to 1 great coder (as tech lead) with 4 solid mid-level/junior programmers.  Your chance of staffing up with ONLY great coders is pretty slim.  So in the business reality where you have to hire some mid-level and junior-level coders (cause that’s all you can find/afford), what will help you succeed?  Business systems and coding frameworks will!</p>
+<p>Aristotle&#8217;s argument is the equivalent of saying &#8220;Why do you need Ruby on Rails? You don&#8217;t need any sort of framework. Just get really smart and experienced coders and they&#8217;ll create great code in Ruby – without the ‘rails’”.  </p>
+<p>What makes Ruby on Rails (and WASP) so amazing is that a “codemonkey” (though I’d prefer the moniker of “coders-who-don’t-consider-themselves-artists” or CWDCTA) can create a good app with good code, whereas the SAME codemonkey probably couldn’t or wouldn’t WITHOUT the framwork.</p>
+<p>System and process engineering in business WINS over hiring geniuses and turning them loose almost every single time.  The goal of a framework like WASP or RoR is to allow non-genius programmers to aim higher and create better code.</p>
+<p>It’s no secret that around 80% of non-franchise businesses fail or close within their first decade.  Franchises, on the other hand, enjoy an 85% success rate in the same time frame.  The difference isn’t that the franchise businesses hire the absolute elite people in their field (usually the opposite is true).  The different is that there is a system and framework that allows average people to produce above-average work (yet still command only an average salary).</p>
+      <p>
+			<small>comment at <a href="#comment-893" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-894">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='24.166.51.26'>Ryan Tomayko</a></cite>:</p>
+			<p>Brian said: </p>
+<blockquote>
+<p>What is intrinsically wrong with the corporate management world view? Those people pay my salary. In the real world, it’s those people you have to convince.</p>
+</blockquote>
+<p>I think the issue is more about how do you convince them? It&#8217;s fairly easy to buddy up to higher level IT people by feeding them buzzwords and playing off of traditional misunderstandings about what works and what doesn&#8217;t in IT. For example, let&#8217;s suppose I walk into my manager&#8217;s office and she tells me she wants &#8220;SOA&#8221;. I look down and notice that &#8220;SOA&#8221; is mentioned on the covers of various tech rags littering her desk. Let&#8217;s also suppose that I think 90% of what the tech rags are prescribing for &#8220;SOA&#8221; is wrong, misleading, promising too much, not practical, laden with issues, etc. What do I do? I can take the low road and say, &#8220;Okay, SOA it is &#8212; no problems,&#8221; and bullshit my way through 6-9 months of development that will ultimately be a failure for myself, my team, and the company as a whole. Or, I could put my reservations on the table and expect the decision maker to consider them along with everything else she&#8217;s hearing. I don&#8217;t have any hard data on this but I can only assume that the first scenario occurs much more often because there&#8217;s a lot of very obviously bad technical decisions being made everywhere.</p>
+<p>The &#8220;million monkeys typing in PHP&#8221; falacy strikes me as exactly one of these situations and I think that&#8217;s all Aristotle was pointing out. It falls into the &#8220;nine women can make a baby in one month&#8221; class of misunderstandings that higher level IT people seem so prone to fall for. Lower level technical people that understand these things to be folly can move the situation in one of two ways: </p>
+<ol>
+<li>
+<p>Leave the misunderstanding in place as leverage. In the SOA case, my job is signifcantly easier if I don&#8217;t have to sell the concept &#8212; the tech rags have already sold the manager &#8212; all I have to do is accept the job and start building stuff. And when it fails, it&#8217;s not like the whole SOA thing was <em>my</em> idea. In the million monkeys typing case, leaving this misunderstanding on the table provides an artificial selling point for the PHP framework, even though it might not be &#8220;exactly true&#8221;</p>
+</li>
+<li>
+<p>Attempt to educate the higher level person about the issue so that they can make an informed decision.</p>
+</li>
+</ol>
+<p>1 is dishonest and destroys the reputation of technical experts over time (as it has been for some time). #2 would be great but many technical experts are not brought to the table until a decision is already made (this is a result of #1).</p>
+      <p>
+			<small>comment at <a href="#comment-894" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-896">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='69.178.0.23'>Brian Fioca</a></cite>:</p>
+			<p>I think Ryan has identified a great point.  </p>
+<p>There really is a significant disconnect between the audience of this site and the audience of say, CTO magazine.  It&#8217;s easy (and, financially rewarding) to write articles in those magazines that focus on buzz words and have little technical accountability.  It&#8217;s also easy to placate the readers of those magazines like Ryan mentions in way 1.  I&#8217;m sure there&#8217;s enough material here to write an entirely new article.</p>
+<p>My colleague reminded me that <a href="http://www.des.emory.edu/mfp/Kuhn.html">Kuhn&#8217;s Structure of Scientific Revolutions</a> appears to apply here.  It seems to me that what&#8217;s been going on as of late is an attempt at a paradigm shift in programming technology.  Whenever such an event occurs, the natural position of the proponents of the previous paradigm is one of resistance and denial.  It often becomes necessary for a revolution to occur in these situations.  To say that subversive interjections of a new paradigm into the world of the old guard corporate world is dishonest may be factually true, but it might also be necessary to some extent in order to achieve the shift.</p>
+<p>I admit this argument might be a bit of a hyperbole&#8230; but I find it interesting.  I happen to like revolutions.  :)  I also like to think part of the purpose of this site is to push this new paradigm into prominence.</p>
+      <p>
+			<small>comment at <a href="#comment-896" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-897">
+			<p class="who"><cite><a href='http://diveintomark.org/' rel='external ' title='68.221.113.14'>Mark</a></cite>:</p>
+			<p>I love the phrase &#8220;subversive interjections&#8221;, as it reminds me of an anecdote about Subversion (no pun intended).  A friend of mine decided, all on his own, to start using Subversion for source control of a small project he was developing at work.  The project was officially sanctioned, but it was small enough that there was never any discussion of source control.  Inevitably, someone else needed to get access to some of the code, so he calmly pointed them to the subversion repository and a quick half-page tutorial he&#8217;d written on the departmental intranet (which was run by MediaWiki, another subversive interjection of his).  The newly-introduced-to-Subversion developer immediately fell in love with Subversion, which wouldn&#8217;t be difficult since I believe they were using ClearCase on other projects.</p>
+<p>When the time came to start another project, the other developer quietly set up a Subversion repository before anyone had a chance to complain, and pointed the other developers to the wiki page that explained how to check code in and out.  All the other developers loved it, and so it became the de facto (but never officially sanctioned) revision control system.</p>
+<p>This further reminds me of polls circa 2001 in which the vast majority of Fortune 500 CTOs mistakenly believed that they were not using Linux.</p>
+      <p>
+			<small>comment at <a href="#comment-897" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-898">
+			<p class="who"><cite><a href='http://warpedvisions.org/2005/12/30/link-maintainable-programmers/' rel='external ' title='66.33.197.19'>warpedvisions.org &raquo; Blog Archive &raquo; Link: Maintainable Programmers</a></cite>:</p>
+			<p>[&#8230;] December 30th, 2005 in Links Maintainable Programmers. Planning maintainability and reuse are the most difficult design problems I know of. A juicy quote: [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-898" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-899">
+			<p class="who"><cite><a href='http://dehora.net/journal' rel='external ' title='83.70.238.100'>Bill de hOra</a></cite>:</p>
+			<p>&#8220;Or, I could put my reservations on the table and expect the decision maker to consider them along with everything else she’s hearing.&#8221;</p>
+<p>Absolutely. Start with &#8220;I think we need to consider SOA in the context of&#8230;&#8221;, followed at some point by &#8220;..you seem quite convinced; what are you thoughts on&#8230;&#8221;, closed off by ideally &#8220;..actually we do something along these lines&#8221; (never say &#8220;yeah, we already do that&#8221;).</p>
+<p>If a term like &#8220;SOA&#8221; can mean whatever you want it to mean, adoption is not neccessarily a problem.  In other words, buzzword bingo can be your friend too.</p>
+      <p>
+			<small>comment at <a href="#comment-899" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-900">
+			<p class="who"><cite><a href='http://www.coder.com' rel='external ' title='63.78.219.5'>Corporate Coder</a></cite>:</p>
+			<p>The conclusion seems to be: hey, get a bunch of really smart coders that know what they are doing, and suddenly you will reach nirvana. This is too simplistic. I have found that in big corporations the biggest problem is too many meetings that mean nothing - where key decisions like direction, architecture are never solved in a timely manner. Usually this is because the decision makers are so abstracted out of the process, so the software teams then flounder or lack real focus. The second to the last paragraph seems really silly too. How many companies can afford to play the Trial and Error game? There are similarities to building enterprise software systems and enterprise skyscrapers. There are a number of variously skilled people that can all concretely contribute to the building process.</p>
+      <p>
+			<small>comment at <a href="#comment-900" title="">31. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-901">
+			<p class="who"><cite>Saša Ebach</cite>:</p>
+			<p>Just a quick comment to phrase &#8220;How many companies can afford to play the Trial and Error game?&#8221;. Hiring decisions are ultimately all Trial and Error. No matter what field you are talking about. Be it a sales person or a high tech employee. Focusing on hiring the right people is the most important part of expanding any business. (see <a href="http://www.jimcollins.com/lib/books.html">Good to Great: Why Some Companies Make the Leap . . . and Others Don’t</a>)</p>
+      <p>
+			<small>comment at <a href="#comment-901" title="">31. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-902">
+			<p class="who"><cite>Dennis</cite>:</p>
+			<p>The way you make sure you&#8217;re hiring only great coders is to do like Joel said and get people who know Scheme, Haskell, and C pointers. Most programmers aren&#8217;t up to it. The ones who are will do just fine with anything else you throw at them.</p>
+      <p>
+			<small>comment at <a href="#comment-902" title="">31. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-903">
+			<p class="who"><cite><a href='http://www.jooto.com/blog' rel='external ' title='24.81.132.177'>Alex Bunardzic</a></cite>:</p>
+			<p>Brian Fioca wrote:</p>
+<blockquote><p>What is intrinsically wrong with the corporate management world view? Those people pay my salary. In the real world, it’s those people you have to convince.</p></blockquote>
+<p>The thing that&#8217;s wrong is this: &#8220;On average, average corporations will employ average people&#8221; (forgot the exact source of that quote).</p>
+<p>The problem is in the word &#8216;average&#8217;. With average resources and average attitudes, you can&#8217;t help but expand only average efforts and produce and deliver average results.</p>
+<p>Which means you must gain the competitive edge using some extra-curricular activities and gimmicks (e.g. political lobbying, barely legal under-the-table deals, spreading FUD, etc.)</p>
+<p>I don&#8217;t know about you, but I&#8217;m not fond of being a part of unethical dealings. I&#8217;d rather strive to be out in the clear.</p>
+<p>The real problem with the corporate setup is that it does not encourage putting above-average efforts in. For the simple reason that no one can reliably measure individual contribution to the success/failure of the corporate offering. You could outperform (or underperform) your colleagues by a factor of 10, no one would ever notice in a typical corporation. As the saying goes, &#8220;90% of success in the corporate world is simply showing up at your desk&#8221;.</p>
+      <p>
+			<small>comment at <a href="#comment-903" title="">31. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-904">
+			<p class="who"><cite><a href='http://www.jooto.com/blog' rel='external ' title='24.81.132.177'>Alex Bunardzic</a></cite>:</p>
+			<p>Dennis wrote:</p>
+<blockquote><p>The way you make sure you’re hiring only great coders is to do like Joel said and get people who know Scheme, Haskell, and C pointers. Most programmers aren’t up to it. The ones who are will do just fine with anything else you throw at them.</p></blockquote>
+<p>I vehemently disagree with that. First, if you haven&#8217;t already, you should watch Joel&#8217;s &#8220;12 Weeks with Geeks&#8221; DVD (I wrote about it <a href="http://jooto.com/blog/index.php/2005/12/27/what-is-stupidity/">here</a>).</p>
+<p>Frankly, I personally wouldn&#8217;t let all those geeks (who can do toughest recursion/pointers in their sleep) take my garbage out. I&#8217;m not sure where would my garbage end up if these guys were given the responsibility to handle it. They all looked like total retards in the Joels&#8217; DVD.</p>
+<p>I got seriously concerned about their mental acuity watching them scribbling on the whiteboard, trying to &#8216;calculate&#8217; whether they could make it to the other end of the chasm that&#8217;s gaping between their window and the nearest ledge. Just watch carefully what they&#8217;re doing in that sequence, and it&#8217;ll become clear to you that these people who live and breathe pointers and recursions are utterly incapable of handling any real life challenge.</p>
+<p>Would I hire such geeks to solve real life software problems in my company? Not in my wildest dreams.</p>
+      <p>
+			<small>comment at <a href="#comment-904" title="">31. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-908">
+			<p class="who"><cite><a href='http://pobox.com/~kragen' rel='external ' title='209.157.132.93'>Kragen Sitaker</a></cite>:</p>
+			<p>Brian Fioca asks:</p>
+<blockquote>
+<p>What is intrinsically wrong with the corporate management world view? Those<br />
+  people pay my salary. In the real world, it’s those people you have to convince.</p>
+</blockquote>
+<p>(As an aside, the real world contains many more kinds of places than that statement suggests.)</p>
+<p>Aristotle has identified some delusions in the WASP article, delusions that seem common among &#8220;corporate management&#8221;.  Knowing the delusions of your audience helps  communication, but knowing them isn&#8217;t the same as believing them.</p>
+<p>In the quote, Fioca asks what is &#8220;intrinsically wrong&#8221; with these delusions.  He points out that it&#8217;s not that they are not unpopular.  I believe it&#8217;s that they are wrong; they are mistaken beliefs.  Guiding your actions by them is dangerous.</p>
+<p>Some delusions are more dangerous than others.  The delusion that touching insulated electrical cords is fatal would only inconvenience you slightly, most likely; the delusion that you can fly if you jump from a tall building may kill you.</p>
+<p>The delusions we&#8217;re talking about fall in between: that Java makes your code comprehensible, that it contains &#8220;advanced features&#8221; missing in Perl that keep your code stable and maintainable, and so forth.  They&#8217;ll cut you off from discourse with the most competent programmers, and they&#8217;ll substantially increase the technical risks and costs of your project, but your project might succeed anyway.</p>
+<p>Usually when people complain about &#8220;the corporate management worldview&#8221;, they&#8217;re talking about managerialism, and that seems to be somewhat the case here.  The problems with <a href="http://johnquiggin.com/index.php/archives/2003/07/02/word-for-wednesday-managerialism-definition/" title="doctrine that differences between organisations matter less than similarities">managerialism</a> in general are outside the scope of this blog comment.  Dijkstra has written extensively on the problems of applying it to intellectual work.</p>
+<p>Aristotle writes:</p>
+<blockquote>
+<p>If you hire good programmers, maintainability won’t intrinsically be<br />
+  affected by whether your in-house software development has standardised<br />
+  on Java, PHP, Perl, Ruby, Lisp, Smalltalk, Haskell, or Self. Good<br />
+  programmers can appreciate and can create good design regardless of language,<br />
+  and they can absorb a new language easily enough.</p>
+</blockquote>
+<p>I think that&#8217;s overstating the case.  </p>
+<p>If, by &#8220;maintainability&#8221;, you mean &#8220;ease of debugging and modification&#8221;, there&#8217;s a lot of empirical evidence that twice as much code means something like twice the effort to make a change or find a bug.  (A little more, actually.)  These different languages require different amounts of code to do the same tasks, due to the different libraries and abstraction facilities they have.  So, at least in that way, some languages (such as Java) are much &#8220;less maintainable&#8221; than other languages (such as Smalltalk or Ruby).</p>
+<p>Also, some other language attributes affect programmers&#8217; ability to understand existing code; this matters because most of the time spent on &#8220;maintenance&#8221; is spent on understanding existing code.  For example, many people report that Lisp&#8217;s punctuation, which makes everything look kind of the same, impedes readability for them; I find that the imperative style required by Java and Smalltalk (or rather their libraries) often obscures the intent of the code; Perl&#8217;s &#8220;DWIM&#8221; attitude and unexpected interactions between components often makes it hard for me to track down bugs in my Perl programs; and I have a harder time figuring out why my Haskell programs are using unexpected amounts of memory or time than I have with other languages.  </p>
+<p>If we include a broader spectrum of languages, this point becomes even clearer.  Traditional BASIC has no explicit parameter-passing mechanism or variable locality; traditional C has the headaches of manual memory-management; assembly requires that you keep track of which registers you&#8217;re using for what.  These factors do intrinsically affect maintainability.</p>
+<p>The importance of good tools is common to many crafts.  A master craftsperson can usually make do with poor tools, but is much more productive with good ones, whether they are writing code, building circuits, carving wood, dressing stones, or baking quiche.  Sometimes the differences are quite large.</p>
+<p>Languages themselves are not the only tools that matter here.  I find Java much more maintainable when I am armed with IDEA, for example; compilers, debuggers, profilers, libraries, IDEs, and source-control tools all make substantial differences in my productivity.</p>
+<p>However, I agree that the language and tool choice affects maintainability less than  programmer expertise.</p>
+      <p>
+			<small>comment at <a href="#comment-908" title="">01. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-910">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="#comment-890">Brian</a>:</p>
+<blockquote>
+<p>This turned out to be untrue. It was a surprise to me. I wanted to convince people in my previous situation what I learned.</p>
+</blockquote>
+<p>Ah. That does put your article in quite a different light. I wish you had phrased it along the lines of this comment, though, that is, framed the <i>Java = maintainable</i> assertions as convictions rather than fact (even if only subversively <tt>;-)</tt>). I don&#8217;t think I&#8217;d have taken issue at all in that case.</p>
+<p><a href="#comment-892">Brian</a>, again:</p>
+<blockquote>
+<p>The main problems are there’s no easy way to judge them, and you can’t hit deadlines with artists.</p>
+</blockquote>
+<p>Careful: I don&#8217;t equate artists with great programmers. Great programmers are craftsmen and pragmatists. They may express themselves through their work, but they don&#8217;t do it <em>to</em> express themselves.</p>
+<p>That said, it is true that they are hard to identify. The moral is probably that programmers need to be involved in the hiring process if you want to hire good programmers. I am reminded once more of <a href="http://www.paulgraham.com.nyud.net:8090/gh.html" title="Paul Graham: Great Hackers">things Paul Graham has said</a>.</p>
+<p>As for paradigm shifts, be sure not to miss <a href="http://www.crynwr.com/cgi-bin/ezmlm-cgi?mss:9216:200406:jpcgfncgeegifacaebdc" title="Benjamin Tilly: Re: Tim's paradigm shift">Ben Tilly on Kuhn on Paradigm Shifts</a>.</p>
+<p><a href="#comment-893">Tony</a>:</p>
+<blockquote>
+<p>Comparing 5 great coders to 1,000,000 “codemonkeys” is silly. Instead, compare the 5 great coders to 1 great coder (as tech lead) with 4 solid mid-level/junior programmers.</p>
+</blockquote>
+<p>I&#8217;d rather have two great programmers than one great teach lead and 4 juniors. But that example doesn&#8217;t really highlight the point, because in small teams, the randomness factor is, as you say, large.</p>
+<p>OTOH, a team of 30, consisting almost exclusively of mediocre programmers, is worth less than a team of only 5 developers who can <a href="http://www.joelonsoftware.com/articles/HighNotes.html" title="Joel Spolsky: Hitting the High Notes">hit the high notes</a>. I&#8217;d rather spend the resources required up front to find a small number of excellent developers than burn a lot more resources, over the course of the project, on a huge team of monkeys.</p>
+<blockquote>
+<p>So in the business reality where you have to hire some mid-level and junior-level coders (cause that’s all you can find/afford), what will help you succeed? Business systems and coding frameworks will!</p>
+</blockquote>
+<p>Frameworks help; but they do only to the extent that they match the application&#8217;s requirements. The more specialised your needs, the more architecture you will be building outside the structure afforded by the framework.</p>
+<blockquote>
+<p>The difference isn’t that the franchise businesses hire the absolute elite people in their field (usually the opposite is true). The different is that there is a system and framework that allows average people to produce above-average work (yet still command only an average salary).</p>
+</blockquote>
+<p>I disagree that this is a good analogy. Franchises are not frameworks in the software sense. Franchises instruct you on how to execute basic tasks of business. A franchise business is a processor that runs a franchise business executable. A franchise plan is equivalent to an application in the software sense, not a framework.</p>
+<p>In software, things written repeatedly by programmers will sooner or later be abstracted away. Following a fixed, repeatable plan for building software really means that you haven&#8217;t abstracted away enough yet. <a href="http://www.paulgraham.com/avg.html" title="Paul Graham: Beating the Averages">A competitor who does will eat your lunch.</a></p>
+<p>Hence RoR: a software framework extracted from an application in order for the team behind it not to have to repeat the same work in the next application. Your claim that what I wrote amounts to &#8220;we don&#8217;t need Rails, we&#8217;ll just hire smart programmers&#8221; misses the mark completely and misstates the purpose of software frameworks. Those smart programmers will build a Rails of their own if they find themselves doing repeated work and a Rails does not yet exist. (And will choose to build upon Rails by themselves if they find themselves doing a lot of work which the use of Rails would preempt.)</p>
+<p>Kragen has an excellent article on this issue in the pipeline. I hope he manages to finish and publish it, one day. <tt>:-)</tt></p>
+<p>Of course, the analogy to a franchise looks believable on the surface and appeals greatly to business types; no wonder middle management generally operates on the delusions it does.</p>
+<p><a href="#comment-908">Kragen</a>:</p>
+<blockquote>
+<p>I think that’s overstating the case.</p>
+</blockquote>
+<p>So it is.</p>
+<p>The problem I faced is that I saw no easy way to incorporate those nuances within the frame of the argument I was trying to present. They are why the published revision of the article does not simply state, as earlier versions did, that:</p>
+<blockquote>
+<p>Comparatively, the chosen language is barely more than a neglibility.</p>
+</blockquote>
+<p>but goes on to qualify:</p>
+<blockquote>
+<p>assuming it has a good impendance match with the type of application being written.</p>
+</blockquote>
+<p>I agree that even this insufficiently captures the points in question.</p>
+<p>I had been wanting to discuss this in greater detail with you prior to publishing, but I didn&#8217;t know how to get hold of you and the article had already languished for such a long time that I decided to forge ahead anyway.</p>
+<p>I hope that aspect doesn&#8217;t detract greatly from the overall argument.</p>
+      <p>
+			<small>comment at <a href="#comment-910" title="">01. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-911">
+			<p class="who"><cite>Kevin Smith</cite>:</p>
+			<p>What&#8217;s wrong with the [traditional/mainstream] corporate management world view? </p>
+<p>It&#8217;s not compatible with my ideas of fun, productivity, and (in many cases) broad spiritual/ethical beliefs. I&#8217;ve worked at about twenty companies (salary and contract) over about 25 years. From banks and IBM to 3-person startups. I know what environments work best for me.</p>
+<p>If you want to be a corporate coder, I have no problem with that. But the more shops that switch to an agile process, the more job opportunities that I would actually consider. Hence, my low-level advocacy for all things agile.</p>
+      <p>
+			<small>comment at <a href="#comment-911" title="">02. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-913">
+			<p class="who"><cite><a href='http://adamconnor.org/?p=56' rel='external ' title='66.246.252.82'>Marginalia &raquo; Blog Archive &raquo; Easy Programming Languages</a></cite>:</p>
+			<p>[&#8230;] Update: I came across a related essay by Aristotle Pagaltzis called Maintainable Programmers. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-913" title="">02. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-914">
+			<p class="who"><cite><a href='http://www.conflc.com' rel='external ' title='64.22.224.3'>Jayson Vantuyl</a></cite>:</p>
+			<p>I think there&#8217;s an even different disconnect here than mentioned above:</p>
+<p><b>Those who can do a thing, do it.  Those who can&#8217;t, manage.</b></p>
+<p>At the core of the arguements is either &#8220;Your people should know what they&#8217;re doing.  Hire good programmers and get good results.&#8221; versus &#8220;We want to engineer a process that takes the endless supply of cheaper codemonkeys and generates something usable.&#8221;.</p>
+<p>Ironically, both of these are correct answers to different questions from different people.</p>
+<p>Good programmers rarely can suffer working for someone who can&#8217;t do what they are capable of doing.  Enumerate the possibilities.</p>
+<ul>
+<li>
+<p>Management can&#8217;t understand what you do and doesn&#8217;t give you the support needed to exceed (Management into Oblivion).  This is not sustainable because generally gifted programmers quit.</p>
+</li>
+<li>
+<p>Management can&#8217;t understand what you do but gives you the room and support to succeed (Effective Middlemen).  This isn&#8217;t sustainable because eventually the programmer recognize the uselessness of their management and starts a startup.</p>
+</li>
+<li>
+<p>Management can understand what you do and manages effectively.  Of course, in this situation, good programmers usually ARE the management (usually this is a startup).</p>
+</li>
+</ul>
+<p>Essentially, gifted programmers don&#8217;t work for corporate management types for long.</p>
+<p>Conversely, these people (henceforthe referred to as &#8220;MBAs&#8221;, used pejoratively) are left to do what they can.  Since your average codemonkey will waste his time humping a stupid project for a visionless manager, these same management-types ALWAYS get the best out of codemonkeys.  It&#8217;s a self fulfilling prophecy.  If you manage capable people so badly that they leave, you&#8217;ll naively believe that capable people are &#8220;unreliable&#8221; and that the less capable are suitable because they are replacable and that your &#8220;process&#8221; will make everything work anyways.</p>
+<p>This article essentially says that the corporate management (MBA) mindset is not even close to the right way to solve the problem.  It is correct.</p>
+<p>The referenced article says that, within the context of being a corporate manager who is incapable of writing good code yourself (and thus managing people who can), this process takes low quality programmers and forces them to behave a little better.  In this way, that article is correct as well.</p>
+<p>The problem is not that these people don&#8217;t understand what solves a problem.  Programmers write code because they want to solve problems.  MBAs us to work in such a way as to enabling the mediocre to repeatedly succeed cheaply enough that the savings amortized over the lifetime of the enterprise offsets the loss expended to later achieve optimal solutions (the above Franchise Scenario).  Business types have no problem with a net loss if the short term win keeps them in business.</p>
+<p>I love how some respondents use the word &#8220;artist&#8221; as a pejorative.  It&#8217;s kind of like the way certain people use the word &#8220;Republican&#8221;, &#8220;Democrat&#8221;, &#8220;Feminist&#8221;, &#8220;Management&#8221;, etc.  Essentially its a way to appear polite when covertly signalling other people which share your lack of respect for your opposition.  A way of coopting the naming of a thing to communicate disdain for it.</p>
+<p>In this case, the implication is that caring about &#8220;design&#8221; or &#8220;craftsmanship&#8221; is impractical, or at least that a process can somehow make a solution &#8220;good enough&#8221;.  This is, of course, classic code monkey / management groupthink&#8211;and it benefits both of them to feel that way.  Of course, they may be right.  Hiring good programmers is useless if you&#8217;re out of business.</p>
+<p>That said, the mistake is to then blindly trust management to sort it out because &#8220;it&#8217;s their job&#8221;, which is ironic because they are least suited (well, they do wear suits) to make the calls necessary to design their products.  In the end, I don&#8217;t even bother to explain it anymore.  People who need to ask the question are already too far gone to affect.  How do you explain to someone that quality companies are built on quality people?  If you don&#8217;t understand, it will be up to repeated failures at the hands of quality people to teach you.</p>
+<p>I&#8217;m afraid that the only way to solve this problem will be for engineers and programmers to systematically remove MBAs from companies by repeatedly founding valuable startups and dominate business with value.  Don&#8217;t sell out.  Be brutal in keeping your environment pure.  You&#8217;ll have to spend generations draining the money from the MBA types, since their primary skill is retaining it.  </p>
+<p>The proof is in the pudding.  MBAs pull the double whammy.  They get to trade in the analysis of what is &#8220;valuable&#8221;.  They get to turn real world situations into &#8220;valuations&#8221;.  It is no surprise that they dominate management decisions when they are the ones that assign relative value.  It&#8217;s no wonder they hijack control of business.</p>
+<p>The market is more discerning than this.  Just crank out good software at a fraction of the cost and work to destroy the credibility of the MBA (believe me, most of Wall Street, Tyco, Worldcom, and Enron have already gone a long way).</p>
+<p>Along the way, it may be necessary to reclaim the courts and the government, but that&#8217;s another discussion&#8230;  :)</p>
+<p>Seriously though, I can only hope that real, honest-to-goodness MBAs can read this and appreciate what I&#8217;m saying.  People in management are competitive.  This competition becomes manipulative.  It is a matter of ethics and responsibility for MBAs to keep reality in their numbers and work as a group to prevent those of their number from &#8220;minimizing&#8221; in these ways.</p>
+<p>They have a profound effect on the market.  They determine which languages get press and nourishment.  Agile languages are supremely important regardless of the supply of programmers for them.  If IBM wants Python or Ruby programmers, there will be Python or Ruby programmers.  Don&#8217;t underestimate your role in this.</p>
+<p>Realize that employees (good programmers in particular) aren&#8217;t just a &#8220;resource&#8221;, but more appropriately an &#8220;asset&#8221;.  Realize that you are fooling yourself if you can&#8217;t see where good programmers fit into your balance sheet.</p>
+<p>When hiring a cheap programmer or two in place of a good one, realize that you&#8217;re replacing an asset with a much less valuable one.  It may look like you&#8217;ve saved if you don&#8217;t properly value the assets you&#8217;re trading&#8230;</p>
+      <p>
+			<small>comment at <a href="#comment-914" title="">03. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-915">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="#comment-914">Jayson</a>: great stuff, thanks.</p>
+<p><a href="#comment-911">Kevin</a>:</p>
+<blockquote><p>It’s not compatible with my ideas of fun, productivity, and (in many cases) broad spiritual/ethical beliefs.</p>
+</blockquote>
+<p>You will probably enjoy <a href="http://www.hacknot.info/hacknot/action/showEntry?eid=77">The Crooked Timber Of Software Development</a>.</p>
+      <p>
+			<small>comment at <a href="#comment-915" title="">03. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-921">
+			<p class="who"><cite><a href='http://lesscode.org/2006/01/07/hows-that-for-less-code/' rel='external ' title='206.123.121.158'>How’s that for less code? [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] about lesscode.org      &laquo; Maintainable Programmers [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-921" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-922">
+			<p class="who"><cite>Kevin Smith</cite>:</p>
+			<p>I just read that &#8220;crooked timber&#8221; article. Loved the parts about ethics and responsibility. Hated the parts about turning software development into Software Engineering. College is vastly overrated, and many professional licensing schemes are harmful to practitioners and clients alike. Not to mention that most current Software Engineering advocacy is anti-agile. Let&#8217;s not go down that road.</p>
+      <p>
+			<small>comment at <a href="#comment-922" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-923">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>I know. I find myself vigorously agreeing with half of each Hacknot article and vehemently disagreeing with the other half. I guess they are what one would call thought-provoking. <tt>:-)</tt></p>
+<p>What I mainly took away from that article is its primary subject: how the lack of any standards and ethics mean that software development is no profession; and that it is in our power, interest <em>and</em> responsibility to change that.</p>
+<p>Which, as it happens, has a lot of overlap with lesscode.org’s mission.</p>
+      <p>
+			<small>comment at <a href="#comment-923" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1046">
+			<p class="who"><cite><a href='http://warpedvisions.org/2006/02/06/maintainable-programmers/' rel='external ' title='66.33.197.19'>warpedvisions.org &raquo; Blog Archive &raquo; Maintainable programmers</a></cite>:</p>
+			<p>[&#8230;] February 6th, 2006 in Links Maintainable Programmers. Finding good programmers is really difficult. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1046" title="">06. February 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2159">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='134.95.19.61'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;entry=3324906036" title="Worrying about the wrong things" rel="">Interesting relevant post by James Robertson.</a></p>
+      <p>
+			<small>comment at <a href="#comment-2159" title="">13. May 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://lesscode.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+  <small>
+    <strong>Note:</strong> None of this information is required but 
+    leaving a Name and URL is much appreciated. You can also <a href="/wp-register.php">register</a>
+    to have this stuff remembered.
+  </small>
+</p>
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<div id="ajax-comment-preview" style="padding: .4em 0; color: #666; margin-top: 1em; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">Your comment can be previewed here.</div>
+
+<p>
+  <br />
+  <small>
+    <strong><a href="http://daringfireball.net/projects/markdown/syntax"
+       title="Markdown Syntax Reference">Markdown</a>:</strong> 
+    use the force, Luke.
+  </small>
+</p>
+
+<p>
+  <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+</p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="122" />
+</p>
+<input name="preview" type="button" id="preview" tabindex="6" value="Preview" /><div id="ajax-comment-preview"></div>
+</form>
+
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.556 seconds -->
+<!-- Cached page served by WP-Cache -->

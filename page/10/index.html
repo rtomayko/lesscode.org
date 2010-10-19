@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>lesscode.org</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+	<div id="content" class="narrowcolumn">
+
+	
+					<div id="datum">25 Sep 05</div>
+			<div class="post">
+				<div id="zeit">
+				 01<br />
+				 06				</div>
+				<h2 id="post-90"><a href="http://lesscode.org/2005/09/25/fun-with-fixtures/" rel="bookmark" title="Permanent Link to Fun with Fixtures">Fun with Fixtures</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/25/fun-with-fixtures/#comments" title="Comment on Fun with Fixtures">2</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a>,  <a href="http://lesscode.org/category/by-stack/rails/" title="View all posts in Rails" rel="category tag">Rails</a></small>
+
+				<div class="entry">
+					<p>My favorite part of <a href="http://www.amazon.com/exec/obidos/tg/detail/-/097669400X/102-5075999-2240140?v=glance" title="Buy this book.">Agile Web Development with Rails</a> is the
+section on testing. I&#8217;ve found the framework around testing included
+with Rails to be a wonderful blend of simplicity and power and this
+chapter in the book is the perfect compliment. It&#8217;s based largely on the
+core Ruby <a href="http://www.ruby-doc.org/docs/rdoc/1.9/classes/Test.html" title="RDoc documentation for the Ruby 'Test::Unit' module">Test::Unit</a> module but adds some important features on
+top.</p>
+
+<p>One of those features is <a href="http://api.rubyonrails.com/classes/Fixtures.html" title="RDoc documentation for the Rails 'Fixtures' module">Fixtures</a>. Fixtures provide a simple,
+<a href="http://www.yaml.org/" title="YAML Ain't Markup Language">YAML</a>-based file format for storing database state that should be
+loaded before test runs. The database is wiped and the fixtures are
+loaded before each individual test executes, providing consistent state
+for tests. See the <a href="http://manuals.rubyonrails.com/read/chapter/26">section on
+fixtures</a> in <a href="http://manuals.rubyonrails.com/read/book/5">A Guide to
+Testing the Rails</a> for more
+information. Here&#8217;s an example fixture from said section:</p>
+
+<pre><code># low &amp; behold!  I am a YAML comment!
+david:
+ id: 1 
+ name: David Heinemeier Hansson 
+ birthday: 1979-10-15 
+ profession: Systems development
+
+steve:
+ id: 2
+ name: Steve Ross Kellock
+ birthday: 1974-09-27
+ profession: guy with keyboard
+</code></pre>
+
+<p>The cool thing is that the top level fixture names (in this case,
+&#8220;david&#8221; and &#8220;steve&#8221;) become instance variables in your test case,
+allowing you to access fixture data in a very intuitively way from
+tests. The result of this is test code that reads like a story and is
+often almost humorous.</p>
+
+<p><a href="http://www.amazon.com/exec/obidos/tg/detail/-/097669400X/102-5075999-2240140?v=glance" title="Buy this book.">The book</a> includes a sidebar with a little
+<a href="http://www.loudthinking.com/">David</a> head lamenting the importance of
+&#8220;Picking Good Fixture Names&#8221;:</p>
+
+<p><img src="http://static.flickr.com/33/46283282_2bc2441998_o.png" 
+     float="left" style="float: left; padding: 1em 2em; margin-left: 1em" /></p>
+
+<blockquote>
+  <p>Just like the names of variables in general, you want to keep the
+  names of fixtures as self-explanatory as possible. This increases the
+  readability of the tests when you&#8217;re asserting that
+  <code>@valid_order_for_fred</code> is indeed Fred&#8217;s valid order. It also makes it a
+  lot easier to remember which fixture you&#8217;re supposed to test against
+  without having to look up <code>p1</code> or <code>order4</code>. The more fixtures you get, the
+  more important it is to pick good fixture names. So, starting early
+  keeps you happy later.</p>
+  
+  <p>But what to do with fixtures that can&#8217;t easily get a self-explanatory
+  name like <code>@valid_order_for_fred?</code> Pick natural names that you have an
+  easier time associating to a role. For example, instead of using
+  <code>order1</code>, use <code>christmas_order</code>. Instead of <code>customer1</code>, use <code>fred</code>. Once
+  you get into the habit of natural names, you’ll soon be weaving a nice
+  little story about how <code>fred</code> is paying for his <code>christmas_order</code> with
+  his <code>invalid_credit_card</code> first, then paying his <code>valid_credit_card</code>, and
+  finally choosing to ship it all off to <code>aunt_mary</code>.  </p>
+  
+  <p><strong>Association-based stories are key to remembering large worlds of
+  fixtures with ease.</strong></p>
+</blockquote>
+
+<p>Taking this advice, I started in on testing a part of an application I&#8217;m
+working on now. The result is worth posting in it&#8217;s entirety (hint: it gets
+interesting towards the middle):</p>
+
+<pre style="font-size: 110%; line-spacing: 120%; border: 0; margin-left: 0; padding-left: 0">
+<B><FONT COLOR="#5F9EA0">require</FONT></B> File.dirname(__FILE__) + <B><FONT COLOR="#BC8F8F">&#8216;/../test_helper&#8217;</FONT></B>
+
+<B><FONT COLOR="#A020F0">class</FONT></B> EnrolleeTest &lt; Test::Unit::TestCase
+  fixtures :coverage_types, :plans, :coverages, :plan_levels, :ppo_options,
+           :elections, :enrollees, :enrollments, :tpas, :tpas_users, :users,
+           :roles
+
+  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">setup
+</FONT></B>    <FONT COLOR="#B8860B">@joe</FONT> = Enrollee.find(<FONT COLOR="#B8860B">@joe_the_policy_holder</FONT>.id)
+    <FONT COLOR="#B8860B">@rita</FONT> = Enrollee.find(<FONT COLOR="#B8860B">@rita_the_spouse</FONT>.id)
+    <FONT COLOR="#B8860B">@billy</FONT> = Enrollee.find(<FONT COLOR="#B8860B">@billy_the_dependent</FONT>.id)
+    <FONT COLOR="#B8860B">@alice</FONT> = Enrollee.find(<FONT COLOR="#B8860B">@alice_the_dependent</FONT>.id)
+    <FONT COLOR="#B8860B">@the_family</FONT> = [<FONT COLOR="#B8860B">@joe</FONT>, <FONT COLOR="#B8860B">@rita</FONT>, <FONT COLOR="#B8860B">@billy</FONT>, <FONT COLOR="#B8860B">@alice</FONT>]
+    <FONT COLOR="#B8860B">@enrollment</FONT> = Enrollment.find(<FONT COLOR="#B8860B">@test_enrollment</FONT>.id)
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+
+  <I><FONT COLOR="#B22222">
+</FONT></I>  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">test_common_attrs
+</FONT></B>    <FONT COLOR="#B8860B">@the_family</FONT>.each <B><FONT COLOR="#A020F0">do</FONT></B> |enrollee|
+      assert_kind_of Enrollee, enrollee
+      assert_equal <FONT COLOR="#B8860B">@enrollment</FONT>.id, enrollee.enrollment_id
+      assert_equal <FONT COLOR="#B8860B">@enrollment</FONT>, enrollee.enrollment
+      assert_equal <FONT COLOR="#B8860B">@joe</FONT>.id, enrollee.policy_holder_id
+      assert_equal <FONT COLOR="#B8860B">@joe</FONT>, enrollee.policy_holder
+    <B><FONT COLOR="#A020F0">end</FONT></B>
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+
+  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">test_get_gender
+</FONT></B>    assert_equal :male, <FONT COLOR="#B8860B">@joe</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Joe is a male&quot;</FONT></B>
+    assert <FONT COLOR="#B8860B">@joe</FONT>.male?, <B><FONT COLOR="#BC8F8F">&quot;Joe is a male&quot;</FONT></B>
+    assert_equal :female, <FONT COLOR="#B8860B">@rita</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Rita is a female&quot;</FONT></B>
+    assert <FONT COLOR="#B8860B">@rita</FONT>.female?, <B><FONT COLOR="#BC8F8F">&quot;Rita is a female&quot;</FONT></B>
+    assert !<FONT COLOR="#B8860B">@billy</FONT>.female?, <B><FONT COLOR="#BC8F8F">&quot;Billy is not a female&quot;</FONT></B>
+    assert !<FONT COLOR="#B8860B">@alice</FONT>.male?, <B><FONT COLOR="#BC8F8F">&quot;Sally is not a male&quot;</FONT></B>
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+
+  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">test_set_gender
+</FONT></B>    [:female, <B><FONT COLOR="#BC8F8F">&#8216;F&#8217;</FONT></B>, 2].each <B><FONT COLOR="#A020F0">do</FONT></B> |tok|
+      <FONT COLOR="#B8860B">@joe</FONT>.gender = tok
+      assert_equal :female, <FONT COLOR="#B8860B">@joe</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Joe is now a female&quot;</FONT></B>
+      assert <FONT COLOR="#B8860B">@joe</FONT>.save, <B><FONT COLOR="#BC8F8F">&quot;Joe could not be saved after sex change&quot;</FONT></B>
+      <FONT COLOR="#B8860B">@joe</FONT>.reload
+      assert_equal :female, <FONT COLOR="#B8860B">@joe</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Joe is now a female&quot;</FONT></B>
+    <B><FONT COLOR="#A020F0">end</FONT></B>
+
+    [:male, <B><FONT COLOR="#BC8F8F">&#8216;M&#8217;</FONT></B>, 1].each <B><FONT COLOR="#A020F0">do</FONT></B> |tok|
+      <FONT COLOR="#B8860B">@rita</FONT>.gender = tok
+      assert_equal :male, <FONT COLOR="#B8860B">@rita</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Rita is now a male&quot;</FONT></B>
+      assert <FONT COLOR="#B8860B">@rita</FONT>.save, <B><FONT COLOR="#BC8F8F">&quot;Rita could not be saved after sex change&quot;</FONT></B>
+      <FONT COLOR="#B8860B">@rita</FONT>.reload
+      assert_equal :male, <FONT COLOR="#B8860B">@rita</FONT>.gender, <B><FONT COLOR="#BC8F8F">&quot;Rita is now a male&quot;</FONT></B>
+    <B><FONT COLOR="#A020F0">end</FONT></B>
+
+    <I><FONT COLOR="#B22222"># make sure that we can set it to nil
+</FONT></I>    <FONT COLOR="#B8860B">@joe</FONT>.gender = <B><FONT COLOR="#A020F0">nil</FONT></B>
+    assert_equal <B><FONT COLOR="#A020F0">nil</FONT></B>, <FONT COLOR="#B8860B">@joe</FONT>.gender
+    assert <FONT COLOR="#B8860B">@joe</FONT>.save(<B><FONT COLOR="#A020F0">false</FONT></B>), <B><FONT COLOR="#BC8F8F">&quot;Joe couldn&#8217;t be saved after neutering&#8230;&quot;</FONT></B>
+    <FONT COLOR="#B8860B">@joe</FONT>.reload
+    assert_equal <B><FONT COLOR="#A020F0">nil</FONT></B>, <FONT COLOR="#B8860B">@joe</FONT>.gender
+
+    <FONT COLOR="#B8860B">@joe</FONT>.gender = <B><FONT COLOR="#BC8F8F">&#8216;&#8217;</FONT></B>
+    assert_equal <B><FONT COLOR="#A020F0">nil</FONT></B>, <FONT COLOR="#B8860B">@joe</FONT>.gender
+    assert <FONT COLOR="#B8860B">@joe</FONT>.save(<B><FONT COLOR="#A020F0">false</FONT></B>), <B><FONT COLOR="#BC8F8F">&quot;Joe couldn&#8217;t be saved after neutering&#8230;&quot;</FONT></B>
+    <FONT COLOR="#B8860B">@joe</FONT>.reload
+    assert_equal <B><FONT COLOR="#A020F0">nil</FONT></B>, <FONT COLOR="#B8860B">@joe</FONT>.gender
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+
+  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">test_marital_status
+</FONT></B>    assert_equal :married, <FONT COLOR="#B8860B">@joe</FONT>.marital_status
+    assert <FONT COLOR="#B8860B">@joe</FONT>.married?, <B><FONT COLOR="#BC8F8F">&quot;Joe is married&quot;</FONT></B>
+    assert !<FONT COLOR="#B8860B">@joe</FONT>.single?, <B><FONT COLOR="#BC8F8F">&quot;Joe is not single&quot;</FONT></B>
+    assert <FONT COLOR="#B8860B">@billy</FONT>.single?, <B><FONT COLOR="#BC8F8F">&quot;Billy is single&quot;</FONT></B>
+    assert !<FONT COLOR="#B8860B">@billy</FONT>.married?, <B><FONT COLOR="#BC8F8F">&quot;Billy is not married&quot;</FONT></B>
+    assert_equal :single, <FONT COLOR="#B8860B">@billy</FONT>.marital_status
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+
+  <B><FONT COLOR="#A020F0">def</FONT></B> <B><FONT COLOR="#0000FF">test_set_marital_status
+</FONT></B>    [:married, 2].each <B><FONT COLOR="#A020F0">do</FONT></B> |tok|
+      <FONT COLOR="#B8860B">@billy</FONT>.marital_status = tok
+      assert_equal :married, <FONT COLOR="#B8860B">@billy</FONT>.marital_status
+      assert <FONT COLOR="#B8860B">@billy</FONT>.save, <B><FONT COLOR="#BC8F8F">&quot;Billy could not be saved after he got married&quot;</FONT></B>
+      <FONT COLOR="#B8860B">@billy</FONT>.reload
+      assert_equal :married, <FONT COLOR="#B8860B">@billy</FONT>.marital_status
+    <B><FONT COLOR="#A020F0">end</FONT></B>
+
+    [:single, 1].each <B><FONT COLOR="#A020F0">do</FONT></B> |tok|
+      <FONT COLOR="#B8860B">@rita</FONT>.marital_status = tok
+      assert_equal :single, <FONT COLOR="#B8860B">@rita</FONT>.marital_status
+      assert <FONT COLOR="#B8860B">@rita</FONT>.save, <B><FONT COLOR="#BC8F8F">&quot;Rita could not be saved after her divorce&quot;</FONT></B>
+      <FONT COLOR="#B8860B">@rita</FONT>.reload
+      assert_equal :single, <FONT COLOR="#B8860B">@rita</FONT>.marital_status
+    <B><FONT COLOR="#A020F0">end</FONT></B>
+  <B><FONT COLOR="#A020F0">end</FONT></B>
+<B><FONT COLOR="#A020F0">end</FONT></B>
+</pre>
+
+<p>:)</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/25/fun-with-fixtures/"
+    dc:identifier="http://lesscode.org/2005/09/25/fun-with-fixtures/"
+    dc:title="Fun with Fixtures"
+    trackback:ping="http://lesscode.org/2005/09/25/fun-with-fixtures/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/09/25/fun-with-fixtures/#comments" class="comments-link" title="Comment on Fun with Fixtures">2 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">24 Sep 05</div>
+			<div class="post">
+				<div id="zeit">
+				 16<br />
+				 50				</div>
+				<h2 id="post-89"><a href="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/" rel="bookmark" title="Permanent Link to Web Services Infrastructure: Kid Templating">Web Services Infrastructure: Kid Templating</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comments" title="Comment on Web Services Infrastructure: Kid Templating">7</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/by-status/first-they-ignore-you/" title="View all posts in First they ignore you.." rel="category tag">First they ignore you..</a></small>
+
+				<div class="entry">
+					<p><em>Note: the title should make sense by the end of the post&#8230;</em></p>
+
+<p>Kevin Dangoor&#8217;s recent announcement of
+<a href="http://www.turbogears.org/">TurboGears</a> has resulted in a dramatic
+increase of interest in <a href="http://kid.lesscode.org/">Kid</a>. Kid was first
+announced on <a href="http://naeblis.cx/rtomayko/2004/11/30/pythonic-xml-based-templating-language" title="In search of a Pythonic, XML-based Templating Language">November 30, 2004</a> as a <em>Pythonic XML-based
+Templating Language</em>. I remember thinking I was going to do a series
+of articles on why I wanted this specific combination of features in a
+library. I never did and Kid progressed into its current form, growing a
+small community along the way. </p>
+
+<p>Although it&#8217;s now used primarily for HTML templating, that wasn&#8217;t the
+initial goal of the project. What I really wanted to do was to
+illustrate a different way of thinking about &#8220;Web Services&#8221;.</p>
+
+<p>Not what you were expecting, eh?</p>
+
+<p>But it&#8217;s true - Kid was supposed to be a simple device that I would use
+to start a narrative exploring a variety of topics related to building
+distributed systems atop the web (i.e. &#8220;Web Services&#8221;). I had decided
+that the direction being taken by the industry mainstream was incorrect
+and that web services would languish until they became more like the
+existing, working, proven, web.</p>
+
+<p>There was a lot of talk about &#8220;Web Services Infrastructure&#8221; and
+framework and that talk continues today. The assumption by nearly
+everyone was (and still is) that web services would require a whole new
+set of tooling and paradigm. SOAP/WS was still very much RPC oriented
+and so the focus was on language bindings, typing, discovery, and the
+like. Web Services programming had almost no resemblance to existing web
+programming.</p>
+
+<p>This has only accelerated in the time since I was heavily involved. Now
+it seems the industry is calling for some mysteriously unspecified SOA
+toolkit, ESB, or some other insignificant combination of alphanumerics
+to save Enterprise IT.</p>
+
+<p>I was in the middle of the situation a year ago or so and it troubled me
+deeply. Long days and nights at work were spent combining technologies
+like SOAP, WSDL, WS-Security, and BPML with massive Java
+infrastructure. I ate it all up and knew it like the back of my hand. It
+is not impossible for someone dedicating 8-12 hours a day to
+understanding this stuff to love it. <em>I</em> loved it. It&#8217;s all very
+intriguing for someone with my particular constitution. </p>
+
+<p>But so is masturbation.</p>
+
+<p>I&#8217;m not sure what happened. I guess I had what alcoholics refer to as &#8220;a
+moment of clarity&#8221;. I distinctly remember going over to grab a co-worker
+for lunch. He was on the phone and so I was talking to some guy in an
+adjacent cube who did &#8220;services work&#8221;. The services people were
+developers but were considered a different department than product
+development. They dealt with specific customer needs and were tasked
+with using our platform to craft actual real solutions for actual real
+business problems. Their world is much different from product
+development, whose main customers were marketing and the executive team.</p>
+
+<p>Anyway, I noticed a very <em>large</em> stack of printed material on this guys&#8217;
+desk, entitled &#8220;Introduction to Web Services&#8221;. Development had collected
+a set of introductory materials that were to be distributed to all of
+the services people in the field and, I assume, eventually to external
+developers using our platform. I had a small part in compiling these
+materials and had reviewed it at various stages in electronic form. </p>
+
+<p>The hard copy put me on my ass. (I say that metaphorically but if it
+were to hit me with any significant velocity it very well could have
+<em>literally</em> put me on my ass.) I picked up the tomb (an &#8220;Introduction&#8221;,
+mind), slapped it on my co-worker&#8217;s desk, who was now off the phone, and
+whispered, &#8220;this isn&#8217;t going to work.&#8221;</p>
+
+<p>The services guy doesn&#8217;t love this stuff - <em>at all</em>. I&#8217;m sure he was
+completely capable of digesting all of it had he the time and interest
+of, say, someone in my position, but he doesn&#8217;t. He has a customer that
+wants a bunch of systems to talk to each other and they all have very
+large and amazingly different framework and infrastructure. More
+framework and infrastructure is the last thing he needs. The services
+guy was a wake-up call.</p>
+
+<p>At the time this was happening I had been nursing a long-time interest
+in true web architecture. This didn&#8217;t have anything to do with work - a
+very long time ago I threw together a little download tool thingy that
+was capable of resuming failed downloads (with 14.4 baud modems this was
+a big deal and none of the browsers had native support for
+resuming). This required that I read bits of <a href="http://www.faqs.org/rfcs/rfc2616.html" title="RFC 2616">RFC 2616</a> and
+implement a basic HTTP client. I remember being amazed at some of the
+capabilities of HTTP because I had assumed that it was mostly a simple
+file transfer protocol (closer to FTP than, say, CORBA). The spec ended
+up staying with me and I continued to explore different ways people were
+using the web and HTTP to do new and exciting things.</p>
+
+<p>At some point, I became convinced that existing, basic web architecture
+solved many of the problems we were seeing with Web Services
+<em>adoption</em>. The problem wasn&#8217;t that WS was incapable of solving the
+technology issues (it&#8217;s quite adequate), the problem was that it was
+incapable of solving the social issues. It far exceeded the threshold of
+acceptable complexity for true adoption by this large community of
+people whose primary goal is to solve business problems.</p>
+
+<p>The web, on the other hand, was invented to solve the same basic
+integration problems businesses are experiencing now. Tim Berners-Lee&#8217;s
+dilemma is not so different than our own: a bunch of systems with a
+bunch of closed data formats and processing capabilities that should be
+universally accessible. Berners-Lee realized early on that solving this
+problem would require, above all else, a virus: something that was so
+simple and lightweight that it would be hard <em>not</em> to adopt. And that&#8217;s
+what the web is: a virus. Just like C and UNIX, Windows, Visual Basic,
+and a slew of other technologies that kept, as a primary requirement,
+the ability for real people to solve real problems.</p>
+
+<p>I shifted my thinking drastically and tried to imagine how the
+integration problems we were seeing would be solved using existing web
+architecture, which we <em>know</em> to have the traits necessary for mass
+adoption. I should mention here that by &#8220;web architecture&#8221;, I mean <a href="http://www.w3.org/TR/webarch/" title="Architecture of the World Wide Web, Volume One">W3C
+Tag Web Architecture</a> but also all of the tools and techniques that
+have evolved above and below it. The servers, proxies, template
+languages, mod_rewrite, sessions, cookies, load balancing, liberal feed
+parsers, virtual hosts, MVC, MultiViews/content negotiation, monitoring
+systems, automated testing tools, <em>dynamic languages</em>, view source, and
+on and on. All of these little tricks and techniques add up to an
+extremely powerful and yet fairly simple and understandable toolkit for
+building distributed systems. What&#8217;s more is that there are an unmatched
+number of people who understand how to build these systems using all
+variations of platform and language.</p>
+
+<p>Which brings us to Kid as &#8220;Web Services Infrastructure&#8221;. The concept is
+simple: for whatever reason, template languages (PHP, ASP, JSP, CFML,
+ERB, Cheetah, Tapestry, Velocity, etc.) have become a fundamental tool
+for web development and their usefulness is in no way limited to
+presentational data (HTML). Templates are simple, templates are
+cool. You throw some junk in there and look at the result. If the result
+isn&#8217;t right, you tweak your template until it does look right. There&#8217;s
+no layers of magic to get in your way. When something doesn&#8217;t come out
+right, you change the template. There&#8217;s no &#8220;management&#8221; or &#8220;container&#8221;
+involved.</p>
+
+<p>There&#8217;s no rule that says templates must only be used to generate
+HTML. Indeed, many of the RSS and Atom feeds in the wild are generated
+from some form of template. They are <em>never</em>
+automatically-generated-behind-the-scenes using language bindings and
+are very rarely generated using some kind of DOM/SAX API.</p>
+
+<p><code>&lt;rant&gt;</code>
+RSS is the most successful web services data format in existence (after
+HTML, of course ;). Successful web services in the future are likely to
+resemble it. Is there a use-case for RSS or Atom in WS-* land? There are
+thousands of pages of spec text and no one could throw together a simple
+use-case for the most successful web service in existence? That&#8217;s
+irresponsible.
+<code>&lt;/rant&gt;</code></p>
+
+<p>The point I&#8217;m trying to make is that template based web services are a
+reality and that we should be thinking about making incremental
+improvements to the general model to facilitate more machine-centric
+data formats instead of creating whole new paradigms.</p>
+
+<p>There are a variety of really important issues with using templates for
+general purpose web services programming, most having to do with the
+first part of <a href="http://en.wikipedia.org/wiki/Robustness_Principle">Postel&#8217;s Law</a>:</p>
+
+<blockquote>
+  <p>&#8220;<strong>Be conservative in what you do</strong>; be liberal in what you accept from
+  others.&#8221;</p>
+</blockquote>
+
+<p>The problem with using templates to produce XML (including XHTML) is
+that it is exceedingly hard to be <em>conservative in what you do</em>. Most
+template engines are text based, making it easy to miss well-formedness
+errors. There are also a range of character encoding issues that
+template languages could ease but often simply ignore and sometimes make
+worse.</p>
+
+<p>Kid is a simple attempt at building features that aid in
+conservativeness into the template engine. I actually considered
+tag-lining it <em>The Ultra-Conservative Template Engine</em> as a play on Mark
+Pilgrim&#8217;s <a href="http://diveintomark.org/projects/feed_parser/"><em>Ultra-Liberal Feed Parser</em></a> whose name comes
+from the second part of Postel&#8217;s law. This is, of course, the whole
+point of being conservative in the first place: so that we don&#8217;t need an
+Ultra-Liberal parser for each variation of &#8220;web service&#8221;.</p>
+
+<p>I think some of these features are compelling and would like to see them
+pursued in other tools that are in common use for web development. For
+instance, one of the most important and least talked about features of
+XML is that it provides a reasonable system for encoding the entire
+range of unicode code points in any character set, including ASCII. A
+template engine with a basic understanding of XML could process
+templates authored in utf-8, interpolate data encoded in ISO-8859-1, and
+output in 7-bit ASCII &#8212; if that&#8217;s what Postel demanded. Kid does that.</p>
+
+<p>One of the most important features of XSLT is that well-formed templates
+are guaranteed to yield well-formed output (with some well understood
+exceptions). If the template runs, you know it will provide a basic
+level of conservativeness. Kid does that. We&#8217;ve <code>wontfix</code>&#8216;d feature
+requests because they would break this contract.</p>
+
+<p>Most template languages require you to explicitly encode data that may
+contain reserved characters. Kid takes the opposite approach and assumes
+that all content is textual and should be encoded unless you explicitly
+state that something is XML (in which case it must be well-formed).</p>
+
+<p>There&#8217;s also some interesting features around serializing the resulting
+XML infoset with different variations. For example, you can author
+templates in XHTML 1.0 and <a href="http://kid.lesscode.org/guide.html#htmlserializer">output in HTML 4.01</a>. The output
+serializer takes care of all the little quirks for things like empty
+elements, non-escaping of <code>SCRIPT</code> and <code>STYLE</code> content, boolean
+attributes, etc. The result is a clean authoring environment and an
+ultra conservative output format. I bring this up in the context of web
+services infrastructure only to show that the ability to filter template
+output can be very useful when dealing with different types of user
+agents.</p>
+
+<p>All this to say that if you&#8217;re looking for &#8220;Web Services Infrastructure&#8221;
+for exposing processes and information, you&#8217;re probably looking to
+hard. If you have a database, templating, and a web server, you have
+most of the infrastructure and framework required to begin exposing
+information from each of your systems in a proven and established way.
+What you want to be on the lookout for are small and specific
+enhancements to these existing pieces that allow you to interact with
+other machines in a more predictable manner or in new and different
+ways.</p>
+
+<p>The next time someone is selling you infrastructure for Web Services, or
+SOA, or ESB, or whatever they&#8217;ll call it next, make sure you ask &#8220;Why?&#8221;
+After they tell you, make sure you understand, agree, and have the
+problems they propose to solve. If not, ask again. New framework and
+infrastructure is extremely expensive in more ways than one: you have to
+ramp people on it and then deploy, manage, monitor, and support
+it. Sometimes new infrastructure is unavoidable but when it overlaps a
+large portion of your existing infrastructure, you should make sure it&#8217;s
+bringing back a significant return.</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/"
+    dc:identifier="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/"
+    dc:title="Web Services Infrastructure: Kid Templating"
+    trackback:ping="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/#comments" class="comments-link" title="Comment on Web Services Infrastructure: Kid Templating">7 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">23 Sep 05</div>
+			<div class="post">
+				<div id="zeit">
+				 08<br />
+				 18				</div>
+				<h2 id="post-88"><a href="http://lesscode.org/2005/09/23/the-secret-to-winning/" rel="bookmark" title="Permanent Link to The secret to winning is not losing">The secret to winning is not losing</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/23/the-secret-to-winning/#comments" title="Comment on The secret to winning is not losing">5</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a></small>
+
+				<div class="entry">
+					<p><a href="http://pluralsight.com/blogs/dbox/archive/2005/09/22/14989.aspx">This</a> is what extremely powerful looks like. <a href="http://intertwingly.net/slides/2005/rs/">This</a> is what extremely powerful <em>is</em> like.</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/23/the-secret-to-winning/"
+    dc:identifier="http://lesscode.org/2005/09/23/the-secret-to-winning/"
+    dc:title="The secret to winning is not losing"
+    trackback:ping="http://lesscode.org/2005/09/23/the-secret-to-winning/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/09/23/the-secret-to-winning/#comments" class="comments-link" title="Comment on The secret to winning is not losing">5 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">20 Sep 05</div>
+			<div class="post">
+				<div id="zeit">
+				 07<br />
+				 46				</div>
+				<h2 id="post-86"><a href="http://lesscode.org/2005/09/20/bill-gates/" rel="bookmark" title="Permanent Link to Bill Gates: less code is only metric">Bill Gates: less code is only metric</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/20/bill-gates/#comments" title="Comment on Bill Gates: less code is only metric">21</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a></small>
+
+				<div class="entry">
+					<p>Gates had this to say in a recent <a href="http://weblog.infoworld.com/udell/2005/09/15.html#a1302">interview with Jon Udell</a>.</p>
+
+<blockquote>
+  <p>&#8220;There&#8217;s only really one metric to me for future software development, 
+  which is &#8212; do you write less code to get the same thing done?&#8221;  </p>
+</blockquote>
+
+<p>I&#8217;d be lying if I said that didn&#8217;t put an immediate grin on my face.</p>
+
+<p>I personally don&#8217;t get that feeling from Microsoft&#8217;s present toolset but I&#8217;m interested in understanding this situation better. I&#8217;ve been impressed by their ability to resist being sucked into much of the Enterprise hype that seemed to drive J2EE to bloatedness, but &#8220;less code&#8221; as <em>the</em> metric for innovation in development tools and methodology? Is there really a strong concious regard for simplifying things in Microsoft&#8217;s developer culture?</p>
+
+<p>I&#8217;ve had this in draft for a few days because I wanted to talk a bit about the false assumption that GUI = simplicity (not saying that&#8217;s what is going on here but it is a falacy MS has subscribed to in the past). But now Michael Champion, who is one of the very few reasons I have left to respect MS&#8217; technology, is <a href="http://blogs.msdn.com/mikechampion/archive/2005/09/18/471062.aspx">beating up on us for a comment</a>. </p>
+
+<p>So bravo to Gates and all that but <em>is it true</em> and does Gates&#8217; personal view on simplicity trickle down into the trenches at MS?</p>
+
+<p>Via <a href="http://radar.oreilly.com/archives/2005/09/jon_udell_interviews_bill_gate.html">Tim</a>.</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/20/bill-gates/"
+    dc:identifier="http://lesscode.org/2005/09/20/bill-gates/"
+    dc:title="Bill Gates: less code is only metric"
+    trackback:ping="http://lesscode.org/2005/09/20/bill-gates/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/09/20/bill-gates/#comments" class="comments-link" title="Comment on Bill Gates: less code is only metric">21 Comments...</a></small></p>
+			</div>
+
+					<div id="datum"></div>
+			<div class="post">
+				<div id="zeit">
+				 07<br />
+				 43				</div>
+				<h2 id="post-87"><a href="http://lesscode.org/2005/09/20/lesscode-more-docs/" rel="bookmark" title="Permanent Link to lesscode &#8230; more docs?">lesscode &#8230; more docs?</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/20/lesscode-more-docs/#comments" title="Comment on lesscode ... more docs?">21</a> </span></h2>
+				<small>By <a href="http://">Richard Dyce</a>
+        under <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a>,  <a href="http://lesscode.org/category/languages/php/" title="View all posts in PHP" rel="category tag">PHP</a>,  <a href="http://lesscode.org/category/by-status/first-they-ignore-you/" title="View all posts in First they ignore you.." rel="category tag">First they ignore you..</a>,  <a href="http://lesscode.org/category/by-stack/rails/" title="View all posts in Rails" rel="category tag">Rails</a></small>
+
+				<div class="entry">
+					<p>I&#8217;ll take it as a given that if you&#8217;re reading this then you agree that, for the sake of sanity and productivity, it&#8217;s time coders gave up on roll-your-own, and moved over to modern frameworks where one can concentrate on business logic rather than request parsing (and get all those AJAX goodies for free ;-) ).</p>
+
+<p>I&#8217;ve been looking on with interest for the last year and a bit, and as I&#8217;ve watched the pioneers blaze their XP, RoR, lesscode trail across the web-firmament, I&#8217;ve begun to suspect that I must have missed something. Yes, it&#8217;s powerful stuff, and yes it isn&#8217;t all smoke and mirrors - there really is &#8220;gold in them thar hills&#8230;&#8221; - but, and for me it&#8217;s a big but, we seem to be missing the big picture. Where are the map makers? Where&#8217;s the documentation for the second (or third) wave?</p>
+
+<p>Self-documenting code is all very well, and having a common vocabulary of design patterns helps when discussing solutions to individual problems. But what second-wavers really need (and I include myself here - no, actually, put me down as a third-waver) are more pictures. More exposition. Road maps.</p>
+
+<p>Is there a way to add XD (eXtreme Documentation?) back into the XP mix? Writing elegant code is hard, and people who do it earn the admiration they received. But I would argue that writing good documentation is harder, and that it shouldn&#8217;t be left for the second-wavers to do. </p>
+
+<p>People who&#8217;ve moved to XP have already gone thorugh the pain barrier of</p>
+
+<ul>
+<li>write the tests</li>
+<li>then write the code</li>
+<li>(then refactor)</li>
+</ul>
+
+<p>and have proved that in the long run, it means better code, less debugging, in less time. But having proved that <em>that</em> works, might there be some benefit in switching to;</p>
+
+<ul>
+<li>write the spec</li>
+<li>then write the tests</li>
+<li>then write the code</li>
+<li>(then refactor)</li>
+<li>then write an overview!!!</li>
+</ul>
+
+<p>Might this result in (my h-nought) more easily modfied code, quicker adoption by other coders, greater community support?</p>
+
+<p>I&#8217;m genuinely interested in other people&#8217;s views on moving documentation down(?) the food-chain, so that it&#8217;s non-optional, and as integral to writing new code (and frameworks) as writing good tests. Yes, there are good auto-doc tools and methodologies out there, but that right now they still seem to be seen as secondary to the process by Joe Frontiersman, and they only deal with what&#8217;s in the file, not what&#8217;s in the coder&#8217;s/architect&#8217;s head. (There&#8217;s the nine diagrams of UML, yes, but who on the bleeding-wrist of open-source technology is actively using/sharing designs via UML?) </p>
+
+<p>Let me know if I&#8217;ve missed a trick somewhere.</p>
+
+<p>[A few thoughts for the pot: I believe the that the reason the Open Source model works because it&#8217;s based on non-coercive collaboration. But Source Forge is littered with unfinished, half-baked projects because someone didn&#8217;t think to check that there wasn&#8217;t already a project out there that they could use. (How many <em>PHPUnits</em> does the community really need?) Should there be a &#8216;requirement&#8217; for documentation before a project gets listed? Perhaps it&#8217;s time for &#8216;ideaforge&#8217;, or &#8216;architectureforge&#8221;?]</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/20/lesscode-more-docs/"
+    dc:identifier="http://lesscode.org/2005/09/20/lesscode-more-docs/"
+    dc:title="lesscode &#8230; more docs?"
+    trackback:ping="http://lesscode.org/2005/09/20/lesscode-more-docs/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/09/20/lesscode-more-docs/#comments" class="comments-link" title="Comment on lesscode ... more docs?">21 Comments...</a></small></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://lesscode.org/page/9/"></a><a href="http://lesscode.org/page/11/">&laquo; previous</a></div>
+			<div class="alignright"><a href="http://lesscode.org/page/9/">next &raquo;</a><a href="http://lesscode.org/page/11/"></a></div>
+		</div>
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.946 seconds -->

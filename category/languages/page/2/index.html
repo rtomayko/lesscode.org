@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Languages</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2>'Languages' Archives</h2>
+
+ 	  
+				<div class="post">
+				<h2 id="post-114"><a href="http://lesscode.org/2005/12/13/logging-microformats/" rel="bookmark" title="Permanent Link to Logging microformats">Logging microformats</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/12/13/logging-microformats/#comments" title="Comment on Logging microformats">10</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a>,  <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a>,  <a href="http://lesscode.org/category/by-stack/microformats/" title="View all posts in microformats" rel="category tag">microformats</a><br />13. December 2005</small>
+
+				<div class="entry">
+					<p>Here&#8217;s a slightly elided log line from a system I work with:</p>
+
+<pre >
+<font color='blue'>WARN 2005-09-28 14:38:38 StandardContext[/pmr]  {&#8221;mid&#8221;:&#8221;123&#8243;, &#8220;type&#8221;:&#8221;XYZ&#8221;, &#8220;msg&#8221;:&#8221;foo&#8221;, &#8220;T&#8221;:&#8221;2005-09-28 14:38&#8243;, &#8220;L&#8221;:&#8221;warn&#8221;}</font>
+</pre>
+
+<p>It identifies an XML document passing through the system using some keys from the envelope. It may seem a strange looking way to log an event, but between the angle brackets lies a useful side effect - it&#8217;s a Python dictionary.   Hence this (vastly oversimplified) example log processing code, that runs eval() on each log line to load the dictionaries into memory:</p>
+
+<pre>
+<font color='blue'>Python 2.4 (#60, Nov 30 2004, 11:49:19) [MSC v.1310 32 bit (Intel)] on win32
+Type &#8220;help&#8221;, &#8220;copyright&#8221;, &#8220;credits&#8221; or &#8220;license&#8221; for more information.
+>>> dicts =[]
+>>> import re
+>>> p = re.compile(&#8221;.*({.*?}).*&#8221;)
+>>> file = open(&#8221;log.txt&#8221;).readlines()
+>>> for line in file:
+&#8230;     m = p.match(line)
+&#8230;     if m:
+&#8230;             d = eval(m.group(1))
+&#8230;             dicts.append(d)
+&#8230;
+>>> for d in dicts:
+&#8230;    print d
+&#8230;
+{&#8217;L': &#8216;warn&#8217;, &#8216;mid&#8217;: &#8216;123&#8242;, &#8216;type&#8217;: &#8216;XYZ&#8217;, &#8216;T&#8217;: &#8216;2005-09-28 14:38&#8242;, &#8216;msg&#8217;: &#8216;frobnizer  found&#8217;}
+{&#8217;L': &#8216;warn&#8217;, &#8216;mid&#8217;: &#8216;124&#8242;, &#8216;type&#8217;: &#8216;XYZ&#8217;, &#8216;T&#8217;: &#8216;2005-09-28 14:38&#8242;, &#8216;msg&#8217;: &#8216;frobnizer  found&#8217;}
+{&#8217;L': &#8216;warn&#8217;, &#8216;mid&#8217;: &#8216;125&#8242;, &#8216;type&#8217;: &#8216;XYZ&#8217;, &#8216;T&#8217;: &#8216;2005-09-28 14:38&#8242;, &#8216;msg&#8217;: &#8216;frobnizer  found&#8217;}
+{&#8217;L': &#8216;warn&#8217;, &#8216;mid&#8217;: &#8216;126&#8242;, &#8216;type&#8217;: &#8216;XYZ&#8217;, &#8216;T&#8217;: &#8216;2005-09-28 14:38&#8242;, &#8216;msg&#8217;: &#8216;frobnizer  found&#8217;}
+>>></font>
+</pre>
+
+<p>What&#8217;s nice about doing this is that it&#8217;s cheap to write the log line in a way that maximises usefulness later on - logs are often an afterthought, but good logging is critical to operating production systems. And it&#8217;s one example where <a href="http://www.tbray.org/ongoing/When/200x/2003/07/29/SearchMeta">creating metadata is cheap</a>.</p>
+
+<p>As well as programming data structures (changing the above to a Ruby hash is straightforward), you can get log lines to output something like <a href="http://www.dajobe.org/2004/01/turtle/">Turtle</a>, which is a greppable RDF format. What&#8217;s good about Turtle in particular is that you can dump or stream a log file straight into an RDF query engine, such as <a href="http://jena.sourceforge.net/ARQ/">ARQ</a> without any transform step and start writing queries against the data. Or how about writing down inferencing rules that help indicate the business consequences of a software error? The log lines themselves don&#8217;t carry enough information, but combined with rules and some context as to where the log event came from you can do interesting and useful things - the biggest issue with any monitoring software is gathering up all those machine level events and contextualising them  so that data (noise) can be turned it into information (signal).  Think of a machine readable data stucture inside logfiles as just another microformat. </p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/12/13/logging-microformats/"
+    dc:identifier="http://lesscode.org/2005/12/13/logging-microformats/"
+    dc:title="Logging microformats"
+    trackback:ping="http://lesscode.org/2005/12/13/logging-microformats/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-112"><a href="http://lesscode.org/2005/11/17/ruby-django-meetup/" rel="bookmark" title="Permanent Link to Rails / Django Chicago Debate">Rails / Django Chicago Debate</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/11/17/ruby-django-meetup/#comments" title="Comment on Rails / Django Chicago Debate">9</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a>,  <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a><br />17. November 2005</small>
+
+				<div class="entry">
+					<p>On December 3rd, a mess of fine Chicago area Ruby, Python, and Linux user groups are to <a href="http://snakesandrubies.com/event">meet up</a> at DePaul University for a <a href="http://www.djangoproject.com/">Django</a> / <a href="http://www.rubyonrails.com">Rails</a> love-fest. I&#8217;ve heard there might also be time for debate between songs and hand-holding. <a href="http://www.holovaty.com/">Adrian Holovaty</a>, <a href="http://www.editorandpublisher.com/eandp/news/article_display.jsp?vnu_content_id=1001218795">award winning</a> journalist and distinguished gentlemen, will be fielding questions for the Pythonistas while <a href="http://www.loudthinking.com/">David Heinemeier Hansson</a>, <a href="http://www.loudthinking.com/arc/000522.html">Extraordinary Alien</a> / <a href="http://news.com.com/Ruby+on+Rails+chases+simplicity+in+programming/2100-1007_3-5920169.html?tag=nefd.lede">&#8220;one man&#8221; trying to save the world</a> (hey, I owe him one), will be answering for the Rubyists. </p>
+
+<p>Even better, the <a href="http://snakesandrubies.com/event">Snakes and Rubies</a> website is collecting questions for Adrian or David or both. Get over there and get your questions in before it&#8217;s too late.</p>
+
+<p>If there is any way someone could capture the audio for this event, it would be very much appreciated.</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/11/17/ruby-django-meetup/"
+    dc:identifier="http://lesscode.org/2005/11/17/ruby-django-meetup/"
+    dc:title="Rails / Django Chicago Debate"
+    trackback:ping="http://lesscode.org/2005/11/17/ruby-django-meetup/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-107"><a href="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/" rel="bookmark" title="Permanent Link to Simplest Possible Plugin Manager For Rails">Simplest Possible Plugin Manager For Rails</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comments" title="Comment on Simplest Possible Plugin Manager For Rails">6</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a>,  <a href="http://lesscode.org/category/by-stack/rails/" title="View all posts in Rails" rel="category tag">Rails</a><br />27. October 2005</small>
+
+				<div class="entry">
+					<p><strong>UPDATE</strong>: I ended up making some pretty massive changes. You can configure multiple plugin repositories,  install, update, remove, and discover plugins. The directions for installation are still valid but you&#8217;ll need to run <code>plugin --help</code> to get a feel for the changes in usage.</p>
+
+<hr />
+
+<p><strong>UPDATE</strong>: The plugin manager has been included with <a href="http://weblog.rubyonrails.com/articles/2005/11/07/rails-1-0-rc4-0-14-3-its-the-final-countdown">Rails 1.0 RC4</a>. 
+Run <code>script/plugin --help</code> from a fresh Rails app for usage information.</p>
+
+<hr />
+
+<p><a href="http://documentation.rubyonrails.com/release_notes/rc2.html">Rails 1.0 RC1</a> shipped with a simple plugin system - drop a directory under <code>vendor/plugins</code> that contains an <code>init.rb</code> file to be executed at configuration time and an optional <code>lib</code> directory to be placed on the path. Do whatever you please from there. It&#8217;s a simple hook into the startup cycle and a much needed addition.</p>
+
+<p>About 19 hours ago, <a href="http://weblog.rubyonrails.com/archives/2005/10/26/tracking-plugins-temporarily-on-the-wiki">David suggested that people link to their plugins from the Rails Wiki</a> as a kind of interim solution to the problem of not having a standard means of packaging and managing these things. They did and with links to their plugins&#8217; subversion repositories.</p>
+
+<p>Here&#8217;s <a href="http://lesscode.org/svn/rtomayko/rails/scripts/plugin">a simple (150 line) plugin manager</a>.  </p>
+
+<p>Install it like this:</p>
+
+<pre><code>$ cd my-rails-app
+$ curl http://lesscode.org/svn/rtomayko/rails/scripts/plugin &gt; script/plugin
+$ chmod +x script/plugin
+</code></pre>
+
+<p>Then see what plugins are available:</p>
+
+<pre><code>$ ./script/plugin
+continuous_builder  http://dev.rubyonrails.com/svn/rails/plugins/continuous_builder
+asset_timestamping  http://svn.aviditybytes.com/rails/plugins/asset_timestamping
+enumerations_mixin  http://svn.protocool.com/rails/plugins/enumerations_mixin/trunk
+calculations        http://techno-weenie.net/svn/projects/calculations/
+...
+</code></pre>
+
+<p>Next, install stuff to your <code>vendor/plugins</code> directory:</p>
+
+<pre><code>$ ./script/plugin continuous_builder asset_timestamping
+</code></pre>
+
+<p>Here&#8217;s how it works:</p>
+
+<ol>
+<li><p>Scrape the <a href="http://wiki.rubyonrails.org/rails/pages/Plugins">Plugin page</a> for things that look like subversion repositories with plugins. (Yes, I&#8217;m using regular expressions. Yes, I understand the issues. No, I don&#8217;t care.)</p></li>
+<li><p>If <code>vendor/plugins</code> is under subversion control, the script will modify the <code>svn:externals</code> property on that directory and perform an update. You can use normal subversion commands to keep the plugins up to date.</p></li>
+<li><p>Or, if <code>vendor/plugins</code> is not under subversion control, the plugin is pulled via <code>svn export</code>.</p></li>
+</ol>
+
+<p>If you want to use <code>svn:externals</code>, make sure you have your <code>vendor/plugins</code> directory under subversion&#8217;s control <em>before</em> installing any plugins . If your not sure, do something like this:</p>
+
+<pre><code>$ svn info vendor/plugins
+foo:    (Not a versioned resource)
+$ svn mkdir vendor/plugins
+$ svn ci -m "adding teh plugins directory so I can use this r0x3ring plugin manager..."
+</code></pre>
+
+<p>This probably won&#8217;t work on Windows at the moment and assumes you have the command line subversion client utilities available (<code>svn</code>).</p>
+
+<p>It&#8217;s useful as is, but please, make it better.</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/"
+    dc:identifier="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/"
+    dc:title="Simplest Possible Plugin Manager For Rails"
+    trackback:ping="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-104"><a href="http://lesscode.org/2005/10/23/wasp/" rel="bookmark" title="Permanent Link to WASP - Easing the Switch from Java to PHP">WASP - Easing the Switch from Java to PHP</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/10/23/wasp/#comments" title="Comment on WASP - Easing the Switch from Java to PHP">28</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/languages/php/" title="View all posts in PHP" rel="category tag">PHP</a>,  <a href="http://lesscode.org/category/by-stack/lamp/" title="View all posts in LAMP" rel="category tag">LAMP</a><br />23. October 2005</small>
+
+				<div class="entry">
+					<p><i>Author&#8217;s Note:  I originally wrote this article on the <a href="http://wasp.sourceforge.net">WASP homepage</a>. Ryan has graciously allowed me to post it here.  WASP was partly inspired by lesscode.org, and hopefully it&#8217;ll make a good contribution to this community.</i></p>
+
+<p>The year 2005, so far, has been the year of scripting languages.  Across the web-application programming sector there has been a growing movement toward acceptance and general usage of dynamic languages like Ruby, Python, and PHP.  Fundamentally, these languages have been present in the industry and in use by developers for a long time, and really aren&#8217;t anything new.  Lately, however, due to advances in server technology, scripting language maturity, and improved development libraries, it is possible to write scalable, well architected, &#8220;enterprise&#8221; applications in less time with less code using frameworks like <a href="http://wasp.sourceforge.net">WASP for PHP</a>.</p>
+
+<blockquote><i>
+Scripting languages have been used to build millions of applications on the Web, but in general have not been adopted widely by corporate developers. But more and more businesses and IT professionals are looking to these languages as a way to simplify and speed the creation of custom in-house programs, thus avoiding the now all-too-common logjam of late or overbudget applications.  &#8212; <a href="http://news.com.com/Grassroots+computing+languages+hit+the+big+time/2100-1007_3-5705448.html?tag=nl">CNET</a>
+</i></blockquote>
+
+<p>It has always been faster to write applications for the web using scripting languages.  PHP has long been accessible to the fledgling developer.  It has been widely used for prototyping of large applications written in languages like Java simply because web designers, most often specialized in design artistry rather than computer science theory, are able to quickly grasp the syntax and embed it in their HTML code.</p>
+
+<p>Interestingly enough, the same reasons why languages like PHP are so easy to learn and use are what often keeps seasoned software engineers from wanting to use them.  Deemed &#8220;hacker&#8221; languages, scripting languages can be quick to write, but since they do not have many of the advanced features of compiled languages like C++ and Java, they have been prone to lax design practices, leading to code that isn&#8217;t efficient, stable, or maintainable enough for large solutions.  With the correct mindset and help from structured frameworks like WASP, this no longer has to be the case.</p>
+
+<p>Making use of the advancements made to PHP in version 5, web application architects can implement structure to their code in the form of tested design patterns and full-featured frameworks, like WASP.  In fact, WASP was written to make the most pedantic software architect feel at home, in an effort to ease the transition for Java developers to coding in PHP.  </p>
+
+<p>It&#8217;s important to resist the gut reaction most people have to these statements.  Most people&#8217;s perceptions of PHP are from the PHP 4 days, where &#8220;object oriented&#8221; frameworks existed, but were crippled by the loose OO implementation of the language.  While PHP 5 is mostly backward compatible with PHP 4, it is almost completely different when it comes to things like abstract classes, interfaces, private and protected methods, and exceptions. Sure, you can write spagetti code in PHP 5, but if you have a well designed framework that keeps PHP code outside of your HTML and in tightly structured classes, you&#8217;re more likely to end up with code that looks and works and feels like Java.</p>
+
+<p>But will using PHP confine application developers to small customers and fringe, open source communities?  Not for long.  The big guys are starting to catch on to this shift.</p>
+
+<blockquote><i>
+PHP, like open-source projects including Linux and Apache, now has received the blessing of major powers in the computing industry. IBM and Oracle are working on software that let PHP-powered applications pull information from their databases. &#8212; <a href="http://news.com.com/Andreessen+PHP+succeeding+where+Java+isnt/2100-1012_3-5903187.html?part=rss&#038;tag=5903187&#038;subj=news">CNET</a>
+</i></blockquote>
+
+<p>As the user base of PHP and other scripting languages continues to grow, broad support is becoming available on platforms trusted by the Fortune 500 crowd.  This exposure will increase the rate of improvement to the efficiency of these languages.  Early in its life, Java was highly criticized as not being scalable since it runs on a virtual machine, and therefore could never achieve the speed of C++.  As Java matured, advances were made in optimizations to alleviate much of these concerns.  The same sorts of advances are being made in the PHP language, and the hardware and software that drives it.</p>
+
+<p>The goal of any good software development department or organization is to efficiently turn out code on-budget, and on-schedule.  Until recently, platforms like Java were more likely to provide a stable, proven foundation to design and build well designed code, however by their nature they introduce a level of complexity that takes extra time to overcome.  Using scripting languages like PHP tended to produce code in a faster time frame, but it was often impossible to maintain the architectural integrity necessary for building maintainable, extendable applications.  With its strong design foundations, the WASP framework makes achieving all of these goals possible, providing the means to creating world class software to anyone with basic skills in PHP.</p>
+
+<p>Further Reading:
+<dd><a href="http://wasp.sourceforge.net/content/?q=node/7">WASP How-To</a></dd>
+<dd><a href="http://news.com.com/Andreessen+PHP+succeeding+where+Java+isnt/2100-1012_3-5903187.html?part=rss&amp;tag=5903187&amp;subj=news">Andreessen: PHP succeeding where Java isn&#8217;t</a></dd>
+<dd><a href="http://news.com.com/Grassroots+computing+languages+hit+the+big+time/2100-1007_3-5705448.html?tag=nl">Grassroots computing languages hit the big time</a></dd>
+<dd><a href="http://news.com.com/Java+devotee+BEA+eyes+scripting+languages/2100-1012_3-5820062.html?tag=nefd.top">Java devotee BEA eyes scripting languages</a></dd></p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/10/23/wasp/"
+    dc:identifier="http://lesscode.org/2005/10/23/wasp/"
+    dc:title="WASP - Easing the Switch from Java to PHP"
+    trackback:ping="http://lesscode.org/2005/10/23/wasp/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-99"><a href="http://lesscode.org/2005/10/11/little-help/" rel="bookmark" title="Permanent Link to Little Help?">Little Help?</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/10/11/little-help/#comments" title="Comment on Little Help?">6</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/wanted/" title="View all posts in Wanted" rel="category tag">Wanted</a>,  <a href="http://lesscode.org/category/languages/php/" title="View all posts in PHP" rel="category tag">PHP</a><br />11. October 2005</small>
+
+				<div class="entry">
+					<p>Greetings fellow lesscode advocates. For those of you who don&#8217;t know <a href="http://www.redmonk.com/sogrady">me</a>, I&#8217;m an industry analyst with RedMonk, and as a couple of the folks here can probably attest, I take every opportunity to push your message and your values on an unsuspecting population of software vendor customers. Ryan&#8217;s been gracious enough to grant me the virtual floor as it were to speak to all of you today to request some assistance. </p>
+
+<p>I&#8217;m the process of finalizing my keynote presentation for next week&#8217;s Zend/PHP conference entitled, conveniently enough, &#8220;PHP: Simplicity and Lesscode.&#8221; So here&#8217;s where I need some help, if you&#8217;re willing. My slides are trying to emphasize the role simplicity/lesscode play in all of our lives: both in technology and not. The deck currently starts from non-technology examples such as <a href="http://en.wikipedia.org/wiki/Simple_machines">simple machines</a> and builds to technology related examples, most of which are PHP centric for reasons that are probably pretty clear. </p>
+
+<p>The question I have for all of you then is this: what examples - real world or technology related - might you use if you were trying to evangelize the twin values of s/l? What would/do you tell people that don&#8217;t get what lesscode is all about? As an example of the type of thing I&#8217;m looking for, I&#8217;m planning on opening with one of my favorite comp-sci stories of all time: Ryan&#8217;s <a href="http://naeblis.cx/rtomayko/2005/04/02/insects-and-entropy">Insects and Entropy</a>.  Adam Bosworth&#8217;s discussion of how Google uses the stupidest query language ever is also in there. </p>
+
+<p>Hopefully those will give you an idea of the kind of things I&#8217;m looking for, and suggestions in any form would be appreciated. I can&#8217;t promise to use everything, but I&#8217;ll incorporate whatever I think I can fit in. </p>
+
+<p>A couple of logistical notes: </p>
+
+<ol>
+<li><strong>Slides</strong>: will be made available following the conference under Creative Commons terms on my site, and here if the community here so desires. They&#8217;ll be offered under the same terms </li>
+<li><strong>Credit</strong>: will be given whenever possible during the presentation, and the closing page of the slides will contain the names of everyone whose contribution was included (so if you leave a comment, be sure that&#8217;s the name you&#8217;d like to have credited). That slide will also include a link to this entry, so that even suggestions that don&#8217;t make the deck may get some airtime.</li>
+<li><strong>Technology</strong>: given that this is a PHP conference, I&#8217;m probably not going to go in depth on Python, Ruby as much as I or some of you might like. So language specific examples will likely be genericized, just as an FYI, unless they compare more complex languages to PHP - in which case they&#8217;re encouraged. </li>
+<li><strong>Questions</strong>: drop them here, and I&#8217;ll do my best to answer them.</li>
+</ol>
+
+<p>Thanks for helping me get the lesscode message out, and I look forward to any conributions you might have. </p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/10/11/little-help/"
+    dc:identifier="http://lesscode.org/2005/10/11/little-help/"
+    dc:title="Little Help?"
+    trackback:ping="http://lesscode.org/2005/10/11/little-help/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://lesscode.org/category/languages/"></a><a href="http://lesscode.org/category/languages/page/3/">&laquo; previous</a></div>
+			<div class="alignright"><a href="http://lesscode.org/category/languages/">next &raquo;</a><a href="http://lesscode.org/category/languages/page/3/"></a></div>
+		</div>
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.507 seconds -->

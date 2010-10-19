@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Time To Stop Obsessing About The Infrastructure?</title>
+	<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:15 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Allegra &#187; Blog Archive &#187; Superstition Is Everywhere</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1278</link>
+		<pubDate>Sat, 18 Mar 2006 03:02:34 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1278</guid>
+					<description>&lt;p&gt;[...] In reply to a ferocious flame, Alex Bunardzic said  I don’t understand my car. Yet, I have been using it effectively for the past 4 years. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] In reply to a ferocious flame, Alex Bunardzic said  I don’t understand my car. Yet, I have been using it effectively for the past 4 years. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1251</link>
+		<pubDate>Tue, 14 Mar 2006 18:00:27 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1251</guid>
+					<description>&lt;p&gt;twifkak wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;And what do you do for a living, sell flowers?&lt;/blockquote&gt;
+
+&lt;p&gt;If I may use an analogy from the world of theater, I've started my career building props. Then I moved to building costumes, doing the makeup for the actors, etc. I occasionally acted as a Prompt as well.&lt;/p&gt;
+
+&lt;p&gt;But now I want to move to write and direct plays.&lt;/p&gt;
+
+&lt;p&gt;In the technical terms, I used to build the infrastructure on which the programs will run. I was also involved in building frameworks etc. All these things were allowing the scripts to run.&lt;/p&gt;
+
+&lt;p&gt;But now I'd like to focus on writing the scripts. I want to move more into producing the content, not the props.&lt;/p&gt;
+
+&lt;blockquote&gt;(Sean, if you need something concrete, just look at MS Excel. Plenty of people are writing little mathematical “apps” in Excel using the builtin formula language, obviating what would have been, in the past, a need to commission an application.)&lt;/blockquote&gt;
+
+&lt;p&gt;That's a good example. Although I wouldn't call them 'apps'. These are just scripts.&lt;/p&gt;
+
+&lt;blockquote&gt;But what does all this have to do with The Infrastructure?&lt;/blockquote&gt;
+
+&lt;p&gt;Almost all software development effort today goes toward building/maintaining the infrastructure. Very little goes toward delivering the content. I think it's the wrong focus.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>twifkak wrote:</p>
+<blockquote><p>And what do you do for a living, sell flowers?</p></blockquote>
+<p>If I may use an analogy from the world of theater, I&#8217;ve started my career building props. Then I moved to building costumes, doing the makeup for the actors, etc. I occasionally acted as a Prompt as well.</p>
+<p>But now I want to move to write and direct plays.</p>
+<p>In the technical terms, I used to build the infrastructure on which the programs will run. I was also involved in building frameworks etc. All these things were allowing the scripts to run.</p>
+<p>But now I&#8217;d like to focus on writing the scripts. I want to move more into producing the content, not the props.</p>
+<blockquote><p>(Sean, if you need something concrete, just look at MS Excel. Plenty of people are writing little mathematical “apps” in Excel using the builtin formula language, obviating what would have been, in the past, a need to commission an application.)</p></blockquote>
+<p>That&#8217;s a good example. Although I wouldn&#8217;t call them &#8216;apps&#8217;. These are just scripts.</p>
+<blockquote><p>But what does all this have to do with The Infrastructure?</p></blockquote>
+<p>Almost all software development effort today goes toward building/maintaining the infrastructure. Very little goes toward delivering the content. I think it&#8217;s the wrong focus.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1249</link>
+		<pubDate>Tue, 14 Mar 2006 17:32:22 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1249</guid>
+					<description>&lt;p&gt;Sean Smith wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;The most important qualification for programming languages is not whether they allow your aver user to program, but how useful they are for programmers (automobile engineers) to produce the applications (cars)– whatever platform that may be; web, desktop, database– that the average computer user (driver) will use ony a daily basis.&lt;/blockquote&gt;
+
+&lt;p&gt;That is one way of looking at things. There are other ways. The original intention of defining programming languages was to give humans the means of expressing themselves to the machines. The split to 'average computer users' and 'specialized computer programmers' occurred out of necessity -- the existing programming languages weren't expressive enough. Meaning, some people started specializing and claiming that they can, after four years of intense study, translate the intentions of human users to the underlying computing machinery. These people became known as 'programmers'. Or, sometimes also known as 'hackers'.&lt;/p&gt;
+
+&lt;p&gt;But you gotta ask yourself: what would happen if someone were to invent a programming language that is sufficiently expressive so that the machine will &quot;do what I mean, not what I say&quot;?&lt;/p&gt;
+
+&lt;p&gt;The main reason we need hackers/programmers today is due to the fact that machines are notorious for doing exactly what we tell them to do, not what we actually mean. The machines are just too bloody literal-minded. Hackers specialize in breaking through the intentions and re-framing them in such a way that the machines can process the request unambiguously.&lt;/p&gt;
+
+&lt;p&gt;But if someone can build a hacker for us, then we can talk to the hacker and let it do the legwork for us. The language that would enable us to talk to the hacker would be more expressive than the language that hacker will use to talk to the machine.&lt;/p&gt;
+
+&lt;p&gt;This is similar to having a chauffeur. In the early days of automobile industry, cars were more complicated to drive than they are today. Well off people used to have chauffeurs. The user will talk to the chauffeur, expressing his/her intentions (&quot;Jives, drive me to the Opera House, will you?&quot;), and the chauffeur will then 'talk' to the underlying machinery (i.e. the car) and will make it go to the desired destination.&lt;/p&gt;
+
+&lt;p&gt;To me, a language like Ruby is the precursor of the future 'hacker' -- a device that allows me to talk to the underlying machinery though a 'hacker', or a 'chauffeur', allows me to express my intentions without worrying too much whether these intentions will get interpreted too literally. Even today, Ruby can do that, to a certain extent, because it is context-sensitive, and has certain level of common-sense built into its fundamental bias.&lt;/p&gt;
+
+&lt;blockquote&gt;Different languages, from assembly to Ruby and Lisp, will always have their own specialty areas. The real goal should be to develop tools that fit the situations computer users (programmers included) face day in and day out.&lt;/blockquote&gt;
+
+&lt;p&gt;Yes, there are general purpose butlers, and there are specialized butlers. A chauffeur is a specialized butler. Like, you wouldn't expect him to iron your pants and shirts.&lt;/p&gt;
+
+&lt;blockquote&gt;Just like vehicles (cars, trucks, semis, suvs, etc), platforms, frameworks, and languages will always have different uses and users.&lt;/blockquote&gt;
+
+&lt;p&gt;But the underlying constant to all these uses must be expressiveness. We must reach the level of expressiveness where our intentions get interpreted correctly.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Sean Smith wrote:</p>
+<blockquote><p>The most important qualification for programming languages is not whether they allow your aver user to program, but how useful they are for programmers (automobile engineers) to produce the applications (cars)– whatever platform that may be; web, desktop, database– that the average computer user (driver) will use ony a daily basis.</p></blockquote>
+<p>That is one way of looking at things. There are other ways. The original intention of defining programming languages was to give humans the means of expressing themselves to the machines. The split to &#8216;average computer users&#8217; and &#8217;specialized computer programmers&#8217; occurred out of necessity &#8212; the existing programming languages weren&#8217;t expressive enough. Meaning, some people started specializing and claiming that they can, after four years of intense study, translate the intentions of human users to the underlying computing machinery. These people became known as &#8216;programmers&#8217;. Or, sometimes also known as &#8216;hackers&#8217;.</p>
+<p>But you gotta ask yourself: what would happen if someone were to invent a programming language that is sufficiently expressive so that the machine will &#8220;do what I mean, not what I say&#8221;?</p>
+<p>The main reason we need hackers/programmers today is due to the fact that machines are notorious for doing exactly what we tell them to do, not what we actually mean. The machines are just too bloody literal-minded. Hackers specialize in breaking through the intentions and re-framing them in such a way that the machines can process the request unambiguously.</p>
+<p>But if someone can build a hacker for us, then we can talk to the hacker and let it do the legwork for us. The language that would enable us to talk to the hacker would be more expressive than the language that hacker will use to talk to the machine.</p>
+<p>This is similar to having a chauffeur. In the early days of automobile industry, cars were more complicated to drive than they are today. Well off people used to have chauffeurs. The user will talk to the chauffeur, expressing his/her intentions (&#8221;Jives, drive me to the Opera House, will you?&#8221;), and the chauffeur will then &#8216;talk&#8217; to the underlying machinery (i.e. the car) and will make it go to the desired destination.</p>
+<p>To me, a language like Ruby is the precursor of the future &#8216;hacker&#8217; &#8212; a device that allows me to talk to the underlying machinery though a &#8216;hacker&#8217;, or a &#8216;chauffeur&#8217;, allows me to express my intentions without worrying too much whether these intentions will get interpreted too literally. Even today, Ruby can do that, to a certain extent, because it is context-sensitive, and has certain level of common-sense built into its fundamental bias.</p>
+<blockquote><p>Different languages, from assembly to Ruby and Lisp, will always have their own specialty areas. The real goal should be to develop tools that fit the situations computer users (programmers included) face day in and day out.</p></blockquote>
+<p>Yes, there are general purpose butlers, and there are specialized butlers. A chauffeur is a specialized butler. Like, you wouldn&#8217;t expect him to iron your pants and shirts.</p>
+<blockquote><p>Just like vehicles (cars, trucks, semis, suvs, etc), platforms, frameworks, and languages will always have different uses and users.</p></blockquote>
+<p>But the underlying constant to all these uses must be expressiveness. We must reach the level of expressiveness where our intentions get interpreted correctly.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: twifkak</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1246</link>
+		<pubDate>Tue, 14 Mar 2006 13:39:08 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1246</guid>
+					<description>&lt;p&gt;Said Alex:&lt;/p&gt;
+
+&lt;blockquote&gt;All I said was that someone who has vested interest in purveying the technology in general cannot be expected to be sympathetic to the efforts toward minimizing the technology.&lt;/blockquote&gt;
+
+&lt;p&gt;And what do &lt;em&gt;you&lt;/em&gt; do for a living, sell flowers?&lt;/p&gt;
+
+&lt;p&gt;I agree entirely with the idea that &quot;normal folk&quot; should be able to program, and I think you'll find that many coders feel that way -- just Google for &quot;long tail.&quot;&lt;/p&gt;
+
+&lt;p&gt;(Sean, if you need something concrete, just look at MS Excel. Plenty of people are writing little mathematical &quot;apps&quot; in Excel using the builtin formula language, obviating what would have been, in the past, a need to commission an application.)&lt;/p&gt;
+
+&lt;p&gt;But what does all this have to do with The Infrastructure?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Said Alex:</p>
+<blockquote><p>All I said was that someone who has vested interest in purveying the technology in general cannot be expected to be sympathetic to the efforts toward minimizing the technology.</p></blockquote>
+<p>And what do <em>you</em> do for a living, sell flowers?</p>
+<p>I agree entirely with the idea that &#8220;normal folk&#8221; should be able to program, and I think you&#8217;ll find that many coders feel that way &#8212; just Google for &#8220;long tail.&#8221;</p>
+<p>(Sean, if you need something concrete, just look at MS Excel. Plenty of people are writing little mathematical &#8220;apps&#8221; in Excel using the builtin formula language, obviating what would have been, in the past, a need to commission an application.)</p>
+<p>But what does all this have to do with The Infrastructure?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Sean Smith</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1241</link>
+		<pubDate>Tue, 14 Mar 2006 07:09:39 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1241</guid>
+					<description>&lt;p&gt;Interesting discussion.  You both seem to be coming at this discussion from opposite sides of the same canyon, but the answer is in the river down below.&lt;/p&gt;
+
+&lt;p&gt;I think the car analogy is a good one.  Computers and cars are probably the most complex object ordinary people use on a regular basis.  The amount of engineering that goes into building them both is far more complex than the average user realizes (sp?).  &lt;/p&gt;
+
+&lt;p&gt;The problem I have is that you both are looking at computer use from a programming perspective and it is this view that causes your arguments to fail for me.&lt;/p&gt;
+
+&lt;p&gt;A car essentially has 3 inputs you need to use it-- gas, break, wheel.  However, there is far more that goes into driving a car than just pushing a pedal and turning the wheel.  Depth perception, judgment (can I make the light before it turns red), awareness (making sure to check blindspots) are all necessary for the safe operation of a vehicle.  None of those things require any &quot;programming&quot; of the vehicle, however.  Your average (read: most) car driver doesn't car how or why the car goes forward when the accelartor is pressed, only that it does.&lt;/p&gt;
+
+&lt;p&gt;Likewise, your average computer user doesn't care how or why their word document opens, only that it does.  We are never going to reach the point where the average computer user is building their own applications, just like we will never have average drivers building their own car engines or transmissions.&lt;/p&gt;
+
+&lt;p&gt;The most important qualification for programming languages is not whether they allow your aver user to program, but how useful they are for programmers (automobile engineers) to produce the applications (cars)-- whatever platform that may be; web, desktop, database-- that the average computer user (driver) will use ony a daily basis.&lt;/p&gt;
+
+&lt;p&gt;Different languages, from assembly to Ruby and Lisp, will always have their own specialty areas.  The real goal should be to develop tools that fit the situations computer users (programmers included) face day in and day out.&lt;/p&gt;
+
+&lt;p&gt;Just like vehicles (cars, trucks, semis, suvs, etc), platforms, frameworks, and languages will always have different uses and users.&lt;/p&gt;
+
+&lt;p&gt;Thanks for the interesting read guys.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Interesting discussion.  You both seem to be coming at this discussion from opposite sides of the same canyon, but the answer is in the river down below.</p>
+<p>I think the car analogy is a good one.  Computers and cars are probably the most complex object ordinary people use on a regular basis.  The amount of engineering that goes into building them both is far more complex than the average user realizes (sp?).  </p>
+<p>The problem I have is that you both are looking at computer use from a programming perspective and it is this view that causes your arguments to fail for me.</p>
+<p>A car essentially has 3 inputs you need to use it&#8211; gas, break, wheel.  However, there is far more that goes into driving a car than just pushing a pedal and turning the wheel.  Depth perception, judgment (can I make the light before it turns red), awareness (making sure to check blindspots) are all necessary for the safe operation of a vehicle.  None of those things require any &#8220;programming&#8221; of the vehicle, however.  Your average (read: most) car driver doesn&#8217;t car how or why the car goes forward when the accelartor is pressed, only that it does.</p>
+<p>Likewise, your average computer user doesn&#8217;t care how or why their word document opens, only that it does.  We are never going to reach the point where the average computer user is building their own applications, just like we will never have average drivers building their own car engines or transmissions.</p>
+<p>The most important qualification for programming languages is not whether they allow your aver user to program, but how useful they are for programmers (automobile engineers) to produce the applications (cars)&#8211; whatever platform that may be; web, desktop, database&#8211; that the average computer user (driver) will use ony a daily basis.</p>
+<p>Different languages, from assembly to Ruby and Lisp, will always have their own specialty areas.  The real goal should be to develop tools that fit the situations computer users (programmers included) face day in and day out.</p>
+<p>Just like vehicles (cars, trucks, semis, suvs, etc), platforms, frameworks, and languages will always have different uses and users.</p>
+<p>Thanks for the interesting read guys.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1219</link>
+		<pubDate>Mon, 13 Mar 2006 17:44:30 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1219</guid>
+					<description>&lt;p&gt;I'm sorry, Aristotle, I've never implied anything about your 'inferior intellect'. All I said was that someone who has vested interest in purveying the technology in general cannot be expected to be sympathetic to the efforts toward minimizing the technology. It's like certified accountants cannot be expected to be sympathetic toward any efforts that would minimize their role in society.&lt;/p&gt;
+
+&lt;p&gt;But you've obviously proven me wrong, which is a testament to the sharpness of your intelect.&lt;/p&gt;
+
+&lt;p&gt;I agree with everything you wrote above. Everything is bang on. And it makes me very happy to see that you're not into proliferating the technology at the expense of human suffering.&lt;/p&gt;
+
+&lt;p&gt;The only thing I'd like to add is that the idea, the 'power to the people' if you will, that regular guys should attain the ability to write memos to the machines, is what really matters. No one is expecting these memos to be brilliant or anything. It's like in real life today -- I write a short memo to my boss, to my secretary, to my child's teacher. I'm not expecting it to be framed and put up on the wall as being an exemplary specimen of vigorous writing style. Just my way of expressing my pressing needs at a given moment in time. But I'm never expecting, or hoping to be a real writer or a real journalist.&lt;/p&gt;
+
+&lt;p&gt;These memos are most of the time short-lived, ephemeral. In the future, I see us writing scripts to machines using some form of a very expressive language that is sensitive to the common sense context. Not building anything, not expecting to be professionals or experts in working with computers.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;m sorry, Aristotle, I&#8217;ve never implied anything about your &#8216;inferior intellect&#8217;. All I said was that someone who has vested interest in purveying the technology in general cannot be expected to be sympathetic to the efforts toward minimizing the technology. It&#8217;s like certified accountants cannot be expected to be sympathetic toward any efforts that would minimize their role in society.</p>
+<p>But you&#8217;ve obviously proven me wrong, which is a testament to the sharpness of your intelect.</p>
+<p>I agree with everything you wrote above. Everything is bang on. And it makes me very happy to see that you&#8217;re not into proliferating the technology at the expense of human suffering.</p>
+<p>The only thing I&#8217;d like to add is that the idea, the &#8216;power to the people&#8217; if you will, that regular guys should attain the ability to write memos to the machines, is what really matters. No one is expecting these memos to be brilliant or anything. It&#8217;s like in real life today &#8212; I write a short memo to my boss, to my secretary, to my child&#8217;s teacher. I&#8217;m not expecting it to be framed and put up on the wall as being an exemplary specimen of vigorous writing style. Just my way of expressing my pressing needs at a given moment in time. But I&#8217;m never expecting, or hoping to be a real writer or a real journalist.</p>
+<p>These memos are most of the time short-lived, ephemeral. In the future, I see us writing scripts to machines using some form of a very expressive language that is sensitive to the common sense context. Not building anything, not expecting to be professionals or experts in working with computers.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1199</link>
+		<pubDate>Mon, 13 Mar 2006 10:27:59 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1199</guid>
+					<description>&lt;p&gt;Surprise, now that you’re trying to explain your position instead of hand-waving wildly, it actually makes sense, and, despite your talking down to my obviously inferior intellect that is unable to grasp such topics, I mostly agree. I’ve extolled this as a virtue of PHP, which makes PHP valuable despite it mostly being such a huge pile of crap.&lt;/p&gt;
+
+&lt;p&gt;Still, Latin is considered a transformative experience by those who learn it today. I don’t consider that a coincidence. And just because everyone knows to read and write (big overstatement, even in the industrialised world, but that’s another topic) does not mean that any of them would get a job in journalism or would make it as a writer. Likewise, to dip a bit into your car analogy, you pay someone who is trained to understand cars in order to fix yours, because you don’t understand it. And you need experts who understand cars &lt;em&gt;really&lt;/em&gt; well to design and build them. That using a microwave requires zero skills of any sort does not mean building one doesn’t either.&lt;/p&gt;
+
+&lt;p&gt;So no, I don’t consider my point invalidated. Assembler skill is not going to be obsolete any time soon – in fact, dare I predict, will never be. It’s going to remain required for those who build the things that others can then use easily. I also dare predict that having “arcane“ knowledge will always be more important in computers than it is in other disciplines, for the mundane reason that physical objects are constrained by the rules governing this universe (and our understanding of them!), so their construction can only get so complex. This is in stark contrast with computing, where defining the rules of the universe is what we do, and to arbitrary complexity.&lt;/p&gt;
+
+&lt;p&gt;In any case, computing does currently require everyone who wants to use the analogon of a microwave to first be able to build one, and this is definitely not the way things should be. I believe that Alan Kay’s ETech talk from a few days ago had a number of relevant points. Heck, he’s been working on exactly this issue for pretty much all of his life.&lt;/p&gt;
+
+&lt;p&gt;But I’m not at all surprised about any of this. Computing is young, very young, and we started with nothing but assembler and no idea of what works and what doesn’t. It takes a while to discover where and how to layer the next abstraction onto the current one, and progressively longer so the higher you get. Computing is still bootstrapping itself. On top of that, the commercialisation that the discipline experienced around the ’80s has put the brakes on the process severly – nothing new has happened in 20 years.&lt;/p&gt;
+
+&lt;p&gt;So I guess in an extremely roundabout way, I can even agree about the relevance of the vendors to the matter in question.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Surprise, now that you’re trying to explain your position instead of hand-waving wildly, it actually makes sense, and, despite your talking down to my obviously inferior intellect that is unable to grasp such topics, I mostly agree. I’ve extolled this as a virtue of PHP, which makes PHP valuable despite it mostly being such a huge pile of crap.</p>
+<p>Still, Latin is considered a transformative experience by those who learn it today. I don’t consider that a coincidence. And just because everyone knows to read and write (big overstatement, even in the industrialised world, but that’s another topic) does not mean that any of them would get a job in journalism or would make it as a writer. Likewise, to dip a bit into your car analogy, you pay someone who is trained to understand cars in order to fix yours, because you don’t understand it. And you need experts who understand cars <em>really</em> well to design and build them. That using a microwave requires zero skills of any sort does not mean building one doesn’t either.</p>
+<p>So no, I don’t consider my point invalidated. Assembler skill is not going to be obsolete any time soon – in fact, dare I predict, will never be. It’s going to remain required for those who build the things that others can then use easily. I also dare predict that having “arcane“ knowledge will always be more important in computers than it is in other disciplines, for the mundane reason that physical objects are constrained by the rules governing this universe (and our understanding of them!), so their construction can only get so complex. This is in stark contrast with computing, where defining the rules of the universe is what we do, and to arbitrary complexity.</p>
+<p>In any case, computing does currently require everyone who wants to use the analogon of a microwave to first be able to build one, and this is definitely not the way things should be. I believe that Alan Kay’s ETech talk from a few days ago had a number of relevant points. Heck, he’s been working on exactly this issue for pretty much all of his life.</p>
+<p>But I’m not at all surprised about any of this. Computing is young, very young, and we started with nothing but assembler and no idea of what works and what doesn’t. It takes a while to discover where and how to layer the next abstraction onto the current one, and progressively longer so the higher you get. Computing is still bootstrapping itself. On top of that, the commercialisation that the discipline experienced around the ’80s has put the brakes on the process severly – nothing new has happened in 20 years.</p>
+<p>So I guess in an extremely roundabout way, I can even agree about the relevance of the vendors to the matter in question.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1189</link>
+		<pubDate>Mon, 13 Mar 2006 04:59:09 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1189</guid>
+					<description>&lt;p&gt;Aristotle Pagaltzis wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;Will you be as successful at explaining to me what this wonderful world of computing of yours is supposed to mean?&lt;/blockquote&gt;
+
+&lt;p&gt;Sorry to have engaged you in this exercise of radical thinking. It is only natural to expect to precipitate wrath from technologists if you advocate taking technology away from the picture. (Imagine if I posted a manifesto on some accountants list insisting that we simplify the accounting system -- the accountants and their guilds would most certainly tar me, ridicule and deride me, and then kick me out of town.)&lt;/p&gt;
+
+&lt;p&gt;Ryan had just informed me that my opinions on technology are not welcome any more on this list that is dedicated to discussing technology (albeit in diminishing terms). I am indeed an unorthodox thorn in the eye, that much I admit, so I will now bow out of the picture. I don't enjoy raining on anyone's parade.&lt;/p&gt;
+
+&lt;p&gt;The wonderful world of computing I was referring to draws parallels from the wonderful world of printed word. In the early days, people used to be dependent on the small group of elite experts who were in the privileged position of being capable of reading and writing. But the situation was actually untenable, the bottlenecks and backlogs grew unmanageable, and eventually people were forced to learn how to express themselves directly in this new medium.&lt;/p&gt;
+
+&lt;p&gt;I'm expecting the same thing to happen to the computing. We're now in the early infancy of the computing, where huge numbers of people depend on a very small number of elite experts who claim to know how to express human intentions into the machine implementation.&lt;/p&gt;
+
+&lt;p&gt;I'm arguing that this situation is untenable (and not only because the above 'claims' are questionable at best). It's simply too costly. We see different people scrambling to overcome this impasse, some attempting to offshore the elitist work to India etc., others clutching straws with Model Driven Architecture and other pie-in-the-sky code generating frameworks.&lt;/p&gt;
+
+&lt;p&gt;The situation will not get resolved unless we reach the level of expressiveness where people could express their intentions directly. Same as most people today can write a memo by themselves and express their position with relative ease (read: inexpesivelly) to their targeted audience. &lt;/p&gt;
+
+&lt;blockquote&gt;I tried to track back to some more sensical point from which to argue some actual point, but I’m having a hard time finding anything coherent in your article to grip onto. It all sounds about as meaningful as the vendor slogans you are talking about. You don’t define what infrastructure is, why the things you count as infrastructure fulfill the criteria to be counted that way, why such infrastructure is not worthwhile to obsess over, or what the “wonderful” and the “computing” parts in ”wonderful world of computing” each mean. If I saw this sort of vacuous blather anywhere but on lesscode.org, where it feels like a blemish on Ryan’s excellent work, I would just ignore it. That seemed to work a treat for the vendor slogans, too.
+
+But go ahead, enlighten me.&lt;/blockquote&gt;
+
+&lt;p&gt;Again, I realize now that it would be practically impossible for you to grasp this idea. Simply by the virtue of the fact that you're trapped inside, enamored by the technology. Technologists today remind one of those scholars of the earlier periods who kept insisting on speaking in Latin, and were looking down on anyone who'd speak directly, without beating around the bush and to the point.&lt;/p&gt;
+
+&lt;p&gt;Eventually, the Latin speaking crowd died out. Yes, they are still kicking around in some academic circles, but their overall impact on everyday life is drastically diminished.&lt;/p&gt;
+
+&lt;p&gt;So, in the attempt to shed some light on your confusion, let me stretch things a bit and say that the infrastructure I was talking about is analogous to Latin. Yes, it is fascinating to study Latin, and one can indeed learn a lot by doing so, but it is absolutely not necessary to do that if one is to function in everyday world. Some of the most expressive and engaging writers never studied Latin.&lt;/p&gt;
+
+&lt;p&gt;Still, Latin is, in many ways, the underlying infrastructure to most of the Indo-European languages (English included).&lt;/p&gt;
+
+&lt;p&gt;Same is with computing -- some of the most expressive and engaging 'computer conversationalists' in the future will be the people who never knew how to program in Assembler.&lt;/p&gt;
+
+&lt;p&gt;Now, I'm not saying that knowing how to program in Assembler is bad. It's cool. But it's not mandatory. Insisting that everyone who is ever going to formulate and express their intentions to the computing machinery be a proficient assembler programmer is akin to saying that anyone who wants to express their thoughts in a memo or email or blog post or press release must be a full fledged Latin scholar.&lt;/p&gt;
+
+&lt;p&gt;Feel free to ask more questions. I really didn't want to get deep into this whole debate, for the space/time constraint reasons, but would be happy to elaborate some more.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Aristotle Pagaltzis wrote:</p>
+<blockquote><p>Will you be as successful at explaining to me what this wonderful world of computing of yours is supposed to mean?</p></blockquote>
+<p>Sorry to have engaged you in this exercise of radical thinking. It is only natural to expect to precipitate wrath from technologists if you advocate taking technology away from the picture. (Imagine if I posted a manifesto on some accountants list insisting that we simplify the accounting system &#8212; the accountants and their guilds would most certainly tar me, ridicule and deride me, and then kick me out of town.)</p>
+<p>Ryan had just informed me that my opinions on technology are not welcome any more on this list that is dedicated to discussing technology (albeit in diminishing terms). I am indeed an unorthodox thorn in the eye, that much I admit, so I will now bow out of the picture. I don&#8217;t enjoy raining on anyone&#8217;s parade.</p>
+<p>The wonderful world of computing I was referring to draws parallels from the wonderful world of printed word. In the early days, people used to be dependent on the small group of elite experts who were in the privileged position of being capable of reading and writing. But the situation was actually untenable, the bottlenecks and backlogs grew unmanageable, and eventually people were forced to learn how to express themselves directly in this new medium.</p>
+<p>I&#8217;m expecting the same thing to happen to the computing. We&#8217;re now in the early infancy of the computing, where huge numbers of people depend on a very small number of elite experts who claim to know how to express human intentions into the machine implementation.</p>
+<p>I&#8217;m arguing that this situation is untenable (and not only because the above &#8216;claims&#8217; are questionable at best). It&#8217;s simply too costly. We see different people scrambling to overcome this impasse, some attempting to offshore the elitist work to India etc., others clutching straws with Model Driven Architecture and other pie-in-the-sky code generating frameworks.</p>
+<p>The situation will not get resolved unless we reach the level of expressiveness where people could express their intentions directly. Same as most people today can write a memo by themselves and express their position with relative ease (read: inexpesivelly) to their targeted audience. </p>
+<blockquote><p>I tried to track back to some more sensical point from which to argue some actual point, but I’m having a hard time finding anything coherent in your article to grip onto. It all sounds about as meaningful as the vendor slogans you are talking about. You don’t define what infrastructure is, why the things you count as infrastructure fulfill the criteria to be counted that way, why such infrastructure is not worthwhile to obsess over, or what the “wonderful” and the “computing” parts in ”wonderful world of computing” each mean. If I saw this sort of vacuous blather anywhere but on lesscode.org, where it feels like a blemish on Ryan’s excellent work, I would just ignore it. That seemed to work a treat for the vendor slogans, too.</p>
+<p>But go ahead, enlighten me.</p></blockquote>
+<p>Again, I realize now that it would be practically impossible for you to grasp this idea. Simply by the virtue of the fact that you&#8217;re trapped inside, enamored by the technology. Technologists today remind one of those scholars of the earlier periods who kept insisting on speaking in Latin, and were looking down on anyone who&#8217;d speak directly, without beating around the bush and to the point.</p>
+<p>Eventually, the Latin speaking crowd died out. Yes, they are still kicking around in some academic circles, but their overall impact on everyday life is drastically diminished.</p>
+<p>So, in the attempt to shed some light on your confusion, let me stretch things a bit and say that the infrastructure I was talking about is analogous to Latin. Yes, it is fascinating to study Latin, and one can indeed learn a lot by doing so, but it is absolutely not necessary to do that if one is to function in everyday world. Some of the most expressive and engaging writers never studied Latin.</p>
+<p>Still, Latin is, in many ways, the underlying infrastructure to most of the Indo-European languages (English included).</p>
+<p>Same is with computing &#8212; some of the most expressive and engaging &#8216;computer conversationalists&#8217; in the future will be the people who never knew how to program in Assembler.</p>
+<p>Now, I&#8217;m not saying that knowing how to program in Assembler is bad. It&#8217;s cool. But it&#8217;s not mandatory. Insisting that everyone who is ever going to formulate and express their intentions to the computing machinery be a proficient assembler programmer is akin to saying that anyone who wants to express their thoughts in a memo or email or blog post or press release must be a full fledged Latin scholar.</p>
+<p>Feel free to ask more questions. I really didn&#8217;t want to get deep into this whole debate, for the space/time constraint reasons, but would be happy to elaborate some more.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1186</link>
+		<pubDate>Mon, 13 Mar 2006 03:47:16 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1186</guid>
+					<description>&lt;p&gt;Okay, now you’ve made me feel sheepish for taking the bait and engaging in your foolish car analogy. Well done.&lt;/p&gt;
+
+&lt;p&gt;Will you be as successful at explaining to me what this wonderful world of computing of yours is supposed to mean?&lt;/p&gt;
+
+&lt;p&gt;I tried to track back to some more sensical point from which to argue some actual point, but I’m having a hard time finding anything coherent in your article to grip onto. It all sounds about as meaningful as the vendor slogans you are talking about. You don’t define what infrastructure is, why the things you count as infrastructure fulfill the criteria to be counted that way, why such infrastructure is not worthwhile to obsess over, or what the “wonderful” and the “computing” parts in ”wonderful world of computing” each mean. If I saw this sort of vacuous blather anywhere but on &lt;tt&gt;lesscode.org&lt;/tt&gt;, where it feels like a blemish on Ryan’s excellent work, I would just ignore it. That seemed to work a treat for the vendor slogans, too.&lt;/p&gt;
+
+&lt;p&gt;But go ahead, enlighten me.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Okay, now you’ve made me feel sheepish for taking the bait and engaging in your foolish car analogy. Well done.</p>
+<p>Will you be as successful at explaining to me what this wonderful world of computing of yours is supposed to mean?</p>
+<p>I tried to track back to some more sensical point from which to argue some actual point, but I’m having a hard time finding anything coherent in your article to grip onto. It all sounds about as meaningful as the vendor slogans you are talking about. You don’t define what infrastructure is, why the things you count as infrastructure fulfill the criteria to be counted that way, why such infrastructure is not worthwhile to obsess over, or what the “wonderful” and the “computing” parts in ”wonderful world of computing” each mean. If I saw this sort of vacuous blather anywhere but on <tt>lesscode.org</tt>, where it feels like a blemish on Ryan’s excellent work, I would just ignore it. That seemed to work a treat for the vendor slogans, too.</p>
+<p>But go ahead, enlighten me.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1182</link>
+		<pubDate>Mon, 13 Mar 2006 02:33:08 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/12/time-to-stop-obsessing-about-the-infrastructure/#comment-1182</guid>
+					<description>&lt;p&gt;Aristotle Pagaltzis wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;So what? I don’t know how the circuits in a CPU are laid out and why, either, and you still spent at least a month or so to get a driver’s permit.&lt;/p&gt;
+
+&lt;p&gt;But I am a much better programmer for knowing how to write assembler code well.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Oh, now I understand! Of course you're right -- how could I have been so blind not to see it right away? I clearly recall how I've spent almost a month acquiring a permit to operate my microwave oven.&lt;/p&gt;
+
+&lt;p&gt;Of course, more complex tools, such as cell phones, come with much more stringent requirements -- at least a semester of study and then a gruelling exam.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Aristotle Pagaltzis wrote:</p>
+<blockquote><p>So what? I don’t know how the circuits in a CPU are laid out and why, either, and you still spent at least a month or so to get a driver’s permit.</p>
+<p>But I am a much better programmer for knowing how to write assembler code well.</p>
+</blockquote>
+<p>Oh, now I understand! Of course you&#8217;re right &#8212; how could I have been so blind not to see it right away? I clearly recall how I&#8217;ve spent almost a month acquiring a permit to operate my microwave oven.</p>
+<p>Of course, more complex tools, such as cell phones, come with much more stringent requirements &#8212; at least a semester of study and then a gruelling exam.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.486 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.lesscode.org/clip-source-request/v0p1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.lesscode.org/clip-source-request/v0p1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+	<xs:element name="clip-source-request">
+		<xs:annotation>
+			<xs:documentation>Request clipboard data from a source.  Returns a clip-source-response.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="action">
+					<xs:annotation>
+						<xs:documentation>copy, cut, or identify</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="copy"/>
+							<xs:enumeration value="cut"/>
+							<xs:enumeration value="identify"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="selection" type="xs:anyURI">
+					<xs:annotation>
+						<xs:documentation>A URI ending in an XPointer identifying the target resource and the user's current selection.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

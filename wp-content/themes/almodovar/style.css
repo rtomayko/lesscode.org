@@ -1,0 +1,576 @@
+/*
+Theme Name: Almodovar
+Theme URI: http://blog.ratterobert.com/archiv/2005/03/09/almodovar/
+Description: Das Theme basiert im Ursprung auf Michael Heilemanns <a href="http://binarybonsai.com/kubrick/">Kubrick</a>-Template und ist von dem einen oder anderen Gimmick anderer sehr guter Templates inspiriert worden.
+Version: 0.7
+Author: ratte / robert
+Author URI: http://blog.ratterobert.com/
+*/
+
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 75%; /* Resets 1em to 10px */
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', Tahoma, Sans-Serif;
+	background-color: #d5d6d7;
+	color: #333;
+	text-align: center;
+  line-height: 160%;
+	}
+
+#page {
+	background-color: white;
+	border: 1px solid #959596;
+	text-align: left;
+	}
+
+#zeit {
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	padding-right:10px;
+	font-size: 19px;
+	z-index: 3;
+  margin-top: 0px;
+	}
+
+#content {
+	font-size: 1.2em;
+	z-index: 2;
+	margin-top: 2em;
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.narrowcolumn .postmetadata {
+	text-align: left;
+	}
+
+.alter {
+	border-top: 1px solid #ddd;
+	}
+
+#footer {
+	border-top: 1px solid #000;
+	}
+
+small {
+	font-family: 'Trebuchet MS', 'Tahoma', Sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+
+h1 {
+	font-size: 4em;
+	text-align: left;
+
+	}
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+
+/* Special case doc-title */
+h1 { 
+  text-transform: lowercase;
+  font-size: 4em;
+  margin: .3em 0;
+}
+h1 a { 
+  display: block;
+  padding-left: 0.8em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  margin: 0;
+  border-bottom: 1px #fff solid;
+}
+h1, 
+h1 a, 
+h1 a:visited {
+	text-decoration: none;
+	color: #FF5000;
+}
+h1 a:hover {
+  color: #ff5000;
+}
+
+h2, h3 {
+	color: #333;
+	}
+
+h2 a, h3 a {
+	color: #777;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, 
+h3, h3 a, h3 a:hover, h3 a:visited, 
+#wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.commentlist { 
+  margin-left: 0;
+  padding-left: 0;
+}
+.commentlist li.alt {
+	list-style: none inside;
+	background-color: #FFF;
+	border: 1px solid #eee;
+  margin: .5em 0;
+  padding: 0 .5em;
+	}
+.commentlist p.who cite {
+	font-weight: bold;
+	color: #000;
+	font-family: Georgia, 'Times New Roman', Times, Serif;
+	font-style: normal;
+	}
+
+.commentlist p.who cite a {
+	color: #FF5000;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	text-transform: none;
+	}
+
+#commentform p {
+	font-family: 'Trebuchet MS', 'Tahoma', 'Lucida Grande', Sans-Serif;
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
+small, .nocomments, .postmetadata, blockquote, strike {
+	color: #777;
+	}
+
+#links ul ul li, #links li {
+	list-style: none;
+	}
+
+code {
+	font: 10pt 'Bitstream Vera Sans Mono', 'Lucida Console', monospace;
+  color: #555;
+	}
+pre { 
+  padding-left: 2em;
+  border-left: 2px solid #ccc;
+}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a { 
+  color: #FF5000;
+}
+.entry p a,
+.entrytext p a { 
+  text-decoration: underline;
+}
+.entry p a:visited,
+.entrytext p a:visited {
+	color: #666;
+  font-weight: normal;
+	}
+a:hover,
+.entry p a:hover,
+.entrytext p a:hover {
+	color: #FF8000;
+}
+h2 a:hover, h3 a:hover {
+	color: #FF5000;
+	text-decoration: none;
+	}
+
+#wp-calendar #prev a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	margin: 0;
+	padding: 0;
+	}
+
+#page {
+	background-color: white;
+	margin: 0px auto 0px 9em;
+	padding: 0;
+	max-width: 60em;
+	border: 1px solid #959596;
+	}
+* html #page { 
+  width: 60em;
+}
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 45px;
+	margin: 0px 0 0;
+	width: 44em;
+	}
+
+.post {
+	margin: 0 0 40px;
+	text-align: left;
+	}
+
+.narrowcolumn .postmetadata {
+	padding-top: 5px;
+	}
+
+#footer {
+	padding: 0 0 0 1px;
+	margin: 0;
+	clear: both;
+	}
+
+#footer p {
+	margin: 10px;
+	}
+
+/* End Structure */
+
+
+.description {
+	text-align: center;
+	}
+
+h2 {
+	margin: 30px 0 4px 0;
+	}
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px ;
+  font-size: 100%;
+	}
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+/* End Images */
+
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+.post dl dt,
+.post dl dt a { 
+  font-weight: bold;
+  text-decoration: none;
+}
+.post dl dt { 
+  margin-top: 1em;
+}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 1.3em auto;
+	padding: 5px 3px;
+	text-align: right;
+	}
+
+#searchform #s {
+	width: 100px;
+	padding: 2px;
+	}
+
+#searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	}
+
+#commentform #submit {
+	margin: 0;
+	float: right;
+	}
+/* End Form Elements */
+
+
+
+/* Begin Comments*/
+.commentlist {
+	padding: 0;
+	text-align: left;
+	}
+
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	}
+
+.commentmetadata {
+	margin: 0;
+	display: block;
+	}
+/* End Comments */
+
+
+
+/* Begin Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #CCC;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	}
+/* End Various Tags & Classes*/
+
+span a {
+	color: #CCC;
+	}
+
+span a:hover {
+	color: #FF5000;
+	}
+
+#datum {
+	z-index: 1;
+	font-size: 40px;
+	font-weight: bold;
+	color: #DDD;
+	padding: 0;
+	}
+
+#navcontainer {
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 100%;
+	background-color: #CCC;
+	text-align: right;
+}
+
+#navlist ul {
+	margin-left: 0;
+	margin-right: 5px;
+	padding-left: 0;
+	white-space: nowrap;
+	}
+
+#navlist li {
+	display: inline;
+	list-style-type: none;
+	}
+
+#navlist a {
+  	padding: 3px 10px;
+  	color: #fff;
+	background-color: #999;;
+	text-decoration: none;
+	border: 1px solid #CCC;
+	}
+
+#navlist a:hover {
+	color: #000;
+	background-color: #FFF;
+	text-decoration: none;
+	}
+
+#switcher {
+	background-color: #FF5000;
+	text-align: center;
+	}
+
+#themeswitcher li {
+	list-style-type: none;
+	margin: 0;
+	}
+
+div.archives li { 
+  list-style: none outside;
+}
+div.archives li.day { 
+  font-weight: bold;
+  color: #999;
+  margin-top: 1em;
+}
+div.archices a.comments { 
+  color: #555;
+}
+div.archives li a { 
+  text-decoration: none;
+  font-weight: bold;
+}

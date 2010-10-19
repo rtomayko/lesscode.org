@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: More Developers, Less Code</title>
+	<link>http://lesscode.org/2005/08/14/more-developers-less-code/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:48 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: netsNbytes &#187; Blog Archive &#187; More Developers, Less Code [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-629</link>
+		<pubDate>Fri, 21 Oct 2005 00:56:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-629</guid>
+					<description>&lt;p&gt;[...] More Developers, Less Code [@lesscode.org] [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] More Developers, Less Code [@lesscode.org] [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill Brown</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-251</link>
+		<pubDate>Sat, 20 Aug 2005 15:34:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-251</guid>
+					<description>&lt;p&gt;This entry really resonated with me. At my last job, we regularly were forced to work with so-called turnkey products that were bought as a result of a slick presentation. We spent $1.2 million dollars to buy and implement Vignette for our external web site because they didn't want to take the time for us to develop it in-house. Ostensibly, we would just implement the bastard (with help from a consulting firm that had done it so many times that it would be a cinch) and move on to things that better used our talents. The six months turned into 13 months and the monstrosity barely was able to cope with traffic. None of the supposed extensibility was easy and we gradually adopted a hands-off approach to it, touching it only when absolutely necessary. Everything was like this: lip service to the highly-qualified developers while complete distrust evidenced by seeking &quot;better&quot; solutions.&lt;/p&gt;
+
+&lt;p&gt;Contrast that with Go Daddy, my present employer. We build practically everything we use internally. There's a couple of exceptions, but by and large management has confidence that we can do anything they want. I have never been happier and the difference was palpable within weeks of joining. It's amazing when your knowledge and skill is appreciated.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>This entry really resonated with me. At my last job, we regularly were forced to work with so-called turnkey products that were bought as a result of a slick presentation. We spent $1.2 million dollars to buy and implement Vignette for our external web site because they didn&#8217;t want to take the time for us to develop it in-house. Ostensibly, we would just implement the bastard (with help from a consulting firm that had done it so many times that it would be a cinch) and move on to things that better used our talents. The six months turned into 13 months and the monstrosity barely was able to cope with traffic. None of the supposed extensibility was easy and we gradually adopted a hands-off approach to it, touching it only when absolutely necessary. Everything was like this: lip service to the highly-qualified developers while complete distrust evidenced by seeking &#8220;better&#8221; solutions.</p>
+<p>Contrast that with Go Daddy, my present employer. We build practically everything we use internally. There&#8217;s a couple of exceptions, but by and large management has confidence that we can do anything they want. I have never been happier and the difference was palpable within weeks of joining. It&#8217;s amazing when your knowledge and skill is appreciated.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: DLeBlanc</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-228</link>
+		<pubDate>Fri, 19 Aug 2005 00:12:02 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-228</guid>
+					<description>&lt;p&gt;There is a lot to be said of the ability of a small, focussed, and talented developer (or part time developer) team to create something like this.  Usually though, this just ends up in a special purpose, poorly tested implementation.&lt;/p&gt;
+
+&lt;p&gt;Now imagine that this project evolves into a slightly more general purpose, yet still light weight and focussed system.  It becomes open source, and gains just enough (actually useful) features to be popular.  It also has enough clients that it gets pounded.  Some of the students even look at the code and break it in certain ways.&lt;/p&gt;
+
+&lt;p&gt;I think I'd rather look at using the second option - a lot is to be said of software maturity (even if it does come with an initial learning/installation curve).  Assuming the software in question is well tested, and solves the important problems, I think this cost is far lower than employing a team to create a custom one-off and hope they have the craftsmanship to create a well tested and usable application.  Of course if this product doesn't exist, it could be because this group needs to write it :)&lt;/p&gt;
+
+&lt;p&gt;I think this rule applies as the software in question becomes a larger burden to reimplement.  I don't think anyone would try to re-write MS Word because it doesn't do something a particular way.  For trivial applications, a custom one-off might be just the trick.&lt;/p&gt;
+
+&lt;p&gt;I think there should be a cut-off point at which the costs of reimplementation exceed those of adapting an existing solution.  Of course, for the example above I think the one off was far superior to the other solutions.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>There is a lot to be said of the ability of a small, focussed, and talented developer (or part time developer) team to create something like this.  Usually though, this just ends up in a special purpose, poorly tested implementation.</p>
+<p>Now imagine that this project evolves into a slightly more general purpose, yet still light weight and focussed system.  It becomes open source, and gains just enough (actually useful) features to be popular.  It also has enough clients that it gets pounded.  Some of the students even look at the code and break it in certain ways.</p>
+<p>I think I&#8217;d rather look at using the second option - a lot is to be said of software maturity (even if it does come with an initial learning/installation curve).  Assuming the software in question is well tested, and solves the important problems, I think this cost is far lower than employing a team to create a custom one-off and hope they have the craftsmanship to create a well tested and usable application.  Of course if this product doesn&#8217;t exist, it could be because this group needs to write it :)</p>
+<p>I think this rule applies as the software in question becomes a larger burden to reimplement.  I don&#8217;t think anyone would try to re-write MS Word because it doesn&#8217;t do something a particular way.  For trivial applications, a custom one-off might be just the trick.</p>
+<p>I think there should be a cut-off point at which the costs of reimplementation exceed those of adapting an existing solution.  Of course, for the example above I think the one off was far superior to the other solutions.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Kevin Dangoor</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-221</link>
+		<pubDate>Thu, 18 Aug 2005 11:05:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-221</guid>
+					<description>&lt;p&gt;One other thing to remember is that a very large percentage of IT software projects &quot;fail&quot; (for various definitions of failure). There is a whole host of reasons why this is so (many of them non-technical), but there's no guarantee of success for the custom-built solution.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>One other thing to remember is that a very large percentage of IT software projects &#8220;fail&#8221; (for various definitions of failure). There is a whole host of reasons why this is so (many of them non-technical), but there&#8217;s no guarantee of success for the custom-built solution.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Digitalia &#187; Blog Archive &#187; Lesscode.org</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-212</link>
+		<pubDate>Wed, 17 Aug 2005 14:36:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-212</guid>
+					<description>&lt;p&gt;[...] This looks like it might be worth keeping up with: lesscode.org, a multi person blog about, basically, producing applications that actaully get something done, rather than getting lost in ciomplexity. I particularly like this article, outlining the benefits of in-house code and the management process by which is doesn&amp;#8217;t happen. I, of course, have never worked anywhere like that. No. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] This looks like it might be worth keeping up with: lesscode.org, a multi person blog about, basically, producing applications that actaully get something done, rather than getting lost in ciomplexity. I particularly like this article, outlining the benefits of in-house code and the management process by which is doesn&#8217;t happen. I, of course, have never worked anywhere like that. No. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: james governor</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-211</link>
+		<pubDate>Wed, 17 Aug 2005 10:22:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-211</guid>
+					<description>&lt;p&gt;the language of &quot;solutions&quot; is off-putting and generally unhelpful. a solution is what i used to mix in chemistry...&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;Banning the word is a good exercise for any analyst or writer. Try it some time. It makes you think about what you're trying to communicate.&quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.redmonk.com/jgovernor/archives/000127.html&quot;&gt;http://www.redmonk.com/jgovernor/archives/000127.html&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>the language of &#8220;solutions&#8221; is off-putting and generally unhelpful. a solution is what i used to mix in chemistry&#8230;</p>
+<blockquote>
+<p>&#8220;Banning the word is a good exercise for any analyst or writer. Try it some time. It makes you think about what you&#8217;re trying to communicate.&#8221;</p>
+</blockquote>
+<p><a href="http://www.redmonk.com/jgovernor/archives/000127.html">http://www.redmonk.com/jgovernor/archives/000127.html</a></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: martijn</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-209</link>
+		<pubDate>Wed, 17 Aug 2005 07:51:07 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-209</guid>
+					<description>&lt;p&gt;If they were really able developers they whould not have proposed a 6 month project.&lt;/p&gt;
+
+&lt;p&gt;They wourk have proposed a phased project:
+2 weeks:
+-authentication + adding grades to the database.
+4 weeks:
+??
+6 weeks:
+??&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>If they were really able developers they whould not have proposed a 6 month project.</p>
+<p>They wourk have proposed a phased project:<br />
+2 weeks:<br />
+-authentication + adding grades to the database.<br />
+4 weeks:<br />
+??<br />
+6 weeks:<br />
+??</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: grahamc</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-207</link>
+		<pubDate>Tue, 16 Aug 2005 22:44:26 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-207</guid>
+					<description>&lt;p&gt;Yes, a familiar story. Usually though, the system gets declared a huge success and &quot;John&quot; gets promoted, the 2 IT people quit in disgust, a new IT department gets hired who promptly throw up their hands at the appalling standards of the last IT department,  thereby ensuring that any messups in the first 6 months can be blamed on their predecessors. One of the 2 new people quits after 6 months. The remaining one soldiers on putting out fires on a daily basis, and comes to be regarded as a hero becuase of their  dedication and service orientation.&lt;/p&gt;
+
+&lt;p&gt;A new person is hired who quietly writes a simple grading system in PHP and MySQL without asking permission, and quietly gets all the teachers to do &quot;beta testing&quot;. This becomes the new system. After 2 years, all use of the previous commercial systems stop and no mention of them are ever made again, as if they never existed.&lt;/p&gt;
+
+&lt;p&gt;Then management hires a new senior teacher, &quot;Fred&quot;, who throws up his hands at the appalling IT standards, and pushes through approval for a new $100,000 grading system which has integrated payroll, accounting, inventory and teaching modules. The students crack the security in 1 week flat. It is declared a huge success. &quot;Fred&quot; gets promoted...&lt;/p&gt;
+
+&lt;p&gt;I have seen the same thing repeated many times, although usually with many millions of dollars being wasted. It's so easy if the right salesperson takes the right executive out to lunch at the right time!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Yes, a familiar story. Usually though, the system gets declared a huge success and &#8220;John&#8221; gets promoted, the 2 IT people quit in disgust, a new IT department gets hired who promptly throw up their hands at the appalling standards of the last IT department,  thereby ensuring that any messups in the first 6 months can be blamed on their predecessors. One of the 2 new people quits after 6 months. The remaining one soldiers on putting out fires on a daily basis, and comes to be regarded as a hero becuase of their  dedication and service orientation.</p>
+<p>A new person is hired who quietly writes a simple grading system in PHP and MySQL without asking permission, and quietly gets all the teachers to do &#8220;beta testing&#8221;. This becomes the new system. After 2 years, all use of the previous commercial systems stop and no mention of them are ever made again, as if they never existed.</p>
+<p>Then management hires a new senior teacher, &#8220;Fred&#8221;, who throws up his hands at the appalling IT standards, and pushes through approval for a new $100,000 grading system which has integrated payroll, accounting, inventory and teaching modules. The students crack the security in 1 week flat. It is declared a huge success. &#8220;Fred&#8221; gets promoted&#8230;</p>
+<p>I have seen the same thing repeated many times, although usually with many millions of dollars being wasted. It&#8217;s so easy if the right salesperson takes the right executive out to lunch at the right time!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-206</link>
+		<pubDate>Tue, 16 Aug 2005 21:25:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-206</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;Essentially, internal devel is extremely dangerous if your 
+  internal developers aren’t good enough. Or are unwilling to play
+  outside of the organization.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or are not permitted to play outside the organization as is probably the more common case until recently.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>Essentially, internal devel is extremely dangerous if your<br />
+  internal developers aren’t good enough. Or are unwilling to play<br />
+  outside of the organization.</p>
+</blockquote>
+<p>Or are not permitted to play outside the organization as is probably the more common case until recently.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Seth Vidal</title>
+		<link>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-205</link>
+		<pubDate>Tue, 16 Aug 2005 20:45:06 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/14/more-developers-less-code/#comment-205</guid>
+					<description>&lt;p&gt;I've seen this happen many times. There is however the double-edged sword. Internally developed software has the benefit and detraction of being developed to meet internal needs. Sometimes the developers are working in a vacuum away from the rest of reasonable, open source, development communities. That's how we get things like an all-pascal or all-haskell grading system written with some 'interesting' decisions about how to do IPC and RPC.&lt;/p&gt;
+
+&lt;p&gt;Essentially, internal devel is extremely dangerous if your internal developers  aren't good enough. Or are unwilling to play outside of the organization.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;ve seen this happen many times. There is however the double-edged sword. Internally developed software has the benefit and detraction of being developed to meet internal needs. Sometimes the developers are working in a vacuum away from the rest of reasonable, open source, development communities. That&#8217;s how we get things like an all-pascal or all-haskell grading system written with some &#8216;interesting&#8217; decisions about how to do IPC and RPC.</p>
+<p>Essentially, internal devel is extremely dangerous if your internal developers  aren&#8217;t good enough. Or are unwilling to play outside of the organization.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.679 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Web Services Infrastructure: Kid Templating</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/09/23/the-secret-to-winning/">The secret to winning is not losing</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/09/25/fun-with-fixtures/">Fun with Fixtures</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-89"><a href="http://lesscode.org/2005/09/24/web-services-infrastructure-kid/" rel="bookmark" title="Permanent Link: Web Services Infrastructure: Kid Templating">Web Services Infrastructure: Kid Templating</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/first-they-ignore-you/" title="View all posts in First they ignore you.." rel="category tag">First they ignore you..</a> 
+      on 24. September 2005</small>
+
+			<div class="entrytext">
+				<p><em>Note: the title should make sense by the end of the post&#8230;</em></p>
+
+<p>Kevin Dangoor&#8217;s recent announcement of
+<a href="http://www.turbogears.org/">TurboGears</a> has resulted in a dramatic
+increase of interest in <a href="http://kid.lesscode.org/">Kid</a>. Kid was first
+announced on <a href="http://naeblis.cx/rtomayko/2004/11/30/pythonic-xml-based-templating-language" title="In search of a Pythonic, XML-based Templating Language">November 30, 2004</a> as a <em>Pythonic XML-based
+Templating Language</em>. I remember thinking I was going to do a series
+of articles on why I wanted this specific combination of features in a
+library. I never did and Kid progressed into its current form, growing a
+small community along the way. </p>
+
+<p>Although it&#8217;s now used primarily for HTML templating, that wasn&#8217;t the
+initial goal of the project. What I really wanted to do was to
+illustrate a different way of thinking about &#8220;Web Services&#8221;.</p>
+
+<p>Not what you were expecting, eh?</p>
+
+<p>But it&#8217;s true - Kid was supposed to be a simple device that I would use
+to start a narrative exploring a variety of topics related to building
+distributed systems atop the web (i.e. &#8220;Web Services&#8221;). I had decided
+that the direction being taken by the industry mainstream was incorrect
+and that web services would languish until they became more like the
+existing, working, proven, web.</p>
+
+<p>There was a lot of talk about &#8220;Web Services Infrastructure&#8221; and
+framework and that talk continues today. The assumption by nearly
+everyone was (and still is) that web services would require a whole new
+set of tooling and paradigm. SOAP/WS was still very much RPC oriented
+and so the focus was on language bindings, typing, discovery, and the
+like. Web Services programming had almost no resemblance to existing web
+programming.</p>
+
+<p>This has only accelerated in the time since I was heavily involved. Now
+it seems the industry is calling for some mysteriously unspecified SOA
+toolkit, ESB, or some other insignificant combination of alphanumerics
+to save Enterprise IT.</p>
+
+<p>I was in the middle of the situation a year ago or so and it troubled me
+deeply. Long days and nights at work were spent combining technologies
+like SOAP, WSDL, WS-Security, and BPML with massive Java
+infrastructure. I ate it all up and knew it like the back of my hand. It
+is not impossible for someone dedicating 8-12 hours a day to
+understanding this stuff to love it. <em>I</em> loved it. It&#8217;s all very
+intriguing for someone with my particular constitution. </p>
+
+<p>But so is masturbation.</p>
+
+<p>I&#8217;m not sure what happened. I guess I had what alcoholics refer to as &#8220;a
+moment of clarity&#8221;. I distinctly remember going over to grab a co-worker
+for lunch. He was on the phone and so I was talking to some guy in an
+adjacent cube who did &#8220;services work&#8221;. The services people were
+developers but were considered a different department than product
+development. They dealt with specific customer needs and were tasked
+with using our platform to craft actual real solutions for actual real
+business problems. Their world is much different from product
+development, whose main customers were marketing and the executive team.</p>
+
+<p>Anyway, I noticed a very <em>large</em> stack of printed material on this guys&#8217;
+desk, entitled &#8220;Introduction to Web Services&#8221;. Development had collected
+a set of introductory materials that were to be distributed to all of
+the services people in the field and, I assume, eventually to external
+developers using our platform. I had a small part in compiling these
+materials and had reviewed it at various stages in electronic form. </p>
+
+<p>The hard copy put me on my ass. (I say that metaphorically but if it
+were to hit me with any significant velocity it very well could have
+<em>literally</em> put me on my ass.) I picked up the tomb (an &#8220;Introduction&#8221;,
+mind), slapped it on my co-worker&#8217;s desk, who was now off the phone, and
+whispered, &#8220;this isn&#8217;t going to work.&#8221;</p>
+
+<p>The services guy doesn&#8217;t love this stuff - <em>at all</em>. I&#8217;m sure he was
+completely capable of digesting all of it had he the time and interest
+of, say, someone in my position, but he doesn&#8217;t. He has a customer that
+wants a bunch of systems to talk to each other and they all have very
+large and amazingly different framework and infrastructure. More
+framework and infrastructure is the last thing he needs. The services
+guy was a wake-up call.</p>
+
+<p>At the time this was happening I had been nursing a long-time interest
+in true web architecture. This didn&#8217;t have anything to do with work - a
+very long time ago I threw together a little download tool thingy that
+was capable of resuming failed downloads (with 14.4 baud modems this was
+a big deal and none of the browsers had native support for
+resuming). This required that I read bits of <a href="http://www.faqs.org/rfcs/rfc2616.html" title="RFC 2616">RFC 2616</a> and
+implement a basic HTTP client. I remember being amazed at some of the
+capabilities of HTTP because I had assumed that it was mostly a simple
+file transfer protocol (closer to FTP than, say, CORBA). The spec ended
+up staying with me and I continued to explore different ways people were
+using the web and HTTP to do new and exciting things.</p>
+
+<p>At some point, I became convinced that existing, basic web architecture
+solved many of the problems we were seeing with Web Services
+<em>adoption</em>. The problem wasn&#8217;t that WS was incapable of solving the
+technology issues (it&#8217;s quite adequate), the problem was that it was
+incapable of solving the social issues. It far exceeded the threshold of
+acceptable complexity for true adoption by this large community of
+people whose primary goal is to solve business problems.</p>
+
+<p>The web, on the other hand, was invented to solve the same basic
+integration problems businesses are experiencing now. Tim Berners-Lee&#8217;s
+dilemma is not so different than our own: a bunch of systems with a
+bunch of closed data formats and processing capabilities that should be
+universally accessible. Berners-Lee realized early on that solving this
+problem would require, above all else, a virus: something that was so
+simple and lightweight that it would be hard <em>not</em> to adopt. And that&#8217;s
+what the web is: a virus. Just like C and UNIX, Windows, Visual Basic,
+and a slew of other technologies that kept, as a primary requirement,
+the ability for real people to solve real problems.</p>
+
+<p>I shifted my thinking drastically and tried to imagine how the
+integration problems we were seeing would be solved using existing web
+architecture, which we <em>know</em> to have the traits necessary for mass
+adoption. I should mention here that by &#8220;web architecture&#8221;, I mean <a href="http://www.w3.org/TR/webarch/" title="Architecture of the World Wide Web, Volume One">W3C
+Tag Web Architecture</a> but also all of the tools and techniques that
+have evolved above and below it. The servers, proxies, template
+languages, mod_rewrite, sessions, cookies, load balancing, liberal feed
+parsers, virtual hosts, MVC, MultiViews/content negotiation, monitoring
+systems, automated testing tools, <em>dynamic languages</em>, view source, and
+on and on. All of these little tricks and techniques add up to an
+extremely powerful and yet fairly simple and understandable toolkit for
+building distributed systems. What&#8217;s more is that there are an unmatched
+number of people who understand how to build these systems using all
+variations of platform and language.</p>
+
+<p>Which brings us to Kid as &#8220;Web Services Infrastructure&#8221;. The concept is
+simple: for whatever reason, template languages (PHP, ASP, JSP, CFML,
+ERB, Cheetah, Tapestry, Velocity, etc.) have become a fundamental tool
+for web development and their usefulness is in no way limited to
+presentational data (HTML). Templates are simple, templates are
+cool. You throw some junk in there and look at the result. If the result
+isn&#8217;t right, you tweak your template until it does look right. There&#8217;s
+no layers of magic to get in your way. When something doesn&#8217;t come out
+right, you change the template. There&#8217;s no &#8220;management&#8221; or &#8220;container&#8221;
+involved.</p>
+
+<p>There&#8217;s no rule that says templates must only be used to generate
+HTML. Indeed, many of the RSS and Atom feeds in the wild are generated
+from some form of template. They are <em>never</em>
+automatically-generated-behind-the-scenes using language bindings and
+are very rarely generated using some kind of DOM/SAX API.</p>
+
+<p><code>&lt;rant&gt;</code>
+RSS is the most successful web services data format in existence (after
+HTML, of course ;). Successful web services in the future are likely to
+resemble it. Is there a use-case for RSS or Atom in WS-* land? There are
+thousands of pages of spec text and no one could throw together a simple
+use-case for the most successful web service in existence? That&#8217;s
+irresponsible.
+<code>&lt;/rant&gt;</code></p>
+
+<p>The point I&#8217;m trying to make is that template based web services are a
+reality and that we should be thinking about making incremental
+improvements to the general model to facilitate more machine-centric
+data formats instead of creating whole new paradigms.</p>
+
+<p>There are a variety of really important issues with using templates for
+general purpose web services programming, most having to do with the
+first part of <a href="http://en.wikipedia.org/wiki/Robustness_Principle">Postel&#8217;s Law</a>:</p>
+
+<blockquote>
+  <p>&#8220;<strong>Be conservative in what you do</strong>; be liberal in what you accept from
+  others.&#8221;</p>
+</blockquote>
+
+<p>The problem with using templates to produce XML (including XHTML) is
+that it is exceedingly hard to be <em>conservative in what you do</em>. Most
+template engines are text based, making it easy to miss well-formedness
+errors. There are also a range of character encoding issues that
+template languages could ease but often simply ignore and sometimes make
+worse.</p>
+
+<p>Kid is a simple attempt at building features that aid in
+conservativeness into the template engine. I actually considered
+tag-lining it <em>The Ultra-Conservative Template Engine</em> as a play on Mark
+Pilgrim&#8217;s <a href="http://diveintomark.org/projects/feed_parser/"><em>Ultra-Liberal Feed Parser</em></a> whose name comes
+from the second part of Postel&#8217;s law. This is, of course, the whole
+point of being conservative in the first place: so that we don&#8217;t need an
+Ultra-Liberal parser for each variation of &#8220;web service&#8221;.</p>
+
+<p>I think some of these features are compelling and would like to see them
+pursued in other tools that are in common use for web development. For
+instance, one of the most important and least talked about features of
+XML is that it provides a reasonable system for encoding the entire
+range of unicode code points in any character set, including ASCII. A
+template engine with a basic understanding of XML could process
+templates authored in utf-8, interpolate data encoded in ISO-8859-1, and
+output in 7-bit ASCII &#8212; if that&#8217;s what Postel demanded. Kid does that.</p>
+
+<p>One of the most important features of XSLT is that well-formed templates
+are guaranteed to yield well-formed output (with some well understood
+exceptions). If the template runs, you know it will provide a basic
+level of conservativeness. Kid does that. We&#8217;ve <code>wontfix</code>&#8216;d feature
+requests because they would break this contract.</p>
+
+<p>Most template languages require you to explicitly encode data that may
+contain reserved characters. Kid takes the opposite approach and assumes
+that all content is textual and should be encoded unless you explicitly
+state that something is XML (in which case it must be well-formed).</p>
+
+<p>There&#8217;s also some interesting features around serializing the resulting
+XML infoset with different variations. For example, you can author
+templates in XHTML 1.0 and <a href="http://kid.lesscode.org/guide.html#htmlserializer">output in HTML 4.01</a>. The output
+serializer takes care of all the little quirks for things like empty
+elements, non-escaping of <code>SCRIPT</code> and <code>STYLE</code> content, boolean
+attributes, etc. The result is a clean authoring environment and an
+ultra conservative output format. I bring this up in the context of web
+services infrastructure only to show that the ability to filter template
+output can be very useful when dealing with different types of user
+agents.</p>
+
+<p>All this to say that if you&#8217;re looking for &#8220;Web Services Infrastructure&#8221;
+for exposing processes and information, you&#8217;re probably looking to
+hard. If you have a database, templating, and a web server, you have
+most of the infrastructure and framework required to begin exposing
+information from each of your systems in a proven and established way.
+What you want to be on the lookout for are small and specific
+enhancements to these existing pieces that allow you to interact with
+other machines in a more predictable manner or in new and different
+ways.</p>
+
+<p>The next time someone is selling you infrastructure for Web Services, or
+SOA, or ESB, or whatever they&#8217;ll call it next, make sure you ask &#8220;Why?&#8221;
+After they tell you, make sure you understand, agree, and have the
+problems they propose to solve. If not, ask again. New framework and
+infrastructure is extremely expensive in more ways than one: you have to
+ramp people on it and then deploy, manage, monitor, and support
+it. Sometimes new infrastructure is unavoidable but when it overlaps a
+large portion of your existing infrastructure, you should make sure it&#8217;s
+bringing back a significant return.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/09/24/web-services-infrastructure-kid/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">7 Responses to &#8220;Web Services Infrastructure: Kid Templating&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-436">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>alexbunardzic</a></cite>:</p>
+			<p>It&#8217;s not a big secret that Web Services is a paradigm that&#8217;s &#8230; what&#8217;s the word I&#8217;m looking for?&#8230;. problematic!</p>
+<p>Even if we were to stop looking for a new platform, a new infrastructure, and adopt your approach (which, by the way, makes absolutely perfect sense), Web Services would still remain problematic. Basically, the very idea that you could set up your business on the premises of deductive reasoning is faulty to the core. Regardless of the underlying enabling technology.</p>
+<p>It&#8217;s the concept that&#8217;s opaque.</p>
+<p>SOA, on the other hand, is much clearer, and for it your proposal makes a very nice fit. I&#8217;m absolutely buying it!</p>
+<p>SOA players are the first class citizens in the information exchange matrix. They communicate with each other via complex messages &#8212; a perfect scenario for what you&#8217;re describing above. I see no problem with that at all (and frankly I see lots of potential problems with those bus architectures; but hey, them enterprise consultants need to make a living too!)</p>
+      <p>
+			<small>comment at <a href="#comment-436" title="">24. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-442">
+			<p class="who"><cite><a href='http://laurentszyster.be/blog/' rel='external ' title='62.205.125.72'>Laurent Szyster</a></cite>:</p>
+			<p>If WS so difficult to explain, there is indeed one good reason:</p>
+<p>&#8220;It’s the concept that’s opaque.&#8221;</p>
+<p>I would rather say &#8220;superstitious&#8221; than &#8220;opaque&#8221;.</p>
+<p>Web Services, as understood and implemented by the software industry, is a re-run of EDI standard directories, segment definitions and code list tables for &#8230; what you call SOA (yet another buzz around the good-old hyperlinked application made of a web of stateless functions).</p>
+<p>Web Services standards like RDF or SOAP are all about inter-operability in a network of peer applications, precisely like a Service Oriented Application The promise of seamless interconnection in a web of application components, something like &#8220;instant universal web API&#8221;.</p>
+<p>If the experience of X12, UNEDIFACT, EDI/XML or SOAP are to be considered, the Web Services standards promoted face a grim future of diverging proprietary extensions, standard fragmentation and obsolete implementations. Actually, schemas, RDF or SOAP 1.3 make inter-operability and development of web SOA neither simpler nor faster. </p>
+<p>People do stick to a proven LAMP stack:</p>
+<p>URI as simple interfaces, XML as REST response<br />
+  for PHP/MySQL, Perl/Postgres, Python/BSDDB or any other similar pair<br />
+  XSLT, CSS and/or JavaScript for display</p>
+<p>eventually an XML/RPC API emerges once the application is stable, and grows as more services are added.</p>
+<p>It works for front applications, there is no reason to use another stack at the back to connect with peer applications, trading partners, syndicate directories, etc.</p>
+<p>So, maybe the pair</p>
+<p>Kid/Python</p>
+<p>which fits very in the stack well between </p>
+<p>&#8230;/JavaScript/XSLT/HTML/CSS/XML</p>
+<p>and</p>
+<p>Apache/SQL/&#8230;</p>
+<p>can provide a better development environment for LAMP based back-offices integration than a J2EE or .NET monster.</p>
+      <p>
+			<small>comment at <a href="#comment-442" title="">25. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-443">
+			<p class="who"><cite><a href='http://decafbad.com/blog/2005/09/25/templates-good-or-evil' rel='external ' title='67.19.3.234'>Templates: Good or Evil? &raquo; Archive &raquo; Blog &raquo; 0xDECAFBAD</a></cite>:</p>
+			<p>[&#8230;] This cry and whine that draconian handling will break your page and make your users suffer for you if you have a single error is just another legacy of HTML we’ve gotten used to: our toolchains tend to be of the “glue strings together” (aka templates) variety. &#8230; There should never be any part of your publishing toolchain just gluing strings together. Ever.Source: Aristotle Pagaltzis in a comment on &#8220;The Future: HTML or XHTML&#8221;There’s no rule that says templates must only be used to generate HTML. Indeed, many of the RSS and Atom feeds in the wild are generated from some form of template. They are never automatically-generated-behind-the-scenes using language bindings and are very rarely generated using some kind of DOM/SAX API.Source: Web Services Infrastructure: Kid Templating [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-443" title="">25. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-447">
+			<p class="who"><cite><a href='http://mojix.org/2005/09/26/195625' rel='external ' title='61.206.118.46'>Zopeジャンキー日記</a></cite>:</p>
+			<p><strong>ポステルの法則</strong></p>
+<p>&#8220;Be conservative in what you do; be liberal in what you accept from others.&#8221;<br />
+（大意 : 自分がすることには保守的であれ。他人から受けとるものには寛容であれ。）</p>
+<p>これはジョン・ポステルという人が言&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-447" title="">26. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-451">
+			<p class="who"><cite><a href='http://www.parand.com/say/' rel='external ' title='216.52.229.254'>Parand Tony Darugar</a></cite>:</p>
+			<p>Huh. I had no idea kid started life as a templating solution for web services. I&#8217;ve been looking for something like that and never thought to look at kid. I guess I&#8217;ll have to give it a whirl.</p>
+<p>What I&#8217;d really like is a simple way to generate a sample SOAP message, grab the raw XML of the message, put it into template form, and allow very easy and hopefully very high performance filling in of the template values. Then you get a very light and fast WS stack.</p>
+      <p>
+			<small>comment at <a href="#comment-451" title="">27. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-520">
+			<p class="who"><cite><a href='http://lesscode.org/2005/10/03/the-new-app-server/' rel='external ' title='206.123.121.158'>The New &#8220;Application Server&#8221; [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] The new &#8220;Application Server&#8221; is a web server, a dynamic language, and templating. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-520" title="">03. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-744">
+			<p class="who"><cite>rch</cite>:</p>
+			<p>I&#8217;m replacing JET+CodeGen with a Kid friendly implementation.</p>
+      <p>
+			<small>comment at <a href="#comment-744" title="">13. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.417 seconds -->
+<!-- Cached page served by WP-Cache -->

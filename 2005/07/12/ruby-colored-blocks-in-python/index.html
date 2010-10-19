@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Ruby-colored Blocks in Python</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/07/12/to-the-east-side/">To the east side&#8230;</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/12/slay-this-cow/">How to slay this cow?</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-24"><a href="http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/" rel="bookmark" title="Permanent Link: Ruby-colored Blocks in Python">Ruby-colored Blocks in Python</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a>,  <a href="http://lesscode.org/category/languages/ruby/" title="View all posts in Ruby" rel="category tag">Ruby</a> 
+      on 12. July 2005</small>
+
+			<div class="entrytext">
+				<p>Ruby-styled blocks in Python have been something to be a bit anxious
+about. After spending even a little time working with Ruby, it&#8217;s really
+hard to get the idioms that blocks facilitate out of your head. Dealing
+with certain types of problems with coroutines just <em>feels</em> right:</p>
+
+<pre><code>File.open("bla.txt") do |file|
+   file.read()
+end
+</code></pre>
+
+<p>With the equivalent Python being roughly:</p>
+
+<pre><code>file = open('foo.txt')
+try:
+    file.read()
+finally:
+    file.close()
+</code></pre>
+
+<p>Eewww. What attracted me to Python was its ability to make code read
+very closely to its intent as it would be described by a human. Resource
+aquisition/release is one of those things that I&#8217;d rather not have to
+read about when I&#8217;m trying to extract the essence of what a piece of
+code is doing.</p>
+
+<p>Of course, you can get close in most cases by using normal callable
+passing&#8230;</p>
+
+<pre><code>def with_open_file(file, block):
+    try:
+        block(file)
+    finally:
+        file.close()
+
+def do_stuff(file):
+    file.read()
+
+with_open_file(open('bla.txt'), do_stuff)
+</code></pre>
+
+<p>&#8230; but the Ruby block syntax reads better to these eyes and it seems
+I&#8217;m not the only one. A few weeks ago, Guido <a href="http://mail.python.org/pipermail/python-dev/2005-June/054269.html">had this to say</a>
+about the block style in relation to recent PEP activity:</p>
+
+<blockquote>
+  <p>That was all before I (re-)discovered yield-expressions (in Ruby!),
+  and mostly in response to the most recent version of PEP 288, with its
+  problem of accessing the generator instance. I now strongly feel that
+  g.next(EXPR) and yield-expressions are the way to go.</p>
+</blockquote>
+
+<p>So I&#8217;ve been following the succession of PEPs that have led us to
+<a href="http://www.python.org/peps/pep-0342.html" title="Coroutines via Enhanced Generators">PEP-342</a>, <cite>Coroutines via Enhanced Generators</cite>, and
+<a href="http://www.python.org/peps/pep-0343.html" title="Anonymous Block Redux and Generator Enahncements">PEP-343</a>, <cite>Anonymous Block Redux and Generator
+Enahncements</cite>, with great interest.</p>
+
+<p>It looks like there&#8217;s a decent chance that we&#8217;ll be able to stuff like
+this in Python 2.5:</p>
+
+<pre><code> @with_template
+ def opening(filename, mode="r"):
+     file = open(filename, mode)
+     try:
+         yield file
+     finally:
+         file.close()
+
+ with opening("/etc/passwd") as file:
+     file.read()
+</code></pre>
+
+<p>This is accomplished not by adding an implicitly passed block construct
+like Ruby&#8217;s <code>&amp;block</code>, but by adding a basic message passing protocol for
+generators. Generators will have two new methods: <code>send</code> and
+<code>throw</code>. The important one here is <code>throw</code>, which tells the generator to
+raise an <code>Exception</code> at its suspension point. All of this is hidden
+behind the implementation of <code>with_template</code> (sample implementation in
+<a href="http://www.python.org/peps/pep-0342.html" title="Coroutines via Enhanced Generators">PEP-342</a>).</p>
+
+<p>What I&#8217;m interested in understanding more fully is how the PEP proposed
+enhancements to generators will work in iterative cases or whether
+that&#8217;s planned at all. The examples seem targeted toward resource
+aquisition/release (which is fine, there&#8217;s definitely a strong set of
+use cases in that area). But I&#8217;m interested in understanding how cases
+similar to Ruby&#8217;s <code>IO.foreach</code> will be handled:</p>
+
+<pre><code>IO.foreach("testfile") { |line| puts line }
+</code></pre>
+
+<p>Note that this is different from Python&#8217;s&#8230;</p>
+
+<pre><code>for line in open('testfile').readlines():
+    print line
+</code></pre>
+
+<p>&#8230; for a few reasons. First, resource aquisition/release is handled
+within <code>IO.foreach</code> where in the preceding Python snippet, it isn&#8217;t
+really handled at all. Second, <code>IO.foreach</code> reads the file iteratively,
+calling the block each time, where as an approach using Python
+generators, such as follows&#8230;</p>
+
+<pre><code>def lines(filename):
+    f = open(filename)
+    try:
+        line = f.readline()
+        while line:
+           yield line
+           line = f.readline()
+    finally:
+        f.close()
+
+for line in lines('foo.txt'):
+    raise Exception("this doesn't work")
+</code></pre>
+
+<p>&#8230; falls apart because the exception raised in the iterating block is
+not automatically signaled back to the generator. There&#8217;s no guarantee
+that the finally block will execute when the iterating block exits.</p>
+
+<p>I have a feeling there&#8217;s some aspect of this that I&#8217;m not fully
+grasping. Perhaps Phillip (<a href="http://dirtsimple.org/">PING</a>) or someone else with a good understanding of
+the proposed generator enhancements can stop by and comment; inquiring
+minds want to know&#8230;</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													<a href="http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/trackback/">Trackback <acronym title="Uniform Resource Identifier">URI</acronym></a>
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">3 Responses to &#8220;Ruby-colored Blocks in Python&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-59">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>with opening(&#8221;/etc/passwd&#8221;) as file:<br />
+  for line in file:<br />
+      &#8230;</p>
+<p>the file will be eventually closed. &#8216;for&#8217; and &#8216;with&#8217; are orthogonal for worse or better.</p>
+      <p>
+			<small>comment at <a href="#comment-59" title="">16. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-60">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>In many cases, it is important that before and after code be executed immediately before entering and immediately after exiting a for loop. The <code>with</code>/<code>for</code> example you gave would accomplish that but it would be nice to condense those two constructs down into one, no? One proposal was to check if the object referenced in the <code>for</code> has <code>__enter__</code> and <code>__exit__</code> and to call them appropriately.</p>
+      <p>
+			<small>comment at <a href="#comment-60" title="">16. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-61">
+			<p class="who"><cite><a href='http://w3planet.info/site/WSG-light-reading-17-7-2005' rel='external ' title='204.157.15.31'>Web Standards Planet</a></cite>:</p>
+			<p><strong>[WSG Announce] Some links for light reading (17/7/05)</strong></p>
+<p>WaSP Interviews Dr. Vito Evola on a course in Web standards offered at the<br />
+University of Palermo, Italy</p>
+<p>SiteMorse: Not making friends or influencing people</p>
+<p>How to style a restaurant menu with CSS:</p>
+      <p>
+			<small>trackback at <a href="#comment-61" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://lesscode.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+  <small>
+    <strong>Note:</strong> None of this information is required but 
+    leaving a Name and URL is much appreciated. You can also <a href="/wp-register.php">register</a>
+    to have this stuff remembered.
+  </small>
+</p>
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<div id="ajax-comment-preview" style="padding: .4em 0; color: #666; margin-top: 1em; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">Your comment can be previewed here.</div>
+
+<p>
+  <br />
+  <small>
+    <strong><a href="http://daringfireball.net/projects/markdown/syntax"
+       title="Markdown Syntax Reference">Markdown</a>:</strong> 
+    use the force, Luke.
+  </small>
+</p>
+
+<p>
+  <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+</p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="24" />
+</p>
+<input name="preview" type="button" id="preview" tabindex="6" value="Preview" /><div id="ajax-comment-preview"></div>
+</form>
+
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.333 seconds -->
+<!-- Cached page served by WP-Cache -->

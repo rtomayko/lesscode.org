@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en"
+      >
+    <title>lesscode.org</title>
+    <subtitle>AAaaaaahhhhrrrrrrr!</subtitle>
+    <id>http://lesscode.org/</id>
+    <link rel="self" type="application/atom+xml" href="http://lesscode.org/feed/atom/"/>
+    <link rel="alternate" type="text/html" href="http://lesscode.org/"/>
+    <updated>2007-08-19T14:16:25Z</updated>
+    <rights>Copyright 2006</rights>
+    <generator uri="http://wordpress.org/" version="2.0.1">WordPress</generator>
+        <entry>
+        <author>
+            <name>Ryan Tomayko</name>
+        </author>
+        <title type="html"><![CDATA[ Magpie&#8217;s Django / Rails comparison ]]></title>
+        <link rel="alternate" type="text/html" href="http://lesscode.org/2005/08/16/magpies-django-rails-comparison/"/>
+        <id>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/</id>
+        <published>2005-08-16T16:14:29Z</published>
+        <updated>2005-08-16T16:14:29Z</updated>
+        <category scheme="http://lesscode.org/category/"
+                  term="rails-vs-django/"
+                  label="Rails v. Django"/>
+        <summary type="html">
+            <![CDATA[ Sam Newman has a nice comparison on Django and Rails. ]]>
+        </summary>
+        <content type="html">
+            <![CDATA[ <p>Sam Newman has a <a href="http://www.magpiebrain.com/archives/2005/08/14/rails_and_django" title="A comparison of Django with Rails">fairly thorough comparison</a> of <a href="http://www.djangoproject.com/" title="Django - The web framework for perfectionists with deadlines">Django</a> and
+<a href="http://www.rubyonrails.com/" title="Ruby on Rails">Rails</a> over at magpiebrain.com. He compares the following traits of
+the frameworks: language, requirements and installation, deployment
+options, caching, project setup, adding models, interaction with the
+database, projects and applications, controllers and URLs, templating
+options, and administration / user management. </p>
+
+<p>It&#8217;s a nice comparison, although the concluding section on choosing a
+framework seems to be getting some flak:</p>
+
+<blockquote>
+  <p>If you are developing a simple (in a domain model sense) application
+  where you want to use Ajax to deliver a great UI, Rails is probably
+  for you. If however you want to develop an entire site with different
+  types of applications within it - then Django’s plugable applications
+  and general approach might be what you’re after. Equally, the better
+  user and administration side of Django favours portal style
+  applications – this is something you’ll have to do yourself if you
+  want to use Rails.</p>
+</blockquote>
+
+<p>Rails is, of course, not limited to AJAX-heavy apps with simple domain
+models. I&#8217;m assuming Sam didn&#8217;t mean to give that impression but was
+just trying to wrap up a long article quickly. Perhaps he&#8217;ll clarify a
+bit.</p>
+
+<p>Django committer, Jacob Kaplan-Moss, followed up with <a href="http://www.jacobian.org/2005/aug/16/django_and_rails/">some thoughts on
+the post</a>.</p>
+
+<p>As a side note, I <a href="http://lesscode.org/2005/07/17/rails-django-compared/" title="Rails and Django Compared">had planned to do a series around this</a> but I
+promised <a href="http://www.holovaty.com/">Adrian</a> and Jacob I&#8217;d hold off until
+Django was <em>launched-launched</em>, which I assumed meant 1.0 at the time
+but that seems a ways off now&#8230; I&#8217;m not sure Django can get any more
+launched at this point so I might have to revisit that promise as I&#8217;m
+anxious to get moving on this.</p>
+ ]]>
+        </content>
+                    </entry>
+    <entry>
+        <author>
+            <name>Ryan Tomayko</name>
+        </author>
+        <title type="html"><![CDATA[ Rails and Django Compared ]]></title>
+        <link rel="alternate" type="text/html" href="http://lesscode.org/2005/07/17/rails-django-compared/"/>
+        <id>http://lesscode.org/2005/07/17/rails-django-compared/</id>
+        <published>2005-07-17T19:48:24Z</published>
+        <updated>2006-10-29T21:31:02Z</updated>
+        <category scheme="http://lesscode.org/category/"
+                  term="by-status/then-they-laugh-at-you/"
+                  label="Then they laugh at you..."/>
+        <category scheme="http://lesscode.org/category/"
+                  term="rails-vs-django/"
+                  label="Rails v. Django"/>
+        <summary type="html">
+            <![CDATA[ I plan on diving deep into the two frameworks so instead of one large post, I'm going to make this a running series. ]]>
+        </summary>
+        <content type="html">
+            <![CDATA[ <p>Once <a href="http://djangoproject.org/" title="Django">Django</a> is <em>launched-launched</em>, I&#8217;ll be comparing various
+aspects of it with <a href="http://www.rubyonrails.com/" title="Ruby on Rails">Ruby on Rails</a>. I plan on diving deep into
+the two frameworks so instead of one large post, I&#8217;m going to make this
+a running series.</p>
+
+<p>While I&#8217;m primarily a Python coder, I&#8217;ve been dabbling with Ruby for
+about a year and have a couple of apps under my belt with Rails. They
+are admittedly simple apps but what isn&#8217;t with Rails? I&#8217;ve also logged
+70-80 hours against a Python clone of Rails&#8217; excellent implementation of
+Active Record, which put me pretty deep into the internals of that
+piece.</p>
+
+<p>I am not a Python zealot. And, to be honest, I&#8217;m floating between the
+two languages as my primary. What I&#8217;m trying to say is that my interest
+is in exploring these two frameworks objectively and extending my
+understanding of each, not advocating one over the other. I will include
+personal thoughts on design and may favor one or the other at this level
+but I will not be concluding the series with a recommendation for either
+because, frankly, I already know which I&#8217;d recommend at present and it
+has nothing to do with technical qualities (hint: <a href="http://www.loudthinking.com/arc/000484.html" title="Growing an open source ecosystem">it has everything to
+do with this</a>).</p>
+
+<p>That being said, I <em>can</em> recommend that if you are building systems that
+require the complexity of a full-stack web framework (i.e. <a href="http://www.megginson.com/blogs/quoderat/archives/2005/06/11/rails-vs-php-mvc-or-view-centric/" title="Rails vs. PHP: MVC or view-centric">PHP, CGI
+won&#8217;t cut it</a>) and you are currently using something other than one
+of these two frameworks in any language (including Java and .NET) on any
+platform, that you move swiftly to adopt either if possible. If there is
+something barring you from making that switch, well, <a href="http://intertwingly.net/slides/2005/rs/7.html" title="Where's your patch?">where&#8217;s your
+patch?</a> Make it happen.</p>
+
+<p>I realize that many in the Python community have already grown
+comfortable with an existing framework (or more likely, have written
+their own, like myself) and that&#8217;s fine as there are some competent
+frameworks out there. But it has become apparent that Django will be
+growing a large community of contributors and that&#8217;s something no
+current Python web framework of this kind can boast.</p>
+
+<p>As I write this, there are 30 people idling in #django on
+irc.freenode.net on a Sunday morning, two days after the none-launch;
+there&#8217;s been <a href="http://del.icio.us/url/980ce09131008f964385d9fc6bf5c319">409 bookmarks on del.icio.us</a>.
+Granted this is all very much driven by hype right now as there hasn&#8217;t
+been any real experience with the framework, <a href="http://simon.incutio.com/archive/2005/07/17/django">excepting the
+maintainers</a>, but
+the outlook for a large community to finally coalesce around a single
+set of tools and conventions is promising.</p>
+
+<p>I also want to mention that I spent some time talking to the Django
+maintainers last night and they&#8217;ve convinced me that the Rails
+comparisons, while unavoidable, may be somewhat premature. Although
+Django has many of the same traits as Rails, it wasn&#8217;t built as an all
+out clone and may appeal to a slightly different set of
+requirements. Time will tell, of course, but as of right now the
+similarities are a huge part of what&#8217;s driving interest in Django and
+there&#8217;s a good reason for that - Rails got a ton right.</p>
+
+<p>Still, &#8220;because it&#8217;s in Rails&#8221; is unlikely to be considered sufficient
+justification for Django feature requests. That&#8217;s a sure way of creating
+a <em>Bride of Frankenstein</em> framework and I&#8217;m pleased to see the
+maintainers have a strong sense of this. Django is likely to follow many
+of the same paths as Rails but that&#8217;s because they were both designed
+under real life circumstances with similarly excellent philosophy.</p>
+
+<p>Before I wrap this up, I&#8217;d like to echo the sentiments of <a href="http://blog.yanime.org/articles/2005/07/16/ruby-has-rails-python-now-has-django">one Rails
+supporter</a> 
+in his comments on Django:</p>
+
+<blockquote>
+  <p>I hope Rails learns to play with Django and they&#8217;ll not smite each
+  other (if not friends, don&#8217;t be enemies). The world is big enough. A
+  combined message from different camps will be more resounding than any
+  one camp trying to say he is the bestest - and coming off as naive or
+  clueless.</p>
+</blockquote>
+
+<p>Indeed.</p>
+
+<p>(<em>warning:</em> stomach wrenching, <em>KUM BAI AH</em>, everyone-hold-hands type
+stuff imminent)</p>
+
+<p>The Ruby, Python, Perl, and PHP communities must understand the immense
+opportunities that await them should they accept that they share much
+more in common than not and that a unified front would go a long way in
+tearing down the barriers that have kept these technologies out of the
+mainstream. The amount of positive impact these disruptive technologies
+could have on existing forms of business and social interaction in
+general are limited only by our ability to tell the story.</p>
+
+<p>Feeds for the series:</p>
+
+<ul>
+<li><a href="http://lesscode.org/category/rails-vs-django/feed/">RSS2</a></li>
+<li><a href="http://lesscode.org/category/rails-vs-django/feed/atom/">Atom 0.3</a></li>
+</ul>
+ ]]>
+        </content>
+                    </entry>
+</feed>
+
+<!-- Dynamic Page Served (once) in 0.336 seconds -->

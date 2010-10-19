@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: The secret to winning is not losing</title>
+	<link>http://lesscode.org/2005/09/23/the-secret-to-winning/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:29 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-466</link>
+		<pubDate>Thu, 29 Sep 2005 12:42:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-466</guid>
+					<description>&lt;p&gt;I don't know what you arguing about in relation to my point. It seems like you wanted to address Rubikzube, not me.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I don&#8217;t know what you arguing about in relation to my point. It seems like you wanted to address Rubikzube, not me.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Michael Koziarski</title>
+		<link>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-457</link>
+		<pubDate>Thu, 29 Sep 2005 02:22:45 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-457</guid>
+					<description>&lt;p&gt;Aristotle,&lt;/p&gt;
+
+&lt;p&gt;The difference is that there aren't several hundred billion dollar companies pushing it.   I'm interested in the assumption that abstract and complex frameworks are viewed as a prerequisite for solving complex problems.   The successful large applications I've worked with have been, at their core, extremely simple models of the business.&lt;/p&gt;
+
+&lt;p&gt;The failed large applications I've worked with have had ludicrously abstract concepts as 'business events' and 'participants' and 'involvements.   IBM and MSFT push complexity for a reason ....&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Aristotle,</p>
+<p>The difference is that there aren&#8217;t several hundred billion dollar companies pushing it.   I&#8217;m interested in the assumption that abstract and complex frameworks are viewed as a prerequisite for solving complex problems.   The successful large applications I&#8217;ve worked with have been, at their core, extremely simple models of the business.</p>
+<p>The failed large applications I&#8217;ve worked with have had ludicrously abstract concepts as &#8216;business events&#8217; and &#8216;participants&#8217; and &#8216;involvements.   IBM and MSFT push complexity for a reason &#8230;.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-433</link>
+		<pubDate>Sat, 24 Sep 2005 01:37:35 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-433</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;#comment-431&quot; rel=&quot;nofollow&quot;&gt;Rubikzube&lt;/a&gt;: So that puts PHP out of the race. Now, what about Perl, Python and Ruby? What is really that much more powerful about the Java class library than about (if you allow my bias) the CPAN?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="#comment-431">Rubikzube</a>: So that puts PHP out of the race. Now, what about Perl, Python and Ruby? What is really that much more powerful about the Java class library than about (if you allow my bias) the CPAN?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Rubikzube</title>
+		<link>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-431</link>
+		<pubDate>Fri, 23 Sep 2005 18:22:35 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-431</guid>
+					<description>&lt;p&gt;&lt;p&gt;I'm not sure that a comparison can be made between .NET/Java and PHP in the web environment in terms of power and simplicity. It's like comparing apples to steak (it doesn't matter which is the steak). PHP is a scripting language (primarily for web servers) while the .NET framework and Java have a far wider range of uses.  Yes, the .NET framework and the Java standard libraries are far more complex and abstract, but the solutions which these frameworks tackle have required increasing levels of complexity as those frameworks have developed.  I guess I think that any path can be powerful when engineering solution, it just depends on what type of engineering you are doing.  Yay, Relativism!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>
+<p>I&#8217;m not sure that a comparison can be made between .NET/Java and PHP in the web environment in terms of power and simplicity. It&#8217;s like comparing apples to steak (it doesn&#8217;t matter which is the steak). PHP is a scripting language (primarily for web servers) while the .NET framework and Java have a far wider range of uses.  Yes, the .NET framework and the Java standard libraries are far more complex and abstract, but the solutions which these frameworks tackle have required increasing levels of complexity as those frameworks have developed.  I guess I think that any path can be powerful when engineering solution, it just depends on what type of engineering you are doing.  Yay, Relativism!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-429</link>
+		<pubDate>Fri, 23 Sep 2005 12:25:11 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/23/the-secret-to-winning/#comment-429</guid>
+					<description>&lt;p&gt;Background:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://news.zdnet.com/2100-1009_22-845220.html&quot; rel=&quot;nofollow&quot;&gt;&quot;Microsoft guru: Stamp out HTTP&quot;&lt;/a&gt; [zdnet.com]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Background:</p>
+<p><a href="http://news.zdnet.com/2100-1009_22-845220.html">&#8220;Microsoft guru: Stamp out HTTP&#8221;</a> [zdnet.com]</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.833 seconds -->
+<!-- Cached page served by WP-Cache -->

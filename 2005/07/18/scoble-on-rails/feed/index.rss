@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Scoble on Rails</title>
+	<link>http://lesscode.org/2005/07/18/scoble-on-rails/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:01 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: DougHolton</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-102</link>
+		<pubDate>Thu, 21 Jul 2005 03:27:48 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-102</guid>
+					<description>&lt;p&gt;Fredrik Lundh (above) doesn't know what the hell he is talking about.
+A .NET library works with any .NET language, not just boo but C# or VB.NET or the PHP compiler or IronPython or whatever.&lt;/p&gt;
+
+&lt;p&gt;Fredrik makes money off of supporting python software, and obviously feels threatened by anything he perceives as competition, such as .NET.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Fredrik Lundh (above) doesn&#8217;t know what the hell he is talking about.<br />
+A .NET library works with any .NET language, not just boo but C# or VB.NET or the PHP compiler or IronPython or whatever.</p>
+<p>Fredrik makes money off of supporting python software, and obviously feels threatened by anything he perceives as competition, such as .NET.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-97</link>
+		<pubDate>Wed, 20 Jul 2005 15:18:46 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-97</guid>
+					<description>&lt;p&gt;I agree Bill. Although I've talked about Zend and SourceLabs very little here, I think they're very important in bringing LAMPish technologies to the enterprise for the reason you've mentioned. What I'm interested in seeing is whether the principles that drove the design and evolution of LAMP/friends will survive and continue to grow in that environment or if the business community will attempt to twist LAMPs roots in simplicity into more enterprise-like values.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I agree Bill. Although I&#8217;ve talked about Zend and SourceLabs very little here, I think they&#8217;re very important in bringing LAMPish technologies to the enterprise for the reason you&#8217;ve mentioned. What I&#8217;m interested in seeing is whether the principles that drove the design and evolution of LAMP/friends will survive and continue to grow in that environment or if the business community will attempt to twist LAMPs roots in simplicity into more enterprise-like values.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill Higgins</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-95</link>
+		<pubDate>Wed, 20 Jul 2005 15:02:35 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-95</guid>
+					<description>&lt;p&gt;One thing I've noticed lately are companies (e.g. Source Labs) whose purpose in life is to verify the stability interoperability of particular OSS-based configurations.  Though I don't think this is necessary for all users of open source products, I think it will help the uptake from more risk-averse CIO types.  This is good for OSS.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>One thing I&#8217;ve noticed lately are companies (e.g. Source Labs) whose purpose in life is to verify the stability interoperability of particular OSS-based configurations.  Though I don&#8217;t think this is necessary for all users of open source products, I think it will help the uptake from more risk-averse CIO types.  This is good for OSS.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Rafe</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-90</link>
+		<pubDate>Tue, 19 Jul 2005 14:00:31 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-90</guid>
+					<description>&lt;p&gt;Unfortunately, the Microsoft guy also exposes the biggest flaw with Microsoft's portfolio of products right now -- tight coupling that prevents them from releasing software.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Unfortunately, the Microsoft guy also exposes the biggest flaw with Microsoft&#8217;s portfolio of products right now &#8212; tight coupling that prevents them from releasing software.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: PJ Hyett</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-88</link>
+		<pubDate>Tue, 19 Jul 2005 04:08:41 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-88</guid>
+					<description>&lt;p&gt;&quot;I’ve been interested in understanding whether Rails is having the same impact on the .NET crowd as it is having on the Java crowd&quot;&lt;/p&gt;
+
+&lt;p&gt;I wouldn't call myself part of the Java crowd, but I used to be a Spring Framework fanboy, and I'm not exactly excited about continuing work on my J2EE webapp after experiencing the splender known as Rails. I've seen the light and don't like working with less efficient tools.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;I’ve been interested in understanding whether Rails is having the same impact on the .NET crowd as it is having on the Java crowd&#8221;</p>
+<p>I wouldn&#8217;t call myself part of the Java crowd, but I used to be a Spring Framework fanboy, and I&#8217;m not exactly excited about continuing work on my J2EE webapp after experiencing the splender known as Rails. I&#8217;ve seen the light and don&#8217;t like working with less efficient tools.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jake Tracey</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-87</link>
+		<pubDate>Tue, 19 Jul 2005 00:44:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-87</guid>
+					<description>&lt;p&gt;Jesus, it gets tiring to keep watching Microsoft publically shit on other products while their own implementations are complete tripe.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Jesus, it gets tiring to keep watching Microsoft publically shit on other products while their own implementations are complete tripe.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Fredrik</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-85</link>
+		<pubDate>Mon, 18 Jul 2005 20:27:55 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-85</guid>
+					<description>&lt;p&gt;It is interesting that the .NET &quot;answer&quot; to RoR is MonoRail and Boo. Both open source projects.&lt;/p&gt;
+
+&lt;p&gt;Oh that's right, they are not engineered to run together. :)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>It is interesting that the .NET &#8220;answer&#8221; to RoR is MonoRail and Boo. Both open source projects.</p>
+<p>Oh that&#8217;s right, they are not engineered to run together. :)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jordan Cox</title>
+		<link>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-84</link>
+		<pubDate>Mon, 18 Jul 2005 18:23:19 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/18/scoble-on-rails/#comment-84</guid>
+					<description>&lt;p&gt;Haha, speaking of Microsoft products and Microsoft Endorsed products that work wonderfully together...  our server's printing capability was trashed today by Microsoft Certified printer drivers.  Exciting.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Haha, speaking of Microsoft products and Microsoft Endorsed products that work wonderfully together&#8230;  our server&#8217;s printing capability was trashed today by Microsoft Certified printer drivers.  Exciting.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.385 seconds -->
+<!-- Cached page served by WP-Cache -->

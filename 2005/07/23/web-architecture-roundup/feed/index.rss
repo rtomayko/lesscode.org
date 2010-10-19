@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Web Architecture Roundup</title>
+	<link>http://lesscode.org/2005/07/23/web-architecture-roundup/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:08 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Randy Charles Morin</title>
+		<link>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-133</link>
+		<pubDate>Wed, 27 Jul 2005 17:33:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-133</guid>
+					<description>&lt;p&gt;There's not a huge difference between &quot;extending beyond HTTP&quot; and &quot;extending HTTP&quot;? Common. Extend beyond implies using protocols other than and extend implies using protocols based on. Since SMTP is not based on HTTP, this flies directly in the face of your argument.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>There&#8217;s not a huge difference between &#8220;extending beyond HTTP&#8221; and &#8220;extending HTTP&#8221;? Common. Extend beyond implies using protocols other than and extend implies using protocols based on. Since SMTP is not based on HTTP, this flies directly in the face of your argument.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Randy Charles Morin</title>
+		<link>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-126</link>
+		<pubDate>Mon, 25 Jul 2005 17:52:21 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-126</guid>
+					<description>&lt;p&gt;Author said &quot;extending beyond HTTP&quot; and you translated that to &quot;extending HTTP&quot;. The REST death march continues on.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Author said &#8220;extending beyond HTTP&#8221; and you translated that to &#8220;extending HTTP&#8221;. The REST death march continues on.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: AB</title>
+		<link>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-124</link>
+		<pubDate>Sun, 24 Jul 2005 23:33:05 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-124</guid>
+					<description>&lt;p&gt;SOAP is pretty easy, and it's not all .NET and Java, you can use SOAP in just about any programming languages and they all have a handful of frameworks that provide the tools necessary to make SOAP easy.  You need tools/libraries/frameworks to work with REST too, unless you're writing XML parsing by hand.&lt;/p&gt;
+
+&lt;p&gt;The good thing about SOAP is that it is just a standard way to structure a request/response.  I know there are tons of other WS-stuff coming out to give web services the characteristics of things like JMS, but for most people they just want to expose a SignIn request, or a getStatus SOAP request and those are so simple, it's amazing.&lt;/p&gt;
+
+&lt;p&gt;Take PHP for example, you can make a SOAP call in 2 lines with PEAR::SOAP and write a SOAP server in probably less than 10 lines of code.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>SOAP is pretty easy, and it&#8217;s not all .NET and Java, you can use SOAP in just about any programming languages and they all have a handful of frameworks that provide the tools necessary to make SOAP easy.  You need tools/libraries/frameworks to work with REST too, unless you&#8217;re writing XML parsing by hand.</p>
+<p>The good thing about SOAP is that it is just a standard way to structure a request/response.  I know there are tons of other WS-stuff coming out to give web services the characteristics of things like JMS, but for most people they just want to expose a SignIn request, or a getStatus SOAP request and those are so simple, it&#8217;s amazing.</p>
+<p>Take PHP for example, you can make a SOAP call in 2 lines with PEAR::SOAP and write a SOAP server in probably less than 10 lines of code.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-123</link>
+		<pubDate>Sun, 24 Jul 2005 20:04:54 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-123</guid>
+					<description>&lt;p&gt;Great stuff, Rams. I'm listening now:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.itconversations.com/shows/detail571.html&quot; rel=&quot;nofollow&quot;&gt;http://www.itconversations.com/shows/detail571.html&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Great stuff, Rams. I&#8217;m listening now:</p>
+<p><a href="http://www.itconversations.com/shows/detail571.html">http://www.itconversations.com/shows/detail571.html</a></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Rams</title>
+		<link>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-122</link>
+		<pubDate>Sun, 24 Jul 2005 15:07:03 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/23/web-architecture-roundup/#comment-122</guid>
+					<description>&lt;p&gt;Sounds very much like what Adam Bosworth had to say, I quickly scribbled down the main points from his talk (now available at itconversations.com) here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html&quot;&gt;http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Sounds very much like what Adam Bosworth had to say, I quickly scribbled down the main points from his talk (now available at itconversations.com) here:</p>
+<p><a href="http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html">http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html</a></p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.288 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.lesscode.org/clipboard/v0p1" xmlns="http://www.lesscode.org/clipboard/v0p1" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+	<xs:complexType name="clipboard">
+		<xs:annotation>
+			<xs:documentation>Domain representations come before presentational ones.  Text only representation, if present, is last.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="representation" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>A representation in any XML vocabulary or simple content (via any-simple-content element).</xs:documentation>
+				</xs:annotation>
+				<xs:complexType mixed="false">
+					<xs:sequence>
+						<xs:any maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="protocol-request-status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ok"/>
+			<xs:enumeration value="protocol version not supported"/>
+			<xs:enumeration value="action not supported"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="any-simple-content" type="xs:anySimpleType">
+		<xs:annotation>
+			<xs:documentation>Used to hold any simple content in a clipboard representation.  Obviates need for mixed content there.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

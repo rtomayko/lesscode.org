@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Assembling The Platform</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/08/28/choosing-the-platform/">Choosing The Platform</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/08/29/vendor-wars/">Vendor Wars</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-73"><a href="http://lesscode.org/2005/08/28/assembling-the-platform/" rel="bookmark" title="Permanent Link: Assembling The Platform">Assembling The Platform</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-laugh-at-you/" title="View all posts in Then they laugh at you..." rel="category tag">Then they laugh at you...</a> 
+      on 28. August 2005</small>
+
+			<div class="entrytext">
+				<p>This is a continuation of <a href="http://lesscode.org/2005/08/28/choosing-the-platform/">my last
+post</a>, which
+talked a bit about the platform selection process I&#8217;ve been involved
+with from a fairly high level. I concluded that choosing between .NET,
+Java, and LAMP/friends for me came down to making two important
+decisions: where do I fall on the <a href="http://www.journalhome.com/codecraft/9003/">safety/freedom
+scale</a> and in what manner
+would I like to proceed with my platform of choice?  The first decision
+makes the second (or vise versa) by dictating whether you will be
+proceeding primarily by trying to make the chosen platform more safe or
+by trying to make the chosen platform more free.</p>
+
+<p>While we haven&#8217;t decided to throw out our .NET based application (we
+have no reason compelling enough to justify a rewrite at present), I
+think it&#8217;s safe to say we&#8217;ll be moving forward with a different
+platform. The road here has been kind of weird so I&#8217;d like to talk about
+my activity over the past few months with regards to assembling a basic
+platform.</p>
+
+<p>I&#8217;m a Python guy and have a tremendous interest in seeing Python
+grow. It&#8217;s my language of choice and it&#8217;s where I&#8217;m most productive. I
+also enjoy the community a great deal and am constantly humbled by the
+amount of competence some of these people are toting around. But there
+are a few gaps that I felt needed to be bridged (or at least needed a
+plan and visible progress) before I felt comfortable making a
+recommendation for Python as our general purpose language for building
+future web applications.</p>
+
+<p>There&#8217;s pretty much constant banter in the Python community on which of
+the following two items is most important: refine the language or
+restructure / enhance the standard library. For someone in my situation,
+neither of these issues even blip the radar. Here&#8217;s what I see as the
+gaps in Python as a language for basic web development on top of some
+variation of LAMP. I consider these to be essential pieces of a language
+like Python&#8217;s overall feature-set (e.g. they should be considered
+batteries and should be included):</p>
+
+<h3>A Good Project Documentation Utility</h3>
+
+<p>pydoc is amazing from the terminal but is sorely lacking in its web
+interface. There are also considerable issues with the basic model of
+runtime introspection, such as not being able to determine (easily or
+reliably) whether a certain module/class attribute belongs to a certain
+module or was imported from somewhere else.</p>
+
+<p>Beyond basic pydoc functionality, I&#8217;d like the ability to incorporate
+external documentation files (in text, Restructured Text, or HTML
+formats) into the doc build process such that building the documentation
+results in a static local copy of the project web-site. Some basic
+templating would go a long way here as well.</p>
+
+<p>The Python <a href="http://mail.python.org/pipermail/doc-sig/">Doc-SIG</a> has
+enjoyed very little activity lately that I&#8217;m aware of outside of
+progress on restructured text. David Goodger and the rest of the folks
+working on the <a href="http://docutils.sourceforge.net/docs/index.html">Docutils</a> 
+project have a plan for an enhanced source-based documentation utility with 
+enhanced docstring formatting rules but progress seems to have slowed or 
+halted.</p>
+
+<h3>A standard, Python-based build system</h3>
+
+<p>Something simple and task based like <code>make</code>, Ant, or Rake. I think
+distutils is a fine model but needs to be considered from a more generic
+build/make style perspective. Ideally this would have its own SIG and
+reach general acceptance in the community on the level of distutils.</p>
+
+<p>Some of the things I&#8217;d like to be able to distill down into a single
+build script for a project include:</p>
+
+<ul>
+<li>Initializing databases with SQL files or CSV dumps.</li>
+<li>Build and package all versions of distributables with options for 
+generating signed checksum files or directory indexes.</li>
+<li>Push distributables to other environments and deploy.</li>
+<li>Publish documentation built with the imaginary documentation utility
+to the project website.</li>
+<li>Send out announcements of new releases.</li>
+</ul>
+
+<p>Normal <code>make</code> type stuff really but simpler, cross platform, and
+removing the need for some to learn a new syntax (as much as you can
+actually &#8220;learn&#8221; <code>make</code>). If modules were easily pluggable that would be
+great to but I&#8217;d like a ton of varied functionality out of the box.</p>
+
+<p>I know of no serious activity around this. There are a few decent build
+tools that are Python-based (<a href="http://www.scons.org/">SCons</a>) but they
+seem oriented toward building non-Python projects.</p>
+
+<h3>A standard, Python-based distribution mechanism</h3>
+
+<p>This one is seeing some real progress with
+<a href="http://peak.telecommunity.com/DevCenter/setuptools">setuptools</a>,
+<a href="http://peak.telecommunity.com/DevCenter/PythonEggs">Eggs</a>, and
+<a href="http://peak.telecommunity.com/DevCenter/EasyInstall">EasyInstall</a>
+thanks in no small part to <a href="http://dirtsimple.org/">Phillip J. Eby</a>,
+<a href="http://blog.ianbicking.org/">Ian Bicking</a>, and a bunch of other people
+working as part of the <a href="http://www.python.org/sigs/distutils-sig/">Distutils SIG</a>.</p>
+
+<p>I&#8217;ve had a chance to watch progress on this closely and contribute a
+little and it has just reaffirmed everything I love about the Python
+community when it decides to agree on something and dig in. In fact,
+this isn&#8217;t really a concern because these technologies are already
+enjoying wide-spread adoption and have reached a basic level of
+stability very quickly. That wasn&#8217;t the case even two months ago when I
+was doing this whole  platform evaluation/assembly thing.</p>
+
+<h3>A Basically Good, Basically Complete Web Framework with a Huge Community</h3>
+
+<p>I know, I know, we&#8217;ve talked about this forever, during which time I&#8217;ve
+taken every possible position. The &#8220;Basically Good&#8221; part is met and
+exceeded with every Python web framework I&#8217;ve ever worked under, no
+doubt. The &#8220;Basically Complete&#8221; part means I want a full stack with
+project management capabilities. I don&#8217;t care if it&#8217;s pieced together
+from other components or built from the ground up. I&#8217;ve tried three of
+these: <a href="http://djangoproject.com/">Django</a>,
+<a href="http://subway.python-hosting.com/">Subway</a>, and
+<a href="http://pythonpaste.org/">Paste/Webkit/SQLObject</a> and I&#8217;ve liked them
+all fine enough for me to get work done.</p>
+
+<p>I want a Huge Community.</p>
+
+<p>I do very specific types of work over and over building web
+applications. I&#8217;d estimate that 80% of my code is very specific to
+building the same old normal web app and the remaining 20% of code is
+spread out in support libraries, patches, other general application
+development, or some new and cool style of web programming :) Given that
+ratio, I&#8217;ve made it a priority to find ways of maximizing my
+productivity through that 80% of code because it provides the biggest
+bang for the buck.</p>
+
+<p>I&#8217;m fairly certain there are a large number of developers working on
+those same very specific types of tasks with 80% of their code and that
+if I would just talk to them, we would be able to simplify and enhance
+the basic model further, faster.</p>
+
+<p>In some ways, the size of the community around the web framework I use
+is more important than the size of the community around language
+fundamentals and lower level libraries.</p>
+
+<p>Again, I&#8217;m a couple of months behind in following everything closely and
+it looks like Django is functioning really well as a community. Ian&#8217;s
+Paste has some interesting qualities, though, and I wish Django would
+push more discussion into the Web-SIG. This is my problem; I sit here
+and do this and it takes up a piece of my 80% instead of relieving
+it. Now you&#8217;re doing it!</p>
+
+<h3>Some Assembly Required</h3>
+
+<p>Having established a basic LAMP environment and identified a few pieces
+I&#8217;m missing, I do what I&#8217;m supposed to do: I start building it as part
+of the community:</p>
+
+<ul>
+<li><a href="http://buildutils.lesscode.org/">buildutils</a> - The build tool.</li>
+<li><a href="http://pudge.lesscode.org/">pudge</a> - The documentation tool.</li>
+<li><a href="http://lesscode.org">lesscode.org</a> - A weblog where I will attempt
+to convince people that they should be working on what I&#8217;m working on
+at various levels :)</li>
+</ul>
+
+<p>I also contributed various patches and testing to setuptools when it was
+in very early stages of development and continued evaluating progress on
+the web frameworks. If these components could reach maturity and
+something shakes out on the web framework front, I feel I could just
+kick ass and take names. Hard problems will still be hard but I would
+have a simple, manageable, cost effective, community backed, agile, and
+free-as-in-Kevin system for web applications.</p>
+
+<p>And then I began evaluating Rails for a series of Django comparison
+articles. I knew that Rails had the Basically Good, Basically Complete
+Web Framework with a Huge Community - Python will have one too. But I
+lost it when I found that Ruby has a standard build tool in
+<a href="http://rake.rubyforge.org/">Rake</a>, a standard documentation tool that
+meets my needs in <a href="http://rdoc.sourceforge.net/">RDoc</a>, and that
+<a href="http://docs.rubygems.org/">Gems</a> were everywhere. I had assumed that
+these would be no further developed than their analogs in the Python
+world.</p>
+
+<p>The long and short of it is that my evaluation turned into what looks to
+be a long term relationship. I&#8217;m committed to my responsibilities on the
+Python projects I have going right now and I have a ton of existing
+applications and utilities written in Python that aren&#8217;t going anywhere
+but Rails ganked 80% of my future code somehow. What&#8217;s cool is that
+because I&#8217;m dealing with freedom languages, I don&#8217;t feel like I have to
+make a single choice here because they work equally well in my
+environment (and most any environment). What&#8217;s odd is that it wasn&#8217;t
+Rails that finally pushed me over so much as Ruby and its mysterious
+perfectly placed support libraries and utilities.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/08/28/assembling-the-platform/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">14 Responses to &#8220;Assembling The Platform&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-313">
+			<p class="who"><cite><a href='http://www.redmelon.net/' rel='external ' title='80.56.116.200'>Douglas</a></cite>:</p>
+			<p>You might be interested in <a href="http://manuals.rubyonrails.com/read/book/17">SwitchTower</a> for Rails deployment.</p>
+      <p>
+			<small>comment at <a href="#comment-313" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-314">
+			<p class="who"><cite><a href='http://vanrees.org/weblog/' rel='external ' title='82.92.94.125'>Reinout van Rees</a></cite>:</p>
+			<p>For a pythonic makefile variant, look at <a href="http://www.a-a-p.org/">aap</a>. It works pretty well, but the documentation is a bit unstructured.</p>
+      <p>
+			<small>comment at <a href="#comment-314" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-315">
+			<p class="who"><cite><a href='http://software-nomad.blogspot.com/' rel='external ' title='71.109.226.36'>John</a></cite>:</p>
+			<p>For me, Ruby has always seemd to stand out as the language that allows me to write code the way I want to with the minimum of noise (hosekeeping code; necessary but tending to obscure the main purpose). It has fundamentallly changed the way I write other languages (e.g. Java). </p>
+<p>Rails has acquired a lot of momentum, but ActiveRecord is basically suitable for relatively simple data models. Take a peek at Nitro/Og. Og (Object Graph) looks promising, though there&#8217;s still heavy development still going on. If George gets it all together, I think the Nitro/Og will open up a whole new set of applications.</p>
+      <p>
+			<small>comment at <a href="#comment-315" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-316">
+			<p class="who"><cite><a href='http://www.swaroopch.info' rel='external ' title='210.214.119.155'>Swaroop C H</a></cite>:</p>
+			<p>You just echoed my thoughts completely.</p>
+<p>What Python is lacking is the &#8220;platform&#8221; although it has all the pieces. It&#8217;s the same reason that I got attracted to Ruby but somehow I never grokked that language.</p>
+<p>I love what you&#8217;re thinking here w.r.t. Pudge and buildutils. Suddenly, I wish I didn&#8217;t have a day job&#8230;. ;-)</p>
+      <p>
+			<small>comment at <a href="#comment-316" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-319">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p><a href="http://manuals.rubyonrails.com/read/book/17">SwitchTower</a> <em>does</em> look interesting although I&#8217;ve only scanned the documentation.  I should be looking at it with a bit more depth in the next few weeks.</p>
+      <p>
+			<small>comment at <a href="#comment-319" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-322">
+			<p class="who"><cite><a href='http://www.blueskyonmars.com' rel='external ' title='68.42.214.195'>Kevin Dangoor</a></cite>:</p>
+			<p>Well, we hate to see you go, Ryan. I know I&#8217;ve gotten a lot out of your contributions in the Python world.</p>
+<p>I can certainly understand why you would choose the toolset you did. Back when I started Zesty News, I <em>was</em> strongly tempted by Rails. I chose Python instead, largely because I felt my choices for packaging a desktop-installed webapp were better.</p>
+<p>I do have a couple of comments: RDoc, to my eyes, does not look any better than epydoc, both of which are based on Javadoc. RDoc, epydoc and Javadoc are all fine tools, but I don&#8217;t think you&#8217;d generally want to create a whole website with them</p>
+<p>Personally, I haven&#8217;t missed Rake. The first thing I did when I started Zesty News was create an automated build script (not distutils-based). Between the os, shutil and the occasional other module, I was able to easily automate every aspect of my build, using standard, procedural Python. That said, I do agree that a tool like Rake can help newcomers (and new projects) get up to speed more quickly. The work being done in setuptools and what you&#8217;ve done with buildutils does solve some of the problem there.</p>
+<p>Gems are terrific. For me, there&#8217;s a kernel of stuff going on in setuptools that is cooler than what Gems offer (from what I&#8217;ve read), but I have unusual requirements.</p>
+<p>I think you already have an idea where I stand on web frameworks, and I hope to write more about that late this week or early next.</p>
+<p>Thanks for sharing all of this with all of us. Having a spotlight aimed at cool stuff that&#8217;s happening elsewhere is always invigorating (to me, at least).</p>
+      <p>
+			<small>comment at <a href="#comment-322" title="">28. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-323">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<blockquote>
+<p>Well, we hate to see you go, Ryan. I know I’ve gotten a lot out of your contributions in the Python world.</p>
+</blockquote>
+<p>Awww, shucks&#8230; </p>
+<p>No, but seriously, I&#8217;m not really going anywhere. You can take Python from me when you pry it from my cold, dead hands :)</p>
+<p>I&#8217;m going with Ruby/Rails as an intrinsic piece of a basic platform for web apps built by the company I&#8217;m currently involved with. But I&#8217;m not dissing on Python and I have no plans of abandoning it.</p>
+<blockquote>
+<p>RDoc, to my eyes, does not look any better than epydoc </p>
+</blockquote>
+<p>epydoc has the same issues as pydoc with regards to using runtime introspection. I also don&#8217;t like the idea of adopting a comment format that isn&#8217;t accepted by the wider community but I&#8217;d like to have a bit more than plain text. Lastly, I&#8217;ve found it overly complex to extend epydoc&#8217;s core theme and layout.</p>
+<p>RDoc uses source scanning as opposed to runtime introspection and I personally feel this yields better results for HTML reference documentation. (As a side note, Pudge actually uses both. It scans the source to find out what&#8217;s where, in what order things are defined, and tries to pick up non-docstring comments.) RDoc is also accepted by the Ruby community as a standard and will be (or maybe already is) included with Ruby core. I don&#8217;t have to worry about my formatted comments being unparsable next year when a new doc tool is invented. Finally, RDoc has a basically good and complete customization mechanism which I&#8217;m currently using to get rid of the frames, among other things.</p>
+<blockquote>
+<p>RDoc, epydoc and Javadoc are all fine tools, but I don’t think you’d generally want to create a whole website with them.</p>
+</blockquote>
+<p>I&#8217;ve had good luck so far combining RDoc and reusable Rake tasks to<br />
+generate both source extracted documentation and website style content. It&#8217;s not quite what I had in kid/pudge/buildutils yet but its not far and I haven&#8217;t spent that much time on it.</p>
+      <p>
+			<small>comment at <a href="#comment-323" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-325">
+			<p class="who"><cite>curthibbs</cite>:</p>
+			<p>Just two quick notes&#8230;</p>
+<p>To John: I have to respectfully disagree with your assertion that ActiveRecord is suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.</p>
+<p>To Ryan: Yes, RDoc is included in the core Ruby distribution.</p>
+      <p>
+			<small>comment at <a href="#comment-325" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-326">
+			<p class="who"><cite>curthibbs</cite>:</p>
+			<p>Let me repost with a minor correction (its amazing how omitting one word can change the meaning of a sentence):</p>
+<p>To John: I have to respectfully disagree with your assertion that ActiveRecord is <em>only</em> suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.</p>
+      <p>
+			<small>comment at <a href="#comment-326" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-327">
+			<p class="who"><cite><a href='http://www.aaronbentley.com' rel='external ' title='69.158.109.133'>Aaron Bentley</a></cite>:</p>
+			<blockquote>
+<p>I also don’t like the idea of adopting a comment format that isn’t accepted by the wider community but I’d like to have a bit more than plain text.</p>
+</blockquote>
+<p>If you mean the default text format, that&#8217;s true.  But epydoc does support restructuredtext, too.  And AIUI, there&#8217;s no accepted standard way of documenting parameters, return values, etc.</p>
+      <p>
+			<small>comment at <a href="#comment-327" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-329">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>alexbunardzic</a></cite>:</p>
+			<p>Just a general comment, Ryan: being a lesscode advocate, it does not really behoove you to nurse a morecode product (.NET)</p>
+<p>Your dilemma should be easy to resolve &#8212; port your .NET app to some lesscode platform. I know that it&#8217;s an expensive proposition, but no matter how you slice it, lesscode always makes more sense than morecode.</p>
+      <p>
+			<small>comment at <a href="#comment-329" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-346">
+			<p class="who"><cite><a href='http://roughbook.de/blog/?p=7' rel='external ' title='217.175.253.222'>rough book &raquo;</a></cite>:</p>
+			<p>[&#8230;] Nachdem ich das Posting &#8220;Assembling The Platform&#8221; von Ryan auf lesscode.org gelesen habe, denke ich darüber nach ob Ruby on Rails nicht doch mehr als einen Blick wert ist für ein Projekt, das ich derzeit plane. Vielleicht lerne ich RoR dann auch so lieben wie einige andere. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-346" title="">30. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-374">
+			<p class="who"><cite>Dan Hatfield</cite>:</p>
+			<p>A very timely and well thought out set of posts, Ryan (for me at least), as I&#8217;m faced with a very similar decision with the small company I work for.<br />
+The part I&#8217;m struggling with the most is letting go of the safety factor for several reasons:<br />
+1) The components we are building are being deployed into a web application first and foremost - but may be embedded into an EDI/EAI application as well. And, that application may be at a customer site (i.e. an application infrastructure that I don&#8217;t control - and that infrastructure is most likely going to be .NET or Java)<br />
+2) As a small company one of the option on the table is eventually selling your software to some larger company - in this case, it seems the platform could play a signficant factor in these negotiations?</p>
+<p>Did you consider either of these situations in your analysis?</p>
+      <p>
+			<small>comment at <a href="#comment-374" title="">03. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-375">
+			<p class="who"><cite>Zero Zero</cite>:</p>
+			<p>Fred Drake does some excellent work with <a href="http://www.zope.org/Members/fdrake/zpkgtools/">zpkgtools</a>. May be well worth a look.</p>
+      <p>
+			<small>comment at <a href="#comment-375" title="">04. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.423 seconds -->
+<!-- Cached page served by WP-Cache -->

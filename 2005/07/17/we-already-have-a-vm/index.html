@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  We already have a VM&#8230;</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/07/17/visual-fred/">Visual Fred?</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/18/scoble-on-rails/">Scoble on Rails</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-35"><a href="http://lesscode.org/2005/07/17/we-already-have-a-vm/" rel="bookmark" title="Permanent Link: We already have a VM&#8230;">We already have a VM&#8230;</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-laugh-at-you/" title="View all posts in Then they laugh at you..." rel="category tag">Then they laugh at you...</a> 
+      on 17. July 2005</small>
+
+			<div class="entrytext">
+				<p>There is an <a href="http://news.com.com/Open-source+LAMP+a+beacon+to+developers/2100-7344_3-5744767.html?tag=cd.hed" title="Open-source LAMP a beacon to developers">emerging notion</a> that there are really three
+cleanly separated platforms that will be contending for the enterprise
+over the next few years: Java, .NET, and LAMP/friends. Current
+mainstream thinking suggests that LAMP isn&#8217;t really a contender but that
+dynamic languages at least have a chance of riding in on top of the JVM
+or CLR.</p>
+
+<p>But I&#8217;d like to consider some of <a href="http://lesscode.org/2005/07/17/visual-fred/" title="Visual Fred">Sam&#8217;s findings</a> in working with
+Parrot in the context of dynamic languages on the JVM or
+CLR. Specifically, that using a common VM for multiple languages is
+hard; and keep in mind that Sam is hacking on a VM that is <em>designed</em>
+for dynamic languages, whereas the mainstream VMs are not.</p>
+
+<p>As I was saying, initial thinking suggested that one of Jython, JRuby,
+IronPython, etc. would be the horse that dynamic languages would ride
+into the enterprise but I&#8217;ve grown away from this notion for a few
+reasons:</p>
+
+<ul>
+<li><p>Rails is <a href="http://lesscode.org/2005/07/15/more-j2ee-vs-rails/" title="Rails Furthers Industry Acceptance">gaining acceptance</a> with hardcore Java heads under
+the C Ruby implementation, not the Java Ruby implementation.</p></li>
+<li><p>The LAMP stack is <a href="http://news.com.com/Open-source+LAMP+a+beacon+to+developers/2100-7344_3-5744767.html?tag=cd.hed" title="Open-source LAMP a beacon to developers">gaining acceptance</a> at a rapid pace and
+in my experience, adding Java/.NET to a LAMP setup results in an
+impedance mismatch both in tool simplicity and quality of license /
+community.</p></li>
+<li><p>The misconception that dynamic languages are useful only for
+&#8220;scripting&#8221; type tasks (e.g. gluing static language code together in
+controlled environments) is fading fast. It&#8217;s hard to find someone
+who will argue that Python or Ruby are incapable of being used as
+the <em>primary</em> language on large projects where these people were
+everywhere as early as a year ago.</p></li>
+<li><p>Dynamic Language to Shitty Language bridge libraries give you <a href="http://patricklogan.blogspot.com/2005/03/opposites.html">the
+best of both worlds</a>: a
+portable and efficient implementation of the language interpreter
+plus the mass of libraries that were developed under legacy
+runtimes (yes, I&#8217;m trolling now) like the JVM and CLR.</p></li>
+</ul>
+
+<p>I&#8217;d much prefer to be working on the C implementations of these
+languages as opposed to the mainstream VM based ones. The JVM/CLR based
+implementations have problems: C extension libraries (are they even
+possible?), a lag in features from their mainline counterparts, less
+community involvement, and running atop mainstream VMs typically
+requires more resources than running atop the C interpreters.</p>
+
+<p>Further, Java and .NET have licensing issues that create obstacles to
+adoption. The inability of Linux/BSD distributions to include the vendor
+implementations is a problem that neither vendor seems to be willing to
+budge on. The <a href="http://www.go-mono.com/">Mono</a> and <a href="http://gcc.gnu.org/java/">GCJ</a>/<a href="http://www.gnu.org/software/classpath/">GNU
+Classpath</a> projects are moving
+in the right direction, no doubt, but it bothers me that in the end our
+best case is a situation where we&#8217;re running great languages on top of
+VMs designed for poor languages and have no participation from their
+original creators. That doesn&#8217;t really give me the warm and fuzzy about
+the future of dynamic languages&#8230;</p>
+
+<p>Note that <a href="http://www.parrotcode.org/">Parrot</a> is a very different
+situation from the mainstream VMs. It&#8217;s being designed for dynamic
+languages, is licensed for the community, and probably won&#8217;t have the
+same issues with wrapping C extension libraries.</p>
+
+<p>Getting to the point, I&#8217;d like to challenge the assumption that running
+dynamic languages on mainstream VMs is optimal / desirable in the long 
+term. The existing interpreters have thriving communities, years of proven use,
+and a slew of C/C++ extension wrappers to even more proven
+libraries. They are already cross-platform and there&#8217;s bridge code for
+accessing the vast set of functionality that has been implemented in
+Java or C#.</p>
+
+<p>The real question for me becomes, when will LAMP/friends gain legitimacy
+as an &#8220;enterprise class&#8221; platform and how quickly will that force the
+industry to re-evaluate optimal deployment models?</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/17/we-already-have-a-vm/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">12 Responses to &#8220;We already have a VM&#8230;&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-74">
+			<p class="who"><cite>Danno</cite>:</p>
+			<p>Do Linux and Apache not scale well?  All I know about those two pieces says &#8220;SCALING AWAAAAAY!!!!&#8221;</p>
+<p>I suppose arguments could be made against MySQL, but there&#8217;s always, PostGre or one of the other DBs, right?</p>
+<p>As for the P&#8217;s (Incidentally, with Ruby gaining ground, maybe P should change to Programmer&#8217;s Perfect Paradise instead of Perl/PHP/Python), I was lead to believe that scaling the code there is as simple as just about anywhere else and, of course, I&#8217;m pretty sure that none of the Dynamic Languages bar you from dropping into C when you need to bang something out that has to get done REALLY, REALLY, REALLY fast.</p>
+<p>Is it just FUD that has caused fear of LAMP?  I don&#8217;t know, I&#8217;ve never watched the Enterprise space closely.</p>
+      <p>
+			<small>comment at <a href="#comment-74" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-76">
+			<p class="who"><cite><a href='http://www.bloglines.com/blog/AssaphMehr' rel='external ' title='203.202.70.251'>Assaph Mehr</a></cite>:</p>
+			<p>I would just like to add that the primary reasons why common runtime fails are social: take all these languages that have dedicated maintainers and followers. A significant portion of these followers prefer one over the other due to matters of taste. All these maintainers and followers have invested time and effort into creating libraries and evolving their own language. Now tell them that they all have to compromise on their favourite to allow constraints from that &#8216;other&#8217; language.</p>
+<p>Not gonna happen. <a href="http://www.bloglines.com/blog/AssaphMehr?id=8">I am not even sure</a> it&#8217;s a good idea. Part of what makes these languages great, is the itch their creators have and their ability to scratch it. Creators experiment. Having a single, committee-controlled runtime will reduce their ability to experiment.</p>
+<p>On the bright side, if you&#8217;re corporately-constrained to use one platform of the other, you can sneak in languages inspired by dynamic languages but designed for the platform of choice, like <a href="http://boo.codehaus.org">Boo</a> or <a href="http://groovy.codehaus.org">Groovy</a>.</p>
+      <p>
+			<small>comment at <a href="#comment-76" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-89">
+			<p class="who"><cite><a href='http://www.phppatterns.com' rel='external ' title='195.129.34.34'>Harry Fuecks</a></cite>:</p>
+			<p>For web applications, a question that springs to mind state is handled server-side, when riding on .NET or Java? Think David took the smart option by not being smart: <a href="http://www.loudthinking.com/arc/000479.html">http://www.loudthinking.com/arc/000479.html</a></p>
+      <p>
+			<small>comment at <a href="#comment-89" title="">19. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-93">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.81.130.195'>Ryan Tomayko</a></cite>:</p>
+			<p>Hi Harry. I&#8217;m not sure I understand the question exactly but I feel quite strongly that the shared nothing + caching proxy + memcached (when you absolutely need it) is a great way to ensure a LAMP/friends solution will scale to a competitive level. I&#8217;ve <a href="http://naeblis.cx/rtomayko/2005/05/28/ibm-poop-heads">said as much</a> before and taken quite a bit of heat for it.</p>
+      <p>
+			<small>comment at <a href="#comment-93" title="">19. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-96">
+			<p class="who"><cite><a href='http://www-128.ibm.com/developerworks/blogs/dw_blog.jspa?blog=396' rel='external ' title='65.190.130.187'>Bill Higgins</a></cite>:</p>
+			<p>I&#8217;m not sure about the &#8220;AMP&#8221; acceptance in the enterprise, but it&#8217;s common knowledge that the &#8220;L&#8221; is making some serious in-roads.</p>
+<p>Some examples:</p>
+<ul>
+<li>It&#8217;s my understanding that Google&#8217;s essentially created a grid of Linux-based computers to serve up web queries</li>
+<li>I believe Amazon is all-Linux</li>
+<li>IBM (disclaimer: I work there) has had a lot of success moving outsourcing customers on to either: Linux on Blade Servers or virtual Linux on zOS (mainframe) LPARs</li>
+</ul>
+<p>There&#8217;s actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it&#8217;s not pure LAMP and because it&#8217;s a marketing web site, I won&#8217;t link to it here (though anyone who&#8217;s interested can email me for a link).</p>
+      <p>
+			<small>comment at <a href="#comment-96" title="">20. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-98">
+			<p class="who"><cite><a href='http://www.phppatterns.com' rel='external ' title='195.129.34.43'>Harry Fuecks</a></cite>:</p>
+			<p>What I was trying to ask was what&#8217;s the impact of running, say, IronPython under IIS and the .NET runtime, effectively meaning it&#8217;s running in an application server and that, potentially state can be stored in memory vs. something more C / Unixy where there&#8217;s some central process forking children to handle requests after which they die, leaving no traces? Perhaps it&#8217;s just a question of implementation detail and a question of choice of APIs / strategy for developers. Need to find out more from people who have tried it.</p>
+<p>On that subject, another project to watch, also as a test for uptake: http://www.php-compiler.net/ - basically PHP for .NET. They seem to have done a very convincing job and they do seem to have simulated PHP&#8217;s maximum execution time limit.</p>
+      <p>
+			<small>comment at <a href="#comment-98" title="">20. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-105">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<blockquote>
+<p>There’s actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it’s not pure LAMP and because it’s a marketing web site, I won’t link to it here (though anyone who’s interested can email me for a link).</p>
+</blockquote>
+<p>Bill, I think I know you well enough to trust your intentions. Feel free to post links to your marketing material if you feel its valuable to the community - I&#8217;m not anti-commercial, I&#8217;m anti-bullshit/anti-fluff.</p>
+<p>And thanks for stopping by.</p>
+      <p>
+			<small>comment at <a href="#comment-105" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-108">
+			<p class="who"><cite><a href='http://christopherwine.com' rel='external ' title='24.8.202.42'>Chris Wine</a></cite>:</p>
+			<p>I also would like to see Bill&#8217;s link.  I have written a long and wordy document about this topic, and in the interest of brevity (and some may say kindness), I will provide you with just a few bits.</p>
+<p><small>I posted the rest of this monster to the main site. See <a href="http://lesscode.org/2005/07/21/the-dark-horse/">The Dark Horse</a>. &#8212; <a href="http://naeblis.cx/rtomayko/">Ryan</a></small></p>
+      <p>
+			<small>comment at <a href="#comment-108" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-112">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='208.54.95.1'>Ryan Tomayko</a></cite>:</p>
+			<p>Hi Chris. I&#8217;d like to post this as an entry so it gets more visibility. I&#8217;m just going to assume that&#8217;s okay with you but let<br />
+me know if you have a problem with that.</p>
+<blockquote>
+<p>I have written a long and wordy document about this topic.</p>
+</blockquote>
+<p>Do you have the longer version up on the web somewhere? I&#8217;d like to link to it.</p>
+      <p>
+			<small>comment at <a href="#comment-112" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-140">
+			<p class="who"><cite><a href='http://pobox.com/~kragen' rel='external ' title='157.22.41.10'>Kragen Sitaker</a></cite>:</p>
+			<p>Perry Lorier has some other arguments against VM envy:</p>
+<p><a href="http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/">http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/</a></p>
+<p>Summary: &#8220;Why are the open source community wasting time on VMs when we can use the strength of our source to provide a superior solution?&#8221;</p>
+<p>Hope to meet you at OSCON next week, Ryan &#8212; although now that you&#8217;ve been anointed the Server-Side Zeldman, you may be busy!</p>
+      <p>
+			<small>comment at <a href="#comment-140" title="">30. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-449">
+			<p class="who"><cite><a href='http://laurentszyster.be/blog/' rel='external ' title='62.205.103.109'>Laurent Szyster</a></cite>:</p>
+			<p>&#8220;The real question for me becomes, when will LAMP/friends gain legitimacy as an “enterprise class” platform and how quickly will that force the industry to re-evaluate optimal deployment models?&#8221;</p>
+<p>Legitimacy is not what will make Ruby or Python C VM get into that league of &#8220;entreprise class&#8221; development platform.</p>
+<p>They allready are!</p>
+<p>They have been playing in that league for a while now, disguised as Jython, bundled as a DLL, hidden inside large data processing centers, etc.</p>
+<p>Trying to pose as J2EE, NET or another megaframework won&#8217;t help the LAMP/friends stack.</p>
+<p>Zope, Ruby on Rail and others failed at that game. Because LAMP/friends don&#8217;t need to present a unified &#8220;do-all be-all&#8221; face to their &#8220;entreprise&#8221; adopters.</p>
+<p>Corporate business, large public agencies and the public adopted the LAMP stack for its diversity &#8230; of defacto standard C implementations.</p>
+<p>Twenty-four years ago, I was fourteen year old computer freak and at that time C was described as the portable &#8220;write once, run everywhere&#8221; language of the day, something to use instead of CPU specific assembler.</p>
+<p>This has not changed.</p>
+<p>Java failed to replace C as the defactor system programming language because it is not a language but a proprietary API (that began as a shameless copy of NextStep&#8217;s, may I remind you). Java was an attempt of Sun to suplant the Win32 API from within the browser, later recasted as a replacement of C++ for server and workstation application development.</p>
+<p>You were not trolling when you described them as &#8220;legacy&#8221;. But they will stay around for a long time, pretending to be alive, like the ghost of COBOL, a cold body of millions of lines that nobody want to read again.</p>
+<p>LAMP/friends allready made J2EE and NET obsolete.</p>
+<p>Yet vendors will sell their scam as long as their customer &#8220;don&#8217;t get it&#8221;.</p>
+<p>The shift will come slowly with the multiplication of niche competitors for J2EE and NET, built on the same stack as LAMP but dedicated to a specific field. Smaller frameworks, faster implementation with API more narrowly focused on what actually matters, what sells hardware and software: their applications.</p>
+      <p>
+			<small>comment at <a href="#comment-449" title="">27. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-450">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.81.130.195'>Ryan Tomayko</a></cite>:</p>
+			<p>Hi Laurent. You said:</p>
+<blockquote>
+<p>Trying to pose as J2EE, NET or another megaframework won’t<br />
+  help the LAMP/friends stack.</p>
+</blockquote>
+<p>That wasn&#8217;t what I was suggesting at all. Here&#8217;s my sentence as you quoted it:</p>
+<blockquote>
+<p>The real question for me becomes, when will LAMP/friends gain legitimacy<br />
+  as an “enterprise class” platform and how quickly will that force the<br />
+  industry to re-evaluate optimal deployment models?</p>
+</blockquote>
+<p>I&#8217;m not suggesting (<em>at all</em>) that LAMP/friends need to change to look more like J2EE/.Net, I&#8217;m suggesting that the perception of &#8220;enterprise class&#8221; needs to change. I&#8217;m wondering when <em>that</em> will happen. I&#8217;ve been watching very closely as the perception has shifted over the past 12 months or so and the trend is only accelerating.</p>
+<p>Basically, I&#8217;m waiting for the industry to understand the situation as you&#8217;ve described it. I&#8217;m in no way suggesting that LAMP needs to incorporate the brokeness of existing enterprise platforms. That would be complete folly.</p>
+      <p>
+			<small>comment at <a href="#comment-450" title="">27. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.407 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  WASP - Easing the Switch from Java to PHP</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/10/21/baby-steps-to-synergistic-web-apps/">Baby Steps to Synergistic Web Apps</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/10/26/verbal-communication/">Verbal Communication</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-104"><a href="http://lesscode.org/2005/10/23/wasp/" rel="bookmark" title="Permanent Link: WASP - Easing the Switch from Java to PHP">WASP - Easing the Switch from Java to PHP</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://brian.fioca.com">Brian Fioca</a>
+      under <a href="http://lesscode.org/category/languages/php/" title="View all posts in PHP" rel="category tag">PHP</a>,  <a href="http://lesscode.org/category/by-stack/lamp/" title="View all posts in LAMP" rel="category tag">LAMP</a> 
+      on 23. October 2005</small>
+
+			<div class="entrytext">
+				<p><i>Author&#8217;s Note:  I originally wrote this article on the <a href="http://wasp.sourceforge.net">WASP homepage</a>. Ryan has graciously allowed me to post it here.  WASP was partly inspired by lesscode.org, and hopefully it&#8217;ll make a good contribution to this community.</i></p>
+
+<p>The year 2005, so far, has been the year of scripting languages.  Across the web-application programming sector there has been a growing movement toward acceptance and general usage of dynamic languages like Ruby, Python, and PHP.  Fundamentally, these languages have been present in the industry and in use by developers for a long time, and really aren&#8217;t anything new.  Lately, however, due to advances in server technology, scripting language maturity, and improved development libraries, it is possible to write scalable, well architected, &#8220;enterprise&#8221; applications in less time with less code using frameworks like <a href="http://wasp.sourceforge.net">WASP for PHP</a>.</p>
+
+<blockquote><i>
+Scripting languages have been used to build millions of applications on the Web, but in general have not been adopted widely by corporate developers. But more and more businesses and IT professionals are looking to these languages as a way to simplify and speed the creation of custom in-house programs, thus avoiding the now all-too-common logjam of late or overbudget applications.  &#8212; <a href="http://news.com.com/Grassroots+computing+languages+hit+the+big+time/2100-1007_3-5705448.html?tag=nl">CNET</a>
+</i></blockquote>
+
+<p>It has always been faster to write applications for the web using scripting languages.  PHP has long been accessible to the fledgling developer.  It has been widely used for prototyping of large applications written in languages like Java simply because web designers, most often specialized in design artistry rather than computer science theory, are able to quickly grasp the syntax and embed it in their HTML code.</p>
+
+<p>Interestingly enough, the same reasons why languages like PHP are so easy to learn and use are what often keeps seasoned software engineers from wanting to use them.  Deemed &#8220;hacker&#8221; languages, scripting languages can be quick to write, but since they do not have many of the advanced features of compiled languages like C++ and Java, they have been prone to lax design practices, leading to code that isn&#8217;t efficient, stable, or maintainable enough for large solutions.  With the correct mindset and help from structured frameworks like WASP, this no longer has to be the case.</p>
+
+<p>Making use of the advancements made to PHP in version 5, web application architects can implement structure to their code in the form of tested design patterns and full-featured frameworks, like WASP.  In fact, WASP was written to make the most pedantic software architect feel at home, in an effort to ease the transition for Java developers to coding in PHP.  </p>
+
+<p>It&#8217;s important to resist the gut reaction most people have to these statements.  Most people&#8217;s perceptions of PHP are from the PHP 4 days, where &#8220;object oriented&#8221; frameworks existed, but were crippled by the loose OO implementation of the language.  While PHP 5 is mostly backward compatible with PHP 4, it is almost completely different when it comes to things like abstract classes, interfaces, private and protected methods, and exceptions. Sure, you can write spagetti code in PHP 5, but if you have a well designed framework that keeps PHP code outside of your HTML and in tightly structured classes, you&#8217;re more likely to end up with code that looks and works and feels like Java.</p>
+
+<p>But will using PHP confine application developers to small customers and fringe, open source communities?  Not for long.  The big guys are starting to catch on to this shift.</p>
+
+<blockquote><i>
+PHP, like open-source projects including Linux and Apache, now has received the blessing of major powers in the computing industry. IBM and Oracle are working on software that let PHP-powered applications pull information from their databases. &#8212; <a href="http://news.com.com/Andreessen+PHP+succeeding+where+Java+isnt/2100-1012_3-5903187.html?part=rss&#038;tag=5903187&#038;subj=news">CNET</a>
+</i></blockquote>
+
+<p>As the user base of PHP and other scripting languages continues to grow, broad support is becoming available on platforms trusted by the Fortune 500 crowd.  This exposure will increase the rate of improvement to the efficiency of these languages.  Early in its life, Java was highly criticized as not being scalable since it runs on a virtual machine, and therefore could never achieve the speed of C++.  As Java matured, advances were made in optimizations to alleviate much of these concerns.  The same sorts of advances are being made in the PHP language, and the hardware and software that drives it.</p>
+
+<p>The goal of any good software development department or organization is to efficiently turn out code on-budget, and on-schedule.  Until recently, platforms like Java were more likely to provide a stable, proven foundation to design and build well designed code, however by their nature they introduce a level of complexity that takes extra time to overcome.  Using scripting languages like PHP tended to produce code in a faster time frame, but it was often impossible to maintain the architectural integrity necessary for building maintainable, extendable applications.  With its strong design foundations, the WASP framework makes achieving all of these goals possible, providing the means to creating world class software to anyone with basic skills in PHP.</p>
+
+<p>Further Reading:
+<dd><a href="http://wasp.sourceforge.net/content/?q=node/7">WASP How-To</a></dd>
+<dd><a href="http://news.com.com/Andreessen+PHP+succeeding+where+Java+isnt/2100-1012_3-5903187.html?part=rss&amp;tag=5903187&amp;subj=news">Andreessen: PHP succeeding where Java isn&#8217;t</a></dd>
+<dd><a href="http://news.com.com/Grassroots+computing+languages+hit+the+big+time/2100-1007_3-5705448.html?tag=nl">Grassroots computing languages hit the big time</a></dd>
+<dd><a href="http://news.com.com/Java+devotee+BEA+eyes+scripting+languages/2100-1012_3-5820062.html?tag=nefd.top">Java devotee BEA eyes scripting languages</a></dd></p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/10/23/wasp/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">28 Responses to &#8220;WASP - Easing the Switch from Java to PHP&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-646">
+			<p class="who"><cite><a href='http://www.loudthinking.com' rel='external ' title='83.88.201.134'>David Heinemeier Hansson</a></cite>:</p>
+			<p>&#8220;Rails also suffers because it is hard to decouple Rails code from page display code.&#8221;. WTF? </p>
+<p>Have you actually tried Rails? What part of MVC escaped your observant eye? When you talk about &#8220;Rails code&#8221;, what would you be referring to? Business logic? Controller logic? Hand-waving logic? </p>
+<p>Not only does Rails go to greater lengths than most to separate concerns, but it also ships with a host of solutions to better organize &#8220;page display code&#8221; (I assume you&#8217;re referring to view logic). From partials to helpers to layouts.</p>
+<p>Hell must certainly have frozen over with pigs flying across the skies. There&#8217;s no other day of the week that a PHP framework could be slinging accusations of poorly separated concerns.</p>
+      <p>
+			<small>comment at <a href="#comment-646" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-647">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='209.193.49.19'>Brian Fioca</a></cite>:</p>
+			<p>Excuse me, but I&#8217;m a little bit taken aback by your harsh comments.  In fact, I have used Ruby on Rails, and I decided not to use it for the reasons I described in my article.</p>
+<p>&#8220;Hell must certainly have frozen over with pigs flying across the skies. There’s no other day of the week that a PHP framework could be slinging accusations of poorly separated concerns.&#8221;</p>
+<p>Have you used WASP?  If not, how can you make such accusations.</p>
+<p>It was not my intention to attack Rails, but to suggest that a PHP alternative might be just as good, if not better in some aspects.  I personally think Rails partials and helpers can be cumbersome at times.  I also think embedded rails tags in HTML can be rather complex, and may lead to less seperation of display logic from business logic.  I didn&#8217;t mean to turn this into a code-as-religion type discussion, although I suppose that is hard to avoid.</p>
+<p>I realize this stuff is controversial, however I&#8217;m not going to defend these ideas against mud-slinging.</p>
+      <p>
+			<small>comment at <a href="#comment-647" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-648">
+			<p class="who"><cite><a href='http://www.loudthinking.com' rel='external ' title='83.88.201.134'>David Heinemeier Hansson</a></cite>:</p>
+			<p>I didn&#8217;t accuse WASP (don&#8217;t know anything about it), but gave you a frame of reference for the non-sensical slander. I did PHP for 5 years before switching to Ruby. I used MVC, applicable patterns, and basically tried to live The Good Life. Yet still, I had to defend PHP at every turn because the base assumption was that it could only be used to generate big balls of mud. I think all PHP programmers have been in that position. Thus, I couldn&#8217;t fathom how someone still in the hood could deem it appropriate to use the same misinformed labels.</p>
+<p>Although my surprise of the original article is dwarfed by the disbelief that&#8217;s now mounting. Are you telling me that you couldn&#8217;t forsee the snowball that &#8220;Rails also suffers because it is hard to decouple Rails code from page display code&#8221; would create?!</p>
+<p>This has nothing to do with alternatives. There are plenty of reasons to pick PHP. Any $2 hosting firm supports it, mod<em>php is easier to install than mod</em>fastcgi (if you&#8217;re new to Apache/nix), PHP has more boardroom pull (thanks to public support by IBM, Yahoo, etc). You could have picked any of these (and plenty more), but you didn&#8217;t.</p>
+      <p>
+			<small>comment at <a href="#comment-648" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-649">
+			<p class="who"><cite>Tony Wright</cite>:</p>
+			<p>Good lord&#8211; put down yer Rails Bible for a second.  He expressed an opinion:</p>
+<p>&#8220;Rails also suffers because it is hard to decouple Rails code from page display code.&#8221;</p>
+<p>You responded with obscenity (&#8221;WTF&#8221;), sarcasm (&#8221;your observant eye&#8221;, &#8220;hand-waving logic&#8221;) and hyperbole (&#8221;Hell must have frozen over&#8230;&#8221;).</p>
+<p>Good lord, man.  If your goal is to counter an idea, PERSUADE.  If your goal is look like a histrionic geek who has joined the Cult of RoR and will not allow anyone to to even open the door to a possible downside of the technology&#8230;  Well, you should do exactly what you did.</p>
+<p>Whoever has the authority to do so should remove these comments (including mine) to make room for real discussion.</p>
+      <p>
+			<small>comment at <a href="#comment-649" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-650">
+			<p class="who"><cite>Ulysses</cite>:</p>
+			<p>&#8220;You responded with obscenity&#8230;, sarcasm &#8230; and hyperbole &#8230;&#8221;<br />
+Congratulations on correctly presenting three facts. Unfortunately you forgot to use these facts to prove a point or make a statement.</p>
+<p>I can only assume that your intent was to claim that these styles of communication are not valid. But I shy away from making that jump, as it requires the assumption that you are a facist.</p>
+<p>And Good Lord, man. If your goal is to counter an argument, COUNTER THE ARGUMENT. Don&#8217;t go all meta and explain why the other parties&#8217; style of argument is unacceptable to you.</p>
+<p>Your plea to erase these comments reminds me most of a certain novel by G.O. Perhaps while we&#8217;re at it we should remove pages we don&#8217;t like from the encyclopedia.</p>
+      <p>
+			<small>comment at <a href="#comment-650" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-651">
+			<p class="who"><cite><a href='http://www.anonymo.us' rel='external ' title='80.181.36.185'>Joe Anonymous</a></cite>:</p>
+			<p>In my experience, the main perceived advantages in using PHP are:</p>
+<ol>
+<li>it is supported by all the web hosting solutions, even the<br />
+     cheaper ones;</li>
+<li>it allows to create quick&#8217;n'dirty prototypes by inlining code<br />
+     and HTML (no Big Design Up Front required, a wonderful<br />
+     feature for inexperienced programmers and/or Agile<br />
+     Methodology zealots).</li>
+</ol>
+<p>A moderately serious project is not interested at all in the first<br />
+advantage.  Even if you&#8217;re short on money you can get a Linux virtual<br />
+server for $10/month, and you can install everything you want on it.</p>
+<p>And when you start decoupling the view from the logic, and using<br />
+template engines like <a href="http://smarty.php.net/">Smarty</a> or Flexy&#8230;<br />
+well, then you lose the second perceived advantage, too.</p>
+<p>If you&#8217;ve come so far, what&#8217;s the point in using PHP?  What&#8217;s the<br />
+point in YAPF (Yet Another PHP Framework)?</p>
+<p>PHP 5 is quite a limited and ugly language IMNSHO (why is the<br />
+standard library so poor and inconsistent? why dosesn&#8217;t it support<br />
+Unicode properly, except for the UTF-8 encoding? why does it require<br />
+to put a dollar sign in front of every variable?&#8230;)</p>
+<p>Why would you want to stick with PHP even in situations when you can<br />
+use Python, Ruby, or anything else?</p>
+      <p>
+			<small>comment at <a href="#comment-651" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-652">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='209.193.49.19'>Brian Fioca</a></cite>:</p>
+			<p>Wow&#8230; so much hostility.  I had (mistakenly?) come to the conclusion that this site was primarily the home of programmers and engineers and other professionals unified to advance similar ideas.  I didn&#8217;t intend to contribute to the jockeying of position of players, or the &#8220;whose coding toy is better than whose&#8221; argument.</p>
+<p>Listen, WASP is not trying to replace Rails.  I wrote it as someone used to programming in Java to try to make me feel more at home in PHP, and I wanted to share it with others who might feel the same way.</p>
+<p>Rails is great!  I can&#8217;t always use it because of random constraints.  If you&#8217;re ever in the same position, take a look at WASP.</p>
+      <p>
+			<small>comment at <a href="#comment-652" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-653">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='209.193.49.19'>Brian Fioca</a></cite>:</p>
+			<p>&#8220;Why would you want to stick with PHP even in situations when you can<br />
+use Python, Ruby, or anything else?&#8221; </p>
+<p>Simple.  Because it&#8217;s cheaper to hire programmers that can write code in PHP.  And if you have a good technical lead and a well implemented framework, your cheap programmers are going to pick it up and run and write good (and maybe even less) code.</p>
+      <p>
+			<small>comment at <a href="#comment-653" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-654">
+			<p class="who"><cite><a href='http://www.loudthinking.com' rel='external ' title='83.88.201.134'>David Heinemeier Hansson</a></cite>:</p>
+			<p>Fioca, that&#8217;s a noble and amicable reason to share a piece of software. How could I or anyone ever have any beef with that? The hostility is solely a reaction to the slander that “Rails also suffers because it is hard to decouple Rails code from page display code.” constitutes. I&#8217;m still baffled that you&#8217;re surprised of the turn of events following such a statement. This has nothing to do with replacements, alternatives, or anything else. For all I care, you can think Rails is inappropriate because it has a red logo. Just don&#8217;t cop out with lame off-hands like the quote in question.</p>
+      <p>
+			<small>comment at <a href="#comment-654" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-655">
+			<p class="who"><cite><a href='http://www.anonymo.us' rel='external ' title='80.181.36.185'>Joe Anonymous</a></cite>:</p>
+			<pre>
+&gt; &gt; Why would you want to stick with PHP even in situations when
+&gt; &gt; you can use Python, Ruby, or anything else?”
+&gt;
+&gt; Simple. Because it’s cheaper to hire programmers that can write
+&gt; code in PHP. And if you have a good technical lead and a well
+&gt; implemented framework, your cheap programmers are going to pick
+&gt; it up and run and write good (and maybe even less) code.
+</pre>
+<p>Oh, now it definitely makes sense.</p>
+      <p>
+			<small>comment at <a href="#comment-655" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-656">
+			<p class="who"><cite><a href='http://simon.incutio.com/' rel='external ' title='216.145.49.15'>Simon Willison</a></cite>:</p>
+			<p>Charges of looking like &#8220;a histrionic geek who has joined the Cult of RoR&#8221; are probably inappropriate when talking about the guy who created RoR in the first place&#8230; ;)</p>
+<p>If you don&#8217;t like the Rails template solution (I think it&#8217;s very neat, and I  designed much of Django&#8217;s template language) you can always use a template language more similar to Flexy - but you would be breaking away from the Rails norm which the community tends to advise against (Rails is, after all, opinionated software).</p>
+<p>I&#8217;d like to hear more of this discussion, but please, turn down the heat a bit!</p>
+      <p>
+			<small>comment at <a href="#comment-656" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-657">
+			<p class="who"><cite><a href='http://rimantas.com/' rel='external ' title='85.206.218.184'>Rimantas</a></cite>:</p>
+			<p>Ha ha, that&#8217;s so funny - DHH joining the Cult of RoR.</p>
+      <p>
+			<small>comment at <a href="#comment-657" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-658">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='209.193.49.19'>Brian Fioca</a></cite>:</p>
+			<p>Mr. Hansson,<br />
+I don&#8217;t really see how that&#8217;s slander.  I didn&#8217;t intentionally deliver a false statement.  In my experience, this was true.  Others may agree.  </p>
+<p>I have the absolute utmost respect for what you have accomplished with Rails.  I appologise if what I said in my article seemed worded as an attack on you, or your contribution.</p>
+      <p>
+			<small>comment at <a href="#comment-658" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-660">
+			<p class="who"><cite><a href='http://www.loudthinking.com' rel='external ' title='83.88.201.134'>David Heinemeier Hansson</a></cite>:</p>
+			<p>Simon: Actually, we do include another template language right out of the box (Builder). And Action View also includes hooks to get your own template language in there. I know that at least two other integrations have been shown. But yeah, most people use ERb most of the time, so its definitely where you&#8217;ll find the most examples and support.</p>
+<p>And sure. With the incineration out of my system, Fioca committing to &#8220;no intent&#8221;, I think we&#8217;re about ready to turn the knob down a notch or two.</p>
+      <p>
+			<small>comment at <a href="#comment-660" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-661">
+			<p class="who"><cite><a href='http://george.hotelling.net/' rel='external ' title='68.40.103.89'>George Hotelling</a></cite>:</p>
+			<p>Flames aside, &#8220;Rails also suffers because it is hard to decouple Rails code from page display code&#8221; is factually incorrect for very low values of &#8220;hard.&#8221;  Section 17.11 of Agile Web Development With Ruby on Rails is &#8220;Adding New Templating Systems.&#8221;  It explains how to create a new templating system, which basically requires creating a class with a <code>render</code> method, then calling <code>ActionView::Base.register_template_handler(extension,classname)</code></p>
+<p>Admittedly it could be done with less code if a base template class used Ruby&#8217;s <code>inherited</code> method to automatically register subclasses.</p>
+<p>All that said, it&#8217;s sad that this piece includes an unsound argument against RoR because it takes the discussion away from WASP.</p>
+      <p>
+			<small>comment at <a href="#comment-661" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-662">
+			<p class="who"><cite>Tony Wright</cite>:</p>
+			<p>Wow.  I just got called a fascist and big brother.  Awesome.</p>
+<p>I&#8217;m going to ignore the comment comparing comment moderation to George Orwell&#8230;  If you feel that moderation is evil, and that a site owner shouldn&#8217;t have the right to remove stuff that is diverging from the topic&#8230;  Er, I don&#8217;t know what to say.</p>
+<p>And in response to the comment that my post was only responding to style and not substance&#8211; that&#8217;s PRECISELY what I wanted to do.  I don&#8217;t know enough about RoR to participate intelligently in his points&#8230;  But, as I read his comments, I said to myself &#8220;Wow&#8230;  What a jerk.&#8221;  My point was that keeping your style respectful and polite isn&#8217;t that difficult&#8211; and doesn&#8217;t require any more words.  Just different ones.  And, ultimately, I think that it makes you more persuasive (if that&#8217;s the goal of the writing that you do).  Unfortunately, I think the goal of most of my fellow-geeks (both online and academic) isn&#8217;t to move closer to truth and knowledge, but to beat someone.</p>
+      <p>
+			<small>comment at <a href="#comment-662" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-663">
+			<p class="who"><cite>Danno</cite>:</p>
+			<p>You don&#8217;t make an uninformed remark about someone&#8217;s baby and not expect them to get upset about it.</p>
+<p>Sewiously.</p>
+      <p>
+			<small>comment at <a href="#comment-663" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-664">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>Are we done? </p>
+<p>I&#8217;m working on a moderation policy. As it is, I&#8217;m considering wrapping this entire article and nearly every comment in a <code>&lt;strike&gt;</code> - only that wouldn&#8217;t validate. I&#8217;ve also received offers from some of the &#8220;editors&#8221; to review posts and am considering it.</p>
+<p>I have to apologize for not catching trolling language in the original article. The claim that &#8220;Rails also suffers because it is hard to decouple Rails code from page display code&#8221; should have either not been there or been accompanied with a full length article describing the position and even then, should have been sent to the Rails mailing list.</p>
+      <p>
+			<small>comment at <a href="#comment-664" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-665">
+			<p class="who"><cite><a href='http://www.northernwastes.org' rel='external ' title='69.178.0.53'>Geoffrey L. Wright</a></cite>:</p>
+			<p>Well, one man&#8217;s dreary is another man&#8217;s divine.</p>
+<p>Personally, I find Python to be very pleasant language to work with.  From my perspective, white-space-as-syntax is a beautiful thing, and it&#8217;s hard for me to understand why others don&#8217;t see my point of view.  But I know a number of programmers &#8212; much better guys than me &#8212; that won&#8217;t touch it.  They hate the syntax, and they don&#8217;t think Python is &#8220;Enterprise&#8221; enough.  To each his own, I suppose.</p>
+<p>The way I look it, lots of really impressive stuff has been built using Java, Python, Ruby, PHP, Perl, C#, C++ Cold Fusion &#8212; and hell, even Visual Basic.  All languages are useful tools.  There are intelligent people who use all of these languages and <em>enjoy</em> doing so.</p>
+<p>Now in the spirit of a lively discussion, here are a couple of real-world reasons to use PHP:</p>
+<ul>
+<li>There is a veritable army of developers out there who already know how to use it.  Ugly or not, it&#8217;s a very well-known language, and that means it&#8217;s easy to find folks to work on it at a reasonable rate.</li>
+<li>There is a staggering amount of free, repurposable PHP code already out there.  <a href="http://pear.php.net/package/HTML_Template_Flexy">Flexy</a> is one great example.  Rather than start from scratch, WASP was able to make use of a very mature, tested, and well-understood templating system.  In PHP-land there is endless opportunity to wrap and extend existing code just because there&#8217;s so damned much of it in the public sphere.</li>
+<li>Many business already have deployed PHP applications and have folks on staff who can work with them without additional training.</li>
+<li>PHP &#8212; like Java, Ruby, Python, Perl, etc. has been had been used to successfully build large, complex and heavily used applications.</li>
+</ul>
+<p>I come from the perspective of owning a small (10 person) custom software company, and we helped fund the development of WASP.  I started my career in an in-the-trenches programming position, but these days I tend to think about these issues as much from business perspective as from a technical one.</p>
+<p>When working with our clients, my big concern is delivering a highly functional and maintainable solution for the lowest possible cost.  I also deal regularly with conservative IT managers who are hesitant to let anything &#8220;new&#8221; into their shop.</p>
+<p>Using PHP for custom solutions helps me in ways both practical and political.  Finding experienced PHP developers is easy.  Training folks on new technologies &#8212; especially with smaller projects, less costly projects &#8212; can chew through a lot of a project&#8217;s budget.  Adding functionality by reusing existing free code is a <em>great</em> way to add value to a project.    Also, a surprising number of business already have deployed PHP applications internally, so I don&#8217;t face an uphill battle convincing conservative IT managers to let us build in PHP.</p>
+<p>And with all that said, I should point out the we&#8217;re not a &#8220;PHP shop&#8221;.  We develop in Java, .NET/C#, PHP, Classic ASP, Python, Cold Fusion &#8212; really with anything required by the client.  In many (if not most) cases the choice of technology is dictated by the client.  So I have no religious attachment to PHP.  Funding the development of WASP was just a practical business decision.  We&#8217;re already rolled out one solution build using WASP, and are just about to to complete another.  And so far, so good.  We&#8217;re been able to deliver two high-quality, cost-competitive solutions.</p>
+<p>And isn&#8217;t a good ecology of frameworks in many different languages a good thing?  We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.</p>
+      <p>
+			<small>comment at <a href="#comment-665" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-667">
+			<p class="who"><cite><a href='http://brian.fioca.com' rel='external ' title='209.193.49.19'>Brian Fioca</a></cite>:</p>
+			<p>I&#8217;d like to apologise.  Mia culpa, my bad.  The article was never suppoed to be about Rails.  I don&#8217;t want to be one of those people that compares my work to someone else&#8217;s, for better or for worse.  It&#8217;d be best if it stood on its own.</p>
+<p>&#8220;And isn’t a good ecology of frameworks in many different languages a good thing? We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.&#8221;</p>
+<p>Agreed!  Can&#8217;t we all just get along?  :)</p>
+      <p>
+			<small>comment at <a href="#comment-667" title="">23. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-668">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.205'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><a href="#comment-664">Ryan</a>: use <code>&lt;del&gt;</code> tags&#8212;they&#8217;re the semantic version of <code>&lt;strike&gt;</code> and can also be used as both inline and block-level elements. :-)</p>
+      <p>
+			<small>comment at <a href="#comment-668" title="">24. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-671">
+			<p class="who"><cite><a href='http://simon.incutio.com/' rel='external ' title='216.145.49.15'>Simon Willison</a></cite>:</p>
+			<p>I hadn&#8217;t seen <code>ActionView::Base.register_template_handler(extension,classname)</code> - that&#8217;s a very neat solution.</p>
+      <p>
+			<small>comment at <a href="#comment-671" title="">24. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-672">
+			<p class="who"><cite><a href='http://ibofobi.dk/blog/' rel='external ' title='213.237.11.79'>Sune Kirkeby</a></cite>:</p>
+			<blockquote>
+<p>[..] , scripting languages can be quick to write, but since they do not have<br />
+  many of the advanced features of compiled languages like C++ and Java, [..]</p>
+</blockquote>
+<p>This was about where I stopped taking the post serious; it&#8217;s Java that<br />
+lack the advanced features, for example lists and hashes as builtins with<br />
+nice syntax.</p>
+      <p>
+			<small>comment at <a href="#comment-672" title="">24. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-674">
+			<p class="who"><cite><a href='http://www.phppatterns.com' rel='external ' title='195.129.34.43'>Harry Fuecks</a></cite>:</p>
+			<blockquote>
+<p>PHP 5 is quite a limited and ugly language IMNSHO</p>
+</blockquote>
+<p>Fair enough</p>
+<blockquote>
+<p>why is the standard library so poor and inconsistent?</p>
+</blockquote>
+<p>In PHP5? For backwards compatibility given a significant chunk of the world using PHP4 - i.e. nothing&#8217;s changed - PHP is just as ugly as it&#8217;s always been. If you want clean implementations, head to here - http://www.php.net/spl . The flip side is PHP has always been no much more than a wrapper on C and that can be a good thing as you don&#8217;t get someones fresh idea of what a good API design is. Some of Python&#8217;s API&#8217;s, for example, enter the territory of someone attempting to be too smart e.g. urllib/2 - times I&#8217;ve played with it I&#8217;m crying &#8220;Jesus! Just copy lwp for Christ sake!&#8221;. But that&#8217;s my MNSHO now.</p>
+<blockquote>
+<p>why dosesn’t it support Unicode properly, except for the UTF-8 encoding? </p>
+</blockquote>
+<p>PHP5, by default, doesn&#8217;t support UTF-8. It doesn&#8217;t really have <em>any</em> awareness of any character encoding other than ASCII and what your current locale setting is (which I believe is more or less the same position Ruby is in). The <a href="http://www.php.net/iconv">iconv</a> extension is bundled by default but character set <em>conversion</em> is not character set <em>support</em> (i.e. what does strlen() tell you). There is the <a href="http://www.php.net/mbstring">mbstring</a> extension which can magically replace some (but not all) of PHP&#8217;s string functions but not all and it&#8217;s not part of the default distro. For Unicode you&#8217;ll have to wait for PHP6 which may be out sooner rather than later - there&#8217;s some info <a href="http://www.gravitonic.com/do_download.php?download_file=talks/intlphpcon2005/php_unicode.pdf">here</a> (PDF) - interestingly looks like it will be using <a href="http://sourceforge.net/projects/icu">ICU</a> so it may be a shot in the arm.</p>
+<blockquote>
+<p>why does it require to put a dollar sign in front of every variable?…</p>
+</blockquote>
+<p>Probably Perl inspired. Basically makes no difference once you&#8217;ve got used to it - similar issue for new users like whitespace in Python.</p>
+<blockquote>
+<p>Why would you want to stick with PHP even in situations when you can<br />
+  use Python, Ruby, or anything else?</p>
+</blockquote>
+<p>Well first, because once you know it, it basically makes no difference (yes there are many gotchas to learn but once learnt, that&#8217;s it). David may disagree and to an extent I&#8217;d agree with points I can imagine he&#8217;d make. But the only <em>really</em> significant thing about PHP that programmers need to know about is they&#8217;ve chosen <strong>not</strong> to take the road of metaprogramming - instead of mixins / metaclasses PHP5 has interfaces - i.e. PHP isn&#8217;t tending towards LISP.</p>
+<p>Another reason: PHP is getting mature in it&#8217;s own field. Was recently surprised to discover Perl&#8217;s DBD::Oracle driver doesn&#8217;t support Oracle collection types (resulting an a slow and ugly hack generating PL/SQL on the fly). Was more surprised to find that of the dynamic languages it seems <a href="http://www.php.net/oci_new_collection">only PHP does</a> does.</p>
+<p>Side observation: it&#8217;s interesting how much X vs. PHP debates are becoming more and more like Java vs. Visual Basic. Whatever gets you on I guess. And PHP most definately <em>is</em> the VB of the Internet.</p>
+<p>Re the orginal post: so why WASP vs. one of X thousand other <a href="http://www.phpwact.org/php/mvc_frameworks">PHP frameworks</a> or even <a href="http://www.zend.com/news/zendpr.php?id=109">this</a>?</p>
+      <p>
+			<small>comment at <a href="#comment-674" title="">24. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-693">
+			<p class="who"><cite><a href='http://www.developers.org.ua/archives/max/2005/10/28/weekly-linkdump-11/' rel='external ' title='69.50.221.209'>developers.org.ua &raquo; Blog Archive &raquo; weekly linkdump</a></cite>:</p>
+			<p>[&#8230;] WASP - Easing the Switch from Java to PHP [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-693" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-711">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>For the time being, I only want to comment specifically on this puzzling &#8220;Rails also suffers because it is hard to decouple Rails code from page display code&#8221; sentiment (though it seems to have been edited out of the article).</p>
+<p>Purportedly, a template written in Ruby is unclean. I&#8217;ve seen the same belief in the PHP world; it has led to the creation of such absurdities as the Smarty templating system. Think about it: PHP is itself actually a templating system (arguably an overgrown one), so Smarty is basically a templating system written in a templating system.</p>
+<p>And over here in Perl-land, we have the same misconception. All over, people seem firmly convinced that templates must be written in a language different from the one the main code is written in.</p>
+<p>But why? After all, most templating mini-languages I&#8217;ve seen have accrued features until approximate Turing completeness anyway.</p>
+<p>The core question is, what <em>essentially</em> happens when you use a templating system with a mini-language? What is the &#8220;main code&#8221; and what is the &#8220;template?&#8221; Ideally, the &#8220;main code&#8221; is the controller and the model, whereas the &#8220;template&#8221; is the view. Hence, using a template mini-language theoretically forces you to separate the view logic from the controller and model logic. But do you truly need to change languages to do that? No. You don&#8217;t. What matters is <em>only</em> that you have a clear understanding of your design, so you can understand which part belongs to the view and which to the controller (or to the model).</p>
+<p>In fact, even the use of a templating system does not save you from concern creep, since the mini-languages of powerful templating systems are relatively complete. I&#8217;ve seen cases where this mini-language was used to fudge things into the view which should have been implemented in the controller.</p>
+<p>Given, then, that you have the choice to write the view logic in whatever language you deem appropriate, why not use the language you already know best? Isn&#8217;t that much more productive than tying yourself up with yet another ad-hoc mini-language in all its glory of undirected design, organic growth and arbitrary limitations?</p>
+<p>&#8230; does the world really need another PHP?</p>
+      <p>
+			<small>comment at <a href="#comment-711" title="">31. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-801">
+			<p class="who"><cite>Daryll Plant</cite>:</p>
+			<p><em>Ed. &#8212; Broken link removed</em> </p>
+      <p>
+			<small>comment at <a href="#comment-801" title="">09. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-886">
+			<p class="who"><cite><a href='http://lesscode.org/2005/12/30/maintainable-programmers/' rel='external ' title='206.123.121.158'>Maintainable Programmers [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] I thought it unfortunate that the controversy kicked up by a few (now retracted) passages in Brian Fioca’s article about WASP detracted from a proper discussion of the article’s real flaw. I addressed the controversial, less interesting sentiments in comment over there, but wanted to take a few moments for a longer commentary. It took a while, but here we go. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-886" title="">30. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.498 seconds -->
+<!-- Cached page served by WP-Cache -->

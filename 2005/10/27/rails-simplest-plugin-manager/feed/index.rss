@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Simplest Possible Plugin Manager For Rails</title>
+	<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:35 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Walker</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-20307</link>
+		<pubDate>Tue, 12 Dec 2006 21:07:40 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-20307</guid>
+					<description>&lt;p&gt;What I want to do on my blog, is every few hours take the oldest post and move it to the 
+front of the queue, all automatically. Anyone know if there is a plugin that can do this or 
+a simple way to set up another plugin to do this (use my own feed perhaps)?
+Thanks.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>What I want to do on my blog, is every few hours take the oldest post and move it to the<br />
+front of the queue, all automatically. Anyone know if there is a plugin that can do this or<br />
+a simple way to set up another plugin to do this (use my own feed perhaps)?<br />
+Thanks.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Duane Johnson</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-951</link>
+		<pubDate>Wed, 11 Jan 2006 23:40:07 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-951</guid>
+					<description>&lt;p&gt;Looks like some of the svn repositories are down (or moved).  In that case, you have to 'unsource' them.  Here's what worked for me:&lt;/p&gt;
+
+&lt;p&gt;ruby script/plugin unsource http://svn.protocool.com/rails/plugins/
+ruby script/plugin unsource http://svn.substance-it.co.uk/public/plugins/
+ruby script/plugin unsource http://homepage.ntlworld.com/easley/plugins/
+ruby script/plugin unsource http://elitists.textdriven.com/svn/plugins/&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Looks like some of the svn repositories are down (or moved).  In that case, you have to &#8216;unsource&#8217; them.  Here&#8217;s what worked for me:</p>
+<p>ruby script/plugin unsource http://svn.protocool.com/rails/plugins/<br />
+ruby script/plugin unsource http://svn.substance-it.co.uk/public/plugins/<br />
+ruby script/plugin unsource http://homepage.ntlworld.com/easley/plugins/<br />
+ruby script/plugin unsource http://elitists.textdriven.com/svn/plugins/</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Roland</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-887</link>
+		<pubDate>Fri, 30 Dec 2005 13:58:41 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-887</guid>
+					<description>&lt;p&gt;Hi,&lt;/p&gt;
+
+&lt;p&gt;I tried to use the plugin manager which is now part of the standard Rails package. Unfortunately it does not seem to work:&lt;/p&gt;
+
+&lt;p&gt;$ ./plugin list
+svn: PROPFIND request failed on '/svn/rails/plugins'
+svn: PROPFIND of '/svn/rails/plugins': could not connect to server (http://dev.rubyonrails.com)&lt;/p&gt;
+
+&lt;p&gt;Any ideas?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi,</p>
+<p>I tried to use the plugin manager which is now part of the standard Rails package. Unfortunately it does not seem to work:</p>
+<p>$ ./plugin list<br />
+svn: PROPFIND request failed on &#8216;/svn/rails/plugins&#8217;<br />
+svn: PROPFIND of &#8216;/svn/rails/plugins&#8217;: could not connect to server (http://dev.rubyonrails.com)</p>
+<p>Any ideas?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-695</link>
+		<pubDate>Fri, 28 Oct 2005 09:00:54 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-695</guid>
+					<description>&lt;p&gt;Thanks Jeremy. &lt;/p&gt;
+
+&lt;p&gt;I fixed some stuff by the way so if anyone ran into problems installing more than one plugin, grab the latest from the same URL.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Thanks Jeremy. </p>
+<p>I fixed some stuff by the way so if anyone ran into problems installing more than one plugin, grab the latest from the same URL.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jeremy Kemper</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-687</link>
+		<pubDate>Thu, 27 Oct 2005 07:11:05 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-687</guid>
+					<description>&lt;p&gt;Nice hack, Ryan!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Nice hack, Ryan!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-686</link>
+		<pubDate>Thu, 27 Oct 2005 06:22:39 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/#comment-686</guid>
+					<description>&lt;p&gt;I wanted to mention that you can put &lt;code&gt;plugin&lt;/code&gt; anywhere on your &lt;code&gt;PATH&lt;/code&gt; (e.g., &lt;code&gt;/usr/local/bin&lt;/code&gt;, &lt;code&gt;/home/you/bin&lt;/code&gt;, etc.) and it will search up from the current directory (`pwd` not `$0`) for a Rails environment. So you can just run &lt;code&gt;plugin&lt;/code&gt; instead of &lt;code&gt;./script/plugin&lt;/code&gt; or whatever.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I wanted to mention that you can put <code>plugin</code> anywhere on your <code>PATH</code> (e.g., <code>/usr/local/bin</code>, <code>/home/you/bin</code>, etc.) and it will search up from the current directory (`pwd` not `$0`) for a Rails environment. So you can just run <code>plugin</code> instead of <code>./script/plugin</code> or whatever.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.308 seconds -->
+<!-- Cached page served by WP-Cache -->

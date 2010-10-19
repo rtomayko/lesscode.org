@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Should Database Manage The Meaning?</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/">Lesscode using Domain Specific Languages (DSL)</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/10/02/shared-data-and-mobile-data/">Shared Data and Mobile Data</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-93"><a href="http://lesscode.org/2005/09/29/should-database-manage-the-meaning/" rel="bookmark" title="Permanent Link: Should Database Manage The Meaning?">Should Database Manage The Meaning?</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://www.jooto.com/blog">Alex Bunardzic</a>
+      under <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a>,  <a href="http://lesscode.org/category/theory/" title="View all posts in Theory" rel="category tag">Theory</a> 
+      on 29. September 2005</small>
+
+			<div class="entrytext">
+				<p>I couldn&#8217;t resist jumping into the <a href="http://www.loudthinking.com/arc/000516.html">Choose a single layer of cleverness</a> discussion, that is raging on David Heinemeier Hansson&#8217;s blog. The majority of the challenges to David&#8217;s thesis were so widly off mark, that it had left me completely bewildered. What&#8217;s even more bewildering, to me at least, is that many of the misplaced comments seem to be coming from established Ruby and Rails practitioners.</p>
+
+<p>Anywho, the comment that got my particular attention is quoted below; my full reply is reproduced below the quoted comment:</p>
+
+<p>&#8220;Just like I&#8217;d expect my operating system to respond if I try to write to a file I don&#8217;t have permission on, I want my database server to manage the basic rules of the DATA, ie, what relates to what, and which columns should be unique. This is to prevent anything out of the ordinary from affecting the consistancy of the database. The minute you let bad data get in there is the minute any maintainability you love in your application tier goes to hell.&#8221;</p>
+
+<p>Bzzzt! Right here, we have the crux of the problem.</p>
+
+<p>I think the cognitive discrepancy lies in equating RDBMS with an operating system. Nothing justifies that parallel.</p>
+
+<p>If we step back and look at what RDBMS is, we&#8217;ll no doubt be able to conclude that, as its name suggests (i.e. Relational Database Management System), it is a system that specializes in managing the data in a relational fashion. Nothing more.</p>
+
+<p>Folks, it&#8217;s important to keep in mind that it manages the data, not the <strong>MEANING</strong> of the data!</p>
+
+<p>And if you really need a parallel, RDBMS is much more akin to a word processor than to an operating system.</p>
+
+<p>A word processor (such as the much maligned MS Word, or a much nicer WordPress, for example) specializes in managing words. It does not specialize in managing the <em>meaning</em> of the words.</p>
+
+<p>So who is then responsible for managing the meaning of the words? It&#8217;s the author, who else?</p>
+
+<p>Same is with Rails. Rails is the author of the data. As an author, it uses the RDBMS to manage that data in a relational fashion. But, just as we, as the authors of the words, do not expect WordPress to manage the meaning of our words, Rails does not expect the RDBMS to manage the meaning of its data.</p>
+
+<p>As a matter of fact, it would be really terrible if those tools would assume the management of the meaning of the information that is being fed into them. Imagine typing up a letter, only to be jolted when your favorite editor refuses to take the word you&#8217;ve just typed, deeming it &#8216;incoherent&#8217;, or &#8216;not complying with certain constraints&#8217;. You&#8217;d toss that piece of junk out the window in no time.</p>
+
+<p>Why should Rails developers be any different? Why should we tolerate RDBMS opinions on our data? We&#8217;re the masters, RDBMS is the servant, it should shut up and serve. End of discussion.</p>
+
+<p>As for the ongoing &#8216;the sky is falling&#8217; discussion about what if some other device accesses the RDBMS, it&#8217;s the same dilemma as &#8216;what if some other person accesses our document, and starts changing it?&#8217; There are ways to manage that. Yes, we&#8217;re always exposed, always vulnerable to all kinds of attacks, but that&#8217;s how life is. You should start getting used to it by now.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/09/29/should-database-manage-the-meaning/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">51 Responses to &#8220;Should Database Manage The Meaning?&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-478">
+			<p class="who"><cite>Masklinn</cite>:</p>
+			<p>Actually, recent word processors are not <em>that</em> unaware (if one calls that awareness) of the meanings of the texts typed in them, as long as the author himself is using them well&#8230;</p>
+<p>Following the legacy of TeX/LaTeX and HTML itself, recent versions of word processors (Word 2000+, maybe as early as 97; OpenOffice 1&amp;2 - 2 being quite an improvement - , &#8230;) are actually using some kind of semantic marking with styles applied on top, meaning that your section title is not &#8220;Bold 24pt underlined&#8221;, it&#8217;s &#8220;Heading 1&#8243; and up to you to generate the style that you&#8217;ll see fitting.</p>
+<p>The text processor doesn&#8217;t, of course, know the meaning of the data, but it gives you a way to specify it for you to undersrand and him to keep.</p>
+      <p>
+			<small>comment at <a href="#comment-478" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-479">
+			<p class="who"><cite><a href='http://www.pauloswald.com' rel='external ' title='71.244.95.82'>Paul</a></cite>:</p>
+			<p>Perhaps instead of Word Processor you mean text editor. Because modern word processors do in fact check grammar and spelling. Which is pretty much what this whole argument comes down to. Spell check would be like type checking and grammar checking would equate to DB constraints. That user&#8217;s comment isn&#8217;t saying he wants the text editor to enforce &#8220;meaning&#8221; of the words, just that he doesn&#8217;t ever want it to allow him to write sentence fragments. Of course, word processors usually just flag the &#8220;bad&#8221; data&#8230; the still allow it. Still I think there&#8217;s more to it than just syntax and semantics, text and meaning.</p>
+<p>I think it is clearest in DHH&#8217;s original post where he points us to Martin Fowler&#8217;s distinction between the 2 database styles. DHH is saying he prefer&#8217;s one style over the other for his apps. I actually tend to agree with you both but for different reasons.</p>
+      <p>
+			<small>comment at <a href="#comment-479" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-480">
+			<p class="who"><cite><a href='http://blog.ianbicking.org' rel='external ' title='66.100.151.155'>Ian Bicking</a></cite>:</p>
+			<p>When word processors rewrite the text I type for my benefit, it annoys me.  So yes, it&#8217;s like word processors, and that&#8217;s the point.  It&#8217;s even a bit like operating systems.  File permissions suck.  They are stupid and limited and can&#8217;t express many restrictions at all; plus they are complex and hard to manage.  Not the operating system&#8217;s fault, it has no idea what those files are, where they came from, or what I might do with them &#8212; it&#8217;s just piles of bits.  In the same way, the RDMS gets its tuples of data, but it doesn&#8217;t know what they are about.  It&#8217;s just a pile of simple data types.  </p>
+<p>Unlike the operating system, I can put code in the RDBMS, which is what makes it rather ambiguous.  I can give the RDBMS behavior instead of just data.  And, given a DRY principle, that can be the best place for the behavior.  But if only one app accesses the database it doesn&#8217;t really matter; and the opposite issue can happen, because database constraints often have to be repeated in code, because the database isn&#8217;t the most expressive or easily introspected medium.</p>
+      <p>
+			<small>comment at <a href="#comment-480" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-481">
+			<p class="who"><cite><a href='http://www.madslinger.com/' rel='external ' title='62.64.111.250'>Andriy</a></cite>:</p>
+			<p>I think it might be an oversimplification. Yes, RDBMS are built to manage data in a relational fashion. But then any application runtime environment along with its programming language of choice is designed to manage data by means of an essentially sequential logical flow (and logics is just is abstract as the concept of relationships in an RDBMS and has nothing to do with meaning). Therefore the meaning is something one attributes to the relationships and logical flows at one&#8217;s own will. If the meaning is sufficiently complex it often requires advanced means to be expressed. And so if one decides it would be great to handle part of the meaning on the database server side any sort of prebuilt means in the database engine to help express the meaning should come in handy. It is simply that traditionally we expect the application layer to do the most part of &#8220;meaning heavylifting&#8221; and so in our consciousness the stress is shifted toward it.</p>
+      <p>
+			<small>comment at <a href="#comment-481" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-482">
+			<p class="who"><cite>Withheld to protect the ignorant</cite>:</p>
+			<p>&#8220;If we step back and look at what RDBMS is, we’ll no doubt be able to conclude that, as its name suggests (i.e. Relational Database Management System), it is a system that specializes in managing the data in a relational fashion. Nothing more.&#8221;</p>
+<p>This was the case a awhile ago, but nowadays in the 21st century, they do much more&#8211;whether you think they should or not is a different thing (try telling the developers of Oracle, DB2,  Postgresql, etc that their additional functionality is &#8220;nothing more&#8221;).   The definition of some things change as they evolve.  Remember when all cell phones did was act as a wireless telephone?</p>
+<p>If you are using differing column types, you agree that the RDBMS should be enforcing some level of integrity, otherwise you&#8217;d might just use one datatype for storage and have your application casting data to the appropriate type when needed.</p>
+<p>The database (many of them nowadays) is another place that you can put code.  If you have multiple applications accessing the same database, it makes sense to use DRY and put the domain logic somewhere, whether it&#8217;s in a web app like Rails with an exposed webservice, an application server, or a datbase.</p>
+      <p>
+			<small>comment at <a href="#comment-482" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-483">
+			<p class="who"><cite>WattsM</cite>:</p>
+			<p>A better comparison with word processors is that database-level integrity checks are like <em>templates</em> that &#8220;constrain&#8221; you to proper manuscript formatting. Once the templates (constraints) are set up, you can just worry about getting the words (data) right. Most professional writers would consider this kind of restriction to be a <strong>Very Good Thing</strong> rather than some kind of terrible hardship. Your magazine editor will not be impressed by your creativity in writing your submission in purple crayon. And your marketing VP will not be impressed by your &#8220;creativity&#8221; in letting his survey database be corrupted in some way that would have been caught if all your integrity checking wasn&#8217;t taking place in some high-level module that, for some reason, that update that Bob in accounting just did failed to call. :)</p>
+<p>The ironic thing here is that the original assertion that sparked this, that DHH was responding to, was about whether Rails should be able to derive relationships between tables in databases when the database is powerful enough to let Rails do so. The arguments for Rails <em>not</em> doing so haven&#8217;t been on practical grounds as much they&#8217;ve been about how philosophically evil it is to use integrity checks at the database level, as if by convincing us of that we&#8217;ll stop asking whether Rails should have this feature down the road. And that makes this into a completely different discussion. It&#8217;s as if we&#8217;ve moved from a question about upgrading traffic signals in a town to an argument against using traffic signals at all, because we strongly feel that it shouldn&#8217;t be up to a mechanical system at street level to tell people how to drive.</p>
+      <p>
+			<small>comment at <a href="#comment-483" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-484">
+			<p class="who"><cite>Valentino Volonghi</cite>:</p>
+			<p>This is totally nonsense to me.<br />
+When I read this post it seemed to me that databases are set upon us like a giant rock upon our heads.<br />
+What does &#8216;RDBMS is the servant&#8217; means?<br />
+YOU are the programmer of the RDBMS, the one that explicitly says that there are some restrictions in the data that will be inserted in it.<br />
+There is no difference between putting the logic in the database or in the application from the programmer perspective. But there is a VERY BIG difference from the maintanance perspective. When you change programming language for the application (because there is the super new shiny framework and the comany really needs to change the 10 years old application but doesn&#8217;t want to change the database because it works) what do you foresee? That you have to rewrite all the data integrity logic. What if you forget to write some of that logic (quite likely when you have to deal with 40-50 tables)? To put it simply: YOU ARE SCREWED.<br />
+What if you put everything in the database instead (we are only talking about data coherence here)? That you can change programming language all the times you want without having to worry so much about the data layer because it is already there. Applications are written once and maintaned for all their life. There&#8217;s also another issue: rules for data integrity in the application level are scattered throughout the application (wherever you delete something or modify something etc) and if there is a need to change something you have to walk ALL your codebase to change ALL the parameters, instead if you have the data logic in the database (where it really belongs) you only have to modify it once, in the database.<br />
+RDBMS concepts are pretty standard (now that MySQL 5 is finally coming out there is even less excuse to not learn Relational Systems and Transactions theories) and are somewhat consistently applied in ALL the Database Systems.</p>
+<p>If you want to move the data consistency layer at application level it&#8217;s ok, be ready to suffer from your errors though.</p>
+<p>And the fact that database are bad and hard to use is not an excuse. Instead of moving the problem in a place where it&#8217;s even harder to fix we should think about how to make it simple to deal with the problem at the right layer.</p>
+<p>It&#8217;s like having a flat ISO-OSI standard instead of the 9 layers. I don&#8217;t even want to understand how an RDBMS could be compared to a Word Processor or an Operating System. It&#8217;s a data layer full stop. You tell it how it should manage the data you should put in it. There is no magic in RDBMS programming.</p>
+      <p>
+			<small>comment at <a href="#comment-484" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-485">
+			<p class="who"><cite>Alister</cite>:</p>
+			<p>You are answering a bad analogy with another bad analogy.  Put the strawmen away.</p>
+      <p>
+			<small>comment at <a href="#comment-485" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-486">
+			<p class="who"><cite><a href='http://www.confluent-data.com' rel='external ' title='66.45.216.7'>Chris Carter</a></cite>:</p>
+			<p>First of all, thanks for the honor of picking my post to respond to!  Yes, that was my original assertion up there in those fancy quotation marks.</p>
+<p>I think we&#8217;re getting into symantic arguments and chasing our own tails here.  Let me see if I can clarify what we&#8217;re talking about.  When you say &#8220;meaning&#8221;, I assume you are talking about business rules and how the data INTERACTS with itself.  When I say &#8220;rules&#8221;, I&#8217;m talking about those most basic rules of the road, such as data types (string, integer, boolean, what have you).  I believe the database should cover these basic ground rules, and I believe uniqueness constraints and relational integrity are included in these basic ground rules.  As someone posted in DHH&#8217;s blog thread, would you want a database without data types in it?  So you can just put any old data value in a field?  That&#8217;s a form of constraint right there.</p>
+<p>As you said, an RDBMS is an &#8220;Relational&#8221; system.  As such, it should probably do something relational, shouldn&#8217;t it?  That means relational integrity.  Being able to use SQL to SELECT rows from one table where a columns value equals another tables column value is not relational, that&#8217;s just set mathematics.  Relational comes into effect when you say one table&#8217;s column depends on its value from another table&#8217;s column.  Thus, if you try to put an invalid key into a foreign key, you are prevented.  This keeps things relational, and keeps things from becoming frustrating when, 3 years from now, you&#8217;re trying to build a reporting system on top of that transactional inventory system you created in Whiz Bang Framework #459.</p>
+<p>Once again - I am NOT advocating putting business logic in the database, but if you develop for a company of any size (either as a contractor or in-house developer), I just can&#8217;t understand the philosophy that your database is used only unto your application.  If that&#8217;s the case, then why use a database at all?  Why not use a specialized flat file that provides more performance?</p>
+<p>Finally, I should have said &#8220;file system&#8221; and not operating system. With that, how can you possibly assert that you&#8217;d be better off without file permissions?  How can you have any security at all without file permissions?  I don&#8217;t understand that sentiment either.</p>
+<p>Anyway, hopefully this illustrates or clarifies my point a little better.  I have a feeling though, that this is one of those holy wars that neither side will ever really agree on :)</p>
+      <p>
+			<small>comment at <a href="#comment-486" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-487">
+			<p class="who"><cite><a href='http://www.approachingnormal.com' rel='external ' title='71.113.176.5'>Larry</a></cite>:</p>
+			<blockquote>
+<p>Rails is the author of the data. </p>
+</blockquote>
+<p>Well, sort of. The problem with this analogy is that in most situations, the data has multiple authors. In a small shop (such as David&#8217;s), you don&#8217;t often have a dedicated DBA, but in a larger shop multiple people might need to manipulate the data in a database. A DBA is most likely not going to use a ruby script to do the data manipulation, nor should he. The thought of doing an update on a million or so records using ruby and ActiveRecord is a bit of a scary thought.</p>
+      <p>
+			<small>comment at <a href="#comment-487" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-489">
+			<p class="who"><cite>anton</cite>:</p>
+			<p>think of context and perspective: small apps - your app is the only app that updates the db. you manage it, all is fine. this is where rails is, so its ideology is a good fit.</p>
+<p>now take any considerably complex system where multiple platforms/apps/users manage the data in a single database. in this case the answer is different.</p>
+<p>&#8230;and none of the flowery analogies.</p>
+      <p>
+			<small>comment at <a href="#comment-489" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-490">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>I am confused.</p>
+<p>We rail (no pun intended) on the SOAP/WXS/WS-* because they use an OO mapping on top of XML.</p>
+<p>But we are suppsoed to applaud the ORM guys because they use an OO mapping on top of a relational database?</p>
+      <p>
+			<small>comment at <a href="#comment-490" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-491">
+			<p class="who"><cite><a href='http://ramensaurus.org' rel='external ' title='128.186.122.184'>Zachary Hartley</a></cite>:</p>
+			<p>Hrm, I would have thought that a relational database is also supposed to make sure the data going into satisfies the relationships specified, so that you can not accidentally put the data into a state that it was not meant by the designer&#8217;s of the schema to be in&#8230;.</p>
+      <p>
+			<small>comment at <a href="#comment-491" title="">29. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-493">
+			<p class="who"><cite><a href='http://fucoder.com/' rel='external ' title='210.15.204.76'>Scott Yang</a></cite>:</p>
+			<p>Besides putting the business logic closer to the data as safe guard to its integrity, there are many uses for store procedures and triggers.</p>
+<p>Performance is one. It really reduce the traffic between your RDBMS and your app server. There&#8217;s less latency. And your DB probably knows better how to optimise on its indices. I think we are all pretty much influenced by the n-tier architecture today, designing systems to have long pipelines from end user all the way to data storage, having each tier doing just one simple thing. However when you start to scale, the &#8220;less code&#8221; soon becomes &#8220;mooooooore code&#8221; and completely kills the performance. I am all for off-loading business logic inside DB for performance sake.</p>
+<p>Then you have data encapsulation in integration. Not everyone in the world uses REST style web services. We have clients constantly asking us to provide them ODBC access to the database, so they can do their customised reporting in Access or Excel. Obviously we cannot tell them, &#8220;hey, this is the URL for the web service end-point. You shall get back an XML with these parameters&#8221;. But we can give them views or selectable store procedures with restricted access.</p>
+      <p>
+			<small>comment at <a href="#comment-493" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-494">
+			<p class="who"><cite>Alex Bunardzic</cite>:</p>
+			<p>Just a couple of quick general observations (I&#8217;ll delve a bit deeper into the more probing questions tomorrow, because I need to go to bed soon):</p>
+<p>Current information theory sentiment prescribes that databases are a necessary evil. If we close our eyes for a moment and imagine a world with unlimited main memory that never goes down, why would anyone need a database in the first place? If you gave me the means to keep all the objects instantiated while my app is running in the main memory, I would never bother to persist them. The only reason I ever bother to persist them right now is because I&#8217;m nervous that either a.) I&#8217;ll run out of memory or, b.) the system will crash for whatever reason, and my poor objects would then vanish in a cloud of thick smoke.</p>
+<p>There was a time way back when when RDBMS technology was considered daring, adventurous, &#8216;pushing the envelope&#8217;. Those were the days when auxiliary storage was much more expensive than main memory is today.</p>
+<p>Nevertheless, E. Codd pushed his agenda, made people buy into the vision of the distant future, and voila! today we live in the world where auxiliary memory is considered practically unlimited. We stopped worrying about our storage capacity long time ago.</p>
+<p>This state of affairs caused us to be very wasteful with the databases. But, we&#8217;re now very stingy with the in-memory objects. Kind of the way we were stingy with the disk storage 20 - 30 years ago.</p>
+<p>But the day will come when terrabytes of main memory will be the norm. At that point, will we still be this obsessed with persistence?</p>
+<p>Getting back to the database mentality that most people are exhibiting here &#8212; this is the pre-9/11 thinking. Yes, there were times when every budding programmer was drilled into being obsessed with every byte his/her code stores in the auxiliary memory. Witness the Y2K phenomenon which was entirely caused by such anal-retentive mentality. There was a time when it was unthinkable to even suggest that a full 4 digit year gets stored on disk. What, you expect us to sacrifice two additional bytes of disk storage for every date you write? What an ungodly thought!</p>
+<p>Today, no one gives a hoot as to how big the data on the disk grows. But the database obsession still remains, as is painfully visible from the sentimental outpour in this thread.</p>
+<p>But why are people still so obsessed with databases, today, in the twenty first century? There is actually a very simple explanation: databases are still the only way most programmers are able to express themselves declarativelly, using a piece of mainstream technology.</p>
+<p>Declarative programming always gives this unmistakeable sense of solidity and robustness, over algorithmic twiddling. It is no wonder that people reserve the most critical, most robust information to be declared to the database.</p>
+<p>But, again &#8212; boring! We now have better declarative tools to do a more proper job in ensuring that the most vital business logic is secured. And databases are definitely <em>not</em> a way to go when it comes to ensuring this robustness.</p>
+<p>Yet, almost everybody here pretty much seems to feel that databases are a heaven-sent that could never be replaced by a more human-friendly servant. What a curiously retro way of thinking.</p>
+<p>Historically speaking, we went through basically two phases in software development before we hit the current state (I&#8217;m talking about the state symbolized by such enlightened products as Rails):</p>
+<ol>
+<li>
+<p>Database driven (starting from the database and pushing the processing logic outwards, toward the screens)</p>
+</li>
+<li>
+<p>Screen driven (starting from the forms, be it VB forms of HTML forms, and pushing the processing inwards, towards the final destination &#8212; the database)</p>
+</li>
+</ol>
+<p>Today, the approach has fundamentally changed. Today, we start right smack in the middle, from the object layer (the model/controller tier). We then push the processing simultaneously in two directions: outward towards the view, and inward towards the persistence.</p>
+<p>If we now bastardize this discipline and allow the old fashioned ways cloud our thinking, and let the database-centric thinking rule the rooster, we won&#8217;t gain anything. We might as well go back to any of the old paradigms and metaphors.</p>
+<p>It is important to commit to and observe the discipline. The discipline is tough and demanding. It&#8217;s very easy to slip along the way. But we must persist, because only those who persist will be around to tell the story.</p>
+      <p>
+			<small>comment at <a href="#comment-494" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-496">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='194.8.197.204'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>So why are you using an ORM in the first place? Considering this tirade, shouldn&#8217;t you be the first one to be scuttling away from ActiveRecord?</p>
+<p>SQL is <i>lesscode</i> vis-a-vis keeping all your data in memory and querying it programmatically by writing code to climb through the data structures.</p>
+<p>Much like XPath is <i>lesscode</i> vis-a-vis climbing up and down in a DOM.</p>
+      <p>
+			<small>comment at <a href="#comment-496" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-498">
+			<p class="who"><cite>Valentino Volonghi</cite>:</p>
+			<p>Persistent is opposed to Volatile not to available memory.<br />
+Some databases never get bigger than 20 or 30GB, a memory space that is easily affordable on a server nowadays. Yet nobody ever dares to drop the database because:<br />
+a) Sharing a database is easy.<br />
+b) Problems with hardware won&#8217;t make you lose any data.<br />
+c) You can easily (there are tons of tools for this) replicate and load balance a database among many computers.<br />
+d) Rebooting is safe, and you need rebooting when upgrading the operating system because of the latest vulnerability in the kernel or in a fundamental library for your application.<br />
+c) Sharing between different applications.<br />
+d) Easier maintanance path (upgrading live objects in a system is even harder than persistence)</p>
+<p>No, object persistence is not the right answer because it can&#8217;t be shared among different computers at the same time in an efficient way (sharing 30GB of data through a socket would, at best, kill performance).</p>
+<p>In the end: no, memory availability won&#8217;t allow you to avoid database, which, as has been stated, actually reduce the code needed to provide a sensible data layer to an application. And also allows all the data to be used by many other applications without worrying to much that one of them might be doing the wrong thing when inserting data, or you have to replicate the data coherency code in all of those applications (also the ones you didn&#8217;t write) but this is morecode, not lesscode.</p>
+      <p>
+			<small>comment at <a href="#comment-498" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-499">
+			<p class="who"><cite>Lorenzo Gatti</cite>:</p>
+			<p>Whether complex constraints and stored procedures are evil, as well as many other architectural decisions about databases, is mostly a matter of perspective.<br />
+If the stored procedure XY that retrieves the records of screen X of application Y is considered a part of the database that evolves on its own, we have mixed implementation details with the more abstract and more permanent database schema.<br />
+On the other hand, if procedure XY is treated as a part of the application that is written in a different language and is deployed in a different place, the database definition maintains its integrity (with application scripts and permanent tables in different logical containers).<br />
+If we add constraints casually because they would spare us some work without breaking any use case, or just because we assume they should be verified, we are reducing the clarity and integrity of our database.<br />
+If constraints are explicitly designed to describe what values and references are definitely unacceptable, or at least unsupported by any existing application, they become useful.</p>
+<p>&#8221; Why should we tolerate RDBMS opinions on our data? We’re the masters, RDBMS is the servant.&#8221;<br />
+&#8220;RDBMS&#8221; here means a conflation of three or four different things: the RDBMS proper, which is as empty and generic as an operating system; our definitions of important and permanent data; our definitions used by specific implementations of specific applications; maybe also the SQL queries issued by our non-SQL programs.<br />
+Obviously the &#8220;servant&#8221; consists of the first layer only; everything else is our code, and it is expected to represent and enforce our opinion of our data.</p>
+<p>Maybe this confrontational master/servant attitude can arise from social factors: in many situations &#8220;we&#8221; are the agile OO application programmers and the &#8220;RDBMS&#8221; is a different slow-acting or competing group or an unpleasant legacy we want to improve.<br />
+We want to be in control but we are unwilling, unable or unprepared to conquer the enemy territory of the database, so we put all complex logic on our home ground and then we try to reduce the usefulness and importance of the opposition.</p>
+<p>From a technical point of view, it is unquestionable that stored procedures and complex SQL queries should be used: compared with the same thing done in memory in a procedural language, they usually offer a better performance with a fraction of the effort.<br />
+Constraints are, like other SQL, easier to write than application code, they avoid repetitions better than well-factored code and they offer an added benefit: they ensure that nobody ever, not only places in our application where we didn&#8217;t check correctly, but also unforeseen new applications or someone issuing arbitrary statements, can corrupt the database.<br />
+It is a matter of design and organization: if we are not using our tools properly, either we don&#8217;t know the correct way or someone is forcing us to do something different.</p>
+      <p>
+			<small>comment at <a href="#comment-499" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-501">
+			<p class="who"><cite>Valentino Volonghi</cite>:</p>
+			<blockquote>
+<p>It is a matter of design and organization: if we are not using our tools properly, either we don’t know the<br />
+  correct way or someone is forcing us to do something different.</p>
+</blockquote>
+<p>Totally agreed.</p>
+<p>It is a trend that I&#8217;ve seen so many times in the last years. Developers tend to forget about databases and their enormous usefulness. Instead new frameworks come out with the only purpose of making the initial development extremely fast without worrying too much about future development and maintanance. While this has positive effects in the short term, it also sounds a lot like creating use-once applications.</p>
+<p>Programming is all about data managing. Ensuring that your data is always coherent is the bare minimum that a programmer can do, no matter what application or language you are using to access that data. And here comes the sentence that I quoted to which I totally agree.</p>
+      <p>
+			<small>comment at <a href="#comment-501" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-502">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>Alex Bunardzic</a></cite>:</p>
+			<p>Aristotle wrote:</p>
+<p>&#8220;So why are you using an ORM in the first place? Considering this tirade, shouldn’t you be the first one to be scuttling away from ActiveRecord?&#8221;</p>
+<p>I&#8217;m surprised to see how many people don&#8217;t seem to understand what ActiveRecord, and the entire Rails is all about. Rails is so phenomenally good precisely because it addresses both the ideal and the pragmatic side of software development.</p>
+<p>On the idealized side, concepts such as ActiveRecord are put in place to act as a Smart Servant. What this means is that they are capable of hearing a few short commands and are then capable of materializing these simple commands into a set of intricate and elaborate actions. They act on our behalf. They perform the legwork for us. You gotta love them!</p>
+<p>On the pragmatic side, such Smart Servants are capable of making a concession to the imperfections of the happenstance, and adapt themselves to the present constraints.</p>
+<p>In this case, ActiveRecord is a Smart Servant who realizes that the majority of information infrastructure is still based around RDBMSs.</p>
+<p>However, SmartServant is not hung up on RDBMSs. It can drive the entire app from a non-RDBMS perspective. It is possible to teach ActiveRecord to drive the app from an in-memory object model, or from a pile of flat files, or even from some proprietary legacy data store (such as Lotus Notes). Or from any combination of these beasts thereof. All these ugly things could be abstracted by the SmartServant, shielding us from the aggravating aspects of the legacy stuff.</p>
+<p>So you see, I don&#8217;t view ActiveRecord as an ORM. Yes, it can act as the ORM, but it doesn&#8217;t have to.</p>
+<p>For example, I can tell ActiveRecord to <em>find</em> me something. Being a Smart Servant, he will know how to follow my command. But I&#8217;m not assuming that he will necessarily attempt to find things in an RDBMS source. Frankly, I absolutely don&#8217;t care where is he going to go and look for things, just as long as he finds them for me, within the acceptable time frame.</p>
+<p>Similarly, I can tell him to <em>create</em> an object. Now, where is he going to attempt to persist that object is none of my business. I simply don&#8217;t want to know. And the less I know, the better (worse is better). And on and on &#8212; I can tell it to <em>save with validation</em>, for example, not caring about the implementation details. All I know is that he will attempt to save some state after validating it.</p>
+<p>With Smart Servants such as ActiveRecord, I don&#8217;t have to be a control freak anymore. I&#8217;m better off relinquishing the control. I&#8217;m not breathing down anyone&#8217;s neck anymore.</p>
+<p>As you can see, I love having Smart Servants, I love ActiveRecord, and I don&#8217;t see it as painting me into the RDBMS corner. I can always teach it new tricks.</p>
+<p>&#8220;SQL is lesscode vis-a-vis keeping all your data in memory and querying it programmatically by writing code to climb through the data structures.&#8221;</p>
+<p>There is nothing in the world stopping anyone from writing an in-memory querying language that wold be a lesscode solution. Why do you think that SQL is suddenly this silver bullet? It&#8217;s just a Smart Servant, standing between our code and the RDBMS. Nothing magical about that.</p>
+<p>&#8220;Much like XPath is lesscode vis-a-vis climbing up and down in a DOM.&#8221;</p>
+<p>Yeah, I know. You see, Rails also comes with helpers. Hint, hint, nudge, nudge, say no more&#8230;</p>
+      <p>
+			<small>comment at <a href="#comment-502" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-503">
+			<p class="who"><cite><a href='http://www.confluent-data.com' rel='external ' title='66.45.216.7'>Chris Carter</a></cite>:</p>
+			<p>&#8220;Current information theory sentiment prescribes that databases are a necessary evil.&#8221;</p>
+<p>You&#8217;ve lost me on this one.  I am REALLY interested in where you&#8217;re getting that idea from.  It&#8217;s great to dream that we&#8217;ll have &#8220;unlimited main memory&#8221;, but out here in the world where most mid to large companies are ensconced with crappy software and are completely aversive to ripping it out (thus risking a failure of operations), the new &#8220;pragmatic&#8221; developers will have to learn to integrate with the existing systems, and build systems that themselves integrate.  It&#8217;s a little beyond ambitious to think that you can bust into the &#8220;Enterprise&#8221; (as this whole business with the Burton Group and DHH talking trash about Java seems to insinuate), when you blithly assume that you will 1. be the only development team ever to work on a project and 2. that Rails will be the only framework ever to access it.</p>
+<p>Your opinion fits well if you&#8217;re developing on the AS400, where the application framework and the database were one, but that ISN&#8217;T how it works anymore.  You have two tiers now, and regardless of what clever name you come up with for Active Record, it IS a bridge between those two tiers (ORM, Persistance Layer, whatever you want to call it).  When you have two distinctly separate tiers, you MUST suck it up and take the 5 minutes to add some simple checks on your database to cover the event that some numbskull is going to access your database outside your control and screw things up. Don&#8217;t assume that just because your application is &#8220;small&#8221;, that it somebody won&#8217;t want to tap it&#8217;s data.</p>
+<p>Let me repeat - it&#8217;s great to dream that one day we&#8217;ll be back to the days of a unified application and database, but that won&#8217;t be here for quite awhile.  In the meantime, out in the real world, losing the whole &#8220;relational&#8221; side of a &#8220;Relational Database Management System&#8221; and ignoring the performance gains you can make with indexes and such is a road to grief.</p>
+<p>I&#8217;m down with Agile development, I&#8217;m down with Rails in the &#8220;Enterprise&#8221;, and I&#8217;m down with slapping the database around.  However, to ignore the most basic rules of the road when they are so trivially easy to implement is just silly.</p>
+      <p>
+			<small>comment at <a href="#comment-503" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-504">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>Alex Bunardzic</a></cite>:</p>
+			<p>Chris Carter wrote:</p>
+<p>&#8220;When you say “meaning”, I assume you are talking about business rules and how the data INTERACTS with itself. When I say “rules”, I’m talking about those most basic rules of the road, such as data types (string, integer, boolean, what have you). I believe the database should cover these basic ground rules, and I believe uniqueness constraints and relational integrity are included in these basic ground rules. As someone posted in DHH’s blog thread, would you want a database without data types in it? So you can just put any old data value in a field? That’s a form of constraint right there.&#8221;</p>
+<p>Actually, I would prefer if all the values entered in the database would be of a single data type &#8212; text. This is because, at the end of the day, the data is mostly meant for human consumtion, and we consume it as text.</p>
+<p>Regardless of what fancy data type may be sitting in the database, once it hits your eyes, it is plain text (whether displayed on the screen, or printed on paper). Also, even if it&#8217;s supposed not to be consumed by humans, but only by machines, it still gets converted to plain text (typically, XML).</p>
+<p>So I really see no other point in having any type, other than plain string, defined in the database, other than to leverage the power of declarative programming.</p>
+<p>But as I&#8217;ve already said above, today there are better ways to do declarative programming (cf. the ActiveRecord). Database is meant strictly for persistence, not for behavior.</p>
+<p>&#8220;As you said, an RDBMS is an “Relational” system. As such, it should probably do something relational, shouldn’t it? That means relational integrity. Being able to use SQL to SELECT rows from one table where a columns value equals another tables column value is not relational, that’s just set mathematics.&#8221;</p>
+<p>I think you are confusing &#8216;relational&#8217; with &#8216;normalized&#8217;. No one ever said that a relational database must be normalized to the 5th normal form. As a matter of fact, it almost never gets that far. Even the third normal form tends to be a bit of a stretch in most production systems I&#8217;ve seen.</p>
+<p>&lt;reportFromTheTrenches&gt;<br />
+And then don&#8217;t forget that most systems tend to get severely denormalized for performance reasons too. So, it&#8217;s a moot point, to say the least.<br />
+&lt;/reportFromTheTrenches&gt;</p>
+<p>&#8220;Relational comes into effect when you say one table’s column depends on its value from another table’s column. Thus, if you try to put an invalid key into a foreign key, you are prevented.&#8221;</p>
+<p>This is one of the key reasons why general public think that enterprise software sucks. Real-life systems are fudgeable, but software is moronic precisely because of these idiotic constraints.</p>
+<p>&#8220;This keeps things relational, and keeps things from becoming frustrating when, 3 years from now, you’re trying to build a reporting system on top of that transactional inventory system you created in Whiz Bang Framework #459.&#8221;</p>
+<p>FUD.</p>
+<p>&#8220;Once again - I am NOT advocating putting business logic in the database, but if you develop for a company of any size (either as a contractor or in-house developer), I just can’t understand the philosophy that your database is used only unto your application. If that’s the case, then why use a database at all? Why not use a specialized flat file that provides more performance?&#8221;</p>
+<p>Precisely my point. No one claims that Rails is married to an RDBMS. And frankly, I couldn&#8217;t care less about the underlying implementation. As far as I&#8217;m concerned, it could as well be a huge army of little green men with hammers, locked inside the engine room, hammering out the data.</p>
+<p>&#8220;Finally, I should have said “file system” and not operating system. With that, how can you possibly assert that you’d be better off without file permissions? How can you have any security at all without file permissions? I don’t understand that sentiment either.&#8221;</p>
+<p>When did I assert that I&#8217;d be better off without file permissions?</p>
+      <p>
+			<small>comment at <a href="#comment-504" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-506">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>Alex Bunardzic</a></cite>:</p>
+			<p>WattsM wrote:</p>
+<p>&#8220;A better comparison with word processors is that database-level integrity checks are like templates that “constrain” you to proper manuscript formatting. Once the templates (constraints) are set up, you can just worry about getting the words (data) right. Most professional writers would consider this kind of restriction to be a Very Good Thing rather than some kind of terrible hardship. Your magazine editor will not be impressed by your creativity in writing your submission in purple crayon. And your marketing VP will not be impressed by your “creativity” in letting his survey database be corrupted in some way that would have been caught if all your integrity checking wasn’t taking place in some high-level module that, for some reason, that update that Bob in accounting just did failed to call. :)&#8221;</p>
+<p>A database controlling the meaning of my data would be equivalent to the word processor who insists that, for example, any document containing the words &#8220;George W. Bush&#8221; must associate with it words such as &#8220;integrity, responsibility, leadership, success, good will, tolerance, open-mindedness&#8221;. Or, the word processor who is calibrated to insist that no words such as &#8220;incompetence&#8221; ever get associated with the word &#8220;George W. Bush&#8221;. I&#8217;m not so sure I&#8217;d be so keen on using such a product.</p>
+<p>&#8220;The ironic thing here is that the original assertion that sparked this, that DHH was responding to, was about whether Rails should be able to derive relationships between tables in databases when the database is powerful enough to let Rails do so.&#8221;</p>
+<p>No, the original assertion was that Rails philosophy and architecture should be, nay, <em>MUST BE</em> influenced and affected by the awesome capabilities that modern databases offer. All David said in response to that was (and I&#8217;m paraphrasing here): &#8220;Not on my watch!&#8221; To which, all I can say is: my hat goes off to you, David!</p>
+<p>&#8220;The arguments for Rails not doing so haven’t been on practical grounds as much they’ve been about how philosophically evil it is to use integrity checks at the database level, as if by convincing us of that we’ll stop asking whether Rails should have this feature down the road.&#8221;</p>
+<p>David simply refuses to be governed in his ideas by the big-ass vendor ideas about what sort of processing should an RDBMS embody. Why should he be compelled to follow someone else&#8217;s hidden agendas? The man has a back bone (the first one in this industry with a back bone in the long time). I applaud that.</p>
+<p>&#8220;And that makes this into a completely different discussion. It’s as if we’ve moved from a question about upgrading traffic signals in a town to an argument against using traffic signals at all, because we strongly feel that it shouldn’t be up to a mechanical system at street level to tell people how to drive.&#8221;</p>
+<p>No, this is more like a debate on whether it should be mandatory to wear protective gear (helmets etc.) while walking down the street. Governments would like to impose such regulation, in order to avoid footing the bill for potential injuries. Us, common-sense citizens, oppose that, as we feel it encroaches on our personal freedoms.</p>
+<p>And if you think I&#8217;m kidding, come to Canada and try riding your bike without a helmet!</p>
+      <p>
+			<small>comment at <a href="#comment-506" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-507">
+			<p class="who"><cite><a href='http://www.confluent-data.com' rel='external ' title='66.45.216.7'>Chris Carter</a></cite>:</p>
+			<p>I&#8217;m going to step out of this discussion, because, as I predicted, I don&#8217;t think there will be concensus here :)</p>
+<p>You can have your completely ambiguous &#8220;data store&#8221;, I&#8217;ll have my structured database, and if it works for you in the long run, then it works for you in the long run.</p>
+<p>However, I&#8217;ll stick to my structured database with my data types, enforced relations, and unique constraints.  I can guarantee (with minimal effort) that some third party won&#8217;t sneak data in behind my application, and that&#8217;s what I like (and what, apparently, a good chunk of the people posting here and on DHH&#8217;s blog like too).</p>
+<p>Two things before I sign out of the debate (because I can&#8217;t help myself :)) -</p>
+<ol>
+<li>
+<p>How can you store binary data as text (and don&#8217;t say the filesystem, that&#8217;s just another database)?</p>
+</li>
+<li>
+<p>Since I&#8217;ve never met you, and can&#8217;t find any background on your site, what is your experience?  Not meaning to say your opinion doesn&#8217;t matter, or that you&#8217;re wrong, but I&#8217;m just interested in how you&#8217;ve come to your conclusions.</p>
+</li>
+</ol>
+      <p>
+			<small>comment at <a href="#comment-507" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-508">
+			<p class="who"><cite>Robert Church</cite>:</p>
+			<p>What&#8217;s so great about riding a bicycle without a helmet anyway?</p>
+      <p>
+			<small>comment at <a href="#comment-508" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-509">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>I just wanted to thank everyone for the discussion. This has been one of the most lively on lesscode.org to date.</p>
+      <p>
+			<small>comment at <a href="#comment-509" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-510">
+			<p class="who"><cite><a href='http://www.confluent-data.com' rel='external ' title='66.45.216.7'>Chris Carter</a></cite>:</p>
+			<p>I should add two quick corrections to myself:</p>
+<ol>
+<li>
+<p>I have no idea where I got the file permissions thing from.  That&#8217;s what I get for trying to read 5 different blogs at the same time.</p>
+</li>
+<li>
+<p>After using the mighty power of Google, I think I&#8217;ve got a decent idea of your background, Alex.  But now that I do, I&#8217;m REALLY curious about how you developed your current opinion of what a database should be!</p>
+</li>
+</ol>
+<p>And yes, I agree, great discussion.  Regardless of the outcome, it&#8217;s always refreshing to see different opinions on ideas the industry takes for granted.</p>
+<p>Go Rails!</p>
+      <p>
+			<small>comment at <a href="#comment-510" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-511">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>Alex Bunardzic</a></cite>:</p>
+			<p>Chris Carter wrote:</p>
+<p>&#8220;After using the mighty power of Google, I think I’ve got a decent idea of your background, Alex. But now that I do, I’m REALLY curious about how you developed your current opinion of what a database should be!&#8221;</p>
+<p>First off, I thought this is supposed to be the place where we obsess about the philosophy and practicalities of software development, not about personalities:-)</p>
+<p>But to answer your plea, I must explain that I came to the field of software development from the field of philosophy of science (Karl Popper, Ludwig Wittgenstein, Derida, Quinne, and the like; I won&#8217;t bother you with the links, you know how to google things around). Some 20 years ago I got involved in studying the principles of AI, after reading Dougla Hofstader&#8217;s seminal book &#8220;Godel, Escher, Bach: The Eternal Golden Braid&#8221;.</p>
+<p>Fast forward to 1995. IBM was in the midst of a big project they code-named &#8220;San Francisco Shareable Frameworks&#8221;. The goal of the project was to produce the platform that would deliver to the discipline of business app development what AS/400 delivered to the businesses seven years prior to that (in case you don&#8217;t know, AS/400 was launched in 1988 and offered an &#8216;operator in the box&#8217; &#8212; a marvelous piece of technology).</p>
+<p>To cut the long story short, what IBM introduced with the San Francisco frameworks was the focus on the middle tier, or the business logic layer. Around that time they&#8217;ve also released Visual Age for Java, an interesting little development platform that was not based on the idea of files. Magically, the source code would appear from its repository in the editor, and any little change you make to it would be versioned so that you could traverse the undo/redo stack to your heart&#8217;s content.</p>
+<p>But the main attraction was their persistence layer. It was, again, magic, in the sense that the instantiated objects would be somehow persisted and resurrected on demand.</p>
+<p>Fast forward to 1998 &#8212; San Francisco framework ended up being too bulky and too clunky for real life deployment, so IBM scraped the efforts. But, the core philosophy, and the core code base, survived, and migrated to &#8212; yes, you&#8217;ve guessed it &#8212; Enterprise Java!</p>
+<p>So back in 1998, Enterprise Java was a platform that proposed that we ignore the database, and focus on the object layer.</p>
+<p>.NET followed suit. The rest is history.</p>
+<p>These guys didn&#8217;t really know how to make it work. But the idea persists. Databases are being viewed as a necessary evil by the majority of the incentives in the enterprise computing.</p>
+<p>So, mystery solved, and it wasn&#8217;t really my idea at all. </p>
+<p>But my way of thinking really is that RDBMS is a technology that shouldn&#8217;t be driving our development efforts, nor should it comandeer our design. Given the volatility of the main memory, it&#8217;s nice to have a reliable storage, but there are many apps springing today that don&#8217;t necessarily sit on top of an RDBMS.</p>
+      <p>
+			<small>comment at <a href="#comment-511" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-512">
+			<p class="who"><cite><a href='http://www.dehora.net/journal' rel='external ' title='83.70.29.35'>Bill de hÓra</a></cite>:</p>
+			<p>I think it&#8217;s worth keeping a strong split between a database and an RDBMS. If you don&#8217;t want to manage data in an RDBMS, that&#8217;s fine, but you still have to manage the data somewhere. RoR chooses to do that in the application layer, but if you read enough Fowler or Evans or Booch you&#8217;ll see that viewpoint is standard in the OO world.</p>
+<p>The great lie of enterprise development  is that busines logic is nothing of the sort - it&#8217;s business illogic. If it was logic, we wouldn&#8217;t be having this discussion, because relational databases would be sufficient.  Another issue is that business logic across applications tends to be inconsistent and/or contradictory and that makes supprting the constraints in a single databse difficult. Finally it does appear that upfront commitments about the state of the world (which is what domain models are) are becoming less important relative to the ability to react to external data; i.e. it&#8217;s more important to know that 60% of customers loved some new feature than having a good domain model of a Customer. I think this favours OO hackery over realtional elegance.</p>
+<p>Btw, everyone who cares about this stuff should read Bill Kent&#8217;s Data and Reality. Great book.</p>
+      <p>
+			<small>comment at <a href="#comment-512" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-513">
+			<p class="who"><cite>WattsM</cite>:</p>
+			<p>Chris is probably right &#8212; there isn&#8217;t going to be consensus on this. :)</p>
+<p>I&#8217;m going to put out just a bit of philosophy myself, though. The pitfall of &#8220;opinionated software&#8221; is that it carries a risk of blowing off what the &#8220;big name vendors&#8221; do simply <em>because</em> they&#8217;re the big name vendors, whether or not what they&#8217;re doing actually has value.  And there are times when &#8220;tried and true&#8221; trumps &#8220;innovative and experimental.&#8221;</p>
+<p>My suspicion, honestly, is that Active Record <em>will</em> start taking advantage of more power in database back ends when that&#8217;s appropriate, and there will be times we&#8217;ll learn it is indeed appropriate. I&#8217;m simply not swayed by the argument that the Smart Servant is made smarter by limiting his knowledge of the available toolset, even if said toolset is philosophically impure. :)</p>
+      <p>
+			<small>comment at <a href="#comment-513" title="">30. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-514">
+			<p class="who"><cite>ugly DBA</cite>:</p>
+			<p><em>Chris Carter</em> :</p>
+<blockquote>
+<p>&#8220;As you said, an RDBMS is an “Relational” system. As such, it should probably do something relational, shouldn’t it? That means relational integrity. Being able to use SQL to SELECT rows from one table where a columns value equals another tables column value is not relational, that’s just set mathematics. Relational comes into effect when you say one table’s column depends on its value from another table’s column. Thus, if you try to put an invalid key into a foreign key, you are prevented. This keeps things relational, and keeps things from becoming frustrating when, 3 years from now, you’re trying to build a reporting system on top of that transactional inventory system you created in Whiz Bang Framework #459.&#8221;</p>
+</blockquote>
+<p>Bhu-gha-gha-ha-aa!!!<br />
+What a nuisance! Chris, that must be joke or you don&#8217;t have a clue, what relational theory is all about. (mistakenly you name &#8220;relational integrity&#8221;, talking about referential integrity, that is only one level for  constraints in relational DB).</p>
+<p>Folks, RM is an application of set theory and predicatte logic to data management, i.e. it is indeed applied mathematics. And  mathematics <em>does not</em> manage the <em>meaning</em> and (probably) never will. Meaning and semantics are (yet?) out of scope of maths. Meaning is still a exclusive prerogative of human brain :)</p>
+<p>And for each math system (and properly designed <em>concrete</em> relational model is such a system) there <em>always are</em> constraints and a formal system to enforce them. That&#8217;s what RDBMS is for, there is no notion of <em>meaning</em> in RDBMS - only set of formal constraints.</p>
+<p>OK, ActiveRecord gives good way to use declarative constraints in OO programs, dependent associations, callbacks and observers - but all that is already in modern SQL DBMS&#8217;s for years. DHH doesn&#8217;t want his database to be clever, instead reimplementing that stuff in pure OO way.</p>
+<p><em>Alex Bunardzic</em>:</p>
+<blockquote>
+<p>David simply refuses to be governed in his ideas by the big-ass vendor ideas about what sort of processing should an RDBMS embody. Why should he be compelled to follow someone else’s hidden agendas? The man has a back bone (the first one in this industry with a back bone in the long time). I applaud that.</p>
+</blockquote>
+<p>I don&#8217;t get that. Yes, there are &#8220;big-ass vendor ideas&#8221;, but there&#8217;s also <em>one</em> sound theory for data management and it isn&#8217;t clever to ignore it.</p>
+      <p>
+			<small>comment at <a href="#comment-514" title="">01. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-515">
+			<p class="who"><cite><a href='http://laurentszyster.be/blog/' rel='external ' title='62.205.125.160'>Laurent Szyster</a></cite>:</p>
+			<p>If a computer system was to manage &#8220;meaning&#8221; (semantic and data, &#8220;signifiant et signifié&#8221;), I would not call it a database, but a metabase.</p>
+<p>So, rephrasing your original question as </p>
+<p>&#8220;Should Semantic Applications use RDBMS&#8221;</p>
+<p>my answer is no. And the question is actually a rather old hat:</p>
+<p>The semantic data model: a modelling mechanism for data base applications<br />
+  http://portal.acm.org/citation.cfm?id=509264<br />
+  &#8220;Proceedings of the 1978 ACM SIGMOD international conference on<br />
+   management of data&#8221;</p>
+<p>You can develop a metabase application &#8220;on top&#8221; of a relational database system, but you should consider something else.</p>
+<p>The application of an RDBMS is to store on large sets of data according to a relational schema and produce statistics using a relational algebra. Since:</p>
+<p>data + structure = algorithm</p>
+<p>each relational database schema reflects its application, which is seldom applicable to other purposes. But what schema would <em>you</em> use to store a web of information? If you pick a simple relational schema that suites to your specific application, it will most probably hamper other applications to access the same information.</p>
+<p>The obvious thing to do, to chose a single data structure, indicates clearly that the relational model itself has no semantic applications.</p>
+      <p>
+			<small>comment at <a href="#comment-515" title="">01. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-516">
+			<p class="who"><cite><a href='http://lesscode.org/?p=94' rel='external ' title='206.123.121.158'>Shared Data and Mobile Data [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] about lesscode.org      &laquo; Should Database Manage The Meaning? [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-516" title="">02. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-518">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>WattsM wrote:</p>
+<blockquote><p>Chris is probably right — there isn’t going to be consensus on this. :)</p></blockquote>
+<p>If consensus is what you&#8217;re after when visiting these discussions, then I&#8217;m afraid you&#8217;ve come to the wrong place:-)</p>
+<blockquote><p>I’m going to put out just a bit of philosophy myself, though. The pitfall of “opinionated software” is that it carries a risk of blowing off what the “big name vendors” do simply because they’re the big name vendors, whether or not what they’re doing actually has value. And there are times when “tried and true” trumps “innovative and experimental.”</p></blockquote>
+<p>Opinionated software is not opinionated against the big vendors. It is opinionated against anything that is contrary to its underlying philosophy (I&#8217;ll write more about this on a future post).</p>
+<p>If the big vendors approach is in violation of the principles that the opinionated software upholds, than the opinionated software is going to shun the big vendors approach. But anything that the big vendors support that agrees with the opinionated software&#8217;s agenda, will be embraced wholeheartedly.</p>
+<blockquote><p>My suspicion, honestly, is that Active Record will start taking advantage of more power in database back ends when that’s appropriate, and there will be times we’ll learn it is indeed appropriate. I’m simply not swayed by the argument that the Smart Servant is made smarter by limiting his knowledge of the available toolset, even if said toolset is philosophically impure. :)</p></blockquote>
+<p>Database back end (and by that I&#8217;m assuming you mean RDBMS, such as Oracle, DB2, SQL Server, Postgress, MySQL etc.) is just one of the many devices that ActiveRecord deals with. ActiveRecord cannot afford to favorize one over the other. In the future, the dominion of RDBMSs will be on the wane, so it isn&#8217;t very likely that ActiveRecord would expend a lot of effort into a dwindling community.</p>
+<p>I could be wrong on this, of course.</p>
+      <p>
+			<small>comment at <a href="#comment-518" title="">02. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-519">
+			<p class="who"><cite><a href='http://' rel='external ' title='154.20.51.200'>Alex Bunardzic</a></cite>:</p>
+			<p>Robert Church:</p>
+<blockquote><p>What’s so great about riding a bicycle without a helmet anyway?</p></blockquote>
+<p>You mean, what&#8217;s so great about having sex without a condom?</p>
+      <p>
+			<small>comment at <a href="#comment-519" title="">02. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-523">
+			<p class="who"><cite>Robert Church</cite>:</p>
+			<p>To the extent that relational databases are like sex, I agree that the use of bicycle helmets is generally advisable.</p>
+      <p>
+			<small>comment at <a href="#comment-523" title="">03. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-568">
+			<p class="who"><cite><a href='http://br.geocities.com./lgcdutra/' rel='external ' title='201.21.34.4'>Leandro GFC DUTRA</a></cite>:</p>
+			<p>I haven&#8217;t read all the comments, because frankly I found so many of them disinformed about the relational model that it wasn&#8217;t worthwhile.</p>
+<p>You are incurring in two basic mistakes here.</p>
+<p>First, you are mistaking SQL for an RDBMS language.  It is not.  Anything SQL can&#8217;t possibly be relational, it is not powerful enough, it is way too complicated, it violates the basic rules of the relational model.</p>
+<p>Second, all business rules should be declared at the RDBMS level as integrity constraints.  Yes, all of them.  Read <a href="http://dbdebunk.com/books.html">Date&#8217;s writings</a> on that, ideally <a href="http://www.amazon.com/exec/obidos/ASIN/0321197844/databasede095-20?creative=327641&amp;camp=14573&amp;link_code=as1">An Introduction to Database Systems</a> but <a href="http://www.amazon.com/exec/obidos/ASIN/0201708507/databasede095-20?creative=327641&amp;camp=14573&amp;link_code=as1">What Not How</a> is a good introduction on the specific integrity constraints-as-business rules approach.</p>
+<p>Unfortunately, I am aware of only two RDBMS engines available nowadays: the proprietary, MS.Net-based, SQL-federated, NULLs-corrupted <a href="http://alphora.com./">Alphora</a> Dataphor, and the pure, free, immature, Java-based dbAppBuilder <a href="http://dbappbuilder.sf.net./Rel.html">Rel</a>.  Dataphor is outstanding in that one can derive most of the application directly from the relational model of the database, leaving only UI polish to finish it up.</p>
+<p>All that said, it is still possible to create an almost relational system on SQL, although with quite some grief.  And it is still better than procedural coding of business rules in the application, specially for large, shared databases.</p>
+      <p>
+			<small>comment at <a href="#comment-568" title="">08. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-588">
+			<p class="who"><cite>The real problem</cite>:</p>
+			<p>I don&#8217;t feel like covering every issue in why you will pay dearly for not properly maintaining meaning the database.  But consider, Structure and constraint provide meaning, otherwise the data is just noise&#8230;. that is what relational integrity is all about. </p>
+<p>Do you really think its coincidence that a) all values in a database are scalar, b) attributes are NAMED, and c)Keys are matched by VALUE and not by memory location.  I suggest you read about the death Navigational and Network data Models.</p>
+<p>But half this argument seems to come about because the rails ActiveRecord using name matching to derive data instead of the catalog.  Oh yeah, did i mention that the logical model of a proper RDBMS is self describing. You could really have all of those constraints and validation derived from the RDBMS, without adding it to your code.  Not only do you not have to code those constraints now, but you can also allow for the data to be accessed and used in more, meaningful ways (i.e. other clients of &#8220;your&#8221; database) without breaking your application.</p>
+<p>The programming side is getting there, with dynamic typing; the RDBMS side still needs to catch up on implementing the Relational Model as it had been described 30 years ago&#8230;. Views should be logically indistinguishable from tables, join speed needs to be seemless, Domains need a lot of improvement, and ditto for the Catalog. (though, that is no excuse for ActiveRecord to not use what it already offers).</p>
+      <p>
+			<small>comment at <a href="#comment-588" title="">11. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-593">
+			<p class="who"><cite><a href='http://jooto.com/blog/?p=3' rel='external ' title='63.247.68.77'>Ethical Software Alex Bunardzic</a></cite>:</p>
+			<p>[&#8230;] Not that long ago I was involved in a discussion revolving around software-imposed control. More pointedly, I wrote a little piece entitled Should Database Manage The Meaning?, and it created a burst of heated discussion over at the lesscode.org blog. I am now going to revisit one or two salient points presented throughout that discussion, as I feel they reveal the tacit underlying assumption about the role of software in our lives.      No Comments so far      Leave a comment Line and paragraph breaks automatic, e-mail address never displayed, HTML allowed: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strike&gt; &lt;strong&gt; [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-593" title="">11. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-607">
+			<p class="who"><cite><a href='http://blog.pigsaw.org/permalink/2005/10/18/212' rel='external ' title='195.50.105.15'>Pigsaw Blog</a></cite>:</p>
+			<p><strong>Domain driven design, and different kinds of databases</strong></p>
+<p>While reading Eric Evans&#8217; excellent Domain Driven Design, I was put in mind of one of Dave&#8217;s recent blog entries and what is being called The Great Application/Integration Database War of Attrition (by absolutely no-one).</p>
+<p>The debate has been spark&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-607" title="">18. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-681">
+			<p class="who"><cite><a href='http://neeraj.name/2005/10/25/use-stored-procedure-and-triggers-sparingly/' rel='external ' title='70.84.193.50'>A random pixel &raquo; Use stored procedure and triggers sparingly</a></cite>:</p>
+			<p>[&#8230;] A thought similar to this was expresses by DHH here. Also read&nbsp;the follow-up article on the same topic. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-681" title="">25. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-713">
+			<p class="who"><cite><a href='http://jooto.com/blog/?p=22' rel='external ' title='63.247.68.77'>Ethical Software by Alex Bunardzic &raquo; The Myth Of Data Integrity</a></cite>:</p>
+			<p>[&#8230;] David is, of course, right. I don&#8217;t have to go any further than point out the reaction to my posts on the same subject, of which the most notoriously acute was Should Database Manage The Meaning? As one of the programmers (Valentino Volonghi) who indulged in the ensuing discussion had pointed out, &#8220;This is totally nonsense to me.&#8221; [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-713" title="">01. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-714">
+			<p class="who"><cite>wjv</cite>:</p>
+			<p>Oh, lookee, this post made Fabian Pascal&#8217;s &#8220;to laugh or cry&#8221; links.  And to think that the smart money was on the original DHH post to be quoted there.</p>
+<p>Frankly, I&#8217;ve settled for laughing.</p>
+      <p>
+			<small>comment at <a href="#comment-714" title="">01. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-738">
+			<p class="who"><cite><a href='http://jooto.com/blog/?p=29' rel='external ' title='63.247.68.77'>Ethical Software by Alex Bunardzic &raquo; Confessions Of A Former Data Integrity Addict</a></cite>:</p>
+			<p>[&#8230;] But the confusion crept in regarding the boundaries of the applicability of this theory. I wrote about these boundaries in several previous articles (Should Database Manage The Meaning?, Shared Data and Mobile Data, and so on). Needless to say, such soul-searching writings provoked an avalanche of emotional outburst from the database crowd. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-738" title="">09. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-747">
+			<p class="who"><cite>Bob B</cite>:</p>
+			<p>Let&#8217;s compare databases to word processors the <em>right</em> way.  Database constraints map nicely to word processor formatting.  I can tell the word processor to use double spacing, to use the arial font, to use 14 pt, to underline something, etc etc.  I can apply it to as little or as much of the meaningful data as I want and the word processor makes sure those rules apply.      The same is true of database constraints.  This column is not null, that one is a number, this one must exist in that table.column.  </p>
+<p>I establish the rules of my data formatting and the database or word processor ensures that all data conforms to those rules.  The database is just an application at heart, one which is built to store, retrieve, recover, constrain, and manage gobs of data.</p>
+<p>On a side note, there is one huge advantage to a well-designed database.  It can change its access path based on the amount and type of data put into it.    It can switch between brute force (full table scan), indexed access (unique location and index scanning), and hashing.  Furthermore, the databases are created by tons of talented developers with a huge base of users testing.  Not only are the database owners testing it, but so are the database users.  There are few applications that can say they have had that many users test their system - EVER.</p>
+<p>Databases are not bit boxes.  While they do seem to serve that purpose, they are much more complex on the inside than is outwardly noticeable.  If developers do not understand what it is doing, why it is doing it, and how to take advantage of it, I would not want them to implement data management in <em>my</em> applications.</p>
+      <p>
+			<small>comment at <a href="#comment-747" title="">14. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-831">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>&#8220;Managing the meaning of the data&#8221; is a just a straw man! The developmer manages the meaning of the data by specifying constraints and FKs, the database simply ENFORCES those rules.</p>
+      <p>
+			<small>comment at <a href="#comment-831" title="">21. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-920">
+			<p class="who"><cite>Martin</cite>:</p>
+			<p>You are all talking about different apps hitting on your database, and that being the only problem with &#8220;application databases&#8221;.</p>
+<p>Now, what if you do load-balancing, and have several apps of the <em>same kind</em> hitting your database at the same time?</p>
+<p>you&#8217;ll need some central integrity checking in your database then.</p>
+<p>regards,</p>
+<p>Martin</p>
+      <p>
+			<small>comment at <a href="#comment-920" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1134">
+			<p class="who"><cite><a href='http://blogs.enginefour.com' rel='external ' title='216.150.210.34'>Shawn Oster</a></cite>:</p>
+			<p>I watch this debate ping-pong back and forth across time but one thing I don&#8217;t see a lot of is Real World situations.  I&#8217;ve worked with a lot of different databases and more often I&#8217;ve found contraints limiting rather than helpful, <em>especially</em> when dealing with multiple apps written in multiple languages accessing the same DB.</p>
+<p>I&#8217;ve seen address tables locked down because a bad schema design required a relationship to an account table.  A duplicate table had to be created for non-account addresses.</p>
+<p>I watched a 5 minute &#8220;I&#8217;ll just change that in the DB&#8221; turn into a 2 hour frustration session by the DB due to the mountain of RI constraints.</p>
+<p>I&#8217;ve spent hours trying to track down unclear error messages when I tried to delete a record from a table that had a RI because the DB abstraction layer I was using didn&#8217;t understand a new error code.</p>
+<p>I&#8217;ve been stuck twiddling my thumbs because the DBA was on vacation or was out sick that week and I needed a change made.</p>
+<p>I&#8217;ve gone drinking because I found out that there was no source control on a database&#8217;s stored procs and it was either drink or stab someone.</p>
+<p>I&#8217;ve watched programs do <em>no validation</em> in their apps or pages because they assumed the database was going to catch any errors.  You know, because the DBA said so.</p>
+<p>In many years and many companies of many sizes I&#8217;ve rarely if ever seen apps that were <em>less</em> stable when backed into databases that lacked RI.  I can&#8217;t ever remember a time I spent hours tracking down a bug due to invalid data in the database but I&#8217;ve wasted days and weeks trying to work around constraints.</p>
+<p>Milage varies but that&#8217;s what I&#8217;ve seen.</p>
+      <p>
+			<small>comment at <a href="#comment-1134" title="">02. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1140">
+			<p class="who"><cite><a href='http://blog.mademedia.co.uk/?p=6' rel='external ' title='195.10.232.137'>Madeblog &raquo; Blog Archive &raquo; ActiveRecord Angst&#8230; ReActivated.</a></cite>:</p>
+			<p>[&#8230;] It&#8217;s LAMP right? Not LAPP, LAOP, LASSP or LADP. Despite the accusations regularly levelled at MySQL, I think that&#8217;s what most of us use and if you believe in getting everything through your ORM then there&#8217;s a good argument that you really want your database to play dumb. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1140" title="">04. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-18380">
+			<p class="who"><cite><a href='http://madeblog.dev.mmnet.co.uk/?p=19' rel='external ' title='195.10.232.137'>Madeblog &raquo; ActiveRecord Angst&#8230; ReActivated.</a></cite>:</p>
+			<p>[&#8230;] It&#8217;s LAMP right? Not LAPP, LAOP, LASSP or LADP. Despite the accusations regularly levelled at MySQL, I think that&#8217;s what most of us use and if you believe in getting everything through your ORM then there&#8217;s a good argument that you really want your database to play dumb. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-18380" title="">08. November 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-19887">
+			<p class="who"><cite><a href='http://www.balanceonrails.com.br/articles/2006/12/05/david-hansson-e-opinionated-software' rel='external ' title='208.101.26.94'>Balance On Rails : David Hansson e Opinionated Software</a></cite>:</p>
+			<p>[&#8230;] Atualização: Alex Bunardzic tem uma excelente sequência entitulada Devem os Bancos de Dados Gerenciar o Significado? &#8211; fique ligado. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-19887" title="">05. December 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.674 seconds -->
+<!-- Cached page served by WP-Cache -->

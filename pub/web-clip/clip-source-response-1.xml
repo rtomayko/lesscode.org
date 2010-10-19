@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clip-source-response xmlns="http://www.lesscode.org/clip-source-response/v0p1" xmlns:clip="http://www.lesscode.org/clipboard/v0p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lesscode.org/clip-source-response/v0p1
+lesscode-org-clip-source-response-v0p1.xsd">
+	<status>ok</status>
+	<clipboard>
+		<clip:representation>
+			<!-- this is a domain-specific representation -->
+			<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+				<rdf:Description rdf:about="http://qqqfoo.com/staff/corky">
+					<vCard:FN> Corky Crystal </vCard:FN>
+					<vCard:N rdf:parseType="Resource">
+						<vCard:Family> Crystal </vCard:Family>
+						<vCard:Given>  Corky </vCard:Given>
+					</vCard:N>
+					<vCard:EMAIL rdf:parseType="Resource">
+						<rdf:value> corky@qqqfoo.com </rdf:value>
+						<rdf:type rdf:resource="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+					</vCard:EMAIL>
+					<vCard:URL rdf:resource="http://qqqfoo.com/staff/corky-home.html"/>
+					<vCard:PHOTO vCard:ENCODING="b" vCard:TYPE="image/jpeg">
+        MIICajCCAdOgAwIBAgICBEUwDQEEBQAwdzELMAkGA1UEBhMCVVMxLDA
+        qBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25z.....W992WW329
+      </vCard:PHOTO>
+				</rdf:Description>
+			</rdf:RDF>
+		</clip:representation>
+		<!-- an XHTML representation could go here -->
+		<clip:representation>
+			<!-- text only representation -->
+			<clip:any-simple-content>
+		Corky Crystal
+		mailto:corky@qqqfoo.com
+		http://qqqfoo.com/staff/corky-home.html
+		</clip:any-simple-content>
+		</clip:representation>
+	</clipboard>
+</clip-source-response>

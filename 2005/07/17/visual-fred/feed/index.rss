@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Visual Fred?</title>
+	<link>http://lesscode.org/2005/07/17/visual-fred/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:03 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Jeff Shell</title>
+		<link>http://lesscode.org/2005/07/17/visual-fred/#comment-94</link>
+		<pubDate>Tue, 19 Jul 2005 15:07:52 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/visual-fred/#comment-94</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;(On the statement print &quot;42 monkeys&quot;+&quot;1 snake&quot;) BTW, both 
+  perl and Python get this wrong. Perl gives 43 and Python 
+  gives &quot;42 monkeys1 snake&quot;, when the answer is clearly &quot;41 
+  monkeys and 1 fat snake&quot;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.zopezen.org/Members/zopista/Quotes/10010479891&quot; rel=&quot;nofollow&quot;&gt;Jim Fulton&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I always liked this story.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>(On the statement print &#8220;42 monkeys&#8221;+&#8221;1 snake&#8221;) BTW, both<br />
+  perl and Python get this wrong. Perl gives 43 and Python<br />
+  gives &#8220;42 monkeys1 snake&#8221;, when the answer is clearly &#8220;41<br />
+  monkeys and 1 fat snake&#8221;.</p>
+<p><a href="http://www.zopezen.org/Members/zopista/Quotes/10010479891">Jim Fulton</a></p>
+</blockquote>
+<p>I always liked this story.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.235 seconds -->
+<!-- Cached page served by WP-Cache -->

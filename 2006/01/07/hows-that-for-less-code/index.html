@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  How’s that for less code?</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/12/30/maintainable-programmers/">Maintainable Programmers</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2006/01/08/ruby-on-rails-is-like-red-wine/">Ruby On Rails Is Like Red Wine</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-123"><a href="http://lesscode.org/2006/01/07/hows-that-for-less-code/" rel="bookmark" title="Permanent Link: How’s that for less code?">How’s that for less code?</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://plasmasturm.org/">Aristotle Pagaltzis</a>
+      under <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a>,  <a href="http://lesscode.org/category/languages/php/" title="View all posts in PHP" rel="category tag">PHP</a>,  <a href="http://lesscode.org/category/languages/java/" title="View all posts in Java" rel="category tag">Java</a> 
+      on 07. January 2006</small>
+
+			<div class="entrytext">
+				<p><cite>Bob Ippolito</cite>, speaking about the upcoming <a href="http://undefined.org/python/#flashticle">flashticle</a>, offers <a href="http://bob.pythonmac.org/archives/2006/01/06/in-development-flashticle/" title="Bob Ippolito: In development: flashticle">proof in the pudding</a> for <a href="http://lesscode.org/2005/12/30/maintainable-programmers/" title="Maintainable Programmers">things I wrote a week ago</a>:</p>
+
+<blockquote cite="http://bob.pythonmac.org/archives/2006/01/06/in-development-flashticle/">
+
+<p>This is a total of a whopping 117 lines of very liberally spaced Python code that defines all three database tables and fully implements every feature of both sample applications.</p>
+
+<p>The <abbr title="PHP: Hypertext Processor">PHP</abbr> version of the pizzaService backend […] is 138 lines of code, is one big security flaw (doesn’t escape <abbr title="Structured Query Language">SQL</abbr> properly, big surprise), is My<abbr title="Structured Query Language">SQL</abbr> specific, and it doesn’t include the <abbr title="Database">DB</abbr> schema and can’t create any tables for you (thank you <code>tg-admin sql create</code>).</p>
+
+<p>The Java version of the BirthdayOrganizer backend, which I won’t even bother linking to, is well… ginormous. 246 lines of <abbr title="Extensible Markup Language">XML</abbr> configuration sludge in 5 files, 29 lines of <abbr title="Structured Query Language">SQL</abbr> schema in 1 file, and 3004 lines of Java code in 45 files. Holy crap. If you add that all up, the <em>trivial BirthdayOrganizer example</em> is only a hair shorter than <em>all of flashticle</em>! And the BirthdayOrganizer example builds on top of 15 Java dependencies and requires a <abbr title="Java 2 Enterprise Edition">J2EE</abbr> server plus ant. Friends don’t let friends code Java. Oh, and it’s also My<abbr title="Structured Query Language">SQL</abbr> specific, but you better be damn well sure that there’s a stub implementation you can subclass and an <abbr title="Extensible Markup Language">XML</abbr> file you can mangle in order to support something else if you so choose to write that 200 lines of code to support a single three column table database.</p>
+
+</blockquote>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2006/01/07/hows-that-for-less-code/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													<a href="http://lesscode.org/2006/01/07/hows-that-for-less-code/trackback/">Trackback <acronym title="Uniform Resource Identifier">URI</acronym></a>
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">8 Responses to &#8220;How’s that for less code?&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-924">
+			<p class="who"><cite>Mr Coffee</cite>:</p>
+			<p>I rewrote the Java version. It is now just a little under 100 lines of code. This was achieved by using Spring, a more modern framework. Does that make Java superior again? Whee.</p>
+<p>Coffeetime.</p>
+      <p>
+			<small>comment at <a href="#comment-924" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-925">
+			<p class="who"><cite><a href='http://bob.pythonmac.org/' rel='external ' title='216.27.181.31'>Bob Ippolito</a></cite>:</p>
+			<p>Does that include configuration and database schema?  Does it support several different RDBMS?  Does it also do the PizzaService example?  Does it have all of the same exception handling sludge?  Does it wrap at 79 columns?  ;)</p>
+<p>The Python version is about 85 lines for all that when using long lines and without all the newlines introduced specifically for readability&#8217;s sake.</p>
+      <p>
+			<small>comment at <a href="#comment-925" title="">07. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-926">
+			<p class="who"><cite><a href='http://fucoder.com/' rel='external ' title='220.233.28.239'>Scott Yang</a></cite>:</p>
+			<p>It is not comparing languages like Python, PHP and Java &#8212; it is actually comparing frameworks. It is comparing TurboGears, a Python framework that is especially designed for CRUD-type web applications using MVC and ORM, with a Java app implemented on top of J2EE, which always manage to (1) confuse the programmers (2) flood the managers with buzzwords.</p>
+<p>(Sorry I did use J2EE in my previous job, and understood the complexity also gives it lots of flexibility)</p>
+<p>My point is, your 117 lines of Python code simply won&#8217;t work without TurboGears. TG basically takes care all the complexity so that you can write &#8220;less code&#8221;, but as Mr Coffee has suggested you can also write less code with appropriate framework in Java. It doesn&#8217;t include database schema either &#8212; it includes an object relation mapping that doesn&#8217;t work well if another application written in another language also needs to access the same database.</p>
+<p>And the PHP example? It does everything (DB connectivity, SQL query, etc) WITHOUT a framework to build on.</p>
+<p>So IMHO, the comparison is flawed.</p>
+      <p>
+			<small>comment at <a href="#comment-926" title="">08. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-936">
+			<p class="who"><cite><a href='http://bob.pythonmac.org/' rel='external ' title='216.27.181.31'>Bob Ippolito</a></cite>:</p>
+			<p>It&#8217;s not flawed &#8212; the PHP example is using AMFPHP, which is a framework for developing flash remoting services.  It&#8217;s not &#8220;Just PHP&#8221;, there&#8217;s a large body of code behind it.</p>
+<p>Comparing PHP-the-language to any other language is silly anyway, because PHP includes the kitchen sink and the house to go with it as far as built-in functions and extensions go.</p>
+<p>PHP also does a very bad job at choosing how to expose what it offers.  It makes it hard, or at least non-obvious, to write correct code.  EVERY SINGLE DATABASE QUERY in the cited example is susceptible to SQL injection attack, where people simply don&#8217;t write shit code like that in environments that offer a sane means of SQL quoting.  Since everything else is already there, it encourages people to just use the raw MySQL API calls rather than bringing in an abstraction.  That&#8217;s also stupid because it takes 5x more code to do all the quoting by hand.  People are too lazy to bother with that, so they develop big festering security holes like this one.  Even worse, this is example code that people will cut and paste into their own applications.  PHP programming is a disease.</p>
+<p>Anyhow, TG is actually doing <em>very</em> little in this case besides providing a buzzword and easy means of getting up and running.  TG is serving as shim for CherryPy to make HTTP requests transactional with the database, and as a script to create the SQL tables.  It also ensures that SQLObject and CherryPy are known to be installed.</p>
+<p>It <em>could&#8217;ve</em> been written as raw Python with BaseHTTPServer (or CGI) and the minimum DB-API wrapper in the same amount of code, but that&#8217;s stupid and it&#8217;s not the point of lesscode.  Abstractions that work are good.</p>
+      <p>
+			<small>comment at <a href="#comment-936" title="">08. January 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1135">
+			<p class="who"><cite><a href='http://www.5etdemi.com/blog' rel='external ' title='70.81.37.129'>Patrick Mineault</a></cite>:</p>
+			<p>The current version of the <a href="http://www.amfphp.org/examples/pizzaservice/pizzaService.phps">pizza service</a> on the amfphp website includes the methodTable as an external file which reduces the code to 113 lines. The methodTable file itself is generated by the service browser so I would hardly count that towards the total. As for the security flaw, it has been fixed by proper escaping. I don&#8217;t think Justin and the rest of the gang ever meant for the pizzaService to be a model in implementation. It was originally created as a simple showcase for a conference talk, where the quality of the code didn&#8217;t matter all that much.</p>
+<p>Now as for your claim that &#8216;amfphp is a framework&#8217;, I want to stress that this is false. Amfphp is, and will always be, a Remoting gateway, that exposes vanilla php classes to the outside, enforcing security. One of amfphp&#8217;s design goals was that you could integrate it with whatever you&#8217;re currently using, so you don&#8217;t have to learn to code again. Most amfphp examples onlines use plain mysql, because that&#8217;s what a lot of people use in PHP, and everyone&#8217;s familiar with these functions. Nothing is stopping you from using any of the other databases that amfphp supports which there days includes ADO, FrontBase, Informix, ms-sql, Oracle, generic odbc, PDO, PEAR::DB, Postgres and SQLite. There&#8217;s been nice reports on using it with Creole also.</p>
+<p>Again, I want to stress, amfphp <em>is not a framework</em>. The fact that it can be <a href="http://cakeforge.org/projects/cakeamfphp/">used as a module</a> in Cake (a Rails clone for PHP) proves it. Note that amfphp&#8217;s approach is not universal. People who wanted a cleaner API and a more &#8216;frameworky&#8217; approach created <a href="http://www.osflash.org/sabreamf">SabreAMF</a>. I talked to the developer to get him to work in amfphp instead and it turned out that our goals were irreconcilable. This will allow amfphp-enabled classes (that is, classes that set a methodTable) to be used as JSON services for JavaScript, or for XML-RPC, or to generate SOAP services, etc.</p>
+      <p>
+			<small>comment at <a href="#comment-1135" title="">03. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1386">
+			<p class="who"><cite><a href='http://kapustein.com/blog/?p=218' rel='external ' title='216.227.217.128'>The Cave &raquo; Blog Archive &raquo; Less is More</a></cite>:</p>
+			<p>[&#8230;] &#8216;Java&#8217; (language, libraries, community&#8230;) need to fix the mess they&#8217;ve created over the past decade: This is a total of a whopping 117 lines of very liberally spaced Python code that defines all three database tables and fully implements every feature of both sample applications. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1386" title="">26. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-19373">
+			<p class="who"><cite>Cliff Wells</cite>:</p>
+			<p>It really irks me when PHP programmers explain away crappy code examples by saying &#8220;it was just an example&#8221; or &#8220;I was just testing&#8221;.  When you consider that manually escaping code (as is so often seen) is incorrect, insecure and TAKES TWICE AS MUCH CODE as doing it right (using prepare/execute) I have to call bullshit.  Someone is either lying or ignorant or both.</p>
+<p>There are tons of beautiful PHP apps out there, most of them plagued with serious security holes because most programmers learn from example and most PHP examples to be found on the net are badly flawed. </p>
+<p>I tend to agree that it&#8217;s possible to write crappy code in any language, but PHP seems to have more than its fair share.  Some people claim this is because it&#8217;s so popular and I&#8217;m sure that&#8217;s part of it, but I&#8217;ll assert that it has more security holes <em>per deployment</em> than any other language.  Worse, most of them are SQL injection and remote code execution exploits.<br />
+I attribute this partially to poor ideas in PHP&#8217;s implementation (certain settings in php.ini were patently bad ideas), but mostly I attribute it to poor examples for others to learn from.  If you don&#8217;t want to teach well, then don&#8217;t teach.  If you make a mistake, don&#8217;t make excuses, fix it.</p>
+      <p>
+			<small>comment at <a href="#comment-19373" title="">25. November 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-19388">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='87.79.236.202'>Aristotle Pagaltzis</a></cite>:</p>
+			<p>Cliff: <a href="http://plasmasturm.org/log/393/" title="In which I write about PHP for the first and the last time" rel="">I think the language itself <em>is</em> to blame</a>.</p>
+      <p>
+			<small>comment at <a href="#comment-19388" title="">26. November 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://lesscode.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+  <small>
+    <strong>Note:</strong> None of this information is required but 
+    leaving a Name and URL is much appreciated. You can also <a href="/wp-register.php">register</a>
+    to have this stuff remembered.
+  </small>
+</p>
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<div id="ajax-comment-preview" style="padding: .4em 0; color: #666; margin-top: 1em; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">Your comment can be previewed here.</div>
+
+<p>
+  <br />
+  <small>
+    <strong><a href="http://daringfireball.net/projects/markdown/syntax"
+       title="Markdown Syntax Reference">Markdown</a>:</strong> 
+    use the force, Luke.
+  </small>
+</p>
+
+<p>
+  <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+</p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="123" />
+</p>
+<input name="preview" type="button" id="preview" tabindex="6" value="Preview" /><div id="ajax-comment-preview"></div>
+</form>
+
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.332 seconds -->
+<!-- Cached page served by WP-Cache -->

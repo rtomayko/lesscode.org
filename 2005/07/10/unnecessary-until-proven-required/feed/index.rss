@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Unnecessary Until Proven Required</title>
+	<link>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:16 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Motherhood and Apple Pie</title>
+		<link>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-22815</link>
+		<pubDate>Fri, 12 Jan 2007 02:31:57 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-22815</guid>
+					<description>&lt;p&gt;[...] So I would like to impress upon you that the languages that dominate the web are not the way they are because we lack the ability to build more complex, sophisticated, flashy tools and languages, they are that way because we assume extra complexity is unnecessary until proven required and we see very little evidence to support the inclusion of the complexities that have been introduced into &amp;#8220;enterprise class&amp;#8221; software over the past decade. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] So I would like to impress upon you that the languages that dominate the web are not the way they are because we lack the ability to build more complex, sophisticated, flashy tools and languages, they are that way because we assume extra complexity is unnecessary until proven required and we see very little evidence to support the inclusion of the complexities that have been introduced into &#8220;enterprise class&#8221; software over the past decade. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Маниакальный Веблог &#187; Хранение объектов не в БД</title>
+		<link>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-202</link>
+		<pubDate>Sat, 13 Aug 2005 19:47:28 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-202</guid>
+					<description>&lt;p&gt;[...] В общем и целом, я совсем не уверен, что этот подход обязательно себя оправдает. Это именно эксперимент. Но вместе с тем, сама идея мне нравится. Она хорошо вписывается в концепцию новых методов проектирования, когда какая-то структура или функциональность считается &amp;#8220;ненужной, пока не доказана ее неоходимость&amp;#8221;, а не &amp;#8220;необходимой, пока не доказана ее ненужность&amp;#8221;. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] В общем и целом, я совсем не уверен, что этот подход обязательно себя оправдает. Это именно эксперимент. Но вместе с тем, сама идея мне нравится. Она хорошо вписывается в концепцию новых методов проектирования, когда какая-то структура или функциональность считается &#8220;ненужной, пока не доказана ее неоходимость&#8221;, а не &#8220;необходимой, пока не доказана ее ненужность&#8221;. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: james governor</title>
+		<link>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-131</link>
+		<pubDate>Wed, 27 Jul 2005 11:29:38 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-131</guid>
+					<description>&lt;p&gt;in philosophy there is a related concept called Occam's Razor.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Occams_razor&quot;&gt;http://en.wikipedia.org/wiki/Occams_razor&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>in philosophy there is a related concept called Occam&#8217;s Razor.</p>
+<p><a href="http://en.wikipedia.org/wiki/Occams_razor">http://en.wikipedia.org/wiki/Occams_razor</a></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: How to slay this cow? [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-33</link>
+		<pubDate>Tue, 12 Jul 2005 13:03:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/10/unnecessary-until-proven-required/#comment-33</guid>
+					<description>&lt;p&gt;[...] Anyway, here&amp;#8217;s something IBM/Zend or other members of our community toating around a fair amount of spare cash and resources could do to help the poor hippies out in gaining a bit of acceptance: slay this cow once and for all, formally, by setting up an environment to simulate the kinds of &amp;#8220;enterprise class&amp;#8221; loads we&amp;#8217;re seeing in even the most demanding environments. You can use David&amp;#8217;s basic setup or perhaps this one from circa 2000. If, upon being weighed we&amp;#8217;re found wanting, we&amp;#8217;ll find a way to fix it like we&amp;#8217;ve been doing forever. But we would feel more comfortable if the burden of proof was placed appropriately. Our repeated attempts to show the scaling capabilities of LAMP/friends seem destined to be repeatedly deflected by the Enterprise Class Distortion Field. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Anyway, here&#8217;s something IBM/Zend or other members of our community toating around a fair amount of spare cash and resources could do to help the poor hippies out in gaining a bit of acceptance: slay this cow once and for all, formally, by setting up an environment to simulate the kinds of &#8220;enterprise class&#8221; loads we&#8217;re seeing in even the most demanding environments. You can use David&#8217;s basic setup or perhaps this one from circa 2000. If, upon being weighed we&#8217;re found wanting, we&#8217;ll find a way to fix it like we&#8217;ve been doing forever. But we would feel more comfortable if the burden of proof was placed appropriately. Our repeated attempts to show the scaling capabilities of LAMP/friends seem destined to be repeatedly deflected by the Enterprise Class Distortion Field. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.399 seconds -->
+<!-- Cached page served by WP-Cache -->

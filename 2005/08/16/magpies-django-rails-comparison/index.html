@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Magpie&#8217;s Django / Rails comparison</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/08/16/soaking-in-them/">You&#8217;re soaking in them</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/08/16/disposable-software/">Disposable Software</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-62"><a href="http://lesscode.org/2005/08/16/magpies-django-rails-comparison/" rel="bookmark" title="Permanent Link: Magpie&#8217;s Django / Rails comparison">Magpie&#8217;s Django / Rails comparison</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/rails-vs-django/" title="View all posts in Rails v. Django" rel="category tag">Rails v. Django</a> 
+      on 16. August 2005</small>
+
+			<div class="entrytext">
+				<p>Sam Newman has a <a href="http://www.magpiebrain.com/archives/2005/08/14/rails_and_django" title="A comparison of Django with Rails">fairly thorough comparison</a> of <a href="http://www.djangoproject.com/" title="Django - The web framework for perfectionists with deadlines">Django</a> and
+<a href="http://www.rubyonrails.com/" title="Ruby on Rails">Rails</a> over at magpiebrain.com. He compares the following traits of
+the frameworks: language, requirements and installation, deployment
+options, caching, project setup, adding models, interaction with the
+database, projects and applications, controllers and URLs, templating
+options, and administration / user management. </p>
+
+<p>It&#8217;s a nice comparison, although the concluding section on choosing a
+framework seems to be getting some flak:</p>
+
+<blockquote>
+  <p>If you are developing a simple (in a domain model sense) application
+  where you want to use Ajax to deliver a great UI, Rails is probably
+  for you. If however you want to develop an entire site with different
+  types of applications within it - then Django’s plugable applications
+  and general approach might be what you’re after. Equally, the better
+  user and administration side of Django favours portal style
+  applications – this is something you’ll have to do yourself if you
+  want to use Rails.</p>
+</blockquote>
+
+<p>Rails is, of course, not limited to AJAX-heavy apps with simple domain
+models. I&#8217;m assuming Sam didn&#8217;t mean to give that impression but was
+just trying to wrap up a long article quickly. Perhaps he&#8217;ll clarify a
+bit.</p>
+
+<p>Django committer, Jacob Kaplan-Moss, followed up with <a href="http://www.jacobian.org/2005/aug/16/django_and_rails/">some thoughts on
+the post</a>.</p>
+
+<p>As a side note, I <a href="http://lesscode.org/2005/07/17/rails-django-compared/" title="Rails and Django Compared">had planned to do a series around this</a> but I
+promised <a href="http://www.holovaty.com/">Adrian</a> and Jacob I&#8217;d hold off until
+Django was <em>launched-launched</em>, which I assumed meant 1.0 at the time
+but that seems a ways off now&#8230; I&#8217;m not sure Django can get any more
+launched at this point so I might have to revisit that promise as I&#8217;m
+anxious to get moving on this.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/08/16/magpies-django-rails-comparison/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													<a href="http://lesscode.org/2005/08/16/magpies-django-rails-comparison/trackback/">Trackback <acronym title="Uniform Resource Identifier">URI</acronym></a>
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">2 Responses to &#8220;Magpie&#8217;s Django / Rails comparison&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-204">
+			<p class="who"><cite><a href='http://www.magpiebrain.com/' rel='external ' title='62.129.121.32'>Sam Newman</a></cite>:</p>
+			<blockquote>
+<p>Rails is, of course, not limited to AJAX-heavy apps with simple<br />
+  domain models. I’m assuming Sam didn’t mean to give that impression<br />
+  but was just trying to wrap up a long article quickly. Perhaps<br />
+  he’ll clarify a bit.</p>
+</blockquote>
+<p>Argh! You know me too well. Yes, what I really wanted to  say is that both Django and Rails have their sweet spots, they overlap to an extent, and that if you&#8217;re not sold on either Ruby or Python yet you should pick the one closest to your sweetspot. Doing a Backpack-style web 2.0 application? Go Rails. Doing a more passive large-scale portal-type site? Go Django. What to make a web 2.0 app in Django? <a href="http://www.chicagocrime.org/" title="Chicargo crime.org">Go ahead</a> - although Rails might give you more for it out of the box. Want to do a big portal-style site with Rails? I&#8217;m sure that&#8217;s possible too - Django just might like it a bit easier.</p>
+      <p>
+			<small>comment at <a href="#comment-204" title="">16. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-252">
+			<p class="who"><cite>Jeff Wood</cite>:</p>
+			<p>Uh? I still don&#8217;t get it&#8230; Everybody compares everything to Rails &#8230; Rails is great for a limited space &#8230; People need to look at Nitro ( http://nitrohq.com ) I didn&#8217;t see anything in Django that Nitro doesn&#8217;t have, and comes with Ruby syntax.</p>
+      <p>
+			<small>comment at <a href="#comment-252" title="">20. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://lesscode.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+  <small>
+    <strong>Note:</strong> None of this information is required but 
+    leaving a Name and URL is much appreciated. You can also <a href="/wp-register.php">register</a>
+    to have this stuff remembered.
+  </small>
+</p>
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<div id="ajax-comment-preview" style="padding: .4em 0; color: #666; margin-top: 1em; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">Your comment can be previewed here.</div>
+
+<p>
+  <br />
+  <small>
+    <strong><a href="http://daringfireball.net/projects/markdown/syntax"
+       title="Markdown Syntax Reference">Markdown</a>:</strong> 
+    use the force, Luke.
+  </small>
+</p>
+
+<p>
+  <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+</p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="62" />
+</p>
+<input name="preview" type="button" id="preview" tabindex="6" value="Preview" /><div id="ajax-comment-preview"></div>
+</form>
+
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.299 seconds -->
+<!-- Cached page served by WP-Cache -->

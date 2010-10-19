@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: O&#8217;Reilly CodeZoo Language Requests</title>
+	<link>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:54:54 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Bob Ippolito</title>
+		<link>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-170</link>
+		<pubDate>Sat, 06 Aug 2005 09:12:07 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-170</guid>
+					<description>&lt;p&gt;Doesn't PHP already have PEAR as a central component repository?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Doesn&#8217;t PHP already have PEAR as a central component repository?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-164</link>
+		<pubDate>Fri, 05 Aug 2005 05:21:20 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-164</guid>
+					<description>&lt;p&gt;Robert: perhaps I'm being overly black and white. My experience has been that MS oriented people are less likely to give dynamic languages a fair look since most of them come with UNIXish idioms that maybe don't fit all that well in the traditional MS product lineup. My assumption has been that these inconsistencies are mischaracterized as lack-of-quality.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I worked backwards from that mindset and further assumed that the high request rate for dynamic languages might be due partially to an over-representation of peoples with heavier *nix backgrounds frequenting O'Reilly.&lt;/p&gt;
+
+&lt;p&gt;But yea, assumptions based on assumptions based on what is perhaps a simplistic way of looking at how developers often use Windows and *nix systems.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Robert: perhaps I&#8217;m being overly black and white. My experience has been that MS oriented people are less likely to give dynamic languages a fair look since most of them come with UNIXish idioms that maybe don&#8217;t fit all that well in the traditional MS product lineup. My assumption has been that these inconsistencies are mischaracterized as lack-of-quality.</p>
+<p>Anyway, I worked backwards from that mindset and further assumed that the high request rate for dynamic languages might be due partially to an over-representation of peoples with heavier *nix backgrounds frequenting O&#8217;Reilly.</p>
+<p>But yea, assumptions based on assumptions based on what is perhaps a simplistic way of looking at how developers often use Windows and *nix systems.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Marc Hedlund</title>
+		<link>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-163</link>
+		<pubDate>Fri, 05 Aug 2005 04:28:26 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-163</guid>
+					<description>&lt;p&gt;Ryan,&lt;/p&gt;
+
+&lt;p&gt;Thanks for the comments.  I think one other filter to consider for this data is the availability of a central component repository for that language.  Both Perl and Ruby have a site that developers clearly know to use (CPAN and RubyForge, respectively), while in the case of Python there's disagreement (CheeseShop, Parnassus, etc.).  My sense is that the Pythonistas were more vocal in part because their community wanted what we're offering more.  PHP seems to be the same way.  Likewise, VB is very well served by component repositories, and we received almost no requests for it.&lt;/p&gt;
+
+&lt;p&gt;I do think the Microsoft languages in general received fewer requests than I would have expected.  Particularly, I would have expected C# requests to be a lot higher.  Especially since the .Net component model is so well designed, I'd have thought there would be more interest.  I'm not sure what the explanation for that is.&lt;/p&gt;
+
+&lt;p&gt;Thanks again for the comments.&lt;/p&gt;
+
+&lt;p&gt;Marc Hedlund
+O'Reilly&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Ryan,</p>
+<p>Thanks for the comments.  I think one other filter to consider for this data is the availability of a central component repository for that language.  Both Perl and Ruby have a site that developers clearly know to use (CPAN and RubyForge, respectively), while in the case of Python there&#8217;s disagreement (CheeseShop, Parnassus, etc.).  My sense is that the Pythonistas were more vocal in part because their community wanted what we&#8217;re offering more.  PHP seems to be the same way.  Likewise, VB is very well served by component repositories, and we received almost no requests for it.</p>
+<p>I do think the Microsoft languages in general received fewer requests than I would have expected.  Particularly, I would have expected C# requests to be a lot higher.  Especially since the .Net component model is so well designed, I&#8217;d have thought there would be more interest.  I&#8217;m not sure what the explanation for that is.</p>
+<p>Thanks again for the comments.</p>
+<p>Marc Hedlund<br />
+O&#8217;Reilly</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Robert Sayre</title>
+		<link>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-162</link>
+		<pubDate>Fri, 05 Aug 2005 04:13:58 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/04/code-zoo-language-breakdown/#comment-162</guid>
+					<description>&lt;p&gt;I'm interested in this set of people you call &quot;Developers with a web/UNIXy background&quot;. I occasionally work with some very MS-oriented people. They tend to use Cygwin.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;m interested in this set of people you call &#8220;Developers with a web/UNIXy background&#8221;. I occasionally work with some very MS-oriented people. They tend to use Cygwin.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.281 seconds -->

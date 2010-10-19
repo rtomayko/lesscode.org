@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Useful and Useless REST</title>
+	<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:03 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Paul James</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1376</link>
+		<pubDate>Sat, 25 Mar 2006 09:56:50 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1376</guid>
+					<description>&lt;p&gt;&lt;em&gt;Ethan:&lt;/em&gt; You don't need new verbs to manipulate multiple resources at once, you just need another resource that represents all the resources you want to manipulate together and to then manipulate that with your existing verbs.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><em>Ethan:</em> You don&#8217;t need new verbs to manipulate multiple resources at once, you just need another resource that represents all the resources you want to manipulate together and to then manipulate that with your existing verbs.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ethan Fremen</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1371</link>
+		<pubDate>Thu, 23 Mar 2006 22:30:04 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1371</guid>
+					<description>&lt;p&gt;The main way in which the additional verbs are really helpful in an application is whenever you want to manipulate multiple resources at once. Of course, in most cases where you're doing that, you're using even more of those 'useless' verbs, like MKCOL and PROPFIND etc.&lt;/p&gt;
+
+&lt;p&gt;To me it's like you're arguing that the only methods anyone ever needs on a class are gettr and settr methods.&lt;/p&gt;
+
+&lt;p&gt;It is mostly true that the prettiness of the URLs is only germane to human memory, but sometimes that is quite relevant to your application.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>The main way in which the additional verbs are really helpful in an application is whenever you want to manipulate multiple resources at once. Of course, in most cases where you&#8217;re doing that, you&#8217;re using even more of those &#8216;useless&#8217; verbs, like MKCOL and PROPFIND etc.</p>
+<p>To me it&#8217;s like you&#8217;re arguing that the only methods anyone ever needs on a class are gettr and settr methods.</p>
+<p>It is mostly true that the prettiness of the URLs is only germane to human memory, but sometimes that is quite relevant to your application.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Robert Sayre</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1355</link>
+		<pubDate>Wed, 22 Mar 2006 19:29:54 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1355</guid>
+					<description>&lt;p&gt;&quot;the result of people who just can't help but make architecture&quot;&lt;/p&gt;
+
+&lt;p&gt;Hmm. Maybe that's another example of the type of stuff that is a little too trollish. If we can piss each other off with that stuff, imagine how a C# developer who worked hard some SOAP thing must feel reading this site. &lt;/p&gt;
+
+&lt;p&gt;I guess it depends on whether we want people to adopt REST. If we want to reserve a space to feel smug and superior, it seems like we're doing a great job.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;the result of people who just can&#8217;t help but make architecture&#8221;</p>
+<p>Hmm. Maybe that&#8217;s another example of the type of stuff that is a little too trollish. If we can piss each other off with that stuff, imagine how a C# developer who worked hard some SOAP thing must feel reading this site. </p>
+<p>I guess it depends on whether we want people to adopt REST. If we want to reserve a space to feel smug and superior, it seems like we&#8217;re doing a great job.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mark Baker</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1352</link>
+		<pubDate>Wed, 22 Mar 2006 16:51:37 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1352</guid>
+					<description>&lt;p&gt;I just didn't know where to start, Ryan.&lt;/p&gt;
+
+&lt;p&gt;I also didn't appreciate the characteriziation of my work as the &quot;result of people who just can’t help but make architecture&quot;, which motivated the terse (and, admittedly, unhelpful) response.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I just didn&#8217;t know where to start, Ryan.</p>
+<p>I also didn&#8217;t appreciate the characteriziation of my work as the &#8220;result of people who just can’t help but make architecture&#8221;, which motivated the terse (and, admittedly, unhelpful) response.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mark Nottingham</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1351</link>
+		<pubDate>Wed, 22 Mar 2006 16:14:22 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1351</guid>
+					<description>&lt;p&gt;Ian,&lt;/p&gt;
+
+&lt;p&gt;I've seen the same kinds of discussions (focusing on aesthetics more than function), and have similar concerns; it's a very easy trap to fall into. Howeer, I draw a different conclusion. As I said, some of the benefits of focusing on these apparently non-productive parts of REST is that they make it more likely that you'll trip over the productive parts (e.g., caching). &lt;/p&gt;
+
+&lt;p&gt;PUT and DELETE, for example, give you a cleaner design if you need those semantics. While you could stuff them inside POST, you'd need to then find a way to dispatch and differentiate them; probably in the URI. And then, you wouldn't get the benefits of invalidation in caches.&lt;/p&gt;
+
+&lt;p&gt;Part of what I'm doing at Yahoo is documenting best practices for REST. Engineers there are smart, and will immediately ask what the benefit of a particular recommendation is, calling BS if there isn't one. So, I have to justify every recommendation with tangible benefits. I'm still in-progress, but I hope to report some of the results when they're more baked.&lt;/p&gt;
+
+&lt;p&gt;Ryan,&lt;/p&gt;
+
+&lt;p&gt;I agree with much of what you say, but how does Squid take advantage of PUT and DELETE today? I don't think it retries them (taking advantage of idempotence). Also, there's some debate of the idempotence of PUT, because WebDAV allows it to have side effects (creating a new revision). I believe DELETE can have side effects as well.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Ian,</p>
+<p>I&#8217;ve seen the same kinds of discussions (focusing on aesthetics more than function), and have similar concerns; it&#8217;s a very easy trap to fall into. Howeer, I draw a different conclusion. As I said, some of the benefits of focusing on these apparently non-productive parts of REST is that they make it more likely that you&#8217;ll trip over the productive parts (e.g., caching). </p>
+<p>PUT and DELETE, for example, give you a cleaner design if you need those semantics. While you could stuff them inside POST, you&#8217;d need to then find a way to dispatch and differentiate them; probably in the URI. And then, you wouldn&#8217;t get the benefits of invalidation in caches.</p>
+<p>Part of what I&#8217;m doing at Yahoo is documenting best practices for REST. Engineers there are smart, and will immediately ask what the benefit of a particular recommendation is, calling BS if there isn&#8217;t one. So, I have to justify every recommendation with tangible benefits. I&#8217;m still in-progress, but I hope to report some of the results when they&#8217;re more baked.</p>
+<p>Ryan,</p>
+<p>I agree with much of what you say, but how does Squid take advantage of PUT and DELETE today? I don&#8217;t think it retries them (taking advantage of idempotence). Also, there&#8217;s some debate of the idempotence of PUT, because WebDAV allows it to have side effects (creating a new revision). I believe DELETE can have side effects as well.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1344</link>
+		<pubDate>Wed, 22 Mar 2006 08:22:01 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1344</guid>
+					<description>&lt;p&gt;How does that help, Mark? What, all of a sudden you don't feel like talking?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GET actually means something to intermediaries. POST, PUT, and DELETE only really mean something to humans.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That's not really true. &lt;a href=&quot;http://www.squid-cache.org/&quot; rel=&quot;nofollow&quot;&gt;Squid&lt;/a&gt;, and I believe most other caching proxies have an explicit understanding of each of these verbs. The semantics for each are rigidly defined and are all very different. PUT is not POST and POST is not DELETE. The descriptions of each verb in RFC 2616 are fairly short and straight-forward for the most part.&lt;/p&gt;
+
+&lt;p&gt;PUT and DELETE are idempotent and POST isn't. PUT and DELETE each say something specific about the resource they modify and clients and intermediaries can make assumptions about the resource they PUT/DELETE to once the response is complete. When an APP client PUTs an entry it can then make assumptions (more specific assumptions than POST) about that resource's state after the request. For a client that stores 1,000 blog entries, that can be important. Sure, you could implement the same exact semantics at the application layer using POST, special parameters, maybe a custom XML response body to indicate success or failure. It would be simple, right? (cue explosion of XML-RPC based blog-publish interfaces) But now we all have to agree on these other ways of accomplishing the same exact thing as PUT, which has already been figured out. If we all agree that a PUT is a PUT is a PUT is a PUT and that you express it as such and such then we can start building things around that understanding. Just like we did with GET and POST.&lt;/p&gt;
+
+&lt;p&gt;The trick is in knowing when not to use PUT or DELETE (if you aren't sure, the rules in rfc2616 are pretty clear and they make good sense too). There are a number of cases that are better suited to POST, even though it may seem like you're putting or deleting something. I've spent quite a bit of time trying to shoe-horn certain types of operations into a PUT or DELETE in an attempt to be &quot;RESTful&quot; only to learn that I was trying too hard and that POST was really the right verb for the situation. It's sort of like how everyone stopped using &lt;code&gt;&amp;#60;table&amp;#62;&lt;/code&gt;'s for tabular data when CSS came around.&lt;/p&gt;
+
+&lt;p&gt;Anyway, the point I'm trying to come around to and probably should have come right out with, is just that I think we should be &lt;em&gt;trying&lt;/em&gt; to use the verb that's most appropriate for the situation. The problem is that it's not &lt;em&gt;easy&lt;/em&gt; to do so. From the perspective of the lazy hacker, the &lt;em&gt;simplest&lt;/em&gt; and &lt;em&gt;best&lt;/em&gt; choice, given the current set of popular web frameworks and libraries (on both the client and server) is to re-implement PUT and DELETE on top of POST at the application layer every single time. And the lazy hacker is always right. But I think that one day in the maybe not-too-distant future the lazy hacker will change her mind because the tooling around building and interacting with resources using PUT/DELETE will &lt;em&gt;save&lt;/em&gt; her time and energy and bring extra advantages instead of being a big nuisance.&lt;/p&gt;
+
+&lt;p&gt;No one is going to do this stuff because it's compelling from a philosophical standpoint. It will take new tools and efficiencies, browsers and client-side libraries, web frameworks that make it easier to do cooler stuff with better clients, etc. The web's common vernacular will extend into the less explored aspects of HTTP when the practical advantages of doing so present themselves. But that's what's so friggin cool and weird about it: HTTP has been around forever and might be only 10% into it's implementation phase and it's hard to tell exactly what we should implement next to get the most bang for our buck.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>How does that help, Mark? What, all of a sudden you don&#8217;t feel like talking?</p>
+<blockquote>
+<p>GET actually means something to intermediaries. POST, PUT, and DELETE only really mean something to humans.</p>
+</blockquote>
+<p>That&#8217;s not really true. <a href="http://www.squid-cache.org/">Squid</a>, and I believe most other caching proxies have an explicit understanding of each of these verbs. The semantics for each are rigidly defined and are all very different. PUT is not POST and POST is not DELETE. The descriptions of each verb in RFC 2616 are fairly short and straight-forward for the most part.</p>
+<p>PUT and DELETE are idempotent and POST isn&#8217;t. PUT and DELETE each say something specific about the resource they modify and clients and intermediaries can make assumptions about the resource they PUT/DELETE to once the response is complete. When an APP client PUTs an entry it can then make assumptions (more specific assumptions than POST) about that resource&#8217;s state after the request. For a client that stores 1,000 blog entries, that can be important. Sure, you could implement the same exact semantics at the application layer using POST, special parameters, maybe a custom XML response body to indicate success or failure. It would be simple, right? (cue explosion of XML-RPC based blog-publish interfaces) But now we all have to agree on these other ways of accomplishing the same exact thing as PUT, which has already been figured out. If we all agree that a PUT is a PUT is a PUT is a PUT and that you express it as such and such then we can start building things around that understanding. Just like we did with GET and POST.</p>
+<p>The trick is in knowing when not to use PUT or DELETE (if you aren&#8217;t sure, the rules in rfc2616 are pretty clear and they make good sense too). There are a number of cases that are better suited to POST, even though it may seem like you&#8217;re putting or deleting something. I&#8217;ve spent quite a bit of time trying to shoe-horn certain types of operations into a PUT or DELETE in an attempt to be &#8220;RESTful&#8221; only to learn that I was trying too hard and that POST was really the right verb for the situation. It&#8217;s sort of like how everyone stopped using <code>&lt;table&gt;</code>&#8217;s for tabular data when CSS came around.</p>
+<p>Anyway, the point I&#8217;m trying to come around to and probably should have come right out with, is just that I think we should be <em>trying</em> to use the verb that&#8217;s most appropriate for the situation. The problem is that it&#8217;s not <em>easy</em> to do so. From the perspective of the lazy hacker, the <em>simplest</em> and <em>best</em> choice, given the current set of popular web frameworks and libraries (on both the client and server) is to re-implement PUT and DELETE on top of POST at the application layer every single time. And the lazy hacker is always right. But I think that one day in the maybe not-too-distant future the lazy hacker will change her mind because the tooling around building and interacting with resources using PUT/DELETE will <em>save</em> her time and energy and bring extra advantages instead of being a big nuisance.</p>
+<p>No one is going to do this stuff because it&#8217;s compelling from a philosophical standpoint. It will take new tools and efficiencies, browsers and client-side libraries, web frameworks that make it easier to do cooler stuff with better clients, etc. The web&#8217;s common vernacular will extend into the less explored aspects of HTTP when the practical advantages of doing so present themselves. But that&#8217;s what&#8217;s so friggin cool and weird about it: HTTP has been around forever and might be only 10% into it&#8217;s implementation phase and it&#8217;s hard to tell exactly what we should implement next to get the most bang for our buck.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mark Baker</title>
+		<link>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1342</link>
+		<pubDate>Wed, 22 Mar 2006 05:22:12 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/22/useful-and-useless-rest/#comment-1342</guid>
+					<description>&lt;p&gt;Dude, you don't know what you're talking about.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Dude, you don&#8217;t know what you&#8217;re talking about.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.324 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Code Snippets and Systems of Ends</title>
+	<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:46 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Alec Reed</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-367</link>
+		<pubDate>Wed, 31 Aug 2005 21:17:33 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-367</guid>
+					<description>&lt;p&gt;Regarding search engine spidering and tag-based organization, I recently learned an important mathematics lesson. Two weeks after I started up my weblog, I had used about twelve tags on about that many separate posts. The blogging application (it's custom; not sure if I'm going to release it) has a prominent tag cloud page and then allows you to browse tag intersections, adding tags or removing tags via automatically generated links. You can also access an RSS 1.0 or 2.0 feed for any intersection.&lt;/p&gt;
+
+&lt;p&gt;Thing is, it doesn't stop you from browsing and continuing to browse tag intersections that don't match any content (after all, there might be some content there later, right?). It just keeps giving you new intersection urls and new feeds.&lt;/p&gt;
+
+&lt;p&gt;The math lesson I learned was ... well, I'm no good with permutations and combinations and factorials, but the lesson was that you can intersect twelve tags in a whole lot of ways. I guess since my blogging software doesn't enforce any ordering of the tags when it generates the intersection url, you could theoretically have:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;12! + 12!/1! + 12!/2! + 12!/3! + ... + 12!/11!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Something like that. Anyway, it's a lot. And Google started crawling them all, plus the RSS feeds. (Actually, not all of the permutations were accessible because a given tag has to be related to one in the current intersection in order to show up as a choice to add. Still: a lot.) Combine that with the fact that I was caching the RSS feeds even when they were empty, and I had a problem.&lt;/p&gt;
+
+&lt;p&gt;I worked it out by: adding a meta &quot;noindex,nofollow&quot; tag to all the pages with no actual content, blocking Googlebot from all the tag RSS feeds it had already found via robots.txt, deleting the tens of thousands of cache files for the RSS feeds Googlebot had already hit, and turning off future RSS caching. All told, Googlebot crawled almost 200,000 pages using about one gigabyte of bandwidth before it stopped.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Regarding search engine spidering and tag-based organization, I recently learned an important mathematics lesson. Two weeks after I started up my weblog, I had used about twelve tags on about that many separate posts. The blogging application (it&#8217;s custom; not sure if I&#8217;m going to release it) has a prominent tag cloud page and then allows you to browse tag intersections, adding tags or removing tags via automatically generated links. You can also access an RSS 1.0 or 2.0 feed for any intersection.</p>
+<p>Thing is, it doesn&#8217;t stop you from browsing and continuing to browse tag intersections that don&#8217;t match any content (after all, there might be some content there later, right?). It just keeps giving you new intersection urls and new feeds.</p>
+<p>The math lesson I learned was &#8230; well, I&#8217;m no good with permutations and combinations and factorials, but the lesson was that you can intersect twelve tags in a whole lot of ways. I guess since my blogging software doesn&#8217;t enforce any ordering of the tags when it generates the intersection url, you could theoretically have:</p>
+<pre><code>12! + 12!/1! + 12!/2! + 12!/3! + ... + 12!/11!
+</code></pre>
+<p>Something like that. Anyway, it&#8217;s a lot. And Google started crawling them all, plus the RSS feeds. (Actually, not all of the permutations were accessible because a given tag has to be related to one in the current intersection in order to show up as a choice to add. Still: a lot.) Combine that with the fact that I was caching the RSS feeds even when they were empty, and I had a problem.</p>
+<p>I worked it out by: adding a meta &#8220;noindex,nofollow&#8221; tag to all the pages with no actual content, blocking Googlebot from all the tag RSS feeds it had already found via robots.txt, deleting the tens of thousands of cache files for the RSS feeds Googlebot had already hit, and turning off future RSS caching. All told, Googlebot crawled almost 200,000 pages using about one gigabyte of bandwidth before it stopped.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-363</link>
+		<pubDate>Wed, 31 Aug 2005 06:28:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-363</guid>
+					<description>&lt;p&gt;Sure, and the parasites survive as long as the ecosystem can fend them off sufficiently to sustain itself &lt;em&gt;and&lt;/em&gt; the parasites. If it can't, the parasites overpower it, wring it dry, and kill both the system and ultimately themselves. I don't a lot in the concept of del.icio.us that would allow the former scenario, and I'd rather not see the latter happen.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Sure, and the parasites survive as long as the ecosystem can fend them off sufficiently to sustain itself <em>and</em> the parasites. If it can&#8217;t, the parasites overpower it, wring it dry, and kill both the system and ultimately themselves. I don&#8217;t a lot in the concept of del.icio.us that would allow the former scenario, and I&#8217;d rather not see the latter happen.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-362</link>
+		<pubDate>Wed, 31 Aug 2005 05:07:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-362</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;http://plasmasturm.org/&quot; rel=&quot;nofollow&quot;&gt;Aristotle&lt;/a&gt; said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;it’s also hard to deny that del.icio.us has zero spam protection built in.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.craphound.com/complexecosystems.txt&quot; rel=&quot;nofollow&quot;&gt;All complex ecosystems have parasites.&lt;/a&gt; (&lt;a href=&quot;http://www.itconversations.com/shows/detail461.html&quot; rel=&quot;nofollow&quot;&gt;Audio&lt;/a&gt;)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="http://plasmasturm.org/">Aristotle</a> said:</p>
+<blockquote>
+<p>it’s also hard to deny that del.icio.us has zero spam protection built in.</p>
+</blockquote>
+<p><a href="http://www.craphound.com/complexecosystems.txt">All complex ecosystems have parasites.</a> (<a href="http://www.itconversations.com/shows/detail461.html">Audio</a>)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-360</link>
+		<pubDate>Wed, 31 Aug 2005 04:14:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-360</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;#comment-355&quot; rel=&quot;nofollow&quot;&gt;Danno&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;its hard to deny the usefulness of millions of handpicked links sorted with human verified meta-data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;True, but it's also hard to deny that del.icio.us has zero spam protection built in. I believe that is the biggest issue in this Google + del.icio.us discussion, and one I'd consider a real stumbler: if Google were to try to derive value from del.icio.us, it is hard to conceive that the spammers would take longer than you need to say &quot;potato&quot; before they'd be all over it.&lt;/p&gt;
+
+&lt;p&gt;In that sense I would actually prefer that Google stay away from it.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.bigbold.com/snippets/&quot; rel=&quot;nofollow&quot;&gt;Code Snippets&lt;/a&gt; (awesome link, btw, thanks Ryan) is very different, because it has actual content that stands on its own. I think &lt;a href=&quot;#comment-354&quot; rel=&quot;nofollow&quot;&gt;Ian&lt;/a&gt; hit on the right spot in saying that del.icio.us is, itself, not a destination.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="#comment-355">Danno</a>:</p>
+<blockquote>
+<p>its hard to deny the usefulness of millions of handpicked links sorted with human verified meta-data.</p>
+</blockquote>
+<p>True, but it&#8217;s also hard to deny that del.icio.us has zero spam protection built in. I believe that is the biggest issue in this Google + del.icio.us discussion, and one I&#8217;d consider a real stumbler: if Google were to try to derive value from del.icio.us, it is hard to conceive that the spammers would take longer than you need to say &#8220;potato&#8221; before they&#8217;d be all over it.</p>
+<p>In that sense I would actually prefer that Google stay away from it.</p>
+<p><a href="http://www.bigbold.com/snippets/">Code Snippets</a> (awesome link, btw, thanks Ryan) is very different, because it has actual content that stands on its own. I think <a href="#comment-354">Ian</a> hit on the right spot in saying that del.icio.us is, itself, not a destination.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: BillSaysThis</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-359</link>
+		<pubDate>Wed, 31 Aug 2005 03:59:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-359</guid>
+					<description>&lt;p&gt;(Self-interest alert) How about if you had a site similar to delicious but with a full text (not tag only) search engine built in? A few other features as well but this would be one way to describe &lt;a href=&quot;http://www.rawsugar.com&quot; rel=&quot;nofollow&quot;&gt;RawSugar&lt;/a&gt; a just out of stealth company where I work. By this time tomorrow we will have surfaced a delicious import function so you can compare for yourself the relative experience.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>(Self-interest alert) How about if you had a site similar to delicious but with a full text (not tag only) search engine built in? A few other features as well but this would be one way to describe <a href="http://www.rawsugar.com">RawSugar</a> a just out of stealth company where I work. By this time tomorrow we will have surfaced a delicious import function so you can compare for yourself the relative experience.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-357</link>
+		<pubDate>Wed, 31 Aug 2005 02:50:23 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-357</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;But anyway, isn’t access to /rss good enough? That contains 100% of the information del.icio.us carries; everything else is UI that would be distracting to search engines&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Right. The only issue is that del.icio.us/rss moves so fast. You would need a 10-15 second poll on it to ensure you're getting everything. Maybe you don't need everything or maybe something like mnot's &lt;a href=&quot;http://www.mnot.net/drafts/draft-nottingham-atompub-feed-history-03.txt&quot; rel=&quot;nofollow&quot;&gt;feed history IETF memo&lt;/a&gt; could help but even then, del.icio.us might not be able to allow this level of access without incurring significant cost.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>But anyway, isn’t access to /rss good enough? That contains 100% of the information del.icio.us carries; everything else is UI that would be distracting to search engines</p>
+</blockquote>
+<p>Right. The only issue is that del.icio.us/rss moves so fast. You would need a 10-15 second poll on it to ensure you&#8217;re getting everything. Maybe you don&#8217;t need everything or maybe something like mnot&#8217;s <a href="http://www.mnot.net/drafts/draft-nottingham-atompub-feed-history-03.txt">feed history IETF memo</a> could help but even then, del.icio.us might not be able to allow this level of access without incurring significant cost.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Danno</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-355</link>
+		<pubDate>Tue, 30 Aug 2005 23:48:22 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-355</guid>
+					<description>&lt;p&gt;Maybe the delicious pages themselves aren't important, but its hard to deny the usefulness of millions of handpicked links sorted with human verified meta-data.&lt;/p&gt;
+
+&lt;p&gt;The Big G (or others), could probablly find space for that sort of knowledge in their ranking algorithms.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Maybe the delicious pages themselves aren&#8217;t important, but its hard to deny the usefulness of millions of handpicked links sorted with human verified meta-data.</p>
+<p>The Big G (or others), could probablly find space for that sort of knowledge in their ranking algorithms.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ian Bicking</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-354</link>
+		<pubDate>Tue, 30 Aug 2005 23:09:28 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-354</guid>
+					<description>&lt;p&gt;I think trying to lease del.icio.us is probably a good way to keep it from being indexed for a long while -- leasing involves negotiation and monetary transactions, and those are slow.  Maybe it's just as fast as the architectural/technical issues of indexing it for free.  But it's still a slow process, relatively.&lt;/p&gt;
+
+&lt;p&gt;But anyway, isn't access to /rss good enough?  That contains 100% of the information del.icio.us carries; everything else is UI that would be distracting to search engines, not helpful.  I suppose it would allow Google to point to http://del.icio.us links -- but is that really useful?  The whole point is to point to the &lt;em&gt;real&lt;/em&gt; page, and while del.icio.us links can have a little commentary, it isn't enough to make it a destination.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I think trying to lease del.icio.us is probably a good way to keep it from being indexed for a long while &#8212; leasing involves negotiation and monetary transactions, and those are slow.  Maybe it&#8217;s just as fast as the architectural/technical issues of indexing it for free.  But it&#8217;s still a slow process, relatively.</p>
+<p>But anyway, isn&#8217;t access to /rss good enough?  That contains 100% of the information del.icio.us carries; everything else is UI that would be distracting to search engines, not helpful.  I suppose it would allow Google to point to http://del.icio.us links &#8212; but is that really useful?  The whole point is to point to the <em>real</em> page, and while del.icio.us links can have a little commentary, it isn&#8217;t enough to make it a destination.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Peter Hoven</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-343</link>
+		<pubDate>Tue, 30 Aug 2005 17:32:06 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-343</guid>
+					<description>&lt;p&gt;Thanks for the great link. I immediately sent it to all my developers. Making a code library so easily searchable is great.&lt;/p&gt;
+
+&lt;p&gt;And the more use it gains the more useful it becomes. A great example of a Web 2.0 app.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Thanks for the great link. I immediately sent it to all my developers. Making a code library so easily searchable is great.</p>
+<p>And the more use it gains the more useful it becomes. A great example of a Web 2.0 app.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Small Company CTO &#187; Code Snippets</title>
+		<link>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-342</link>
+		<pubDate>Tue, 30 Aug 2005 17:30:21 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/30/code-snippets-and-systems-of-ends/#comment-342</guid>
+					<description>&lt;p&gt;[...] Full Post [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Full Post [&#8230;]</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.354 seconds -->
+<!-- Cached page served by WP-Cache -->

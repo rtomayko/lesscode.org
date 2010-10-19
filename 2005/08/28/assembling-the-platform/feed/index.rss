@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Assembling The Platform</title>
+	<link>http://lesscode.org/2005/08/28/assembling-the-platform/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 08:28:32 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Zero Zero</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-375</link>
+		<pubDate>Sun, 04 Sep 2005 16:25:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-375</guid>
+					<description>&lt;p&gt;Fred Drake does some excellent work with &lt;a href=&quot;http://www.zope.org/Members/fdrake/zpkgtools/&quot; rel=&quot;nofollow&quot;&gt;zpkgtools&lt;/a&gt;. May be well worth a look.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Fred Drake does some excellent work with <a href="http://www.zope.org/Members/fdrake/zpkgtools/">zpkgtools</a>. May be well worth a look.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Dan Hatfield</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-374</link>
+		<pubDate>Sun, 04 Sep 2005 00:20:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-374</guid>
+					<description>&lt;p&gt;A very timely and well thought out set of posts, Ryan (for me at least), as I'm faced with a very similar decision with the small company I work for.
+The part I'm struggling with the most is letting go of the safety factor for several reasons:
+1) The components we are building are being deployed into a web application first and foremost - but may be embedded into an EDI/EAI application as well. And, that application may be at a customer site (i.e. an application infrastructure that I don't control - and that infrastructure is most likely going to be .NET or Java)
+2) As a small company one of the option on the table is eventually selling your software to some larger company - in this case, it seems the platform could play a signficant factor in these negotiations?&lt;/p&gt;
+
+&lt;p&gt;Did you consider either of these situations in your analysis?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>A very timely and well thought out set of posts, Ryan (for me at least), as I&#8217;m faced with a very similar decision with the small company I work for.<br />
+The part I&#8217;m struggling with the most is letting go of the safety factor for several reasons:<br />
+1) The components we are building are being deployed into a web application first and foremost - but may be embedded into an EDI/EAI application as well. And, that application may be at a customer site (i.e. an application infrastructure that I don&#8217;t control - and that infrastructure is most likely going to be .NET or Java)<br />
+2) As a small company one of the option on the table is eventually selling your software to some larger company - in this case, it seems the platform could play a signficant factor in these negotiations?</p>
+<p>Did you consider either of these situations in your analysis?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: rough book &#187;</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-346</link>
+		<pubDate>Tue, 30 Aug 2005 19:13:10 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-346</guid>
+					<description>&lt;p&gt;[...] Nachdem ich das Posting &amp;#8220;Assembling The Platform&amp;#8221; von Ryan auf lesscode.org gelesen habe, denke ich darüber nach ob Ruby on Rails nicht doch mehr als einen Blick wert ist für ein Projekt, das ich derzeit plane. Vielleicht lerne ich RoR dann auch so lieben wie einige andere. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Nachdem ich das Posting &#8220;Assembling The Platform&#8221; von Ryan auf lesscode.org gelesen habe, denke ich darüber nach ob Ruby on Rails nicht doch mehr als einen Blick wert ist für ein Projekt, das ich derzeit plane. Vielleicht lerne ich RoR dann auch so lieben wie einige andere. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-329</link>
+		<pubDate>Mon, 29 Aug 2005 16:07:18 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-329</guid>
+					<description>&lt;p&gt;Just a general comment, Ryan: being a lesscode advocate, it does not really behoove you to nurse a morecode product (.NET)&lt;/p&gt;
+
+&lt;p&gt;Your dilemma should be easy to resolve -- port your .NET app to some lesscode platform. I know that it's an expensive proposition, but no matter how you slice it, lesscode always makes more sense than morecode.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Just a general comment, Ryan: being a lesscode advocate, it does not really behoove you to nurse a morecode product (.NET)</p>
+<p>Your dilemma should be easy to resolve &#8212; port your .NET app to some lesscode platform. I know that it&#8217;s an expensive proposition, but no matter how you slice it, lesscode always makes more sense than morecode.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aaron Bentley</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-327</link>
+		<pubDate>Mon, 29 Aug 2005 14:18:31 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-327</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;I also don’t like the idea of adopting a comment format that isn’t accepted by the wider community but I’d like to have a bit more than plain text.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you mean the default text format, that's true.  But epydoc does support restructuredtext, too.  And AIUI, there's no accepted standard way of documenting parameters, return values, etc.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>I also don’t like the idea of adopting a comment format that isn’t accepted by the wider community but I’d like to have a bit more than plain text.</p>
+</blockquote>
+<p>If you mean the default text format, that&#8217;s true.  But epydoc does support restructuredtext, too.  And AIUI, there&#8217;s no accepted standard way of documenting parameters, return values, etc.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: curthibbs</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-326</link>
+		<pubDate>Mon, 29 Aug 2005 13:19:32 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-326</guid>
+					<description>&lt;p&gt;Let me repost with a minor correction (its amazing how omitting one word can change the meaning of a sentence):&lt;/p&gt;
+
+&lt;p&gt;To John: I have to respectfully disagree with your assertion that ActiveRecord is &lt;em&gt;only&lt;/em&gt; suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Let me repost with a minor correction (its amazing how omitting one word can change the meaning of a sentence):</p>
+<p>To John: I have to respectfully disagree with your assertion that ActiveRecord is <em>only</em> suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: curthibbs</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-325</link>
+		<pubDate>Mon, 29 Aug 2005 13:17:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-325</guid>
+					<description>&lt;p&gt;Just two quick notes...&lt;/p&gt;
+
+&lt;p&gt;To John: I have to respectfully disagree with your assertion that ActiveRecord is suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.&lt;/p&gt;
+
+&lt;p&gt;To Ryan: Yes, RDoc is included in the core Ruby distribution.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Just two quick notes&#8230;</p>
+<p>To John: I have to respectfully disagree with your assertion that ActiveRecord is suitable for simple data models. However, I equally agree that Og/Nitro is, in itself, also very interesting.</p>
+<p>To Ryan: Yes, RDoc is included in the core Ruby distribution.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-323</link>
+		<pubDate>Mon, 29 Aug 2005 05:10:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-323</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;Well, we hate to see you go, Ryan. I know I’ve gotten a lot out of your contributions in the Python world.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Awww, shucks... &lt;/p&gt;
+
+&lt;p&gt;No, but seriously, I'm not really going anywhere. You can take Python from me when you pry it from my cold, dead hands :)&lt;/p&gt;
+
+&lt;p&gt;I'm going with Ruby/Rails as an intrinsic piece of a basic platform for web apps built by the company I'm currently involved with. But I'm not dissing on Python and I have no plans of abandoning it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;RDoc, to my eyes, does not look any better than epydoc &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;epydoc has the same issues as pydoc with regards to using runtime introspection. I also don't like the idea of adopting a comment format that isn't accepted by the wider community but I'd like to have a bit more than plain text. Lastly, I've found it overly complex to extend epydoc's core theme and layout.&lt;/p&gt;
+
+&lt;p&gt;RDoc uses source scanning as opposed to runtime introspection and I personally feel this yields better results for HTML reference documentation. (As a side note, Pudge actually uses both. It scans the source to find out what's where, in what order things are defined, and tries to pick up non-docstring comments.) RDoc is also accepted by the Ruby community as a standard and will be (or maybe already is) included with Ruby core. I don't have to worry about my formatted comments being unparsable next year when a new doc tool is invented. Finally, RDoc has a basically good and complete customization mechanism which I'm currently using to get rid of the frames, among other things.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;RDoc, epydoc and Javadoc are all fine tools, but I don’t think you’d generally want to create a whole website with them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I've had good luck so far combining RDoc and reusable Rake tasks to 
+generate both source extracted documentation and website style content. It's not quite what I had in kid/pudge/buildutils yet but its not far and I haven't spent that much time on it.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>Well, we hate to see you go, Ryan. I know I’ve gotten a lot out of your contributions in the Python world.</p>
+</blockquote>
+<p>Awww, shucks&#8230; </p>
+<p>No, but seriously, I&#8217;m not really going anywhere. You can take Python from me when you pry it from my cold, dead hands :)</p>
+<p>I&#8217;m going with Ruby/Rails as an intrinsic piece of a basic platform for web apps built by the company I&#8217;m currently involved with. But I&#8217;m not dissing on Python and I have no plans of abandoning it.</p>
+<blockquote>
+<p>RDoc, to my eyes, does not look any better than epydoc </p>
+</blockquote>
+<p>epydoc has the same issues as pydoc with regards to using runtime introspection. I also don&#8217;t like the idea of adopting a comment format that isn&#8217;t accepted by the wider community but I&#8217;d like to have a bit more than plain text. Lastly, I&#8217;ve found it overly complex to extend epydoc&#8217;s core theme and layout.</p>
+<p>RDoc uses source scanning as opposed to runtime introspection and I personally feel this yields better results for HTML reference documentation. (As a side note, Pudge actually uses both. It scans the source to find out what&#8217;s where, in what order things are defined, and tries to pick up non-docstring comments.) RDoc is also accepted by the Ruby community as a standard and will be (or maybe already is) included with Ruby core. I don&#8217;t have to worry about my formatted comments being unparsable next year when a new doc tool is invented. Finally, RDoc has a basically good and complete customization mechanism which I&#8217;m currently using to get rid of the frames, among other things.</p>
+<blockquote>
+<p>RDoc, epydoc and Javadoc are all fine tools, but I don’t think you’d generally want to create a whole website with them.</p>
+</blockquote>
+<p>I&#8217;ve had good luck so far combining RDoc and reusable Rake tasks to<br />
+generate both source extracted documentation and website style content. It&#8217;s not quite what I had in kid/pudge/buildutils yet but its not far and I haven&#8217;t spent that much time on it.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Kevin Dangoor</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-322</link>
+		<pubDate>Mon, 29 Aug 2005 03:03:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-322</guid>
+					<description>&lt;p&gt;Well, we hate to see you go, Ryan. I know I've gotten a lot out of your contributions in the Python world.&lt;/p&gt;
+
+&lt;p&gt;I can certainly understand why you would choose the toolset you did. Back when I started Zesty News, I &lt;em&gt;was&lt;/em&gt; strongly tempted by Rails. I chose Python instead, largely because I felt my choices for packaging a desktop-installed webapp were better.&lt;/p&gt;
+
+&lt;p&gt;I do have a couple of comments: RDoc, to my eyes, does not look any better than epydoc, both of which are based on Javadoc. RDoc, epydoc and Javadoc are all fine tools, but I don't think you'd generally want to create a whole website with them&lt;/p&gt;
+
+&lt;p&gt;Personally, I haven't missed Rake. The first thing I did when I started Zesty News was create an automated build script (not distutils-based). Between the os, shutil and the occasional other module, I was able to easily automate every aspect of my build, using standard, procedural Python. That said, I do agree that a tool like Rake can help newcomers (and new projects) get up to speed more quickly. The work being done in setuptools and what you've done with buildutils does solve some of the problem there.&lt;/p&gt;
+
+&lt;p&gt;Gems are terrific. For me, there's a kernel of stuff going on in setuptools that is cooler than what Gems offer (from what I've read), but I have unusual requirements.&lt;/p&gt;
+
+&lt;p&gt;I think you already have an idea where I stand on web frameworks, and I hope to write more about that late this week or early next.&lt;/p&gt;
+
+&lt;p&gt;Thanks for sharing all of this with all of us. Having a spotlight aimed at cool stuff that's happening elsewhere is always invigorating (to me, at least).&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Well, we hate to see you go, Ryan. I know I&#8217;ve gotten a lot out of your contributions in the Python world.</p>
+<p>I can certainly understand why you would choose the toolset you did. Back when I started Zesty News, I <em>was</em> strongly tempted by Rails. I chose Python instead, largely because I felt my choices for packaging a desktop-installed webapp were better.</p>
+<p>I do have a couple of comments: RDoc, to my eyes, does not look any better than epydoc, both of which are based on Javadoc. RDoc, epydoc and Javadoc are all fine tools, but I don&#8217;t think you&#8217;d generally want to create a whole website with them</p>
+<p>Personally, I haven&#8217;t missed Rake. The first thing I did when I started Zesty News was create an automated build script (not distutils-based). Between the os, shutil and the occasional other module, I was able to easily automate every aspect of my build, using standard, procedural Python. That said, I do agree that a tool like Rake can help newcomers (and new projects) get up to speed more quickly. The work being done in setuptools and what you&#8217;ve done with buildutils does solve some of the problem there.</p>
+<p>Gems are terrific. For me, there&#8217;s a kernel of stuff going on in setuptools that is cooler than what Gems offer (from what I&#8217;ve read), but I have unusual requirements.</p>
+<p>I think you already have an idea where I stand on web frameworks, and I hope to write more about that late this week or early next.</p>
+<p>Thanks for sharing all of this with all of us. Having a spotlight aimed at cool stuff that&#8217;s happening elsewhere is always invigorating (to me, at least).</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-319</link>
+		<pubDate>Sun, 28 Aug 2005 21:00:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/28/assembling-the-platform/#comment-319</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;http://manuals.rubyonrails.com/read/book/17&quot; rel=&quot;nofollow&quot;&gt;SwitchTower&lt;/a&gt; &lt;em&gt;does&lt;/em&gt; look interesting although I've only scanned the documentation.  I should be looking at it with a bit more depth in the next few weeks.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="http://manuals.rubyonrails.com/read/book/17">SwitchTower</a> <em>does</em> look interesting although I&#8217;ve only scanned the documentation.  I should be looking at it with a bit more depth in the next few weeks.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.358 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  The pragmatic&#8217;s guide to Web architectures</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2006/03/26/its-enterprisey/">It&#8217;s Enterprisey!</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2006/04/15/many-lives-just-one-you/">Many Lives &mdash; Just One You</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-138"><a href="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/" rel="bookmark" title="Permanent Link: The pragmatic&#8217;s guide to Web architectures">The pragmatic&#8217;s guide to Web architectures</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://blog.labnotes.org">Assaf Arkin</a>
+      under <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a> 
+      on 27. March 2006</small>
+
+			<div class="entrytext">
+				<p>There&#8217;s a big battle of words raging on to define what the hell we&#8217;re doing and why we&#8217;re doing it all wrong.</p>
+
+<p>Are Web services on the Web, or do they have to use SOAP? How is low REST different from high REST? Does XML/HTTP work better if we call it POX? When is AJAX not AJAX? Who owns the semantic landscape?</p>
+
+<p>There are also a lot of people building applications, that don&#8217;t have time to argue how you call it or what it means, just as long as it works. We call them, &#8220;the pragmatics.&#8221; This post is for them.</p>
+
+<p>When it comes to designing Web services, there&#8217;s a few choices of architecture style, and stacks of technologies to choose from. It&#8217;s still undecided which one will rule them all, the race if far from over. Most people who write about that stuff hope their horse is the winning one.</p>
+
+<p>I&#8217;m no exception. So I&#8217;m going to play pundit and tell you which architecture style I think works best for the Web, which technology stack I prefer to use:</p>
+
+<ul>
+<li><b>Architecture style:</b> use the simplest most common solution to solve your problem.</li>
+<li><b>Technology stack:</b> see above.</li>
+</ul>
+
+<p>XML over HTTP (can we please not use an acronym that means a disease?) is great for moving structured data around, and shines at encapsulation. Its loosely coupled document style has too many merits to mention. Except when you&#8217;re building a UI that needs to talk back to the server, where tight coupling is good enough, and too much abstraction means you&#8217;ll never deliver on time.</p>
+
+<p>RSS is a wonderful way to stream data updates from server to client, not to mention the magical combination that are blogs and feed readers. It&#8217;s the ultimate query API. Except when your UI is trying to query the number of unread e-mails in your inbox, and you find out that RSS is anything but simple.</p>
+
+<p>Microformats are amazing in their beauty and simplicity, and let you easily microchunk your content. Until you fall in the 80% of problems they were never intended to solve and&#8230; well, just don&#8217;t solve.</p>
+
+<p>JSON (not to be confused with Jason, though they both love AJAX) is the simplest form of API you can think of, concise and easy to use. It&#8217;s a wonder it wasn&#8217;t invented earlier. Except that it&#8217;s tightly coupled and still envious of what XML can do for you.</p>
+
+<p>AJAX is great even though almost everybody is using it for HTML. But let&#8217;s not get too tangled up in detail, acronyms are not for describing but for branding.</p>
+
+<p>There&#8217;s nothing like REST, it powers the Web (can we get a logo for that?). You&#8217;ll just have to ignore all those big name Web sites we all like to mention that use cookies for the benefit of their users. And all the REST APIs that violate more constraints than a drunk driver speeding down the wrong side of the road.</p>
+
+<p>RDF is semantic bliss, it gets semantics right and has a thoughtful model for representing and querying it. You can do amazing things with it. But most likely your semantic data is not RDF, and still happens to work, and you&#8217;re cursing every time you need to fix Firefox configuration files in all their semantic glory.</p>
+
+<p>The Web thrives not because it uses a strict architectural style and a coherent technology stack. It thrives because so many sites pay little attention to REST and choose to focus on their users instead. It thrives because malformed HTML pages include GIFs and PNGs and Flash and badly written JavaScript that just works. It thrives because people go on the Web to send e-mail, IM, do VoIP and trade BitTorrent files.</p>
+
+<p>The search for the holy grail, the one technology to rule them all, is as old as technology itself. I&#8217;m fine knowing we&#8217;ll never settle the score, never know whether vi is truely better than Emacs, or whether Eclipse shadows them both. But unless you&#8217;re a vendor making money on one horse, it doesn&#8217;t matter to you.</p>
+
+<p>If you&#8217;re a pragmatic developer, you have one tool in your toolbelt that always wins the day. It&#8217;s the ability to think, ask questions and make choices. To choose solutions that are best for the problem you&#8217;re tackling right now. And to keep learning. Because there will always be some new technology that&#8217;s better at solving some use case or another.</p>
+
+<p>The only architecture that matters is the simplest one you can get to solve the problem at hand.</p>
+
+<p><small>This post: written in Vim, formatted as HTML, available over RSS.</small></p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">14 Responses to &#8220;The pragmatic&#8217;s guide to Web architectures&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-1389">
+			<p class="who"><cite>Danno</cite>:</p>
+			<p>Hrm&#8230; I kind of disagree:</p>
+<p>The way I think of things, we&#8217;ve got four quarters we can divide these technologies into:</p>
+<p>simple<br />
+complicated<br />
+dirty<br />
+clean</p>
+<p>Right now, the web is simple and dirty.  It&#8217;s simple because we&#8217;re dumb and lazy and it&#8217;s dirty because we don&#8217;t know any better.</p>
+<p>The WS-Whateverthehells are complicated, dirty, clean, whatever.  Complicated failes every time because I&#8217;ve gotta unwrap an envelope&#8230;  what the FUCK is an envelope?  Fuck that noise.</p>
+<p>The High Rest web promises to clean up the simple web.  That&#8217;s the vision I see.  It&#8217;s saying, hey, you think THIS is simple?  Check out how simple things are when you&#8217;ve got a really clean conceptual model doing the heavy lifting instead of simple hacks patching your stuff together.</p>
+<p>Well, that&#8217;s what I hope anyway.</p>
+      <p>
+			<small>comment at <a href="#comment-1389" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1391">
+			<p class="who"><cite><a href='http://laurentszyster.be/blog/' rel='external ' title='62.205.103.132'>Laurent Szyster</a></cite>:</p>
+			<blockquote>
+<p>RDF is semantic bliss, it gets semantics right and has a thoughtful model for representing and querying it. You can do amazing things with it.</p>
+</blockquote>
+<p>Amazing things? Which one?</p>
+<blockquote>
+<p>But most likely your semantic data is not RDF, and still happens to work, and you&#8217;re cursing every time you need to fix Firefox configuration files in all their semantic glory.</p>
+</blockquote>
+<p>That&#8217;s a better description of what RDF really is.</p>
+<p>Complicated.</p>
+      <p>
+			<small>comment at <a href="#comment-1391" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1392">
+			<p class="who"><cite><a href='http://jroller.com/page/obie?entry=refreshing_advice' rel='external ' title='64.69.35.197'>Obie Fernandez</a></cite>:</p>
+			<p><strong>Refreshing Advice</strong></p>
+<p>From a  recent essay at lesscode.org : &#8220;If you&#8217;re a pragmatic developer, you have one tool in your toolbelt that always wins the day. It&#8217;s the ability to think, ask questions and make choices. To choose solutions that are best for the problem you?re&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-1392" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1394">
+			<p class="who"><cite><a href='http://blog.labnotes.org/2006/03/27/the-pragmatics-guide-to-web-architectures/' rel='external ' title='207.7.108.53'>Labnotes &raquo; Blog Archive &raquo; The pragmatic&#8217;s guide to Web architectures</a></cite>:</p>
+			<p>[&#8230;] I&#8217;m no exception. So I&#8217;m going to play pundit and tell you which architecture style I think works best for the Web, which technology stack I prefer to use &#8230; Read the rest of the post here. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1394" title="">27. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1410">
+			<p class="who"><cite>Matt</cite>:</p>
+			<p>I like how the guy preaching simplicity writes his posts in vim.</p>
+      <p>
+			<small>comment at <a href="#comment-1410" title="">30. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1413">
+			<p class="who"><cite><a href='http://www.informit.com/discussion/index.asp?postid=430a197c-1580-4cd7-bbae-f9c59bdddbc6' rel='external ' title='209.165.22.24'>InformIT XML and Web Services Reference Guide</a></cite>:</p>
+			<p><strong>Programming without the hype</strong></p>
+<p>Finally, someone says what I&#8217;ve been thinking. It all the hype about all the different architectural styles, there&#8217;s really only one lesson you need to know, and Assaf Arkin put it best this morning:</p>
+      <p>
+			<small>trackback at <a href="#comment-1413" title="">31. March 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1433">
+			<p class="who"><cite><a href='http://www.alexking.org/blog/2006/04/02/around-the-web/' rel='external ' title='66.179.191.58'>alexking.org: Blog &gt; Around the web</a></cite>:</p>
+			<p>[&#8230;] The pragmatic&#8217;s guide to Web architectures [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1433" title="">03. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1441">
+			<p class="who"><cite><a href='http://webservicesnotebook.com/2006/04/06/daily-bookmarks/' rel='external ' title='207.7.108.85'>Web Services Notebook &raquo; Blog Archive &raquo; Daily Bookmarks - 06 April 2006</a></cite>:</p>
+			<p>[&#8230;] The pragmatic&#8217;s guide to Web architectures Some practical considerations about web architectures (Tagged with architecture, development, programming and webservices, 2006-04-05 16:18) [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1441" title="">06. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1458">
+			<p class="who"><cite><a href='http://www.rubyonrailsblog.com' rel='external ' title='216.67.38.73'>Benjamin</a></cite>:</p>
+			<p>Pragmatism for web-development and design is definetely where it&#8217;s at for getting things done in a tidy and eleganet manner. Thumbs up!</p>
+      <p>
+			<small>comment at <a href="#comment-1458" title="">11. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1468">
+			<p class="who"><cite><a href='http://plasmasturm.org/' rel='external ' title='134.95.19.61'>Aristotle Pagaltzis</a></cite>:</p>
+			<p><cite><a href="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/#comment-1410" rel="">Matt</a></cite>:</p>
+<blockquote>
+<p>I like how the guy preaching simplicity writes his posts in vim.</p>
+</blockquote>
+<p>ED! ED! ED IS THE STANDARD!!!</p>
+      <p>
+			<small>comment at <a href="#comment-1468" title="">12. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1492">
+			<p class="who"><cite><a href='http://www.jamesbritt.com' rel='external ' title='68.110.65.145'>James</a></cite>:</p>
+			<blockquote>
+<p>I like how the guy preaching simplicity writes his posts in vim.</p>
+</blockquote>
+<p>Ah. Define &#8220;simplicity.&#8221;</p>
+<p>It&#8217;s one of those words, such as &#8220;fair&#8221;, &#8220;beautiful&#8221;, and &#8220;right&#8221;, that people let slip as though there were an objective, easily grasped, meaning shared by all readers.</p>
+      <p>
+			<small>comment at <a href="#comment-1492" title="">15. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1494">
+			<p class="who"><cite>assaf</cite>:</p>
+			<p>I guess simplicity is one of those &#8220;I know it when I see it&#8221; words.</p>
+<p>I use Vim because it&#8217;s simple. Vim is a lot of things, but one thing it&#8217;s definitely not is easy. Tools make the complex stuff easy, simple avoids complexity to begin with. As it turns out, the more I use Vim, the easiest it becomes. But complex things seem to only get more complicated the more you use them.</p>
+<p>So think of it as a bit of foresight.</p>
+      <p>
+			<small>comment at <a href="#comment-1494" title="">15. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-4927">
+			<p class="who"><cite><a href='http://www.likeyourwork.com/likeyourwork/?p=122' rel='external ' title='69.61.72.222'>Like Your Work &raquo; Blog Archive &raquo; links for 2006-07-05</a></cite>:</p>
+			<p>[&#8230;] The pragmatic’s guide to Web architectures (tags: rest soap soa WebServices patterns architecture) [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-4927" title="">04. July 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-5315">
+			<p class="who"><cite><a href='http://amperspective.net/?p=39' rel='external ' title='70.87.95.162'>amperspective &raquo; Raise your hand if you&#8217;re a Pragmatist</a></cite>:</p>
+			<p>[&#8230;] Assaf Arkin has an interesting essay over at lesscode.org titled The pragmatic’s guide to Web architectures. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-5315" title="">16. July 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.372 seconds -->
+<!-- Cached page served by WP-Cache -->

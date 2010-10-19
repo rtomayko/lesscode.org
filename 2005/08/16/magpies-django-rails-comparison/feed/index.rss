@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Magpie&#8217;s Django / Rails comparison</title>
+	<link>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:45 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Jeff Wood</title>
+		<link>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/#comment-252</link>
+		<pubDate>Sat, 20 Aug 2005 17:28:52 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/#comment-252</guid>
+					<description>&lt;p&gt;Uh? I still don't get it... Everybody compares everything to Rails ... Rails is great for a limited space ... People need to look at Nitro ( http://nitrohq.com ) I didn't see anything in Django that Nitro doesn't have, and comes with Ruby syntax.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Uh? I still don&#8217;t get it&#8230; Everybody compares everything to Rails &#8230; Rails is great for a limited space &#8230; People need to look at Nitro ( http://nitrohq.com ) I didn&#8217;t see anything in Django that Nitro doesn&#8217;t have, and comes with Ruby syntax.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Sam Newman</title>
+		<link>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/#comment-204</link>
+		<pubDate>Tue, 16 Aug 2005 17:35:18 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/magpies-django-rails-comparison/#comment-204</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;Rails is, of course, not limited to AJAX-heavy apps with simple 
+  domain models. I’m assuming Sam didn’t mean to give that impression
+  but was just trying to wrap up a long article quickly. Perhaps 
+  he’ll clarify a bit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Argh! You know me too well. Yes, what I really wanted to  say is that both Django and Rails have their sweet spots, they overlap to an extent, and that if you're not sold on either Ruby or Python yet you should pick the one closest to your sweetspot. Doing a Backpack-style web 2.0 application? Go Rails. Doing a more passive large-scale portal-type site? Go Django. What to make a web 2.0 app in Django? &lt;a href=&quot;http://www.chicagocrime.org/&quot; title=&quot;Chicargo crime.org&quot; rel=&quot;nofollow&quot;&gt;Go ahead&lt;/a&gt; - although Rails might give you more for it out of the box. Want to do a big portal-style site with Rails? I'm sure that's possible too - Django just might like it a bit easier.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>Rails is, of course, not limited to AJAX-heavy apps with simple<br />
+  domain models. I’m assuming Sam didn’t mean to give that impression<br />
+  but was just trying to wrap up a long article quickly. Perhaps<br />
+  he’ll clarify a bit.</p>
+</blockquote>
+<p>Argh! You know me too well. Yes, what I really wanted to  say is that both Django and Rails have their sweet spots, they overlap to an extent, and that if you&#8217;re not sold on either Ruby or Python yet you should pick the one closest to your sweetspot. Doing a Backpack-style web 2.0 application? Go Rails. Doing a more passive large-scale portal-type site? Go Django. What to make a web 2.0 app in Django? <a href="http://www.chicagocrime.org/" title="Chicargo crime.org">Go ahead</a> - although Rails might give you more for it out of the box. Want to do a big portal-style site with Rails? I&#8217;m sure that&#8217;s possible too - Django just might like it a bit easier.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.248 seconds -->
+<!-- Cached page served by WP-Cache -->

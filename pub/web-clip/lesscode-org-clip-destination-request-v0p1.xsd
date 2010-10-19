@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.lesscode.org/clip-destination-request/v0p1" xmlns="http://www.lesscode.org/clip-destination-request/v0p1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:clip="http://www.lesscode.org/clipboard/v0p1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+	<xs:import namespace="http://www.lesscode.org/clipboard/v0p1" schemaLocation="lesscode-org-clipboard-v0p1.xsd"/>
+	<xs:element name="clip-destination-request">
+		<xs:annotation>
+			<xs:documentation>Send clipboard data to a destination.  Returns clip-destination-response.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="action">
+					<xs:annotation>
+						<xs:documentation>paste or link</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="paste"/>
+							<xs:enumeration value="link"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="selection" type="xs:anyURI">
+					<xs:annotation>
+						<xs:documentation>A URI ending in an XPointer designating the action target within the destination resource.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="clipboard" type="clip:clipboard"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

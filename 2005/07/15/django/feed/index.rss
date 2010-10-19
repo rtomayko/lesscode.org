@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Django</title>
+	<link>http://lesscode.org/2005/07/15/django/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 05:32:09 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Simon Willison</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-63</link>
+		<pubDate>Sun, 17 Jul 2005 19:39:30 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-63</guid>
+					<description>&lt;p&gt;Tim: using an alternative template system with Django is trivial - the view methods return a string wrapped in an HttpResponse object, and it's completely up to you how you generate that string. If you don't like Django's template system, just import something else and use that to build the string that gets passed back at the end of the method.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Tim: using an alternative template system with Django is trivial - the view methods return a string wrapped in an HttpResponse object, and it&#8217;s completely up to you how you generate that string. If you don&#8217;t like Django&#8217;s template system, just import something else and use that to build the string that gets passed back at the end of the method.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Dannno</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-62</link>
+		<pubDate>Sun, 17 Jul 2005 14:54:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-62</guid>
+					<description>&lt;p&gt;Woot!  This is what we seriously need, a framework developer showdown, the end result will be better frameworks all around!&lt;/p&gt;
+
+&lt;p&gt;FIGHT FIGHT FIGHT!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Woot!  This is what we seriously need, a framework developer showdown, the end result will be better frameworks all around!</p>
+<p>FIGHT FIGHT FIGHT!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: dotmpe.com &#187; Django Web Framework</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-57</link>
+		<pubDate>Sat, 16 Jul 2005 19:16:11 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-57</guid>
+					<description>&lt;p&gt;[...] One of those things that keep popping up on your internet radar: Django. A web framework that has some resemblance to Ruby on rails. The latter I haven&amp;#8217;t used jet as I was just learning Python and did not feel like starting with Ruby, but it looked very impressive and nice and clean as you&amp;#8217;d do things in Python. Now Django puts Python on rails? [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] One of those things that keep popping up on your internet radar: Django. A web framework that has some resemblance to Ruby on rails. The latter I haven&#8217;t used jet as I was just learning Python and did not feel like starting with Ruby, but it looked very impressive and nice and clean as you&#8217;d do things in Python. Now Django puts Python on rails? [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Tim Gerla</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-55</link>
+		<pubDate>Sat, 16 Jul 2005 02:47:05 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-55</guid>
+					<description>&lt;p&gt;I'm ready to try Django but I'm definitely going to see if I can shoehorn Kid in there somewhere. I've been extremely happy with kid; it looks like a better templating language than Django's system, but I haven't investigated the latter much.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;m ready to try Django but I&#8217;m definitely going to see if I can shoehorn Kid in there somewhere. I&#8217;ve been extremely happy with kid; it looks like a better templating language than Django&#8217;s system, but I haven&#8217;t investigated the latter much.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: figby.com</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-50</link>
+		<pubDate>Fri, 15 Jul 2005 18:02:26 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-50</guid>
+					<description>&lt;p&gt;&lt;strong&gt;Django - Python web framework&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Django is a new web framework for the Python language created by Adrian Holovaty, Simon Willison, and Jacob Kaplan-Moss. I suspect this is going to become as popular as Ruby on Rails in no time at all. Judging from the overview, this looks pretty easy ...&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><strong>Django - Python web framework</strong></p>
+<p>Django is a new web framework for the Python language created by Adrian Holovaty, Simon Willison, and Jacob Kaplan-Moss. I suspect this is going to become as popular as Ruby on Rails in no time at all. Judging from the overview, this looks pretty easy &#8230;</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Adrian Holovaty</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-49</link>
+		<pubDate>Fri, 15 Jul 2005 14:37:44 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-49</guid>
+					<description>&lt;p&gt;Thanks for the coverage. Yes, Simon was &lt;em&gt;very&lt;/em&gt; involved in the creation of this framework. Simon and I created it together about two years ago, and Jacob (who posted above) took over when Simon went back to finish his degree about a year ago.&lt;/p&gt;
+
+&lt;p&gt;This is very much a Simon Willison joint.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Thanks for the coverage. Yes, Simon was <em>very</em> involved in the creation of this framework. Simon and I created it together about two years ago, and Jacob (who posted above) took over when Simon went back to finish his degree about a year ago.</p>
+<p>This is very much a Simon Willison joint.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jacob Kaplan-Moss</title>
+		<link>http://lesscode.org/2005/07/15/django/#comment-48</link>
+		<pubDate>Fri, 15 Jul 2005 14:17:55 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/django/#comment-48</guid>
+					<description>&lt;p&gt;Hey Ryan --&lt;/p&gt;
+
+&lt;p&gt;I'm glad you're interested in Django; we're incredibly excited and proud to be releasing it.  If everything goes well, we should roll out the first public release today, but if you want to play with it before then, there are instructions on checking it out from subversion on the site.&lt;/p&gt;
+
+&lt;p&gt;Yeah, comparisons with Rails are inevitable: Django and Rails both solve the same problems.  Of course, we think Django solves them better :)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hey Ryan &#8211;</p>
+<p>I&#8217;m glad you&#8217;re interested in Django; we&#8217;re incredibly excited and proud to be releasing it.  If everything goes well, we should roll out the first public release today, but if you want to play with it before then, there are instructions on checking it out from subversion on the site.</p>
+<p>Yeah, comparisons with Rails are inevitable: Django and Rails both solve the same problems.  Of course, we think Django solves them better :)</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.347 seconds -->
+<!-- Cached page served by WP-Cache -->

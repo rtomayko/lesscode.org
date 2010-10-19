@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Logging microformats</title>
+	<link>http://lesscode.org/2005/12/13/logging-microformats/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:19 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: The mass amateurisation of everything, in code at Suttree, Elixir for Immortal Baboon</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-1158</link>
+		<pubDate>Tue, 07 Mar 2006 15:05:30 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-1158</guid>
+					<description>&lt;p&gt;[...] Turning log files into JSON formatted code to be eval&amp;#8217;ed by a Python script (how insecure is that!). Again, do it in PHP and you be laughed at, deservedly. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Turning log files into JSON formatted code to be eval&#8217;ed by a Python script (how insecure is that!). Again, do it in PHP and you be laughed at, deservedly. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Masklinn</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-1098</link>
+		<pubDate>Mon, 20 Feb 2006 14:23:35 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-1098</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;Jochem wrote
+  Why not directly log to XML?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Because it doesn't have any advantage over using dicts, is completely unreadable to most human beings, is extremely verbose, and requires specific packages/programs to be parsed?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>Jochem wrote<br />
+  Why not directly log to XML?</p>
+</blockquote>
+<p>Because it doesn&#8217;t have any advantage over using dicts, is completely unreadable to most human beings, is extremely verbose, and requires specific packages/programs to be parsed?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Maciej</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-835</link>
+		<pubDate>Thu, 22 Dec 2005 23:08:20 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-835</guid>
+					<description>&lt;p&gt;wrap logging into function:&lt;/p&gt;
+
+&lt;pre&gt;
+def log(**kw):
+    print &amp;#62;&amp;#62; logfile, kw
+&lt;/pre&gt;
+
+&lt;p&gt;and use it like this:&lt;/p&gt;
+
+&lt;pre&gt;
+log(state='failed-to-parse', strange_data=data, time=time.ctime())
+&lt;/pre&gt;
+</description>
+		<content:encoded><![CDATA[<p>wrap logging into function:</p>
+<pre>
+def log(**kw):
+    print &gt;&gt; logfile, kw
+</pre>
+<p>and use it like this:</p>
+<pre>
+log(state='failed-to-parse', strange_data=data, time=time.ctime())
+</pre>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mike</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-830</link>
+		<pubDate>Tue, 20 Dec 2005 22:33:12 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-830</guid>
+					<description>&lt;p&gt;Good to see someone else doing this... serialized dicts have been my logging format for years!  It's just so easy to add lines in your code like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+if not parseData(data):
+  print &amp;#62;&amp;#62; logfile, {'state' : 'failed-to-parse', 'strange-data' : data,
+                     'time' : time.ctime() }
+&lt;/pre&gt;&lt;/code&gt;
+
+Python's serializing code ensures that I'll only get one record per line, regardless of what binary garbage is in the 'data'.  And processing existing logs is as easy as grep or:
+
+&lt;pre&gt;&lt;code&gt;
+for line in file('logfile'):
+   rec = eval( line.rstrip() )
+   if rec['state'] == 'failed-to-parse':
+      lookOver( rec['strange-data'] )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Granted, there are security problems if you eval someone else's data, but for logs you generate, this is as easy &amp;#38; powerful as it gets.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Good to see someone else doing this&#8230; serialized dicts have been my logging format for years!  It&#8217;s just so easy to add lines in your code like:</p>
+<pre><code>
+if not parseData(data):
+  print &gt;&gt; logfile, {'state' : 'failed-to-parse', 'strange-data' : data,
+                     'time' : time.ctime() }
+</pre>
+<p></code></p>
+<p>Python&#8217;s serializing code ensures that I&#8217;ll only get one record per line, regardless of what binary garbage is in the &#8216;data&#8217;.  And processing existing logs is as easy as grep or:</p>
+<pre><code>
+for line in file('logfile'):
+   rec = eval( line.rstrip() )
+   if rec['state'] == 'failed-to-parse':
+      lookOver( rec['strange-data'] )
+</code></pre>
+<p>Granted, there are security problems if you eval someone else&#8217;s data, but for logs you generate, this is as easy &amp; powerful as it gets.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Wade Leftwich</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-829</link>
+		<pubDate>Tue, 20 Dec 2005 22:17:20 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-829</guid>
+					<description>&lt;p&gt;How about JSON for an eval'able microformat that's a bit safer? I've been doing something similar to the O.P. for a while, saving a web request as str(dict) (and storing it in a db text field). Recently switched over to reading &amp;#38; writing it with json-py.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>How about JSON for an eval&#8217;able microformat that&#8217;s a bit safer? I&#8217;ve been doing something similar to the O.P. for a while, saving a web request as str(dict) (and storing it in a db text field). Recently switched over to reading &amp; writing it with json-py.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill de hÓra</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-828</link>
+		<pubDate>Tue, 20 Dec 2005 13:40:53 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-828</guid>
+					<description>&lt;p&gt;&quot;Why not directly log to XML? &quot;&lt;/p&gt;
+
+&lt;p&gt;Jochem: grep.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;Why not directly log to XML? &#8220;</p>
+<p>Jochem: grep.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jochem</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-827</link>
+		<pubDate>Tue, 20 Dec 2005 11:20:36 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-827</guid>
+					<description>&lt;p&gt;Why not directly log to XML? And when the file is closed, to writeout the closing root element. Using (c)ElementTree or any other XML parser to parse the loglines later.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Why not directly log to XML? And when the file is closed, to writeout the closing root element. Using (c)ElementTree or any other XML parser to parse the loglines later.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Paul</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-819</link>
+		<pubDate>Thu, 15 Dec 2005 21:17:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-819</guid>
+					<description>&lt;p&gt;I was going to post the same thing -- q.v. August's &lt;a href=&quot;http://www.securityfocus.com/advisories/9691&quot; rel=&quot;nofollow&quot;&gt;AWStats hole&lt;/a&gt;, which involved  Perl code injected into log lines (via referrer) to be subsequently ingested, and inadvertently executed, by an eval() call in AWStats.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I was going to post the same thing &#8212; q.v. August&#8217;s <a href="http://www.securityfocus.com/advisories/9691">AWStats hole</a>, which involved  Perl code injected into log lines (via referrer) to be subsequently ingested, and inadvertently executed, by an eval() call in AWStats.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill de hOra</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-816</link>
+		<pubDate>Wed, 14 Dec 2005 16:42:56 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-816</guid>
+					<description>&lt;p&gt;Les, oh sure; v2 will have a 'strict' mode ;)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Les, oh sure; v2 will have a &#8217;strict&#8217; mode ;)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: l.m.orchard</title>
+		<link>http://lesscode.org/2005/12/13/logging-microformats/#comment-815</link>
+		<pubDate>Wed, 14 Dec 2005 16:36:43 +0000</pubDate>
+		<guid>http://lesscode.org/2005/12/13/logging-microformats/#comment-815</guid>
+					<description>&lt;p&gt;Of course... if you're going to &lt;code&gt;eval&lt;/code&gt; log lines, make sure no end-user is able to drop a payload of their own in there.  But other than that, neat trick!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Of course&#8230; if you&#8217;re going to <code>eval</code> log lines, make sure no end-user is able to drop a payload of their own in there.  But other than that, neat trick!</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.545 seconds -->
+<!-- Cached page served by WP-Cache -->

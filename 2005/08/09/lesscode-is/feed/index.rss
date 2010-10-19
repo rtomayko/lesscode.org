@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: lesscode.org is&#8230;</title>
+	<link>http://lesscode.org/2005/08/09/lesscode-is/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:50 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Tony Martin</title>
+		<link>http://lesscode.org/2005/08/09/lesscode-is/#comment-12075</link>
+		<pubDate>Sat, 16 Sep 2006 18:51:51 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/09/lesscode-is/#comment-12075</guid>
+					<description>&lt;p&gt;Not sure if this might reach the right person from here.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of links on the Rails wiki referring to plugins.  &lt;/p&gt;
+
+&lt;p&gt;see &lt;a href=&quot;http://wiki.rubyonrails.com/rails/pages/Enhanced+Form+Tag+Helper+Plugin&quot;&gt;http://wiki.rubyonrails.com/rails/pages/Enhanced+Form+Tag+Helper+Plugin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These links are broken, if the plugins are still under development, or available I would be interested.  And it would be good to update or remove the links from the rails wike.&lt;/p&gt;
+
+&lt;p&gt;Cheers&lt;br /&gt;
+Tony&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Not sure if this might reach the right person from here.</p>
+<p>There are a couple of links on the Rails wiki referring to plugins.  </p>
+<p>see <a href="http://wiki.rubyonrails.com/rails/pages/Enhanced+Form+Tag+Helper+Plugin">http://wiki.rubyonrails.com/rails/pages/Enhanced+Form+Tag+Helper+Plugin</a></p>
+<p>These links are broken, if the plugins are still under development, or available I would be interested.  And it would be good to update or remove the links from the rails wike.</p>
+<p>Cheers<br />
+Tony</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/08/09/lesscode-is/#comment-187</link>
+		<pubDate>Tue, 09 Aug 2005 15:17:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/09/lesscode-is/#comment-187</guid>
+					<description>&lt;p&gt;John: that's a great idea. I'll see what I can whip up here.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>John: that&#8217;s a great idea. I&#8217;ll see what I can whip up here.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: John</title>
+		<link>http://lesscode.org/2005/08/09/lesscode-is/#comment-185</link>
+		<pubDate>Tue, 09 Aug 2005 09:21:33 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/09/lesscode-is/#comment-185</guid>
+					<description>&lt;p&gt;Ah. I wondered why it's seemed like I've missed the context of so many of the things I've read in the last few weeks. Can you hack the feed to include the 'by' line, so those of us in RSS land know who's talking and can follow the link back to read more of the author's thoughts in their usual blog?&lt;/p&gt;
+
+&lt;p&gt;(Love the blog, though; keep it coming :-)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Ah. I wondered why it&#8217;s seemed like I&#8217;ve missed the context of so many of the things I&#8217;ve read in the last few weeks. Can you hack the feed to include the &#8216;by&#8217; line, so those of us in RSS land know who&#8217;s talking and can follow the link back to read more of the author&#8217;s thoughts in their usual blog?</p>
+<p>(Love the blog, though; keep it coming :-)</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.258 seconds -->
+<!-- Cached page served by WP-Cache -->

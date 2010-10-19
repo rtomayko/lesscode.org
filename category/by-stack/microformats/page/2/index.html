@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  microformats</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2>'microformats' Archives</h2>
+
+ 	  
+				<div class="post">
+				<h2 id="post-81"><a href="http://lesscode.org/2005/09/04/more-on-microformats/" rel="bookmark" title="Permanent Link to more on microformats">more on microformats</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/09/04/more-on-microformats/#respond" title="Comment on more on microformats">0</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a>,  <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a>,  <a href="http://lesscode.org/category/by-stack/microformats/" title="View all posts in microformats" rel="category tag">microformats</a><br />04. September 2005</small>
+
+				<div class="entry">
+					<p>I&#8217;ve written previously on the <a href="http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/">trade-offs</a> that <a href="http://www.microformats.org/wiki/microformats">microformats</a> make in vocabulary design. I&#8217;m still not sure how I feel about the short-string issue, but it appears no one is waiting for me to make up my mind, so I figured I&#8217;d <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-September/000850.html">try it out</a>.</p> 
+
+<p>So far I like it that microformats depend on well-understood technology, and that a lazy dev could point their HTML rendering component at the page if they didn&#8217;t feel like writing support. OTOH, <a href="http://microformats.org/wiki/hcard-parsing">parsing can be a bear</a>. I think I may have cheated a little in that I insisted on XHTML, but even that had its own problems, since it&#8217;s tied to a DTD. Either you write your own entity resolver or the XML parser downloads three DTD files from w3.org. Rotten. I let my <a href="http://www.franklinmint.fm/2005/09/03/draft-sayre-atompub-xhtml-micro-00.html#client">example client</a> do just that in the interest of brevity.</p>
+
+<p>On the <em>lesscode</em> side of things, the <a href="http://www.franklinmint.fm/2005/09/03/draft-sayre-atompub-xhtml-micro-00.html">draft</a> includes Python implementations of a client and server. With margins, the IETF txt format ends up allowing something less than the usual number of columns, so it cramped my Python style a little bit. I think they ended up pretty short, but one of the nice things about Python is that someone can always show you a way to do it that&#8217;s shorter and clearer. So, let&#8217;s have it! (no generators allowed, to keep things adaptable to those other languages :)</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/09/04/more-on-microformats/"
+    dc:identifier="http://lesscode.org/2005/09/04/more-on-microformats/"
+    dc:title="more on microformats"
+    trackback:ping="http://lesscode.org/2005/09/04/more-on-microformats/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://lesscode.org/category/by-stack/microformats/"></a></div>
+			<div class="alignright"><a href="http://lesscode.org/category/by-stack/microformats/">next &raquo;</a></div>
+		</div>
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.290 seconds -->

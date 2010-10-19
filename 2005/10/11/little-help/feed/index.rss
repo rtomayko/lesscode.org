@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Little Help?</title>
+	<link>http://lesscode.org/2005/10/11/little-help/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:24 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: chris wine</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-736</link>
+		<pubDate>Fri, 04 Nov 2005 19:29:00 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-736</guid>
+					<description>&lt;p&gt;This is a great story I received from Bill Edney...&lt;/p&gt;
+
+&lt;p&gt;My friend Rob owns a call center company here in St. Louis. 3 years ago 
+he had hired a 'kid' (22 years old - to me that's young :-) ) to start 
+building an application to run his business. Now, this kid had started 
+to learn PHP and MySQL, so Rob asked me what I thought about that. I 
+told him that, for his needs and his budget, that PHP was the 'right 
+choice'. Being biased by Scott (;-) ), I told him that I thought the 
+choice of MySQL was the wrong choice. That he should go with PostgreSQL 
+instead. &quot;One day&quot;, I told him, &quot;Eddie's gonna run into the wall with 
+MySQL and he's gonna want subselects, triggers and stored procedures - 
+you know the things that &lt;em&gt;real&lt;/em&gt; databases have&quot;.&lt;/p&gt;
+
+&lt;p&gt;Rob didn't understand what that meant and neither did Eddie, so they
+promptly ignored my advice and began building PHP using MySQL. Now, 3 
+years later, they're reasonably happy with what they have, but they 
+know they're underpowered on the database. So yesterday (October 24th), I 
+stopped by the office to help Eddie with a bit of JavaScript and he 
+said to me &quot;You know, I could really use subselects, triggers and stored 
+procedures&quot;.&lt;/p&gt;
+
+&lt;p&gt;I couldn't help but smile to myself. Finally, I thought, they're ready.&lt;/p&gt;
+
+&lt;p&gt;So you're all thinking that now that Eddie has seen the light, he's 
+getting ready to migrate to PostgreSQL. Nope. Because his next 
+statement 
+to me was:&lt;/p&gt;
+
+&lt;p&gt;&quot;So I think I'm gonna have the sysadmin upgrade us to MySQL 5.0, which 
+now has subselects, triggers and stored procedures&quot;.&lt;/p&gt;
+
+&lt;p&gt;Eddie grew up.
+MySQL grew up.
+They grew up together.&lt;/p&gt;
+
+&lt;p&gt;Now, there are problems that PostgreSQL is suited for that MySQL 5.0 
+still isn't suited for, etc. etc. And I'd still recommend PostgreSQL 
+any day of the week. The point is that folks start simple and then, if you 
+provide them with a migration path, will continue to grow as your 
+product grows.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>This is a great story I received from Bill Edney&#8230;</p>
+<p>My friend Rob owns a call center company here in St. Louis. 3 years ago<br />
+he had hired a &#8216;kid&#8217; (22 years old - to me that&#8217;s young :-) ) to start<br />
+building an application to run his business. Now, this kid had started<br />
+to learn PHP and MySQL, so Rob asked me what I thought about that. I<br />
+told him that, for his needs and his budget, that PHP was the &#8216;right<br />
+choice&#8217;. Being biased by Scott (;-) ), I told him that I thought the<br />
+choice of MySQL was the wrong choice. That he should go with PostgreSQL<br />
+instead. &#8220;One day&#8221;, I told him, &#8220;Eddie&#8217;s gonna run into the wall with<br />
+MySQL and he&#8217;s gonna want subselects, triggers and stored procedures -<br />
+you know the things that <em>real</em> databases have&#8221;.</p>
+<p>Rob didn&#8217;t understand what that meant and neither did Eddie, so they<br />
+promptly ignored my advice and began building PHP using MySQL. Now, 3<br />
+years later, they&#8217;re reasonably happy with what they have, but they<br />
+know they&#8217;re underpowered on the database. So yesterday (October 24th), I<br />
+stopped by the office to help Eddie with a bit of JavaScript and he<br />
+said to me &#8220;You know, I could really use subselects, triggers and stored<br />
+procedures&#8221;.</p>
+<p>I couldn&#8217;t help but smile to myself. Finally, I thought, they&#8217;re ready.</p>
+<p>So you&#8217;re all thinking that now that Eddie has seen the light, he&#8217;s<br />
+getting ready to migrate to PostgreSQL. Nope. Because his next<br />
+statement<br />
+to me was:</p>
+<p>&#8220;So I think I&#8217;m gonna have the sysadmin upgrade us to MySQL 5.0, which<br />
+now has subselects, triggers and stored procedures&#8221;.</p>
+<p>Eddie grew up.<br />
+MySQL grew up.<br />
+They grew up together.</p>
+<p>Now, there are problems that PostgreSQL is suited for that MySQL 5.0<br />
+still isn&#8217;t suited for, etc. etc. And I&#8217;d still recommend PostgreSQL<br />
+any day of the week. The point is that folks start simple and then, if you<br />
+provide them with a migration path, will continue to grow as your<br />
+product grows.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: sogrady</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-602</link>
+		<pubDate>Thu, 13 Oct 2005 17:05:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-602</guid>
+					<description>&lt;p&gt;happy to. i just hope they turn out to be decent ;)&lt;/p&gt;
+
+&lt;p&gt;would be cool if you could be there, but you probably know everything i'm going to say anyway :) plus i'll be taking your name in vain early in the deck.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>happy to. i just hope they turn out to be decent ;)</p>
+<p>would be cool if you could be there, but you probably know everything i&#8217;m going to say anyway :) plus i&#8217;ll be taking your name in vain early in the deck.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-601</link>
+		<pubDate>Thu, 13 Oct 2005 16:51:17 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-601</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;Slides: will be made available following the conference under Creative Commons terms on my site, and here if the community here so desires.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I'd love to host them here. I'm bummed I can't make it to see the keynote in person. :/&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>Slides: will be made available following the conference under Creative Commons terms on my site, and here if the community here so desires.</p>
+</blockquote>
+<p>I&#8217;d love to host them here. I&#8217;m bummed I can&#8217;t make it to see the keynote in person. :/</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: sogrady</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-598</link>
+		<pubDate>Wed, 12 Oct 2005 22:23:17 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-598</guid>
+					<description>&lt;p&gt;Paul: &quot;I would say that TV recording is real world practical example of simple and lesscode ideas for the user side.&quot;&lt;/p&gt;
+
+&lt;p&gt;Tivo! love that - will absolutely use that example. it's the perfect embodiment of user side simplicity.&lt;/p&gt;
+
+&lt;p&gt;Jon: great point about building simplicity in upfront, via the APIs. i've got a bit of that when discussing REST vs WS-*, and the Amazon REST v SOAP adoption #'s, but the point could certainly use some emphasis. thx much.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Paul: &#8220;I would say that TV recording is real world practical example of simple and lesscode ideas for the user side.&#8221;</p>
+<p>Tivo! love that - will absolutely use that example. it&#8217;s the perfect embodiment of user side simplicity.</p>
+<p>Jon: great point about building simplicity in upfront, via the APIs. i&#8217;ve got a bit of that when discussing REST vs WS-*, and the Amazon REST v SOAP adoption #&#8217;s, but the point could certainly use some emphasis. thx much.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jon Miller</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-597</link>
+		<pubDate>Wed, 12 Oct 2005 16:02:27 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-597</guid>
+					<description>&lt;p&gt;If I were asked to boil down the principles of abiding with the ways of simplicity and lesscode, I would say that it is simply an excercise in design. The projects we love to use and like to site as examples are the ones that were designed extrememly well. In particular, it is when developers stay focused a specific goal with a narrowed audience where you'll typically find awesome apps.&lt;/p&gt;
+
+&lt;p&gt;I feel that designing with simplicity in mind is most important in the APIs that we create. Let's say I had a problem or an itch to scratch with the current threading model in python and/or the subprocess module and had some slick ideas on how to improve it. My implementation &lt;em&gt;might&lt;/em&gt; be rather complex and not simple at all, but my goal would certainly be to expose a very simple and easy to use API. &lt;/p&gt;
+
+&lt;p&gt;I think another good example of a group of coders that express the tenants of simplicity and lesscode are the linux kernel developers. Just think how often they have to ward off people coming along with the next best system call that HAS to be implemented. Reminds me of someone who posted a patch to the kernel mailing list with an implementation of an entire scheme interpreter in the kernel! People need to design with good taste and an understanding of what belongs where in order to produce or maintain systems that are concidered s/l.&lt;/p&gt;
+
+&lt;p&gt;I wish I could come up with some more good examples, off the top of my head, but I'd probably just be plagiarizing &lt;a href=&quot;http://www.amazon.com/exec/obidos/tg/detail/-/0672326140/qid=1129131951/sr=1-1/ref=sr_1_1/103-8477215-8343001?v=glance&amp;#38;s=books&quot; rel=&quot;nofollow&quot;&gt;Alan Cooper&lt;/a&gt;.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>If I were asked to boil down the principles of abiding with the ways of simplicity and lesscode, I would say that it is simply an excercise in design. The projects we love to use and like to site as examples are the ones that were designed extrememly well. In particular, it is when developers stay focused a specific goal with a narrowed audience where you&#8217;ll typically find awesome apps.</p>
+<p>I feel that designing with simplicity in mind is most important in the APIs that we create. Let&#8217;s say I had a problem or an itch to scratch with the current threading model in python and/or the subprocess module and had some slick ideas on how to improve it. My implementation <em>might</em> be rather complex and not simple at all, but my goal would certainly be to expose a very simple and easy to use API. </p>
+<p>I think another good example of a group of coders that express the tenants of simplicity and lesscode are the linux kernel developers. Just think how often they have to ward off people coming along with the next best system call that HAS to be implemented. Reminds me of someone who posted a patch to the kernel mailing list with an implementation of an entire scheme interpreter in the kernel! People need to design with good taste and an understanding of what belongs where in order to produce or maintain systems that are concidered s/l.</p>
+<p>I wish I could come up with some more good examples, off the top of my head, but I&#8217;d probably just be plagiarizing <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0672326140/qid=1129131951/sr=1-1/ref=sr_1_1/103-8477215-8343001?v=glance&amp;s=books">Alan Cooper</a>.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Paul Cooper</title>
+		<link>http://lesscode.org/2005/10/11/little-help/#comment-596</link>
+		<pubDate>Wed, 12 Oct 2005 13:23:44 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/11/little-help/#comment-596</guid>
+					<description>&lt;p&gt;I think there are two intermingled sides to simplicity and lesscode - the user side and the developer side. To me the whole thing is about chosing languages, methods, approachs, frameworks, etc that make life better and easier for both parties. By making the job of the developer easier they can focus on making things better / easier for the user.&lt;/p&gt;
+
+&lt;p&gt;I would say that TV recording is real world practical example of simple and lesscode ideas for the user side.&lt;/p&gt;
+
+&lt;p&gt;Ask the audience how many people in their family know how to set the timer of a video recorder (you could ask how many of them know how to use a video recorder but if it's a room full of programmers the chances are they &lt;em&gt;do&lt;/em&gt;, and were hassled by family members to set it up). Recording a TV programme when you wheren't in is/was a nightmare with a VCR - quite apart from the setting of the timer, labeling the tape, remembering where you put it, remembering that you even recorded that show (how many people have found a tape during a tidy up and thought - wow, I don't remember recording that).&lt;/p&gt;
+
+&lt;p&gt;With a PVR (Tivo, Sky+, MythTV) it's as simple and user centred as: find the program in the EPG (or search for something you're interested in) and press the record button. Finding the recorded shows is simple as well. There is no doubt that more could be done to make PVR's even more simple and lesscode, but the contrast between the VCR forcing you to be a part time programmer and librarian, and the PVR which allows you to find what you want and record it. It's is slightly unfair to the designers of VCR's since their wasn't the infrastructure in the late 70's / early 80's to do this sort of thing.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I think there are two intermingled sides to simplicity and lesscode - the user side and the developer side. To me the whole thing is about chosing languages, methods, approachs, frameworks, etc that make life better and easier for both parties. By making the job of the developer easier they can focus on making things better / easier for the user.</p>
+<p>I would say that TV recording is real world practical example of simple and lesscode ideas for the user side.</p>
+<p>Ask the audience how many people in their family know how to set the timer of a video recorder (you could ask how many of them know how to use a video recorder but if it&#8217;s a room full of programmers the chances are they <em>do</em>, and were hassled by family members to set it up). Recording a TV programme when you wheren&#8217;t in is/was a nightmare with a VCR - quite apart from the setting of the timer, labeling the tape, remembering where you put it, remembering that you even recorded that show (how many people have found a tape during a tidy up and thought - wow, I don&#8217;t remember recording that).</p>
+<p>With a PVR (Tivo, Sky+, MythTV) it&#8217;s as simple and user centred as: find the program in the EPG (or search for something you&#8217;re interested in) and press the record button. Finding the recorded shows is simple as well. There is no doubt that more could be done to make PVR&#8217;s even more simple and lesscode, but the contrast between the VCR forcing you to be a part time programmer and librarian, and the PVR which allows you to find what you want and record it. It&#8217;s is slightly unfair to the designers of VCR&#8217;s since their wasn&#8217;t the infrastructure in the late 70&#8217;s / early 80&#8217;s to do this sort of thing.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.312 seconds -->
+<!-- Cached page served by WP-Cache -->

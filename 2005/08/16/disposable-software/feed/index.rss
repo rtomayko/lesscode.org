@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Disposable Software</title>
+	<link>http://lesscode.org/2005/08/16/disposable-software/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:04:24 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Seezar Honibe</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-20839</link>
+		<pubDate>Tue, 19 Dec 2006 14:24:16 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-20839</guid>
+					<description>&lt;p&gt;Lets see if I got this right: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Less is more
+Seems we all agree reuse is fiction. Reuse bloats the code and increases the chance for implementation and production errors. Don't solve for an undefined problem - you cannot. 
+Presentation correlation: If the business presentation were to address a different issue than for what it was created the presentation would confuse the audience. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consumers create
+As defined disposable software requires domain expertise. Focus on the problem to solve than being a tools expert. Most hardware products are all disposable and in some cases the factory that creates the specific hardware is also disposable. Here lies the rub; most consumers of the 'software' are still not able to create their own applicatons.
+Presentation correlation: If I as the presenter need to deliver a board meeting, I would create my own presentation; not my assistant; not the IT guy. In fact what I lack in bling is made up for in focused content. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Half-life matters ( http://en.wikipedia.org/wiki/Halflife )
+Knowing how long your application lasts determines how much effort you invest and I submit this defines disposability. Know that production support, network performance and interoperability  as is lifetime usage are part of the specific requirements. But don't code for more than you know. 
+Presentation correlation: My presentations, created with PowerPoint, have a halflife of 7 days after which the information is out of date; the problem has been solved. However Microsoft PowerPoint is not at the same level of disposability as the presentation created with PP. That means software (C#) does not create disposability but specific application factories (PowerPoint) create disposable products (mypresentation.ppt). &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;did we not try and get here with 4GLs ;-)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;One size does not fit all
+What is being said about disposable applications is solve a specific problem and not all applications are solved in the sameway. The lifetime of the application may require different tools and different approaches. Ruby on Rails solves a specific class of problem and that is what makes RoR such a  powerful factory. (DSL's extend this metaphor) 
+Presentation correlation: At some point I have to put aside PowerPoint and decided that a short video clip (also disposable) is the better presentation to get re-elected.  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use common sense
+In the business world we constantly make value based decisions as to effort and result. As long as you know the lifetime value of your product you can match the implementation and maintenance effort appropriately. 
+Presentation correlation: This is where I say maybe a verbal conversation or a blog entry is best and I throw away Microsoft PowerPoint and get back to doing real work, like walking my dog ;-)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+		<content:encoded><![CDATA[<p>Lets see if I got this right: </p>
+<ol>
+<li>
+<p>Less is more<br />
+Seems we all agree reuse is fiction. Reuse bloats the code and increases the chance for implementation and production errors. Don&#8217;t solve for an undefined problem - you cannot.<br />
+Presentation correlation: If the business presentation were to address a different issue than for what it was created the presentation would confuse the audience. </p>
+</li>
+<li>
+<p>Consumers create<br />
+As defined disposable software requires domain expertise. Focus on the problem to solve than being a tools expert. Most hardware products are all disposable and in some cases the factory that creates the specific hardware is also disposable. Here lies the rub; most consumers of the &#8217;software&#8217; are still not able to create their own applicatons.<br />
+Presentation correlation: If I as the presenter need to deliver a board meeting, I would create my own presentation; not my assistant; not the IT guy. In fact what I lack in bling is made up for in focused content. </p>
+</li>
+<li>
+<p>Half-life matters ( http://en.wikipedia.org/wiki/Halflife )<br />
+Knowing how long your application lasts determines how much effort you invest and I submit this defines disposability. Know that production support, network performance and interoperability  as is lifetime usage are part of the specific requirements. But don&#8217;t code for more than you know.<br />
+Presentation correlation: My presentations, created with PowerPoint, have a halflife of 7 days after which the information is out of date; the problem has been solved. However Microsoft PowerPoint is not at the same level of disposability as the presentation created with PP. That means software (C#) does not create disposability but specific application factories (PowerPoint) create disposable products (mypresentation.ppt). </p>
+<ul>
+<li>did we not try and get here with 4GLs ;-)</li>
+</ul>
+</li>
+<li>
+<p>One size does not fit all<br />
+What is being said about disposable applications is solve a specific problem and not all applications are solved in the sameway. The lifetime of the application may require different tools and different approaches. Ruby on Rails solves a specific class of problem and that is what makes RoR such a  powerful factory. (DSL&#8217;s extend this metaphor)<br />
+Presentation correlation: At some point I have to put aside PowerPoint and decided that a short video clip (also disposable) is the better presentation to get re-elected.  </p>
+</li>
+<li>
+<p>Use common sense<br />
+In the business world we constantly make value based decisions as to effort and result. As long as you know the lifetime value of your product you can match the implementation and maintenance effort appropriately.<br />
+Presentation correlation: This is where I say maybe a verbal conversation or a blog entry is best and I throw away Microsoft PowerPoint and get back to doing real work, like walking my dog ;-)</p>
+</li>
+</ol>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Team Murder &#187; I&#8217;d Rather See Recyclable Software</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-9153</link>
+		<pubDate>Sun, 27 Aug 2006 05:11:54 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-9153</guid>
+					<description>&lt;p&gt;[...] I spent a little time on the bus ride this morning reading and mulling Alex Bunardzic&amp;#8217;s post on disposable software which is a huge lump of information and insight to chew on but it also got me thinking about some things perhaps tangential to some of the things he talked about. In my own admittedly limited experience I&amp;#8217;ve found the reuse of code to wildly vary in terms of usefulness. Most of the actual work I do in a text editor these days revolves around forms and the scripts necessary to do something with them so I&amp;#8217;m at least 89% talking out of my ass here but I&amp;#8217;ve run into similar circumstances with larger chunks of code (like writing my own web server instead of just using whatever was rolled into a CMS) and liked it even less. In my current place of work there is a weird premium placed on the ability to do any programming work since we&amp;#8217;re essentially in place as phone &amp;#8216;bots and not expected to know a whole lot more than that. The fact that I can churn through a script that doesn&amp;#8217;t really do a whole lot in twenty minutes is considered pretty valuable by some folks for reasons I can&amp;#8217;t really figure out without chalking out a pentagram and summoning up some management types to explain things to me. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] I spent a little time on the bus ride this morning reading and mulling Alex Bunardzic&#8217;s post on disposable software which is a huge lump of information and insight to chew on but it also got me thinking about some things perhaps tangential to some of the things he talked about. In my own admittedly limited experience I&#8217;ve found the reuse of code to wildly vary in terms of usefulness. Most of the actual work I do in a text editor these days revolves around forms and the scripts necessary to do something with them so I&#8217;m at least 89% talking out of my ass here but I&#8217;ve run into similar circumstances with larger chunks of code (like writing my own web server instead of just using whatever was rolled into a CMS) and liked it even less. In my current place of work there is a weird premium placed on the ability to do any programming work since we&#8217;re essentially in place as phone &#8216;bots and not expected to know a whole lot more than that. The fact that I can churn through a script that doesn&#8217;t really do a whole lot in twenty minutes is considered pretty valuable by some folks for reasons I can&#8217;t really figure out without chalking out a pentagram and summoning up some management types to explain things to me. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Peter Rip</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-9047</link>
+		<pubDate>Sat, 26 Aug 2006 02:51:28 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-9047</guid>
+					<description>&lt;p&gt;I think this is a brilliant insight.  It is the core of Web 2.0 impact in the Enterprise.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I think this is a brilliant insight.  It is the core of Web 2.0 impact in the Enterprise.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ethical Software by Alex Bunardzic &#187; Building Disposable Software with Rails</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-7325</link>
+		<pubDate>Wed, 09 Aug 2006 23:42:16 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-7325</guid>
+					<description>&lt;p&gt;[...] Last year I became aware of the Disposable Software phenomenon. After using Rails on a couple of initial projects, I also became aware that the reality of disposable software is upon us. Today, I&amp;#8217;m going to show you an example from my recent practice. This example will hopefully support my hunch that the age of disposable software is dawning. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Last year I became aware of the Disposable Software phenomenon. After using Rails on a couple of initial projects, I also became aware that the reality of disposable software is upon us. Today, I&#8217;m going to show you an example from my recent practice. This example will hopefully support my hunch that the age of disposable software is dawning. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Peter Wilson</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-227</link>
+		<pubDate>Thu, 18 Aug 2005 19:01:57 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-227</guid>
+					<description>&lt;p&gt;I hate to break a big secret, but power users (and departmental programmers) have been using Micorsoft Office to develop small disposable systems for years. It seems this lesson has not yet been learned for web based apps.
+As an example our Ski Racing Club developed a very simple system for the annual club auction. Simple Access tables and a few forms + crappy coding that would make a programmer cry. Invaluable: one hour end-of-auction check out lines reduced to minutes. So useful that several other clubs have lifted it out of the garbage can for their own use.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I hate to break a big secret, but power users (and departmental programmers) have been using Micorsoft Office to develop small disposable systems for years. It seems this lesson has not yet been learned for web based apps.<br />
+As an example our Ski Racing Club developed a very simple system for the annual club auction. Simple Access tables and a few forms + crappy coding that would make a programmer cry. Invaluable: one hour end-of-auction check out lines reduced to minutes. So useful that several other clubs have lifted it out of the garbage can for their own use.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-226</link>
+		<pubDate>Thu, 18 Aug 2005 16:22:10 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-226</guid>
+					<description>&lt;p&gt;Assaph Mehr wrote:&lt;/p&gt;
+
+&lt;p&gt;&quot;While I firmly believe like you in disposable software, I think there is something wrong with your first argument (presentation vs. software). It’s the old ‘teach a man to fish’ story: your presentation is not about giving them a one-time fish, it’s about teaching them how to fish (with examples for their lake, as it were :). &quot;&lt;/p&gt;
+
+&lt;p&gt;This is true, my example is all about 'teach them how to fish'. I chose that example simply because it was first hand and my most recent experience, so I talked about it in order to lend more credibility to my thesis.&lt;/p&gt;
+
+&lt;p&gt;However, I can also cite many examples where the PowerPoint presentation was merely a fish to be devoured by the audience, not a lecture on how to fish. In that respect, such presentations are not that much different from what a business application can deliver to its consumers.&lt;/p&gt;
+
+&lt;p&gt;Using a run of the mill application is not going to make anyone smarter, that's for sure, but the same holds true for consuming a run of the mill business presentation.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Assaph Mehr wrote:</p>
+<p>&#8220;While I firmly believe like you in disposable software, I think there is something wrong with your first argument (presentation vs. software). It’s the old ‘teach a man to fish’ story: your presentation is not about giving them a one-time fish, it’s about teaching them how to fish (with examples for their lake, as it were :). &#8220;</p>
+<p>This is true, my example is all about &#8216;teach them how to fish&#8217;. I chose that example simply because it was first hand and my most recent experience, so I talked about it in order to lend more credibility to my thesis.</p>
+<p>However, I can also cite many examples where the PowerPoint presentation was merely a fish to be devoured by the audience, not a lecture on how to fish. In that respect, such presentations are not that much different from what a business application can deliver to its consumers.</p>
+<p>Using a run of the mill application is not going to make anyone smarter, that&#8217;s for sure, but the same holds true for consuming a run of the mill business presentation.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-225</link>
+		<pubDate>Thu, 18 Aug 2005 16:05:08 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-225</guid>
+					<description>&lt;p&gt;Douglas Clifton wrote:&lt;/p&gt;
+
+&lt;p&gt;&quot;Regardless of the perception at a corporate level, most software is disposable.&quot;&lt;/p&gt;
+
+&lt;p&gt;Thanks for this clarification, Douglas. You are, of course, right, and now I see that I should've titled my blurb &quot;Intentionally  Disposable Software&quot;. Because that's what I was driving at.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Douglas Clifton wrote:</p>
+<p>&#8220;Regardless of the perception at a corporate level, most software is disposable.&#8221;</p>
+<p>Thanks for this clarification, Douglas. You are, of course, right, and now I see that I should&#8217;ve titled my blurb &#8220;Intentionally  Disposable Software&#8221;. Because that&#8217;s what I was driving at.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Jonathan Holst</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-224</link>
+		<pubDate>Thu, 18 Aug 2005 15:09:11 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-224</guid>
+					<description>&lt;p&gt;I agree with Assaph Mehr, on the part that there's a difference between the software and the presentation -- the presentation might make you smarter, and that's precious.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I agree with Assaph Mehr, on the part that there&#8217;s a difference between the software and the presentation &#8212; the presentation might make you smarter, and that&#8217;s precious.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Matthew</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-223</link>
+		<pubDate>Thu, 18 Aug 2005 14:17:30 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-223</guid>
+					<description>&lt;p&gt;Fantastic article.  We write &quot;throw away&quot; code here all the time.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Fantastic article.  We write &#8220;throw away&#8221; code here all the time.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Dan Hatfield</title>
+		<link>http://lesscode.org/2005/08/16/disposable-software/#comment-222</link>
+		<pubDate>Thu, 18 Aug 2005 11:39:16 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/16/disposable-software/#comment-222</guid>
+					<description>&lt;p&gt;From what I can tell most corporation do pursue reuse of &quot;content&quot; (presentations, documents, etc) in the form of knowledge management. Of course, based on my experience, these initiatives have been as unsuccessful as reusing code modules.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>From what I can tell most corporation do pursue reuse of &#8220;content&#8221; (presentations, documents, etc) in the form of knowledge management. Of course, based on my experience, these initiatives have been as unsuccessful as reusing code modules.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.354 seconds -->
+<!-- Cached page served by WP-Cache -->

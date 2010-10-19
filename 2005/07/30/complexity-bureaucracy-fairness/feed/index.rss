@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Complexity, Bureaucracy, Fairness</title>
+	<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:01 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: more on microformats [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-376</link>
+		<pubDate>Sun, 04 Sep 2005 19:03:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-376</guid>
+					<description>&lt;p&gt;[...] I&amp;#8217;ve written previously on the trade-offs that microformats make in vocabulary design. I&amp;#8217;m still not sure how I feel about the short-string issue, but it appears no one is waiting for me to make up my mind, so I figured I&amp;#8217;d try it out. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] I&#8217;ve written previously on the trade-offs that microformats make in vocabulary design. I&#8217;m still not sure how I feel about the short-string issue, but it appears no one is waiting for me to make up my mind, so I figured I&#8217;d try it out. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Anonymous</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-148</link>
+		<pubDate>Mon, 01 Aug 2005 23:23:37 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-148</guid>
+					<description>&lt;p&gt;Wow, I had no idea it was you Robert that had posted that article. That explains a lot.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Wow, I had no idea it was you Robert that had posted that article. That explains a lot.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Robert Sayre</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-147</link>
+		<pubDate>Mon, 01 Aug 2005 18:58:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-147</guid>
+					<description>&lt;p&gt;&lt;s&gt;None of those are key points, because this post had nothing to do with your article or messages.&lt;/s&gt; &lt;i&gt;(Didn't mean to sound so irritated)&lt;/i&gt; It was only Tantek's comment that I disagreed with.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><s>None of those are key points, because this post had nothing to do with your article or messages.</s> <i>(Didn&#8217;t mean to sound so irritated)</i> It was only Tantek&#8217;s comment that I disagreed with.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: jcgregorio</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-146</link>
+		<pubDate>Mon, 01 Aug 2005 18:46:40 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-146</guid>
+					<description>&lt;p&gt;I believe several key points are being missed in the rush to revulsion:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;In [1] I clearly state that there would be a registry for microformat extensions to APP collections, thus no squatting allowed.&lt;/li&gt;
+&lt;li&gt;While I have argued that some things should be put into the XHTML content, I also believe that there is some stuff that clearly belongs outside of it, for example, the pub:control [2].&lt;/li&gt;
+&lt;li&gt;I also believe that some RSS extensions should have been handled in content and not a separate namespaced element. How less functional is an enclosure element versus &quot;a href='' rel='enclosure'&quot; ?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;[1] &lt;a href=&quot;http://www.imc.org/atom-protocol/mail-archive/msg01245.html&quot;&gt;http://www.imc.org/atom-protocol/mail-archive/msg01245.html&lt;/a&gt;&lt;br /&gt;
+[2] &lt;a href=&quot;http://www.imc.org/atom-protocol/mail-archive/msg01242.html&quot;&gt;http://www.imc.org/atom-protocol/mail-archive/msg01242.html&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I believe several key points are being missed in the rush to revulsion:</p>
+<ol>
+<li>In [1] I clearly state that there would be a registry for microformat extensions to APP collections, thus no squatting allowed.</li>
+<li>While I have argued that some things should be put into the XHTML content, I also believe that there is some stuff that clearly belongs outside of it, for example, the pub:control [2].</li>
+<li>I also believe that some RSS extensions should have been handled in content and not a separate namespaced element. How less functional is an enclosure element versus &#8220;a href='&#8217; rel=&#8217;enclosure&#8217;&#8221; ?</li>
+</ol>
+<p>[1] <a href="http://www.imc.org/atom-protocol/mail-archive/msg01245.html">http://www.imc.org/atom-protocol/mail-archive/msg01245.html</a><br />
+[2] <a href="http://www.imc.org/atom-protocol/mail-archive/msg01242.html">http://www.imc.org/atom-protocol/mail-archive/msg01242.html</a></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Fredrik</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-144</link>
+		<pubDate>Sun, 31 Jul 2005 09:50:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-144</guid>
+					<description>&lt;p&gt;That's not how xml works, is it?&lt;/p&gt;
+
+&lt;p&gt;What if you want to embed &quot;foo&quot; xml in an RSS feed? Or an XML document type that includes a &quot;friend&quot; tag? That's the problem namespaces solves and a MIME type will not help. It will only move the namespace declaration from the root element to a Content-Type header (provided it is available).&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>That&#8217;s not how xml works, is it?</p>
+<p>What if you want to embed &#8220;foo&#8221; xml in an RSS feed? Or an XML document type that includes a &#8220;friend&#8221; tag? That&#8217;s the problem namespaces solves and a MIME type will not help. It will only move the namespace declaration from the root element to a Content-Type header (provided it is available).</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mark Baker</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-143</link>
+		<pubDate>Sun, 31 Jul 2005 02:24:57 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-143</guid>
+					<description>&lt;p&gt;&quot;Would it be OK for Microsoft to define the meaning of the word “friend?”&quot;&lt;/p&gt;
+
+&lt;p&gt;It would in the context of a separate media type, ala application/vnd.ms.foo+xml&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;Would it be OK for Microsoft to define the meaning of the word “friend?”&#8221;</p>
+<p>It would in the context of a separate media type, ala application/vnd.ms.foo+xml</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Labnotes &#187; Are microformats going against the grain</title>
+		<link>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-142</link>
+		<pubDate>Sat, 30 Jul 2005 20:53:52 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/30/complexity-bureaucracy-fairness/#comment-142</guid>
+					<description>&lt;p&gt;[...] Robert Sayre responds to Tantek Çelik:  I disagree. Namespaces can sometimes be a technical hassle, but I’ve noticed that people who rail against them are usually squatting on a set of short strings. Would it be OK for Microsoft to define the meaning of the word “friend?” [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Robert Sayre responds to Tantek Çelik:  I disagree. Namespaces can sometimes be a technical hassle, but I’ve noticed that people who rail against them are usually squatting on a set of short strings. Would it be OK for Microsoft to define the meaning of the word “friend?” [&#8230;]</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.409 seconds -->
+<!-- Cached page served by WP-Cache -->

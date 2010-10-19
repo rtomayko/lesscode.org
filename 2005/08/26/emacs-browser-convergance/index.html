@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  When Emacs and The Browser converge</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/08/25/freedom-vs-safety/">Freedom vs. Safety</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/08/28/java-tunnel-vision/">Java Tunnel Vision</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-68"><a href="http://lesscode.org/2005/08/26/emacs-browser-convergance/" rel="bookmark" title="Permanent Link: When Emacs and The Browser converge">When Emacs and The Browser converge</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a> 
+      on 26. August 2005</small>
+
+			<div class="entrytext">
+				<p>I finally broke down a few days ago and decided to make
+<a href="http://www.mozilla.org/products/firefox/">Firefox</a> my default
+browser. I&#8217;ve tried to move away from Safari a few times in the past but
+never made it longer than a day. Safari is a better OS X application in
+some very fundamental ways but I&#8217;m encouraged by the <a href="http://wiki.mozilla.org/Mac:Home_Page">Firefox/Mac
+activity</a> slated for Firefox 1.5
+and beyond.</p>
+
+<p>My reason for switching and my reason for holding off for so long are
+the same: my browser contains significant customization and
+personalization. I&#8217;ve built up a nice little toolset on top of Safari
+that includes
+<a href="http://naeblis.cx/rtomayko/2005/01/12/experimental-delicious-thing-generator">bookmarklets</a>,
+<a href="http://haoli.dnsalias.com/Saft/">extensions</a>, and <a href="http://www.atamadison.com/w/kitzkikz.php?page=Sogudi">URL
+searches</a>, not to
+mention all of my cookies, passwords, and history. Once you&#8217;ve
+established a normal workflow around these customizations, it becomes
+hard to go without them. It&#8217;s not unlike trying to switch from Emacs
+(with a ~5,000 line <code>.emacs</code> file crufted over years of use) to vi.</p>
+
+<p>But, as I said, the ability to customize the browser has become so
+important to me that I&#8217;m willing to take the hit to productivity and
+Macishness now to get ramped up on a platform with far greater support
+for customization. In other words,
+<a href="http://greasemonkey.mozdev.org/">Greasemonkey</a>. I&#8217;ve only just begun
+<a href="http://diveintogreasemonkey.org/">diving in</a> but my experience thus far
+is promising. The ability to automate tasks and extend basic web content
+with simple scripts seems so insanely obvious that I&#8217;m having a hard
+time understanding how this wasn&#8217;t a built-in feature of the 3.0 era
+browsers. Greasemonkey may be the first signs of a long awaited
+convergence between Emacs and The Browser :) Now if I could just get an
+<code>M-x</code> prompt, we&#8217;d be in business (<a href="http://www.yubnub.org/">YubNub</a> anyone?)</p>
+
+<p>As with Emacs, I will now begin building an embarassingly unorganized
+collection of hacks. I spent an hour or so combing through the <a href="http://dunck.us/collab/GreaseMonkeyUserScripts">massive
+repository of user
+scripts</a> just to get my
+feet wet. Notes and pointers to stuff I found useful as follows&#8230;</p>
+
+<h3>Auto Login Everywhere</h3>
+
+<p>The
+<a href="http://blog.monstuff.com/archives/images/AllowPasswordRemembering.user.js">AllowPasswordRemembering</a>
+and
+<a href="http://www.squarefree.com/userscripts/autologinj.user.js">AutoLoginJ</a>
+scripts can be used to get almost reliable automatic login anywhere that
+Firefox puts up the &#8220;Remember this password&#8221; dialog. When you hit a site
+that Firefox has login information for, the AutoLoginJ script goes ahead
+and auto-submits the form. I&#8217;ve tested it across a couple of different
+sites and it seems to work about half the time. My banking site,
+<a href="http://connection.oreilly.com">O&#8217;Reilly Connection</a>, and Vonage seem to
+work well but none of Yahoo, del.icio.us, or flickr.com worked.</p>
+
+<h3>Video URLs</h3>
+
+<p>I <em>hate</em> multimedia on the web – especially video. There&#8217;s a special
+place in hell for whoever is responsible for the tiny embedded players
+with format/bandwidth selection and shite controls that are so common. I
+promise the experience would be dramatically increased if all video was
+reduced to a thumbnailed image linking to an actual real video file.</p>
+
+<p>The
+<a href="http://neugierig.org/software/greasemonkey/unembed.user.js">Unembed</a>
+user script gets me half way there by inserting a link to the video file
+under the video display. My first hack will be to have it <em>replace</em> the
+<code>&lt;embed&gt;</code> with an <code>&lt;a&gt;</code>.</p>
+
+<p>If you&#8217;re looking for somewhere to test this script, I highly recommend
+<a href="http://www.thisspartanlife.com/">This Spartan Life</a>.</p>
+
+<h3>A Whole New Google</h3>
+
+<p>There is an immense set of useful <a href="http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4">Google specific scripts</a>.
+I&#8217;m using <a href="http://philwilson.org/code/greasemonkey/google-accesskeys.user.js">Google Access Keys</a>
+and <a href="http://martin.davidssons.com/google-searchkeys.user.js">Google Search Keys</a>
+for quick keyboard navigation of search results. The <a href="http://patcavit.com/greasemonkey/girl.user.js">Google Image Rewriter</a>
+makes image search results link directly to the image instead of that weird 
+framed thing.</p>
+
+<h3>Holy Crap, I can use Slashdot</h3>
+
+<p>The <a href="http://blog.monstuff.com/archives/images/SlashdotSinglePageView.user.js">Slashdot Single Page View</a> script provides 
+thread expansion without requiring a page refresh, <a href="http://denism.homeip.net/software/greasemonkey/slashdot-xsidebars.user.js">xSidebars</a> 
+removes the butt-cheeks, and <a href="http://www.cs.uni-magdeburg.de/~vlaube/Projekte/GreaseMonkey/slashdotaddmirrors.user.js">Add Mirrors</a>
+puts nice little <a href="http://www.coralcdn.org/">Coral</a>, <a href="http://www.mirrordot.com/">MirrorDot</a>,
+and <a href="http://www.google.com/">Google Cache</a> links next to every single link
+on the page. There&#8217;s more <a href="http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-ec4846dd1f06f8efd2d256a59577b3faaebbbf12">Slashdot specific scripts</a>
+I haven&#8217;t tried yet.</p>
+
+<h3>Misc.</h3>
+
+<p>Other scripts I&#8217;ve found useful:</p>
+
+<ul>
+<li><p><a href="http://diveintomark.org/projects/greasemonkey/betterdir.user.js">BetterDir</a>
+beautifies Apache directory listings. It&#8217;s really not that big of a deal 
+but it shows the types of interaction a user script can have with a page.</p></li>
+<li><p><a href="http://www.geocities.com/robjderr/CookieMonster.user.js">CookieMonster</a>
+puts a little thing in the bottom left of the page that shows raw cookie 
+data for the current page upon hover.</p></li>
+<li><p><a href="http://speed.insane.com/files/nofollow.user.js">Nofollow display</a> 
+<strike>strikes</strike> links having a <code>rel="nofollow"</code> attribute. Mildly 
+interesting sometimes.</p></li>
+<li><p><a href="http://www.lafferty.ca/software/greasemonkey/sourceplease.user.js">SourcePlease</a>
+removes some of the insanity of <a href="http://sourceforge.net/project/showfiles.php?group_id=33044">SourceForge file listings</a>
+by linking directly to a specific mirror&#8217;s copy of a file, removing the 
+need to wade through five pages of ads.</p></li>
+<li><p><a href="http://blog.monstuff.com/archives/images/TextareaResize.user.js">TextareaResize</a>
+sounds cool but doesn&#8217;t seem to work.</p></li>
+<li><p><a href="http://www.reifysoft.com/projects/turnabout/scripts/SearchTermHighlighter.user.js">SearchTermHighlighter</a>
+gives you Google cache style highlighting of pages entered through a 
+major search engine. The highlight is non-intrusive.</p></li>
+</ul>
+
+<p>Come on, I know you guys have some gem recommendations – what am I missing?</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/08/26/emacs-browser-convergance/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">14 Responses to &#8220;When Emacs and The Browser converge&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-292">
+			<p class="who"><cite><a href='http://blogger.nico-mommaerts.be' rel='external ' title='194.78.226.87'>Nicolas Mommaerts</a></cite>:</p>
+			<p>If you want resizable textareas, there is a <a href="http://www.extensionsmirror.nl/index.php?showtopic=2796">firefox extension</a> for it. It works great, except in GMail :(</p>
+      <p>
+			<small>comment at <a href="#comment-292" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-293">
+			<p class="who"><cite>Neil Greenwood</cite>:</p>
+			<p><a href="http://overstimulate.com/articles/2005/04/24/greasemonkey-book-burro-find-cheap-books">Book Burro</a> is a nice addition to Amazon pages, although I&#8217;m in the UK and it didn&#8217;t seem to work properly when I first tried it yesterday&#8230;</p>
+<p>BTW it might be nice to have a preview on the comments, since I&#8217;ve never used Markdown before and I&#8217;m not sure I&#8217;ve got it right.</p>
+      <p>
+			<small>comment at <a href="#comment-293" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-294">
+			<p class="who"><cite>Neil Greenwood</cite>:</p>
+			<p>OK, so it&#8217;s fairly simple and obvious! :-)</p>
+      <p>
+			<small>comment at <a href="#comment-294" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-296">
+			<p class="who"><cite><a href='http://www.blueskyonmars.com' rel='external ' title='68.42.214.195'>Kevin Dangoor</a></cite>:</p>
+			<p>Assuming you can use Greasemonkey with it, I&#8217;d really recommend that you use Deer Park. It&#8217;s got a much faster feel, and there are a few other niceties.</p>
+      <p>
+			<small>comment at <a href="#comment-296" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-297">
+			<p class="who"><cite><a href='http://www.bbrown.info/blogs/bblog/' rel='external ' title='64.202.160.65'>Bill Brown</a></cite>:</p>
+			<p>I&#8217;ve found the <a href="http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-c01160b5be6bfada624bc5fd379525d5a610272e">Paul Graham scripts</a> helpful and frequently apply to non-PG sites as well.</p>
+      <p>
+			<small>comment at <a href="#comment-297" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-299">
+			<p class="who"><cite><a href='http://mike.hostetlerhome.com/?p=8' rel='external ' title='66.152.98.73'>Where Are The Wise Men?</a></cite>:</p>
+			<p><strong>When Emacs and The Browser converge [@lesscode.org]</strong></p>
+<pre><code>When Emacs and The Browser converge  has a great list of Greasemonkey scripts
+</code></pre>
+<p>&#8230;</p>
+      <p>
+			<small>trackback at <a href="#comment-299" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-301">
+			<p class="who"><cite><a href='http://diveintomark.org/' rel='external ' title='68.221.7.107'>Mark</a></cite>:</p>
+			<p>I&#8217;m biased, of course, but I like</p>
+<ul>
+<li><a href="http://diveintomark.org/projects/greasemonkey/autoclick.user.js">autoclick.user.js</a></li>
+<li><a href="http://diveintomark.org/projects/greasemonkey/gmailfortune.user.js">gmailfortune.user.js</a> if you use GMail</li>
+<li><a href="http://diveintomark.org/projects/greasemonkey/magicline.user.js">magicline.user.js</a> (browse around a bit and then hit Ctrl + Shift + L and start typing)</li>
+<li><a href="http://diveintomark.org/projects/greasemonkey/monkeydo.user.js">monkeydo.user.js</a> if you use del.icio.us</li>
+<li><a href="http://diveintomark.org/projects/greasemonkey/stopthepresses.user.js">stopthepresses.user.js</a></li>
+</ul>
+<p>Others have mentioned Book Burro.  I also like <a href="http://persistent.info/greasemonkey/gmail.user.js">GMail Tweaks</a></p>
+<p>Firefox is the new Emacs.  JavaScript is the new LISP.  Greasemonkey is the new <code>.emacs</code> file.</p>
+      <p>
+			<small>comment at <a href="#comment-301" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-302">
+			<p class="who"><cite><a href='http://www.gfxmonk.tk' rel='external ' title='220.237.178.230'>Tim</a></cite>:</p>
+			<p>I hacked together a version of the Unembed script which visually replaces the embedded video, with the option to download the file or re-show the embed object.</p>
+<p>It still needs fixing (it currently re-writes object IDs which is a bit dodgy), but it is workable&#8230;</p>
+<p><a href="http://gfxmonk.sysprosoft.com/unembed.user.js">http://gfxmonk.sysprosoft.com/unembed.user.js</a></p>
+      <p>
+			<small>comment at <a href="#comment-302" title="">26. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-303">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p><a href="http://diveintomark.org">Mark</a>, this <a href="http://diveintomark.org/projects/greasemonkey/monkeydo.user.js">del.icio.us assistance</a> GM script is sick! Sick! Ghhaa! Wow!</p>
+      <p>
+			<small>comment at <a href="#comment-303" title="">27. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-304">
+			<p class="who"><cite>Masklinn</cite>:</p>
+			<p>Mark &gt; I think it&#8217;d be much more fun to just have List avaible in Firefox (or another powerful interpreted language, I&#8217;d go for Python myself since I&#8217;m quite far from lisp fluent, and Python is a bit more readable than common lisp).</p>
+<p>In fact, I&#8217;m wondering if it ain&#8217;t time to get a better, stabler, more powerful, more coherent langage to script web pages.</p>
+<p>As simple as JS, but less forgiving, allowing less obtrusiveness (promoting unobtrusive scripts by design), and with much more powerful types&#8230; and the ability to import modules which JS clearly lacks.</p>
+      <p>
+			<small>comment at <a href="#comment-304" title="">27. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-307">
+			<p class="who"><cite>b7j0c</cite>:</p>
+			<p>there actually is an extension that provides full keyboard access for firefox - meaning you do not need to use a mouse, ever.</p>
+      <p>
+			<small>comment at <a href="#comment-307" title="">27. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-331">
+			<p class="who"><cite><a href='http://blog.monstuff.com' rel='external ' title='131.107.0.88'>Julien Couvreur</a></cite>:</p>
+			<p>What problem did you run into with ResizeTextarea?<br />
+There are two limitations with that script, afaik: </p>
+<ul>
+<li>GMail textareas don&#8217;t work, </li>
+<li>textareas that are sized with &#8220;width&#8221; and &#8220;height&#8221; instead of &#8220;rows&#8221; and &#8220;cols&#8221;.</li>
+</ul>
+<p>I should be able to fix that second limitation, but haven&#8217;t got to it yet. Ping me if you think that is the problem you ran into.</p>
+<p>Also, my other scripts are available at <a href="http://blog.monstuff.com/archives/cat_greasemonkey.html">http://blog.monstuff.com/archives/cat_greasemonkey.html</a></p>
+      <p>
+			<small>comment at <a href="#comment-331" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-332">
+			<p class="who"><cite><a href='http://www.joegrossberg.com' rel='external ' title='209.118.97.66'>Joe Grossberg</a></cite>:</p>
+			<p>&#8220;TextareaResize sounds cool but doesn&#8217;t seem to work.&#8221;</p>
+<p>In general, if a Greasemonkey script doesn&#8217;t work, check for JS errors. It&#8217;ll help you narrow down what&#8217;s wrong.</p>
+      <p>
+			<small>comment at <a href="#comment-332" title="">29. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-10445">
+			<p class="who"><cite><a href='http://www.genehack.org/2006/09/05/laptop-tab-dump-2/' rel='external ' title='66.33.197.209'>genehack.org &raquo; Blog Archive &raquo; Laptop tab dump</a></cite>:</p>
+			<p>[&#8230;] When Emacs and The Browser converge &#8212; mental note, check out Greasemonkey [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-10445" title="">05. September 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.411 seconds -->
+<!-- Cached page served by WP-Cache -->

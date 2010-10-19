@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: We already have a VM&#8230;</title>
+	<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:02 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-450</link>
+		<pubDate>Tue, 27 Sep 2005 15:51:40 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-450</guid>
+					<description>&lt;p&gt;Hi Laurent. You said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Trying to pose as J2EE, NET or another megaframework won’t 
+  help the LAMP/friends stack.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That wasn't what I was suggesting at all. Here's my sentence as you quoted it:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The real question for me becomes, when will LAMP/friends gain legitimacy 
+  as an “enterprise class” platform and how quickly will that force the 
+  industry to re-evaluate optimal deployment models?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I'm not suggesting (&lt;em&gt;at all&lt;/em&gt;) that LAMP/friends need to change to look more like J2EE/.Net, I'm suggesting that the perception of &quot;enterprise class&quot; needs to change. I'm wondering when &lt;em&gt;that&lt;/em&gt; will happen. I've been watching very closely as the perception has shifted over the past 12 months or so and the trend is only accelerating.&lt;/p&gt;
+
+&lt;p&gt;Basically, I'm waiting for the industry to understand the situation as you've described it. I'm in no way suggesting that LAMP needs to incorporate the brokeness of existing enterprise platforms. That would be complete folly.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi Laurent. You said:</p>
+<blockquote>
+<p>Trying to pose as J2EE, NET or another megaframework won’t<br />
+  help the LAMP/friends stack.</p>
+</blockquote>
+<p>That wasn&#8217;t what I was suggesting at all. Here&#8217;s my sentence as you quoted it:</p>
+<blockquote>
+<p>The real question for me becomes, when will LAMP/friends gain legitimacy<br />
+  as an “enterprise class” platform and how quickly will that force the<br />
+  industry to re-evaluate optimal deployment models?</p>
+</blockquote>
+<p>I&#8217;m not suggesting (<em>at all</em>) that LAMP/friends need to change to look more like J2EE/.Net, I&#8217;m suggesting that the perception of &#8220;enterprise class&#8221; needs to change. I&#8217;m wondering when <em>that</em> will happen. I&#8217;ve been watching very closely as the perception has shifted over the past 12 months or so and the trend is only accelerating.</p>
+<p>Basically, I&#8217;m waiting for the industry to understand the situation as you&#8217;ve described it. I&#8217;m in no way suggesting that LAMP needs to incorporate the brokeness of existing enterprise platforms. That would be complete folly.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Laurent Szyster</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-449</link>
+		<pubDate>Tue, 27 Sep 2005 14:38:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-449</guid>
+					<description>&lt;p&gt;&quot;The real question for me becomes, when will LAMP/friends gain legitimacy as an “enterprise class” platform and how quickly will that force the industry to re-evaluate optimal deployment models?&quot;&lt;/p&gt;
+
+&lt;p&gt;Legitimacy is not what will make Ruby or Python C VM get into that league of &quot;entreprise class&quot; development platform.&lt;/p&gt;
+
+&lt;p&gt;They allready are!&lt;/p&gt;
+
+&lt;p&gt;They have been playing in that league for a while now, disguised as Jython, bundled as a DLL, hidden inside large data processing centers, etc.&lt;/p&gt;
+
+&lt;p&gt;Trying to pose as J2EE, NET or another megaframework won't help the LAMP/friends stack.&lt;/p&gt;
+
+&lt;p&gt;Zope, Ruby on Rail and others failed at that game. Because LAMP/friends don't need to present a unified &quot;do-all be-all&quot; face to their &quot;entreprise&quot; adopters.&lt;/p&gt;
+
+&lt;p&gt;Corporate business, large public agencies and the public adopted the LAMP stack for its diversity ... of defacto standard C implementations.&lt;/p&gt;
+
+&lt;p&gt;Twenty-four years ago, I was fourteen year old computer freak and at that time C was described as the portable &quot;write once, run everywhere&quot; language of the day, something to use instead of CPU specific assembler.&lt;/p&gt;
+
+&lt;p&gt;This has not changed.&lt;/p&gt;
+
+&lt;p&gt;Java failed to replace C as the defactor system programming language because it is not a language but a proprietary API (that began as a shameless copy of NextStep's, may I remind you). Java was an attempt of Sun to suplant the Win32 API from within the browser, later recasted as a replacement of C++ for server and workstation application development.&lt;/p&gt;
+
+&lt;p&gt;You were not trolling when you described them as &quot;legacy&quot;. But they will stay around for a long time, pretending to be alive, like the ghost of COBOL, a cold body of millions of lines that nobody want to read again.&lt;/p&gt;
+
+&lt;p&gt;LAMP/friends allready made J2EE and NET obsolete.&lt;/p&gt;
+
+&lt;p&gt;Yet vendors will sell their scam as long as their customer &quot;don't get it&quot;.&lt;/p&gt;
+
+&lt;p&gt;The shift will come slowly with the multiplication of niche competitors for J2EE and NET, built on the same stack as LAMP but dedicated to a specific field. Smaller frameworks, faster implementation with API more narrowly focused on what actually matters, what sells hardware and software: their applications.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;The real question for me becomes, when will LAMP/friends gain legitimacy as an “enterprise class” platform and how quickly will that force the industry to re-evaluate optimal deployment models?&#8221;</p>
+<p>Legitimacy is not what will make Ruby or Python C VM get into that league of &#8220;entreprise class&#8221; development platform.</p>
+<p>They allready are!</p>
+<p>They have been playing in that league for a while now, disguised as Jython, bundled as a DLL, hidden inside large data processing centers, etc.</p>
+<p>Trying to pose as J2EE, NET or another megaframework won&#8217;t help the LAMP/friends stack.</p>
+<p>Zope, Ruby on Rail and others failed at that game. Because LAMP/friends don&#8217;t need to present a unified &#8220;do-all be-all&#8221; face to their &#8220;entreprise&#8221; adopters.</p>
+<p>Corporate business, large public agencies and the public adopted the LAMP stack for its diversity &#8230; of defacto standard C implementations.</p>
+<p>Twenty-four years ago, I was fourteen year old computer freak and at that time C was described as the portable &#8220;write once, run everywhere&#8221; language of the day, something to use instead of CPU specific assembler.</p>
+<p>This has not changed.</p>
+<p>Java failed to replace C as the defactor system programming language because it is not a language but a proprietary API (that began as a shameless copy of NextStep&#8217;s, may I remind you). Java was an attempt of Sun to suplant the Win32 API from within the browser, later recasted as a replacement of C++ for server and workstation application development.</p>
+<p>You were not trolling when you described them as &#8220;legacy&#8221;. But they will stay around for a long time, pretending to be alive, like the ghost of COBOL, a cold body of millions of lines that nobody want to read again.</p>
+<p>LAMP/friends allready made J2EE and NET obsolete.</p>
+<p>Yet vendors will sell their scam as long as their customer &#8220;don&#8217;t get it&#8221;.</p>
+<p>The shift will come slowly with the multiplication of niche competitors for J2EE and NET, built on the same stack as LAMP but dedicated to a specific field. Smaller frameworks, faster implementation with API more narrowly focused on what actually matters, what sells hardware and software: their applications.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Kragen Sitaker</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-140</link>
+		<pubDate>Sat, 30 Jul 2005 10:15:54 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-140</guid>
+					<description>&lt;p&gt;Perry Lorier has some other arguments against VM envy:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/&quot;&gt;http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Summary: &quot;Why are the open source community wasting time on VMs when we can use the strength of our source to provide a superior solution?&quot;&lt;/p&gt;
+
+&lt;p&gt;Hope to meet you at OSCON next week, Ryan --- although now that you've been anointed the Server-Side Zeldman, you may be busy!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Perry Lorier has some other arguments against VM envy:</p>
+<p><a href="http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/">http://coders.meta.net.nz/wordpress/archives/2004/09/20/vms-and-the-opensource-community/</a></p>
+<p>Summary: &#8220;Why are the open source community wasting time on VMs when we can use the strength of our source to provide a superior solution?&#8221;</p>
+<p>Hope to meet you at OSCON next week, Ryan &#8212; although now that you&#8217;ve been anointed the Server-Side Zeldman, you may be busy!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-112</link>
+		<pubDate>Thu, 21 Jul 2005 19:45:37 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-112</guid>
+					<description>&lt;p&gt;Hi Chris. I'd like to post this as an entry so it gets more visibility. I'm just going to assume that's okay with you but let
+me know if you have a problem with that.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I have written a long and wordy document about this topic.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Do you have the longer version up on the web somewhere? I'd like to link to it.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi Chris. I&#8217;d like to post this as an entry so it gets more visibility. I&#8217;m just going to assume that&#8217;s okay with you but let<br />
+me know if you have a problem with that.</p>
+<blockquote>
+<p>I have written a long and wordy document about this topic.</p>
+</blockquote>
+<p>Do you have the longer version up on the web somewhere? I&#8217;d like to link to it.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Chris Wine</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-108</link>
+		<pubDate>Thu, 21 Jul 2005 11:50:06 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-108</guid>
+					<description>&lt;p&gt;I also would like to see Bill's link.  I have written a long and wordy document about this topic, and in the interest of brevity (and some may say kindness), I will provide you with just a few bits.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;I posted the rest of this monster to the main site. See &lt;a href=&quot;http://lesscode.org/2005/07/21/the-dark-horse/&quot;&gt;The Dark Horse&lt;/a&gt;. -- &lt;a href=&quot;http://naeblis.cx/rtomayko/&quot;&gt;Ryan&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I also would like to see Bill&#8217;s link.  I have written a long and wordy document about this topic, and in the interest of brevity (and some may say kindness), I will provide you with just a few bits.</p>
+<p><small>I posted the rest of this monster to the main site. See <a href="http://lesscode.org/2005/07/21/the-dark-horse/">The Dark Horse</a>. &#8212; <a href="http://naeblis.cx/rtomayko/">Ryan</a></small></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-105</link>
+		<pubDate>Thu, 21 Jul 2005 04:52:39 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-105</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;There’s actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it’s not pure LAMP and because it’s a marketing web site, I won’t link to it here (though anyone who’s interested can email me for a link).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bill, I think I know you well enough to trust your intentions. Feel free to post links to your marketing material if you feel its valuable to the community - I'm not anti-commercial, I'm anti-bullshit/anti-fluff.&lt;/p&gt;
+
+&lt;p&gt;And thanks for stopping by.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>There’s actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it’s not pure LAMP and because it’s a marketing web site, I won’t link to it here (though anyone who’s interested can email me for a link).</p>
+</blockquote>
+<p>Bill, I think I know you well enough to trust your intentions. Feel free to post links to your marketing material if you feel its valuable to the community - I&#8217;m not anti-commercial, I&#8217;m anti-bullshit/anti-fluff.</p>
+<p>And thanks for stopping by.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Harry Fuecks</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-98</link>
+		<pubDate>Wed, 20 Jul 2005 20:16:48 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-98</guid>
+					<description>&lt;p&gt;What I was trying to ask was what's the impact of running, say, IronPython under IIS and the .NET runtime, effectively meaning it's running in an application server and that, potentially state can be stored in memory vs. something more C / Unixy where there's some central process forking children to handle requests after which they die, leaving no traces? Perhaps it's just a question of implementation detail and a question of choice of APIs / strategy for developers. Need to find out more from people who have tried it.&lt;/p&gt;
+
+&lt;p&gt;On that subject, another project to watch, also as a test for uptake: http://www.php-compiler.net/ - basically PHP for .NET. They seem to have done a very convincing job and they do seem to have simulated PHP's maximum execution time limit.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>What I was trying to ask was what&#8217;s the impact of running, say, IronPython under IIS and the .NET runtime, effectively meaning it&#8217;s running in an application server and that, potentially state can be stored in memory vs. something more C / Unixy where there&#8217;s some central process forking children to handle requests after which they die, leaving no traces? Perhaps it&#8217;s just a question of implementation detail and a question of choice of APIs / strategy for developers. Need to find out more from people who have tried it.</p>
+<p>On that subject, another project to watch, also as a test for uptake: http://www.php-compiler.net/ - basically PHP for .NET. They seem to have done a very convincing job and they do seem to have simulated PHP&#8217;s maximum execution time limit.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill Higgins</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-96</link>
+		<pubDate>Wed, 20 Jul 2005 15:11:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-96</guid>
+					<description>&lt;p&gt;I'm not sure about the &quot;AMP&quot; acceptance in the enterprise, but it's common knowledge that the &quot;L&quot; is making some serious in-roads.&lt;/p&gt;
+
+&lt;p&gt;Some examples:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It's my understanding that Google's essentially created a grid of Linux-based computers to serve up web queries&lt;/li&gt;
+&lt;li&gt;I believe Amazon is all-Linux&lt;/li&gt;
+&lt;li&gt;IBM (disclaimer: I work there) has had a lot of success moving outsourcing customers on to either: Linux on Blade Servers or virtual Linux on zOS (mainframe) LPARs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There's actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it's not pure LAMP and because it's a marketing web site, I won't link to it here (though anyone who's interested can email me for a link).&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;m not sure about the &#8220;AMP&#8221; acceptance in the enterprise, but it&#8217;s common knowledge that the &#8220;L&#8221; is making some serious in-roads.</p>
+<p>Some examples:</p>
+<ul>
+<li>It&#8217;s my understanding that Google&#8217;s essentially created a grid of Linux-based computers to serve up web queries</li>
+<li>I believe Amazon is all-Linux</li>
+<li>IBM (disclaimer: I work there) has had a lot of success moving outsourcing customers on to either: Linux on Blade Servers or virtual Linux on zOS (mainframe) LPARs</li>
+</ul>
+<p>There&#8217;s actually quite a few case studies on IBM.com about enterprises partnering with IBM and using Linux to solve really hard technical problems, but since it&#8217;s not pure LAMP and because it&#8217;s a marketing web site, I won&#8217;t link to it here (though anyone who&#8217;s interested can email me for a link).</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-93</link>
+		<pubDate>Tue, 19 Jul 2005 15:01:30 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-93</guid>
+					<description>&lt;p&gt;Hi Harry. I'm not sure I understand the question exactly but I feel quite strongly that the shared nothing + caching proxy + memcached (when you absolutely need it) is a great way to ensure a LAMP/friends solution will scale to a competitive level. I've &lt;a href=&quot;http://naeblis.cx/rtomayko/2005/05/28/ibm-poop-heads&quot; rel=&quot;nofollow&quot;&gt;said as much&lt;/a&gt; before and taken quite a bit of heat for it.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi Harry. I&#8217;m not sure I understand the question exactly but I feel quite strongly that the shared nothing + caching proxy + memcached (when you absolutely need it) is a great way to ensure a LAMP/friends solution will scale to a competitive level. I&#8217;ve <a href="http://naeblis.cx/rtomayko/2005/05/28/ibm-poop-heads">said as much</a> before and taken quite a bit of heat for it.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Harry Fuecks</title>
+		<link>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-89</link>
+		<pubDate>Tue, 19 Jul 2005 13:39:37 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/17/we-already-have-a-vm/#comment-89</guid>
+					<description>&lt;p&gt;For web applications, a question that springs to mind state is handled server-side, when riding on .NET or Java? Think David took the smart option by not being smart: &lt;a href=&quot;http://www.loudthinking.com/arc/000479.html&quot;&gt;http://www.loudthinking.com/arc/000479.html&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>For web applications, a question that springs to mind state is handled server-side, when riding on .NET or Java? Think David took the smart option by not being smart: <a href="http://www.loudthinking.com/arc/000479.html">http://www.loudthinking.com/arc/000479.html</a></p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.547 seconds -->
+<!-- Cached page served by WP-Cache -->

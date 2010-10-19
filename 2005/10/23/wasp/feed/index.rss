@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: WASP - Easing the Switch from Java to PHP</title>
+	<link>http://lesscode.org/2005/10/23/wasp/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 05:26:40 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Maintainable Programmers [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-886</link>
+		<pubDate>Fri, 30 Dec 2005 10:53:16 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-886</guid>
+					<description>&lt;p&gt;[...] I thought it unfortunate that the controversy kicked up by a few (now retracted) passages in Brian Fioca’s article about WASP detracted from a proper discussion of the article’s real flaw. I addressed the controversial, less interesting sentiments in comment over there, but wanted to take a few moments for a longer commentary. It took a while, but here we go. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] I thought it unfortunate that the controversy kicked up by a few (now retracted) passages in Brian Fioca’s article about WASP detracted from a proper discussion of the article’s real flaw. I addressed the controversial, less interesting sentiments in comment over there, but wanted to take a few moments for a longer commentary. It took a while, but here we go. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Daryll Plant</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-801</link>
+		<pubDate>Fri, 09 Dec 2005 19:36:55 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-801</guid>
+					<description>&lt;p&gt;&lt;em&gt;Ed. -- Broken link removed&lt;/em&gt; &lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><em>Ed. &#8212; Broken link removed</em> </p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-711</link>
+		<pubDate>Mon, 31 Oct 2005 11:56:31 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-711</guid>
+					<description>&lt;p&gt;For the time being, I only want to comment specifically on this puzzling &quot;Rails also suffers because it is hard to decouple Rails code from page display code&quot; sentiment (though it seems to have been edited out of the article).&lt;/p&gt;
+
+&lt;p&gt;Purportedly, a template written in Ruby is unclean. I've seen the same belief in the PHP world; it has led to the creation of such absurdities as the Smarty templating system. Think about it: PHP is itself actually a templating system (arguably an overgrown one), so Smarty is basically a templating system written in a templating system.&lt;/p&gt;
+
+&lt;p&gt;And over here in Perl-land, we have the same misconception. All over, people seem firmly convinced that templates must be written in a language different from the one the main code is written in.&lt;/p&gt;
+
+&lt;p&gt;But why? After all, most templating mini-languages I've seen have accrued features until approximate Turing completeness anyway.&lt;/p&gt;
+
+&lt;p&gt;The core question is, what &lt;em&gt;essentially&lt;/em&gt; happens when you use a templating system with a mini-language? What is the &quot;main code&quot; and what is the &quot;template?&quot; Ideally, the &quot;main code&quot; is the controller and the model, whereas the &quot;template&quot; is the view. Hence, using a template mini-language theoretically forces you to separate the view logic from the controller and model logic. But do you truly need to change languages to do that? No. You don't. What matters is &lt;em&gt;only&lt;/em&gt; that you have a clear understanding of your design, so you can understand which part belongs to the view and which to the controller (or to the model).&lt;/p&gt;
+
+&lt;p&gt;In fact, even the use of a templating system does not save you from concern creep, since the mini-languages of powerful templating systems are relatively complete. I've seen cases where this mini-language was used to fudge things into the view which should have been implemented in the controller.&lt;/p&gt;
+
+&lt;p&gt;Given, then, that you have the choice to write the view logic in whatever language you deem appropriate, why not use the language you already know best? Isn't that much more productive than tying yourself up with yet another ad-hoc mini-language in all its glory of undirected design, organic growth and arbitrary limitations?&lt;/p&gt;
+
+&lt;p&gt;... does the world really need another PHP?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>For the time being, I only want to comment specifically on this puzzling &#8220;Rails also suffers because it is hard to decouple Rails code from page display code&#8221; sentiment (though it seems to have been edited out of the article).</p>
+<p>Purportedly, a template written in Ruby is unclean. I&#8217;ve seen the same belief in the PHP world; it has led to the creation of such absurdities as the Smarty templating system. Think about it: PHP is itself actually a templating system (arguably an overgrown one), so Smarty is basically a templating system written in a templating system.</p>
+<p>And over here in Perl-land, we have the same misconception. All over, people seem firmly convinced that templates must be written in a language different from the one the main code is written in.</p>
+<p>But why? After all, most templating mini-languages I&#8217;ve seen have accrued features until approximate Turing completeness anyway.</p>
+<p>The core question is, what <em>essentially</em> happens when you use a templating system with a mini-language? What is the &#8220;main code&#8221; and what is the &#8220;template?&#8221; Ideally, the &#8220;main code&#8221; is the controller and the model, whereas the &#8220;template&#8221; is the view. Hence, using a template mini-language theoretically forces you to separate the view logic from the controller and model logic. But do you truly need to change languages to do that? No. You don&#8217;t. What matters is <em>only</em> that you have a clear understanding of your design, so you can understand which part belongs to the view and which to the controller (or to the model).</p>
+<p>In fact, even the use of a templating system does not save you from concern creep, since the mini-languages of powerful templating systems are relatively complete. I&#8217;ve seen cases where this mini-language was used to fudge things into the view which should have been implemented in the controller.</p>
+<p>Given, then, that you have the choice to write the view logic in whatever language you deem appropriate, why not use the language you already know best? Isn&#8217;t that much more productive than tying yourself up with yet another ad-hoc mini-language in all its glory of undirected design, organic growth and arbitrary limitations?</p>
+<p>&#8230; does the world really need another PHP?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: developers.org.ua &#187; Blog Archive &#187; weekly linkdump</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-693</link>
+		<pubDate>Fri, 28 Oct 2005 07:18:26 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-693</guid>
+					<description>&lt;p&gt;[...] WASP - Easing the Switch from Java to PHP [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] WASP - Easing the Switch from Java to PHP [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Harry Fuecks</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-674</link>
+		<pubDate>Mon, 24 Oct 2005 15:45:32 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-674</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;PHP 5 is quite a limited and ugly language IMNSHO&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Fair enough&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;why is the standard library so poor and inconsistent?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In PHP5? For backwards compatibility given a significant chunk of the world using PHP4 - i.e. nothing's changed - PHP is just as ugly as it's always been. If you want clean implementations, head to here - http://www.php.net/spl . The flip side is PHP has always been no much more than a wrapper on C and that can be a good thing as you don't get someones fresh idea of what a good API design is. Some of Python's API's, for example, enter the territory of someone attempting to be too smart e.g. urllib/2 - times I've played with it I'm crying &quot;Jesus! Just copy lwp for Christ sake!&quot;. But that's my MNSHO now.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;why dosesn’t it support Unicode properly, except for the UTF-8 encoding? &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;PHP5, by default, doesn't support UTF-8. It doesn't really have &lt;em&gt;any&lt;/em&gt; awareness of any character encoding other than ASCII and what your current locale setting is (which I believe is more or less the same position Ruby is in). The &lt;a href=&quot;http://www.php.net/iconv&quot; rel=&quot;nofollow&quot;&gt;iconv&lt;/a&gt; extension is bundled by default but character set &lt;em&gt;conversion&lt;/em&gt; is not character set &lt;em&gt;support&lt;/em&gt; (i.e. what does strlen() tell you). There is the &lt;a href=&quot;http://www.php.net/mbstring&quot; rel=&quot;nofollow&quot;&gt;mbstring&lt;/a&gt; extension which can magically replace some (but not all) of PHP's string functions but not all and it's not part of the default distro. For Unicode you'll have to wait for PHP6 which may be out sooner rather than later - there's some info &lt;a href=&quot;http://www.gravitonic.com/do_download.php?download_file=talks/intlphpcon2005/php_unicode.pdf&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt; (PDF) - interestingly looks like it will be using &lt;a href=&quot;http://sourceforge.net/projects/icu&quot; rel=&quot;nofollow&quot;&gt;ICU&lt;/a&gt; so it may be a shot in the arm.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;why does it require to put a dollar sign in front of every variable?…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Probably Perl inspired. Basically makes no difference once you've got used to it - similar issue for new users like whitespace in Python.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Why would you want to stick with PHP even in situations when you can
+  use Python, Ruby, or anything else?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well first, because once you know it, it basically makes no difference (yes there are many gotchas to learn but once learnt, that's it). David may disagree and to an extent I'd agree with points I can imagine he'd make. But the only &lt;em&gt;really&lt;/em&gt; significant thing about PHP that programmers need to know about is they've chosen &lt;strong&gt;not&lt;/strong&gt; to take the road of metaprogramming - instead of mixins / metaclasses PHP5 has interfaces - i.e. PHP isn't tending towards LISP.&lt;/p&gt;
+
+&lt;p&gt;Another reason: PHP is getting mature in it's own field. Was recently surprised to discover Perl's DBD::Oracle driver doesn't support Oracle collection types (resulting an a slow and ugly hack generating PL/SQL on the fly). Was more surprised to find that of the dynamic languages it seems &lt;a href=&quot;http://www.php.net/oci_new_collection&quot; rel=&quot;nofollow&quot;&gt;only PHP does&lt;/a&gt; does.&lt;/p&gt;
+
+&lt;p&gt;Side observation: it's interesting how much X vs. PHP debates are becoming more and more like Java vs. Visual Basic. Whatever gets you on I guess. And PHP most definately &lt;em&gt;is&lt;/em&gt; the VB of the Internet.&lt;/p&gt;
+
+&lt;p&gt;Re the orginal post: so why WASP vs. one of X thousand other &lt;a href=&quot;http://www.phpwact.org/php/mvc_frameworks&quot; rel=&quot;nofollow&quot;&gt;PHP frameworks&lt;/a&gt; or even &lt;a href=&quot;http://www.zend.com/news/zendpr.php?id=109&quot; rel=&quot;nofollow&quot;&gt;this&lt;/a&gt;?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>PHP 5 is quite a limited and ugly language IMNSHO</p>
+</blockquote>
+<p>Fair enough</p>
+<blockquote>
+<p>why is the standard library so poor and inconsistent?</p>
+</blockquote>
+<p>In PHP5? For backwards compatibility given a significant chunk of the world using PHP4 - i.e. nothing&#8217;s changed - PHP is just as ugly as it&#8217;s always been. If you want clean implementations, head to here - http://www.php.net/spl . The flip side is PHP has always been no much more than a wrapper on C and that can be a good thing as you don&#8217;t get someones fresh idea of what a good API design is. Some of Python&#8217;s API&#8217;s, for example, enter the territory of someone attempting to be too smart e.g. urllib/2 - times I&#8217;ve played with it I&#8217;m crying &#8220;Jesus! Just copy lwp for Christ sake!&#8221;. But that&#8217;s my MNSHO now.</p>
+<blockquote>
+<p>why dosesn’t it support Unicode properly, except for the UTF-8 encoding? </p>
+</blockquote>
+<p>PHP5, by default, doesn&#8217;t support UTF-8. It doesn&#8217;t really have <em>any</em> awareness of any character encoding other than ASCII and what your current locale setting is (which I believe is more or less the same position Ruby is in). The <a href="http://www.php.net/iconv">iconv</a> extension is bundled by default but character set <em>conversion</em> is not character set <em>support</em> (i.e. what does strlen() tell you). There is the <a href="http://www.php.net/mbstring">mbstring</a> extension which can magically replace some (but not all) of PHP&#8217;s string functions but not all and it&#8217;s not part of the default distro. For Unicode you&#8217;ll have to wait for PHP6 which may be out sooner rather than later - there&#8217;s some info <a href="http://www.gravitonic.com/do_download.php?download_file=talks/intlphpcon2005/php_unicode.pdf">here</a> (PDF) - interestingly looks like it will be using <a href="http://sourceforge.net/projects/icu">ICU</a> so it may be a shot in the arm.</p>
+<blockquote>
+<p>why does it require to put a dollar sign in front of every variable?…</p>
+</blockquote>
+<p>Probably Perl inspired. Basically makes no difference once you&#8217;ve got used to it - similar issue for new users like whitespace in Python.</p>
+<blockquote>
+<p>Why would you want to stick with PHP even in situations when you can<br />
+  use Python, Ruby, or anything else?</p>
+</blockquote>
+<p>Well first, because once you know it, it basically makes no difference (yes there are many gotchas to learn but once learnt, that&#8217;s it). David may disagree and to an extent I&#8217;d agree with points I can imagine he&#8217;d make. But the only <em>really</em> significant thing about PHP that programmers need to know about is they&#8217;ve chosen <strong>not</strong> to take the road of metaprogramming - instead of mixins / metaclasses PHP5 has interfaces - i.e. PHP isn&#8217;t tending towards LISP.</p>
+<p>Another reason: PHP is getting mature in it&#8217;s own field. Was recently surprised to discover Perl&#8217;s DBD::Oracle driver doesn&#8217;t support Oracle collection types (resulting an a slow and ugly hack generating PL/SQL on the fly). Was more surprised to find that of the dynamic languages it seems <a href="http://www.php.net/oci_new_collection">only PHP does</a> does.</p>
+<p>Side observation: it&#8217;s interesting how much X vs. PHP debates are becoming more and more like Java vs. Visual Basic. Whatever gets you on I guess. And PHP most definately <em>is</em> the VB of the Internet.</p>
+<p>Re the orginal post: so why WASP vs. one of X thousand other <a href="http://www.phpwact.org/php/mvc_frameworks">PHP frameworks</a> or even <a href="http://www.zend.com/news/zendpr.php?id=109">this</a>?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Sune Kirkeby</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-672</link>
+		<pubDate>Mon, 24 Oct 2005 08:41:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-672</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;[..] , scripting languages can be quick to write, but since they do not have
+  many of the advanced features of compiled languages like C++ and Java, [..]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This was about where I stopped taking the post serious; it's Java that
+lack the advanced features, for example lists and hashes as builtins with
+nice syntax.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>[..] , scripting languages can be quick to write, but since they do not have<br />
+  many of the advanced features of compiled languages like C++ and Java, [..]</p>
+</blockquote>
+<p>This was about where I stopped taking the post serious; it&#8217;s Java that<br />
+lack the advanced features, for example lists and hashes as builtins with<br />
+nice syntax.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Simon Willison</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-671</link>
+		<pubDate>Mon, 24 Oct 2005 08:06:08 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-671</guid>
+					<description>&lt;p&gt;I hadn't seen &lt;code&gt;ActionView::Base.register_template_handler(extension,classname)&lt;/code&gt; - that's a very neat solution.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I hadn&#8217;t seen <code>ActionView::Base.register_template_handler(extension,classname)</code> - that&#8217;s a very neat solution.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-668</link>
+		<pubDate>Mon, 24 Oct 2005 06:11:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-668</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;#comment-664&quot; rel=&quot;nofollow&quot;&gt;Ryan&lt;/a&gt;: use &lt;code&gt;&amp;#60;del&amp;#62;&lt;/code&gt; tags---they're the semantic version of &lt;code&gt;&amp;#60;strike&amp;#62;&lt;/code&gt; and can also be used as both inline and block-level elements. :-)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="#comment-664">Ryan</a>: use <code>&lt;del&gt;</code> tags&#8212;they&#8217;re the semantic version of <code>&lt;strike&gt;</code> and can also be used as both inline and block-level elements. :-)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Brian Fioca</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-667</link>
+		<pubDate>Mon, 24 Oct 2005 00:59:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-667</guid>
+					<description>&lt;p&gt;I'd like to apologise.  Mia culpa, my bad.  The article was never suppoed to be about Rails.  I don't want to be one of those people that compares my work to someone else's, for better or for worse.  It'd be best if it stood on its own.&lt;/p&gt;
+
+&lt;p&gt;&quot;And isn’t a good ecology of frameworks in many different languages a good thing? We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.&quot;&lt;/p&gt;
+
+&lt;p&gt;Agreed!  Can't we all just get along?  :)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I&#8217;d like to apologise.  Mia culpa, my bad.  The article was never suppoed to be about Rails.  I don&#8217;t want to be one of those people that compares my work to someone else&#8217;s, for better or for worse.  It&#8217;d be best if it stood on its own.</p>
+<p>&#8220;And isn’t a good ecology of frameworks in many different languages a good thing? We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.&#8221;</p>
+<p>Agreed!  Can&#8217;t we all just get along?  :)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Geoffrey L. Wright</title>
+		<link>http://lesscode.org/2005/10/23/wasp/#comment-665</link>
+		<pubDate>Sun, 23 Oct 2005 23:25:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/23/wasp/#comment-665</guid>
+					<description>&lt;p&gt;Well, one man's dreary is another man's divine.&lt;/p&gt;
+
+&lt;p&gt;Personally, I find Python to be very pleasant language to work with.  From my perspective, white-space-as-syntax is a beautiful thing, and it's hard for me to understand why others don't see my point of view.  But I know a number of programmers -- much better guys than me -- that won't touch it.  They hate the syntax, and they don't think Python is &quot;Enterprise&quot; enough.  To each his own, I suppose.&lt;/p&gt;
+
+&lt;p&gt;The way I look it, lots of really impressive stuff has been built using Java, Python, Ruby, PHP, Perl, C#, C++ Cold Fusion -- and hell, even Visual Basic.  All languages are useful tools.  There are intelligent people who use all of these languages and &lt;em&gt;enjoy&lt;/em&gt; doing so.&lt;/p&gt;
+
+&lt;p&gt;Now in the spirit of a lively discussion, here are a couple of real-world reasons to use PHP:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is a veritable army of developers out there who already know how to use it.  Ugly or not, it's a very well-known language, and that means it's easy to find folks to work on it at a reasonable rate.&lt;/li&gt;
+&lt;li&gt;There is a staggering amount of free, repurposable PHP code already out there.  &lt;a href=&quot;http://pear.php.net/package/HTML_Template_Flexy&quot; rel=&quot;nofollow&quot;&gt;Flexy&lt;/a&gt; is one great example.  Rather than start from scratch, WASP was able to make use of a very mature, tested, and well-understood templating system.  In PHP-land there is endless opportunity to wrap and extend existing code just because there's so damned much of it in the public sphere.&lt;/li&gt;
+&lt;li&gt;Many business already have deployed PHP applications and have folks on staff who can work with them without additional training.&lt;/li&gt;
+&lt;li&gt;PHP -- like Java, Ruby, Python, Perl, etc. has been had been used to successfully build large, complex and heavily used applications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I come from the perspective of owning a small (10 person) custom software company, and we helped fund the development of WASP.  I started my career in an in-the-trenches programming position, but these days I tend to think about these issues as much from business perspective as from a technical one.&lt;/p&gt;
+
+&lt;p&gt;When working with our clients, my big concern is delivering a highly functional and maintainable solution for the lowest possible cost.  I also deal regularly with conservative IT managers who are hesitant to let anything &quot;new&quot; into their shop.&lt;/p&gt;
+
+&lt;p&gt;Using PHP for custom solutions helps me in ways both practical and political.  Finding experienced PHP developers is easy.  Training folks on new technologies -- especially with smaller projects, less costly projects -- can chew through a lot of a project's budget.  Adding functionality by reusing existing free code is a &lt;em&gt;great&lt;/em&gt; way to add value to a project.    Also, a surprising number of business already have deployed PHP applications internally, so I don't face an uphill battle convincing conservative IT managers to let us build in PHP.&lt;/p&gt;
+
+&lt;p&gt;And with all that said, I should point out the we're not a &quot;PHP shop&quot;.  We develop in Java, .NET/C#, PHP, Classic ASP, Python, Cold Fusion -- really with anything required by the client.  In many (if not most) cases the choice of technology is dictated by the client.  So I have no religious attachment to PHP.  Funding the development of WASP was just a practical business decision.  We're already rolled out one solution build using WASP, and are just about to to complete another.  And so far, so good.  We're been able to deliver two high-quality, cost-competitive solutions.&lt;/p&gt;
+
+&lt;p&gt;And isn't a good ecology of frameworks in many different languages a good thing?  We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Well, one man&#8217;s dreary is another man&#8217;s divine.</p>
+<p>Personally, I find Python to be very pleasant language to work with.  From my perspective, white-space-as-syntax is a beautiful thing, and it&#8217;s hard for me to understand why others don&#8217;t see my point of view.  But I know a number of programmers &#8212; much better guys than me &#8212; that won&#8217;t touch it.  They hate the syntax, and they don&#8217;t think Python is &#8220;Enterprise&#8221; enough.  To each his own, I suppose.</p>
+<p>The way I look it, lots of really impressive stuff has been built using Java, Python, Ruby, PHP, Perl, C#, C++ Cold Fusion &#8212; and hell, even Visual Basic.  All languages are useful tools.  There are intelligent people who use all of these languages and <em>enjoy</em> doing so.</p>
+<p>Now in the spirit of a lively discussion, here are a couple of real-world reasons to use PHP:</p>
+<ul>
+<li>There is a veritable army of developers out there who already know how to use it.  Ugly or not, it&#8217;s a very well-known language, and that means it&#8217;s easy to find folks to work on it at a reasonable rate.</li>
+<li>There is a staggering amount of free, repurposable PHP code already out there.  <a href="http://pear.php.net/package/HTML_Template_Flexy">Flexy</a> is one great example.  Rather than start from scratch, WASP was able to make use of a very mature, tested, and well-understood templating system.  In PHP-land there is endless opportunity to wrap and extend existing code just because there&#8217;s so damned much of it in the public sphere.</li>
+<li>Many business already have deployed PHP applications and have folks on staff who can work with them without additional training.</li>
+<li>PHP &#8212; like Java, Ruby, Python, Perl, etc. has been had been used to successfully build large, complex and heavily used applications.</li>
+</ul>
+<p>I come from the perspective of owning a small (10 person) custom software company, and we helped fund the development of WASP.  I started my career in an in-the-trenches programming position, but these days I tend to think about these issues as much from business perspective as from a technical one.</p>
+<p>When working with our clients, my big concern is delivering a highly functional and maintainable solution for the lowest possible cost.  I also deal regularly with conservative IT managers who are hesitant to let anything &#8220;new&#8221; into their shop.</p>
+<p>Using PHP for custom solutions helps me in ways both practical and political.  Finding experienced PHP developers is easy.  Training folks on new technologies &#8212; especially with smaller projects, less costly projects &#8212; can chew through a lot of a project&#8217;s budget.  Adding functionality by reusing existing free code is a <em>great</em> way to add value to a project.    Also, a surprising number of business already have deployed PHP applications internally, so I don&#8217;t face an uphill battle convincing conservative IT managers to let us build in PHP.</p>
+<p>And with all that said, I should point out the we&#8217;re not a &#8220;PHP shop&#8221;.  We develop in Java, .NET/C#, PHP, Classic ASP, Python, Cold Fusion &#8212; really with anything required by the client.  In many (if not most) cases the choice of technology is dictated by the client.  So I have no religious attachment to PHP.  Funding the development of WASP was just a practical business decision.  We&#8217;re already rolled out one solution build using WASP, and are just about to to complete another.  And so far, so good.  We&#8217;re been able to deliver two high-quality, cost-competitive solutions.</p>
+<p>And isn&#8217;t a good ecology of frameworks in many different languages a good thing?  We can all (hopefully) learn from one another and collectively work towards getting better and better at building great software.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.418 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Wanted: eglob.py</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/07/01/kid-mode/">An Emacs kid-mode</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/02/shitfaced/">Launching real soon now&#8230;</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-10"><a href="http://lesscode.org/2005/07/01/enhanced-glob-wanted/" rel="bookmark" title="Permanent Link: Wanted: eglob.py">Wanted: eglob.py</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/wanted/" title="View all posts in Wanted" rel="category tag">Wanted</a>,  <a href="http://lesscode.org/category/languages/python/" title="View all posts in Python" rel="category tag">Python</a> 
+      on 01. July 2005</small>
+
+			<div class="entrytext">
+				<p>I&#8217;d really like to see an enhanced <code>glob</code> module. Nothing too crazy,
+just support for recursive wildcards and maybe a nice filtering
+API. Here&#8217;s your test case:</p>
+
+<pre><code>&gt;&gt;&gt; import eglob
+</code></pre>
+
+<p>&#8230; or whatever.</p>
+
+<p>A <code>find</code> function should return an iterator over all matching files and
+directories. Note that it should be possible to do recursive searches as
+the iterator is moving. <code>yield</code> kicks so much ass right here.</p>
+
+<pre><code>&gt;&gt;&gt; eglob.find('/etc/**')
+&lt;generator object at ...&gt;
+</code></pre>
+
+<p>Being able to filter the initial glob with such operations as <code>exclude</code> and
+<code>include</code> (needed?) would be nice. Designing this will be fun - try to abuse
+chaining generators as much as possible. :)</p>
+
+<pre><code>&gt;&gt;&gt; list(eglob.find('/etc/**').exclude('passwd', 'group', 'init.d/*'))
+['/etc/hosts', '/etc/httpd', '/etc/httpd/conf/httpd.conf']
+</code></pre>
+
+<p>I should be able to pass a extended glob (<code>str</code>, <code>unicode</code>) or a
+compiled regular expression (<code>sre.SRE_Pattern</code>) to any finding or
+filtering functions:</p>
+
+<pre><code>&gt;&gt;&gt; list(eglob.find(re.compile(r'^/tmp/.*')))
+['/tmp/mysql.sock', '/tmp/foo/bling']
+</code></pre>
+
+<p>I&#8217;d like to filter for directories only or files only:</p>
+
+<pre><code>&gt;&gt;&gt; list(eglob.find('/home/*', directories=1))
+['/home/hurly', '/home/curly', '/home/moe']
+&gt;&gt;&gt; eglob.find('**/.cvsignore', files=1)
+</code></pre>
+
+<p>This would be hugely useful in about four projects I&#8217;m currently working
+on.
+</generator></p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/01/enhanced-glob-wanted/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">5 Responses to &#8220;Wanted: eglob.py&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-6">
+			<p class="who"><cite><a href='http://simon.incutio.com/' rel='external ' title='62.49.9.94'>Simon Willison</a></cite>:</p>
+			<p>Markdown broke my comment. Here it is again.</p>
+<p>I don&#8217;t quite understand how the &#8220;**/.cvsignore&#8221; and &#8220;re.compile(r&#8217;^/tmp/.*&#8217;)&#8221; examples would work. Wouldn&#8217;t you have to scan every single path on the whole system (the equivalent of running &#8220;find /&#8221;) and then filter each one? At least with &#8220;/etc/**&#8221; you only have to scan a single directory, albeit recurisvely. Am I missing something?</p>
+      <p>
+			<small>comment at <a href="#comment-6" title="">07. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.81.130.195'>Ryan Tomayko</a></cite>:</p>
+			<p>Nice to see you here, Simon. I hope your not in harms way over there with all the chaos. :)</p>
+<p>That&#8217;s a good point. I had thought of &#8220;**/.cvsignore&#8221; as being rooted from the current directory. &#8220;/**/.cvsignore&#8221; would be bad though.</p>
+<p>btw, the first place I saw the syntax was in the python based rdiff-backup and I instantly liked it:</p>
+<p>http://rdiff-backup.stanford.edu/rdiff-backup.1.html#sect7</p>
+</p>
+      <p>
+			<small>comment at <a href="#comment-7" title="">07. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-8">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.81.130.195'>Ryan Tomayko</a></cite>:</p>
+			<p>Dang, the CSS for these comments is stupid. I&#8217;m going to have to take a look at that.</p>
+      <p>
+			<small>comment at <a href="#comment-8" title="">07. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9">
+			<p class="who"><cite><a href='http://blog.ianbicking.org' rel='external ' title='66.100.151.155'>Ian Bicking</a></cite>:</p>
+			<p>py.path (in the py lib) has several options for recursing files with matchers.</p>
+      <p>
+			<small>comment at <a href="#comment-9" title="">07. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-30">
+			<p class="who"><cite><a href='http://www.kentsjohnson.com' rel='external ' title='69.21.248.218'>Kent Johnson</a></cite>:</p>
+			<p>Jason Orendorff&#8217;s path module can do mucho of this. It will recursively walk dirs filtering on an fnmatch and optionally isfile or isdir.</p>
+</p>
+<p>eglob.find(re.compile(r&#8217;^/tmp/.*&#8217;)) might be<br />
+path.path(&#8217;/tmp&#8217;).walk() depending on what you really mean by the re.</p>
+<p>eglob.find(&#8217;/home/*&#8217;, directories=1) is<br />
+path.path(&#8217;/home&#8217;).dirs()</p>
+</p>
+<p>Kent</p>
+      <p>
+			<small>comment at <a href="#comment-30" title="">11. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.344 seconds -->
+<!-- Cached page served by WP-Cache -->

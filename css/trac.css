@@ -1,0 +1,325 @@
+@import url(almodovar.css);
+@import url(/trac/css/code.css);
+
+/* Wiki Nav */
+div#ctxtnav, div#altlinks { 
+  text-align: right;
+  width: 100%;
+}
+div#altlinks { 
+  text-align: center;
+  font-size: 90%;
+}
+div#ctxtnav ul, div#altlinks ul { 
+  margin: 0;
+  padding-left: 0;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+div#ctxtnav li, div#altlinks li { 
+  display: inline;
+  list-style-type: none;
+}
+div#ctxtnav a, div#altlinks a { 
+  border-bottom: 1px dotted #ccc;
+}
+div#ctxtnav h2, div#altlinks h3 { 
+  font-size: 120%;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+/* Browser */
+table.listing { width: 100% }
+table.listing th { 
+  text-align: left;
+  background: #aaa;
+}
+table.listing th, table.listing th a { color: #fff }
+table.listing td { background: #eee }
+table.listing td, table.listing th { 
+  font-size: 90%;
+  padding: 2px;
+  white-space: nowrap;
+}
+table.listing td.change, 
+table.listing td.summary,
+table#tktlist td  { 
+  white-space: normal;
+}
+table.listing { 
+  margin-bottom: 1em;
+}
+div.browser h1 { 
+  margin: .3em 0;
+}
+
+/* Ticket */
+form .field { margin-top: .75em; width: 100% }
+form #comment { width: 100% }
+#properties { white-space: nowrap; line-height: 160%; padding: .5em }
+#properties .main { margin-bottom: 1em }
+#properties .col1 {
+ border-right: 1px dotted #d7d7d7;
+ float: left;
+ margin-bottom: 1em;
+ width: 45%;
+}
+#properties .col2 { margin-left: 40% }
+#properties .main label, #properties .col1 label, #properties .col2 label {
+ float:left;
+ width: 7em;
+ text-align: right;
+ margin-right: .5em;
+}
+#properties .custom {
+ clear: left;
+ border-top: 1px dotted #d7d7d7;
+ padding-top: 1em
+}
+#properties .custom .field { margin: .25em 0 }
+
+#action { line-height: 2em }
+
+fieldset.radio { border: none; margin: 0; padding: 0 }
+fieldset.radio legend {
+ color: #000;
+ float: left;
+ font-size: 100%;
+ font-weight: normal;
+ padding: 0 1em 0 0;
+}
+fieldset.radio label { padding-right: 1em }
+
+/* Query */
+#query fieldset { margin: 1em 0 }
+#query fieldset div { float: left; margin: .5em 2em .5em 0 }
+#query fieldset label { display: block }
+#query fieldset select { width: 10em }
+#query br, #query .buttons { clear: left }
+
+/* Ticket */
+#newticket #description { width: 100% }
+#newticket #properties { width: 100% }
+
+#ticket { 
+ background: #fff;
+ border: 1px solid #ccc;
+ padding: 1em;
+ position: relative;
+}
+#ticket h1, #ticket h2 { margin: 0 }
+#ticket h2 { font-weight: normal; font-size: 150%; margin-bottom: 1em }
+#ticket .date { color: #d63; float: right; position: relative }
+
+#ticket table { table-layout: fixed; border-collapse: collapse; width: 100% }
+#ticket tr { border-bottom: 1px dotted #eed }
+#ticket td, #ticket th { font-size: 80%; padding: .5em 1em; vertical-align: top }
+#ticket th { color: #d63; font-weight: normal; text-align: left }
+#ticket hr { color: #dd9; border-color: #dd9; border-width: 1px 0 0; height: 1px; margin: .5em 0 0 }
+
+#attachments { border: 1px outset #996; padding: 1em }
+#attachments .attachments { list-style: square; margin-left: 2em; padding: 0 }
+
+#changelog { border: 1px outset #996; padding: 1em }
+#changelog h3 {
+ border-bottom: 1px solid #d7d7d7;
+ color: #999;
+ font-size: 100%;
+ font-weight: normal;
+}
+#changelog .changes { list-style: square; margin-left: 2em; padding: 0 }
+#changelog .comment { margin-left: 2em }
+
+form .field { margin-top: .75em; width: 100% }
+form #comment { width: 100% }
+
+#properties { white-space: nowrap; line-height: 160%; padding: .5em }
+#properties .main { margin-bottom: 1em }
+#properties .col1 {
+ border-right: 1px dotted #d7d7d7;
+ float: left;
+ margin-bottom: 1em;
+ width: 45%;
+}
+#properties .col2 { margin-left: 40% }
+#properties .main label, #properties .col1 label, #properties .col2 label {
+ float:left;
+ width: 7em;
+ text-align: right;
+ margin-right: .5em;
+}
+#properties .custom {
+ clear: left;
+ border-top: 1px dotted #d7d7d7;
+ padding-top: 1em
+}
+#properties .custom .field { margin: .25em 0 }
+#action { line-height: 2em }
+fieldset.radio { border: none; margin: 0; padding: 0 }
+fieldset.radio legend {
+ color: #000;
+ float: left;
+ font-size: 100%;
+ font-weight: normal;
+ padding: 0 1em 0 0;
+}
+fieldset.radio label { padding-right: 1em }
+
+/* Timeline */
+div.timeline form#prefs { 
+  font-size: 70%;
+  width: 30em;
+  float: right;
+  margin-top: -7em;
+  border: 1px solid #aaa;
+  padding: 1em;
+  color: #555;
+  background: #eee;
+}
+div.timeline form#prefs fieldset { 
+  border: 0;
+}
+div.timeline form#prefs fieldset div {
+  margin: 0;
+}
+div.timeline form#prefs div.buttons {
+  text-align: right;
+  margin-top: -2.5em;
+}
+div.timeline dl { line-height: 1.3em; margin-left: 1em }
+div.timeline dt { background: 3px 4px no-repeat; padding: 0 }
+div.timeline dt :link, 
+div.timeline dt :visited {
+ background: 3px 3px no-repeat;
+ border: none;
+ color: #555;
+ padding: 0 4px 2px 22px;
+}
+div.timeline dt>:link, 
+div.timeline dt>:visited {
+ /* Hide from IE/Win */
+ background-position: 3px 4px;
+ display: block;
+}
+div.timeline dt :link:hover, 
+div.timeline dt :visited:hover { background-color: #eee; color: #333 }
+div.timeline dt em {
+ border-bottom: 1px dotted #bbb;
+ color: #ff5000;
+ font-style: normal;
+ text-decoration: none;
+}
+div.timeline dt .time { color: #999; font-size: 80%; }
+div.timeline dd { 
+ font-size: 80%;
+ margin: 0 0 .75em 5.5em;
+ padding: 0;
+ color: #776;
+}
+dt.changeset, dt.changeset a { background-image: url(/trac/changeset.png) !important }
+dt.newticket, dt.newticket a { background-image: url(/trac/newticket.png) !important }
+dt.closedticket, dt.closedticket a { background-image: url(/trac/closedticket.png) !important }
+dt.wiki, dt.wiki a { background-image: url(/trac/wiki.png) !important }
+dt.milestone, dt.milestone a { background-image: url(/trac/milestone.png) !important }
+div.progress { float: left; border: 1px solid #eee; }
+div.progress div { background: #ff5000; height: 1.2em }
+p.percent { font-size: 10px; margin: 1.4em 0 0 }
+ul.milestones { margin: 2em 0 0; padding: 0 }
+li.milestone { list-style: none; margin-bottom: 4em }
+li.milestone .info { white-space: nowrap }
+li.milestone .info h2 {
+ background: #f7f7f7;
+ border-bottom: 1px solid #d7d7d7;
+ margin: 0;
+}
+li.milestone .info h2 :link, li.milestone .info h2 :visited {
+ color: #999;
+ display: block;
+ border-bottom: none;
+}
+li.milestone .info h2 :link:hover, li.milestone .info h2 :visited:hover {
+ color: #999;
+}
+li.milestone .info h2 em { color: #333; font-style: normal }
+li.milestone .info .date {
+ color: #888;
+ font-size: 11px;
+ font-style: italic;
+ margin: 0;
+}
+li.milestone .info .progress { margin: 1em 1em 0; width: 40em; max-width: 80% }
+li.milestone .info dl {
+ font-size: 10px;
+ font-style: italic;
+ margin: 0 1em 2em;
+ white-space: nowrap;
+}
+li.milestone .info dt { display: inline; margin-left: .5em }
+li.milestone .info dd { display: inline; margin: 0 1em 0 .5em }
+li.milestone .descr { margin-left: 1em }
+.milestone .date { color: #888; font-style: italic }
+.milestone .descr { margin: 1em 0 2em }
+#prefs fieldset { margin: 1em .5em .5em; padding: .5em 1em 0 }
+h2.stats {
+ background: #f7f7f7;
+ border-bottom: 1px solid #d7d7d7;
+ clear: right;
+ padding: 0 .33em;
+}
+#stats { border-bottom: none; margin-top: 0 }
+#stats td, #stats th { padding: 0 .25em }
+#stats :link, #stats :visited { display: block; border: none }
+#stats th.name { text-transform: capitalize }
+#stats th.tickets { text-align: center; border-bottom: none }
+#stats th.open, #stats th.closed {
+ border-top: none;
+ font-size: smaller;
+ text-align: center;
+ width: 6em;
+}
+#stats td.open, #stats td.closed {
+ color: #888;
+ text-align: right;
+ padding-right: 1.5em;
+ vertical-align: middle;
+}
+#stats th.progress { padding-left: 6px; width: 60% }
+#stats td.progress { white-space: nowrap }
+#stats td.progress div.progress { margin: 3px .5em 3px 2px }
+#stats td.progress p.percent { font-size: 10px; margin: 0 }
+#stats tbody th { font-weight: normal; text-align: left }
+#stats tbody th.name { line-height: 2em }
+#stats tbody.totals tr { border-bottom: 0 }
+#stats tbody.totals th, #stats tbody.totals td {
+ font-weight: bold;
+}
+#edit fieldset { margin: 1em 0 }
+#edit em { color: #888; font-size: smaller }
+#edit .disabled em { color: #d7d7d7 }
+#edit .field { margin-top: 1.3em }
+#edit label { padding-left: .2em }
+#edit textarea#descr { width: 97% }
+
+/* misc */
+fieldset { 
+  border: 1px solid #999;
+}
+div#help { 
+  font-size: 90%;
+  color: #777;
+  margin: 2em 0;
+}
+div.description { 
+  text-align: left;
+}
+pre { 
+  background: #eee;
+  overflow: auto; 
+}
+div.timeline h2 { 
+  font-size: 130%;
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}

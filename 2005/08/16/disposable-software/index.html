@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Disposable Software</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/08/16/magpies-django-rails-comparison/">Magpie&#8217;s Django / Rails comparison</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/08/18/the-reuse-fallacy-or-%e2%80%9cthis-will-work-because-it-will-be-good-if-it-did%e2%80%9d/">The Reuse Fallacy, Or “This Will Work Because It Will Be Good If It Did”</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-63"><a href="http://lesscode.org/2005/08/16/disposable-software/" rel="bookmark" title="Permanent Link: Disposable Software">Disposable Software</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://www.jooto.com/blog">Alex Bunardzic</a>
+      under <a href="http://lesscode.org/category/theory/" title="View all posts in Theory" rel="category tag">Theory</a> 
+      on 16. August 2005</small>
+
+			<div class="entrytext">
+				<p>I was recently hired to deliver a presentation on the Goal Oriented Software Design. The added twist to the challenge was that the presentation was supposed to be narrowly tailored to the client’s business domain, with some concrete examples. That meant that I couldn’t get away with just a generic presentation – I had to invest some serious time in research, before I was able to even think cogently about the specific problem.</p>
+
+<p>The paying client was clear about that requirement, and was happy to oblige me. Not before asking me for the estimate, though, which ended up in thousands of dollars. Having no particular objections to my estimate, the client signed the SOW, and I went off to merrily prepare the presentation.</p>
+
+<p>But then that episode got me thinking. Here we have a budget-conscious company, signing a hefty invoice in order to consume the presentation that basically got delivered to them within one hour (that’s all it took for me to run through my slides and to fend the QA period). That presentation was a one-time event, a throwaway, if you will.</p>
+
+<p>Now, imagine if, instead of negotiating for a presentation, I was involved in negotiating the delivery of a software application with the same company. Would I be able to get away with thousands of dollars invoice for delivering a throwaway application that would only address a very narrow and specific problem domain and that only for a very short period of time?</p>
+
+<p>The answer is, of course, a resounding ‘no way!’ No one in their right mind would ever approve building an application that would be useful only to several people, and only for a couple of hours/days.</p>
+
+<p>But really, what’s the difference between such an application, and the presentation that I’ve delivered? My presentation, while doubtlessly viewed as being quite useful to several expert users within that company, was valid only for an hour or so. The fact that it took me more than two weeks to prepare something that will have useful lifespan of only an hour or so apparently didn’t seem to bother anyone. A software application, on the other hand, gets invariably perceived as being something that not only must possess phenomenal longevity (at least 3 to 5 years, according to the current rule of a thumb), but must also offer a huge portion of salvageability, that is, reusability.</p>
+
+<p>A typical business presentation, such as the one delivered using Microsoft PowerPoint, is not expected to be reusable. In truth, however, there usually is quite a wealth of useful information and knowledge buried inside such typical presentations. But no one seems particularly bent on salvaging that content, or on reusing it, or on evolving it, etc.</p>
+
+<p>But as soon as we step into the world of software application development, the delivered source code, and all the embedded knowledge it carries within, gets treated as pure gold. All of a sudden, everybody starts hyperventilating about the ability to reuse it, not to reinvent the wheel, yadda, yadda, yadda.</p>
+
+<p>I must admit at this point that I’m a bit mystified as to why would one kind of knowledge (i.e. the knowledge embedded within software source code) be so extremely precious, while another kind of knowledge (i.e. the knowledge embedded within other business documents) be viewed as easily reproducible and thus not worthy of extreme ritualization. Especially when often times the two apparently different kinds of knowledges turn out to be quite similar in scope and in intent.</p>
+
+<p>Something is terribly mystified (beyond any recognition) in the world of software application development. If someone is prepared to spend several thousands of dollars on articulating and communicating certain valuable, albeit disposable message to the targeted narrow audience without even batting an eyelash, yet at the same time balks at similarly useful articulation of the equally important knowledge to be delivered via the software application code, that tells me that something went haywire along the way. Reality check is in order.</p>
+
+<p>On the flip side, however, I had to ask myself how is it that I feel perfectly comfortable delivering all those disposable PowerPoint presentation without ever looking back, and yet at the same time I find myself striving to build the software code that would be as general-purpose as is humanly possible? Am I being reasonable in behaving that way?</p>
+
+<p>If someone asked me to deliver a PowerPoint presentation outlining the optimal strategy for building a teacher’s grade book that would collect assignments and quiz marks and grades and summarize them into the final grades, I would gladly jump to the challenge and quite comfortably ask for 5 to 7 days of research time. I would be quite certain that I could deliver a high quality product in that time frame, starting from a completely clean slate.</p>
+
+<p>However, if they asked me to deliver the application code that would allow teachers to collect all the grades and summarize them for the current grading period, according to the particular rules that the school in question operates under, I would be reluctant to jump at it and commit to delivering it within the 5 to 7 days time frame.</p>
+
+<p>Why, what is different with the software code compared to the PowerPoint content? Basically, the fact that both current technologies in vogue, (both Coke and Pepsi, that is, J2EE and .NET) are so complicated, prevent me from feeling comfortable in delivering a highly customized solution.</p>
+
+<p>But, realistically speaking, I think it is becoming more and more clear that delivering huge, bulky, all-things-to-all-people software applications is simply not the way to go. We are now ushering into an era of disposable software. Build it quickly, with a particular narrow problem in mind, and for a particular, possibly short time frame of valid use. Then, be prepared to throw it away, and to move on, not looking back.</p>
+
+<p>Up until recently, such a thing would sound more like science fiction, but today, thanks to the new generation of tools and new outlook on the philosophy of software development, such an approach is becoming increasingly feasible. I will give a brief illustration here:</p>
+
+<p>Last year I worked on a project that aimed at delivering administrative functionality to the school districts throughout the North America. The project was conceived and driven by a high tech company, itself driven by various high tech concerns and agendas. Thus, we ended up with the ungodly mixture of .NET, J2EE, and a bit of the Oracle technology thrown in for good measure.</p>
+
+<p>But the real problem was in the lack of true focus. The product was being built with a vague, generic individual user in mind. Thus, most of the features that the product offered were completely amiss. And because the end-user acceptance was so poor, the all-knowing higher-up powers started driving even harder towards generalization and future flexibility. Which means, when translated to dollar value, that the application was exorbitantly expensive to design, develop and maintain.</p>
+
+<p>Because of that, it was put up on a pedestal, and was treated like a sacred cow in all ways imaginable.</p>
+
+<p>Anyone who would dare suggest that, instead of attempting to build one giant, general purpose app, we focus on building several more specific apps that would address specific needs of individual districts (or even schools), would be shunned, ridiculed, and eventually thrown out of the boardroom.</p>
+
+<p>Thus, we’ve ended with an extremely precious product that had myriad of features that end-users mostly didn’t care about. But, the final product is now exorbitantly expensive. Would anyone dare, at that point, tell the powers that be that such a product should be just a throwaway? Not a chance in hell! And so the dance of deception continues.</p>
+
+<p>Meanwhile, all that the targeted segment of end-users wants is a simple app to allow them to do their job easily. And they are not thinking in terms of many decades of blissful use. Just let them do the specific job right now, for this specific event (such as submission of final grades).</p>
+
+<p>In reality, a good software developer should be able to do just that – deliver a disposable, short lived product that addresses only the pressing needs of the moment, and then simply disappears. No maintenance, no enhancements, no song-and-dance, nothing. Similar to how my one-time business presentation required nothing more but to simply be consumed, and then thrown away. No fuss, no muss.</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/08/16/disposable-software/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">17 Responses to &#8220;Disposable Software&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-214">
+			<p class="who"><cite><a href='http://www.redmelon.net/' rel='external ' title='80.56.116.200'>Douglas</a></cite>:</p>
+			<p>Give your school apps an RSS output and you can be happy that the users aren&#8217;t throwing their grades down a black hole too.</p>
+<p>Douglas</p>
+      <p>
+			<small>comment at <a href="#comment-214" title="">17. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-215">
+			<p class="who"><cite>Danno</cite>:</p>
+			<p>I think part of this is that software developers are lazy enough bastards that they think to themselves: &#8220;Crap, I don&#8217;t want to have to write this again, I oughta try doing it right the first time.&#8221;</p>
+<p>So they plan and plan and plan and try and do something that&#8217;ll be good enough that no one asks them to work on the same problemset again because they&#8217;re already bored with it and it ends up a giant ol&#8217; mess because what they end up doing is trying to capture the really, REALLY hairy reality of Bureaucracy and the sub-system of Bureaucracy that makes sure that when the business rules don&#8217;t cover something, shit can still get done anyhow.</p>
+<p>And THAT is where it breaks down, because the attempt to model information flow when you are given incomplete information on the flow of information is futile.</p>
+<p>The reverse, I think, is why people want large, dependable, &#8220;Enterprise Level&#8221; software systems: They&#8217;re willing to adapt their bureacracy to a software package provided that it&#8217;s close enough that they don&#8217;t have to change TOO much.</p>
+<p>Did that make sense?  I think I started rambling somewhere.</p>
+      <p>
+			<small>comment at <a href="#comment-215" title="">17. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-216">
+			<p class="who"><cite><a href='http://entreprexplorergmail.com' rel='external ' title='69.181.35.164'>Jared</a></cite>:</p>
+			<p>I deginitely agree with this. In fact I wrote a somewhat similar <a href="http://entreprexplorer.blogspot.com/2005/08/mark-my-words-again.html">article</a> a little while back that talks about actually abandoning software that still serves a purpose. Just thought it would be a nice follow-up to this article even though it is not exactly on the same topic.</p>
+      <p>
+			<small>comment at <a href="#comment-216" title="">17. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-217">
+			<p class="who"><cite><a href='http://www.bloglines.com/blog/AssaphMehr' rel='external ' title='203.202.70.251'>Assaph Mehr</a></cite>:</p>
+			<p>While I firmly believe like you in disposable software, I think there is something wrong with your first argument (presentation vs. software). It&#8217;s the old &#8216;teach a man to fish&#8217; story: your presentation is not about giving them a one-time fish, it&#8217;s about teaching them how to fish (with examples for their lake, as it were :). If you just hand someone a piece of software (particularly closed-source) they have something they can use directly for a while. The impact of your presentation is not less than the software. The presentation is not reusable by you, but it is by them - every time they think of the problem.</p>
+<p>In the long run, if your presentation changed the way they think it will have more of an effect than the software they used for a few months. Conversely, if they buy the software they want to make sure that it lasts as long as possible (not just value for money, but also because people hate change; they want something that will still be comfortable in the future).</p>
+<p>I imagine disposable software - even though it is the right idea - will make people uncomfortable. We as developers all know that stable requirements are myths, and that coding is almost always done in maintenance mode. The user may not realise this. They may not understand that their own perception of their needs will change over time, and thus they are after something stable. In their mind, this justifies the cost of &#8220;enterprise software&#8221;. It is up to us to show that disposable software, using open-source components and agile methods - is actually better and cheaper in the long tun.</p>
+      <p>
+			<small>comment at <a href="#comment-217" title="">17. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-218">
+			<p class="who"><cite><a href='http://loadaveragezero.com/' rel='external ' title='70.179.98.4'>Douglas Clifton</a></cite>:</p>
+			<p>Regardless of the perception at a corporate level, most software <em>is</em> disposable. Every few years, the operating system you use becomes obsolete, the applications are outdated and upgraded, the hottest thing is now stale. Look at Lotus, or OS/2, or countless other examples. I recently moved across the country. I had to clean out a lot of stuff. I threw away boxes and boxes and boxes of software, manuals, etc. (and a lot of hardware too). Some of it, in its heyday (AutoCAD for instance) was very expensive, $1000+ per seat. Now useless. Can you offer old software to a library, like a book, so someone gets some value out of it? They&#8217;re not interested, in the dumpster it goes.</p>
+      <p>
+			<small>comment at <a href="#comment-218" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-219">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>Shirky&#8217;s <a href="http://www.shirky.com/writings/situated_software.html">Situated Software</a> makes a similar case. Not for disposable apps so much as small and specific, one-off type apps being a whole area of application design that is important and valid yet largely unexplored by the &#8220;web school&#8221;. The essay is well-known and cited heavily but I like to throw it out at every chance. Definitely an important work in shifting my perception of the software landscape.</p>
+      <p>
+			<small>comment at <a href="#comment-219" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-220">
+			<p class="who"><cite><a href='http://asiatica.org/~ludo/' rel='external ' title='81.208.36.80'>ludo</a></cite>:</p>
+			<p>If the organizationis sufficiently large (eg 10k employees or more), the bulk of the costs for a new application are deployment, change management, application management, training, etc. The development phase is a very small part of the whole process. Just think of all the meetings that are required to bring an app online, and what their cost is to the company.</p>
+<p>Where I work (large financial institution, about 40k employees) the thing managers are most scared of is having to <em>maintain</em> something after it has been released. Oh, and a small app means a small budget, they only start the process to develop a new app if it substantially increases their annual budget.</p>
+      <p>
+			<small>comment at <a href="#comment-220" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-222">
+			<p class="who"><cite>Dan Hatfield</cite>:</p>
+			<p>From what I can tell most corporation do pursue reuse of &#8220;content&#8221; (presentations, documents, etc) in the form of knowledge management. Of course, based on my experience, these initiatives have been as unsuccessful as reusing code modules.</p>
+      <p>
+			<small>comment at <a href="#comment-222" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-223">
+			<p class="who"><cite><a href='http://www.itlab.musc.edu/' rel='external ' title='128.23.107.43'>Matthew</a></cite>:</p>
+			<p>Fantastic article.  We write &#8220;throw away&#8221; code here all the time.</p>
+      <p>
+			<small>comment at <a href="#comment-223" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-224">
+			<p class="who"><cite><a href='http://holst.biz/' rel='external ' title='80.166.146.76'>Jonathan Holst</a></cite>:</p>
+			<p>I agree with Assaph Mehr, on the part that there&#8217;s a difference between the software and the presentation &#8212; the presentation might make you smarter, and that&#8217;s precious.</p>
+      <p>
+			<small>comment at <a href="#comment-224" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-225">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>alexbunardzic</a></cite>:</p>
+			<p>Douglas Clifton wrote:</p>
+<p>&#8220;Regardless of the perception at a corporate level, most software is disposable.&#8221;</p>
+<p>Thanks for this clarification, Douglas. You are, of course, right, and now I see that I should&#8217;ve titled my blurb &#8220;Intentionally  Disposable Software&#8221;. Because that&#8217;s what I was driving at.</p>
+      <p>
+			<small>comment at <a href="#comment-225" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-226">
+			<p class="who"><cite><a href='http://' rel='external ' title='198.73.138.2'>alexbunardzic</a></cite>:</p>
+			<p>Assaph Mehr wrote:</p>
+<p>&#8220;While I firmly believe like you in disposable software, I think there is something wrong with your first argument (presentation vs. software). It’s the old ‘teach a man to fish’ story: your presentation is not about giving them a one-time fish, it’s about teaching them how to fish (with examples for their lake, as it were :). &#8220;</p>
+<p>This is true, my example is all about &#8216;teach them how to fish&#8217;. I chose that example simply because it was first hand and my most recent experience, so I talked about it in order to lend more credibility to my thesis.</p>
+<p>However, I can also cite many examples where the PowerPoint presentation was merely a fish to be devoured by the audience, not a lecture on how to fish. In that respect, such presentations are not that much different from what a business application can deliver to its consumers.</p>
+<p>Using a run of the mill application is not going to make anyone smarter, that&#8217;s for sure, but the same holds true for consuming a run of the mill business presentation.</p>
+      <p>
+			<small>comment at <a href="#comment-226" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-227">
+			<p class="who"><cite>Peter Wilson</cite>:</p>
+			<p>I hate to break a big secret, but power users (and departmental programmers) have been using Micorsoft Office to develop small disposable systems for years. It seems this lesson has not yet been learned for web based apps.<br />
+As an example our Ski Racing Club developed a very simple system for the annual club auction. Simple Access tables and a few forms + crappy coding that would make a programmer cry. Invaluable: one hour end-of-auction check out lines reduced to minutes. So useful that several other clubs have lifted it out of the garbage can for their own use.</p>
+      <p>
+			<small>comment at <a href="#comment-227" title="">18. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7325">
+			<p class="who"><cite><a href='http://jooto.com/blog/?p=172' rel='external ' title='63.247.68.77'>Ethical Software by Alex Bunardzic &raquo; Building Disposable Software with Rails</a></cite>:</p>
+			<p>[&#8230;] Last year I became aware of the Disposable Software phenomenon. After using Rails on a couple of initial projects, I also became aware that the reality of disposable software is upon us. Today, I&#8217;m going to show you an example from my recent practice. This example will hopefully support my hunch that the age of disposable software is dawning. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-7325" title="">09. August 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9047">
+			<p class="who"><cite><a href='http://blog.abgenial.com' rel='external ' title='24.6.157.31'>Peter Rip</a></cite>:</p>
+			<p>I think this is a brilliant insight.  It is the core of Web 2.0 impact in the Enterprise.</p>
+      <p>
+			<small>comment at <a href="#comment-9047" title="">25. August 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-9153">
+			<p class="who"><cite><a href='http://www.teammurder.com/?p=1610' rel='external ' title='65.98.16.186'>Team Murder &raquo; I&#8217;d Rather See Recyclable Software</a></cite>:</p>
+			<p>[&#8230;] I spent a little time on the bus ride this morning reading and mulling Alex Bunardzic&#8217;s post on disposable software which is a huge lump of information and insight to chew on but it also got me thinking about some things perhaps tangential to some of the things he talked about. In my own admittedly limited experience I&#8217;ve found the reuse of code to wildly vary in terms of usefulness. Most of the actual work I do in a text editor these days revolves around forms and the scripts necessary to do something with them so I&#8217;m at least 89% talking out of my ass here but I&#8217;ve run into similar circumstances with larger chunks of code (like writing my own web server instead of just using whatever was rolled into a CMS) and liked it even less. In my current place of work there is a weird premium placed on the ability to do any programming work since we&#8217;re essentially in place as phone &#8216;bots and not expected to know a whole lot more than that. The fact that I can churn through a script that doesn&#8217;t really do a whole lot in twenty minutes is considered pretty valuable by some folks for reasons I can&#8217;t really figure out without chalking out a pentagram and summoning up some management types to explain things to me. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-9153" title="">27. August 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-20839">
+			<p class="who"><cite>Seezar Honibe</cite>:</p>
+			<p>Lets see if I got this right: </p>
+<ol>
+<li>
+<p>Less is more<br />
+Seems we all agree reuse is fiction. Reuse bloats the code and increases the chance for implementation and production errors. Don&#8217;t solve for an undefined problem - you cannot.<br />
+Presentation correlation: If the business presentation were to address a different issue than for what it was created the presentation would confuse the audience. </p>
+</li>
+<li>
+<p>Consumers create<br />
+As defined disposable software requires domain expertise. Focus on the problem to solve than being a tools expert. Most hardware products are all disposable and in some cases the factory that creates the specific hardware is also disposable. Here lies the rub; most consumers of the &#8217;software&#8217; are still not able to create their own applicatons.<br />
+Presentation correlation: If I as the presenter need to deliver a board meeting, I would create my own presentation; not my assistant; not the IT guy. In fact what I lack in bling is made up for in focused content. </p>
+</li>
+<li>
+<p>Half-life matters ( http://en.wikipedia.org/wiki/Halflife )<br />
+Knowing how long your application lasts determines how much effort you invest and I submit this defines disposability. Know that production support, network performance and interoperability  as is lifetime usage are part of the specific requirements. But don&#8217;t code for more than you know.<br />
+Presentation correlation: My presentations, created with PowerPoint, have a halflife of 7 days after which the information is out of date; the problem has been solved. However Microsoft PowerPoint is not at the same level of disposability as the presentation created with PP. That means software (C#) does not create disposability but specific application factories (PowerPoint) create disposable products (mypresentation.ppt). </p>
+<ul>
+<li>did we not try and get here with 4GLs ;-)</li>
+</ul>
+</li>
+<li>
+<p>One size does not fit all<br />
+What is being said about disposable applications is solve a specific problem and not all applications are solved in the sameway. The lifetime of the application may require different tools and different approaches. Ruby on Rails solves a specific class of problem and that is what makes RoR such a  powerful factory. (DSL&#8217;s extend this metaphor)<br />
+Presentation correlation: At some point I have to put aside PowerPoint and decided that a short video clip (also disposable) is the better presentation to get re-elected.  </p>
+</li>
+<li>
+<p>Use common sense<br />
+In the business world we constantly make value based decisions as to effort and result. As long as you know the lifetime value of your product you can match the implementation and maintenance effort appropriately.<br />
+Presentation correlation: This is where I say maybe a verbal conversation or a blog entry is best and I throw away Microsoft PowerPoint and get back to doing real work, like walking my dog ;-)</p>
+</li>
+</ol>
+      <p>
+			<small>comment at <a href="#comment-20839" title="">19. December 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.482 seconds -->
+<!-- Cached page served by WP-Cache -->

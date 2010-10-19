@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Then you win.</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+		
+		 		<h2>'Then you win.' Archives</h2>
+
+ 	  
+				<div class="post">
+				<h2 id="post-138"><a href="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/" rel="bookmark" title="Permanent Link to The pragmatic&#8217;s guide to Web architectures">The pragmatic&#8217;s guide to Web architectures</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/#comments" title="Comment on The pragmatic's guide to Web architectures">14</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a><br />27. March 2006</small>
+
+				<div class="entry">
+					<p>There&#8217;s a big battle of words raging on to define what the hell we&#8217;re doing and why we&#8217;re doing it all wrong.</p>
+
+<p>Are Web services on the Web, or do they have to use SOAP? How is low REST different from high REST? Does XML/HTTP work better if we call it POX? When is AJAX not AJAX? Who owns the semantic landscape?</p>
+
+<p>There are also a lot of people building applications, that don&#8217;t have time to argue how you call it or what it means, just as long as it works. We call them, &#8220;the pragmatics.&#8221; This post is for them.</p>
+
+<p>When it comes to designing Web services, there&#8217;s a few choices of architecture style, and stacks of technologies to choose from. It&#8217;s still undecided which one will rule them all, the race if far from over. Most people who write about that stuff hope their horse is the winning one.</p>
+
+<p>I&#8217;m no exception. So I&#8217;m going to play pundit and tell you which architecture style I think works best for the Web, which technology stack I prefer to use:</p>
+
+<ul>
+<li><b>Architecture style:</b> use the simplest most common solution to solve your problem.</li>
+<li><b>Technology stack:</b> see above.</li>
+</ul>
+
+<p>XML over HTTP (can we please not use an acronym that means a disease?) is great for moving structured data around, and shines at encapsulation. Its loosely coupled document style has too many merits to mention. Except when you&#8217;re building a UI that needs to talk back to the server, where tight coupling is good enough, and too much abstraction means you&#8217;ll never deliver on time.</p>
+
+<p>RSS is a wonderful way to stream data updates from server to client, not to mention the magical combination that are blogs and feed readers. It&#8217;s the ultimate query API. Except when your UI is trying to query the number of unread e-mails in your inbox, and you find out that RSS is anything but simple.</p>
+
+<p>Microformats are amazing in their beauty and simplicity, and let you easily microchunk your content. Until you fall in the 80% of problems they were never intended to solve and&#8230; well, just don&#8217;t solve.</p>
+
+<p>JSON (not to be confused with Jason, though they both love AJAX) is the simplest form of API you can think of, concise and easy to use. It&#8217;s a wonder it wasn&#8217;t invented earlier. Except that it&#8217;s tightly coupled and still envious of what XML can do for you.</p>
+
+<p>AJAX is great even though almost everybody is using it for HTML. But let&#8217;s not get too tangled up in detail, acronyms are not for describing but for branding.</p>
+
+<p>There&#8217;s nothing like REST, it powers the Web (can we get a logo for that?). You&#8217;ll just have to ignore all those big name Web sites we all like to mention that use cookies for the benefit of their users. And all the REST APIs that violate more constraints than a drunk driver speeding down the wrong side of the road.</p>
+
+<p>RDF is semantic bliss, it gets semantics right and has a thoughtful model for representing and querying it. You can do amazing things with it. But most likely your semantic data is not RDF, and still happens to work, and you&#8217;re cursing every time you need to fix Firefox configuration files in all their semantic glory.</p>
+
+<p>The Web thrives not because it uses a strict architectural style and a coherent technology stack. It thrives because so many sites pay little attention to REST and choose to focus on their users instead. It thrives because malformed HTML pages include GIFs and PNGs and Flash and badly written JavaScript that just works. It thrives because people go on the Web to send e-mail, IM, do VoIP and trade BitTorrent files.</p>
+
+<p>The search for the holy grail, the one technology to rule them all, is as old as technology itself. I&#8217;m fine knowing we&#8217;ll never settle the score, never know whether vi is truely better than Emacs, or whether Eclipse shadows them both. But unless you&#8217;re a vendor making money on one horse, it doesn&#8217;t matter to you.</p>
+
+<p>If you&#8217;re a pragmatic developer, you have one tool in your toolbelt that always wins the day. It&#8217;s the ability to think, ask questions and make choices. To choose solutions that are best for the problem you&#8217;re tackling right now. And to keep learning. Because there will always be some new technology that&#8217;s better at solving some use case or another.</p>
+
+<p>The only architecture that matters is the simplest one you can get to solve the problem at hand.</p>
+
+<p><small>This post: written in Vim, formatted as HTML, available over RSS.</small></p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/"
+    dc:identifier="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/"
+    dc:title="The pragmatic&#8217;s guide to Web architectures"
+    trackback:ping="http://lesscode.org/2006/03/27/pragmatics-guide-to-webarch/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-142"><a href="http://lesscode.org/2006/03/22/ray-ozzie-got-the-memo/" rel="bookmark" title="Permanent Link to Ray Ozzie Got the Memo">Ray Ozzie Got the Memo</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2006/03/22/ray-ozzie-got-the-memo/#comments" title="Comment on Ray Ozzie Got the Memo">5</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/news/" title="View all posts in News" rel="category tag">News</a>,  <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a>,  <a href="http://lesscode.org/category/web-as-platform/" title="View all posts in Web as platform" rel="category tag">Web as platform</a><br />22. March 2006</small>
+
+				<div class="entry">
+					<p>I wonder if it&#8217;s time to adopt a variation of Gandhi&#8217;s famous formulation: &#8220;First they ignore you, then they laugh at you, then they fight you, then you win&#8221;. It goes something like &#8220;First they ignore you, then they keep on ignoring you but you win anyway&#8221;. One nice thing about the new formulation is you get to skip the whole fighting part. I think Gandhi would approve.</p>
+
+<p>On March 7, in <a href="http://conferences.oreillynet.com/cs/et2006/view/e_sess/8535" title="Simple Bridge-building">his talk</a> at the <a href="http://conferences.oreillynet.com/etech/">O’Reilly Emerging Technology Conference</a>, Ray Ozzie, CTO Microsoft, demonstrated (<a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/screencast/liveclipdemo.html" title="Live Clipboard Screencasts">short screencasts</a>, <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/clipboardexample.html" title="Live Clipboard Example">live demo page</a>) a method by which users can cut/copy/paste structured content between web applications and between web applications and Windows ones. Alert <a href="http://lesscode.org/">lesscode</a> readers will notice that <a href="http://spaces.msn.com/rayozzie/blog/cns!FB3017FBB9B2E142!285.entry?_c11_blogpart_blogpart=blogview&amp;_c=blogpart" title="Ray Ozzie: Wiring the Web">Ray&#8217;s blog post</a> describing his inspiration and motivation for the idea bears a striking resemblance to <a href="http://lesscode.org/2005/10/21/baby-steps-to-synergistic-web-apps/" title="Bill Burcham: Baby Steps to Synergistic Web Apps">my own</a> post from last October. A deeper look at the screencasts, the live demo and the <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/techPreview.html" title="Live Clipboard Technical Introduction">technical introduction</a> remove any doubt that what Ray demonstrated, and in fact what Microsoft is offering under the <a href="http://creativecommons.org/">Creative Commons</a> <a href="http://creativecommons.org/licenses/by-sa/2.5/">Attribution-Share Alike</a> license (you heard me right) is in fact the Web Application Clipboard as described in that original lesscode post and <a href="http://lesscode.org/2005/11/02/half-a-baby-step/" title="Bill Burcham: Half a Baby Step">followup</a>.</p>
+
+<p>This is in no way meant to diminish the Microsoft folks&#8217; brilliant implementation. The portable trick used to actually hook the browser&#8217;s built-in cut/copy/paste functionality is inspired. The design tradeoff resulting in a visible representation (scissors icon) of every clipboard-capable element is all their own, and quite frankly, is probably a necessary tradeoff if the Web Application Clipboard is to actually get traction. There&#8217;s <a href="http://www.memerocket.com/2006/03/21/ray-ozzie-demos-web-app-clipboard/" title="Ray Ozzie Demos Web App Clipboard">a more technical analysis</a> posted on <a href="http://www.memerocket.com/" title="Bill Burcham’s memeRocket">my personal blog</a>, but the executive summary is:</p>
+
+<blockquote>
+  <p>Live Clipboard (Microsoft&#8217;s name for Web Application Clipboard) is awesome and I believe sites will adopt it.
+  I wish the name weren&#8217;t &#8220;infected&#8221; with the <a href="http://www.live.com/">Windows Live</a> brand but that won&#8217;t matter a whole lot so long as the specification is good and open.
+  Right now though I can&#8217;t find any specification at all but I&#8217;m keeping hope alive on that front anyway (you listening Gandhi? MLK?)</p>
+</blockquote>
+
+<p>What I find more interesting than that technical stuff though is the amount of mindshare this thing got &#8220;all of a sudden&#8221;. First off, note that Ray&#8217;s March 7 blog post on this subject comprises the only thing he&#8217;s blogged since the end of January. A whole month of the Microsoft CTO&#8217;s time &#8212; how many dog-years is that? Now realize that the good guys over at the <a href="http://gillmorgang.podshow.com/">Gillmor Gang</a> podcast spent a full 48 minutes on this single topic on March 16 (<a href="http://gillmorgang.podshow.com/?p=36">Ozzie Gang I</a>, <a href="http://gillmorgang.podshow.com/?p=37">Ozzie Gang II</a>), most of which was spent interviewing Ray Ozzie himself. They were downright effusive. From <a href="http://gillmorgang.podshow.com/?p=37">Ozzie Gang II</a>:</p>
+
+<ul>
+<li><p><cite>Mike Arrington</cite>, 4:45</p>
+
+<blockquote>
+  <p>Does this signify any sort of shift organization where people in microsoft who have ideas that can help the Web&#8230; that they can also get things through the politics and through the system fast enough so it doesn&#8217;t take and years?</p>
+</blockquote></li>
+<li><p><cite>John Udell</cite>, 17:52</p>
+
+<blockquote>
+  <p>Ray this is great. I just personally want to thank you for doing it. I think it&#8217;s a tremendous step.</p>
+</blockquote></li>
+<li><p><cite>Steve Gillmor</cite>, 17:57</p>
+
+<blockquote>
+  <p>Yeah, and I think that everybody is knocked out that somebody with your intuition is in such a powerful position at Microsoft. You know, bringing Microsoft into the community has been very difficult to do and you seem to be doing it.</p>
+</blockquote></li>
+<li><p><cite>Dan Farber</cite>, 18:31</p>
+
+<blockquote>
+  <p>I think as everybody on this call has said, we&#8217;re quite impressed with this very simple little notion that seems to be well executed and that it comes from Microsoft now really injecting itself into the big old Web community. It&#8217;s cool!</p>
+</blockquote></li>
+<li><p><cite>Dan Farber</cite>, 19:13</p>
+
+<blockquote>
+  <p>If you go to the desktop and you consider cut and paste, copy and paste, you know it&#8217;s everywhere&#8230; to be able to do that on the web&#8230; it&#8217;s like a big gift &#8212; it&#8217;s a contribution to the Web.</p>
+</blockquote></li>
+<li><p><cite>Mike Arrington</cite>, 22:18</p>
+
+<blockquote>
+  <p>I think the big story here is that we&#8217;re starting to see with Ray&#8217;s leadership that Microsoft is able to do things that seem selfless and simply good for their own sake and SSE is one example and (Live Clipboard) is another stunning example&#8230;</p>
+</blockquote></li>
+<li><p><cite>Steve Gillmor</cite>, 24:05</p>
+
+<blockquote>
+  <p>I think that Microsoft may well be on the threshold, whether they fully realize it or not at all levels of the organization, of winning by accepting a part in the community, and I think that&#8217;s a huge story.</p>
+</blockquote></li>
+</ul>
+
+<p>Strange and wonderful times indeed.</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2006/03/22/ray-ozzie-got-the-memo/"
+    dc:identifier="http://lesscode.org/2006/03/22/ray-ozzie-got-the-memo/"
+    dc:title="Ray Ozzie Got the Memo"
+    trackback:ping="http://lesscode.org/2006/03/22/ray-ozzie-got-the-memo/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-130"><a href="http://lesscode.org/2006/03/19/rest-wins-noone-goes-home/" rel="bookmark" title="Permanent Link to REST wins, noone goes home">REST wins, noone goes home</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2006/03/19/rest-wins-noone-goes-home/#comments" title="Comment on REST wins, noone goes home">11</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a><br />19. March 2006</small>
+
+				<div class="entry">
+					<p>In public and private people whom I would have never expected, are now getting interested in how to roll out in the REST style. “Restian” is the term I hear bandied about. Not “RESTful”. Not “RESTafarian”. “Restian”. I like it.</p>
+
+<p>This is good news, though I’m a bit taken aback it’s happening so soon. Some people would say it should have happened half a decade ago, but I’m something of an optimist.  </p>
+
+<p>REST has always been a solid basis for designing distributed systems, it comes with a theory (I know! It’s crazy!), appropriate and specific to the web domain. It has not been a populist approach, which can be summed up with – “where are the REST toolkits?”.  </p>
+
+<p>All that is about to change.  REST has won.  Fire up your editors.</p>
+
+<h3>Have nothing in your house that you do not know to be useful.</h3>
+
+<p>Now what?  </p>
+
+<p><img src="http://lesscode.org/wp-content/uploads/2006/03/william_morris.jpg" alt="" title="William Morris, characteristically befuddled by this modern life" /></p>
+
+<p>When REST becomes a mainstream/default development approach, as opposed to a fringe/implicit one, a couple of things come to mind on the plus ca change front. First off, I think you’ll see better support for URI design and mapping onto code in server libraries. Also, better access to headers (especially caching and timestamping directives). More awareness and support for the full range of HTTP methods and response codes.  Attribute modifers and declarations on methods that have side-effects. Exception designs based around 5xx and 4xx response codes. Media type dispatching. Less emphasis on cookies, more support for digest authentication. More flexbility in LAMP stacks for writing out stuff that isn’t HTML (esp. JSON and Atom serializers). That sort of thing. Overall a gradual lifting on HTTP/REST concepts and idioms into application code.</p>
+
+<p>But probably the most important initial effect is how minimal and frugal REST will seem to the working developer.</p>
+
+<h3>This Spartan Life</h3>
+
+<p><img src="http://lesscode.org/wp-content/uploads/2006/03/john_pawson_architecture.jpg" alt="" title="John Pawson, a sort of modern. But mainly, this is really nice photo of a favourite architect" /></p>
+
+<p>If REST has an analog in building architecture, it’s Modernism. On the web, hard lines are where it’s at, and less, really, is more. </p>
+
+<p>REST is about design constraints – what you can’t say. That’s contrary to industry practice, where it’s all about about getting cool new features piled on, and to heck with principles. If anything, most developers are cynical about architecture and architects. Developers, Developers, Developers. Give ‘em what they want. Keep ornamenting the stack with pointy-clicky solution cruft. </p>
+
+<p>There’ll be a bit less of that. On the web, there are less assumptions you can make and those you can make are rigid and need to be treated as invariant. Developing <em>for</em> the web, as opposed to developing <em>around</em> it, is spartan work.  Coming from middleware and enterprise development, could be a bit like coming from the Victorian ornateness and richness of Ruskin and Morris to the urban cold and minimalism of le Corbusier and Mies van der Rohe. It’ll be disorienting at best. </p>
+
+<p>For example, tool support will go from “non-existant” to “sucks”, initially.</p>
+
+<p>All one can say is that the laws and liberties, such as they are, which govern local/LAN-based software development don’t always apply when it comes to Internet based development. In point of fact they’re often a hinderance, and there’s a history of <a href="http://en.wikipedia.org/wiki/Fallacies_of_Distributed_Computing" title="Fallacies of Distributed Computing">getting burnt on bad assumptions</a> on the Internet. You can try to make inter-network, cross-administrative systems development transparent, to look and act like middleware. But you won’t. Noone has.</p>
+
+<p>The solution is invariably to take the assumptions and patterns and cute tricks away, and replace them with forcing functions in the form of design constraints that keep developer and system behaviour aligned. Even stuff that enterprise developers would tend to know, like caching, needs <a href="http://naeblis.cx/rtomayko/2005/05/28/ibm-poop-heads" title="Ryan Tomayko: IBM poop heads say LAMP users need to “grow up”">a different approach</a>. Them’s the apples. REST is a collection of such constraints, formalised into an architecture.</p>
+
+<p>Perhaps the key thing is education, and teaching. </p>
+
+<p>I think we’re done more or less with the evangelism and technical food fights with the WS-* and Enterprise crowds. It’s time for REST to proceed on its own terms and not in contrast and counterpoint to something else. Teaching, on how to target and design with REST, particulary for HTTP as deployed, needs to ramp up. Certainly we need a few good practical books on REST/HTTP to ship. </p>
+
+<p>At least one of those fine books should cover the fundamental principles of Web-centric development, the way Gamma et al did for C++ Patterns, Fowler did for Refactoring, or Norvig/Graham did for CLisp. Something that nails it. As things go, Fielding’s <a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding: Architectural Styles and the Design of Network-based Software Architectures">REST thesis</a> is pretty accessible, a decent read even, but it’s a doctoral thesis, not a textbook.</p>
+
+<h3>Tickbox Gartnerfication</h3>
+
+<p><img src="http://lesscode.org/wp-content/uploads/2006/03/spongebob_blows_bubbles.jpg" alt="" title="Look Patrick! Bubbles! Dwaahhhhaaaa!" /></p>
+
+<p>Hype could be a problem for REST if the “industry” gets on board with it as a commmercial factor that requires ticking off rather than some dorky engineering stuff – “Do they have REST? Check.” So will keeping an eye out for land-grabbing on the term “REST”, so it remains a crisp technical term (It has a theory?! I know! It’s crazy!). </p>
+
+<p>Avoiding the descent into marketing farce, a problem that has plagued “SOA” and “WS” can only be a good thing. To be honest, I’m not holding much hope on this one.</p>
+
+<h3>God is in the details</h3>
+
+<p><img src="http://lesscode.org/wp-content/uploads/2006/03/mies_van_der_rohe_siegel_corner.jpg" alt="" title="Mies solves the corner problem. Yes, there was a corner problem. He wasn't kidding about the details." /></p>
+
+<p>Let’s be realistic. No software architecture can truly withstand implementation. REST is really great, but on the web, there is plenty of detail work to be cleared out, like push, containership, encoding, side-effected GETs, curse-of-popularity, queuing, 2 versus 4 methods, universal format junk, and authentication, among others. I could go on, it’s messy out there.</p>
+
+<p>Issues like these will become more important, or more distracting, depending on your point of view,  as the style gets adopted.  So run away screaming from anyone who dismisses  these as “just implementation details” – implementation details matter. They cost money, and break hearts.</p>
+
+<p><a href="http://pluralsight.com/blogs/dbox/archive/2006/03/18/20235.aspx" title="Don Box: Going Down To The Crossroads…">Lot’s of work has been done.</a> There’s lots of work to do.</p>
+
+<hr />
+
+<p><small>PS.: in case anyone thinks there’s some kind of collective REST triumphalism going on @lesscode, there isn’t. I’ve been sitting on this post over the St Pats weekend, only to find out that Sayre and Tomayko have posted REST stuff in the meantime. You’d swear they weren’t Irish.</small></p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2006/03/19/rest-wins-noone-goes-home/"
+    dc:identifier="http://lesscode.org/2006/03/19/rest-wins-noone-goes-home/"
+    dc:title="REST wins, noone goes home"
+    trackback:ping="http://lesscode.org/2006/03/19/rest-wins-noone-goes-home/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-129"><a href="http://lesscode.org/2006/03/19/high-low-rest/" rel="bookmark" title="Permanent Link to The Highs and Lows of REST">The Highs and Lows of REST</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2006/03/19/high-low-rest/#comments" title="Comment on The Highs and Lows of REST">15</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a><br />19. March 2006</small>
+
+				<div class="entry">
+					<p>Discussion on REST seems to be moving in a constructive direction all
+over the place with <a href="http://www.tbray.org/ongoing/When/200x/2006/03/16/WS-Gartner">Tim Bray</a> 
+and <a href="http://pluralsight.com/blogs/dbox/archive/2006/03/18/20235.aspx">Don Box</a>
+both contributing. I think <a href="http://www.25hoursaday.com/weblog/PermaLink.aspx?guid=83ec4876-7578-418c-8335-a3b0a147037b" title="Building a New Web Service at Google">Dare Obasanjo&#8217;s notes</a> from <a href="http://www.google.com/search?q=cache:9oV3TSIAzsEJ:buzz.blogger.com/media/minar-etech-2005.ppt+high-rest&amp;hl=en&amp;gl=us&amp;ct=clnk&amp;cd=3">a talk</a> given by Google&#8217;s
+<a href="http://conferences.oreillynet.com/cs/et2005/view/e_spkr/555">Nelson Minar</a>
+almost a year ago may have put some valuable terminology behind ideas that
+have been floating around for some time and may have even brought us to a place where we can have an actual conversation about this stuff:</p>
+
+<blockquote>
+  <p>To begin he defined what he called &#8216;low REST&#8217; (i.e. Plain Old XML over
+  HTTP or POX) and &#8216;high REST&#8217;. Low REST implies using HTTP GETs for all
+  API accesses but remembering that GET requests should not have side
+  effects. High REST involves using the four main HTTP verbs (GET, POST,
+  PUT, and DELETE) to manipulate resource representations, using XML
+  documents as message payloads, putting metadata in HTTP headers and
+  using URLs meaningfully.</p>
+</blockquote>
+
+<p>The definitions of low REST / high REST could be tweaked a bit (maybe they were when I wasn&#8217;t looking?)
+but I do like the idea of putting terms we can all agree on to the
+subset that&#8217;s the reality behind most of machine/web interfaces that
+seem to be working today. <a href="http://en.wikipedia.org/wiki/Plain_Old_XML">POX</a> 
+isn&#8217;t that term because it unnessarily constrains the media type; &#8220;low REST&#8221; 
+should include the mostly non-XML web (i.e. the <code>text/html</code>, <code>image/*</code>,
+<code>text/css</code>, <code>text/javascript</code>, etc. web) where it conforms to the
+constraints of GET and POST.</p>
+
+<p>The reason I like this approach is because it could remove the
+artificial and often harmful separation made between the web <em>people</em>
+interact with and the web <em>machines</em> interact with. Exposing resources for
+machine consumption isn&#8217;t any different than exposing resources for
+human consumption until you get down to the media type (and not
+then if you subscribe to <a href="http://microformats.org/">Microformats</a>). 
+That is, some form of hyper-media (links / URIs) and a simple, universal 
+interface (HTTP) are the really big wins you get with REST because those 
+things are what creates the possibility of having a hugely distributed and 
+uncoordinated system of interaction. The choice of document format is 
+something else entirely and the decisions there ought to be based on a 
+whole other set of concerns.</p>
+
+<p>If I cared at all about the term anymore, I would go so far as to say
+that anything conforming to the constraints of at least one HTTP method
+and that also exposes references to other resources using URIs should be
+considered &#8220;a web service&#8221;. But &#8220;web service&#8221; has been defined to death and
+it doesn&#8217;t seem to be helping.</p>
+
+<p>The first time I heard someone attempt to describe the GET/POST
+subset as something we should pay attention to was 
+<a href="http://blogs.msdn.com/mikechampion/">Michael Champion</a> on xml-dev. This was
+usually thrown out when someone championing REST used the &#8220;REST is the
+web and the web is working&#8221; argument (I use that argument to this day,
+btw). Michael would often be the one to point out that it wasn&#8217;t <em>exactly</em> 
+true and that a subset of what REST describes seemed to be working well on 
+the web (GET/POST, URIs, caching), while another subset was 
+clearly&mdash;sometimes knowingly&mdash;being violated (GET w/ side-effects, uncool URIs), 
+and yet another subset was used only rarely (PUT/DELETE/OPTIONS, content
+negotiation).</p>
+
+<p>Not being able to distinguish which of these subsets of applied REST one
+is refering to is hurting our ability to have meaningful conversations
+about this stuff. For example, consider the following conversation; I&#8217;ve
+seen it hundreds of times now:</p>
+
+<blockquote>
+  <p><cite>Restafarian</cite>: 80% of developers use the XXX REST API because 
+  they find it easier to deal with.<br />
+  <cite>Tool Vendor</cite>: That&#8217;s not really REST. It only uses GET and POST and breaks rule #5034<br />
+  <cite>Restafarian</cite>: Oh yea, well SOAP/WS-* sucks.<br />
+  <cite>Tool Vendor</cite>: Go write some PHP you dirty hippie!</p>
+</blockquote>
+
+<p>I&#8217;d like that to stop happening.</p>
+
+<p>But I don&#8217;t think adopting wrong or ambiguous terminology is going to
+help either. I&#8217;d like to register my nits with the few sentences that
+Dare provided and see if anyone else is thinking along similar lines.</p>
+
+<blockquote>
+  <p>To begin he defined what he called &#8216;low REST&#8217; (i.e. Plain Old XML over
+  HTTP or POX) and &#8216;high REST&#8217;.</p>
+</blockquote>
+
+<p>Like I said before, POX is kind of, ummm, bad, I think. It focuses too much 
+on the format. XML is not why the web is working. URLs and HTTP is
+why the web is working. HTTP and URLs work so well they&#8217;re even capable
+of being useful <em>in spite of</em> complexities in media-types based on XML.</p>
+
+<blockquote>
+  <p>Low REST implies using HTTP GETs for all API accesses but remembering
+  that GET requests should not have side effects.</p>
+</blockquote>
+
+<p>Fully constrained GETs are really important but POST should fall under
+low-REST too. By the definition above, low-REST can never modify
+anything. Throw POST in there, it&#8217;s a big part of the present day
+human/web and is likely to play a bigger role in the machine/web.</p>
+
+<blockquote>
+  <p>High REST involves using the four main HTTP verbs (GET, POST,
+  PUT, and DELETE) to manipulate resource representations, using XML
+  documents as message payloads, putting metadata in HTTP headers and
+  using URLs meaningfully.</p>
+</blockquote>
+
+<p>I think we ought to downgrade XML to a &#8220;<del>best</del><ins>common</ins>
+practice&#8221; or something.  Microformats and JSON are two notable examples
+of non-XML representations that seem to be working quite well and are
+absolutely capable of being used high-RESTfully.</p>
+
+<p>I&#8217;m pretty sure I&#8217;ll always be a high-RESTafarian but I could definitely
+see myself <a href="http://pluralsight.com/blogs/dbox/archive/2006/03/18/20246.aspx">coming out as a lo-RESTafarian</a>
+as well if some of this were grinded out a bit more.</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2006/03/19/high-low-rest/"
+    dc:identifier="http://lesscode.org/2006/03/19/high-low-rest/"
+    dc:title="The Highs and Lows of REST"
+    trackback:ping="http://lesscode.org/2006/03/19/high-low-rest/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+				<div class="post">
+				<h2 id="post-128"><a href="http://lesscode.org/2006/03/17/a-bigger-soapbox/" rel="bookmark" title="Permanent Link to A Bigger Soapbox">A Bigger Soapbox</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2006/03/17/a-bigger-soapbox/#comments" title="Comment on A Bigger Soapbox">19</a> </span></h2>
+				<small>Cat.: <a href="http://lesscode.org/category/by-status/then-you-win/" title="View all posts in Then you win." rel="category tag">Then you win.</a><br />17. March 2006</small>
+
+				<div class="entry">
+					<p>SYS-CON Media publisher/editor <a href="http://java.sys-con.com/author/3geelan.htm" title="Jeremy Geelan">Jeremy Geelan</a>, a fine chap who
+interviewed The Father of Java just the other day, contacted me about
+re-publishing <a href="http://lesscode.org/2006/03/12/someone-tell-gosling/">Gosling Didn&#8217;t Get The Memo</a>
+on <a href="http://sys-con.com">sys-con.com</a>. This is the same site that 
+published <a href="http://java.sys-con.com/read/193146.htm">Gosling&#8217;s original remarks</a>. </p>
+
+<p>It took me about five seconds to agree, within an hour we were
+sharing the front page with the original Gosling quote, and we&#8217;ve 
+just now broken into the top three most heavily read articles on the site 
+for the day. <a href="http://au.sys-con.com/read/195198.htm">The republished post is here</a> and 
+is pretty much an exact copy (comments and all).</p>
+
+<p>So yea, I&#8217;m stoked.</p>
+
+<p>I should also mention that there was likely some back-channel
+prodding that helped lead to this. Adaptive Path&#8217;s <a href="http://blog.jjg.net/" title="Jesse James Garrett">Jesse James Garrett</a> 
+was panelist at the SYS-CON hosted <em>Real-World AJAX</em> event earlier 
+this week in New York (see: <a href="http://tv.sys-con.com/read/195160.htm">Geelan interviews Jesse</a>).
+From what I can gather, Jesse played no small part in getting the article
+picked up.</p>
+
+<p>Huge thanks to both Jesse and Jeremy from lesscode.org.</p>
+				</div>
+
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2006/03/17/a-bigger-soapbox/"
+    dc:identifier="http://lesscode.org/2006/03/17/a-bigger-soapbox/"
+    dc:title="A Bigger Soapbox"
+    trackback:ping="http://lesscode.org/2006/03/17/a-bigger-soapbox/trackback/" />
+</rdf:RDF>				-->
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://lesscode.org/category/by-status/then-you-win/page/2/">&laquo; previous</a></div>
+			<div class="alignright"><a href="http://lesscode.org/category/by-status/then-you-win/page/2/"></a></div>
+		</div>
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.549 seconds -->

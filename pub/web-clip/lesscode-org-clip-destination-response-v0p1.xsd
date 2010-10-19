@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.lesscode.org/clip-destination-response/v0p1" xmlns:clip="http://www.lesscode.org/clipboard/v0p1" xmlns="http://www.lesscode.org/clip-destination-response/v0p1" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1">
+	<xs:import namespace="http://www.lesscode.org/clipboard/v0p1" schemaLocation="lesscode-org-clipboard-v0p1.xsd"/>
+	<xs:element name="clip-destination-response">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="status" type="clip:protocol-request-status"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

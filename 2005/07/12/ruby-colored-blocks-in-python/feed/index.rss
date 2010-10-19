@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Ruby-colored Blocks in Python</title>
+	<link>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:14 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Web Standards Planet</title>
+		<link>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-61</link>
+		<pubDate>Sun, 17 Jul 2005 06:41:11 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-61</guid>
+					<description>&lt;p&gt;&lt;strong&gt;[WSG Announce] Some links for light reading (17/7/05)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;WaSP Interviews Dr. Vito Evola on a course in Web standards offered at the
+University of Palermo, Italy&lt;/p&gt;
+
+&lt;p&gt;SiteMorse: Not making friends or influencing people&lt;/p&gt;
+
+&lt;p&gt;How to style a restaurant menu with CSS:&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><strong>[WSG Announce] Some links for light reading (17/7/05)</strong></p>
+<p>WaSP Interviews Dr. Vito Evola on a course in Web standards offered at the<br />
+University of Palermo, Italy</p>
+<p>SiteMorse: Not making friends or influencing people</p>
+<p>How to style a restaurant menu with CSS:</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-60</link>
+		<pubDate>Sat, 16 Jul 2005 21:28:31 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-60</guid>
+					<description>&lt;p&gt;In many cases, it is important that before and after code be executed immediately before entering and immediately after exiting a for loop. The &lt;code&gt;with&lt;/code&gt;/&lt;code&gt;for&lt;/code&gt; example you gave would accomplish that but it would be nice to condense those two constructs down into one, no? One proposal was to check if the object referenced in the &lt;code&gt;for&lt;/code&gt; has &lt;code&gt;__enter__&lt;/code&gt; and &lt;code&gt;__exit__&lt;/code&gt; and to call them appropriately.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>In many cases, it is important that before and after code be executed immediately before entering and immediately after exiting a for loop. The <code>with</code>/<code>for</code> example you gave would accomplish that but it would be nice to condense those two constructs down into one, no? One proposal was to check if the object referenced in the <code>for</code> has <code>__enter__</code> and <code>__exit__</code> and to call them appropriately.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Anonymous</title>
+		<link>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-59</link>
+		<pubDate>Sat, 16 Jul 2005 21:12:08 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/12/ruby-colored-blocks-in-python/#comment-59</guid>
+					<description>&lt;p&gt;with opening(&quot;/etc/passwd&quot;) as file:
+  for line in file:
+      ...&lt;/p&gt;
+
+&lt;p&gt;the file will be eventually closed. 'for' and 'with' are orthogonal for worse or better.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>with opening(&#8221;/etc/passwd&#8221;) as file:<br />
+  for line in file:<br />
+      &#8230;</p>
+<p>the file will be eventually closed. &#8216;for&#8217; and &#8216;with&#8217; are orthogonal for worse or better.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.601 seconds -->
+<!-- Cached page served by WP-Cache -->

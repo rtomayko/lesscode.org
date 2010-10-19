@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Rails and Django Compared</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/07/16/guns-germs-foss/">Guns, Germs, and Open Source</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/17/ying-and-yang/">The Ying and the Yang</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-36"><a href="http://lesscode.org/2005/07/17/rails-django-compared/" rel="bookmark" title="Permanent Link: Rails and Django Compared">Rails and Django Compared</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-laugh-at-you/" title="View all posts in Then they laugh at you..." rel="category tag">Then they laugh at you...</a>,  <a href="http://lesscode.org/category/rails-vs-django/" title="View all posts in Rails v. Django" rel="category tag">Rails v. Django</a> 
+      on 17. July 2005</small>
+
+			<div class="entrytext">
+				<p>Once <a href="http://djangoproject.org/" title="Django">Django</a> is <em>launched-launched</em>, I&#8217;ll be comparing various
+aspects of it with <a href="http://www.rubyonrails.com/" title="Ruby on Rails">Ruby on Rails</a>. I plan on diving deep into
+the two frameworks so instead of one large post, I&#8217;m going to make this
+a running series.</p>
+
+<p>While I&#8217;m primarily a Python coder, I&#8217;ve been dabbling with Ruby for
+about a year and have a couple of apps under my belt with Rails. They
+are admittedly simple apps but what isn&#8217;t with Rails? I&#8217;ve also logged
+70-80 hours against a Python clone of Rails&#8217; excellent implementation of
+Active Record, which put me pretty deep into the internals of that
+piece.</p>
+
+<p>I am not a Python zealot. And, to be honest, I&#8217;m floating between the
+two languages as my primary. What I&#8217;m trying to say is that my interest
+is in exploring these two frameworks objectively and extending my
+understanding of each, not advocating one over the other. I will include
+personal thoughts on design and may favor one or the other at this level
+but I will not be concluding the series with a recommendation for either
+because, frankly, I already know which I&#8217;d recommend at present and it
+has nothing to do with technical qualities (hint: <a href="http://www.loudthinking.com/arc/000484.html" title="Growing an open source ecosystem">it has everything to
+do with this</a>).</p>
+
+<p>That being said, I <em>can</em> recommend that if you are building systems that
+require the complexity of a full-stack web framework (i.e. <a href="http://www.megginson.com/blogs/quoderat/archives/2005/06/11/rails-vs-php-mvc-or-view-centric/" title="Rails vs. PHP: MVC or view-centric">PHP, CGI
+won&#8217;t cut it</a>) and you are currently using something other than one
+of these two frameworks in any language (including Java and .NET) on any
+platform, that you move swiftly to adopt either if possible. If there is
+something barring you from making that switch, well, <a href="http://intertwingly.net/slides/2005/rs/7.html" title="Where's your patch?">where&#8217;s your
+patch?</a> Make it happen.</p>
+
+<p>I realize that many in the Python community have already grown
+comfortable with an existing framework (or more likely, have written
+their own, like myself) and that&#8217;s fine as there are some competent
+frameworks out there. But it has become apparent that Django will be
+growing a large community of contributors and that&#8217;s something no
+current Python web framework of this kind can boast.</p>
+
+<p>As I write this, there are 30 people idling in #django on
+irc.freenode.net on a Sunday morning, two days after the none-launch;
+there&#8217;s been <a href="http://del.icio.us/url/980ce09131008f964385d9fc6bf5c319">409 bookmarks on del.icio.us</a>.
+Granted this is all very much driven by hype right now as there hasn&#8217;t
+been any real experience with the framework, <a href="http://simon.incutio.com/archive/2005/07/17/django">excepting the
+maintainers</a>, but
+the outlook for a large community to finally coalesce around a single
+set of tools and conventions is promising.</p>
+
+<p>I also want to mention that I spent some time talking to the Django
+maintainers last night and they&#8217;ve convinced me that the Rails
+comparisons, while unavoidable, may be somewhat premature. Although
+Django has many of the same traits as Rails, it wasn&#8217;t built as an all
+out clone and may appeal to a slightly different set of
+requirements. Time will tell, of course, but as of right now the
+similarities are a huge part of what&#8217;s driving interest in Django and
+there&#8217;s a good reason for that - Rails got a ton right.</p>
+
+<p>Still, &#8220;because it&#8217;s in Rails&#8221; is unlikely to be considered sufficient
+justification for Django feature requests. That&#8217;s a sure way of creating
+a <em>Bride of Frankenstein</em> framework and I&#8217;m pleased to see the
+maintainers have a strong sense of this. Django is likely to follow many
+of the same paths as Rails but that&#8217;s because they were both designed
+under real life circumstances with similarly excellent philosophy.</p>
+
+<p>Before I wrap this up, I&#8217;d like to echo the sentiments of <a href="http://blog.yanime.org/articles/2005/07/16/ruby-has-rails-python-now-has-django">one Rails
+supporter</a> 
+in his comments on Django:</p>
+
+<blockquote>
+  <p>I hope Rails learns to play with Django and they&#8217;ll not smite each
+  other (if not friends, don&#8217;t be enemies). The world is big enough. A
+  combined message from different camps will be more resounding than any
+  one camp trying to say he is the bestest - and coming off as naive or
+  clueless.</p>
+</blockquote>
+
+<p>Indeed.</p>
+
+<p>(<em>warning:</em> stomach wrenching, <em>KUM BAI AH</em>, everyone-hold-hands type
+stuff imminent)</p>
+
+<p>The Ruby, Python, Perl, and PHP communities must understand the immense
+opportunities that await them should they accept that they share much
+more in common than not and that a unified front would go a long way in
+tearing down the barriers that have kept these technologies out of the
+mainstream. The amount of positive impact these disruptive technologies
+could have on existing forms of business and social interaction in
+general are limited only by our ability to tell the story.</p>
+
+<p>Feeds for the series:</p>
+
+<ul>
+<li><a href="http://lesscode.org/category/rails-vs-django/feed/">RSS2</a></li>
+<li><a href="http://lesscode.org/category/rails-vs-django/feed/atom/">Atom 0.3</a></li>
+</ul>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/17/rails-django-compared/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">21 Responses to &#8220;Rails and Django Compared&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-67">
+			<p class="who"><cite>Fredrik</cite>:</p>
+			<p>Every framework claim to be &#8220;on rails&#8221; these days. The most ridicolous i&#8217;ve seen is MonoRails. They begin their tutorial with doing J2EE-style XML situps. Can you say &#8220;missing the point&#8221;? They all seem to think that it&#8217;s all about scaffolding (it&#8217;s not).</p>
+<p>Anyway, Django seem to be somewhat guilty of this as well, with a slogan like &#8220;It&#8217;s just not scaffoldning, it&#8217;s the whole house&#8221;. It seems that Django doesn&#8217;t use the &#8220;generate-and-modify&#8221; paradigm but focuses on providing a runtime-generated CRUD interface that can only modified by CSS.</p>
+<p>This is excellent for some type of apps, e.g. where only the &#8220;R&#8221; part is public but could be a disadvantage in other types. There doesn&#8217;t seem to be any middle ground between the generic CRUD interface and a fully custom one. Or am i missing something? (I have only looked at the docs).</p>
+<p>I&#8217;m glad that Django doesn&#8217;t try to clone Rails feature-by-feature though as i think that would ultimately lead to an inferior framework. There is definitely room for both, and the competition is the &#8220;static enterprise&#8221; guys just as you say.</p>
+<p>Lastly i would just like to say thank you for Kid (the only templating language that makes sense &#8482;). I&#8217;m using it at work for an in-house app and it simply rocks, simplicity rocks :)</p>
+      <p>
+			<small>comment at <a href="#comment-67" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-68">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>&#8220;The most ridicolous i’ve seen is MonoRails. They begin their tutorial with doing J2EE-style XML situps. Can you say “missing the point”? They all seem to think that it’s all about scaffolding (it’s not).&#8221;</p>
+<p>Agreed. The Java/C# guys need to accept that their languages are crippled in ways that make DRY and significant code reduction impossible. The Java world at least is beginning to come to grips with this. The initial round of bashing suggested that Java was absolutely capable of Railsish idioms but the results came no where close. Now, smart Java people are beginning to realize that moving to more agile languages are going to be necessary. </p>
+<p>That&#8217;s why I think we need to get our shit together. We&#8217;re seeing an influx of Java/.NET programmers and we need to be sure they have somewhere to land.</p>
+      <p>
+			<small>comment at <a href="#comment-68" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-69">
+			<p class="who"><cite><a href='http://www.loudthinking.com' rel='external ' title='83.88.201.134'>David Heinemeier Hansson</a></cite>:</p>
+			<p>I chuckled at &#8220;it&#8217;s the whole house&#8221; too. But at the same time, I think its cool. They extracted a solution to a problem they were having: Creating admin interfaces for content sites. Doing the whole house is a great thing in those cases.</p>
+<p>Rails went with scaffolding because it was never meant to be anything but a starting point and a learning tool. Something you molded into the application you were actually after.</p>
+<p>But it&#8217;s all in good sport. The django guys obviously needed to get a few jabs in at &#8220;The One To Beat&#8221; and especially at a Python meeting. I would have been disappointed if they hadn&#8217;t try to come up with a hook like that ;)</p>
+<p>It&#8217;s a cool example too because it shows the difference of origin and focus. With django coming out of the custom CMS world (with features great for that) and Rails coming from the more generic application world (with features great for that).</p>
+<p>And I agree on the overarching vision. It&#8217;s about getting the bottom of the productivity barrel to see the top of the pop.</p>
+      <p>
+			<small>comment at <a href="#comment-69" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-71">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>&#8220;With django coming out of the custom CMS world (with features great for that) and Rails coming from the more generic application world (with features great for that).&#8221;</p>
+<p>That&#8217;s a difference I&#8217;ve noticed as well. It&#8217;s interesting no one is comparing Django to Plone, no?</p>
+      <p>
+			<small>comment at <a href="#comment-71" title="">17. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-75">
+			<p class="who"><cite><a href='http://jacobian.org/' rel='external ' title='66.245.37.190'>Jacob Kaplan-Moss</a></cite>:</p>
+			<p>I gotta say &#8212; as one of the people who made a few jabs at Rails on the Django site &#8212; said jabs are certainly meant much more as jokes than seriously.  Fact is, Rails is rather incredible, and the competition between Djagno and Ruby &#8212; real or perceived, friendly or not &#8212; can only serve to improve both frameworks.</p>
+<p>David: you&#8217;re completely right about Django coming out of the custom CMS world as opposed to the web-app world; that&#8217;s where I think the two have the most to learn from each other.  Django could be too heavyweight for something like Basecamp, but I&#8217;d be out of a job if I had to manage newspaper sites (and the associated staff and workflow issues) with Rails.  That&#8217;s been the real reason I personally have been trying (mostly unsucessfully) the &#8220;Django == Python on Rails&#8221; meme; by setting up a false dichotomy is does a disservice to the different problems web developers face.</p>
+<p>Maybe we could have a &#8220;dynamic web frameworks&#8221; summit where we can bring together Rails-ers, Djangoists, and PHP-heads and all kick around cool ideas&#8230;</p>
+      <p>
+			<small>comment at <a href="#comment-75" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-77">
+			<p class="who"><cite><a href='http://borasky-research.blogspot.com/' rel='external ' title='24.21.51.226'>M. Edward Borasky</a></cite>:</p>
+			<p>&#8220;warning: stomach wrenching, KUM BAI AH, everyone-hold-hands type stuff imminent)</p>
+<p>&#8220;The Ruby, Python, Perl, and PHP communities must understand the immense opportunities that await them should they accept that they share much more in common than not and that a unified front would go a long way in tearing down the barriers that have kept these technologies out of the mainstream. The amount of positive impact these disruptive technologies could have on existing forms of business and social interaction in general are limited only by our ability to tell the story.&#8221;</p>
+<p>I just discovered Ruby on Rails a week or so ago. To put this in context, I&#8217;ve been programming for 43 years, mostly scientific applications and operating systems. I&#8217;ve never bothered to learn Ruby, Python or PHP, but I did learn Perl back in the days when Perl 5 was a gleam in Larry Wall&#8217;s eye. I agree that &#8220;a unified front&#8221; would go a long way, but the fact remains that if it weren&#8217;t for Rails and all the associated hype, I probably wouldn&#8217;t bother to learn Ruby. I have Perl, and R, and Lisp, and Fortran, and Forth &#8230; do I <em>really</em> need to learn another language?</p>
+<p>In any event, I <em>have</em> decided to learn Ruby only because of Rails &#8212; because I want to develop web applications. If there&#8217;s an equivalent framework available in Perl or Lisp or even Forth, I&#8217;m all ears &#8212; I <em>really</em> don&#8217;t want to learn another language.</p>
+      <p>
+			<small>comment at <a href="#comment-77" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-78">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>Well, I believe there are at least 2 Rails clones in Perl and I <a href="http://redhanded.hobix.com/cult/railsClonesBloodsuckersOrUsefulDrones.html">once overheard</a> that,</p>
+<p>&#8220;Lisp on Rails will be called <em>Railth</em>,&#8221; &#8212; <a href="http://whytheluckystiff.net/">whytheluckystiff</a></p>
+<p>If I were you, I would unlearn 20-30 of those languages and pick up Ruby anyway.</p>
+      <p>
+			<small>comment at <a href="#comment-78" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-79">
+			<p class="who"><cite><a href='http://www.jrandolph.com/blog/?p=9' rel='external ' title='38.113.1.97'>Viva La Chipperfish &raquo; Comparing Django/Rails to Plone</a></cite>:</p>
+			<p>[&#8230;] In response to this comment to this blog post: [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-79" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-80">
+			<p class="who"><cite><a href='http://jrandolph.com/blog' rel='external ' title='67.173.137.121'>Jason Huggins</a></cite>:</p>
+			<blockquote>
+<p>Ryan Tomayko wrote:<br />
+  &#8220;It’s interesting no one is comparing Django to Plone, no?&#8221;</p>
+</blockquote>
+<p>Okay, I’ll give it a try. :-)</p>
+<p>(Blogged here: http://www.jrandolph.com/blog/?p=9)</p>
+<p>I have production sites in Plone and have been working with Plone full-time for 2 years. But I’m happy and eager to flirt with other frameworks, and I’m very eager to start playing Django.</p>
+<p>Plone is a CMS that is heavily customizable (that’s what it’s marketed as, at least). Django is a generic app framework that you can use to build a CMS. The difference might appear to be mere semantics, but I don’t think so. Plone provides tons of functionality, but also expects tons of loyalty and dedication from a developer to take it all in and become productive. Plone specifically decided to not market itself as a generic app dev framework, unlike Rails or Django. Plone is not generic enough to please your average PHP or Rails dev. However, if you’re willing to do things the &#8220;Plone Way&#8221; Plone is a pretty decent framework to write custom stuff with.</p>
+<p>Okay, time for more specific comparisons:</p>
+<ul>
+<li>
+<p>Data mapping to relational databases. Plone has some basic support for relational databases via ZSQL Methods, Archetypes, and APE, but these are not as straight-forward to work with as Rails’ Active Record, Ian Bicking’s SQLObject, or Django’s Model API. This situation is changing in Zope/Plone land thanks to cool projects like Hornet and sqlos. However, Rails and Django are way ahead of Plone when it comes to ORM. Data mapping to my Oracle databases is my biggest frustration with Plone and where I most often bump into those &#8220;fighting the framework&#8221; moments. That frustration has led me to evaluate alternatives like Rails, CherryPy+SQLObject, and now Django. I haven’t tried Plone+Hornet, yet&#8230; so we’ll see how that goes.</p>
+</li>
+<li>
+<p>In addition to the generated HTML UI, Plone gives you WebDAV, FTP, and XML-RPC access to most URLS/objects &#8220;for free&#8221;. This is often handy, and doesn’t look like it is there in Django, yet.</p>
+</li>
+<li>
+<p>With Plone, the UI work is done for you, including CRUD forms for the objects you create and other UI forms like login, password changing, and site navigation. And you can customize it when you need to, without too much pain. Rails does provide scaffolding, but it is only a starting point, not a useable &#8220;deployable&#8221; solution. (This was on purpose and is okay&#8230; if that’s what you need/want.)<br />
+From what I’ve seen of Django, Django provides a more &#8220;ready for production&#8221; UI than Rails, and I like that. I’ll be playing with Django to see how much of the auto-generated admin CRUD forms in Django I can present as data entry forms <em>to users</em>, instead. It looks like Django sits somewhere between Rails and Plone in the auto-UI-creation department.</p>
+</li>
+<li>
+<p>Process workflow and security granularity (roles, permissions, ACL and all the combinations and intersections) - Plones beats Rails and Django. It appears you are on your own when it comes to securing your Rails app. Django is somwhere in the middle between Plone and Rails on this.</p>
+</li>
+<li>
+<p>Internationalization - Plone puts in a huge focus on multi-lingual translations and internationalization support. Plone wins here because so few other frameworks care as much as the Plone developers do about this.</p>
+</li>
+<li>
+<p>Accessibility - AJAX is cool, but making sites accessible to the blind is still important. The Plone devs take a more cautious approach to adding fancy JavaScript bells and whistles to the UI. I have a hunch (but this is only a hunch) that Django is taking the same cautious approach as Plone when it comes to AJAX support. I can’t help but think that Rails is hyping AJAX support at the expense of accessibility concerns.</p>
+</li>
+</ul>
+<p>Personally, I don’t require the internationalization or accessibility features of Plone, but I can understand there’s a market need for them. However, I do appreciate and require the crazy security options that are made available to me in Plone. Neither Django, nor Rails, yet match Plone in the security options department. But I’ll be watching that space closely.</p>
+      <p>
+			<small>comment at <a href="#comment-80" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-81">
+			<p class="who"><cite><a href='http://rvr.typepad.com/' rel='external ' title='80.58.20.42'>rvr</a></cite>:</p>
+			<p>M. Edward Borasky: You should take a look to <a href="http://catalyst.perl.org/">Catalyst</a> (Perl). O&#8217;Reilly published an <a href="http://www.perl.com/pub/a/2005/06/02/catalyst.html">article</a> about it.</p>
+      <p>
+			<small>comment at <a href="#comment-81" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-82">
+			<p class="who"><cite><a href='http://griddlenoise.blogspot.com/' rel='external ' title='67.177.16.246'>Jeff Shell</a></cite>:</p>
+			<p>I&#8217;m surprised at all of the attention Django is getting here while <a href="http://subway.python-hosting.com/">Subway</a> is not. Subway aims to provide a Rails-style stack while using many &#8220;existing Python web libraries and tools&#8221;. It uses CherryPy to serve, it uses SQLObject for object-relational mapping, it uses Cheetah as the default tool for templates, and on and on. I don&#8217;t know if it does full scaffolding, but it does seem to better apply new Python meta-programming technologies better than what I&#8217;ve seen of the Django examples.</p>
+<p>The use of meta-programming is something that I find really impressive about Rails, particularly ActiveRecord. It makes the bridging between the object and relational worlds a bit easier fit within the language (Ruby).</p>
+<p>I think there are Subway examples that use CherryFlow, a system that runs on Stackless Python to do continuations based web development ala <a href="http://seaside.st/">Seaside</a>.</p>
+<p>Personally, I think it&#8217;s silly that the Python web community seems so hell-bent on trying to copy and do a &#8220;pythonic&#8221; implementation of the popular system of the day. There are numerous Servlet copies, numerous  JSP/ASP copies, and now a growing multitude of Rails copies. When I started doing web development with Python, everyone was trying to figure out how to compete with Perl.</p>
+<p>So I&#8217;m going to stick with Zope 3 and give applause to Nevow, Quixote, and CherryPy for at least being different.</p>
+      <p>
+			<small>comment at <a href="#comment-82" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-83">
+			<p class="who"><cite><a href='http://simon.incutio.com/' rel='external ' title='62.49.9.94'>Simon Willison</a></cite>:</p>
+			<p>The reason Django is getting more attention than Subway right now (apart from the new-ness factor) is simple: Django, like Rails, was extracted from existing applications. It&#8217;s tried and tested - a bunch of reasonably high traffic sites have been running Django for nearly two years. I haven&#8217;t year heard of any &#8220;real&#8221; sites running Subway - they started with the framework.</p>
+      <p>
+			<small>comment at <a href="#comment-83" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-86">
+			<p class="who"><cite>Matthew Marshall</cite>:</p>
+			<p>Jeff Shell:</p>
+<p>Something you need to note, is that while subway is an attempt to copy Rails, Django is not.  In fact, I believe Django pre-dates Rails.</p>
+<p>MWM</p>
+      <p>
+			<small>comment at <a href="#comment-86" title="">18. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-103">
+			<p class="who"><cite>DougHolton</cite>:</p>
+			<p>More FUD about .NET and Mono from Fredrik Lundh, who makes money from python software.</p>
+<p>Yes, MonoRail (for .NET &amp; Mono) and Trails (for Java and the Java VM) are nowhere near as easy to use as Ruby on Rails or Django.  But they are the only options, and there is hope to making them much much easier to use than even Django by combining them with new languages for .NET and JVM that have a lot more flexibility than java or C#, such as groovy (http://groovy.codehaus.org/) and boo (http://boo.codehaus.org/) for .NET/Mono and IronPython (now owned by Microsoft).</p>
+      <p>
+			<small>comment at <a href="#comment-103" title="">20. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-104">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<blockquote>
+<p>More FUD about .NET and Mono from Fredrik Lundh, who makes money from python software.</p>
+</blockquote>
+<p>Doug: while I can&#8217;t be sure, I don&#8217;t think that was Fredrik Lundh. My understanding of Lundh&#8217;s general development philosophy is that he&#8217;s decidedly anti-framework, and there are a whole lot of other Fredriks in the world besides.</p>
+<p>As for Boo and Groovy, I do hope they work out because I would like nothing more than to see dynamic languages take over the mainstream VMs but I&#8217;ve seen little to suggest that they provide the level of quality, performance, or community backing of the C based interpreters.</p>
+      <p>
+			<small>comment at <a href="#comment-104" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-107">
+			<p class="who"><cite><a href='http://www.brunningonline.net/simon/blog/' rel='external ' title='195.167.165.136'>Simon Brunning</a></cite>:</p>
+			<p>You&#8217;re right, Ryan, there&#8217;s no way that was the effbot. Nothing like terse enough. ;-)</p>
+<p>I really never saw the point in Groovey. What does it promise to deliver that Jython doesn&#8217;t already give you?</p>
+      <p>
+			<small>comment at <a href="#comment-107" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-110">
+			<p class="who"><cite>Anonymous</cite>:</p>
+			<p>M. Edward Borasky: <a href="http://bknr.net/home">BKNR</a> is a Common Lisp Web Application environment.</p>
+      <p>
+			<small>comment at <a href="#comment-110" title="">21. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-203">
+			<p class="who"><cite><a href='http://lesscode.org/2005/08/16/magpies-django-rails-comparison/' rel='external ' title='206.123.121.158'>Magpie&#8217;s Django / Rails comparison [@lesscode.org]</a></cite>:</p>
+			<p>[&#8230;] As a side note, I had planned to do a series around this but I promised Adrian and Jacob I&#8217;d hold off until Django was launched-launched, which I assumed meant 1.0 at the time but that seems a ways off now&#8230; I&#8217;m not sure Django can get any more launched at this point so I might have to revisit that promise as I&#8217;m anxious to get moving on this. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-203" title="">16. August 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-388">
+			<p class="who"><cite>Michael</cite>:</p>
+			<p>Subway / Django: The most important reason why Django gets attention and Subway doesn&#8217;t is the docs. Django&#8217;s isn&#8217;t finished but already very usable, Subway&#8217;s is just an empty wiki - true to Python web framework tradition.</p>
+      <p>
+			<small>comment at <a href="#comment-388" title="">17. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-796">
+			<p class="who"><cite>Guy Murphy</cite>:</p>
+			<blockquote><p>
+As for Boo and Groovy, I do hope they work out because I would like nothing more than to see dynamic languages take over the mainstream VMs but I’ve seen little to suggest that they provide the level of quality, performance, or community backing of the C based interpreters.
+</p></blockquote>
+<p>IronPython is faster than CPython, and CPython compatible&#8230; what more do you want?&#8230; Python under .NET is faster than CPython.</p>
+<p>If the Pythonic bit is of interest without the Python lib, then Boo fits the bill very well.</p>
+<p>If performance and quality are still of concern to you, then I&#8217;d respectfully suggest you might need to update your view of the current state of art past the benchmark Active State set quite some time ago.</p>
+      <p>
+			<small>comment at <a href="#comment-796" title="">04. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-5394">
+			<p class="who"><cite><a href='http://www.fogliata.net/2006/07/18/django-ruby-on-rails/' rel='external ' title='151.1.210.241'>Django o Ruby On Rails</a></cite>:</p>
+			<p>[&#8230;] Rails and Django Compared [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-5394" title="">18. July 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.477 seconds -->
+<!-- Cached page served by WP-Cache -->

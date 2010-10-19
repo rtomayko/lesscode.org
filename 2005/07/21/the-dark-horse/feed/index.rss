@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: The Dark Horse</title>
+	<link>http://lesscode.org/2005/07/21/the-dark-horse/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:01 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Paul Houle</title>
+		<link>http://lesscode.org/2005/07/21/the-dark-horse/#comment-118</link>
+		<pubDate>Fri, 22 Jul 2005 14:33:19 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/21/the-dark-horse/#comment-118</guid>
+					<description>&lt;p&gt;Hell yeah.&lt;/p&gt;
+
+&lt;p&gt;PHP is the Visual Basic of the web.  It's a terrible language in a lot of ways,  but it bundles 95% of what you need to make web sites in one simple package that a complete idiot can install on any web server in minutes -- and,  unlike,  say,  Cold Fusion,  no BS about software licensing.&lt;/p&gt;
+
+&lt;p&gt;This enables software reuse on the web -- people can aim software at a standard configuration and expect it to install on ordinary desktop machines,  $8.99 /month mass hosting facilities,  or the latest 4-way Opteron on monster.  You can deploy on Linux,  Windows or even Solaris.&lt;/p&gt;
+
+&lt;p&gt;Java has wonderful (and terrible) frameworks and Perl has CPAN,  but to put together a comfortable environment for web programming in either of those languages you'll need to install ten different add-on packages,  and every software system out there will pick a different ten.&lt;/p&gt;
+
+&lt;p&gt;Three years ago you couldn't pick up high-quality software to run a web site,  but now you can,  and PHP is the lingua franca that made it possible.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hell yeah.</p>
+<p>PHP is the Visual Basic of the web.  It&#8217;s a terrible language in a lot of ways,  but it bundles 95% of what you need to make web sites in one simple package that a complete idiot can install on any web server in minutes &#8212; and,  unlike,  say,  Cold Fusion,  no BS about software licensing.</p>
+<p>This enables software reuse on the web &#8212; people can aim software at a standard configuration and expect it to install on ordinary desktop machines,  $8.99 /month mass hosting facilities,  or the latest 4-way Opteron on monster.  You can deploy on Linux,  Windows or even Solaris.</p>
+<p>Java has wonderful (and terrible) frameworks and Perl has CPAN,  but to put together a comfortable environment for web programming in either of those languages you&#8217;ll need to install ten different add-on packages,  and every software system out there will pick a different ten.</p>
+<p>Three years ago you couldn&#8217;t pick up high-quality software to run a web site,  but now you can,  and PHP is the lingua franca that made it possible.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ken Pratt</title>
+		<link>http://lesscode.org/2005/07/21/the-dark-horse/#comment-114</link>
+		<pubDate>Thu, 21 Jul 2005 23:15:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/21/the-dark-horse/#comment-114</guid>
+					<description>&lt;p&gt;FYI, a &lt;a href=&quot;http://www.google.com/search?q=%22microsoft+.net%22&quot; rel=&quot;nofollow&quot;&gt;search for &quot;microsoft .net&quot;&lt;/a&gt; yields 3,180,000 results, and a &lt;a href=&quot;http://www.technorati.com/search/%22microsoft%20.net%22&quot; rel=&quot;nofollow&quot;&gt;search on Technorati&lt;/a&gt; yields only 5,414 posts.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>FYI, a <a href="http://www.google.com/search?q=%22microsoft+.net%22">search for &#8220;microsoft .net&#8221;</a> yields 3,180,000 results, and a <a href="http://www.technorati.com/search/%22microsoft%20.net%22">search on Technorati</a> yields only 5,414 posts.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Patrice</title>
+		<link>http://lesscode.org/2005/07/21/the-dark-horse/#comment-113</link>
+		<pubDate>Thu, 21 Jul 2005 21:46:28 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/21/the-dark-horse/#comment-113</guid>
+					<description>&lt;p&gt;You may want to revise the number of results for the .Net searches. The dot is not included in the search and &quot;net&quot; has a much wider meaning than just &quot;.Net&quot;. I guess that the correct number of .Net results is even lower than the Java ones.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>You may want to revise the number of results for the .Net searches. The dot is not included in the search and &#8220;net&#8221; has a much wider meaning than just &#8220;.Net&#8221;. I guess that the correct number of .Net results is even lower than the Java ones.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.598 seconds -->
+<!-- Cached page served by WP-Cache -->

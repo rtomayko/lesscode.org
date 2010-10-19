@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Vendor Wars</title>
+	<link>http://lesscode.org/2005/08/29/vendor-wars/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:57 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: hxa</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-399</link>
+		<pubDate>Sun, 18 Sep 2005 17:26:17 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-399</guid>
+					<description>&lt;p&gt;Complexity will always have some attraction for the geek mind. And fear of being left with outdated 'skills' by not keeping up with the next big tech, almost always influences developers. I have certainly felt both (early EJB). Big vendors are in the right position to exploit it.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Complexity will always have some attraction for the geek mind. And fear of being left with outdated &#8217;skills&#8217; by not keeping up with the next big tech, almost always influences developers. I have certainly felt both (early EJB). Big vendors are in the right position to exploit it.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-369</link>
+		<pubDate>Thu, 01 Sep 2005 16:01:45 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-369</guid>
+					<description>&lt;p&gt;John wrote:&lt;/p&gt;
+
+&lt;p&gt;&quot;Developers embrace “morecode” because the people (managers) who judge them see higher productivity (LOC)&quot;&lt;/p&gt;
+
+&lt;p&gt;Simple as that. You know, you may have hit the nail on the head (btw, I &lt;em&gt;really&lt;/em&gt; like your blog:-)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>John wrote:</p>
+<p>&#8220;Developers embrace “morecode” because the people (managers) who judge them see higher productivity (LOC)&#8221;</p>
+<p>Simple as that. You know, you may have hit the nail on the head (btw, I <em>really</em> like your blog:-)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: John</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-368</link>
+		<pubDate>Thu, 01 Sep 2005 13:36:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-368</guid>
+					<description>&lt;p&gt;Developers embrace &quot;morecode&quot; because the people (managers) who judge them see higher productivity (LOC) and are mostly not competent coders so they really believe this is better. Developers who deliver on this basis rise faster in the ranks and get to be managers (who judge their juniors on LOC).&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Developers embrace &#8220;morecode&#8221; because the people (managers) who judge them see higher productivity (LOC) and are mostly not competent coders so they really believe this is better. Developers who deliver on this basis rise faster in the ranks and get to be managers (who judge their juniors on LOC).</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Schroeder</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-350</link>
+		<pubDate>Tue, 30 Aug 2005 19:57:00 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-350</guid>
+					<description>&lt;p&gt;Based on my experience I think the people evangelizing for Oracle and Microsoft and all the other vendors are people from a company that invests money in being an Oracle Partner or having many Microsoft Certified Engineers.  They believe that their close association with one of the big players is giving them a competitive advantage in their respective niches.  Your app uses Oracle, you sell it as a plus to your customers, you have the Oracle logos in your reception hall, and you send two geeks a year to some tradeshow, invite your customers to go there as well, and maybe you'll even give talks -- about using Oracle in your projects.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Based on my experience I think the people evangelizing for Oracle and Microsoft and all the other vendors are people from a company that invests money in being an Oracle Partner or having many Microsoft Certified Engineers.  They believe that their close association with one of the big players is giving them a competitive advantage in their respective niches.  Your app uses Oracle, you sell it as a plus to your customers, you have the Oracle logos in your reception hall, and you send two geeks a year to some tradeshow, invite your customers to go there as well, and maybe you&#8217;ll even give talks &#8212; about using Oracle in your projects.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-340</link>
+		<pubDate>Tue, 30 Aug 2005 16:33:47 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-340</guid>
+					<description>&lt;p&gt;&lt;/i&gt;Struts is now a de facto MVC framework for many Java EE projects. It has been embraced by EBM (Everybody But Microsoft).&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p></i>Struts is now a de facto MVC framework for many Java EE projects. It has been embraced by EBM (Everybody But Microsoft).</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Rafe</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-339</link>
+		<pubDate>Tue, 30 Aug 2005 14:51:57 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-339</guid>
+					<description>&lt;p&gt;Is Struts not vendor-neutral?  It wasn't tied to any particular vendor when I was using it.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Is Struts not vendor-neutral?  It wasn&#8217;t tied to any particular vendor when I was using it.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-337</link>
+		<pubDate>Mon, 29 Aug 2005 21:43:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-337</guid>
+					<description>&lt;p&gt;Robert Brewer:&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;morecode == morework == morejobsecurity&lt;/i&gt;, perhaps?&lt;/p&gt;
+
+&lt;p&gt;And don't forget the two additional variations, that seem to be all the rage nowadays:&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;morecode == morework&lt;strong&gt;for&lt;/strong&gt;indian_developers == lessjobsecurity&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;morecode == morework&lt;strong&gt;for&lt;/strong&gt;code&lt;strong&gt;generating&lt;/strong&gt;frameworks == lessjobsecurity&lt;/i&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Robert Brewer:</p>
+<p><i>morecode == morework == morejobsecurity</i>, perhaps?</p>
+<p>And don&#8217;t forget the two additional variations, that seem to be all the rage nowadays:</p>
+<p><i>morecode == morework<strong>for</strong>indian_developers == lessjobsecurity</i></p>
+<p>and</p>
+<p><i>morecode == morework<strong>for</strong>code<strong>generating</strong>frameworks == lessjobsecurity</i></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: alexbunardzic</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-336</link>
+		<pubDate>Mon, 29 Aug 2005 21:37:19 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-336</guid>
+					<description>&lt;p&gt;Rafe asks:&lt;/p&gt;
+
+&lt;p&gt;&quot;If I write a Java application that uses Tomcat, Spring, Hibernate, and MySQL, then deploy it on Debian Linux, which vendor gets served? Who has tricked me into doing it?&quot;&lt;/p&gt;
+
+&lt;p&gt;Could we say the same for Struts? It used to be vendor-neutral at one point, no?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Rafe asks:</p>
+<p>&#8220;If I write a Java application that uses Tomcat, Spring, Hibernate, and MySQL, then deploy it on Debian Linux, which vendor gets served? Who has tricked me into doing it?&#8221;</p>
+<p>Could we say the same for Struts? It used to be vendor-neutral at one point, no?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Robert Brewer</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-335</link>
+		<pubDate>Mon, 29 Aug 2005 21:36:17 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-335</guid>
+					<description>&lt;p&gt;&lt;em&gt;morecode&lt;/em&gt; == &lt;em&gt;morework&lt;/em&gt; == &lt;em&gt;morejobsecurity&lt;/em&gt;, perhaps?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><em>morecode</em> == <em>morework</em> == <em>morejobsecurity</em>, perhaps?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Rafe</title>
+		<link>http://lesscode.org/2005/08/29/vendor-wars/#comment-334</link>
+		<pubDate>Mon, 29 Aug 2005 21:21:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/08/29/vendor-wars/#comment-334</guid>
+					<description>&lt;p&gt;If I write a Java application that uses Tomcat, Spring, Hibernate, and MySQL, then deploy it on Debian Linux, which vendor gets served?  Who has tricked me into doing it?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>If I write a Java application that uses Tomcat, Spring, Hibernate, and MySQL, then deploy it on Debian Linux, which vendor gets served?  Who has tricked me into doing it?</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.832 seconds -->
+<!-- Cached page served by WP-Cache -->

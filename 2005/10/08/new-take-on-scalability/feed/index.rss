@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: New Take On Scalability</title>
+	<link>http://lesscode.org/2005/10/08/new-take-on-scalability/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:24 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Ruby on Rails Scalibility &#171; Open Source Initiative</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-15560</link>
+		<pubDate>Mon, 16 Oct 2006 13:30:43 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-15560</guid>
+					<description>&lt;p&gt;[...] http://lesscode.org/2005/10/08/new-take-on-scalability/ [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] http://lesscode.org/2005/10/08/new-take-on-scalability/ [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: /\ndrew&#8217;s Blog &#187; Blog Archive &#187; On JD on Rails</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-3638</link>
+		<pubDate>Thu, 08 Jun 2006 23:25:58 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-3638</guid>
+					<description>&lt;p&gt;[...] Come on dude. This argument is really pretty tired now and I&amp;#8217;m surprised you would partake in such FUD mongering without actually doing some research. A simple Google yields numerous discussions - Of which New Take on Scalability is a decent one. To paraphrase: [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Come on dude. This argument is really pretty tired now and I&#8217;m surprised you would partake in such FUD mongering without actually doing some research. A simple Google yields numerous discussions - Of which New Take on Scalability is a decent one. To paraphrase: [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: G Roper</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1294</link>
+		<pubDate>Sun, 19 Mar 2006 06:50:08 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1294</guid>
+					<description>&lt;p&gt;An operational definition of scalability was provided by Michael D. Kersey on an old newsgroup thread: 
+http://groups.google.com/group/microsoft.public.inetserver.asp.components/msg/d9846b908f678f15?hl=en&amp;#38;
+To quote from that newsgroup post:&lt;/p&gt;
+
+&lt;p&gt;&quot;IMO a reasonable definition of scalability for a given platform P and application A is
+S(A,P) = R(A,P) / C(A,P)
+where
+R = Maximum number of requests processed per second by application A on platform P,
+C = Cost of hardware and software to develop and support application A on platform P.&lt;/p&gt;
+
+&lt;p&gt;I've assumed 100% availability for the purposes of this discussion. Availability could be added as an input to the definition if desired. This term displays the expected behavior shown by common usage of the term &quot;scalability&quot;:
+1. As throughput R increases, scalability increases,
+2. As cost C increases, scalability decreases,
+3. Different platforms and different software may be compared using this definition,
+4. You can use this definition to estimate costs of a proposed system, given an anticipated user load.
+5. Both R and C can be estimated using known techniques.&lt;/p&gt;
+
+&lt;p&gt;So using this definition, scalability's dimensions would be &quot;requests processed per second per dollar&quot;. Given the following known values for a single application Z:&lt;/p&gt;
+
+&lt;p&gt;running on platform X:
+R(Z) = 1000 requests/second,
+C(Z) = $40,000
+S(Z) = 1000 requests/second / $40,000 = 0.025&lt;/p&gt;
+
+&lt;p&gt;running on not-so-fast but less expensive platform Y:
+R(Z) = 500 requests/second,
+C(Z) = $10,000
+S(Z) = 500 requests/second / $10,000 = 0.05&lt;/p&gt;
+
+&lt;p&gt;While platform Y's throughput (performance) is much less than that of platform Y, Y is much more scalable than (in fact is twice as scalable as) platform X when running application Z.&lt;/p&gt;
+
+&lt;p&gt;This definition can also be used to estimate the utility of using various software methodologies. For example, heavy use of components or object technology may or may not change each factor in the definition: the degree to which each is changed determines whether the resultant system is more or less scalable.&quot;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>An operational definition of scalability was provided by Michael D. Kersey on an old newsgroup thread:<br />
+http://groups.google.com/group/microsoft.public.inetserver.asp.components/msg/d9846b908f678f15?hl=en&amp;<br />
+To quote from that newsgroup post:</p>
+<p>&#8220;IMO a reasonable definition of scalability for a given platform P and application A is<br />
+S(A,P) = R(A,P) / C(A,P)<br />
+where<br />
+R = Maximum number of requests processed per second by application A on platform P,<br />
+C = Cost of hardware and software to develop and support application A on platform P.</p>
+<p>I&#8217;ve assumed 100% availability for the purposes of this discussion. Availability could be added as an input to the definition if desired. This term displays the expected behavior shown by common usage of the term &#8220;scalability&#8221;:<br />
+1. As throughput R increases, scalability increases,<br />
+2. As cost C increases, scalability decreases,<br />
+3. Different platforms and different software may be compared using this definition,<br />
+4. You can use this definition to estimate costs of a proposed system, given an anticipated user load.<br />
+5. Both R and C can be estimated using known techniques.</p>
+<p>So using this definition, scalability&#8217;s dimensions would be &#8220;requests processed per second per dollar&#8221;. Given the following known values for a single application Z:</p>
+<p>running on platform X:<br />
+R(Z) = 1000 requests/second,<br />
+C(Z) = $40,000<br />
+S(Z) = 1000 requests/second / $40,000 = 0.025</p>
+<p>running on not-so-fast but less expensive platform Y:<br />
+R(Z) = 500 requests/second,<br />
+C(Z) = $10,000<br />
+S(Z) = 500 requests/second / $10,000 = 0.05</p>
+<p>While platform Y&#8217;s throughput (performance) is much less than that of platform Y, Y is much more scalable than (in fact is twice as scalable as) platform X when running application Z.</p>
+<p>This definition can also be used to estimate the utility of using various software methodologies. For example, heavy use of components or object technology may or may not change each factor in the definition: the degree to which each is changed determines whether the resultant system is more or less scalable.&#8221;</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Thought Leadership</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1205</link>
+		<pubDate>Mon, 13 Mar 2006 12:09:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1205</guid>
+					<description>&lt;p&gt;&lt;strong&gt;Why Ruby Doesn't Matter...&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have noticed that pretty much everyone in the Ruby camp are insultants with many of them being book authors attempting to capitalize on hype. I of course, will remain open minded that Ruby may be better than say Java at some tasks but for the...&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><strong>Why Ruby Doesn&#8217;t Matter&#8230;</strong></p>
+<p>You may have noticed that pretty much everyone in the Ruby camp are insultants with many of them being book authors attempting to capitalize on hype. I of course, will remain open minded that Ruby may be better than say Java at some tasks but for the&#8230;</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Gosling Didn&#8217;t Get The Memo [@lesscode.org]</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1185</link>
+		<pubDate>Mon, 13 Mar 2006 03:10:07 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-1185</guid>
+					<description>&lt;p&gt;[...] New Take On Scalability [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] New Take On Scalability [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Stu Charlton</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-606</link>
+		<pubDate>Sat, 15 Oct 2005 16:05:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-606</guid>
+					<description>&lt;p&gt;&lt;I&gt;My thesis is based on the observable fact that quality tends to diminish as the quantity increases. &lt;/I&gt;&lt;/p&gt;
+
+&lt;p&gt;This is not a fact.   Mass producing items with statistically negligible defects happens every day with many extraordinarily complex products:  cars (particularly japanese cars), household appliances, consumer electronics, etc.  When was the last time you purchased a hand-crafted refrigerator because would have higher quality?&lt;/p&gt;
+
+&lt;p&gt;&lt;I&gt;If, however, someone asked me to prepare that exact same meal for a party of 400 people, or 4,000 (or 4 million people), I can guarantee you that the quality of the food I’d prepare would get progressively crappier the more people I try to make it for.&lt;/I&gt;&lt;/p&gt;
+
+&lt;p&gt;That would be a case of you not being &quot;scalable&quot;.   High-end restaurants regularly serve stunning meals to hundreds of people an evening; they've worked out a process for doing so where the food doesn't get crappier.&lt;/p&gt;
+
+&lt;p&gt;&lt;I&gt;If you’re not able to see the level of utmost crappiness built into these products, you’re probably heavily biased towards Microsoft.&lt;/I&gt;&lt;/p&gt;
+
+&lt;p&gt;And you're heavily biased against them.   &lt;/p&gt;
+
+&lt;p&gt;I've posted here because I find your attitude does not support your arguments.  You make very bald faced claims, use very vague analogies to back things up, arrogantly suggest that if a reader &quot;doesn't get it&quot; that's their problem, and then make obnoxious blanket statements like this one.   You seriously damage your credibility by taking such stances.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><I>My thesis is based on the observable fact that quality tends to diminish as the quantity increases. </I></p>
+<p>This is not a fact.   Mass producing items with statistically negligible defects happens every day with many extraordinarily complex products:  cars (particularly japanese cars), household appliances, consumer electronics, etc.  When was the last time you purchased a hand-crafted refrigerator because would have higher quality?</p>
+<p><I>If, however, someone asked me to prepare that exact same meal for a party of 400 people, or 4,000 (or 4 million people), I can guarantee you that the quality of the food I’d prepare would get progressively crappier the more people I try to make it for.</I></p>
+<p>That would be a case of you not being &#8220;scalable&#8221;.   High-end restaurants regularly serve stunning meals to hundreds of people an evening; they&#8217;ve worked out a process for doing so where the food doesn&#8217;t get crappier.</p>
+<p><I>If you’re not able to see the level of utmost crappiness built into these products, you’re probably heavily biased towards Microsoft.</I></p>
+<p>And you&#8217;re heavily biased against them.   </p>
+<p>I&#8217;ve posted here because I find your attitude does not support your arguments.  You make very bald faced claims, use very vague analogies to back things up, arrogantly suggest that if a reader &#8220;doesn&#8217;t get it&#8221; that&#8217;s their problem, and then make obnoxious blanket statements like this one.   You seriously damage your credibility by taking such stances.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Harry Fuecks</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-595</link>
+		<pubDate>Wed, 12 Oct 2005 08:59:34 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-595</guid>
+					<description>&lt;p&gt;Asking &quot;does it scale?&quot; is often used as an angle to shoot down a technology. PHP has been on the receiving end of this for a long time from the Java crowd - it might be worth tracking down some of the online rants on this, at least to get a feel for the common points of ignorance (e.g. performance == scalability). Often the questioner isn't willing or able to listen to technical detail. That a 10 line Perl script using fork may scale better, depending on the problem, than an app server that cost $$$ is beside the point.&lt;/p&gt;
+
+&lt;p&gt;That said, you may get people who genuinely want to know and have the experience to understand. I guess they want to know where using Rails can be problematic for scaling (e.g. ActiveRecord generating significant DB overhead) and how to work round it (e.g. knowing when to insert some hand-crafted queries). And otherwise hearing other peoples experiences, tips on how to profile, monitor Rails applications etc.&lt;/p&gt;
+
+&lt;p&gt;You may also get people who lack the understanding but have experienced the impact of a platform that didn't scale. They're also asking a valid question but how to answer?&lt;/p&gt;
+
+&lt;p&gt;Anyway - best rant on scalability I've ever read:  (http://www.schlossnagle.org/~george/blog/index.php?/archives/29-Why-PHP-Scales-A-Cranky,-Snarky-Answer.html)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Asking &#8220;does it scale?&#8221; is often used as an angle to shoot down a technology. PHP has been on the receiving end of this for a long time from the Java crowd - it might be worth tracking down some of the online rants on this, at least to get a feel for the common points of ignorance (e.g. performance == scalability). Often the questioner isn&#8217;t willing or able to listen to technical detail. That a 10 line Perl script using fork may scale better, depending on the problem, than an app server that cost $$$ is beside the point.</p>
+<p>That said, you may get people who genuinely want to know and have the experience to understand. I guess they want to know where using Rails can be problematic for scaling (e.g. ActiveRecord generating significant DB overhead) and how to work round it (e.g. knowing when to insert some hand-crafted queries). And otherwise hearing other peoples experiences, tips on how to profile, monitor Rails applications etc.</p>
+<p>You may also get people who lack the understanding but have experienced the impact of a platform that didn&#8217;t scale. They&#8217;re also asking a valid question but how to answer?</p>
+<p>Anyway - best rant on scalability I&#8217;ve ever read:  (http://www.schlossnagle.org/~george/blog/index.php?/archives/29-Why-PHP-Scales-A-Cranky,-Snarky-Answer.html)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Dan</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-592</link>
+		<pubDate>Tue, 11 Oct 2005 20:36:19 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-592</guid>
+					<description>&lt;p&gt;From Paul Grahams latest http://www.paulgraham.com/sfp.html:&lt;/p&gt;
+
+&lt;p&gt;&quot;That's why we advise groups to ignore issues like scalability, internationalization, and heavy-duty security at first. [1] I can imagine an advocate of &quot;best practices&quot; saying these ought to be considered from the start. And he'd be right, except that they interfere with the primary function of software in a startup: to be a vehicle for experimenting with its own design. Having to retrofit internationalization or scalability is a pain, certainly. The only bigger pain is not needing to, because your initial version was too big and rigid to evolve into something users wanted.&lt;/p&gt;
+
+&lt;p&gt;I suspect this is another reason startups beat big companies. Startups can be irresponsible and release version 1s that are light enough to evolve. In big companies, all the pressure is in the direction of over-engineering.&quot;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>From Paul Grahams latest http://www.paulgraham.com/sfp.html:</p>
+<p>&#8220;That&#8217;s why we advise groups to ignore issues like scalability, internationalization, and heavy-duty security at first. [1] I can imagine an advocate of &#8220;best practices&#8221; saying these ought to be considered from the start. And he&#8217;d be right, except that they interfere with the primary function of software in a startup: to be a vehicle for experimenting with its own design. Having to retrofit internationalization or scalability is a pain, certainly. The only bigger pain is not needing to, because your initial version was too big and rigid to evolve into something users wanted.</p>
+<p>I suspect this is another reason startups beat big companies. Startups can be irresponsible and release version 1s that are light enough to evolve. In big companies, all the pressure is in the direction of over-engineering.&#8221;</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Anonymous</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-591</link>
+		<pubDate>Tue, 11 Oct 2005 16:47:41 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-591</guid>
+					<description>&lt;p&gt;I was happy when Mitch decided to join our forum, because I knew he would bring a much needed fresh perspective on software development. It's a nice remix of code crafting/code industrialization.&lt;/p&gt;
+
+&lt;p&gt;And yes, some issues do boil down to lesscode --&amp;#62; more design. But that's not the whole story. I'm planning to write more about the other side very soon.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I was happy when Mitch decided to join our forum, because I knew he would bring a much needed fresh perspective on software development. It&#8217;s a nice remix of code crafting/code industrialization.</p>
+<p>And yes, some issues do boil down to lesscode &#8211;&gt; more design. But that&#8217;s not the whole story. I&#8217;m planning to write more about the other side very soon.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mitch Barnett</title>
+		<link>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-587</link>
+		<pubDate>Mon, 10 Oct 2005 22:15:35 +0000</pubDate>
+		<guid>http://lesscode.org/2005/10/08/new-take-on-scalability/#comment-587</guid>
+					<description>&lt;p&gt;How about lesscode and more design?&lt;/p&gt;
+
+&lt;p&gt;I like Alex B’s restaurant scalability analogy, but more on that in a moment.&lt;/p&gt;
+
+&lt;p&gt;I think the issue of scalability is all about the design and has less to do with any particular programming language, application server, framework, or infrastructure.  If the design (via the requirements) calls for the application to scale to x, y or z, with meaningful metrics, then it is up to the Architect to “design” an application, system, or whatever, to ensure the design meets the requirements.  And btw, we are in the software world, we can make anything scale – nothing that time and money can’t solve in our virtual world.&lt;/p&gt;
+
+&lt;p&gt;When I first came to lesscode.org, I thought it was going to be about more design and lesscode.  However, it seems that the site is about people that really care about handcrafting excellent code.  I can respect that, just different to what I though it was going to be about.&lt;/p&gt;
+
+&lt;p&gt;Back to Alex’s restaurant example.  In fact, Alex B. has described an analogy that MSFT uses for its software factory vision.  Check this out:&lt;/p&gt;
+
+&lt;p&gt;“A software factory is a product line that configures extensible development tools like Microsoft Visual Studio Team System (VSTS) with packaged content and guidance, carefully designed for building specific kinds of applications. A software factory contains three key ideas: a software factory schema, a software factory template and an extensible development environment:&lt;/p&gt;
+
+&lt;p&gt;•Think of the software factory schema as a recipe. It lists ingredients, like projects, source code directories, SQL files and configuration files, and explains how they should be combined to create the product. It specifies which DSLs should be used and describes how models based on these DSLs can be transformed into code and other artifacts, or into other models. It describes the product line architecture, and key relationships between components and frameworks of which it is comprised.&lt;/p&gt;
+
+&lt;p&gt;•The software factory template is like a bag of groceries containing the ingredients listed in the recipe. It provides the patterns, guidance, templates, frameworks, samples, custom tools such as DSL visual editing tools, scripts, XSDs, style sheets, and other ingredients used to build the product.&lt;/p&gt;
+
+&lt;p&gt;•An extensible development environment such as VSTS is like the kitchen where the meal is cooked. When configured with the software factory template, VSTS becomes a software factory for the product family. &lt;/p&gt;
+
+&lt;p&gt;To press this analogy further, the products are like meals served by a restaurant. Software factory stakeholders are like customers who order meals from the menu. A product specification is like a specific meal order. The product developers are like cooks who prepare the meals described by the orders, and who may modify meal definitions, or prepare meals outside the menu. The product line developers are like chefs who decide what will appear on the menu, and what ingredients, processes, and kitchen equipment will be used to prepare them.”&lt;/p&gt;
+
+&lt;p&gt;How about that?  In fact, if you look at any “industrialized process” it has been designed to scale.  The key word being “designed”.  So if the restaurant needs to scale to millions, then design it to scale!  While I respect my fellow codecrafters, I am waiting for the industrialization of software to take place so I don’t have to keep writing the same base code over and over again for each job that comes my way.  After serving a million (of the same) burgers, you would think the codecrafter’s would get tired of this too?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>How about lesscode and more design?</p>
+<p>I like Alex B’s restaurant scalability analogy, but more on that in a moment.</p>
+<p>I think the issue of scalability is all about the design and has less to do with any particular programming language, application server, framework, or infrastructure.  If the design (via the requirements) calls for the application to scale to x, y or z, with meaningful metrics, then it is up to the Architect to “design” an application, system, or whatever, to ensure the design meets the requirements.  And btw, we are in the software world, we can make anything scale – nothing that time and money can’t solve in our virtual world.</p>
+<p>When I first came to lesscode.org, I thought it was going to be about more design and lesscode.  However, it seems that the site is about people that really care about handcrafting excellent code.  I can respect that, just different to what I though it was going to be about.</p>
+<p>Back to Alex’s restaurant example.  In fact, Alex B. has described an analogy that MSFT uses for its software factory vision.  Check this out:</p>
+<p>“A software factory is a product line that configures extensible development tools like Microsoft Visual Studio Team System (VSTS) with packaged content and guidance, carefully designed for building specific kinds of applications. A software factory contains three key ideas: a software factory schema, a software factory template and an extensible development environment:</p>
+<p>•Think of the software factory schema as a recipe. It lists ingredients, like projects, source code directories, SQL files and configuration files, and explains how they should be combined to create the product. It specifies which DSLs should be used and describes how models based on these DSLs can be transformed into code and other artifacts, or into other models. It describes the product line architecture, and key relationships between components and frameworks of which it is comprised.</p>
+<p>•The software factory template is like a bag of groceries containing the ingredients listed in the recipe. It provides the patterns, guidance, templates, frameworks, samples, custom tools such as DSL visual editing tools, scripts, XSDs, style sheets, and other ingredients used to build the product.</p>
+<p>•An extensible development environment such as VSTS is like the kitchen where the meal is cooked. When configured with the software factory template, VSTS becomes a software factory for the product family. </p>
+<p>To press this analogy further, the products are like meals served by a restaurant. Software factory stakeholders are like customers who order meals from the menu. A product specification is like a specific meal order. The product developers are like cooks who prepare the meals described by the orders, and who may modify meal definitions, or prepare meals outside the menu. The product line developers are like chefs who decide what will appear on the menu, and what ingredients, processes, and kitchen equipment will be used to prepare them.”</p>
+<p>How about that?  In fact, if you look at any “industrialized process” it has been designed to scale.  The key word being “designed”.  So if the restaurant needs to scale to millions, then design it to scale!  While I respect my fellow codecrafters, I am waiting for the industrialization of software to take place so I don’t have to keep writing the same base code over and over again for each job that comes my way.  After serving a million (of the same) burgers, you would think the codecrafter’s would get tired of this too?</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.433 seconds -->
+<!-- Cached page served by WP-Cache -->

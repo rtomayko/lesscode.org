@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  The Zen of Microformats</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/10/27/rails-simplest-plugin-manager/">Simplest Possible Plugin Manager For Rails</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/11/01/the-myth-of-data-integrity/">The Myth Of Data Integrity</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-105"><a href="http://lesscode.org/2005/10/28/microformats-zen/" rel="bookmark" title="Permanent Link: The Zen of Microformats">The Zen of Microformats</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/first-they-ignore-you/" title="View all posts in First they ignore you.." rel="category tag">First they ignore you..</a>,  <a href="http://lesscode.org/category/by-stack/microformats/" title="View all posts in microformats" rel="category tag">microformats</a> 
+      on 28. October 2005</small>
+
+			<div class="entrytext">
+				<p>For some time now, I&#8217;ve wanted to increase my understanding of <a href="http://microformats.org/">microformats</a>. If you&#8217;re unfamilar with the term or want to understand the basic purpose of this technology better, I suggest reading Phil Windley&#8217;s <a href="http://www.windley.com/archives/2005/07/microformats.shtml">Microformats: Paving the Cowpaths</a>. I read it some time ago and was intrigued but had very little time to do further research. </p>
+
+<p>I have had a chance to dive in a bit more over the past few weeks and am excited at what I&#8217;ve found. I&#8217;ve trawled the <a href="http://microformats.org/mailman/listinfo/microformats-discuss">mailing list archives</a>, spent some time on <a href="http://microformats.org/wiki/">the wiki</a>, and read <a href="http://technorati.com/search/microformats.org">what people are saying on the blogs</a>. I have yet to spend a lot of time in the guts of the individual specifications (e.g., <a href="http://microformats.org/wiki/hcard">hCard</a>, <a href="http://microformats.org/wiki/xoxo">XOXO</a>, <a href="http://microformats.org/wiki/hcalendar">hCalendar</a>, <a href="http://microformats.org/wiki/Main_Page">etc.</a>)  because, frankly, the nitty-gritty is a very small potion of what&#8217;s really grabbing my interest here.</p>
+
+<p>There seems to be a bit of confussion around what &#8220;microformats&#8221; actually are and I think I know why. From what I&#8217;m seeing, the term &#8220;microformats&#8221; has two separate meanings - one is obvious and one comes after interacting with the community a bit. </p>
+
+<ol>
+<li><p>&#8220;Microformats&#8221; are a <em>set of specifications</em> describing interoperable machine formats that work on the web.</p></li>
+<li><p>&#8220;Microformats&#8221; is a <em>process</em> for arriving at interoperable machine formats that work on the web.</p></li>
+</ol>
+
+<p>In general, when someone says &#8220;microformats&#8221;, they are most likely talking about <em>the specifications</em>. What I&#8217;ve found after lurking on the mailing list and watching the community is that when someone very close to the project says &#8220;microformats&#8221;, they are more often talking about <em>the process</em> that is evolving there. This is much harder to explain but
+it&#8217;s definitely worth trying because the core values, <em>the Zen</em>, these guys are carving out have very strong parallels to those of the <em>less code</em> movement, I think.</p>
+
+<p>Luckily, I don&#8217;t think I&#8217;ll have to do much explaining myself because there are some gems from the
+<a href="http://microformats.org/discuss/mail/microformats-discuss/">microformats-discuss</a> mailing list that I think go a long way in describing what&#8217;s going on there:</p>
+
+<p><a href="http://diveintomark.org/">Mark Pilgrim</a> in <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-October/001175.html">RE: Educating  Others</a>:</p>
+
+<blockquote>
+  <p>The regulars on this list grok this intuitively, or at least have accepted it for so long that they&#8217;ve forgotten how to articulate it. We simply don&#8217;t care about the general case.</p>
+  
+  <p>Some people (Scott, Lisa, others) look at this and say &#8220;what about this edge case?&#8221; or &#8220;how do you combine them?&#8221; or &#8220;I need something with rigid structure&#8221; or &#8220;how do you validate them&#8221; or whatever.  And these are all obvious questions that form interesting permathreads on mailing lists around the world.  And we just don&#8217;t care.  Not because we&#8217;re lazy or sloppy or naive &#8212; in fact, just the opposite.  Our apathy towards the edge case is born out of bitter experience.  We all bear the scars of drawn-out battles over edge cases that satisfied someone&#8217;s sense of &#8220;completeness&#8221; or &#8220;aesthetics&#8221; or &#8220;perfection&#8221;, but ultimately made the common cases harder and solved no real problem.</p>
+  
+  <p>Ryan said microformats are all about 80/20.  He&#8217;s right, but unless you&#8217;ve share [sic] our common experience, he may as well be speaking in Zen koans.  Most standards go like this:</p>
+  
+  <ol>
+  <li>Solve 80% of the problem in a matter of weeks.</li>
+  <li>Spend two years arguing about the last 20%.  (<em>cough</em> Atom <em>cough</em>)</li>
+  <li>Implement the 80% in a matter of weeks.  Wonder why everything is so hard.</li>
+  <li>Spend months implementing the last 20%.  Realize why the first 80% was so hard.  Curse a lot.</li>
+  <li>Discover that the last 20% wasn&#8217;t really worth all the time spent arguing about it or implementing it.</li>
+  </ol>
+  
+  <p>Microformats, on the other hand, go like this:</p>
+  
+  <ol>
+  <li>Solve the 80% in a matter of weeks.</li>
+  <li>Promise (wink wink) to tackle the 20% &#8220;later&#8221;.</li>
+  <li>Implement the 80% in a matter of days.</li>
+  <li>Watch people use it for a few months.  Maybe tweak a little here and there.</li>
+  <li>Discover that the last 20% wasn&#8217;t really necessary after all. Breathe a sigh of relief that you never bothered.  Move on to the next problem.</li>
+  </ol>
+  
+  <p>The regulars on this list have all been through the full standards cycle many times.  We know about edge cases, we know about validators, we know about standards.  We know.  We&#8217;ve been there.  We&#8217;ve all decided that this way is better.  Not because it&#8217;s easier or faster or sloppier, but because <em>it leads to a better result</em>.  Really.  The fact that it happens to be easier and faster is just a karmic coincidence.</p>
+</blockquote>
+
+<p>Mark&#8217;s description of the mainstream standardization process vs. that of microformats could easily be used to describe the difference in technique employed by the mainstream software industry vs. that of the <em>less code</em> crowd.</p>
+
+<p><a href="http://theryanking.com/blog/">Ryan King</a> in <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-October/001171.html">RE: Educating Others</a>:</p>
+
+<blockquote>
+  <p>&#8230; we&#8217;ve <em>proven</em> that microformats (at least, the ones developed so far) work in practice, we just need to show that they work in <em>theory</em>.</p>
+  
+  <p>The arguments in this thread are theoretical&#8211;in theory there&#8217;s no difference between theory and practice, but in practice there is.</p>
+</blockquote>
+
+<p><a href="http://lukearno.com/">Luke Arno</a> in <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-October/001198.html">Evolution vs. Intelligent Design</a>:</p>
+
+<blockquote>
+  <p>It&#8217;s evolution not &#8220;intelligent design.&#8221;</p>
+</blockquote>
+
+<p><a href="http://tantek.com/">Tantek Çelik</a> in <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-August/000529.html">Microformats and the Semantic Web</a>:</p>
+
+<blockquote>
+  <p>Microformats essentially ask:</p>
+  
+  <p>Can we do more (practical use and applications) with less (logical formalism, formats, namespaces, etc.)?</p>
+</blockquote>
+
+<p><a href="http://tantek.com/">Tantek Çelik</a> in <a href="http://microformats.org/discuss/mail/microformats-discuss/2005-August/000561.html">Microformats and the Semantic Web</a> , and this one&#8217;s a gem:</p>
+
+<blockquote>
+  <p>I hardly ever look at PDF docs.</p>
+</blockquote>
+
+<p>Without even looking at the actual technical specifications, I think these quotes say a lot about microformats&#8217; potential. </p>
+
+<p>To me, what&#8217;s exciting about microformats is the same thing that&#8217;s exciting about dynamic languages, REST, F/OSS, and other seemingly unconnected technologies and concepts: they are all <em>evolving</em> under the fundamental principle that you cannot adequately plan/design large systems upfront and expect them to be successful. That we don&#8217;t <em>know</em> anything until we&#8217;ve observed it. Respect for this simple truth leads to dramatic changes in how one builds and evaluates technology and you can see this happening to great effect (and with equally great results) in each of these communities. </p>
+
+<h4>More&#8230;</h4>
+
+<ul>
+<li><a href="http://microformats.org/about/">microformats.org/about</a></li>
+<li><a href="http://microformats.org/wiki/process">The microformats Process</a></li>
+<li><a href="http://microformats.org/wiki/microformats#the_microformats_principles">The microformats Principles</a></li>
+<li><a href="http://www.tantek.com/presentations/2004etech/realworldsemanticspres.html">Real world semantics</a></li>
+</ul>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/10/28/microformats-zen/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">13 Responses to &#8220;The Zen of Microformats&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-696">
+			<p class="who"><cite><a href='http://www.hxa7241.org' rel='external ' title='81.178.70.169'>hxa</a></cite>:</p>
+			<p>Yes, it&#8217;s not <em>purely</em> evolution. It&#8217;s a hybrid with design/abstraction: &#8216;lazy abstraction&#8217; perhaps. And that combination gives more than either. Evolution only makes unmodifiable things.</p>
+      <p>
+			<small>comment at <a href="#comment-696" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-697">
+			<p class="who"><cite>Cam McVey</cite>:</p>
+			<p>Ryan, I just wanted to say that I thought this was an excellent, well-considered post that has cleared up my confusion re Microformats. Thank you.</p>
+      <p>
+			<small>comment at <a href="#comment-697" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-698">
+			<p class="who"><cite><a href='http://tantek.com/log/' rel='external ' title='63.195.114.133'>Tantek Çelik</a></cite>:</p>
+			<p>Great post Ryan.  You&#8217;ve clearly grokked the Zen of Microformats.  Thanks for writing up an excellent step-by-step explanation.  Please consider contributing some of this explanation to the <a href="http://microformats.org/wiki/">microformats wiki</a>, perhaps on <a href="http://microformats.org/wiki/zen">a page like this</a>.</p>
+<p>Thanks!</p>
+<p><a href="http://tantek.com/log/">Tantek</a></p>
+      <p>
+			<small>comment at <a href="#comment-698" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-699">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>hxa: May <em>evolution</em> isn&#8217;t a perfectly accurate term but the point is that the community is interested in an iterative, feedback dominated standardization process.</p>
+<p>Tantek: sure will.</p>
+      <p>
+			<small>comment at <a href="#comment-699" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-700">
+			<p class="who"><cite>Jon Miller</cite>:</p>
+			<blockquote>
+<p>That we don’t know anything until we’ve observed it. Respect for this simple truth leads to dramatic changes in how one builds and evaluates technology and you can see this happening to great effect (and with equally great results) in each of these communities.</p>
+</blockquote>
+<p>I agree with this principle in all innovative, novel endeavores. I also particularlly agree with the <strong>leave the 20% out</strong>, if I can phrase it that way.</p>
+<p>I just wanted to point out that occationally we don&#8217;t need to &#8220;wait until we&#8217;ve observed it&#8221;, when there can be proper and addequate market research done before the implementation phase. </p>
+<p>So, where possible, do the research and hit the 80% of the proposed features which really meet the market well. And where not possible, get something out there and &#8220;see what happens&#8221; when there is no good research to be done. Programmers, I believe, too often don&#8217;t understand or think the same way as the eventual end user.</p>
+<p>I do hope that microformats gains more and more momentum.</p>
+      <p>
+			<small>comment at <a href="#comment-700" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-701">
+			<p class="who"><cite>grumpY!</cite>:</p>
+			<p>oh god save us from the bored web2 gurus who dream up ad-hoc transmission standards one after the other with no useful audience, no toolchain, no REASON.  take a look around the web at who is placing these formats on webpages. anyone? bueller, bueller, bueller&#8230;</p>
+<p>do even the microformats gurus publish microformats? </p>
+<p>this is web2 doing what is does best - answering questions no one is asking.</p>
+      <p>
+			<small>comment at <a href="#comment-701" title="">28. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-704">
+			<p class="who"><cite><a href='http://theryanking.com' rel='external ' title='64.81.240.149'>ryan</a></cite>:</p>
+			<p>grumpY!-</p>
+<blockquote><p>do even the microformats gurus publish microformats?</p>
+</blockquote>
+<p><a href="http://theryanking.com/blog/contact/">I publish microformats</a>. <a href="http://tantek.com/log/">Tantek does</a>. <a href="http://epeus.blogspot.com">Kevin does</a>, <a href="http://suda.co.uk/contact/">Brian does</a>, <a href="http://microformats.org/wiki/implementations">Many others do</a>, but I&#8217;m sure you knew that.</p>
+      <p>
+			<small>comment at <a href="#comment-704" title="">30. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-706">
+			<p class="who"><cite><a href='http://warpedvisions.org/2005/10/30/link-zen-of-microformats/' rel='external ' title='66.33.197.19'>warpedvisions.org &raquo; Blog Archive &raquo; Link: Zen of Microformats</a></cite>:</p>
+			<p>[&#8230;] October 30th, 2005 in Links The Zen of Microformats, an approach to make things work together better. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-706" title="">30. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-708">
+			<p class="who"><cite><a href='http://epeus.blogspot.com' rel='external ' title='68.164.92.7'>Kevin Marks</a></cite>:</p>
+			<p>Grumpy, you don&#8217;t need god for that; that&#8217;s what microformats are for. They need to have a reason, they have an audience (anyone with a browser), and we&#8217;re building toolchains.<br />
+Well over a million blogs use rel=&#8221;tag&#8221;;  every Avon lady has an hCard.</p>
+      <p>
+			<small>comment at <a href="#comment-708" title="">31. October 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-766">
+			<p class="who"><cite><a href='http://blog.broadbandmechanics.com/2005/11/turkey-links-or-leftovers-for-everyone' rel='external ' title='207.7.148.190'>Marc&#8217;s Voice &raquo; Blog Archive &raquo; Turkey links or &#8216;leftovers&#8217; for everyone</a></cite>:</p>
+			<p>[&#8230;] The Zen of Microformats [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-766" title="">25. November 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-826">
+			<p class="who"><cite><a href='http://www.microformats.org/?p=67' rel='external ' title='4.79.216.8'>microformats | weblog | AJAX vs. AHAH</a></cite>:</p>
+			<p>[&#8230;] Perhaps another could be rephrased: Why bother with parsing/transforming when you can just get the data in a presentable format? After all, we all know that less code is better. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-826" title="">18. December 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1448">
+			<p class="who"><cite><a href='http://breyten.wordpress.com/2005/10/29/links-for-2005-10-29/' rel='external ' title='207.7.108.235'>Breyten&#8217;s Dev Blog &raquo; Blog Archive &raquo; links for 2005-10-29</a></cite>:</p>
+			<p>[&#8230;] The Zen of Microformats [@lesscode.org] &#8220;What I’ve found after lurking on the mailing list and watching the community is that when someone very close to the project says “microformats”, they are more often talking about the process that is evolving there.&#8221; (tags: microformats web programming) [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-1448" title="">08. April 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-7536">
+			<p class="who"><cite><a href='http://jooto.com/blog/?p=180' rel='external ' title='63.247.68.77'>Ethical Software by Alex Bunardzic &raquo; ROA and Microformats</a></cite>:</p>
+			<p>[&#8230;] The so-called Zen of Microformats states that it only makes sense to cope with the 80% of the problem space, and leave the remaining 20% of the unsolved portion to take care of itself. [&#8230;]</p>
+      <p>
+			<small>pingback at <a href="#comment-7536" title="">11. August 2006</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.410 seconds -->
+<!-- Cached page served by WP-Cache -->

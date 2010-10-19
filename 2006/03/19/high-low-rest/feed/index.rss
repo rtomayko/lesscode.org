@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: The Highs and Lows of REST</title>
+	<link>http://lesscode.org/2006/03/19/high-low-rest/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:12 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Let&#8217;s REST! &#187; Wagalulu - Microsoft &#187; &#187; Let&#8217;s REST!</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-5604</link>
+		<pubDate>Sat, 22 Jul 2006 00:33:28 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-5604</guid>
+					<description>&lt;p&gt;[...] &amp;#34;Halloween Problem&amp;#34; for XML APIs &amp;#187; Bookmark on del.icio.us A bunch of links to RESTful resources I&amp;#8217;ve collated here and there - should be a goodstarting point to get a handle on some of the basics of REST, with links to example APIs / documentation as well as some posts ReprESenTative of the discussion in this space, plus bouns randomly related stuff (rss). If there are some obvious holes here, let me know&amp;#8230;.  REST. Representational State Transfer represents an architectural style for building distributed applications. or  Really Extremely Simple Transfer.   Intro to REST  Roy Fielding - Architectural Styles and the Design of Network-based Software Architectures, Chapter 5 Ryan Tomayko - How I explained REST to my wife Wikipedia - REST Sam Ruby: How to Create a REST Protocol To REST or not to REST  REST and Web Services: The ZapThink Take ZapFlash  &amp;#8220;In many ways, however, the debate about Web Services and REST is as pointless as arguing whether a hammer or a screwdriver is a better tool.&amp;#8221;  Paul Prescod: on REST - Second Generation of Web Services Don Box: SOAP vs. REST Dion Hinchliffe: Creating Open Services That Last (And Anyone Can Use) Danny Ayers - Is REST too complicated? Ryan Tomayko - The Highs and Lows of REST REST APIs, examples, documentation and bits  eBay’s REST API Amazon REST API Tagtooga&amp;#8217;s List of REST APIs Random, but related, RESTful thoughts:  John Udell - Amazon&amp;#8217;s pragmatic approach to metered infrastructure  &amp;#8220;SQS is a Web-based queue to which you post messages and from which you read them back &amp;#8212; without worrying about pesky details such as scale, concurrency, reliability, or guaranteed delivery.&amp;#8221;  Tim O&amp;#8217;Reilly - A Week in the Valley: GData  &amp;#8220;The big point for me was that GData is just Atom/RSS for reading, Atom Publishing for writing, and A9 stored queries for searching.&amp;#8221;  Optimistic concurrency (versioning) (We&amp;#8217;re not talking about dating here&amp;#8230;.Google Data APIs Protocol) sqlREST and 15 minutes Guide to sqlREST Don Box: HTTP, XML, REST and $100 -  Popular REST tagged articles in Del.icio.us [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] &quot;Halloween Problem&quot; for XML APIs &raquo; Bookmark on del.icio.us A bunch of links to RESTful resources I&#8217;ve collated here and there - should be a goodstarting point to get a handle on some of the basics of REST, with links to example APIs / documentation as well as some posts ReprESenTative of the discussion in this space, plus bouns randomly related stuff (rss). If there are some obvious holes here, let me know&#8230;.  REST. Representational State Transfer represents an architectural style for building distributed applications. or  Really Extremely Simple Transfer.   Intro to REST  Roy Fielding - Architectural Styles and the Design of Network-based Software Architectures, Chapter 5 Ryan Tomayko - How I explained REST to my wife Wikipedia - REST Sam Ruby: How to Create a REST Protocol To REST or not to REST  REST and Web Services: The ZapThink Take ZapFlash  &#8220;In many ways, however, the debate about Web Services and REST is as pointless as arguing whether a hammer or a screwdriver is a better tool.&#8221;  Paul Prescod: on REST - Second Generation of Web Services Don Box: SOAP vs. REST Dion Hinchliffe: Creating Open Services That Last (And Anyone Can Use) Danny Ayers - Is REST too complicated? Ryan Tomayko - The Highs and Lows of REST REST APIs, examples, documentation and bits  eBay’s REST API Amazon REST API Tagtooga&#8217;s List of REST APIs Random, but related, RESTful thoughts:  John Udell - Amazon&#8217;s pragmatic approach to metered infrastructure  &#8220;SQS is a Web-based queue to which you post messages and from which you read them back &#8212; without worrying about pesky details such as scale, concurrency, reliability, or guaranteed delivery.&#8221;  Tim O&#8217;Reilly - A Week in the Valley: GData  &#8220;The big point for me was that GData is just Atom/RSS for reading, Atom Publishing for writing, and A9 stored queries for searching.&#8221;  Optimistic concurrency (versioning) (We&#8217;re not talking about dating here&#8230;.Google Data APIs Protocol) sqlREST and 15 minutes Guide to sqlREST Don Box: HTTP, XML, REST and $100 -  Popular REST tagged articles in Del.icio.us [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Sandeep Shetty</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1420</link>
+		<pubDate>Sat, 01 Apr 2006 14:02:54 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1420</guid>
+					<description>&lt;blockquote&gt;Exposing resources for machine consumption isn’t any different than exposing resources for human consumption until you get down to the media type.&lt;/blockquote&gt;
+
+&lt;p&gt;A lot of web developers fail to see &lt;a href=&quot;http://sandeep.shetty.in/2006/02/web-service-web-application.html&quot; rel=&quot;&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote><p>Exposing resources for machine consumption isn’t any different than exposing resources for human consumption until you get down to the media type.</p></blockquote>
+<p>A lot of web developers fail to see <a href="http://sandeep.shetty.in/2006/02/web-service-web-application.html" rel="">this</a>.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Patrick Logan</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1381</link>
+		<pubDate>Sat, 25 Mar 2006 20:15:14 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1381</guid>
+					<description>&lt;p&gt;The amount of &quot;stuff&quot; in the less-used aspects of HTTP is a good deal less than the amount of &quot;stuff&quot; in SOAP/WSDL/WS-* so I am not sure it is fair to say it is &lt;em&gt;every&lt;/em&gt; bit as unproven. It seems to have less to prove. That also reflects my impression than WS-* seems to be overly ambitious.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>The amount of &#8220;stuff&#8221; in the less-used aspects of HTTP is a good deal less than the amount of &#8220;stuff&#8221; in SOAP/WSDL/WS-* so I am not sure it is fair to say it is <em>every</em> bit as unproven. It seems to have less to prove. That also reflects my impression than WS-* seems to be overly ambitious.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Quoderat &#187; The REST schism and the REST contradiction</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1379</link>
+		<pubDate>Sat, 25 Mar 2006 18:55:36 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1379</guid>
+					<description>&lt;p&gt;[...] Pick one, and only one of these arguments, please. As far as I can see, apart from a few rare exceptions (like WebDAV), Don&amp;#8217;s lo-REST &amp;#8212; HTTP GET and POST only &amp;#8212; is what&amp;#8217;s been proven on the web. The pure Book of Fielding, hi-REST GET/POST/PUT/DELETE version is every bit as speculative and unproven as Web Services/SOAP/SOA themselves (that&amp;#8217;s not to say that it&amp;#8217;s wrong; simply that it&amp;#8217;s unproven). Some REST supportors, like Ryan Tomayko, are already starting to acknowledge this contradiction. [...]&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>[&#8230;] Pick one, and only one of these arguments, please. As far as I can see, apart from a few rare exceptions (like WebDAV), Don&#8217;s lo-REST &#8212; HTTP GET and POST only &#8212; is what&#8217;s been proven on the web. The pure Book of Fielding, hi-REST GET/POST/PUT/DELETE version is every bit as speculative and unproven as Web Services/SOAP/SOA themselves (that&#8217;s not to say that it&#8217;s wrong; simply that it&#8217;s unproven). Some REST supportors, like Ryan Tomayko, are already starting to acknowledge this contradiction. [&#8230;]</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1323</link>
+		<pubDate>Tue, 21 Mar 2006 03:24:32 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1323</guid>
+					<description>&lt;p&gt;Ryan,&lt;/p&gt;
+
+&lt;p&gt;Excellent commentary on the high/low REST coinage:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.mnot.net/blog/2006/03/20/hi_lo&quot;&gt;Mark Nottingham: Don’s False Choice&lt;/a&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Ryan,</p>
+<p>Excellent commentary on the high/low REST coinage:</p>
+<p><a href="http://www.mnot.net/blog/2006/03/20/hi_lo">Mark Nottingham: Don’s False Choice</a></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1322</link>
+		<pubDate>Tue, 21 Mar 2006 03:20:33 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1322</guid>
+					<description>&lt;p&gt;Care to give an example?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Care to give an example?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Bunardzic</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1319</link>
+		<pubDate>Mon, 20 Mar 2006 18:18:03 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1319</guid>
+					<description>&lt;p&gt;Aristotle wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;The problem is that one man’s 98% are another’s 55%.&lt;/blockquote&gt;
+
+&lt;p&gt;All I was talking about is an idempotent portion of a system (an exactly measurable feature). How you inferred that one man's 98% of idempotency is another's 55% is beyond the grasping capabilities of my feeble mind.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Aristotle wrote:</p>
+<blockquote><p>The problem is that one man’s 98% are another’s 55%.</p></blockquote>
+<p>All I was talking about is an idempotent portion of a system (an exactly measurable feature). How you inferred that one man&#8217;s 98% of idempotency is another&#8217;s 55% is beyond the grasping capabilities of my feeble mind.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1314</link>
+		<pubDate>Mon, 20 Mar 2006 14:52:32 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1314</guid>
+					<description>&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;http://lesscode.org/2006/03/19/high-low-rest/#comment-1298&quot; rel=&quot;nofollow&quot;&gt;Ryan&lt;/a&gt;&lt;/cite&gt;,&lt;/p&gt;
+
+&lt;p&gt;I am strongly convinced that the reason that RSS seems to be holding up (which I will assume means RSS 2.0, since earlier versions are RDF, even if noone parses them that way) is that it hasn’t been pushed. It’s not used for anything much other than shovelling weblog content into readers, which content consists mostly of tag soup anyway. So the fact that RSS seems to work is really no more to the point than the fact that HTML tag soup seems to work.&lt;/p&gt;
+
+&lt;p&gt;I do agree with your basic thesis that REST succeeds because of the REST principles and does not depend much on the wire format. The position you put forth in the article just seemed to veer into “we’d be better off without XML,” rather than staying on the “XML isn’t what matters” course, so that’s what I addressed in my comment.&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;&lt;a href=&quot;http://lesscode.org/2006/03/19/high-low-rest/#comment-1299&quot; rel=&quot;nofollow&quot;&gt;Alex&lt;/a&gt;&lt;/cite&gt;,&lt;/p&gt;
+
+&lt;p&gt;don’t be silly. You won’t find many who will argue that excessive model complexity is worth its diminishing coverage returns. People aren’t stupid. The problem is that one man’s 98% are another’s 55%. People disagree about how much of the problem space constitutes the 80% worth addressing. Your portrayal of the problem conveniently skips over the hard part; unfortunately, reality is rarely that tractable.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><cite><a href="http://lesscode.org/2006/03/19/high-low-rest/#comment-1298">Ryan</a></cite>,</p>
+<p>I am strongly convinced that the reason that RSS seems to be holding up (which I will assume means RSS 2.0, since earlier versions are RDF, even if noone parses them that way) is that it hasn’t been pushed. It’s not used for anything much other than shovelling weblog content into readers, which content consists mostly of tag soup anyway. So the fact that RSS seems to work is really no more to the point than the fact that HTML tag soup seems to work.</p>
+<p>I do agree with your basic thesis that REST succeeds because of the REST principles and does not depend much on the wire format. The position you put forth in the article just seemed to veer into “we’d be better off without XML,” rather than staying on the “XML isn’t what matters” course, so that’s what I addressed in my comment.</p>
+<p><cite><a href="http://lesscode.org/2006/03/19/high-low-rest/#comment-1299">Alex</a></cite>,</p>
+<p>don’t be silly. You won’t find many who will argue that excessive model complexity is worth its diminishing coverage returns. People aren’t stupid. The problem is that one man’s 98% are another’s 55%. People disagree about how much of the problem space constitutes the 80% worth addressing. Your portrayal of the problem conveniently skips over the hard part; unfortunately, reality is rarely that tractable.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: assaf</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1304</link>
+		<pubDate>Sun, 19 Mar 2006 22:55:37 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1304</guid>
+					<description>&lt;p&gt;I think the best advise here is &quot;starting with the simplest thing that can possibly work&quot;.&lt;/p&gt;
+
+&lt;p&gt;In some cases, I get most mileage out of using microformats, and everything else is just a layer of indirection. But microformats have their limits, and in other cases XML works better. RSS are great for some stuff, they're an overkill if you're doing an authentication API. And let's not forget JSON.&lt;/p&gt;
+
+&lt;p&gt;You can write a whole article on what to use when, I think that would be useful. But the key point is discretion: use all of these, but for each use case pick the ones that are most effective.&lt;/p&gt;
+
+&lt;p&gt;The only barrier to using XML and RSS and microformats and JSON is learning. The barrier to using XML when you should be using microformats, or RSS when you should be using JSON is complex code that's difficult to write and maintain.&lt;/p&gt;
+
+&lt;p&gt;As for REST, I follow the same approach. Which means most of my Web stuff break REST by relying on cookies, and most of my APIs break REST by asking you to construct URLs. And so far I've only had use for GET/POST.&lt;/p&gt;
+
+&lt;p&gt;I call it lightweight services. It's about keeping services simple to implement, use and maintain. And it so happens that a lot of REST gets used because REST fits the bill.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I think the best advise here is &#8220;starting with the simplest thing that can possibly work&#8221;.</p>
+<p>In some cases, I get most mileage out of using microformats, and everything else is just a layer of indirection. But microformats have their limits, and in other cases XML works better. RSS are great for some stuff, they&#8217;re an overkill if you&#8217;re doing an authentication API. And let&#8217;s not forget JSON.</p>
+<p>You can write a whole article on what to use when, I think that would be useful. But the key point is discretion: use all of these, but for each use case pick the ones that are most effective.</p>
+<p>The only barrier to using XML and RSS and microformats and JSON is learning. The barrier to using XML when you should be using microformats, or RSS when you should be using JSON is complex code that&#8217;s difficult to write and maintain.</p>
+<p>As for REST, I follow the same approach. Which means most of my Web stuff break REST by relying on cookies, and most of my APIs break REST by asking you to construct URLs. And so far I&#8217;ve only had use for GET/POST.</p>
+<p>I call it lightweight services. It&#8217;s about keeping services simple to implement, use and maintain. And it so happens that a lot of REST gets used because REST fits the bill.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Koranteng Ofosu-Amaah</title>
+		<link>http://lesscode.org/2006/03/19/high-low-rest/#comment-1300</link>
+		<pubDate>Sun, 19 Mar 2006 18:33:08 +0000</pubDate>
+		<guid>http://lesscode.org/2006/03/19/high-low-rest/#comment-1300</guid>
+					<description>&lt;p&gt;On matters of advocacy I suggest we should stick to &lt;a href=&quot;http://koranteng.blogspot.com/2006/03/rest-elevator-pitch.html&quot; rel=&quot;nofollow&quot;&gt;the REST elevator pitch&lt;/a&gt;.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>On matters of advocacy I suggest we should stick to <a href="http://koranteng.blogspot.com/2006/03/rest-elevator-pitch.html">the REST elevator pitch</a>.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.416 seconds -->
+<!-- Cached page served by WP-Cache -->

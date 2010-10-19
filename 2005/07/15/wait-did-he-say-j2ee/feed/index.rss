@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Wait. Did he say J2EE?</title>
+	<link>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:09 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-58</link>
+		<pubDate>Sat, 16 Jul 2005 19:20:41 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-58</guid>
+					<description>&lt;p&gt;&quot;i think what it indicates is that Java the language has certainly a lot of things going for it&quot;&lt;/p&gt;
+
+&lt;p&gt;I think it's safe to say that you're more bullish on Java than I am.&lt;/p&gt;
+
+&lt;p&gt;I'm not suggesting that the zillions of Java programmers are all going to find something better in the next month or anything, just that Java hit its peek years ago, has been running flat for some time, and I believe we're going to start seeing a steady decline in demand for Java on new projects as more agile languages gain legitimacy.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;i think what it indicates is that Java the language has certainly a lot of things going for it&#8221;</p>
+<p>I think it&#8217;s safe to say that you&#8217;re more bullish on Java than I am.</p>
+<p>I&#8217;m not suggesting that the zillions of Java programmers are all going to find something better in the next month or anything, just that Java hit its peek years ago, has been running flat for some time, and I believe we&#8217;re going to start seeing a steady decline in demand for Java on new projects as more agile languages gain legitimacy.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: stephen ogrady</title>
+		<link>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-52</link>
+		<pubDate>Fri, 15 Jul 2005 19:00:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-52</guid>
+					<description>&lt;p&gt;&quot;Is this an indication that solid technology is more important than interop in some cases?&quot; tough to say, and i'd actually be interested in what some of the Spring, Geronimo, etc folks would answer. &lt;/p&gt;
+
+&lt;p&gt;but i'd say it's partially this: Java is a very, very complex beast. not only is part language and part platform, there are three separate versions of the platform (mobile, personal and enterprise). &lt;/p&gt;
+
+&lt;p&gt;the discussion here being around the enterprise version, i think what it indicates is that Java &lt;em&gt;the language&lt;/em&gt; has certainly a lot of things going for it, but the &lt;em&gt;platforms&lt;/em&gt; (including libraries and such) built on top of it have become rather heavyweight. &lt;/p&gt;
+
+&lt;p&gt;as a result, i think the reaction of many Java devs that has resulted in Spring, Struts, Hibernate, etc is a logical development not to mention an indication that despite the fact that the source of Java is closed (in the sense that one can't take the source of Java, patch it, and release the result as something called Java) it's still possible to build vibrant communities on top of it. even vibrant communities dedicated to using the least code possible ;)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>&#8220;Is this an indication that solid technology is more important than interop in some cases?&#8221; tough to say, and i&#8217;d actually be interested in what some of the Spring, Geronimo, etc folks would answer. </p>
+<p>but i&#8217;d say it&#8217;s partially this: Java is a very, very complex beast. not only is part language and part platform, there are three separate versions of the platform (mobile, personal and enterprise). </p>
+<p>the discussion here being around the enterprise version, i think what it indicates is that Java <em>the language</em> has certainly a lot of things going for it, but the <em>platforms</em> (including libraries and such) built on top of it have become rather heavyweight. </p>
+<p>as a result, i think the reaction of many Java devs that has resulted in Spring, Struts, Hibernate, etc is a logical development not to mention an indication that despite the fact that the source of Java is closed (in the sense that one can&#8217;t take the source of Java, patch it, and release the result as something called Java) it&#8217;s still possible to build vibrant communities on top of it. even vibrant communities dedicated to using the least code possible ;)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-47</link>
+		<pubDate>Fri, 15 Jul 2005 13:46:48 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-47</guid>
+					<description>&lt;p&gt;Well, okay. I guess I hadn't thought of it like that but you always have the sweet angle. I guess Hibernate, Struts, Spring, Webwork, etc. coming in and proping up the enterprise could be considered one method of freeing Java if you squint and look at it right. It seems a bit of a hostile takeover, though, no?&lt;/p&gt;
+
+&lt;p&gt;Anyway, I had forgotten for a moment that the whole point of J2EE was really to standardize interfaces so that multiple vendor implementations could interop. It's interesting to me though that hibernate, struts, spring, etc. can come along and just kind of trump a lot of those efforts at interop. Is this an indication that solid technology is more important than interop in some cases?&lt;/p&gt;
+
+&lt;p&gt;Thanks for the comment, Steve. Always appreciated.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Well, okay. I guess I hadn&#8217;t thought of it like that but you always have the sweet angle. I guess Hibernate, Struts, Spring, Webwork, etc. coming in and proping up the enterprise could be considered one method of freeing Java if you squint and look at it right. It seems a bit of a hostile takeover, though, no?</p>
+<p>Anyway, I had forgotten for a moment that the whole point of J2EE was really to standardize interfaces so that multiple vendor implementations could interop. It&#8217;s interesting to me though that hibernate, struts, spring, etc. can come along and just kind of trump a lot of those efforts at interop. Is this an indication that solid technology is more important than interop in some cases?</p>
+<p>Thanks for the comment, Steve. Always appreciated.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: stephen ogrady</title>
+		<link>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-46</link>
+		<pubDate>Fri, 15 Jul 2005 13:18:33 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/15/wait-did-he-say-j2ee/#comment-46</guid>
+					<description>&lt;p&gt;well, i'm on the record as being skeptical of the need to open source Java due to the belief that its biggest value prop is compatability, so this shouldn't come as a surprise but i have a question. &lt;/p&gt;
+
+&lt;p&gt;is this statement: &lt;/p&gt;
+
+&lt;p&gt;&quot;People wonder why there’s a push for Sun to free Java, I don’t. I personally don’t give a shit what they do with it but when you see the results of one of these communities in action it’s hard to advise against it from a technical standpoint.&quot;&lt;/p&gt;
+
+&lt;p&gt;compatible with this one:&lt;/p&gt;
+
+&lt;p&gt;&quot;I’m just wondering whether others find it interesting that the popular Enterprise Java technologies today aren’t part of J2EE at all.&quot;&lt;/p&gt;
+
+&lt;p&gt;? point being that i think there's room for the community to navigate around the &quot;closed&quot; Java source and build their own frameworks and such. &lt;/p&gt;
+
+&lt;p&gt;i fully agree that seeing communities in action should convince anyone that they are far more productive than vendor committees and such; but i'd caution against assuming that strictly managed standards have no benefits whatsoever. in my view, Java's primary mission in life is to get as close to write once, run anywhere as it can (understanding that it will never be perfect). that's difficult to do, IMO, in a community.&lt;/p&gt;
+
+&lt;p&gt;in other words, i see a need for &lt;em&gt;some&lt;/em&gt; strictly managed foundational elements, on top of which communities can go nuts and build all sorts of extensions, frameworks, etc.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>well, i&#8217;m on the record as being skeptical of the need to open source Java due to the belief that its biggest value prop is compatability, so this shouldn&#8217;t come as a surprise but i have a question. </p>
+<p>is this statement: </p>
+<p>&#8220;People wonder why there’s a push for Sun to free Java, I don’t. I personally don’t give a shit what they do with it but when you see the results of one of these communities in action it’s hard to advise against it from a technical standpoint.&#8221;</p>
+<p>compatible with this one:</p>
+<p>&#8220;I’m just wondering whether others find it interesting that the popular Enterprise Java technologies today aren’t part of J2EE at all.&#8221;</p>
+<p>? point being that i think there&#8217;s room for the community to navigate around the &#8220;closed&#8221; Java source and build their own frameworks and such. </p>
+<p>i fully agree that seeing communities in action should convince anyone that they are far more productive than vendor committees and such; but i&#8217;d caution against assuming that strictly managed standards have no benefits whatsoever. in my view, Java&#8217;s primary mission in life is to get as close to write once, run anywhere as it can (understanding that it will never be perfect). that&#8217;s difficult to do, IMO, in a community.</p>
+<p>in other words, i see a need for <em>some</em> strictly managed foundational elements, on top of which communities can go nuts and build all sorts of extensions, frameworks, etc.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.309 seconds -->
+<!-- Cached page served by WP-Cache -->

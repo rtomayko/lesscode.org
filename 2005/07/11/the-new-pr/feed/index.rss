@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: The New Public Relations</title>
+	<link>http://lesscode.org/2005/07/11/the-new-pr/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:13:15 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Michael Schubart</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-42</link>
+		<pubDate>Thu, 14 Jul 2005 13:40:24 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-42</guid>
+					<description>&lt;p&gt;Hi Ryan,&lt;/p&gt;
+
+&lt;p&gt;Seems like it was a problem in my aggregator. I'm now using the RSS 2.0 and it works perfectly.&lt;/p&gt;
+
+&lt;p&gt;Thanks a lot,
+Michael&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi Ryan,</p>
+<p>Seems like it was a problem in my aggregator. I&#8217;m now using the RSS 2.0 and it works perfectly.</p>
+<p>Thanks a lot,<br />
+Michael</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-37</link>
+		<pubDate>Tue, 12 Jul 2005 15:59:29 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-37</guid>
+					<description>&lt;p&gt;Okay. The Atom and RSS2 for main posts are validating and the comments feed also checks out. Thanks, Sam.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Okay. The Atom and RSS2 for main posts are validating and the comments feed also checks out. Thanks, Sam.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-36</link>
+		<pubDate>Tue, 12 Jul 2005 15:51:09 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-36</guid>
+					<description>&lt;p&gt;Yep. Let me dig that up. I've been meaning to run everything through the validator... Nows as good a time as any, I suppose.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Yep. Let me dig that up. I&#8217;ve been meaning to run everything through the validator&#8230; Nows as good a time as any, I suppose.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Sam Ruby</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-34</link>
+		<pubDate>Tue, 12 Jul 2005 15:33:53 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-34</guid>
+					<description>&lt;p&gt;Can you change your atom:summary to text/html?&lt;/p&gt;
+
+&lt;p&gt;http://feedvalidator.org/check.cgi?url=http%3A%2F%2Flesscode.org%2Ffeed%2Fatom%2F&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Can you change your atom:summary to text/html?</p>
+<p>http://feedvalidator.org/check.cgi?url=http%3A%2F%2Flesscode.org%2Ffeed%2Fatom%2F</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-32</link>
+		<pubDate>Tue, 12 Jul 2005 09:19:31 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-32</guid>
+					<description>&lt;p&gt;It should be now -- I'm definitely a full-content type-a' guy :) Can you take a quick peek and see what feed you're pulling from? Both of the following are full content feeds:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;http://lesscode.org/feed/ (RSS2)&lt;/li&gt;
+&lt;li&gt;http://lesscode.org/feed/atom/ (Atom)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Is it possible that your aggregrator is configured for summaries only?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>It should be now &#8212; I&#8217;m definitely a full-content type-a&#8217; guy :) Can you take a quick peek and see what feed you&#8217;re pulling from? Both of the following are full content feeds:</p>
+<ul>
+<li>http://lesscode.org/feed/ (RSS2)</li>
+<li>http://lesscode.org/feed/atom/ (Atom)</li>
+</ul>
+<p>Is it possible that your aggregrator is configured for summaries only?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Michael Schubart</title>
+		<link>http://lesscode.org/2005/07/11/the-new-pr/#comment-31</link>
+		<pubDate>Tue, 12 Jul 2005 08:43:00 +0000</pubDate>
+		<guid>http://lesscode.org/2005/07/11/the-new-pr/#comment-31</guid>
+					<description>&lt;p&gt;Hi, &lt;/p&gt;
+
+&lt;p&gt;Could you please change the RSS feed for this site so that it includes the full posts, rather than excerpts? &lt;/p&gt;
+
+&lt;p&gt;Thanks, Michael&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi, </p>
+<p>Could you please change the RSS feed for this site so that it includes the full posts, rather than excerpts? </p>
+<p>Thanks, Michael</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.352 seconds -->
+<!-- Cached page served by WP-Cache -->

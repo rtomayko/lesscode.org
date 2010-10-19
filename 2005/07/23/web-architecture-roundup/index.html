@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  Web Architecture Roundup</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/07/22/posse/">Where&#8217;s your POSSE?</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/07/25/web-thinking/">Web Thinking (with bonus Feynman quotes)</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-44"><a href="http://lesscode.org/2005/07/23/web-architecture-roundup/" rel="bookmark" title="Permanent Link: Web Architecture Roundup">Web Architecture Roundup</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+      under <a href="http://lesscode.org/category/by-status/then-they-fight-you/" title="View all posts in Then they fight you..." rel="category tag">Then they fight you...</a> 
+      on 23. July 2005</small>
+
+			<div class="entrytext">
+				<p>I&#8217;ve been on a language and infrastructure kick for the past month or so
+and posts have reflected that. Unfortunately this means I haven&#8217;t had
+the time to report on some of the excellent discussion around
+simplifying practices at the protocol and format level. Let&#8217;s run
+through some of this real quick:</p>
+
+<p><a href="http://www.intertwingly.net/">Sam Ruby</a> has been churning out good
+content on the practical benefits of HTTP and REST architecture,
+challenging SOAP/WS-* practioners to consider the immense benefits
+resource oriented design offers over the more popular service oriented
+(SOAP/WS-*) approaches. The Atom Wiki <a href="http://www.intertwingly.net/blog/2005/07/19/Surviving-Slashdot">was slashdotted</a>
+but he was able to push the troll-hoards over to an uneditable site due
+to HTTP&#8217;s redirect capabilities. He uses the occasion to illustrate one
+of the many basic features HTTP provides to accomodate massively
+distributed and un-coordinated environments that SOAP/WS-* completely
+ignores:</p>
+
+<blockquote>
+  <p>The foundation for most of this is rooted in the tantalizing phrase
+  &#8220;hypermedia as the engine of application state&#8221;.  If one views a wiki
+  as a <a href="http://www.intertwingly.net/blog/2005/03/09/Distributed-State-Machines">state machine</a>,
+  then being able to do a redirect is effectively changing the
+  programming of the application.</p>
+  
+  <p>The fact that I was able to do all this with but a single line of code —
+  and using only the protocols and products that were already installed —
+  was of great value to me yesterday.  In fact, if one were predisposed to
+  use such terms, I would go so far as to say it was of <strong>significant
+  business value</strong> to me.</p>
+</blockquote>
+
+<p>Sam provides more thoughts and conclussions in <a href="http://www.intertwingly.net/blog/2005/07/22/REST-vs-API">REST vs. API</a>, which
+he sums up nicely:</p>
+
+<blockquote>
+  <p>At some point, you need to question the wisdom of having an API which
+  abstracts away that which is important.</p>
+</blockquote>
+
+<p>In the meantime, WS-* supporters are still trying to figure out how to
+fit the square peg of narrowly distributed systems architecture into the
+round hole of the web. Infoworld just published <a href="http://www.infoworld.com/article/05/07/22/HNwsprogress_1.html">a
+story</a>
+that tries really hard to slap some lipstick on the WS-pig:</p>
+
+<blockquote>
+  <p>Although the vendors backing Web services are confident they are
+  properly addressing any kinks, Web services remains hobbled by issues
+  such as standardization and WSDL complexity. To make matter worse, its
+  impacts are growing, with both the .Net and Java development
+  technologies focusing on Web services. Additionally, Web services is
+  doing double duty as the lynchpin of the growing SOA trend.</p>
+</blockquote>
+
+<p>And just in case there was any doubt that many leading vendors are
+completely clueless when it comes to providing tools to aid their
+customer&#8217;s operations moving to the web:</p>
+
+<blockquote>
+  <p>Microsoft’s Bixhorn emphasized the company’s planned Indigo technology
+  as the answer to many issues cited with Web services. Due in 2006 in
+  the Windows Longhorn client, Indigo removes the reliance on Web
+  servers by extending beyond HTTP to support protocols such as SMTP,
+  TCP, and REST (Representational State Transfer).</p>
+</blockquote>
+
+<p>No, no, no! I don&#8217;t even know where to begin disecting the problems with
+this statement.</p>
+
+<ol>
+<li><p>You don&#8217;t want to &#8220;remove the reliance on web servers,&#8221; you want to
+provide tools that let customers use it for what it&#8217;s worth. Web
+servers are good! We need to make more and better use of them.</p></li>
+<li><p>Extending HTTP to &#8220;support REST&#8221; would be a truly interesting
+demonstration as REST is largely a description of the architecture
+HTTP facilities. <em>UPDATE: it&#8217;s been <a href="http://www.kbcafe.com/juice/?guid=20050725105910">pointed out</a>
+that I may have mis-represented Krill&#8217;s intent here. I&#8217;m not sure I see a huge difference
+but in the interest of rational debate and all that&#8230;</em></p></li>
+<li><p><code>&lt;outrage&gt;</code>TCP?!!@%##! <strong>WHAT THE FUCK!</strong><code>&lt;/outrage&gt;</code></p></li>
+</ol>
+
+<p>I can only assume this was a horrible misprint or that Microsoft has an
+automated press statement request robot capable of combining a random
+set of acronyms with upcoming product names.</p>
+
+<p>The blogosphere, at least, is injecting some sanity into the
+discussion. Mark Baker wrote a nice piece, <a href="http://www.coactus.com/blog/2005/07/towards-truly-document-oriented-web-services/">Towards truly document
+oriented Web services</a>,
+which does a good job of explaining why the web&#8217;s basic architecture has
+been and continues to be a perfect medium for &#8220;Web services&#8221; since long
+before the term was even coined.</p>
+
+<p>There were also at least two enlightening articles on Atom&#8217;s potential
+as a SOAP/WS-* competitor. Bill de hÓra&#8217;s <a href="http://www.dehora.net/journal/2005/07/atoms_in_a_small_world.html">Atoms in a small world</a>
+is a response to a <a href="http://www.computerweekly.com/Articles/2005/07/19/210876/QuickanddirtysubstituteforSoap.htm#ContentContinues">computer weekly article</a>
+making the following claim:</p>
+
+<blockquote>
+  <p>It is clear that there are lots of server-based applications (not
+  blogs) that could work by syndicating packets of XML data to client
+  applications (not RSS aggregators). These will not rival Soap/web
+  services as a system for executing transactions.</p>
+</blockquote>
+
+<p>Bill responds:</p>
+
+<blockquote>
+  <p>I don&#8217;t see why it would not be a good basis for enterprise concerns
+  like messaging, authentication, or management interfaces. Atom, RSS
+  and the Atom Publishing Protocol (APP) as a complement to REST could
+  disrupt SOAP and WS.</p>
+</blockquote>
+
+<p>I agree but have a slightly different take on how this will be most
+disruptive. In my opinion, REST and web architecture is just plain
+misunderstood. There&#8217;s a lightbulb moment that&#8217;s required to grasp it
+fully and it just hasn&#8217;t went off for a big portion of the business IT
+community. RSS and Atom are showing how following web architecture can
+yield huge benefits. These technologies are disruptive because it forces
+people to ponder whether the web in its basic, unmolested form may not
+be limited to web pages. If Atom can find a niche here than that&#8217;s great
+but I&#8217;m more excited by its potential as an agent for enlightenment.</p>
+
+<p>Kurt Cagle follows Bill&#8217;s post with some truly excellent examples of
+how, in many cases, RSS/Atom can be superior to WS-* techniques in <a href="http://www.understandingxml.com/archives/2005/07/how_rssatom_is.html">How
+RSS/Atom Is Replacing Web Services</a>,
+which he ends with a demonstration of &#8220;good web thinking&#8221;:</p>
+
+<blockquote>
+  <p>While I suspect that this commentary will be poo-pooed by web services
+  vendors, the history of the web makes me suspect I&#8217;ll be right in the
+  end. RSS syndication has emerged in a largely ad-hoc fashion to
+  fulfill a specific need - syndication - that seems to be an intrinsic
+  characteristic and requirement of the Internet. Syndication in turn is
+  simply a messaging protocol built around a subscription-oriented PUSH
+  model. If you make the syndication format too complex for people to
+  use (as I believe is the case with SOAP) then they will migrate to
+  simpler formats as they become available. Because ATOM is blessed by
+  both the IETF and the W3C and is seen as an open standard (whereas
+  questions remain concerning the precise nature and implementation of
+  SOAP) it will likely continue to gain the mindshare of developers and
+  users alike.</p>
+</blockquote>
+
+<p>To sum up, there&#8217;s been good stuff all around from the REST / web
+architecture guys and the WS-* death march continues on&#8230;</p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/07/23/web-architecture-roundup/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													Both comments and pings are currently closed.
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">5 Responses to &#8220;Web Architecture Roundup&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-122">
+			<p class="who"><cite><a href='http://cycle-gap.blogspot.com/' rel='external ' title='203.212.230.253'>Rams</a></cite>:</p>
+			<p>Sounds very much like what Adam Bosworth had to say, I quickly scribbled down the main points from his talk (now available at itconversations.com) here:</p>
+<p><a href="http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html">http://cycle-gap.blogspot.com/2005/07/adam-bosworth-on-new-data-model-for.html</a></p>
+      <p>
+			<small>comment at <a href="#comment-122" title="">24. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-123">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>Great stuff, Rams. I&#8217;m listening now:</p>
+<p><a href="http://www.itconversations.com/shows/detail571.html">http://www.itconversations.com/shows/detail571.html</a></p>
+      <p>
+			<small>comment at <a href="#comment-123" title="">24. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-124">
+			<p class="who"><cite><a href='http://www.bloglines.com/blog/AssaphMehr' rel='external ' title='69.141.229.108'>AB</a></cite>:</p>
+			<p>SOAP is pretty easy, and it&#8217;s not all .NET and Java, you can use SOAP in just about any programming languages and they all have a handful of frameworks that provide the tools necessary to make SOAP easy.  You need tools/libraries/frameworks to work with REST too, unless you&#8217;re writing XML parsing by hand.</p>
+<p>The good thing about SOAP is that it is just a standard way to structure a request/response.  I know there are tons of other WS-stuff coming out to give web services the characteristics of things like JMS, but for most people they just want to expose a SignIn request, or a getStatus SOAP request and those are so simple, it&#8217;s amazing.</p>
+<p>Take PHP for example, you can make a SOAP call in 2 lines with PEAR::SOAP and write a SOAP server in probably less than 10 lines of code.</p>
+      <p>
+			<small>comment at <a href="#comment-124" title="">24. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-126">
+			<p class="who"><cite><a href='http://www.kbcafe.com' rel='external ' title='199.71.120.67'>Randy Charles Morin</a></cite>:</p>
+			<p>Author said &#8220;extending beyond HTTP&#8221; and you translated that to &#8220;extending HTTP&#8221;. The REST death march continues on.</p>
+      <p>
+			<small>comment at <a href="#comment-126" title="">25. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-133">
+			<p class="who"><cite><a href='http://www.kbcafe.com' rel='external ' title='199.71.120.67'>Randy Charles Morin</a></cite>:</p>
+			<p>There&#8217;s not a huge difference between &#8220;extending beyond HTTP&#8221; and &#8220;extending HTTP&#8221;? Common. Extend beyond implies using protocols other than and extend implies using protocols based on. Since SMTP is not based on HTTP, this flies directly in the face of your argument.</p>
+      <p>
+			<small>comment at <a href="#comment-133" title="">27. July 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.358 seconds -->
+<!-- Cached page served by WP-Cache -->

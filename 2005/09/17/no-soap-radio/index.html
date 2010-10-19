@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>  No SOAP Radio</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+<script type="text/javascript">
+/*-----AJAX-Comment-Preview-Variables-----*/
+	var inputId     = 'comment';
+	var outputId    = 'ajax-comment-preview';
+	var doitId      = 'preview';
+	var authorId    = 'author';
+	var urlId       = 'url';
+	var processURI  = '/wp-content/plugins/ajax-comment-preview.php';
+	var emptyString = 'Click the "Preview" button to preview your comment here.';
+/*----------------------------------------*/
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ajax-comment-preview.js"></script>
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+
+	<div id="content" class="narrowcolumn">
+
+  
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://lesscode.org/2005/09/09/the-case/">&#8220;Reinventing Smalltalk, one decade at a Time&#8221;</a></div>
+			<div class="alignright"> <a href="http://lesscode.org/2005/09/17/yapwf-brand-new-or-is-it/">YAPWF! Brand new! Or is it?</a> &raquo;</div>
+		</div>
+
+		<div class="post">
+			<h2 id="post-76"><a href="http://lesscode.org/2005/09/17/no-soap-radio/" rel="bookmark" title="Permanent Link: No SOAP Radio">No SOAP Radio</a>&nbsp;&nbsp;</h2>
+			<small>By <a href="http://www.dehora.net/journal">Bill de hÓra</a>
+      under <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a> 
+      on 17. September 2005</small>
+
+			<div class="entrytext">
+				<p>A significant problem in the trenches for Web Services isn&#8217;t the ability to play nice or not with existing Internet protocols, or its complicated type system, or Object/XML impedence. It&#8217;s optionality. When you get down to it, too much in Web Services is optional. Calling the specs composable and thus dressing that up as feature is pointless - <a href="http://www.simpleweb.org/standard/iso/cmip-run/crun_2_2.pdf">optionality is a curse</a>. Yes, WS specs are designed to be composable, but this underplays the fragmentation costs of not having an interoperable core.  </p>
+
+<p>Optionality here means: a) the state space for communications is huge , b) everything has to be negotiated, c) no clear layering resulting in dependency issues. These introduce complexity and thus drive up costs. As a result I disagree that implementing something like WS-Eventing is &#8220;simple&#8221;,  exactly because there is freeform composition.  And that&#8217;s just WS-Eventing. What about addressing, transfer, policy, wsdl, faulting, the various reliable messaging approaches? The list goes on and on.  Even the basic SOAP stack seems to be difficult to get right; we&#8217;re on the third generation inside 7 years of what is supposed to be stable computing infrastructure. </p>
+
+<p>Favouring optionality can&#8217;t possibly be a good idea for protocols, or even protocol frameworks like SOAP. In that sense RSS or Atom have more interop potential, precisely because they take options away by design, even though they wouldn&#8217;t present an obvious choice for mainstream enterprise purposes. </p>
+
+<p><strong>Ur-Protocol</strong></p>
+
+<p>Here&#8217;s Elliotte Harold and Ted Neward arguing over the merits of HTTP as a Highlander Protocol.</p>
+
+<p><a href="http://www.cafeconleche.org/#news2005August23">Elliotte</a>:</p>
+
+<blockquote>&#8220;Web Services Addressing is trying to define an addressing scheme that can work over HTTP, SMTP, FTP, and any other protocol you can imagine. However, each of these protocols already have their own addressing systems. Developers working with these protocols don&#8217;t want and don&#8217;t need a different addressing system that&#8217;s marginally more compatible with some protocol they&#8217;re not using in exchange for substantially less compatibility with the protocol they are using. Besides nobody&#8217;s actually doing web services over anything except HTTP anyway. Doesn&#8217;t it just make more sense to use the well understood, already implemented debugged HTTP architecture for this instead of inventing something new? &#8220;</blockquote>
+
+<p><a href="http://blogs.tedneward.com/CommentView,guid,67b39b66-7071-4ad0-994d-b295e756012c.aspx">Ted</a>:</p>
+
+<blockquote>&#8220;No, it doesn&#8217;t. There&#8217;s no sense in trying to take bits that were designed for a distributed hypermedia system (Fielding&#8217;s words, not mine) and trying to bend it to fit a problem space that isn&#8217;t distributed hypermedia. Can we learn from the REST architectural style? Absolutely&#8211;and the new WS-* specs, including SOAP, do exactly that, favoring self-descriptive messages over RPC calls as the principal abstraction to deal with. But does that mean we tie ourselves solely to HTTP? Oh, hell no.&#8221;</blockquote>
+
+<p>The problem with using HTTP as the Highlander protocol has been described best by Marshall Rose:</p>
+
+<pre>"HTTP has become the reuse platform of choice, largely because:
+ - it is familiar
+ - it is ubiquitous
+ - it has a simple request/response
+ - it usually works through firewalls
+These are all good reasons, and - if HTTP meets your communications requirements - you 
+should use it. The problem is that widespread availability of HTTP has become an excuse 
+for not bothering to understand what the requirements really are. It's easier to use HTTP, 
+even if it's not a good fit, that to understand your requirements and design a protocol 
+that does what you really need."  </pre>
+
+<p>HTTP bias aside, sometimes you do have to work across multiple protocols. That results in the problem of managing and preserving addresses and message identity. And when you do have to span protocols and systems for messaging purposes, especially where there are multiple self-interested administrations, you want to have a standard envelope that provides at minimum a means of identifying the message, the sender, the recipients, and probably time stamping. Some kind of ability to correlate messages. These are baseline criteria - without them you&#8217;re toast. You need standard headers not just for routing traffic (important) but because you need to know what the heck is going on operationally - you want a standard means of asking the various endpoints (or nodes, or gateways, or hubs, or whatever you want to call them) questions. Where is my message? How many messages did you drop? Which messages did you drop? When? Whose messages are you dropping? Will you resend this message? How many messages have you sent to so and so? What open items do you have? And so on. However WS, and in particular, SOAP, doesn&#8217;t provide a standard (as in non-optional) set of headers and thus it doesn&#8217;t provision this kind of generic communication facility. I&#8217;ll confess that this has never made sense to me, given SOAP&#8217;s protocol framework and inter-systems ambitions.</p>
+
+<p>Ted has a specific rant about broadcast and push being unsuitable to run over HTTP. I don&#8217;t think there&#8217;s any argument that, formally speaking, HTTP is not the right protocol for those jobs.  But here&#8217;s the kicker.  Blogs and RSS syndication are <em>exactly that</em>, done over HTTP infrastructure. The world has not gone running to push RSS  over XMPP because <a href="http://news.zdnet.com/2100-1009_22-845220.html">there is obviously a scale problem</a> when you draw things out on a napkin. [Which is not to say this writer wouldn&#8217;t like to see more Atom over XMPP; it&#8217;s clearly a good idea. Nonetheless <a href="http://www.mnot.net/blog/2004/05/18/oh_no">the Web sky is not falling in yet</a>. ]</p>
+
+<p>And even in the push scenario, what&#8217;s the point of a protocol framework? Why not <a href="http://www.pubsub.com/docs/pubsub_xmpp_draft.html/">use XMPP for push/pubsub</a>? Does this mean when people on the ground start getting Eventing systems and EDAs built out over commodity IM, can we expect to see another rounds of the &#8220;It&#8217;s Not Sufficient&#8221; meme played out again, this time for messaging protocols?</p>
+
+<p><strong>What now for SOAP?</strong></p>
+
+<p>If you want to span systems asynchronously in a manageable fashion you&#8217;ve got to have standard models for addressing and identity baked in.  These are not optional if this stuff is expected to work. It&#8217;s taken some time for the WS community to get round to dealing with addressing and naming, but this is key stuff for getting something done over a gateway and for me, SOAP&#8217;s value <a href="http://www.innoq.com/blog/st/2005/08/19/wsaddressing_and_http.html">is largely in dealing with gateways asynchronously</a>. Addressing being an optional add-on to SOAP is quite strange then, although now that it exists that&#8217;s good news. Down the line then what would be useful is a subset and hardening of SOAP; a 1.3 revision where WS-A and some key message headers are non-optional. </p>
+
+<p>WS should be starting out with, and not ending with, profiles like <a href="http://www-128.ibm.com/developerworks/webservices/library/specification/ws-ramp/">RAMP</a>. </p>
+
+				
+        <a name="comments"> </a>
+				<p class="postmetadata alter">
+					<a href='http://lesscode.org/2005/09/17/no-soap-radio/feed/'>Comment <acronym title="Really Simple Syndication">RSS</acronym></a> -
+
+													<a href="http://lesscode.org/2005/09/17/no-soap-radio/trackback/">Trackback <acronym title="Uniform Resource Identifier">URI</acronym></a>
+
+						
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">5 Responses to &#8220;No SOAP Radio&#8221;</h3>
+
+	<ol class="commentlist">
+  	
+		<li class="alt" id="comment-390">
+			<p class="who"><cite><a href='http://bobwyman.pubsub.com/' rel='external ' title='68.174.167.137'>Bob Wyman</a></cite>:</p>
+			<p>You wrote: &#8220;Why not use XMPP for push/pubsub?&#8221;</p>
+<p>This is precisely what we do at <a href="http://pubsub.com/">PubSub.com</a>. We use XMPP with the pub/sub extensions defined in <a href="http://www.jabber.org/jeps/jep-0060.html">JEP-0060</a> to instantly notify users of updates to 16+ million RSS/Atom feeds, 50K+ newsgroups, SEC Edgar filing, earthquakes, etc. SOAP based web services and HTTP based systems are simply not adequate to this task since they either require holes in firewalls, polling or gateway services in order to get messages to desktop. To provide instant notifications, one really must have a push protocol&#8230; HTTP might be popular, but it isn&#8217;t much good for notifications.</p>
+<p>bob wyman</p>
+      <p>
+			<small>comment at <a href="#comment-390" title="">17. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-391">
+			<p class="who"><cite><a href='http://www.dehora.net/journal' rel='external ' title='83.70.245.221'>Bill de hÓra</a></cite>:</p>
+			<p>Hi Bob,</p>
+<p>Yep, I put in a link in to PubSub; and I&#8217;m guessing you got here because you&#8217;re using PubSub with a subscription to &#8220;pubsub&#8221; and &#8220;xmpp&#8221; ;) (incidentally you should check out the URI filter/query mechanisms being proposed for APP at the moment and see if it&#8217;ll map onto XMPP&#8230;) </p>
+<p>While I was thinking about system integration scenarios rather than pushing feeds to users here, the one thing that bugs me about the current push setup is that IM clients&#8230; suck. They&#8217;re much too intrusive - flashing, popping up; that&#8217;s fine maybe for chat, but they could take a cue from mail clients in the case of feed subscriptions. </p>
+<p>On the infrastructure level I see a lot of places that block XMPP and you have to argue to get the ports opened (resonating with Marshall&#8217;s point about firewalls). It really does seems that some folks find the idea of running a protocol over its correct port rather than 80 being more secure counter-intuitive.</p>
+      <p>
+			<small>comment at <a href="#comment-391" title="">17. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-397">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>This is where I think we can clearly see the fundamental difference in two popular world-views about the web and &#8220;web services&#8221;. </p>
+<blockquote>
+<p>“There’s no sense in trying to take bits<br />
+  that were designed for a distributed hypermedia system<br />
+  (Fielding’s words, not mine) and trying to bend it to fit<br />
+  a problem space that isn’t distributed hypermedia. Can we<br />
+  learn from the REST architectural style? Absolutely–and the<br />
+  new WS-* specs, including SOAP, do exactly that, favoring<br />
+  self-descriptive messages over RPC calls as the principal<br />
+  abstraction to deal with. But does that mean we tie ourselves<br />
+  solely to HTTP? Oh, hell no.”</p>
+</blockquote>
+<p>IMO, Ted&#8217;s world view makes the assumption that we have the luxury of imposing an entirely new set of techniques that are on an order of magnitude more complex than what is currently being used to accomplish ~80% of what is currently possible. Elliotte&#8217;s world view disallows him from making such an assumption. Any design that suggests we are capable of causing adoption of this kind of unprecedented amount of new technology should be heavily scrutinized. </p>
+<p>No one is arguing that these new techniques (WS-*) would not provide additional robustness when considered soley from the perspective of &#8220;an adopted distributed system&#8221;. The question is whether we have the fu required to make adoption of this stuff actually happen on the scale of &#8220;all business systems&#8221;. You must consider basic human tendencies, skill-set required for implementation, and whether previous systems in similar situations were successful. It is important that a design answer these questions fully. A design that does not will remain a design only. </p>
+<p>How does WS-* answer these questions? &#8220;We have big companies, standards bodies, and a tech press that will spend lots of money to convince people to adopt and everything will be great.&#8221;? It&#8217;s not working. It hasn&#8217;t been working for some time now. When will we begin a real conversation about these fundamental issues?</p>
+      <p>
+			<small>comment at <a href="#comment-397" title="">18. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-398">
+			<p class="who"><cite><a href='http://naeblis.cx/rtomayko/' rel='external ' title='69.168.180.186'>Ryan Tomayko</a></cite>:</p>
+			<p>
+By the way, Bill, where can I pick up that conversation between Ted and Elliotte? It looks like typical xml-dev but I&#8217;m not seeing the thread. Thanks.
+</p>
+<p><em>Nevermind, I can see that its happening on the blogs. Cool.</em></p>
+      <p>
+			<small>comment at <a href="#comment-398" title="">18. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-438">
+			<p class="who"><cite><a href='http://laurentszyster.be/blog/' rel='external ' title='62.205.103.55'>Laurent Szyster</a></cite>:</p>
+			<p>This is a late comment, I&#8217;m quite too busy to read that much.</p>
+<p>&#8220;If you want to span systems asynchronously in a manageable fashion you’ve got to have standard models for addressing and identity baked in.&#8221;</p>
+<p>Indeed.</p>
+<p>&#8220;It’s taken some time for the WS community to get round to dealing with addressing and naming, but this is key stuff for getting something done over a gateway and for me, SOAP’s value is largely in dealing with gateways asynchronously.&#8221;</p>
+<p>Did they get round addressing and naming?</p>
+<p>They did not yet got round the riddle of asynchrony.</p>
+<p>In 2000 I reviewed SOAP 1.0 gateway, built a whole test case for some reinsurance network company, complete with SSL/TLS client certificate and  integrated as a Python web peer and interfaced with some EDI/XML tool chain and a qmail queue. Simple, fast, cheap. It&#8217;s the only software they managed to sell when the network was disolved: it showed the London buyer how to match a team of IBM Java swiss experts with two british VB programmers and some free software.</p>
+<p>My judgement from that experiment is that SOAP is broken.</p>
+<p>Asynchronously broken.</p>
+<p>The envelope is before the body, which is fine for a synchronous process, but deadwrong when handling asynchronously pipelined requests. Because:</p>
+<ol>
+<li>
+<p>the envelope is the state of the transtaction instance.</p>
+</li>
+<li>
+<p>the body is the state returned by a method of that transaction</p>
+</li>
+<li>
+<p>the common transaction is usually made of a sequence of calls<br />
+that modify the transaction state</p>
+</li>
+</ol>
+<p>Yet there is no way to actually program an asynchronous SOAP server because the f****ing state as modified by the transaction must precede the result of the function that just happen to modify that state!</p>
+<p>Too bad.</p>
+<p>Really too bad, because back in 2000, an asynchronous Python server running on a 133mhz Pentium III was flooding some Java Application Server running on the kind of hardware Swiss Reinsurer can afford. Too many processes, not enough memory.</p>
+<p>SOAP should read like this, translated in an XMLization of Python keywords:</p>
+<pre>&lt;call arg="val"&gt;
+  &lt;return/&gt;
+  &lt;self/&gt;
+&lt;/call&gt;</pre>
+<p>And often, that is what most XML transported by SOAP gateways will contain if there is an asynchronous handler in the process.</p>
+      <p>
+			<small>comment at <a href="#comment-438" title="">25. September 2005</a> </small>
+						</p>
+
+		</li>
+
+	
+	        
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+
+<form action="http://lesscode.org/wp-comments-post.php" method="post" id="commentform">
+
+
+<p>
+  <small>
+    <strong>Note:</strong> None of this information is required but 
+    leaving a Name and URL is much appreciated. You can also <a href="/wp-register.php">register</a>
+    to have this stuff remembered.
+  </small>
+</p>
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+<div id="ajax-comment-preview" style="padding: .4em 0; color: #666; margin-top: 1em; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">Your comment can be previewed here.</div>
+
+<p>
+  <br />
+  <small>
+    <strong><a href="http://daringfireball.net/projects/markdown/syntax"
+       title="Markdown Syntax Reference">Markdown</a>:</strong> 
+    use the force, Luke.
+  </small>
+</p>
+
+<p>
+  <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+</p>
+
+<p>
+  <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="76" />
+</p>
+<input name="preview" type="button" id="preview" tabindex="6" value="Preview" /><div id="ajax-comment-preview"></div>
+</form>
+
+
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.427 seconds -->
+<!-- Cached page served by WP-Cache -->

@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" 
+        content="text/html; charset=UTF-8" />
+
+  <title>lesscode.org</title>
+	<meta name="generator" content="WordPress 2.0.1" />
+
+	<link rel="stylesheet" href="http://lesscode.org/wp-content/themes/almodovar/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lesscode.org/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lesscode.org/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://lesscode.org/feed/atom/" />
+	<link rel="pingback" href="http://lesscode.org/xmlrpc.php" />
+
+        <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+        _uacct = "UA-125803-1";
+        urchinTracker();
+        </script>
+		<link rel='archives' title='October 2006' href='http://lesscode.org/2006/10/' />
+	<link rel='archives' title='April 2006' href='http://lesscode.org/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://lesscode.org/2006/03/' />
+	<link rel='archives' title='January 2006' href='http://lesscode.org/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://lesscode.org/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://lesscode.org/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://lesscode.org/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://lesscode.org/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://lesscode.org/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://lesscode.org/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://lesscode.org/2005/06/' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://lesscode.org/xmlrpc.php?rsd" />
+</head>
+<body>
+
+<div id="page">
+<h1><a href="http://lesscode.org">lesscode.org</a></h1>
+<div id="navcontainer">
+		<ul id="navlist">
+			<li class="page_item"><a href="http://lesscode.org/archives/" title="archives">archives</a></li>
+<li class="page_item"><a href="http://lesscode.org/about/" title="about lesscode.org">about lesscode.org</a></li>
+		</ul>
+</div>
+<hr />
+	<div id="content" class="narrowcolumn">
+
+	
+					<div id="datum">28 Aug 05</div>
+			<div class="post">
+				<div id="zeit">
+				 04<br />
+				 30				</div>
+				<h2 id="post-72"><a href="http://lesscode.org/2005/08/28/choosing-the-platform/" rel="bookmark" title="Permanent Link to Choosing The Platform">Choosing The Platform</a>&nbsp;&nbsp;<span>Comments Off </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/by-status/then-they-laugh-at-you/" title="View all posts in Then they laugh at you..." rel="category tag">Then they laugh at you...</a></small>
+
+				<div class="entry">
+					<p>This is a two-parter in two parts.</p>
+
+<p>A few months ago I became partial owner of a small technology company. A
+long time friend and colleague had started in on a set of web applications for
+managing (US) health benefits (wait - don&#8217;t go anywhere yet, this will
+get on topic in a second) and succeeded in convincing me that this was
+an area of business IT that could benefit excessively from being part of
+the web. About 60% of this particular application&#8217;s functionality was
+there when I signed on and was built using Microsoft&#8217;s .NET, SQL Server,
+and IIS. My partner had little experience with the technologies I tend
+to recommend on this site and so the decision was made to move forward
+with the safety of .NET while researching potential alternatives for
+future work.</p>
+
+<p>My days have been spent refining and growing the .NET app while my
+nights were spent researching and assembling a platform that would allow
+us to work in a much more agile environment. I have a fair bit of
+experience working with LAMP (where &#8220;P&#8221; is for
+<a href="http://www.python.org">Python</a> and &#8220;M&#8221; is for
+<a href="http://www.postgresql.org/">PostgreSQL</a>). That experience served as a
+starting point but what I&#8217;m after is much more than a simple running
+environment. I&#8217;d like to pull together the various tools necessary to
+develop, test, manage, maintain, and deploy applications built on the
+LAMP foundation. That means everything from Subversion to Mailman, Trac
+to Wordpress, and on down into the guts of a hacking environment like
+build tools (<code>make</code>, etc.), automated documentation utilities,
+continuous integration and testing, etc.</p>
+
+<p>That&#8217;s the briefest possible history to bring us up to present time
+where I&#8217;d like to talk about two important observations I&#8217;ve made over
+the past few months of being in this situation. I&#8217;ll be talking
+primarily about Microsoft but everything here is applicable to the Java
+platform and, in some cases, is more so because I&#8217;ve made a few
+assumptions about what is available for .NET based on Java experience
+(for instance, I&#8217;ve barely used Nant or NUnit but assume they&#8217;re roughly
+on par with Ant and JUnit).</p>
+
+<p>The first observation (and the one I will be exploring for the rest of
+this post) comes from being in extremely close, and somewhat
+handicapped, competition with the Microsoft platform. Please remember
+that I am partial owner of this company, have a working application
+written in .NET, and feel extreme amounts of pressure to create revenue
+quickly while keeping cost (in both time and money) at a minimum. This
+situation has forced me to use extreme prejudice when evaluating tools
+and technologies. In some ways I&#8217;ve inherited the responsibility of
+championing Microsoft&#8217;s platform (if only to myself) as my situation
+requires that I provide real evidence that shows not only that gains can
+be had by using something different but that these gains are significant
+enough to justify the cost of that change. In general, the situation
+just plain sucks - I have to work much harder than if we were to secure a
+couple million in R&amp;D budget for the year or were juiced up on venture
+cap. I&#8217;m not saying that because I wouldn&#8217;t give 100% of my capacity
+in those situations but it&#8217;s hard to imagine manufacturing the level of
+discipline created when your house is sunk into something.</p>
+
+<p>Back to Microsoft&#8217;s platform: they have all the major pieces in one
+place, are fairly organized, and are extremely accessible. However, time
+and again I&#8217;m finding that I can beat them in almost any given area with
+lightweight F/OSS technology but I can&#8217;t beat the platform as a
+whole. It&#8217;s just all there. The sense of safety this creates cannot be
+ignored (I&#8217;ve tried).</p>
+
+<p>I want to be absolutely clear about that last point because I&#8217;d hate to
+be misrepresented: in a great number of cases, I&#8217;ve found individual
+F/OSS technologies to be superior to their Microsoft counterparts but
+the lack of an overall platform whole is distressing. I don&#8217;t care about
+indemnity, paid support, certification, finding people to hire, TCO
+(blech!), etc. because I already understand the F/OSS answer to those
+questions and they <em>are</em> compelling. I do care about being able to
+answer the phone, talk to a customer, and feel confident in what and
+when I can deliver. Microsoft either gives me that ability or gives me
+the illusion of having that ability - it&#8217;s assuring and troubling at the
+same time.</p>
+
+<p>All this is to say that Kevin Barnes&#8217; <a href="http://www.journalhome.com/codecraft/9003/">Freedom
+Languages</a> <em>really</em> hit a
+chord with me. I have very little doubt in the area of language: Python
+or Ruby just completely destroy any of the mainstream .NET languages and
+Java to boot. What makes me feel safe is the consistency of the rest of
+the tool-chain, the massive amount of component libraries, and the
+breadth of the core platform.</p>
+
+<p>I keep going back to Kevin&#8217;s idea of measuring things on the axes of
+Freedom vs. Safety, where &#8220;freedom&#8221; isn&#8217;t so much
+<a href="http://www.gnu.org/philosophy/free-sw.html">GNU-freedom-type-freedom</a>
+but rather a sort of aggregate measure of the <a href="http://lesscode.org/2005/07/21/motherhood-and-apple-pie/">qualities we find most
+compelling</a> in
+software design and architecture. Weighing things on this scale helps
+explain some of the intuition I&#8217;ve been feeling over the past months. If
+we measure the three major platforms competing for business mind-share,
+I think you find first that Microsoft is extremely safe while offering
+the least freedom. Next we have Java, which is pretty safe too but the
+established F/OSS communities (e.g. <a href="http://jakarta.apache.org/">Apache</a>, 
+<a href="http://codehaus.org/">Codehaus</a>, etc.) and even the
+vendor&#8217;s (<a href="http://java.sun.com">Sun</a>, <a href="http://ibm.com">IBM</a>, <a href="http://bea.com">BEA</a>, etc.) 
+positions provide a bit more freedom. We then arrive at LAMP and friends 
+which tend to sacrifice safety but provide unmatched freedom and thus, when 
+measured along the web&#8217;s core <a href="http://www.w3.org/DesignIssues/Principles.html">axioms</a>, 
+quality.</p>
+
+<p>Given those basic metrics, choosing a platform comes down to making two
+key decisions: where do you fall on the safety/freedom scale <em>and</em> in
+what manner would you like to proceed? Your remaining time
+(e.g. forever) will be spent doing one of two things: making the
+platform more safe or making the platform more free. You have infinitely
+greater control over one of these situations.</p>
+
+<p>We played the fence but I believe we&#8217;re arriving at a turning
+point. I&#8217;ll talk about that in <a href="http://lesscode.org/2005/08/28/assembling-the-platform/">part two</a> because the areas explored there
+are different enough to warrant a separate URL - mainly my experiences
+in making the LAMP platform more safe and complete but with twists and
+turns that will eat your brane.</p>
+
+<p><a href="http://lesscode.org/2005/08/28/assembling-the-platform/">Take Me To Part Two - Assembling The Platform</a></p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/08/28/choosing-the-platform/"
+    dc:identifier="http://lesscode.org/2005/08/28/choosing-the-platform/"
+    dc:title="Choosing The Platform"
+    trackback:ping="http://lesscode.org/2005/08/28/choosing-the-platform/trackback/" />
+</rdf:RDF>				-->
+        <p>Comments are closed.</small></p>
+			</div>
+
+					<div id="datum"></div>
+			<div class="post">
+				<div id="zeit">
+				 01<br />
+				 49				</div>
+				<h2 id="post-71"><a href="http://lesscode.org/2005/08/28/java-tunnel-vision/" rel="bookmark" title="Permanent Link to Java Tunnel Vision">Java Tunnel Vision</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/08/28/java-tunnel-vision/#comments" title="Comment on Java Tunnel Vision">11</a> </span></h2>
+				<small>By <a href="http://www.jooto.com/blog">Alex Bunardzic</a>
+        under <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a></small>
+
+				<div class="entry">
+					<p>I am indebted to Stefan Arentz (<a href="http://www.sateh.com/blog/2005/08/ror_tunnel_vision.php">RoR Tunnel Vision</a>) for helping me articulate better the issue with the impasse software development community is faced with today. His keen observations, while aimed toward explaining how no trace of crisis in the world of software development (and in particular in the world of Java-based development) is detectable on the radar, actually helped me tremendously in corroborating my initial hypotheses.</p>
+
+<p>Stephan begins his rant by admitting how he couldn’t get a clear indication from my original post on what kind of complexity am I referring to when it comes to developing applications using J2EE platform. And here I admit my mistake, caused by my desire to be brief and to the point. I did use the J2EE moniker, but what I actually meant was ‘J2EE-flavored frameworks’. By that I mean any and all of the official and open source frameworks available on the market today. Frameworks such as JCA, JMS, JSF, Velocity, Expresso, Tapestry, Jetspeed, Hibernate, Spring, the list goes on and on.</p>
+
+<p>Any of the above listed and implied frameworks would do; I’ve given a chance to almost all of them, only to turn away in disgust. There’s gotta be a better way! Come on, we’re battle-scared professionals, admit it, there simply has to be a better way.</p>
+
+<p>Stefan tried to reassure me that Java didn’t sit still during its 10 years tenure here on earth (“Alex, you just have to be open minded and stop thinking that Java has not progressed in the last 10”). Yes, I am painfully aware of the fact that Java has progressed (there are days when, in desperation, I think how I wish it did indeed stand still, instead of turning into this Frankenstein that we have to deal with today). As an early adopter and a veritable Java evangelist, I’ve watched the language of my choice transmogrify from seductive little agile, compact product, into the monstrosity that it is today. Needless to say, I’m not amused.</p>
+
+<p>I did buy into Java 10 years ago, hook line and sinker, because I really believed in the power of developing commercial grade business applications without having to depend on moronic, bloated IDEs and the surrounding environmental support (I’ve managed to successfully desert Microsoft’s ‘DLL Hell’, with all its implied complexities and monstrosities, back in 1996). Nine years ago (heck, even seven or eight years ago), only me and my notepad, armed with a small footprint JVM and JSDK on my laptop could walk into a giant corporation and get things rolling in a matter of hours. I could easily build agile applications in Java, quickly cobble up fully functional prototypes, deliver educational sessions on the fly, convert the crowd and talk them into abandoning C++, COBOL, what have you, and move to the new mistress, Java, all from my lowly little laptop. Not having to rely on any tool, other than a simple text editor, I could do high grade, high output work and get paid handsomely.</p>
+
+<p>Then, one day, ouch! Along came IBM and started pushing this completely idiotic product called Visual Age on unsuspecting Java developers. Oh, how I hated the guts of that product! My company forced me to complete weeks and weeks of advanced Visual Age IBM courses, and that was one of the most painful experiences in my software development career. Right there, I knew they are pushing this ‘giant solution in search of a problem’ on people who really, really don’t need it.</p>
+
+<p>Today, if I want to walk into a corporation and offer my Java skills, I need a fancy, state-of-the-art EDI, such as Eclipse (another incarnation of Visual Age, with a lipstick on it) with countless plug-ins and all the bullshit that I don’t really care for. That situation is actually laughable, if you ask me.</p>
+
+<p>Stefan continues with a reasonable observation: “Interestingly, complexity is not something tied to a specific platform. It happens everywhere with all kinds of code.”</p>
+
+<p>True, very true. Everybody knows that complexity is a fact of life, and thus it is unavoidable.</p>
+
+<p>What I was referring to, however, was <em>unnecessary</em> complexity. And my grievance with Java is that it is, as a language and as a platform, <b>unnecessarily</b> complex today.</p>
+
+<p>Here, however, is where we get to the essence of the problem – Stefan writes: “Yes there are a lot of choices, but we are talking about people here who are smart enough to pick Ruby on Rails, so why can&#8217;t those people also do a bit of research in the Java world and pick a good framework there.”</p>
+
+<p>You see, Stefan, this is exactly the name of my pain. ‘Do a bit of research’. I’ve spent exorbitant amounts of time in the past six-seven years doing endless research around Java community, relentlessly chasing the elusive dream of the possibility of developing apps in a simple, straightforward way. I’ve tried all the latest and the greatest Java hype, followed religiously every Javaworld and The Server Side and Artima  article, but only to in the end throw my hands up in the air in utter desperation. After all was said and done, at the end of the day, all I have is an enormously bloated, to the point of bursting at the seams, Eclipse platform. I am currently nursing countless frameworks, plug-ins, SOA and EMF bullshit is coming out of my ears. My 60 GB laptop with 1 GB main memory cannot take it any more.</p>
+
+<p>All these wonderful frameworks and plug-ins are supposed to turn me into this Super Developer who can crank up incredibly powerful and complex solutions in a matter of minutes. But guess what – instead of being this mythical uber-developer, I can barely get off the ground under the weight of enormous amount of idiotic infrastructure code.</p>
+
+<p>I feel extremely uncomfortable with this situation. I don’t think we, as a community of Java developers, are standing on the solid, firm ground. I think the ground on which we stand is bound to give in under our feet, sooner or later. This is why I’m trying to defect to the Ruby camp, where life is simpler, the air is fresher, and the movement is truly, not nominally, agile.</p>
+
+<p>So, my bottom line answer to your question above is: if Java were truly capable of offering agility, simplicity and power, then the search for a suitable framework wouldn’t have to turn into a multi-month, open-ended wild geese chase. The agility, simplicity and conciseness would be right there, at our fingertips.</p>
+
+<p>Stefan continues with: “Alex, that <em>you</em> cannot be Agile with Java does not mean that it is not possible at all. Many people are extremely agile with Java development. People even wrote books about it. You obviously don&#8217;t know what is going on it that world. Is that why you make a straw man argument?”</p>
+
+<p>I am not disputing that it is possible to be agile with Java. Anything’s possible, given sufficient resources. I’m only complaining that, in order to get to be agile with Java, one is forced to invest inordinate, almost astronomical amounts of effort. And that, not surprisingly, comes with the astronomical price tag.</p>
+
+<p>And that is precisely why I say that business computing is in cahoots today, as every move implies astronomical costs. The businesses simply cannot afford to operate in that fashion, regardless of how much fun the developers may be having in their cubicles.</p>
+
+<p>Towards the end, Stefan throws all caution in the air, not being able to resist bragging a little: “Heh. Dude. Who cares that my EJB3 application needs 12MB of jar files. I can now convert a complete persistence model to working code by just writing plain old java objects and adding an annotation here and there to specify the relationship parameters.”</p>
+
+<p>Stefan is obviously proud of the latest and greatest Java crutch – annotations. I’m not going to rain on anyone’s parade here, so I’ll just leave it at that. But it is a vivid example of what usually tends to go wrong with the Java tunnel vision.</p>
+
+<p>I’ve enjoyed Stefan’s parting words: “I invite you to take a second look at Java. Talk to people. See how they are getting more productive. Look around what is going on. You might discover some Really Good Stuff.”</p>
+
+<p>Thanks for the invitation, Stefan. Java is my bread-and-butter, that’s how I make my living these days, so willy-nilly, I am forced to take a second look at it and to talk to people. They are indeed attempting to get more productive by being forced to constantly toss out some old paradigms that were new six months ago and adopt some shiny new paradigm pushed on them by some group of raving developers (like, the aforementioned annotations), that will become old and rusty six months down the road. Last year it was aspect-oriented bullshit. This year, it is annotations. Next year – anyone’s guess.</p>
+
+<p>Let me tell you – people are getting mighty tired of that particular brand of a rat race.</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/08/28/java-tunnel-vision/"
+    dc:identifier="http://lesscode.org/2005/08/28/java-tunnel-vision/"
+    dc:title="Java Tunnel Vision"
+    trackback:ping="http://lesscode.org/2005/08/28/java-tunnel-vision/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/08/28/java-tunnel-vision/#comments" class="comments-link" title="Comment on Java Tunnel Vision">11 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">26 Aug 05</div>
+			<div class="post">
+				<div id="zeit">
+				 02<br />
+				 50				</div>
+				<h2 id="post-68"><a href="http://lesscode.org/2005/08/26/emacs-browser-convergance/" rel="bookmark" title="Permanent Link to When Emacs and The Browser converge">When Emacs and The Browser converge</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/08/26/emacs-browser-convergance/#comments" title="Comment on When Emacs and The Browser converge">14</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/talk/" title="View all posts in Talk" rel="category tag">Talk</a></small>
+
+				<div class="entry">
+					<p>I finally broke down a few days ago and decided to make
+<a href="http://www.mozilla.org/products/firefox/">Firefox</a> my default
+browser. I&#8217;ve tried to move away from Safari a few times in the past but
+never made it longer than a day. Safari is a better OS X application in
+some very fundamental ways but I&#8217;m encouraged by the <a href="http://wiki.mozilla.org/Mac:Home_Page">Firefox/Mac
+activity</a> slated for Firefox 1.5
+and beyond.</p>
+
+<p>My reason for switching and my reason for holding off for so long are
+the same: my browser contains significant customization and
+personalization. I&#8217;ve built up a nice little toolset on top of Safari
+that includes
+<a href="http://naeblis.cx/rtomayko/2005/01/12/experimental-delicious-thing-generator">bookmarklets</a>,
+<a href="http://haoli.dnsalias.com/Saft/">extensions</a>, and <a href="http://www.atamadison.com/w/kitzkikz.php?page=Sogudi">URL
+searches</a>, not to
+mention all of my cookies, passwords, and history. Once you&#8217;ve
+established a normal workflow around these customizations, it becomes
+hard to go without them. It&#8217;s not unlike trying to switch from Emacs
+(with a ~5,000 line <code>.emacs</code> file crufted over years of use) to vi.</p>
+
+<p>But, as I said, the ability to customize the browser has become so
+important to me that I&#8217;m willing to take the hit to productivity and
+Macishness now to get ramped up on a platform with far greater support
+for customization. In other words,
+<a href="http://greasemonkey.mozdev.org/">Greasemonkey</a>. I&#8217;ve only just begun
+<a href="http://diveintogreasemonkey.org/">diving in</a> but my experience thus far
+is promising. The ability to automate tasks and extend basic web content
+with simple scripts seems so insanely obvious that I&#8217;m having a hard
+time understanding how this wasn&#8217;t a built-in feature of the 3.0 era
+browsers. Greasemonkey may be the first signs of a long awaited
+convergence between Emacs and The Browser :) Now if I could just get an
+<code>M-x</code> prompt, we&#8217;d be in business (<a href="http://www.yubnub.org/">YubNub</a> anyone?)</p>
+
+<p>As with Emacs, I will now begin building an embarassingly unorganized
+collection of hacks. I spent an hour or so combing through the <a href="http://dunck.us/collab/GreaseMonkeyUserScripts">massive
+repository of user
+scripts</a> just to get my
+feet wet. Notes and pointers to stuff I found useful as follows&#8230;</p>
+
+<h3>Auto Login Everywhere</h3>
+
+<p>The
+<a href="http://blog.monstuff.com/archives/images/AllowPasswordRemembering.user.js">AllowPasswordRemembering</a>
+and
+<a href="http://www.squarefree.com/userscripts/autologinj.user.js">AutoLoginJ</a>
+scripts can be used to get almost reliable automatic login anywhere that
+Firefox puts up the &#8220;Remember this password&#8221; dialog. When you hit a site
+that Firefox has login information for, the AutoLoginJ script goes ahead
+and auto-submits the form. I&#8217;ve tested it across a couple of different
+sites and it seems to work about half the time. My banking site,
+<a href="http://connection.oreilly.com">O&#8217;Reilly Connection</a>, and Vonage seem to
+work well but none of Yahoo, del.icio.us, or flickr.com worked.</p>
+
+<h3>Video URLs</h3>
+
+<p>I <em>hate</em> multimedia on the web – especially video. There&#8217;s a special
+place in hell for whoever is responsible for the tiny embedded players
+with format/bandwidth selection and shite controls that are so common. I
+promise the experience would be dramatically increased if all video was
+reduced to a thumbnailed image linking to an actual real video file.</p>
+
+<p>The
+<a href="http://neugierig.org/software/greasemonkey/unembed.user.js">Unembed</a>
+user script gets me half way there by inserting a link to the video file
+under the video display. My first hack will be to have it <em>replace</em> the
+<code>&lt;embed&gt;</code> with an <code>&lt;a&gt;</code>.</p>
+
+<p>If you&#8217;re looking for somewhere to test this script, I highly recommend
+<a href="http://www.thisspartanlife.com/">This Spartan Life</a>.</p>
+
+<h3>A Whole New Google</h3>
+
+<p>There is an immense set of useful <a href="http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4">Google specific scripts</a>.
+I&#8217;m using <a href="http://philwilson.org/code/greasemonkey/google-accesskeys.user.js">Google Access Keys</a>
+and <a href="http://martin.davidssons.com/google-searchkeys.user.js">Google Search Keys</a>
+for quick keyboard navigation of search results. The <a href="http://patcavit.com/greasemonkey/girl.user.js">Google Image Rewriter</a>
+makes image search results link directly to the image instead of that weird 
+framed thing.</p>
+
+<h3>Holy Crap, I can use Slashdot</h3>
+
+<p>The <a href="http://blog.monstuff.com/archives/images/SlashdotSinglePageView.user.js">Slashdot Single Page View</a> script provides 
+thread expansion without requiring a page refresh, <a href="http://denism.homeip.net/software/greasemonkey/slashdot-xsidebars.user.js">xSidebars</a> 
+removes the butt-cheeks, and <a href="http://www.cs.uni-magdeburg.de/~vlaube/Projekte/GreaseMonkey/slashdotaddmirrors.user.js">Add Mirrors</a>
+puts nice little <a href="http://www.coralcdn.org/">Coral</a>, <a href="http://www.mirrordot.com/">MirrorDot</a>,
+and <a href="http://www.google.com/">Google Cache</a> links next to every single link
+on the page. There&#8217;s more <a href="http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-ec4846dd1f06f8efd2d256a59577b3faaebbbf12">Slashdot specific scripts</a>
+I haven&#8217;t tried yet.</p>
+
+<h3>Misc.</h3>
+
+<p>Other scripts I&#8217;ve found useful:</p>
+
+<ul>
+<li><p><a href="http://diveintomark.org/projects/greasemonkey/betterdir.user.js">BetterDir</a>
+beautifies Apache directory listings. It&#8217;s really not that big of a deal 
+but it shows the types of interaction a user script can have with a page.</p></li>
+<li><p><a href="http://www.geocities.com/robjderr/CookieMonster.user.js">CookieMonster</a>
+puts a little thing in the bottom left of the page that shows raw cookie 
+data for the current page upon hover.</p></li>
+<li><p><a href="http://speed.insane.com/files/nofollow.user.js">Nofollow display</a> 
+<strike>strikes</strike> links having a <code>rel="nofollow"</code> attribute. Mildly 
+interesting sometimes.</p></li>
+<li><p><a href="http://www.lafferty.ca/software/greasemonkey/sourceplease.user.js">SourcePlease</a>
+removes some of the insanity of <a href="http://sourceforge.net/project/showfiles.php?group_id=33044">SourceForge file listings</a>
+by linking directly to a specific mirror&#8217;s copy of a file, removing the 
+need to wade through five pages of ads.</p></li>
+<li><p><a href="http://blog.monstuff.com/archives/images/TextareaResize.user.js">TextareaResize</a>
+sounds cool but doesn&#8217;t seem to work.</p></li>
+<li><p><a href="http://www.reifysoft.com/projects/turnabout/scripts/SearchTermHighlighter.user.js">SearchTermHighlighter</a>
+gives you Google cache style highlighting of pages entered through a 
+major search engine. The highlight is non-intrusive.</p></li>
+</ul>
+
+<p>Come on, I know you guys have some gem recommendations – what am I missing?</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/08/26/emacs-browser-convergance/"
+    dc:identifier="http://lesscode.org/2005/08/26/emacs-browser-convergance/"
+    dc:title="When Emacs and The Browser converge"
+    trackback:ping="http://lesscode.org/2005/08/26/emacs-browser-convergance/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/08/26/emacs-browser-convergance/#comments" class="comments-link" title="Comment on When Emacs and The Browser converge">14 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">25 Aug 05</div>
+			<div class="post">
+				<div id="zeit">
+				 14<br />
+				 38				</div>
+				<h2 id="post-67"><a href="http://lesscode.org/2005/08/25/freedom-vs-safety/" rel="bookmark" title="Permanent Link to Freedom vs. Safety">Freedom vs. Safety</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/08/25/freedom-vs-safety/#comments" title="Comment on Freedom vs. Safety">4</a> </span></h2>
+				<small>By <a href="http://naeblis.cx/rtomayko/">Ryan Tomayko</a>
+        under <a href="http://lesscode.org/category/theory/" title="View all posts in Theory" rel="category tag">Theory</a></small>
+
+				<div class="entry">
+					<p>Kevin Barnes&#8217; <a href="http://www.journalhome.com/codecraft/9003/" title="Freedom Languages">Freedom Languages</a> is one of the best high level
+takes on the language divide I&#8217;ve read in a long time. He nails the
+major differences between the situation previously referred to as
+&#8220;dynamically vs. statically typed languages&#8221;. But he goes much further,
+placing languages into either &#8220;Freedom&#8221; or &#8220;Safety&#8221; categories and then
+listing the relative merits of each. I for one will be adopting this
+update in terminology.</p>
+
+<p>As an illustration of how dead-on Kevin is in his analysis, here&#8217;s a
+link annotated paragraph on what you can expect from the &#8220;Freedom
+Language&#8221; advocate:</p>
+
+<blockquote>
+  <p><a href="http://lesscode.org/about">The advocates of freedom languages</a> tend
+  to talk first about the <a href="http://www.artima.com/intv/prodperf.html" title="Bruce Eckel - Productivity over Performance">speed</a> and
+  <a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;entry=3256379312" title="James Robertson - Smalltalk and Productivity">efficiency</a> of the individual programmer. They discuss the
+  <a href="http://lesscode.org/2005/07/12/design-patterns-in-dynamic-languages/" title="Robert Sayre - Design Patterns in Dynamic Languages">expressive power</a> of different constructs and focus on all
+  the <a href="http://dirtsimple.org/2004/12/python-is-not-java.html" title="Phillip J. Eby - Python Is Not Java">powerful features that the safety languages lack</a>. They
+  <a href="http://blogs.law.harvard.edu/ivan/2005/08/06#a10" title="Beauty against complexity">point out</a> <a href="http://www.ferg.org/projects/python_java_side-by-side.html" title="Python &amp; Java: A Side-by-Side Comparison">complex patterns</a> and <a href="http://lesscode.org/2005/07/15/more-j2ee-vs-rails/" title="Ryan Tomayko - Rails Furthers Industry Acceptance">show off twenty-line
+  systems</a> that do the same thing.  They talk more about the
+  <a href="http://www.billkatz.com/node/42" title="Bill Katz - Could Rails have been built without Ruby">ease or purity</a> of things than the safety of things. They are
+  <a href="http://www.loudthinking.com/arc/000479.html" title="David Heinmeier Hanson - It's boring to scale with Ruby on Rails">dismissive</a> of <a href="http://www.mindview.net/WebLog/log-0025" title="Bruce Eckel - Strong Typing vs. Strong Testing">static-type-safety and compile-time
+  validation in general</a>.</p>
+</blockquote>
+
+<p>Also, be sure to check out <a href="http://www.cincomsmalltalk.com/blog/blogView?showComments=true&amp;entry=3302357878">James Robertson&#8217;s commentary</a>
+on Kevin&#8217;s post as well.</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/08/25/freedom-vs-safety/"
+    dc:identifier="http://lesscode.org/2005/08/25/freedom-vs-safety/"
+    dc:title="Freedom vs. Safety"
+    trackback:ping="http://lesscode.org/2005/08/25/freedom-vs-safety/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/08/25/freedom-vs-safety/#comments" class="comments-link" title="Comment on Freedom vs. Safety">4 Comments...</a></small></p>
+			</div>
+
+					<div id="datum">24 Aug 05</div>
+			<div class="post">
+				<div id="zeit">
+				 19<br />
+				 00				</div>
+				<h2 id="post-66"><a href="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/" rel="bookmark" title="Permanent Link to Software Industrialization Or Software Craft?">Software Industrialization Or Software Craft?</a>&nbsp;&nbsp;<span><a href="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/#comments" title="Comment on Software Industrialization Or Software Craft?">10</a> </span></h2>
+				<small>By <a href="http://www.jooto.com/blog">Alex Bunardzic</a>
+        under <a href="http://lesscode.org/category/by-status/first-they-ignore-you/" title="View all posts in First they ignore you.." rel="category tag">First they ignore you..</a></small>
+
+				<div class="entry">
+					<p>If I were to state that software industry is in crisis, I would be guilty of stating the obvious. The field of software development has been in crisis ever since the early ‘90s, if not even earlier than that.</p>
+
+<p>But what’s important is to realize that nowadays, this crisis has reached major proportions. I know I sound like yet another ‘the sky is falling’ FUD protagonist, but there simply isn’t any other way to look at the problem. A significant number of mid sized and large corporations worldwide have been ‘once bitten, twice shy’ when it comes to making any significant investment in their software practices. Thus, the status quo situation is growing stale at a breakneck pace.</p>
+
+<p>So why am I bringing this up? Simply because I am sensing an impeding tension building up between the proposed practices of software industrialization as opposed to staying with the tried-and-true practices of crafting software by hand.</p>
+
+<p>Software industrialization (you can read more about it <a href=http://www.softwarefactories.com/>here</a>) proponents insist that, in order to get out of the software development slump, we must make a transition from the hand crafted way of developing software to a full blown industrial assembly line model.</p>
+
+<p>Fine. Automate as much as possible, rendering the whole process much more affordable. What could be wrong with that?</p>
+
+<p>But not so fast. At the same time, while we’re getting caught in endless deliberation over whether Microsoft or Java or Oracle or SAP or LAMP or…? should be the worldwide software ‘industrializator’, another light at the end of the tunnel is becoming more and more visible. This light is what I would call the ‘smart servant’ approach.</p>
+
+<p>So, instead of the proposed ‘dumb workforce’ mass industrialization model, an alternative model is being proposed whereby a handful of smart servants should be deployed to accomplish the workload of huge army of faceless, nameless drones.</p>
+
+<p>In other words, instead of generating faceless, nameless reams of cheap software code, the alternative approach offers the possibility of hand crafting very high quality software code that will bring additional power to its users.</p>
+
+<p>The ‘smart servant’ principle claims that it is better to employ a smart person or device, who will be able to accomplish complex tasks upon hearing just a handful of simple commands, than to employ an army of dumb devices who will have to be fed large lists of aggregated complex instructions, to be followed blindly.</p>
+
+<p>The question, of course, is why should a smart servant be a better model?</p>
+
+<p>Before I offer  my views on why this should be so, I’d like to pause for a minute, and see if anyone would like to tackle this little challenge?</p>
+
+<p>And so, without further ado, I’d like to now open the floor for a brief discussion on this topic…</p>
+				</div>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	    xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/"
+    dc:identifier="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/"
+    dc:title="Software Industrialization Or Software Craft?"
+    trackback:ping="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/trackback/" />
+</rdf:RDF>				-->
+        <p><a href="http://lesscode.org/2005/08/24/software-industrialization-or-software-craft/#comments" class="comments-link" title="Comment on Software Industrialization Or Software Craft?">10 Comments...</a></small></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://lesscode.org/page/12/"></a><a href="http://lesscode.org/page/14/">&laquo; previous</a></div>
+			<div class="alignright"><a href="http://lesscode.org/page/12/">next &raquo;</a><a href="http://lesscode.org/page/14/"></a></div>
+		</div>
+
+	
+	</div>
+
+
+<div id="footer">
+	<p style="float: left;">
+		feeds: 
+    <a href="http://lesscode.org/feed/atom/" title="Atom 0.3 feed for all posts">
+      posts</a> (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/feed/atom/">valid?</a>)
+    or <a href="http://lesscode.org/comments/feed/" title="RSS 2.0 feed for comments">comments</a>
+       (<a href="http://feedvalidator.org/check.cgi?url=http://lesscode.org/comments/feed/">valid?</a>)
+    <br />
+		design by <a href="http://blog.ratterobert.com/">ratter / robert</a><br />
+		powered by <a href="http://wordpress.org">WordPress</a>.<a href="http://wordpress.de">de</a><br />
+	</p>
+		<a name="search"><form method="get" id="searchform" action="/index.php">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</a>
+</div>
+<div id="switcher">
+	<center>
+			</center>
+</div>
+</div>
+		</body>
+</html>
+
+<!-- Dynamic Page Served (once) in 0.524 seconds -->

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: No SOAP Radio</title>
+	<link>http://lesscode.org/2005/09/17/no-soap-radio/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:12:33 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Laurent Szyster</title>
+		<link>http://lesscode.org/2005/09/17/no-soap-radio/#comment-438</link>
+		<pubDate>Sun, 25 Sep 2005 05:54:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/17/no-soap-radio/#comment-438</guid>
+					<description>&lt;p&gt;This is a late comment, I'm quite too busy to read that much.&lt;/p&gt;
+
+&lt;p&gt;&quot;If you want to span systems asynchronously in a manageable fashion you’ve got to have standard models for addressing and identity baked in.&quot;&lt;/p&gt;
+
+&lt;p&gt;Indeed.&lt;/p&gt;
+
+&lt;p&gt;&quot;It’s taken some time for the WS community to get round to dealing with addressing and naming, but this is key stuff for getting something done over a gateway and for me, SOAP’s value is largely in dealing with gateways asynchronously.&quot;&lt;/p&gt;
+
+&lt;p&gt;Did they get round addressing and naming?&lt;/p&gt;
+
+&lt;p&gt;They did not yet got round the riddle of asynchrony.&lt;/p&gt;
+
+&lt;p&gt;In 2000 I reviewed SOAP 1.0 gateway, built a whole test case for some reinsurance network company, complete with SSL/TLS client certificate and  integrated as a Python web peer and interfaced with some EDI/XML tool chain and a qmail queue. Simple, fast, cheap. It's the only software they managed to sell when the network was disolved: it showed the London buyer how to match a team of IBM Java swiss experts with two british VB programmers and some free software.&lt;/p&gt;
+
+&lt;p&gt;My judgement from that experiment is that SOAP is broken.&lt;/p&gt;
+
+&lt;p&gt;Asynchronously broken.&lt;/p&gt;
+
+&lt;p&gt;The envelope is before the body, which is fine for a synchronous process, but deadwrong when handling asynchronously pipelined requests. Because:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;the envelope is the state of the transtaction instance.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the body is the state returned by a method of that transaction&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;the common transaction is usually made of a sequence of calls
+that modify the transaction state&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Yet there is no way to actually program an asynchronous SOAP server because the f****ing state as modified by the transaction must precede the result of the function that just happen to modify that state!&lt;/p&gt;
+
+&lt;p&gt;Too bad.&lt;/p&gt;
+
+&lt;p&gt;Really too bad, because back in 2000, an asynchronous Python server running on a 133mhz Pentium III was flooding some Java Application Server running on the kind of hardware Swiss Reinsurer can afford. Too many processes, not enough memory.&lt;/p&gt;
+
+&lt;p&gt;SOAP should read like this, translated in an XMLization of Python keywords:&lt;/p&gt;
+
+&lt;pre&gt;&amp;#60;call arg=&quot;val&quot;&amp;#62;
+  &amp;#60;return/&amp;#62;
+  &amp;#60;self/&amp;#62;
+&amp;#60;/call&amp;#62;&lt;/pre&gt;
+
+&lt;p&gt;And often, that is what most XML transported by SOAP gateways will contain if there is an asynchronous handler in the process.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>This is a late comment, I&#8217;m quite too busy to read that much.</p>
+<p>&#8220;If you want to span systems asynchronously in a manageable fashion you’ve got to have standard models for addressing and identity baked in.&#8221;</p>
+<p>Indeed.</p>
+<p>&#8220;It’s taken some time for the WS community to get round to dealing with addressing and naming, but this is key stuff for getting something done over a gateway and for me, SOAP’s value is largely in dealing with gateways asynchronously.&#8221;</p>
+<p>Did they get round addressing and naming?</p>
+<p>They did not yet got round the riddle of asynchrony.</p>
+<p>In 2000 I reviewed SOAP 1.0 gateway, built a whole test case for some reinsurance network company, complete with SSL/TLS client certificate and  integrated as a Python web peer and interfaced with some EDI/XML tool chain and a qmail queue. Simple, fast, cheap. It&#8217;s the only software they managed to sell when the network was disolved: it showed the London buyer how to match a team of IBM Java swiss experts with two british VB programmers and some free software.</p>
+<p>My judgement from that experiment is that SOAP is broken.</p>
+<p>Asynchronously broken.</p>
+<p>The envelope is before the body, which is fine for a synchronous process, but deadwrong when handling asynchronously pipelined requests. Because:</p>
+<ol>
+<li>
+<p>the envelope is the state of the transtaction instance.</p>
+</li>
+<li>
+<p>the body is the state returned by a method of that transaction</p>
+</li>
+<li>
+<p>the common transaction is usually made of a sequence of calls<br />
+that modify the transaction state</p>
+</li>
+</ol>
+<p>Yet there is no way to actually program an asynchronous SOAP server because the f****ing state as modified by the transaction must precede the result of the function that just happen to modify that state!</p>
+<p>Too bad.</p>
+<p>Really too bad, because back in 2000, an asynchronous Python server running on a 133mhz Pentium III was flooding some Java Application Server running on the kind of hardware Swiss Reinsurer can afford. Too many processes, not enough memory.</p>
+<p>SOAP should read like this, translated in an XMLization of Python keywords:</p>
+<pre>&lt;call arg="val"&gt;
+  &lt;return/&gt;
+  &lt;self/&gt;
+&lt;/call&gt;</pre>
+<p>And often, that is what most XML transported by SOAP gateways will contain if there is an asynchronous handler in the process.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/09/17/no-soap-radio/#comment-398</link>
+		<pubDate>Sun, 18 Sep 2005 07:07:27 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/17/no-soap-radio/#comment-398</guid>
+					<description>&lt;p&gt;
+By the way, Bill, where can I pick up that conversation between Ted and Elliotte? It looks like typical xml-dev but I'm not seeing the thread. Thanks.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nevermind, I can see that its happening on the blogs. Cool.&lt;/em&gt;&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>
+By the way, Bill, where can I pick up that conversation between Ted and Elliotte? It looks like typical xml-dev but I&#8217;m not seeing the thread. Thanks.
+</p>
+<p><em>Nevermind, I can see that its happening on the blogs. Cool.</em></p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/09/17/no-soap-radio/#comment-397</link>
+		<pubDate>Sun, 18 Sep 2005 07:06:38 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/17/no-soap-radio/#comment-397</guid>
+					<description>&lt;p&gt;This is where I think we can clearly see the fundamental difference in two popular world-views about the web and &quot;web services&quot;. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“There’s no sense in trying to take bits 
+  that were designed for a distributed hypermedia system 
+  (Fielding’s words, not mine) and trying to bend it to fit 
+  a problem space that isn’t distributed hypermedia. Can we 
+  learn from the REST architectural style? Absolutely–and the 
+  new WS-* specs, including SOAP, do exactly that, favoring 
+  self-descriptive messages over RPC calls as the principal 
+  abstraction to deal with. But does that mean we tie ourselves 
+  solely to HTTP? Oh, hell no.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;IMO, Ted's world view makes the assumption that we have the luxury of imposing an entirely new set of techniques that are on an order of magnitude more complex than what is currently being used to accomplish ~80% of what is currently possible. Elliotte's world view disallows him from making such an assumption. Any design that suggests we are capable of causing adoption of this kind of unprecedented amount of new technology should be heavily scrutinized. &lt;/p&gt;
+
+&lt;p&gt;No one is arguing that these new techniques (WS-*) would not provide additional robustness when considered soley from the perspective of &quot;an adopted distributed system&quot;. The question is whether we have the fu required to make adoption of this stuff actually happen on the scale of &quot;all business systems&quot;. You must consider basic human tendencies, skill-set required for implementation, and whether previous systems in similar situations were successful. It is important that a design answer these questions fully. A design that does not will remain a design only. &lt;/p&gt;
+
+&lt;p&gt;How does WS-* answer these questions? &quot;We have big companies, standards bodies, and a tech press that will spend lots of money to convince people to adopt and everything will be great.&quot;? It's not working. It hasn't been working for some time now. When will we begin a real conversation about these fundamental issues?&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>This is where I think we can clearly see the fundamental difference in two popular world-views about the web and &#8220;web services&#8221;. </p>
+<blockquote>
+<p>“There’s no sense in trying to take bits<br />
+  that were designed for a distributed hypermedia system<br />
+  (Fielding’s words, not mine) and trying to bend it to fit<br />
+  a problem space that isn’t distributed hypermedia. Can we<br />
+  learn from the REST architectural style? Absolutely–and the<br />
+  new WS-* specs, including SOAP, do exactly that, favoring<br />
+  self-descriptive messages over RPC calls as the principal<br />
+  abstraction to deal with. But does that mean we tie ourselves<br />
+  solely to HTTP? Oh, hell no.”</p>
+</blockquote>
+<p>IMO, Ted&#8217;s world view makes the assumption that we have the luxury of imposing an entirely new set of techniques that are on an order of magnitude more complex than what is currently being used to accomplish ~80% of what is currently possible. Elliotte&#8217;s world view disallows him from making such an assumption. Any design that suggests we are capable of causing adoption of this kind of unprecedented amount of new technology should be heavily scrutinized. </p>
+<p>No one is arguing that these new techniques (WS-*) would not provide additional robustness when considered soley from the perspective of &#8220;an adopted distributed system&#8221;. The question is whether we have the fu required to make adoption of this stuff actually happen on the scale of &#8220;all business systems&#8221;. You must consider basic human tendencies, skill-set required for implementation, and whether previous systems in similar situations were successful. It is important that a design answer these questions fully. A design that does not will remain a design only. </p>
+<p>How does WS-* answer these questions? &#8220;We have big companies, standards bodies, and a tech press that will spend lots of money to convince people to adopt and everything will be great.&#8221;? It&#8217;s not working. It hasn&#8217;t been working for some time now. When will we begin a real conversation about these fundamental issues?</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bill de hÓra</title>
+		<link>http://lesscode.org/2005/09/17/no-soap-radio/#comment-391</link>
+		<pubDate>Sat, 17 Sep 2005 19:36:48 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/17/no-soap-radio/#comment-391</guid>
+					<description>&lt;p&gt;Hi Bob,&lt;/p&gt;
+
+&lt;p&gt;Yep, I put in a link in to PubSub; and I'm guessing you got here because you're using PubSub with a subscription to &quot;pubsub&quot; and &quot;xmpp&quot; ;) (incidentally you should check out the URI filter/query mechanisms being proposed for APP at the moment and see if it'll map onto XMPP...) &lt;/p&gt;
+
+&lt;p&gt;While I was thinking about system integration scenarios rather than pushing feeds to users here, the one thing that bugs me about the current push setup is that IM clients... suck. They're much too intrusive - flashing, popping up; that's fine maybe for chat, but they could take a cue from mail clients in the case of feed subscriptions. &lt;/p&gt;
+
+&lt;p&gt;On the infrastructure level I see a lot of places that block XMPP and you have to argue to get the ports opened (resonating with Marshall's point about firewalls). It really does seems that some folks find the idea of running a protocol over its correct port rather than 80 being more secure counter-intuitive.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Hi Bob,</p>
+<p>Yep, I put in a link in to PubSub; and I&#8217;m guessing you got here because you&#8217;re using PubSub with a subscription to &#8220;pubsub&#8221; and &#8220;xmpp&#8221; ;) (incidentally you should check out the URI filter/query mechanisms being proposed for APP at the moment and see if it&#8217;ll map onto XMPP&#8230;) </p>
+<p>While I was thinking about system integration scenarios rather than pushing feeds to users here, the one thing that bugs me about the current push setup is that IM clients&#8230; suck. They&#8217;re much too intrusive - flashing, popping up; that&#8217;s fine maybe for chat, but they could take a cue from mail clients in the case of feed subscriptions. </p>
+<p>On the infrastructure level I see a lot of places that block XMPP and you have to argue to get the ports opened (resonating with Marshall&#8217;s point about firewalls). It really does seems that some folks find the idea of running a protocol over its correct port rather than 80 being more secure counter-intuitive.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Bob Wyman</title>
+		<link>http://lesscode.org/2005/09/17/no-soap-radio/#comment-390</link>
+		<pubDate>Sat, 17 Sep 2005 18:47:20 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/17/no-soap-radio/#comment-390</guid>
+					<description>&lt;p&gt;You wrote: &quot;Why not use XMPP for push/pubsub?&quot;&lt;/p&gt;
+
+&lt;p&gt;This is precisely what we do at &lt;a href=&quot;http://pubsub.com/&quot; rel=&quot;nofollow&quot;&gt;PubSub.com&lt;/a&gt;. We use XMPP with the pub/sub extensions defined in &lt;a href=&quot;http://www.jabber.org/jeps/jep-0060.html&quot; rel=&quot;nofollow&quot;&gt;JEP-0060&lt;/a&gt; to instantly notify users of updates to 16+ million RSS/Atom feeds, 50K+ newsgroups, SEC Edgar filing, earthquakes, etc. SOAP based web services and HTTP based systems are simply not adequate to this task since they either require holes in firewalls, polling or gateway services in order to get messages to desktop. To provide instant notifications, one really must have a push protocol... HTTP might be popular, but it isn't much good for notifications.&lt;/p&gt;
+
+&lt;p&gt;bob wyman&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>You wrote: &#8220;Why not use XMPP for push/pubsub?&#8221;</p>
+<p>This is precisely what we do at <a href="http://pubsub.com/">PubSub.com</a>. We use XMPP with the pub/sub extensions defined in <a href="http://www.jabber.org/jeps/jep-0060.html">JEP-0060</a> to instantly notify users of updates to 16+ million RSS/Atom feeds, 50K+ newsgroups, SEC Edgar filing, earthquakes, etc. SOAP based web services and HTTP based systems are simply not adequate to this task since they either require holes in firewalls, polling or gateway services in order to get messages to desktop. To provide instant notifications, one really must have a push protocol&#8230; HTTP might be popular, but it isn&#8217;t much good for notifications.</p>
+<p>bob wyman</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.310 seconds -->
+<!-- Cached page served by WP-Cache -->

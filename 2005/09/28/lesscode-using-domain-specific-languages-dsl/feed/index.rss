@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.0.1" -->
+<rss version="2.0" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+	<title>Comments on: Lesscode using Domain Specific Languages (DSL)</title>
+	<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/</link>
+	<description>AAaaaaahhhhrrrrrrr!</description>
+	<pubDate>Mon, 17 Sep 2007 09:11:40 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.0.1</generator>
+
+	<item>
+		<title>by: Steven Kelly</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-768</link>
+		<pubDate>Tue, 29 Nov 2005 12:43:42 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-768</guid>
+					<description>&lt;blockquote&gt;
+  &lt;p&gt;To sum up, I don't know what Microsoft is selling over there but it isn’t what the larger community has come to know as &quot;Domain Specific Languages&quot;. Perhaps a better term would be &quot;Domain Specific Designer&quot;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Using &quot;Designer&quot; tends to put the focus on the tool; I think the equivalent term for the actually language should be &quot;Domain-Specific Modeling Language&quot;. I've also heard people talk about &quot;textual DSLs&quot; (which is fine) vs. &quot;graphical DSLs&quot;, but I'm not a fan of the latter term. In all the real industrial cases I can think of, the graphical format of the DSL does not show all the information contained in the model. To see the fine details of an object, you have to double-click its property dialog open or look at its property sheet. That's an important advance over textual DSLs, which show all the detail. With a DSM Language the language designer chooses what is important enough to show all the time, and what can be hidden as details. He can also allow the modeler to make that decision for some elements (like most UML tools allow the modeler to show or hide the Attributes and Operations compartments of a UML Class symbol).&lt;/p&gt;
+
+&lt;p&gt;There was some discussion earlier about the difference between wizards, earlier code generators and &lt;a href=&quot;http://www.metacase.com/blogs/stevek/blogView?showComments=true&amp;#38;entry=3305839540&quot; rel=&quot;nofollow&quot;&gt;DSM with full code generation&lt;/a&gt;. The main difference is whether you have to maintain what is generated, at the level of the generated code. Wizards and old-style code generators generally meant you had to do that: they produced lots of code quickly, but it was unfamiliar to you and you needed to maintain and probably extend it. With DSM, the code generated is the same as the code you wrote by hand before, and you don't need to read or edit it. (See &lt;a href=&quot;http://www.metacase.com/blogs/stevek/blogView?showComments=true&amp;#38;entry=3289933398&quot; title=&quot;Discovering simplicity&quot; rel=&quot;nofollow&quot;&gt;this blog entry&lt;/a&gt; for more detail.)&lt;/p&gt;
+
+&lt;p&gt;And of course so as not to be accused of bias towards Microsoft, I ought to point out that they're not the only people doing this :-). The &lt;a href=&quot;http://www.dsmforum.org&quot; rel=&quot;nofollow&quot;&gt;DSM Forum&lt;/a&gt; is the industry organization for all companies involved, and the web pages are a good starting point for information and links to further reading, real world cases and related events. In addition to Microsoft's pre-release DSL tools there are also others that have a longer history in this area, including ourselves at &lt;a href=&quot;http://www.metacase.com&quot; rel=&quot;nofollow&quot;&gt;MetaCase&lt;/a&gt; with MetaEdit+, which has been used commercially for over ten years so is a tad more mature (if you'll excuse the lack of modesty), and the Vanderbilt University GME research tool, which has also been around for years and is great for those who want to work on coding the next generation of such meta-tools.&lt;/p&gt;
+
+&lt;p&gt;If you want to play around with this to learn more, I think you'll easily get furthest in a short time if you start with the MetaEdit+ 31-day &lt;a href=&quot;http://www.metacase.com/fs.asp?paa=download/&quot; rel=&quot;nofollow&quot;&gt;evaluation version&lt;/a&gt;: in an hour you can build your own first modeling language. If you prefer MS tools, you can try it out for 90 minutes on-line &lt;a href=&quot;http://msdn.microsoft.com/vstudio/tryit/hosted/teamsystem/default.aspx&quot; title=&quot;DSL Tools Virtual Lab&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt; - installing it can be something of a long process, so that's a good alternative.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<blockquote>
+<p>To sum up, I don&#8217;t know what Microsoft is selling over there but it isn’t what the larger community has come to know as &#8220;Domain Specific Languages&#8221;. Perhaps a better term would be &#8220;Domain Specific Designer&#8221;.</p>
+</blockquote>
+<p>Using &#8220;Designer&#8221; tends to put the focus on the tool; I think the equivalent term for the actually language should be &#8220;Domain-Specific Modeling Language&#8221;. I&#8217;ve also heard people talk about &#8220;textual DSLs&#8221; (which is fine) vs. &#8220;graphical DSLs&#8221;, but I&#8217;m not a fan of the latter term. In all the real industrial cases I can think of, the graphical format of the DSL does not show all the information contained in the model. To see the fine details of an object, you have to double-click its property dialog open or look at its property sheet. That&#8217;s an important advance over textual DSLs, which show all the detail. With a DSM Language the language designer chooses what is important enough to show all the time, and what can be hidden as details. He can also allow the modeler to make that decision for some elements (like most UML tools allow the modeler to show or hide the Attributes and Operations compartments of a UML Class symbol).</p>
+<p>There was some discussion earlier about the difference between wizards, earlier code generators and <a href="http://www.metacase.com/blogs/stevek/blogView?showComments=true&amp;entry=3305839540">DSM with full code generation</a>. The main difference is whether you have to maintain what is generated, at the level of the generated code. Wizards and old-style code generators generally meant you had to do that: they produced lots of code quickly, but it was unfamiliar to you and you needed to maintain and probably extend it. With DSM, the code generated is the same as the code you wrote by hand before, and you don&#8217;t need to read or edit it. (See <a href="http://www.metacase.com/blogs/stevek/blogView?showComments=true&amp;entry=3289933398" title="Discovering simplicity">this blog entry</a> for more detail.)</p>
+<p>And of course so as not to be accused of bias towards Microsoft, I ought to point out that they&#8217;re not the only people doing this :-). The <a href="http://www.dsmforum.org">DSM Forum</a> is the industry organization for all companies involved, and the web pages are a good starting point for information and links to further reading, real world cases and related events. In addition to Microsoft&#8217;s pre-release DSL tools there are also others that have a longer history in this area, including ourselves at <a href="http://www.metacase.com">MetaCase</a> with MetaEdit+, which has been used commercially for over ten years so is a tad more mature (if you&#8217;ll excuse the lack of modesty), and the Vanderbilt University GME research tool, which has also been around for years and is great for those who want to work on coding the next generation of such meta-tools.</p>
+<p>If you want to play around with this to learn more, I think you&#8217;ll easily get furthest in a short time if you start with the MetaEdit+ 31-day <a href="http://www.metacase.com/fs.asp?paa=download/">evaluation version</a>: in an hour you can build your own first modeling language. If you prefer MS tools, you can try it out for 90 minutes on-line <a href="http://msdn.microsoft.com/vstudio/tryit/hosted/teamsystem/default.aspx" title="DSL Tools Virtual Lab">here</a> - installing it can be something of a long process, so that&#8217;s a good alternative.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Alex Schroeder</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-534</link>
+		<pubDate>Wed, 05 Oct 2005 14:57:58 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-534</guid>
+					<description>&lt;p&gt;I think the problem is that most developers have never seen both powerful visual programming environments and useful non-trivial building blocks.  If you have found both, more power to you!&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>I think the problem is that most developers have never seen both powerful visual programming environments and useful non-trivial building blocks.  If you have found both, more power to you!</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mitch Barnett</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-505</link>
+		<pubDate>Fri, 30 Sep 2005 18:50:49 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-505</guid>
+					<description>&lt;p&gt;Point taken Ryan (and Aristotle and Alex S.).  I had a look at the DSL definitions you supplied (and from others in this post) and understand why there might be different interpretations of the meaning of DSL.  Of course Microsoft, being who they are, always seems to do things “their way”.  Here is Microsoft’s view on the DSL tools they supply with Visual Studio”&lt;/p&gt;
+
+&lt;p&gt;“Using the Microsoft DSL tools you can create your own designer, integrated into Visual Studio, for a visual domain-specific language. The tools help you define the domain-specific language and generate the code of a graphical designer for you. The resulting designer uses the same underlying modeling technology that is used by the Class Designer and Distributed System Designers in Visual Studio 2005.”&lt;/p&gt;
+
+&lt;p&gt;In the end, I believe it complies with what a Domain Specific Language is, in its purest form, it’s just that Microsoft has a different way on “how” it achieves the end goal.  &lt;/p&gt;
+
+&lt;p&gt;Personally, I have been a fan of visualization tools, particularly from an architectural design perspective, because it raises the level of abstraction, much like how architectural blueprints are common practice in the “traditional” building design/construction world, using visualization tools like AutoCAD.  This is something we are still struggling with in the software development world – we don’t have a “standard” architectural blueprint that every programmer understands, from a semantic meaning perspective, and can build software that meets the specifications of the blueprint.  &lt;/p&gt;
+
+&lt;p&gt;This is what I mean by software industrialization – I certainly don’t mean making it a mechanized process, it will never become that way, but at the same time, every physical buildings architecture has been derived from an “architectural blueprint “where everyone involved in the construction process knows how to read it and more importantly, knows what it means.  From where I sit, we (still) don’t have anything like that is the software development world.  To me DSL’s are one step closer to this inevitable realization.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Point taken Ryan (and Aristotle and Alex S.).  I had a look at the DSL definitions you supplied (and from others in this post) and understand why there might be different interpretations of the meaning of DSL.  Of course Microsoft, being who they are, always seems to do things “their way”.  Here is Microsoft’s view on the DSL tools they supply with Visual Studio”</p>
+<p>“Using the Microsoft DSL tools you can create your own designer, integrated into Visual Studio, for a visual domain-specific language. The tools help you define the domain-specific language and generate the code of a graphical designer for you. The resulting designer uses the same underlying modeling technology that is used by the Class Designer and Distributed System Designers in Visual Studio 2005.”</p>
+<p>In the end, I believe it complies with what a Domain Specific Language is, in its purest form, it’s just that Microsoft has a different way on “how” it achieves the end goal.  </p>
+<p>Personally, I have been a fan of visualization tools, particularly from an architectural design perspective, because it raises the level of abstraction, much like how architectural blueprints are common practice in the “traditional” building design/construction world, using visualization tools like AutoCAD.  This is something we are still struggling with in the software development world – we don’t have a “standard” architectural blueprint that every programmer understands, from a semantic meaning perspective, and can build software that meets the specifications of the blueprint.  </p>
+<p>This is what I mean by software industrialization – I certainly don’t mean making it a mechanized process, it will never become that way, but at the same time, every physical buildings architecture has been derived from an “architectural blueprint “where everyone involved in the construction process knows how to read it and more importantly, knows what it means.  From where I sit, we (still) don’t have anything like that is the software development world.  To me DSL’s are one step closer to this inevitable realization.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Ryan Tomayko</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-500</link>
+		<pubDate>Fri, 30 Sep 2005 09:52:16 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-500</guid>
+					<description>&lt;p&gt;Mitch said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I am an old Smalltalk guy and I can tell you, this ain’t LISP - again, a DSL is NOT a programming language and that’s the whole point I am trying to make – obviously poorly.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think the point was made aptly, there's just some disagreement about your definition. For instance, &lt;a href=&quot;http://www.martinfowler.com/bliki/DomainSpecificLanguage.html&quot; rel=&quot;nofollow&quot;&gt;Fowler describes DSLs&lt;/a&gt; as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The basic idea of a domain specific language (DSL) is a computer language that's targeted to a particular kind of problem, rather than a general purpose language that's aimed at any kind of software problem. Domain specific languages have been talked about, and used for almost as long as computing has been done.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;He then points to Eric Raymond's &lt;a href=&quot;http://www.faqs.org/docs/artu/minilanguageschapter.html&quot; rel=&quot;nofollow&quot;&gt;Minilanguages&lt;/a&gt; and Paul Graham's &lt;a href=&quot;http://www.paulgraham.com/progbot.html&quot; rel=&quot;nofollow&quot;&gt;Programming Bottom Up&lt;/a&gt;, both of which describe using highly extensible languages (like Lisp) to craft new language features that serve a specific problem domain.&lt;/p&gt;
+
+&lt;p&gt;For more background, see &lt;a href=&quot;http://homepages.cwi.nl/~arie/papers/dslbib/&quot; rel=&quot;nofollow&quot;&gt;Domain-Specific Languages: An annotated Bibliography&lt;/a&gt;, which cites some 78  historical DSL texts. The definition of &quot;DSL&quot; put forth in that paper is as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A domain-specific language (DSL) is a programming language or executable specification language that offers, through appropriate notations and abstractions, expressive power focused on, and usually restricted to, a particular problem domain. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To sum up, I don't know what Microsoft is selling over there but it isn't what the larger community has come to know as &quot;Domain Specific Languages&quot;. Perhaps a better term would be &quot;Domain Specific Designer&quot;.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Mitch said:</p>
+<blockquote>
+<p>I am an old Smalltalk guy and I can tell you, this ain’t LISP - again, a DSL is NOT a programming language and that’s the whole point I am trying to make – obviously poorly.</p>
+</blockquote>
+<p>I think the point was made aptly, there&#8217;s just some disagreement about your definition. For instance, <a href="http://www.martinfowler.com/bliki/DomainSpecificLanguage.html">Fowler describes DSLs</a> as follows:</p>
+<blockquote>
+<p>The basic idea of a domain specific language (DSL) is a computer language that&#8217;s targeted to a particular kind of problem, rather than a general purpose language that&#8217;s aimed at any kind of software problem. Domain specific languages have been talked about, and used for almost as long as computing has been done.</p>
+</blockquote>
+<p>He then points to Eric Raymond&#8217;s <a href="http://www.faqs.org/docs/artu/minilanguageschapter.html">Minilanguages</a> and Paul Graham&#8217;s <a href="http://www.paulgraham.com/progbot.html">Programming Bottom Up</a>, both of which describe using highly extensible languages (like Lisp) to craft new language features that serve a specific problem domain.</p>
+<p>For more background, see <a href="http://homepages.cwi.nl/~arie/papers/dslbib/">Domain-Specific Languages: An annotated Bibliography</a>, which cites some 78  historical DSL texts. The definition of &#8220;DSL&#8221; put forth in that paper is as follows:</p>
+<blockquote>
+<p>A domain-specific language (DSL) is a programming language or executable specification language that offers, through appropriate notations and abstractions, expressive power focused on, and usually restricted to, a particular problem domain. </p>
+</blockquote>
+<p>To sum up, I don&#8217;t know what Microsoft is selling over there but it isn&#8217;t what the larger community has come to know as &#8220;Domain Specific Languages&#8221;. Perhaps a better term would be &#8220;Domain Specific Designer&#8221;.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mitch Barnett</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-497</link>
+		<pubDate>Fri, 30 Sep 2005 06:36:27 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-497</guid>
+					<description>&lt;p&gt;Re: Aristotle and Alex S. - Sorry guys, I think you are missing the point entirely - DSL is NOT a programming language.  It is a higher level abstraction using a “meta model”, in this case a visual designer to &quot;describe&quot; what you want to build and then the &quot;framework&quot; generates code, and in MS case, it is either C# or VB.NET.  I am an old Smalltalk guy and I can tell you, this ain't LISP - again, a DSL is NOT a programming language and that's the whole point I am trying to make – obviously poorly.&lt;/p&gt;
+
+&lt;p&gt;Remember UML and class diagram's where you could &quot;draw&quot; a class diagram hierarchy and Rational's tool will build the code framework (ok stubs) for you?  Well, a DSL is a much more refined and higher level abstraction that allows you to &quot;design&quot; a specific language to solve a problem domain issue of interest - without hand crafting code.  That’s the point of a DSL.  Who care’s “how” it is done.  All I can tell you is that it would take me 10X longer to handcraft the code, compared to what I “designed” in the DSL to generate the code (more or less what I would have hand crafted in C# anyway) for me.  In other words, a DSL is simply a productivity tool that allows me to describe or define or model the solution, using meta data.  That’s it.  Simply another tool in the toolbox.  Nothing more, nothing less.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Re: Aristotle and Alex S. - Sorry guys, I think you are missing the point entirely - DSL is NOT a programming language.  It is a higher level abstraction using a “meta model”, in this case a visual designer to &#8220;describe&#8221; what you want to build and then the &#8220;framework&#8221; generates code, and in MS case, it is either C# or VB.NET.  I am an old Smalltalk guy and I can tell you, this ain&#8217;t LISP - again, a DSL is NOT a programming language and that&#8217;s the whole point I am trying to make – obviously poorly.</p>
+<p>Remember UML and class diagram&#8217;s where you could &#8220;draw&#8221; a class diagram hierarchy and Rational&#8217;s tool will build the code framework (ok stubs) for you?  Well, a DSL is a much more refined and higher level abstraction that allows you to &#8220;design&#8221; a specific language to solve a problem domain issue of interest - without hand crafting code.  That’s the point of a DSL.  Who care’s “how” it is done.  All I can tell you is that it would take me 10X longer to handcraft the code, compared to what I “designed” in the DSL to generate the code (more or less what I would have hand crafted in C# anyway) for me.  In other words, a DSL is simply a productivity tool that allows me to describe or define or model the solution, using meta data.  That’s it.  Simply another tool in the toolbox.  Nothing more, nothing less.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-495</link>
+		<pubDate>Fri, 30 Sep 2005 04:47:06 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-495</guid>
+					<description>&lt;p&gt;Sorry, sloppy terminology. I tend to lump all the IDE-style stuff together, my bad. Please re-read my comment with &quot;GUI designers&quot; substituted for &quot;wizards;&quot; the points remain the same ones.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Sorry, sloppy terminology. I tend to lump all the IDE-style stuff together, my bad. Please re-read my comment with &#8220;GUI designers&#8221; substituted for &#8220;wizards;&#8221; the points remain the same ones.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mitch Barnett</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-492</link>
+		<pubDate>Fri, 30 Sep 2005 03:31:05 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-492</guid>
+					<description>&lt;p&gt;Aristotle - we definitely have a disconnect here.  Who said anything about wizards?  Let me state categorically that the DSL I am talking about is NOT wizard driven.  I ask that you take 10 minutes of your time to look at the link I provided to the documentation in the first post to look at how MS is doing DSL's - we are talking about a &quot;high fidelity&quot; modeling environment - a visual designer that you drop domain specific objects onto a canvas to draw/model the solution, using a DSL visual designer.  Not wizards.  This is something completely different than what you think it is or at least from your post reply’s what I think you think it is :-)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Aristotle - we definitely have a disconnect here.  Who said anything about wizards?  Let me state categorically that the DSL I am talking about is NOT wizard driven.  I ask that you take 10 minutes of your time to look at the link I provided to the documentation in the first post to look at how MS is doing DSL&#8217;s - we are talking about a &#8220;high fidelity&#8221; modeling environment - a visual designer that you drop domain specific objects onto a canvas to draw/model the solution, using a DSL visual designer.  Not wizards.  This is something completely different than what you think it is or at least from your post reply’s what I think you think it is :-)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Aristotle Pagaltzis</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-488</link>
+		<pubDate>Fri, 30 Sep 2005 01:36:26 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-488</guid>
+					<description>&lt;p&gt;&lt;a href=&quot;#comment-477&quot; rel=&quot;nofollow&quot;&gt;Mitch&lt;/a&gt;: I see all that. The point is, using a wizards to generate code (even if the generator works on top of a model of the domain) still contradicts my understanding of DSLs.&lt;/p&gt;
+
+&lt;p&gt;In my mind, the entire point of a DSL is to be so abstract and high-level that you can write the code &lt;em&gt;by hand but without&lt;/em&gt; writing any plumbing and infrastructure.&lt;/p&gt;
+
+&lt;p&gt;The canonical example of a language whose mentality is that you should do any task by creating a DSL of this type for the problem at hand and then using that DSL to solve it is Lisp, as &lt;a href=&quot;#comment-474&quot; rel=&quot;nofollow&quot;&gt;Alex Schroeder points out&lt;/a&gt;. The main tool towards that end are macros---which are far more powerful in Lisp than in any of the mainstream languages.&lt;/p&gt;
+
+&lt;p&gt;(FWIW, such macros are coming to Perl6.)&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p><a href="#comment-477">Mitch</a>: I see all that. The point is, using a wizards to generate code (even if the generator works on top of a model of the domain) still contradicts my understanding of DSLs.</p>
+<p>In my mind, the entire point of a DSL is to be so abstract and high-level that you can write the code <em>by hand but without</em> writing any plumbing and infrastructure.</p>
+<p>The canonical example of a language whose mentality is that you should do any task by creating a DSL of this type for the problem at hand and then using that DSL to solve it is Lisp, as <a href="#comment-474">Alex Schroeder points out</a>. The main tool towards that end are macros&#8212;which are far more powerful in Lisp than in any of the mainstream languages.</p>
+<p>(FWIW, such macros are coming to Perl6.)</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Mitch Barnett</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-477</link>
+		<pubDate>Thu, 29 Sep 2005 20:25:01 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-477</guid>
+					<description>&lt;p&gt;Wow!  Interesting responses.  I certainly never figured myself as a language maven.  Maybe some context around why I wrote what I did about DSL’s.&lt;/p&gt;
+
+&lt;p&gt;My job is to solve business problems using IT where the requirements are generally very poor and there is little money or time to solve the business problem at hand.  Just part of the reality in my little business world I live in from a Systems Integrator perspective.  So to combat that, I try and find anything (beg, borrow or steal) that assists me in meeting unrealistic requirements and schedules.  This means a lot of incremental and iterative development to close the aforementioned gaps.&lt;/p&gt;
+
+&lt;p&gt;I look at DSL’s as just another tool in the toolbox to help me solve the business problem at hand.  As Alex has pointed out, my job is to design a solution to solve a business problem without having to write the same (or similar) plumbing or infrastructure code every time  So spending more time in the problem domain helps me do this.  Using DSL’s along with writing code, using 3rd party components and any other piece of design and/or code that I can reuse helps me solve the business problem.&lt;/p&gt;
+
+&lt;p&gt;Don’t get me wrong.  I live to code.  But business constraints of the real world force me to do (some) unnatural acts.  The application integration DSL I put together, albeit small, greatly assists me in meeting those business constraints, hence the reason why I use it – in addition to traditional coding (interface development), etc.  But when I can make a domain model/designer change in my DSL and have a solution delivered to my paying clients in fraction of the time it takes to traditionally code everything by hand, my clients really appreciate that and keep me employed.  I am just being pragmatic about the whole thing.&lt;/p&gt;
+
+&lt;p&gt;I also believe that, as in everything software, everyone has a different meaning and motivation to use the languages and tools we use.  Hopefully, with this little explanation some of that has come to light.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Wow!  Interesting responses.  I certainly never figured myself as a language maven.  Maybe some context around why I wrote what I did about DSL’s.</p>
+<p>My job is to solve business problems using IT where the requirements are generally very poor and there is little money or time to solve the business problem at hand.  Just part of the reality in my little business world I live in from a Systems Integrator perspective.  So to combat that, I try and find anything (beg, borrow or steal) that assists me in meeting unrealistic requirements and schedules.  This means a lot of incremental and iterative development to close the aforementioned gaps.</p>
+<p>I look at DSL’s as just another tool in the toolbox to help me solve the business problem at hand.  As Alex has pointed out, my job is to design a solution to solve a business problem without having to write the same (or similar) plumbing or infrastructure code every time  So spending more time in the problem domain helps me do this.  Using DSL’s along with writing code, using 3rd party components and any other piece of design and/or code that I can reuse helps me solve the business problem.</p>
+<p>Don’t get me wrong.  I live to code.  But business constraints of the real world force me to do (some) unnatural acts.  The application integration DSL I put together, albeit small, greatly assists me in meeting those business constraints, hence the reason why I use it – in addition to traditional coding (interface development), etc.  But when I can make a domain model/designer change in my DSL and have a solution delivered to my paying clients in fraction of the time it takes to traditionally code everything by hand, my clients really appreciate that and keep me employed.  I am just being pragmatic about the whole thing.</p>
+<p>I also believe that, as in everything software, everyone has a different meaning and motivation to use the languages and tools we use.  Hopefully, with this little explanation some of that has come to light.</p>
+]]></content:encoded>
+				</item>
+	<item>
+		<title>by: Nico Mommaerts</title>
+		<link>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-476</link>
+		<pubDate>Thu, 29 Sep 2005 18:34:50 +0000</pubDate>
+		<guid>http://lesscode.org/2005/09/28/lesscode-using-domain-specific-languages-dsl/#comment-476</guid>
+					<description>&lt;p&gt;Using visual tools and code generation seems to be the Microsoft way of using DSL's. There are 2 kinds of DSL's: embedded and layered. A classical example of this is Ant vs Rake. Ant was built by designing a new language (although using XML to avoid having to write a compiler/interpreter), Rake uses an existing language (Ruby). Anybody who has used Ant knows how frustrating and limiting it can be, you can't fall back on another language, you are tied to the existing tasks or write new ones.  The same is true for visual DSL tools, although you have a highly specialized language at your disposal, if you want to do anything not foreseen by the tool, you are stuck or have to bend into all kinds of uncomfortable corners.&lt;/p&gt;
+
+&lt;p&gt;A colleague of mine suggested reading &lt;a href=&quot;http://home.earthlink.net/~lbrodie/forth.html&quot; rel=&quot;nofollow&quot;&gt;Thinking Forth&lt;/a&gt; as a way of learning about DSL's.&lt;/p&gt;
+
+&lt;p&gt;My (few) links about DSL's are &lt;a href=&quot;http://del.icio.us/dfuse/dsl&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+		<content:encoded><![CDATA[<p>Using visual tools and code generation seems to be the Microsoft way of using DSL&#8217;s. There are 2 kinds of DSL&#8217;s: embedded and layered. A classical example of this is Ant vs Rake. Ant was built by designing a new language (although using XML to avoid having to write a compiler/interpreter), Rake uses an existing language (Ruby). Anybody who has used Ant knows how frustrating and limiting it can be, you can&#8217;t fall back on another language, you are tied to the existing tasks or write new ones.  The same is true for visual DSL tools, although you have a highly specialized language at your disposal, if you want to do anything not foreseen by the tool, you are stuck or have to bend into all kinds of uncomfortable corners.</p>
+<p>A colleague of mine suggested reading <a href="http://home.earthlink.net/~lbrodie/forth.html">Thinking Forth</a> as a way of learning about DSL&#8217;s.</p>
+<p>My (few) links about DSL&#8217;s are <a href="http://del.icio.us/dfuse/dsl">here</a>.</p>
+]]></content:encoded>
+				</item>
+</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.389 seconds -->
+<!-- Cached page served by WP-Cache -->
